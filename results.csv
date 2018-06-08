@@ -14,7 +14,7 @@ season,round,tie,winner,pk,agr,aet,result
 2008.0,semi,barcelona-united,united,False,False,False,barcelona (0-1) united
 2008.0,semi,liverpool-chelsea,chelsea,False,False,True,liverpool (3-4 aet) chelsea
 2009.0,first,arsenal-roma,arsenal,True,False,True,"arsenal (1-1 aet) roma, arsenal won on penalties"
-2009.0,first,atletico-porto,porto,False,True,False,"atletico (2-2) porto, porto won on away goals rule"
+2009.0,first,atletico-porto,porto,False,True,False,"atletico (2-2) porto, porto won on away goals"
 2009.0,first,chelsea-juventus,chelsea,False,False,False,chelsea (3-2) juventus
 2009.0,first,inter-united,united,False,False,False,inter (0-2) united
 2009.0,first,lyon-barcelona,barcelona,False,False,False,lyon (3-6) barcelona
@@ -25,9 +25,9 @@ season,round,tie,winner,pk,agr,aet,result
 2009.0,qtr,liverpool-chelsea,chelsea,False,False,False,liverpool (5-7) chelsea
 2009.0,qtr,united-porto,united,False,False,False,united (3-2) porto
 2009.0,qtr,villareal-arsenal,arsenal,False,False,False,villareal (1-4) arsenal
-2009.0,semi,barcelona-chelsea,barcelona,False,True,False,"barcelona (1-1) chelsea, barcelona won on away goals rule"
+2009.0,semi,barcelona-chelsea,barcelona,False,True,False,"barcelona (1-1) chelsea, barcelona won on away goals"
 2009.0,semi,united-arsenal,united,False,False,False,united (4-1) arsenal
-2010.0,first,bayern-fiorentina,bayern,False,True,False,"bayern (4-4) fiorentina, bayern won on away goals rule"
+2010.0,first,bayern-fiorentina,bayern,False,True,False,"bayern (4-4) fiorentina, bayern won on away goals"
 2010.0,first,cska-sevilla,cska,False,False,False,cska (3-2) sevilla
 2010.0,first,inter-chelsea,inter,False,False,False,inter (3-1) chelsea
 2010.0,first,lyon-madrid,lyon,False,False,False,lyon (2-1) madrid
@@ -36,14 +36,14 @@ season,round,tie,winner,pk,agr,aet,result
 2010.0,first,porto-arsenal,arsenal,False,False,False,porto (2-6) arsenal
 2010.0,first,stuttgart-barcelona,barcelona,False,False,False,stuttgart (1-5) barcelona
 2010.0,qtr,arsenal-barcelona,barcelona,False,False,False,arsenal (3-6) barcelona
-2010.0,qtr,bayern-united,bayern,False,True,False,"bayern (4-4) united, bayern won on away goals rule"
+2010.0,qtr,bayern-united,bayern,False,True,False,"bayern (4-4) united, bayern won on away goals"
 2010.0,qtr,inter-cska,inter,False,False,False,inter (2-0) cska
 2010.0,qtr,lyon-bordeaux,lyon,False,False,False,lyon (3-2) bordeaux
 2010.0,semi,bayern-lyon,bayern,False,False,False,bayern (4-0) lyon
 2010.0,semi,inter-barcelona,inter,False,False,False,inter (3-2) barcelona
 2011.0,first,arsenal-barcelona,barcelona,False,False,False,arsenal (3-4) barcelona
 2011.0,first,copenhagen-chelsea,chelsea,False,False,False,copenhagen (0-2) chelsea
-2011.0,first,inter-bayern,inter,False,True,False,"inter (3-3) bayern, inter won on away goals rule"
+2011.0,first,inter-bayern,inter,False,True,False,"inter (3-3) bayern, inter won on away goals"
 2011.0,first,lyon-madrid,madrid,False,False,False,lyon (1-4) madrid
 2011.0,first,marseille-united,united,False,False,False,marseille (1-2) united
 2011.0,first,milan-tottenham,tottenham,False,False,False,milan (0-1) tottenham
@@ -59,7 +59,7 @@ season,round,tie,winner,pk,agr,aet,result
 2012.0,first,cska-madrid,madrid,False,False,False,cska (2-5) madrid
 2012.0,first,leverkusen-barcelona,barcelona,False,False,False,leverkusen (2-10) barcelona
 2012.0,first,lyon-apoel,apoel,True,False,True,"lyon (1-1 aet) apoel, apoel won on penalties"
-2012.0,first,marseille-inter,marseille,False,True,False,"marseille (2-2) inter, marseille won on away goals rule"
+2012.0,first,marseille-inter,marseille,False,True,False,"marseille (2-2) inter, marseille won on away goals"
 2012.0,first,milan-arsenal,milan,False,False,False,milan (4-3) arsenal
 2012.0,first,napoli-chelsea,chelsea,False,False,True,napoli (4-5 aet) chelsea
 2012.0,first,zenit-benfica,benfica,False,False,False,zenit (3-4) benfica
@@ -69,7 +69,7 @@ season,round,tie,winner,pk,agr,aet,result
 2012.0,qtr,milan-barcelona,barcelona,False,False,False,milan (1-3) barcelona
 2012.0,semi,barcelona-chelsea,barcelona,False,False,False,barcelona (3-2) chelsea
 2012.0,semi,bayern-madrid,bayern,True,False,True,"bayern (3-3 aet) madrid, bayern won on penalties"
-2013.0,first,arsenal-bayern,bayern,False,True,False,"arsenal (3-3) bayern, bayern won on away goals rule"
+2013.0,first,arsenal-bayern,bayern,False,True,False,"arsenal (3-3) bayern, bayern won on away goals"
 2013.0,first,celtic-juventus,juventus,False,False,False,celtic (0-5) juventus
 2013.0,first,galatasaray-schalke,galatasaray,False,False,False,galatasaray (4-3) schalke
 2013.0,first,madrid-united,madrid,False,False,False,madrid (3-2) united
@@ -80,7 +80,7 @@ season,round,tie,winner,pk,agr,aet,result
 2013.0,qtr,bayern-juventus,bayern,False,False,False,bayern (4-0) juventus
 2013.0,qtr,madrid-galatasaray,madrid,False,False,False,madrid (5-3) galatasaray
 2013.0,qtr,malaga-dortmund,dortmund,False,False,False,malaga (2-3) dortmund
-2013.0,qtr,psg-barcelona,barcelona,False,True,False,"psg (3-3) barcelona, barcelona won on away goals rule"
+2013.0,qtr,psg-barcelona,barcelona,False,True,False,"psg (3-3) barcelona, barcelona won on away goals"
 2013.0,semi,bayern-barcelona,bayern,False,False,False,bayern (7-0) barcelona
 2013.0,semi,dortmund-madrid,dortmund,False,False,False,dortmund (4-3) madrid
 2014.0,first,arsenal-bayern,arsenal,False,False,False,arsenal (3-1) bayern
@@ -93,16 +93,16 @@ season,round,tie,winner,pk,agr,aet,result
 2014.0,first,zenit-dortmund,dortmund,False,False,False,zenit (4-5) dortmund
 2014.0,qtr,barcelona-atletico,atletico,False,False,False,barcelona (1-2) atletico
 2014.0,qtr,madrid-dortmund,madrid,False,False,False,madrid (3-2) dortmund
-2014.0,qtr,psg-chelsea,chelsea,False,True,False,"psg (3-3) chelsea, chelsea won on away goals rule"
-2014.0,qtr,united-bayern,united,False,True,False,"united (3-3) bayern, united won on away goals rule"
+2014.0,qtr,psg-chelsea,chelsea,False,True,False,"psg (3-3) chelsea, chelsea won on away goals"
+2014.0,qtr,united-bayern,united,False,True,False,"united (3-3) bayern, united won on away goals"
 2014.0,semi,atletico-chelsea,atletico,False,False,False,atletico (3-1) chelsea
 2014.0,semi,madrid-bayern,madrid,False,False,False,madrid (5-0) bayern
-2015.0,first,arsenal-monaco,monaco,False,True,False,"arsenal (3-3) monaco, monaco won on away goals rule"
+2015.0,first,arsenal-monaco,monaco,False,True,False,"arsenal (3-3) monaco, monaco won on away goals"
 2015.0,first,basel-porto,porto,False,False,False,basel (1-5) porto
-2015.0,first,city-barcelona,barcelona,False,True,False,"city (2-2) barcelona, barcelona won on away goals rule"
+2015.0,first,city-barcelona,barcelona,False,True,False,"city (2-2) barcelona, barcelona won on away goals"
 2015.0,first,juventus-dortmund,juventus,False,False,False,juventus (4-2) dortmund
 2015.0,first,leverkusen-atletico,atletico,True,False,True,"leverkusen (1-1 aet) atletico, atletico won on penalties"
-2015.0,first,psg-chelsea,chelsea,False,True,True,"psg (3-3 aet) chelsea, chelsea won on away goals rule"
+2015.0,first,psg-chelsea,chelsea,False,True,True,"psg (3-3 aet) chelsea, chelsea won on away goals"
 2015.0,first,schalke-madrid,madrid,False,False,False,schalke (4-5) madrid
 2015.0,first,shakhtar-bayern,bayern,False,False,False,shakhtar (0-7) bayern
 2015.0,qtr,atletico-madrid,madrid,False,False,False,atletico (0-1) madrid
@@ -123,11 +123,11 @@ season,round,tie,winner,pk,agr,aet,result
 2016.0,qtr,munich-benfica,munich,False,False,False,munich (3-2) benfica
 2016.0,qtr,psg-city,city,False,False,False,psg (2-3) city
 2016.0,qtr,wolfsburg-madrid,madrid,False,False,False,wolfsburg (2-3) madrid
-2016.0,semi,atletico-bayern,atletico,False,True,False,"atletico (2-2) bayern, atletico won on away goals rule"
+2016.0,semi,atletico-bayern,atletico,False,True,False,"atletico (2-2) bayern, atletico won on away goals"
 2016.0,semi,city-madrid,madrid,False,False,False,city (0-1) madrid
 2017.0,first,benfica-dortmund,dortmund,False,False,False,benfica (1-4) dortmund
-2017.0,first,city-monaco,monaco,False,True,False,"city (6-6) monaco, monaco won on away goals rule"
-2017.0,first,leverkusen-atletico,atletico,False,True,False,"leverkusen (3-3) atletico, atletico won on away goals rule"
+2017.0,first,city-monaco,monaco,False,True,False,"city (6-6) monaco, monaco won on away goals"
+2017.0,first,leverkusen-atletico,atletico,False,True,False,"leverkusen (3-3) atletico, atletico won on away goals"
 2017.0,first,madrid-napoli,madrid,False,False,False,madrid (6-2) napoli
 2017.0,first,munich-arsenal,munich,False,False,False,munich (10-2) arsenal
 2017.0,first,porto-juventus,juventus,False,False,False,porto (0-3) juventus
