@@ -114,28 +114,50 @@ season,round,tie,winner,pk,agr,aet,result
 2016,first,arsenal-barcelona,barcelona,False,False,False,arsenal (1-5) barcelona
 2016,first,benfica-zenit,benfica,False,False,False,benfica (3-1) zenit
 2016,first,gent-wolfsburg,wolfsburg,False,False,False,gent (2-4) wolfsburg
-2016,first,juventus-munich,munich,False,False,True,juventus (4-6 aet) munich
+2016,first,juventus-bayern,bayern,False,False,True,juventus (4-6 aet) bayern
 2016,first,kyiv-city,city,False,False,False,kyiv (1-3) city
 2016,first,psg-chelsea,psg,False,False,False,psg (5-1) chelsea
 2016,first,psv-atletico,psv,True,False,True,"psv (0-0 aet) atletico, psv won on penalties"
 2016,first,roma-madrid,madrid,False,False,False,roma (0-4) madrid
 2016,qtr,barcelona-atletico,atletico,False,False,False,barcelona (2-3) atletico
-2016,qtr,munich-benfica,munich,False,False,False,munich (3-2) benfica
+2016,qtr,bayern-benfica,bayern,False,False,False,bayern (3-2) benfica
 2016,qtr,psg-city,city,False,False,False,psg (2-3) city
 2016,qtr,wolfsburg-madrid,madrid,False,False,False,wolfsburg (2-3) madrid
 2016,semi,atletico-bayern,atletico,False,True,False,"atletico (2-2) bayern, atletico won on away goals"
 2016,semi,city-madrid,madrid,False,False,False,city (0-1) madrid
+2017,first,bayern-arsenal,bayern,False,False,False,bayern (10-2) arsenal
 2017,first,benfica-dortmund,dortmund,False,False,False,benfica (1-4) dortmund
 2017,first,city-monaco,monaco,False,True,False,"city (6-6) monaco, monaco won on away goals"
 2017,first,leverkusen-atletico,atletico,False,True,False,"leverkusen (3-3) atletico, atletico won on away goals"
 2017,first,madrid-napoli,madrid,False,False,False,madrid (6-2) napoli
-2017,first,munich-arsenal,munich,False,False,False,munich (10-2) arsenal
 2017,first,porto-juventus,juventus,False,False,False,porto (0-3) juventus
 2017,first,psg-barcelona,barcelona,False,False,False,psg (5-6) barcelona
 2017,first,sevilla-leicester,leicester,False,False,False,sevilla (2-3) leicester
 2017,qtr,atletico-leicester,atletico,False,False,False,atletico (2-1) leicester
+2017,qtr,bayern-madrid,madrid,False,False,True,bayern (3-6 aet) madrid
 2017,qtr,dortmund-monaco,monaco,False,False,False,dortmund (3-6) monaco
 2017,qtr,juventus-barcelona,juventus,False,False,False,juventus (3-0) barcelona
-2017,qtr,munich-madrid,madrid,False,False,True,munich (3-6 aet) madrid
 2017,semi,madrid-atletico,madrid,False,False,False,madrid (4-2) atletico
 2017,semi,monaco-juventus,juventus,False,False,False,monaco (1-4) juventus
+2018,first,basel-city,city,False,False,False,basel (2-5) city
+2018,first,bayern-besiktas,bayern,False,False,False,bayern (8-1) besiktas
+2018,first,chelsea-barcelona,barcelona,False,False,False,chelsea (1-4) barcelona
+2018,first,juventus-tottenham,tottenham,False,False,False,juventus (2-5) tottenham
+2018,first,madrid-psg,madrid,False,False,False,madrid (5-2) psg
+2018,first,porto-liverpool,liverpool,False,False,False,porto (0-5) liverpool
+2018,first,sevilla-united,sevilla,False,False,False,sevilla (2-1) united
+2018,first,shakhtar-roma,shakhtar,False,False,False,shakhtar (3-1) roma
+2018,qtr,barcelona-roma,roma,False,True,False,"barcelona (4-4) roma, roma won on away goals"
+2018,qtr,juventus-madrid,madrid,False,False,False,juventus (3-4) madrid
+2018,qtr,liverpool-city,liverpool,False,False,False,liverpool (5-1) city
+2018,qtr,sevilla-bayern,bayern,False,False,False,sevilla (1-2) bayern
+2018,semi,bayern-madrid,madrid,False,False,False,bayern (3-4) madrid
+2018,semi,liverpool-roma,liverpool,False,False,False,liverpool (7-6) roma
+2019,first,ajax-madrid,ajax,False,False,False,ajax (5-3) madrid
+2019,first,atletico-juventus,juventus,False,False,False,atletico (2-3) juventus
+2019,first,liverpool-bayern,liverpool,False,False,False,liverpool (3-1) bayern
+2019,first,lyon-barcelona,barcelona,False,False,False,lyon (1-5) barcelona
+2019,first,roma-porto,porto,False,False,True,roma (3-4 aet) porto
+2019,first,schalke-city,city,False,False,False,schalke (2-10) city
+2019,first,tottenham-dortmund,tottenham,False,False,False,tottenham (4-0) dortmund
+2019,first,united-psg,united,False,True,False,"united (3-3) psg, united won on away goals"
