@@ -26,10 +26,14 @@ model.simple = locfit(t1win ~ made_minute + t1goaldiff + t1awaygoaldiff, data = 
 
 
 ```{r}
-model.odds = locfit(t1win ~ made_minute + t1goaldiff + t1awaygoaldiff +
-                      homewing1 + awaywing1 + homewing2 + awaywing2,
-                    data = matrix,
-                    family = 'binomial')
+rhs = lp(matrix$made_minute, matrix$t1goaldiff, matrix$t1awaygoaldiff,
+         matrix$homewing1, matrix$awaywing1, matrix$homewing2, matrix$awaywing2)
+
+model.odds = locfit.raw(
+  x = rhs,
+  y = matrix$t1win,
+  family = 'binomial'
+)
 ```
 
 ```{r}
