@@ -12,6 +12,11 @@ library(tidyverse)
 ```
 
 ```{r}
+results = read_csv('processed/results.csv')
+```
+
+
+```{r}
 matrix  = read_csv('processed/minute-matrix.csv')
 ```
 
@@ -119,18 +124,26 @@ proberrorN %>%
 ```
 
 ```{r}
-# multiplestoppagetimegoals = winprob %>% 
-#   group_by(season, round, tie, made_minute) %>% 
-#   count() %>% 
-#   filter(n > 1)
-
-# multiplestoppagetimegoals
+winprob %>% 
+  group_by(season, round, tie, made_minute) %>%
+  count() %>%
+  filter(n > 1)
 ```
 
 ```{r}
-y = 2019
-r = 'first'
-t = 'lyon-barcelona'
+winprob %>% 
+  group_by(season, round, tie) %>% 
+  mutate(wpdiff = abs(pregameodds - lag(pregameodds))) %>% 
+  drop_na(away) %>% 
+  arrange(-wpdiff) %>% 
+  head(30) %>% 
+  select(season, round, tie, made_minute, t1win, away, wpdiff)
+```
+
+```{r}
+y = 2018
+r = 'qtr'
+t = 'barcelona-roma'
 
 winprob %>% 
   filter(season == y) %>% 
@@ -150,6 +163,5 @@ winprob %>%
 ```
 
 ```{r}
-write_csv(winprob, 'analysis/winprob-model.csv')
+write_csv(winprob, 'analysis/winprob-model.csv', na = '')
 ```
-

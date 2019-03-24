@@ -8,16 +8,32 @@ library(locfit)
 library(tidyverse)
 ```
 
-    ## ── Attaching packages ────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
+    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
 
     ## ✔ ggplot2 3.0.0     ✔ purrr   0.2.5
     ## ✔ tibble  1.4.2     ✔ dplyr   0.7.6
     ## ✔ tidyr   0.8.1     ✔ stringr 1.3.1
     ## ✔ readr   1.1.1     ✔ forcats 0.3.0
 
-    ## ── Conflicts ───────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
     ## ✖ dplyr::filter() masks stats::filter()
     ## ✖ dplyr::lag()    masks stats::lag()
+
+``` r
+results = read_csv('processed/results.csv')
+```
+
+    ## Parsed with column specification:
+    ## cols(
+    ##   season = col_integer(),
+    ##   round = col_character(),
+    ##   tie = col_character(),
+    ##   winner = col_character(),
+    ##   pk = col_character(),
+    ##   agr = col_character(),
+    ##   aet = col_character(),
+    ##   result = col_character()
+    ## )
 
 ``` r
 matrix  = read_csv('processed/minute-matrix.csv')
@@ -131,7 +147,7 @@ errors %>%
   theme_minimal()
 ```
 
-![](model_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](model_files/figure-markdown_github/unnamed-chunk-9-1.png)
 
 ``` r
 proberrorN = winprob %>% 
@@ -175,21 +191,54 @@ proberrorN %>%
   geom_abline(slope = 1, intercept = 0, linetype = "dashed")
 ```
 
-![](model_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![](model_files/figure-markdown_github/unnamed-chunk-10-1.png)
 
 ``` r
-# multiplestoppagetimegoals = winprob %>% 
-#   group_by(season, round, tie, made_minute) %>% 
-#   count() %>% 
-#   filter(n > 1)
-
-# multiplestoppagetimegoals
+winprob %>% 
+  group_by(season, round, tie, made_minute) %>%
+  count() %>%
+  filter(n > 1)
 ```
 
+    ## # A tibble: 4 x 5
+    ## # Groups:   season, round, tie, made_minute [4]
+    ##   season round tie             made_minute     n
+    ##    <int> <chr> <chr>                 <dbl> <int>
+    ## 1   2012 first marseille-inter         184     2
+    ## 2   2013 qtr   malaga-dortmund         184     2
+    ## 3   2015 first arsenal-monaco           92     2
+    ## 4   2017 first psg-barcelona           184     2
+
 ``` r
-y = 2019
-r = 'first'
-t = 'lyon-barcelona'
+winprob %>% 
+  group_by(season, round, tie) %>% 
+  mutate(wpdiff = abs(pregameodds - lag(pregameodds))) %>% 
+  drop_na(away) %>% 
+  arrange(-wpdiff) %>% 
+  head(30) %>% 
+  select(season, round, tie, made_minute, t1win, away, wpdiff)
+```
+
+    ## # A tibble: 30 x 7
+    ## # Groups:   season, round, tie [28]
+    ##    season round tie                made_minute t1win away  wpdiff
+    ##     <int> <chr> <chr>                    <dbl> <int> <chr>  <dbl>
+    ##  1   2009 semi  barcelona-chelsea          184     1 a      0.675
+    ##  2   2012 first marseille-inter            184     1 a      0.636
+    ##  3   2009 first arsenal-roma               217     1 a      0.618
+    ##  4   2010 first bayern-fiorentina          153     1 a      0.590
+    ##  5   2018 first juventus-tottenham         160     1 a      0.583
+    ##  6   2019 first united-psg                 184     1 a      0.576
+    ##  7   2017 qtr   bayern-madrid              151     0 a      0.575
+    ##  8   2013 first madrid-united              159     1 a      0.574
+    ##  9   2015 first psg-chelsea                209     0 a      0.573
+    ## 10   2008 semi  liverpool-chelsea          157     0 a      0.557
+    ## # ... with 20 more rows
+
+``` r
+y = 2018
+r = 'qtr'
+t = 'barcelona-roma'
 
 winprob %>% 
   filter(season == y) %>% 
@@ -208,8 +257,8 @@ winprob %>%
   ylab("Win probability")
 ```
 
-![](model_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](model_files/figure-markdown_github/unnamed-chunk-13-1.png)
 
 ``` r
-write_csv(winprob, 'analysis/winprob-model.csv')
+write_csv(winprob, 'analysis/winprob-model.csv', na = '')
 ```
