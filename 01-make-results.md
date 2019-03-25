@@ -17,10 +17,6 @@ library(tidyverse)
     ## ✖ dplyr::lag()    masks stats::lag()
 
 ``` r
-library(broom)
-```
-
-``` r
 EQUIPOS = read_delim('raw/teamcrosswalk.psv', delim = '|')
 ```
 
@@ -201,4 +197,38 @@ get_tie_result = function(goals) {
 results = goles %>% 
   group_by(season, round, tie) %>% 
   do(get_tie_result(.))
+```
+
+``` r
+head(results)
+```
+
+    ## # A tibble: 6 x 8
+    ## # Groups:   season, round, tie [6]
+    ##   season round tie        winner  pk    agr   aet   result                
+    ##    <int> <chr> <chr>      <chr>   <lgl> <lgl> <lgl> <chr>                 
+    ## 1   2008 first arsenal-m… arsenal FALSE FALSE FALSE Arsenal (2-0) AC Milan
+    ## 2   2008 first celtic-ba… barcel… FALSE FALSE FALSE Celtic (2-4) Barcelona
+    ## 3   2008 first fenerbahc… fenerb… TRUE  FALSE TRUE  Fenerbahce (5-5 aet) …
+    ## 4   2008 first liverpool… liverp… FALSE FALSE FALSE Liverpool (3-0) Inter 
+    ## 5   2008 first lyon-unit… united  FALSE FALSE FALSE Lyon (1-2) Manchester…
+    ## 6   2008 first olympiaco… chelsea FALSE FALSE FALSE Olympiakos Piraeus (0…
+
+``` r
+tail(results)
+```
+
+    ## # A tibble: 6 x 8
+    ## # Groups:   season, round, tie [6]
+    ##   season round tie       winner  pk    agr   aet   result                 
+    ##    <int> <chr> <chr>     <chr>   <lgl> <lgl> <lgl> <chr>                  
+    ## 1   2019 first liverpoo… liverp… FALSE FALSE FALSE Liverpool (3-1) Bayern…
+    ## 2   2019 first lyon-bar… barcel… FALSE FALSE FALSE Lyon (1-5) Barcelona   
+    ## 3   2019 first roma-por… porto   FALSE FALSE TRUE  AS Roma (3-4 aet) FC P…
+    ## 4   2019 first schalke-… city    FALSE FALSE FALSE Schalke (2-10) Manches…
+    ## 5   2019 first tottenha… totten… FALSE FALSE FALSE Tottenham (4-0) Dortmu…
+    ## 6   2019 first united-p… united  FALSE TRUE  FALSE Manchester Utd (3-3) P…
+
+``` r
+write_csv(results, 'processed/results.csv')
 ```

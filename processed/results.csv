@@ -1,163 +1,163 @@
 season,round,tie,winner,pk,agr,aet,result
-2008,first,arsenal-milan,arsenal,False,False,False,Arsenal (2-0) AC Milan
-2008,first,celtic-barcelona,barcelona,False,False,False,Celtic (2-4) Barcelona
-2008,first,fenerbahce-sevilla,fenerbahce,True,False,True,"Fenerbahce (5-5 aet) Sevilla, Fenerbahce won on penalties"
-2008,first,liverpool-inter,liverpool,False,False,False,Liverpool (3-0) Inter
-2008,first,lyon-united,united,False,False,False,Lyon (1-2) Manchester Utd
-2008,first,olympiacos-chelsea,chelsea,False,False,False,Olympiakos Piraeus (0-3) Chelsea
-2008,first,roma-madrid,roma,False,False,False,AS Roma (4-2) Real Madrid
-2008,first,schalke-porto,schalke,True,False,True,"Schalke (1-1 aet) FC Porto, Schalke won on penalties"
-2008,qtr,arsenal-liverpool,liverpool,False,False,False,Arsenal (3-5) Liverpool
-2008,qtr,fenerbahce-chelsea,chelsea,False,False,False,Fenerbahce (2-3) Chelsea
-2008,qtr,roma-united,united,False,False,False,AS Roma (0-3) Manchester Utd
-2008,qtr,schalke-barcelona,barcelona,False,False,False,Schalke (0-2) Barcelona
-2008,semi,barcelona-united,united,False,False,False,Barcelona (0-1) Manchester Utd
-2008,semi,liverpool-chelsea,chelsea,False,False,True,Liverpool (3-4 aet) Chelsea
-2009,first,arsenal-roma,arsenal,True,False,True,"Arsenal (1-1 aet) AS Roma, Arsenal won on penalties"
-2009,first,atletico-porto,porto,False,True,False,"Atl. Madrid (2-2) FC Porto, FC Porto won on away goals"
-2009,first,chelsea-juventus,chelsea,False,False,False,Chelsea (3-2) Juventus
-2009,first,inter-united,united,False,False,False,Inter (0-2) Manchester Utd
-2009,first,lyon-barcelona,barcelona,False,False,False,Lyon (3-6) Barcelona
-2009,first,madrid-liverpool,liverpool,False,False,False,Real Madrid (0-5) Liverpool
-2009,first,sporting-bayern,bayern,False,False,False,Sporting (1-12) Bayern Munich
-2009,first,villareal-panathinaikos,villareal,False,False,False,Villarreal (3-2) Panathinaikos
-2009,qtr,barcelona-bayern,barcelona,False,False,False,Barcelona (5-1) Bayern Munich
-2009,qtr,liverpool-chelsea,chelsea,False,False,False,Liverpool (5-7) Chelsea
-2009,qtr,united-porto,united,False,False,False,Manchester Utd (3-2) FC Porto
-2009,qtr,villareal-arsenal,arsenal,False,False,False,Villarreal (1-4) Arsenal
-2009,semi,barcelona-chelsea,barcelona,False,True,False,"Barcelona (1-1) Chelsea, Barcelona won on away goals"
-2009,semi,united-arsenal,united,False,False,False,Manchester Utd (4-1) Arsenal
-2010,first,bayern-fiorentina,bayern,False,True,False,"Bayern Munich (4-4) Fiorentina, Bayern Munich won on away goals"
-2010,first,cska-sevilla,cska,False,False,False,CSKA Moscow (3-2) Sevilla
-2010,first,inter-chelsea,inter,False,False,False,Inter (3-1) Chelsea
-2010,first,lyon-madrid,lyon,False,False,False,Lyon (2-1) Real Madrid
-2010,first,milan-united,united,False,False,False,AC Milan (2-7) Manchester Utd
-2010,first,olympiacos-bordeaux,bordeaux,False,False,False,Olympiakos Piraeus (1-3) Bordeaux
-2010,first,porto-arsenal,arsenal,False,False,False,FC Porto (2-6) Arsenal
-2010,first,stuttgart-barcelona,barcelona,False,False,False,Stuttgart (1-5) Barcelona
-2010,qtr,arsenal-barcelona,barcelona,False,False,False,Arsenal (3-6) Barcelona
-2010,qtr,bayern-united,bayern,False,True,False,"Bayern Munich (4-4) Manchester Utd, Bayern Munich won on away goals"
-2010,qtr,inter-cska,inter,False,False,False,Inter (2-0) CSKA Moscow
-2010,qtr,lyon-bordeaux,lyon,False,False,False,Lyon (3-2) Bordeaux
-2010,semi,bayern-lyon,bayern,False,False,False,Bayern Munich (4-0) Lyon
-2010,semi,inter-barcelona,inter,False,False,False,Inter (3-2) Barcelona
-2011,first,arsenal-barcelona,barcelona,False,False,False,Arsenal (3-4) Barcelona
-2011,first,copenhagen-chelsea,chelsea,False,False,False,FC Copenhagen (0-2) Chelsea
-2011,first,inter-bayern,inter,False,True,False,"Inter (3-3) Bayern Munich, Inter won on away goals"
-2011,first,lyon-madrid,madrid,False,False,False,Lyon (1-4) Real Madrid
-2011,first,marseille-united,united,False,False,False,Marseille (1-2) Manchester Utd
-2011,first,milan-tottenham,tottenham,False,False,False,AC Milan (0-1) Tottenham
-2011,first,roma-shakhtar,shakhtar,False,False,False,AS Roma (2-6) Shakhtar Donetsk
-2011,first,valencia-schalke,schalke,False,False,False,Valencia (2-4) Schalke
-2011,qtr,barcelona-shakhtar,barcelona,False,False,False,Barcelona (6-1) Shakhtar Donetsk
-2011,qtr,chelsea-united,united,False,False,False,Chelsea (1-3) Manchester Utd
-2011,qtr,inter-schalke,schalke,False,False,False,Inter (3-7) Schalke
-2011,qtr,madrid-tottenham,madrid,False,False,False,Real Madrid (5-0) Tottenham
-2011,semi,madrid-barcelona,barcelona,False,False,False,Real Madrid (1-3) Barcelona
-2011,semi,schalke-united,united,False,False,False,Schalke (1-6) Manchester Utd
-2012,first,basel-bayern,bayern,False,False,False,Basel (1-7) Bayern Munich
-2012,first,cska-madrid,madrid,False,False,False,CSKA Moscow (2-5) Real Madrid
-2012,first,leverkusen-barcelona,barcelona,False,False,False,Bayer Leverkusen (2-10) Barcelona
-2012,first,lyon-apoel,apoel,True,False,True,"Lyon (1-1 aet) APOEL, APOEL won on penalties"
-2012,first,marseille-inter,marseille,False,True,False,"Marseille (2-2) Inter, Marseille won on away goals"
-2012,first,milan-arsenal,milan,False,False,False,AC Milan (4-3) Arsenal
-2012,first,napoli-chelsea,chelsea,False,False,True,Napoli (4-5 aet) Chelsea
-2012,first,zenit-benfica,benfica,False,False,False,Zenit Petersburg (3-4) Benfica
-2012,qtr,apoel-madrid,madrid,False,False,False,APOEL (2-8) Real Madrid
-2012,qtr,benfica-chelsea,chelsea,False,False,False,Benfica (1-3) Chelsea
-2012,qtr,marseille-bayern,bayern,False,False,False,Marseille (0-4) Bayern Munich
-2012,qtr,milan-barcelona,barcelona,False,False,False,AC Milan (1-3) Barcelona
-2012,semi,barcelona-chelsea,barcelona,False,False,False,Barcelona (3-2) Chelsea
-2012,semi,bayern-madrid,bayern,True,False,True,"Bayern Munich (3-3 aet) Real Madrid, Bayern Munich won on penalties"
-2013,first,arsenal-bayern,bayern,False,True,False,"Arsenal (3-3) Bayern Munich, Bayern Munich won on away goals"
-2013,first,celtic-juventus,juventus,False,False,False,Celtic (0-5) Juventus
-2013,first,galatasaray-schalke,galatasaray,False,False,False,Galatasaray (4-3) Schalke
-2013,first,madrid-united,madrid,False,False,False,Real Madrid (3-2) Manchester Utd
-2013,first,milan-barcelona,barcelona,False,False,False,AC Milan (2-4) Barcelona
-2013,first,porto-malaga,malaga,False,False,False,FC Porto (1-2) Malaga
-2013,first,shakhtar-dortmund,dortmund,False,False,False,Shakhtar Donetsk (2-5) Dortmund
-2013,first,valencia-psg,psg,False,False,False,Valencia (2-3) Paris SG
-2013,qtr,bayern-juventus,bayern,False,False,False,Bayern Munich (4-0) Juventus
-2013,qtr,madrid-galatasaray,madrid,False,False,False,Real Madrid (5-3) Galatasaray
-2013,qtr,malaga-dortmund,dortmund,False,False,False,Malaga (2-3) Dortmund
-2013,qtr,psg-barcelona,barcelona,False,True,False,"Paris SG (3-3) Barcelona, Barcelona won on away goals"
-2013,semi,bayern-barcelona,bayern,False,False,False,Bayern Munich (7-0) Barcelona
-2013,semi,dortmund-madrid,dortmund,False,False,False,Dortmund (4-3) Real Madrid
-2014,first,arsenal-bayern,arsenal,False,False,False,Arsenal (3-1) Bayern Munich
-2014,first,city-barcelona,barcelona,False,False,False,Manchester City (0-5) Barcelona
-2014,first,galatasaray-chelsea,chelsea,False,False,False,Galatasaray (1-3) Chelsea
-2014,first,leverkusen-psg,psg,False,False,False,Bayer Leverkusen (1-6) Paris SG
-2014,first,milan-atletico,atletico,False,False,False,AC Milan (1-5) Atl. Madrid
-2014,first,olympiacos-united,united,False,False,False,Olympiakos Piraeus (2-3) Manchester Utd
-2014,first,schalke-madrid,madrid,False,False,False,Schalke (2-9) Real Madrid
-2014,first,zenit-dortmund,dortmund,False,False,False,Zenit Petersburg (4-5) Dortmund
-2014,qtr,barcelona-atletico,atletico,False,False,False,Barcelona (1-2) Atl. Madrid
-2014,qtr,madrid-dortmund,madrid,False,False,False,Real Madrid (3-2) Dortmund
-2014,qtr,psg-chelsea,chelsea,False,True,False,"Paris SG (3-3) Chelsea, Chelsea won on away goals"
-2014,qtr,united-bayern,united,False,True,False,"Manchester Utd (3-3) Bayern Munich, Manchester Utd won on away goals"
-2014,semi,atletico-chelsea,atletico,False,False,False,Atl. Madrid (3-1) Chelsea
-2014,semi,madrid-bayern,madrid,False,False,False,Real Madrid (5-0) Bayern Munich
-2015,first,arsenal-monaco,monaco,False,True,False,"Arsenal (3-3) Monaco, Monaco won on away goals"
-2015,first,basel-porto,porto,False,False,False,Basel (1-5) FC Porto
-2015,first,city-barcelona,barcelona,False,True,False,"Manchester City (2-2) Barcelona, Barcelona won on away goals"
-2015,first,juventus-dortmund,juventus,False,False,False,Juventus (4-2) Dortmund
-2015,first,leverkusen-atletico,atletico,True,False,True,"Bayer Leverkusen (1-1 aet) Atl. Madrid, Atl. Madrid won on penalties"
-2015,first,psg-chelsea,chelsea,False,True,True,"Paris SG (3-3 aet) Chelsea, Chelsea won on away goals"
-2015,first,schalke-madrid,madrid,False,False,False,Schalke (4-5) Real Madrid
-2015,first,shakhtar-bayern,bayern,False,False,False,Shakhtar Donetsk (0-7) Bayern Munich
-2015,qtr,atletico-madrid,madrid,False,False,False,Atl. Madrid (0-1) Real Madrid
-2015,qtr,juventus-monaco,juventus,False,False,False,Juventus (1-0) Monaco
-2015,qtr,porto-bayern,bayern,False,False,False,FC Porto (4-7) Bayern Munich
-2015,qtr,psg-barcelona,barcelona,False,False,False,Paris SG (1-5) Barcelona
-2015,semi,barcelona-bayern,barcelona,False,False,False,Barcelona (5-3) Bayern Munich
-2015,semi,juventus-madrid,juventus,False,False,False,Juventus (3-2) Real Madrid
-2016,first,arsenal-barcelona,barcelona,False,False,False,Arsenal (1-5) Barcelona
-2016,first,benfica-zenit,benfica,False,False,False,Benfica (3-1) Zenit Petersburg
-2016,first,gent-wolfsburg,wolfsburg,False,False,False,Gent (2-4) Wolfsburg
-2016,first,juventus-bayern,bayern,False,False,True,Juventus (4-6 aet) Bayern Munich
-2016,first,kyiv-city,city,False,False,False,Dyn. Kyiv (1-3) Manchester City
-2016,first,psg-chelsea,psg,False,False,False,Paris SG (5-1) Chelsea
-2016,first,psv-atletico,psv,True,False,True,"PSV (0-0 aet) Atl. Madrid, PSV won on penalties"
-2016,first,roma-madrid,madrid,False,False,False,AS Roma (0-4) Real Madrid
-2016,qtr,barcelona-atletico,atletico,False,False,False,Barcelona (2-3) Atl. Madrid
-2016,qtr,bayern-benfica,bayern,False,False,False,Bayern Munich (3-2) Benfica
-2016,qtr,psg-city,city,False,False,False,Paris SG (2-3) Manchester City
-2016,qtr,wolfsburg-madrid,madrid,False,False,False,Wolfsburg (2-3) Real Madrid
-2016,semi,atletico-bayern,atletico,False,True,False,"Atl. Madrid (2-2) Bayern Munich, Atl. Madrid won on away goals"
-2016,semi,city-madrid,madrid,False,False,False,Manchester City (0-1) Real Madrid
-2017,first,bayern-arsenal,bayern,False,False,False,Bayern Munich (10-2) Arsenal
-2017,first,benfica-dortmund,dortmund,False,False,False,Benfica (1-4) Dortmund
-2017,first,city-monaco,monaco,False,True,False,"Manchester City (6-6) Monaco, Monaco won on away goals"
-2017,first,leverkusen-atletico,atletico,False,True,False,"Bayer Leverkusen (3-3) Atl. Madrid, Atl. Madrid won on away goals"
-2017,first,madrid-napoli,madrid,False,False,False,Real Madrid (6-2) Napoli
-2017,first,porto-juventus,juventus,False,False,False,FC Porto (0-3) Juventus
-2017,first,psg-barcelona,barcelona,False,False,False,Paris SG (5-6) Barcelona
-2017,first,sevilla-leicester,leicester,False,False,False,Sevilla (2-3) Leicester
-2017,qtr,atletico-leicester,atletico,False,False,False,Atl. Madrid (2-1) Leicester
-2017,qtr,bayern-madrid,madrid,False,False,True,Bayern Munich (3-6 aet) Real Madrid
-2017,qtr,dortmund-monaco,monaco,False,False,False,Dortmund (3-6) Monaco
-2017,qtr,juventus-barcelona,juventus,False,False,False,Juventus (3-0) Barcelona
-2017,semi,madrid-atletico,madrid,False,False,False,Real Madrid (4-2) Atl. Madrid
-2017,semi,monaco-juventus,juventus,False,False,False,Monaco (1-4) Juventus
-2018,first,basel-city,city,False,False,False,Basel (2-5) Manchester City
-2018,first,bayern-besiktas,bayern,False,False,False,Bayern Munich (8-1) Besiktas
-2018,first,chelsea-barcelona,barcelona,False,False,False,Chelsea (1-4) Barcelona
-2018,first,juventus-tottenham,juventus,False,False,False,Juventus (4-3) Tottenham
-2018,first,madrid-psg,madrid,False,False,False,Real Madrid (5-2) Paris SG
-2018,first,porto-liverpool,liverpool,False,False,False,FC Porto (0-5) Liverpool
-2018,first,sevilla-united,sevilla,False,False,False,Sevilla (2-1) Manchester Utd
-2018,first,shakhtar-roma,shakhtar,False,False,False,Shakhtar Donetsk (3-1) AS Roma
-2018,qtr,barcelona-roma,roma,False,True,False,"Barcelona (4-4) AS Roma, AS Roma won on away goals"
-2018,qtr,juventus-madrid,madrid,False,False,False,Juventus (3-4) Real Madrid
-2018,qtr,liverpool-city,liverpool,False,False,False,Liverpool (5-1) Manchester City
-2018,qtr,sevilla-bayern,bayern,False,False,False,Sevilla (1-2) Bayern Munich
-2018,semi,bayern-madrid,madrid,False,False,False,Bayern Munich (3-4) Real Madrid
-2018,semi,liverpool-roma,liverpool,False,False,False,Liverpool (7-6) AS Roma
-2019,first,ajax-madrid,ajax,False,False,False,Ajax (5-3) Real Madrid
-2019,first,atletico-juventus,juventus,False,False,False,Atl. Madrid (2-3) Juventus
-2019,first,liverpool-bayern,liverpool,False,False,False,Liverpool (3-1) Bayern Munich
-2019,first,lyon-barcelona,barcelona,False,False,False,Lyon (1-5) Barcelona
-2019,first,roma-porto,porto,False,False,True,AS Roma (3-4 aet) FC Porto
-2019,first,schalke-city,city,False,False,False,Schalke (2-10) Manchester City
-2019,first,tottenham-dortmund,tottenham,False,False,False,Tottenham (4-0) Dortmund
-2019,first,united-psg,united,False,True,False,"Manchester Utd (3-3) Paris SG, Manchester Utd won on away goals"
+2008,first,arsenal-milan,arsenal,FALSE,FALSE,FALSE,Arsenal (2-0) AC Milan
+2008,first,celtic-barcelona,barcelona,FALSE,FALSE,FALSE,Celtic (2-4) Barcelona
+2008,first,fenerbahce-sevilla,fenerbahce,TRUE,FALSE,TRUE,"Fenerbahce (5-5 aet) Sevilla, Fenerbahce won on penalties"
+2008,first,liverpool-inter,liverpool,FALSE,FALSE,FALSE,Liverpool (3-0) Inter
+2008,first,lyon-united,united,FALSE,FALSE,FALSE,Lyon (1-2) Manchester Utd
+2008,first,olympiacos-chelsea,chelsea,FALSE,FALSE,FALSE,Olympiakos Piraeus (0-3) Chelsea
+2008,first,roma-madrid,roma,FALSE,FALSE,FALSE,AS Roma (4-2) Real Madrid
+2008,first,schalke-porto,schalke,TRUE,FALSE,TRUE,"Schalke (1-1 aet) FC Porto, Schalke won on penalties"
+2008,qtr,arsenal-liverpool,liverpool,FALSE,FALSE,FALSE,Arsenal (3-5) Liverpool
+2008,qtr,fenerbahce-chelsea,chelsea,FALSE,FALSE,FALSE,Fenerbahce (2-3) Chelsea
+2008,qtr,roma-united,united,FALSE,FALSE,FALSE,AS Roma (0-3) Manchester Utd
+2008,qtr,schalke-barcelona,barcelona,FALSE,FALSE,FALSE,Schalke (0-2) Barcelona
+2008,semi,barcelona-united,united,FALSE,FALSE,FALSE,Barcelona (0-1) Manchester Utd
+2008,semi,liverpool-chelsea,chelsea,FALSE,FALSE,TRUE,Liverpool (3-4 aet) Chelsea
+2009,first,arsenal-roma,arsenal,TRUE,FALSE,TRUE,"Arsenal (1-1 aet) AS Roma, Arsenal won on penalties"
+2009,first,atletico-porto,porto,FALSE,TRUE,FALSE,"Atl. Madrid (2-2) FC Porto, FC Porto won on away goals"
+2009,first,chelsea-juventus,chelsea,FALSE,FALSE,FALSE,Chelsea (3-2) Juventus
+2009,first,inter-united,united,FALSE,FALSE,FALSE,Inter (0-2) Manchester Utd
+2009,first,lyon-barcelona,barcelona,FALSE,FALSE,FALSE,Lyon (3-6) Barcelona
+2009,first,madrid-liverpool,liverpool,FALSE,FALSE,FALSE,Real Madrid (0-5) Liverpool
+2009,first,sporting-bayern,bayern,FALSE,FALSE,FALSE,Sporting (1-12) Bayern Munich
+2009,first,villareal-panathinaikos,villareal,FALSE,FALSE,FALSE,Villarreal (3-2) Panathinaikos
+2009,qtr,barcelona-bayern,barcelona,FALSE,FALSE,FALSE,Barcelona (5-1) Bayern Munich
+2009,qtr,liverpool-chelsea,chelsea,FALSE,FALSE,FALSE,Liverpool (5-7) Chelsea
+2009,qtr,united-porto,united,FALSE,FALSE,FALSE,Manchester Utd (3-2) FC Porto
+2009,qtr,villareal-arsenal,arsenal,FALSE,FALSE,FALSE,Villarreal (1-4) Arsenal
+2009,semi,barcelona-chelsea,barcelona,FALSE,TRUE,FALSE,"Barcelona (1-1) Chelsea, Barcelona won on away goals"
+2009,semi,united-arsenal,united,FALSE,FALSE,FALSE,Manchester Utd (4-1) Arsenal
+2010,first,bayern-fiorentina,bayern,FALSE,TRUE,FALSE,"Bayern Munich (4-4) Fiorentina, Bayern Munich won on away goals"
+2010,first,cska-sevilla,cska,FALSE,FALSE,FALSE,CSKA Moscow (3-2) Sevilla
+2010,first,inter-chelsea,inter,FALSE,FALSE,FALSE,Inter (3-1) Chelsea
+2010,first,lyon-madrid,lyon,FALSE,FALSE,FALSE,Lyon (2-1) Real Madrid
+2010,first,milan-united,united,FALSE,FALSE,FALSE,AC Milan (2-7) Manchester Utd
+2010,first,olympiacos-bordeaux,bordeaux,FALSE,FALSE,FALSE,Olympiakos Piraeus (1-3) Bordeaux
+2010,first,porto-arsenal,arsenal,FALSE,FALSE,FALSE,FC Porto (2-6) Arsenal
+2010,first,stuttgart-barcelona,barcelona,FALSE,FALSE,FALSE,Stuttgart (1-5) Barcelona
+2010,qtr,arsenal-barcelona,barcelona,FALSE,FALSE,FALSE,Arsenal (3-6) Barcelona
+2010,qtr,bayern-united,bayern,FALSE,TRUE,FALSE,"Bayern Munich (4-4) Manchester Utd, Bayern Munich won on away goals"
+2010,qtr,inter-cska,inter,FALSE,FALSE,FALSE,Inter (2-0) CSKA Moscow
+2010,qtr,lyon-bordeaux,lyon,FALSE,FALSE,FALSE,Lyon (3-2) Bordeaux
+2010,semi,bayern-lyon,bayern,FALSE,FALSE,FALSE,Bayern Munich (4-0) Lyon
+2010,semi,inter-barcelona,inter,FALSE,FALSE,FALSE,Inter (3-2) Barcelona
+2011,first,arsenal-barcelona,barcelona,FALSE,FALSE,FALSE,Arsenal (3-4) Barcelona
+2011,first,copenhagen-chelsea,chelsea,FALSE,FALSE,FALSE,FC Copenhagen (0-2) Chelsea
+2011,first,inter-bayern,inter,FALSE,TRUE,FALSE,"Inter (3-3) Bayern Munich, Inter won on away goals"
+2011,first,lyon-madrid,madrid,FALSE,FALSE,FALSE,Lyon (1-4) Real Madrid
+2011,first,marseille-united,united,FALSE,FALSE,FALSE,Marseille (1-2) Manchester Utd
+2011,first,milan-tottenham,tottenham,FALSE,FALSE,FALSE,AC Milan (0-1) Tottenham
+2011,first,roma-shakhtar,shakhtar,FALSE,FALSE,FALSE,AS Roma (2-6) Shakhtar Donetsk
+2011,first,valencia-schalke,schalke,FALSE,FALSE,FALSE,Valencia (2-4) Schalke
+2011,qtr,barcelona-shakhtar,barcelona,FALSE,FALSE,FALSE,Barcelona (6-1) Shakhtar Donetsk
+2011,qtr,chelsea-united,united,FALSE,FALSE,FALSE,Chelsea (1-3) Manchester Utd
+2011,qtr,inter-schalke,schalke,FALSE,FALSE,FALSE,Inter (3-7) Schalke
+2011,qtr,madrid-tottenham,madrid,FALSE,FALSE,FALSE,Real Madrid (5-0) Tottenham
+2011,semi,madrid-barcelona,barcelona,FALSE,FALSE,FALSE,Real Madrid (1-3) Barcelona
+2011,semi,schalke-united,united,FALSE,FALSE,FALSE,Schalke (1-6) Manchester Utd
+2012,first,basel-bayern,bayern,FALSE,FALSE,FALSE,Basel (1-7) Bayern Munich
+2012,first,cska-madrid,madrid,FALSE,FALSE,FALSE,CSKA Moscow (2-5) Real Madrid
+2012,first,leverkusen-barcelona,barcelona,FALSE,FALSE,FALSE,Bayer Leverkusen (2-10) Barcelona
+2012,first,lyon-apoel,apoel,TRUE,FALSE,TRUE,"Lyon (1-1 aet) APOEL, APOEL won on penalties"
+2012,first,marseille-inter,marseille,FALSE,TRUE,FALSE,"Marseille (2-2) Inter, Marseille won on away goals"
+2012,first,milan-arsenal,milan,FALSE,FALSE,FALSE,AC Milan (4-3) Arsenal
+2012,first,napoli-chelsea,chelsea,FALSE,FALSE,TRUE,Napoli (4-5 aet) Chelsea
+2012,first,zenit-benfica,benfica,FALSE,FALSE,FALSE,Zenit Petersburg (3-4) Benfica
+2012,qtr,apoel-madrid,madrid,FALSE,FALSE,FALSE,APOEL (2-8) Real Madrid
+2012,qtr,benfica-chelsea,chelsea,FALSE,FALSE,FALSE,Benfica (1-3) Chelsea
+2012,qtr,marseille-bayern,bayern,FALSE,FALSE,FALSE,Marseille (0-4) Bayern Munich
+2012,qtr,milan-barcelona,barcelona,FALSE,FALSE,FALSE,AC Milan (1-3) Barcelona
+2012,semi,barcelona-chelsea,barcelona,FALSE,FALSE,FALSE,Barcelona (3-2) Chelsea
+2012,semi,bayern-madrid,bayern,TRUE,FALSE,TRUE,"Bayern Munich (3-3 aet) Real Madrid, Bayern Munich won on penalties"
+2013,first,arsenal-bayern,bayern,FALSE,TRUE,FALSE,"Arsenal (3-3) Bayern Munich, Bayern Munich won on away goals"
+2013,first,celtic-juventus,juventus,FALSE,FALSE,FALSE,Celtic (0-5) Juventus
+2013,first,galatasaray-schalke,galatasaray,FALSE,FALSE,FALSE,Galatasaray (4-3) Schalke
+2013,first,madrid-united,madrid,FALSE,FALSE,FALSE,Real Madrid (3-2) Manchester Utd
+2013,first,milan-barcelona,barcelona,FALSE,FALSE,FALSE,AC Milan (2-4) Barcelona
+2013,first,porto-malaga,malaga,FALSE,FALSE,FALSE,FC Porto (1-2) Malaga
+2013,first,shakhtar-dortmund,dortmund,FALSE,FALSE,FALSE,Shakhtar Donetsk (2-5) Dortmund
+2013,first,valencia-psg,psg,FALSE,FALSE,FALSE,Valencia (2-3) Paris SG
+2013,qtr,bayern-juventus,bayern,FALSE,FALSE,FALSE,Bayern Munich (4-0) Juventus
+2013,qtr,madrid-galatasaray,madrid,FALSE,FALSE,FALSE,Real Madrid (5-3) Galatasaray
+2013,qtr,malaga-dortmund,dortmund,FALSE,FALSE,FALSE,Malaga (2-3) Dortmund
+2013,qtr,psg-barcelona,barcelona,FALSE,TRUE,FALSE,"Paris SG (3-3) Barcelona, Barcelona won on away goals"
+2013,semi,bayern-barcelona,bayern,FALSE,FALSE,FALSE,Bayern Munich (7-0) Barcelona
+2013,semi,dortmund-madrid,dortmund,FALSE,FALSE,FALSE,Dortmund (4-3) Real Madrid
+2014,first,arsenal-bayern,arsenal,FALSE,FALSE,FALSE,Arsenal (3-1) Bayern Munich
+2014,first,city-barcelona,barcelona,FALSE,FALSE,FALSE,Manchester City (0-5) Barcelona
+2014,first,galatasaray-chelsea,chelsea,FALSE,FALSE,FALSE,Galatasaray (1-3) Chelsea
+2014,first,leverkusen-psg,psg,FALSE,FALSE,FALSE,Bayer Leverkusen (1-6) Paris SG
+2014,first,milan-atletico,atletico,FALSE,FALSE,FALSE,AC Milan (1-5) Atl. Madrid
+2014,first,olympiacos-united,united,FALSE,FALSE,FALSE,Olympiakos Piraeus (2-3) Manchester Utd
+2014,first,schalke-madrid,madrid,FALSE,FALSE,FALSE,Schalke (2-9) Real Madrid
+2014,first,zenit-dortmund,dortmund,FALSE,FALSE,FALSE,Zenit Petersburg (4-5) Dortmund
+2014,qtr,barcelona-atletico,atletico,FALSE,FALSE,FALSE,Barcelona (1-2) Atl. Madrid
+2014,qtr,madrid-dortmund,madrid,FALSE,FALSE,FALSE,Real Madrid (3-2) Dortmund
+2014,qtr,psg-chelsea,chelsea,FALSE,TRUE,FALSE,"Paris SG (3-3) Chelsea, Chelsea won on away goals"
+2014,qtr,united-bayern,united,FALSE,TRUE,FALSE,"Manchester Utd (3-3) Bayern Munich, Manchester Utd won on away goals"
+2014,semi,atletico-chelsea,atletico,FALSE,FALSE,FALSE,Atl. Madrid (3-1) Chelsea
+2014,semi,madrid-bayern,madrid,FALSE,FALSE,FALSE,Real Madrid (5-0) Bayern Munich
+2015,first,arsenal-monaco,monaco,FALSE,TRUE,FALSE,"Arsenal (3-3) Monaco, Monaco won on away goals"
+2015,first,basel-porto,porto,FALSE,FALSE,FALSE,Basel (1-5) FC Porto
+2015,first,city-barcelona,barcelona,FALSE,TRUE,FALSE,"Manchester City (2-2) Barcelona, Barcelona won on away goals"
+2015,first,juventus-dortmund,juventus,FALSE,FALSE,FALSE,Juventus (4-2) Dortmund
+2015,first,leverkusen-atletico,atletico,TRUE,FALSE,TRUE,"Bayer Leverkusen (1-1 aet) Atl. Madrid, Atl. Madrid won on penalties"
+2015,first,psg-chelsea,psg,FALSE,TRUE,TRUE,"Paris SG (3-3 aet) Chelsea, Paris SG won on away goals"
+2015,first,schalke-madrid,madrid,FALSE,FALSE,FALSE,Schalke (4-5) Real Madrid
+2015,first,shakhtar-bayern,bayern,FALSE,FALSE,FALSE,Shakhtar Donetsk (0-7) Bayern Munich
+2015,qtr,atletico-madrid,madrid,FALSE,FALSE,FALSE,Atl. Madrid (0-1) Real Madrid
+2015,qtr,juventus-monaco,juventus,FALSE,FALSE,FALSE,Juventus (1-0) Monaco
+2015,qtr,porto-bayern,bayern,FALSE,FALSE,FALSE,FC Porto (4-7) Bayern Munich
+2015,qtr,psg-barcelona,barcelona,FALSE,FALSE,FALSE,Paris SG (1-5) Barcelona
+2015,semi,barcelona-bayern,barcelona,FALSE,FALSE,FALSE,Barcelona (5-3) Bayern Munich
+2015,semi,juventus-madrid,juventus,FALSE,FALSE,FALSE,Juventus (3-2) Real Madrid
+2016,first,arsenal-barcelona,barcelona,FALSE,FALSE,FALSE,Arsenal (1-5) Barcelona
+2016,first,benfica-zenit,benfica,FALSE,FALSE,FALSE,Benfica (3-1) Zenit Petersburg
+2016,first,gent-wolfsburg,wolfsburg,FALSE,FALSE,FALSE,Gent (2-4) Wolfsburg
+2016,first,juventus-bayern,bayern,FALSE,FALSE,TRUE,Juventus (4-6 aet) Bayern Munich
+2016,first,kyiv-city,city,FALSE,FALSE,FALSE,Dyn. Kyiv (1-3) Manchester City
+2016,first,psg-chelsea,psg,FALSE,FALSE,FALSE,Paris SG (5-1) Chelsea
+2016,first,psv-atletico,atletico,TRUE,FALSE,TRUE,"PSV (0-0 aet) Atl. Madrid, Atl. Madrid won on penalties"
+2016,first,roma-madrid,madrid,FALSE,FALSE,FALSE,AS Roma (0-4) Real Madrid
+2016,qtr,barcelona-atletico,atletico,FALSE,FALSE,FALSE,Barcelona (2-3) Atl. Madrid
+2016,qtr,bayern-benfica,bayern,FALSE,FALSE,FALSE,Bayern Munich (3-2) Benfica
+2016,qtr,psg-city,city,FALSE,FALSE,FALSE,Paris SG (2-3) Manchester City
+2016,qtr,wolfsburg-madrid,madrid,FALSE,FALSE,FALSE,Wolfsburg (2-3) Real Madrid
+2016,semi,atletico-bayern,atletico,FALSE,TRUE,FALSE,"Atl. Madrid (2-2) Bayern Munich, Atl. Madrid won on away goals"
+2016,semi,city-madrid,madrid,FALSE,FALSE,FALSE,Manchester City (0-1) Real Madrid
+2017,first,bayern-arsenal,bayern,FALSE,FALSE,FALSE,Bayern Munich (10-2) Arsenal
+2017,first,benfica-dortmund,dortmund,FALSE,FALSE,FALSE,Benfica (1-4) Dortmund
+2017,first,city-monaco,monaco,FALSE,TRUE,FALSE,"Manchester City (6-6) Monaco, Monaco won on away goals"
+2017,first,leverkusen-atletico,atletico,FALSE,TRUE,FALSE,"Bayer Leverkusen (3-3) Atl. Madrid, Atl. Madrid won on away goals"
+2017,first,madrid-napoli,madrid,FALSE,FALSE,FALSE,Real Madrid (6-2) Napoli
+2017,first,porto-juventus,juventus,FALSE,FALSE,FALSE,FC Porto (0-3) Juventus
+2017,first,psg-barcelona,barcelona,FALSE,FALSE,FALSE,Paris SG (5-6) Barcelona
+2017,first,sevilla-leicester,leicester,FALSE,FALSE,FALSE,Sevilla (2-3) Leicester
+2017,qtr,atletico-leicester,atletico,FALSE,FALSE,FALSE,Atl. Madrid (2-1) Leicester
+2017,qtr,bayern-madrid,madrid,FALSE,FALSE,TRUE,Bayern Munich (3-6 aet) Real Madrid
+2017,qtr,dortmund-monaco,monaco,FALSE,FALSE,FALSE,Dortmund (3-6) Monaco
+2017,qtr,juventus-barcelona,juventus,FALSE,FALSE,FALSE,Juventus (3-0) Barcelona
+2017,semi,madrid-atletico,madrid,FALSE,FALSE,FALSE,Real Madrid (4-2) Atl. Madrid
+2017,semi,monaco-juventus,juventus,FALSE,FALSE,FALSE,Monaco (1-4) Juventus
+2018,first,basel-city,city,FALSE,FALSE,FALSE,Basel (2-5) Manchester City
+2018,first,bayern-besiktas,bayern,FALSE,FALSE,FALSE,Bayern Munich (8-1) Besiktas
+2018,first,chelsea-barcelona,barcelona,FALSE,FALSE,FALSE,Chelsea (1-4) Barcelona
+2018,first,juventus-tottenham,juventus,FALSE,FALSE,FALSE,Juventus (4-3) Tottenham
+2018,first,madrid-psg,madrid,FALSE,FALSE,FALSE,Real Madrid (5-2) Paris SG
+2018,first,porto-liverpool,liverpool,FALSE,FALSE,FALSE,FC Porto (0-5) Liverpool
+2018,first,sevilla-united,sevilla,FALSE,FALSE,FALSE,Sevilla (2-1) Manchester Utd
+2018,first,shakhtar-roma,shakhtar,FALSE,FALSE,FALSE,Shakhtar Donetsk (3-1) AS Roma
+2018,qtr,barcelona-roma,roma,FALSE,TRUE,FALSE,"Barcelona (4-4) AS Roma, AS Roma won on away goals"
+2018,qtr,juventus-madrid,madrid,FALSE,FALSE,FALSE,Juventus (3-4) Real Madrid
+2018,qtr,liverpool-city,liverpool,FALSE,FALSE,FALSE,Liverpool (5-1) Manchester City
+2018,qtr,sevilla-bayern,bayern,FALSE,FALSE,FALSE,Sevilla (1-2) Bayern Munich
+2018,semi,bayern-madrid,madrid,FALSE,FALSE,FALSE,Bayern Munich (3-4) Real Madrid
+2018,semi,liverpool-roma,liverpool,FALSE,FALSE,FALSE,Liverpool (7-6) AS Roma
+2019,first,ajax-madrid,ajax,FALSE,FALSE,FALSE,Ajax (5-3) Real Madrid
+2019,first,atletico-juventus,juventus,FALSE,FALSE,FALSE,Atl. Madrid (2-3) Juventus
+2019,first,liverpool-bayern,liverpool,FALSE,FALSE,FALSE,Liverpool (3-1) Bayern Munich
+2019,first,lyon-barcelona,barcelona,FALSE,FALSE,FALSE,Lyon (1-5) Barcelona
+2019,first,roma-porto,porto,FALSE,FALSE,TRUE,AS Roma (3-4 aet) FC Porto
+2019,first,schalke-city,city,FALSE,FALSE,FALSE,Schalke (2-10) Manchester City
+2019,first,tottenham-dortmund,tottenham,FALSE,FALSE,FALSE,Tottenham (4-0) Dortmund
+2019,first,united-psg,united,FALSE,TRUE,FALSE,"Manchester Utd (3-3) Paris SG, Manchester Utd won on away goals"

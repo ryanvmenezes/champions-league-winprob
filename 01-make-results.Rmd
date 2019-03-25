@@ -10,11 +10,6 @@ library(tidyverse)
 ```
 
 ```{r}
-library(broom)
-```
-
-
-```{r}
 EQUIPOS = read_delim('raw/teamcrosswalk.psv', delim = '|')
 ```
 
@@ -155,4 +150,15 @@ results = goles %>%
   do(get_tie_result(.))
 ```
 
+```{r}
+head(results)
+```
+
+```{r}
+tail(results)
+```
+
+```{r}
+write_csv(results, 'processed/results.csv')
+```
 
