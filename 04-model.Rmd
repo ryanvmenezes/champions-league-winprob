@@ -46,16 +46,10 @@ model.pregameodds = locfit(
 ```
 
 ```{r}
-matrix2 = matrix %>% 
-  mutate(neutral = predict(model.neutral, newdata = ., type = "response"))
-```
-
-
-```{r}
-model.blended = locfit(
+model.pregameodds2 = locfit(
   t1win ~ made_minute + t1goaldiff + t1awaygoaldiff + 
-    pcthomeg1 + pcthomeg2 + neutral,
-  data = matrix2,
+    pcthomeg1 + pctawayg1,
+  data = matrix,
   family = 'binomial'
 )
 ```
@@ -66,28 +60,28 @@ winprob = matrix %>%
   mutate(
     neutral = predict(model.neutral, newdata = ., type = "response"),
     pregameodds = predict(model.pregameodds, newdata = ., type = "response"),
-    blended = predict(model.blended, newdata = matrix2, type = "response")
+    pregameodds2 = predict(model.pregameodds2, newdata = ., type = "response")
   ) %>% 
-  select(season, round, tie, t1win, made_minute, away, t1goaldiff, t1awaygoaldiff, neutral, pregameodds, blended)
+  select(season, round, tie, t1win, made_minute, away, t1goaldiff, t1awaygoaldiff, neutral, pregameodds, pregameodds2)
 ```
 
 ```{r}
 errors = winprob %>% 
   mutate(
-    errorN = t1win - neutral, errorO = t1win - pregameodds, errorB = t1win - blended,
-    sqrErrorN = errorN^2, sqrErrorO = errorO^2, sqrErrorB = errorB^2
+    errorN = t1win - neutral, errorO = t1win - pregameodds, errorO2 = t1win - pregameodds2,
+    sqrErrorN = errorN^2, sqrErrorO = errorO^2, sqrErrorO2 = errorO2^2
   ) %>% 
   group_by(made_minute) %>% 
   summarise(
     count = n(),
     neutral = sqrt(mean(sqrErrorN)),
     pregameodds = sqrt(mean(sqrErrorO)),
-    blended = sqrt(mean(sqrErrorB))
+    pregameodds2 = sqrt(mean(sqrErrorO2))
   )
 
 errors %>% 
   select(-count) %>% 
-  gather(key = method, value = rtMeanSqrError, neutral, pregameodds, blended) %>% 
+  gather(key = method, value = rtMeanSqrError, neutral, pregameodds, pregameodds2) %>% 
   ggplot() +
   geom_line(aes(x = made_minute, y = rtMeanSqrError, color = method)) +
   ggtitle('Root mean squared error by minute of tie') +
@@ -99,7 +93,7 @@ errors %>%
 ```
 
 ```{r}
-proberrorN = winprob %>% 
+proberrorO = winprob %>% 
   select(made_minute, pregameodds, t1win) %>% 
   mutate(probrange = cut_interval(pregameodds, 20)) %>% 
   group_by(probrange) %>% 
@@ -112,7 +106,7 @@ proberrorN = winprob %>%
       as.numeric()
   )
 
-proberrorO = winprob %>% 
+proberrorN = winprob %>% 
   select(made_minute, neutral, t1win) %>% 
   mutate(probrange = cut_interval(neutral, 20)) %>% 
   group_by(probrange) %>% 
