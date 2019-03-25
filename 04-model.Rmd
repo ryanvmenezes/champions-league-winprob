@@ -46,31 +46,48 @@ model.pregameodds = locfit(
 ```
 
 ```{r}
-winprob = matrix %>% 
-  mutate(
-    neutral = predict(model.neutral, newdata = ., type = "response"),
-    pregameodds = predict(model.pregameodds, newdata = ., type = "response")
-  ) %>% 
-  select(season, round, tie, t1win, made_minute, away, t1goaldiff, t1awaygoaldiff, neutral, pregameodds)
+matrix2 = matrix %>% 
+  mutate(neutral = predict(model.neutral, newdata = ., type = "response"))
 ```
 
 
 ```{r}
+model.blended = locfit(
+  t1win ~ made_minute + t1goaldiff + t1awaygoaldiff + 
+    pcthomeg1 + pcthomeg2 + neutral,
+  data = matrix2,
+  family = 'binomial'
+)
+```
+
+
+```{r}
+winprob = matrix %>% 
+  mutate(
+    neutral = predict(model.neutral, newdata = ., type = "response"),
+    pregameodds = predict(model.pregameodds, newdata = ., type = "response"),
+    blended = predict(model.blended, newdata = matrix2, type = "response")
+  ) %>% 
+  select(season, round, tie, t1win, made_minute, away, t1goaldiff, t1awaygoaldiff, neutral, pregameodds, blended)
+```
+
+```{r}
 errors = winprob %>% 
   mutate(
-    errorN = t1win - neutral, errorO = t1win - pregameodds,
-    sqrErrorN = errorN^2, sqrErrorO = errorO^2
+    errorN = t1win - neutral, errorO = t1win - pregameodds, errorB = t1win - blended,
+    sqrErrorN = errorN^2, sqrErrorO = errorO^2, sqrErrorB = errorB^2
   ) %>% 
   group_by(made_minute) %>% 
   summarise(
     count = n(),
     neutral = sqrt(mean(sqrErrorN)),
-    pregameodds = sqrt(mean(sqrErrorO))
+    pregameodds = sqrt(mean(sqrErrorO)),
+    blended = sqrt(mean(sqrErrorB))
   )
 
 errors %>% 
   select(-count) %>% 
-  gather(key = method, value = rtMeanSqrError, neutral, pregameodds) %>% 
+  gather(key = method, value = rtMeanSqrError, neutral, pregameodds, blended) %>% 
   ggplot() +
   geom_line(aes(x = made_minute, y = rtMeanSqrError, color = method)) +
   ggtitle('Root mean squared error by minute of tie') +
