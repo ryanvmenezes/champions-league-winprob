@@ -93,7 +93,7 @@ for (i in 1:nrow(results)) {
     results[i,]$tie[1]
   )
   p = plot_winprob(slug)
-  ggsave(str_c('analysis/plots/',slug,'.png'), plot = p, width = 11, height = 8.5, units = "in")
+  ggsave(str_c('analysis/plots/',slug,'.pdf'), plot = p, width = 11, height = 8.5, units = "in")
 }
 ```
 
