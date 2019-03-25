@@ -1,51 +1,51 @@
-fullteam|teamcode|country
-AC Milan|milan|ita
-APOEL|apoel|cyp
-AS Roma|roma|ita
-Ajax|ajax|ned
-Arsenal|arsenal|eng
-Atl. Madrid|atletico|esp
-Barcelona|barcelona|esp
-Basel|basel|sui
-Bayer Leverkusen|leverkusen|ger
-Bayern Munich|bayern|ger
-Benfica|benfica|por
-Besiktas|besiktas|tur
-Bordeaux|bordeaux|fra
-CSKA Moscow|cska|rus
-Celtic|celtic|sco
-Chelsea|chelsea|eng
-Dortmund|dortmund|ger
-Dyn. Kyiv|kyiv|ukr
-FC Copenhagen|copenhagen|den
-FC Porto|porto|por
-Fenerbahce|fenerbahce|tur
-Fiorentina|fiorentina|ita
-Galatasaray|galatasaray|tur
-Gent|gent|bel
-Inter|inter|ita
-Juventus|juventus|ita
-Leicester|leicester|eng
-Liverpool|liverpool|eng
-Lyon|lyon|fra
-Malaga|malaga|esp
-Manchester City|city|eng
-Manchester Utd|united|eng
-Marseille|marseille|fra
-Monaco|monaco|fra
-Napoli|napoli|ita
-Olympiakos Piraeus|olympiacos|gre
-PSV|psv|ned
-Panathinaikos|panathinaikos|gre
-Paris SG|psg|fra
-Real Madrid|madrid|esp
-Schalke|schalke|ger
-Sevilla|sevilla|spa
-Shakhtar Donetsk|shakhtar|ukr
-Sporting|sporting|por
-Stuttgart|stuttgart|ger
-Tottenham|tottenham|eng
-Valencia|valencia|esp
-Villarreal|villareal|esp
-Wolfsburg|wolfsburg|ger
-Zenit Petersburg|zenit|rus
+fullteam|teamcode|country|shortcode
+AC Milan|milan|ita|MIL
+APOEL|apoel|cyp|APO
+AS Roma|roma|ita|ROM
+Ajax|ajax|ned|AJA
+Arsenal|arsenal|eng|ARS
+Atl. Madrid|atletico|esp|ATM
+Barcelona|barcelona|esp|BAR
+Basel|basel|sui|BAS
+Bayer Leverkusen|leverkusen|ger|BAY
+Bayern Munich|bayern|ger|MUN
+Benfica|benfica|por|BEN
+Besiktas|besiktas|tur|BES
+Bordeaux|bordeaux|fra|BOR
+CSKA Moscow|cska|rus|CKM
+Celtic|celtic|sco|CEL
+Chelsea|chelsea|eng|CHE
+Dortmund|dortmund|ger|DOR
+Dyn. Kyiv|kyiv|ukr|DKY
+FC Copenhagen|copenhagen|den|COP
+FC Porto|porto|por|POR
+Fenerbahce|fenerbahce|tur|FEN
+Fiorentina|fiorentina|ita|FIO
+Galatasaray|galatasaray|tur|GAL
+Gent|gent|bel|GEN
+Inter|inter|ita|INT
+Juventus|juventus|ita|JUV
+Leicester|leicester|eng|LEI
+Liverpool|liverpool|eng|LIV
+Lyon|lyon|fra|LYO
+Malaga|malaga|esp|MAL
+Manchester City|city|eng|MCI
+Manchester Utd|united|eng|MUN
+Marseille|marseille|fra|MAR
+Monaco|monaco|fra|MON
+Napoli|napoli|ita|NAP
+Olympiakos Piraeus|olympiacos|gre|OLY
+PSV|psv|ned|PSV
+Panathinaikos|panathinaikos|gre|PAN
+Paris SG|psg|fra|PSG
+Real Madrid|madrid|esp|RMA
+Schalke|schalke|ger|SCH
+Sevilla|sevilla|spa|SEV
+Shakhtar Donetsk|shakhtar|ukr|DON
+Sporting|sporting|por|SPO
+Stuttgart|stuttgart|ger|STU
+Tottenham|tottenham|eng|TOT
+Valencia|valencia|esp|VAL
+Villarreal|villareal|esp|VIL
+Wolfsburg|wolfsburg|ger|WOL
+Zenit Petersburg|zenit|rus|ZEN
