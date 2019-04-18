@@ -12,6 +12,7 @@ library(tidyverse)
 
 ```{r}
 ODDS = read_excel('raw/oddsportal-odds.xlsx', col_names = FALSE)
+colnames(ODDS) <- c('X__1','X__2','X__3','X__4','X__5','X__6','X__7')
 ```
 
 ```{r}
@@ -53,6 +54,7 @@ oddstopct = function(N) {
 ```{r}
 odds = odds %>% 
   mutate(
+    season = as.numeric(season),
     pcthomeunadj = oddstopct(oddshome),
     pctdrawunadj = oddstopct(oddsdraw),
     pctawayunadj = oddstopct(oddsaway),
@@ -88,10 +90,15 @@ twolegs = function(df) {
 games.odds.xwalk = results %>% 
   select(season, tie) %>% 
   separate(tie, into = c('t1','t2'), sep = '-', remove = FALSE) %>% 
-  group_by(season, round, tie) %>% 
+  group_by(season, tie) %>% 
   do(twolegs(.)) %>% 
   left_join(teams %>% select(hometeam = teamcode, hometeamfull = fullteam), by = 'hometeam') %>% 
   left_join(teams %>% select(awayteam = teamcode, awayteamfull = fullteam), by = 'awayteam') %>% 
-  left_join(odds %>% select(season,hometeam,awayteam,pcthome,pctdraw,pctaway), by = c('season','hometeam','awayteam))
+  left_join(odds %>% select(season,hometeamfull = hometeam,awayteamfull = awayteam,pcthome,pctdraw,pctaway),
+            by = c('season','hometeamfull','awayteamfull'))
+```
+
+```{r}
+games.odds.xwalk
 ```
 
