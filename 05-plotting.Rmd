@@ -53,8 +53,9 @@ plot_winprob = function(slug) {
     filter(season == y) %>% 
     filter(round == r) %>% 
     filter(tie == t) %>% 
-    gather(key = winprobmodel, value = winprob, neutral, pregameodds, pregameodds2, pregameodds3) %>% 
-    ggplot(aes(made_minute, winprob, color=winprobmodel)) +
+    # gather(key = winprobmodel, value = winprob, neutral, pregameodds, pregameodds2, pregameodds3) %>% 
+    # ggplot(aes(made_minute, winprob, color=winprobmodel)) +
+    ggplot(aes(made_minute, pregameodds3)) +
     geom_line() +
     scale_y_continuous(
       limits = c(0,1),
@@ -84,6 +85,14 @@ plot_winprob = function(slug) {
 plot_winprob('2018|qtr|barcelona-roma')
 ```
 
+```{r}
+plot_winprob('2019|semi|barcelona-liverpool')
+```
+
+
+```{r}
+plot_winprob('2019|semi|tottenham-ajax')
+```
 
 ```{r}
 for (i in 1:nrow(results)) {
