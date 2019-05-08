@@ -161,3 +161,8 @@ season,round,tie,winner,pk,agr,aet,result
 2019,first,schalke-city,city,FALSE,FALSE,FALSE,Schalke (2-10) Manchester City
 2019,first,tottenham-dortmund,tottenham,FALSE,FALSE,FALSE,Tottenham (4-0) Dortmund
 2019,first,united-psg,united,FALSE,TRUE,FALSE,"Manchester Utd (3-3) Paris SG, Manchester Utd won on away goals"
+2019,qtr,ajax-juventus,ajax,FALSE,FALSE,FALSE,Ajax (3-2) Juventus
+2019,qtr,liverpool-porto,liverpool,FALSE,FALSE,FALSE,Liverpool (6-1) FC Porto
+2019,qtr,tottenham-city,tottenham,FALSE,TRUE,FALSE,"Tottenham (4-4) Manchester City, Tottenham won on away goals"
+2019,qtr,united-barcelona,barcelona,FALSE,FALSE,FALSE,Manchester Utd (0-4) Barcelona
+2019,semi,barcelona-liverpool,liverpool,FALSE,FALSE,FALSE,Barcelona (3-4) Liverpool

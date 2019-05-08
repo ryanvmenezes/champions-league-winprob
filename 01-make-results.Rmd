@@ -14,7 +14,7 @@ EQUIPOS = read_delim('raw/teamcrosswalk.psv', delim = '|')
 ```
 
 ```{r}
-View(EQUIPOS)
+head(EQUIPOS)
 ```
 
 ```{r}

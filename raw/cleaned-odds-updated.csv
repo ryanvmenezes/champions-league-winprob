@@ -1,0 +1,336 @@
+tie,hometeam,awayteam,oddshome,oddsdraw,oddsaway,season
+AS Roma - Liverpool,AS Roma,Liverpool,165,305,149,2018
+Real Madrid - Bayern Munich,Real Madrid,Bayern Munich,139,309,174,2018
+Bayern Munich - Real Madrid,Bayern Munich,Real Madrid,100,308,256,2018
+Liverpool - AS Roma,Liverpool,AS Roma,-192,362,568,2018
+Bayern Munich - Sevilla,Bayern Munich,Sevilla,-370,581,952,2018
+Real Madrid - Juventus,Real Madrid,Juventus,-154,341,413,2018
+AS Roma - Barcelona,AS Roma,Barcelona,372,342,-143,2018
+Manchester City - Liverpool,Manchester City,Liverpool,-204,430,495,2018
+Barcelona - AS Roma,Barcelona,AS Roma,-455,603,1327,2018
+Liverpool - Manchester City,Liverpool,Manchester City,210,262,135,2018
+Juventus - Real Madrid,Juventus,Real Madrid,200,224,159,2018
+Sevilla - Bayern Munich,Sevilla,Bayern Munich,493,345,-172,2018
+Barcelona - Chelsea,Barcelona,Chelsea,-208,363,619,2018
+Besiktas - Bayern Munich,Besiktas,Bayern Munich,784,497,-294,2018
+AS Roma - Shakhtar Donetsk,AS Roma,Shakhtar Donetsk,-152,334,413,2018
+Manchester Utd - Sevilla,Manchester Utd,Sevilla,-156,308,474,2018
+Manchester City - Basel,Manchester City,Basel,-357,479,1201,2018
+Tottenham - Juventus,Tottenham,Juventus,125,249,237,2018
+Liverpool - FC Porto,Liverpool,FC Porto,-227,371,708,2018
+Paris SG - Real Madrid,Paris SG,Real Madrid,-127,358,298,2018
+Sevilla - Manchester Utd,Sevilla,Manchester Utd,169,225,185,2018
+Shakhtar Donetsk - AS Roma,Shakhtar Donetsk,AS Roma,160,234,188,2018
+Bayern Munich - Besiktas,Bayern Munich,Besiktas,-769,860,2349,2018
+Chelsea - Barcelona,Chelsea,Barcelona,252,234,125,2018
+FC Porto - Liverpool,FC Porto,Liverpool,258,248,114,2018
+Real Madrid - Paris SG,Real Madrid,Paris SG,125,274,215,2018
+Basel - Manchester City,Basel,Manchester City,1023,433,-303,2018
+Juventus - Tottenham,Juventus,Tottenham,131,202,276,2018
+Atl. Madrid - Real Madrid,Atl. Madrid,Real Madrid,163,258,167,2017
+Juventus - Monaco,Juventus,Monaco,-154,295,476,2017
+Monaco - Juventus,Monaco,Juventus,218,227,143,2017
+Real Madrid - Atl. Madrid,Real Madrid,Atl. Madrid,-123,254,412,2017
+Barcelona - Juventus,Barcelona,Juventus,-204,413,509,2017
+Monaco - Dortmund,Monaco,Dortmund,193,315,123,2017
+Leicester - Atl. Madrid,Leicester,Atl. Madrid,341,282,-119,2017
+Real Madrid - Bayern Munich,Real Madrid,Bayern Munich,161,288,154,2017
+Atl. Madrid - Leicester,Atl. Madrid,Leicester,-303,428,1011,2017
+Bayern Munich - Real Madrid,Bayern Munich,Real Madrid,-145,334,371,2017
+Dortmund - Monaco,Dortmund,Monaco,-185,391,454,2017
+Juventus - Barcelona,Juventus,Barcelona,170,235,175,2017
+Atl. Madrid - Bayer Leverkusen,Atl. Madrid,Bayer Leverkusen,-189,346,553,2017
+Monaco - Manchester City,Monaco,Manchester City,189,286,134,2017
+Juventus - FC Porto,Juventus,FC Porto,-133,262,443,2017
+Leicester - Sevilla,Leicester,Sevilla,200,260,136,2017
+Barcelona - Paris SG,Barcelona,Paris SG,-189,398,458,2017
+Dortmund - Benfica,Dortmund,Benfica,-357,542,967,2017
+Arsenal - Bayern Munich,Arsenal,Bayern Munich,301,316,-119,2017
+Napoli - Real Madrid,Napoli,Real Madrid,200,295,124,2017
+FC Porto - Juventus,FC Porto,Juventus,204,198,172,2017
+Sevilla - Leicester,Sevilla,Leicester,-270,418,822,2017
+Bayer Leverkusen - Atl. Madrid,Bayer Leverkusen,Atl. Madrid,202,209,164,2017
+Manchester City - Monaco,Manchester City,Monaco,-164,333,467,2017
+Bayern Munich - Arsenal,Bayern Munich,Arsenal,-250,409,725,2017
+Real Madrid - Napoli,Real Madrid,Napoli,-182,349,519,2017
+Benfica - Dortmund,Benfica,Dortmund,222,236,137,2017
+Paris SG - Barcelona,Paris SG,Barcelona,219,244,135,2017
+Real Madrid - Manchester City,Real Madrid,Manchester City,-208,365,595,2016
+Bayern Munich - Atl. Madrid,Bayern Munich,Atl. Madrid,-175,308,565,2016
+Atl. Madrid - Bayern Munich,Atl. Madrid,Bayern Munich,219,196,163,2016
+Manchester City - Real Madrid,Manchester City,Real Madrid,158,229,193,2016
+Atl. Madrid - Barcelona,Atl. Madrid,Barcelona,214,243,136,2016
+Benfica - Bayern Munich,Benfica,Bayern Munich,585,323,-189,2016
+Manchester City - Paris SG,Manchester City,Paris SG,186,254,148,2016
+Real Madrid - Wolfsburg,Real Madrid,Wolfsburg,-526,734,1293,2016
+Paris SG - Manchester City,Paris SG,Manchester City,-145,298,420,2016
+Wolfsburg - Real Madrid,Wolfsburg,Real Madrid,448,337,-164,2016
+Barcelona - Atl. Madrid,Barcelona,Atl. Madrid,-192,319,625,2016
+Bayern Munich - Benfica,Bayern Munich,Benfica,-435,568,1333,2016
+Barcelona - Arsenal,Barcelona,Arsenal,-417,609,1055,2016
+Bayern Munich - Juventus,Bayern Munich,Juventus,-217,351,677,2016
+Atl. Madrid - PSV,Atl. Madrid,PSV,-323,433,1062,2016
+Manchester City - Dyn. Kyiv,Manchester City,Dyn. Kyiv,-227,363,694,2016
+Chelsea - Paris SG,Chelsea,Paris SG,-,-,-,2016
+Zenit Petersburg - Benfica,Zenit Petersburg,Benfica,110,252,260,2016
+Real Madrid - AS Roma,Real Madrid,AS Roma,-278,480,695,2016
+Wolfsburg - Gent,Wolfsburg,Gent,-189,348,527,2016
+Dyn. Kyiv - Manchester City,Dyn. Kyiv,Manchester City,236,215,139,2016
+PSV - Atl. Madrid,PSV,Atl. Madrid,384,227,-110,2016
+Arsenal - Barcelona,Arsenal,Barcelona,311,270,-109,2016
+Juventus - Bayern Munich,Juventus,Bayern Munich,269,216,125,2016
+AS Roma - Real Madrid,AS Roma,Real Madrid,319,280,-114,2016
+Gent - Wolfsburg,Gent,Wolfsburg,-,-,-,2016
+Benfica - Zenit Petersburg,Benfica,Zenit Petersburg,106,242,290,2016
+Paris SG - Chelsea,Paris SG,Chelsea,-156,289,504,2016
+Real Madrid - Juventus,Real Madrid,Juventus,-152,316,437,2015
+Bayern Munich - Barcelona,Bayern Munich,Barcelona,154,277,168,2015
+Barcelona - Bayern Munich,Barcelona,Bayern Munich,-135,296,390,2015
+Juventus - Real Madrid,Juventus,Real Madrid,172,217,188,2015
+Monaco - Juventus,Monaco,Juventus,315,206,112,2015
+Real Madrid - Atl. Madrid,Real Madrid,Atl. Madrid,100,241,315,2015
+Barcelona - Paris SG,Barcelona,Paris SG,-227,411,585,2015
+Bayern Munich - FC Porto,Bayern Munich,FC Porto,-286,434,797,2015
+FC Porto - Bayern Munich,FC Porto,Bayern Munich,311,225,106,2015
+Paris SG - Barcelona,Paris SG,Barcelona,348,261,-114,2015
+Atl. Madrid - Real Madrid,Atl. Madrid,Real Madrid,194,225,158,2015
+Juventus - Monaco,Juventus,Monaco,-192,293,722,2015
+Barcelona - Manchester City,Barcelona,Manchester City,-270,474,682,2015
+Dortmund - Juventus,Dortmund,Juventus,125,235,239,2015
+Atl. Madrid - Bayer Leverkusen,Atl. Madrid,Bayer Leverkusen,-133,261,430,2015
+Monaco - Arsenal,Monaco,Arsenal,245,259,114,2015
+Bayern Munich - Shakhtar Donetsk,Bayern Munich,Shakhtar Donetsk,-625,730,1778,2015
+Chelsea - Paris SG,Chelsea,Paris SG,123,223,264,2015
+FC Porto - Basel,FC Porto,Basel,-227,355,736,2015
+Real Madrid - Schalke,Real Madrid,Schalke,-476,643,1319,2015
+Arsenal - Monaco,Arsenal,Monaco,-164,281,570,2015
+Bayer Leverkusen - Atl. Madrid,Bayer Leverkusen,Atl. Madrid,197,214,166,2015
+Juventus - Dortmund,Juventus,Dortmund,-106,237,345,2015
+Manchester City - Barcelona,Manchester City,Barcelona,289,267,-101,2015
+Basel - FC Porto,Basel,FC Porto,268,218,124,2015
+Schalke - Real Madrid,Schalke,Real Madrid,590,343,-200,2015
+Paris SG - Chelsea,Paris SG,Chelsea,167,206,202,2015
+Shakhtar Donetsk - Bayern Munich,Shakhtar Donetsk,Bayern Munich,816,409,-278,2015
+Chelsea - Atl. Madrid,Chelsea,Atl. Madrid,138,223,219,2014
+Bayern Munich - Real Madrid,Bayern Munich,Real Madrid,-135,330,324,2014
+Real Madrid - Bayern Munich,Real Madrid,Bayern Munich,124,266,212,2014
+Atl. Madrid - Chelsea,Atl. Madrid,Chelsea,-128,249,424,2014
+Atl. Madrid - Barcelona,Atl. Madrid,Barcelona,269,252,104,2014
+Bayern Munich - Manchester Utd,Bayern Munich,Manchester Utd,-333,529,789,2014
+Chelsea - Paris SG,Chelsea,Paris SG,-120,280,330,2014
+Dortmund - Real Madrid,Dortmund,Real Madrid,194,285,125,2014
+Paris SG - Chelsea,Paris SG,Chelsea,108,235,278,2014
+Real Madrid - Dortmund,Real Madrid,Dortmund,-256,411,691,2014
+Barcelona - Atl. Madrid,Barcelona,Atl. Madrid,-182,322,515,2014
+Manchester Utd - Bayern Munich,Manchester Utd,Bayern Munich,547,382,-208,2014
+Dortmund - Zenit Petersburg,Dortmund,Zenit Petersburg,-286,466,719,2014
+Manchester Utd - Olympiakos Piraeus,Manchester Utd,Olympiakos Piraeus,-213,359,579,2014
+Chelsea - Galatasaray,Chelsea,Galatasaray,-244,369,727,2014
+Real Madrid - Schalke,Real Madrid,Schalke,-370,552,918,2014
+Barcelona - Manchester City,Barcelona,Manchester City,-154,361,357,2014
+Paris SG - Bayer Leverkusen,Paris SG,Bayer Leverkusen,-244,383,691,2014
+Atl. Madrid - AC Milan,Atl. Madrid,AC Milan,-200,346,579,2014
+Bayern Munich - Arsenal,Bayern Munich,Arsenal,-333,519,769,2014
+Galatasaray - Chelsea,Galatasaray,Chelsea,252,225,121,2014
+Schalke - Real Madrid,Schalke,Real Madrid,501,324,-175,2014
+Olympiakos Piraeus - Manchester Utd,Olympiakos Piraeus,Manchester Utd,225,221,136,2014
+Zenit Petersburg - Dortmund,Zenit Petersburg,Dortmund,368,290,-133,2014
+AC Milan - Atl. Madrid,AC Milan,Atl. Madrid,294,227,106,2014
+Arsenal - Bayern Munich,Arsenal,Bayern Munich,420,311,-154,2014
+Bayer Leverkusen - Paris SG,Bayer Leverkusen,Paris SG,239,238,122,2014
+Manchester City - Barcelona,Manchester City,Barcelona,195,254,137,2014
+Barcelona - Bayern Munich,Barcelona,Bayern Munich,108,297,222,2013
+Real Madrid - Dortmund,Real Madrid,Dortmund,-196,409,438,2013
+Dortmund - Real Madrid,Dortmund,Real Madrid,159,252,168,2013
+Bayern Munich - Barcelona,Bayern Munich,Barcelona,102,263,265,2013
+Barcelona - Paris SG,Barcelona,Paris SG,-238,395,623,2013
+Juventus - Bayern Munich,Juventus,Bayern Munich,200,233,141,2013
+Dortmund - Malaga,Dortmund,Malaga,-312,426,894,2013
+Galatasaray - Real Madrid,Galatasaray,Real Madrid,392,284,-141,2013
+Malaga - Dortmund,Malaga,Dortmund,227,240,124,2013
+Real Madrid - Galatasaray,Real Madrid,Galatasaray,-588,677,1453,2013
+Bayern Munich - Juventus,Bayern Munich,Juventus,-169,295,517,2013
+Paris SG - Barcelona,Paris SG,Barcelona,336,260,-116,2013
+Bayern Munich - Arsenal,Bayern Munich,Arsenal,-286,448,736,2013
+Malaga - FC Porto,Malaga,FC Porto,179,223,164,2013
+Barcelona - AC Milan,Barcelona,AC Milan,-357,525,851,2013
+Schalke - Galatasaray,Schalke,Galatasaray,-145,309,378,2013
+Juventus - Celtic,Juventus,Celtic,-227,359,674,2013
+Paris SG - Valencia,Paris SG,Valencia,-106,249,312,2013
+Dortmund - Shakhtar Donetsk,Dortmund,Shakhtar Donetsk,-149,301,409,2013
+Manchester Utd - Real Madrid,Manchester Utd,Real Madrid,199,257,131,2013
+AC Milan - Barcelona,AC Milan,Barcelona,507,304,-172,2013
+Galatasaray - Schalke,Galatasaray,Schalke,133,234,216,2013
+Arsenal - Bayern Munich,Arsenal,Bayern Munich,309,258,-110,2013
+FC Porto - Malaga,FC Porto,Malaga,-152,274,475,2013
+Real Madrid - Manchester Utd,Real Madrid,Manchester Utd,-185,376,438,2013
+Shakhtar Donetsk - Dortmund,Shakhtar Donetsk,Dortmund,152,237,185,2013
+Celtic - Juventus,Celtic,Juventus,359,248,-118,2013
+Valencia - Paris SG,Valencia,Paris SG,147,224,199,2013
+Real Madrid - Bayern Munich,Real Madrid,Bayern Munich,-192,354,483,2012
+Barcelona - Chelsea,Barcelona,Chelsea,-417,560,933,2012
+Chelsea - Barcelona,Chelsea,Barcelona,388,287,-143,2012
+Bayern Munich - Real Madrid,Bayern Munich,Real Madrid,162,241,165,2012
+Chelsea - Benfica,Chelsea,Benfica,-156,283,446,2012
+Real Madrid - APOEL,Real Madrid,APOEL,-1250,1013,2833,2012
+Barcelona - AC Milan,Barcelona,AC Milan,-417,532,1016,2012
+Bayern Munich - Marseille,Bayern Munich,Marseille,-263,388,710,2012
+AC Milan - Barcelona,AC Milan,Barcelona,383,286,-143,2012
+Marseille - Bayern Munich,Marseille,Bayern Munich,384,258,-132,2012
+APOEL - Real Madrid,APOEL,Real Madrid,933,407,-312,2012
+Benfica - Chelsea,Benfica,Chelsea,125,227,227,2012
+Chelsea - Napoli,Chelsea,Napoli,-159,322,399,2012
+Real Madrid - CSKA Moscow,Real Madrid,CSKA Moscow,-1000,913,2110,2012
+Bayern Munich - Basel,Bayern Munich,Basel,-526,618,1238,2012
+Inter - Marseille,Inter,Marseille,-104,246,295,2012
+APOEL - Lyon,APOEL,Lyon,187,227,149,2012
+Barcelona - Bayer Leverkusen,Barcelona,Bayer Leverkusen,-833,797,1782,2012
+Arsenal - AC Milan,Arsenal,AC Milan,102,265,249,2012
+Benfica - Zenit Petersburg,Benfica,Zenit Petersburg,-137,268,386,2012
+Basel - Bayern Munich,Basel,Bayern Munich,494,281,-164,2012
+Marseille - Inter,Marseille,Inter,-111,246,317,2012
+Napoli - Chelsea,Napoli,Chelsea,120,229,237,2012
+CSKA Moscow - Real Madrid,CSKA Moscow,Real Madrid,675,342,-238,2012
+AC Milan - Arsenal,AC Milan,Arsenal,110,227,265,2012
+Zenit Petersburg - Benfica,Zenit Petersburg,Benfica,137,218,214,2012
+Bayer Leverkusen - Barcelona,Bayer Leverkusen,Barcelona,831,388,-286,2012
+Lyon - APOEL,Lyon,APOEL,-222,313,699,2012
+Manchester Utd - Schalke,Manchester Utd,Schalke,-185,297,533,2011
+Barcelona - Real Madrid,Barcelona,Real Madrid,-161,318,405,2011
+Real Madrid - Barcelona,Real Madrid,Barcelona,165,211,177,2011
+Schalke - Manchester Utd,Schalke,Manchester Utd,256,224,114,2011
+Schalke - Inter,Schalke,Inter,154,264,156,2011
+Tottenham - Real Madrid,Tottenham,Real Madrid,219,274,110,2011
+Manchester Utd - Chelsea,Manchester Utd,Chelsea,125,231,223,2011
+Shakhtar Donetsk - Barcelona,Shakhtar Donetsk,Barcelona,293,270,-114,2011
+Barcelona - Shakhtar Donetsk,Barcelona,Shakhtar Donetsk,-500,558,1325,2011
+Chelsea - Manchester Utd,Chelsea,Manchester Utd,110,220,269,2011
+Inter - Schalke,Inter,Schalke,-147,250,463,2011
+Real Madrid - Tottenham,Real Madrid,Tottenham,-270,376,751,2011
+Chelsea - FC Copenhagen,Chelsea,FC Copenhagen,-345,446,948,2011
+Real Madrid - Lyon,Real Madrid,Lyon,-303,416,818,2011
+Bayern Munich - Inter,Bayern Munich,Inter,-133,300,325,2011
+Manchester Utd - Marseille,Manchester Utd,Marseille,-185,292,561,2011
+Schalke - Valencia,Schalke,Valencia,161,217,177,2011
+Tottenham - AC Milan,Tottenham,AC Milan,129,237,206,2011
+Barcelona - Arsenal,Barcelona,Arsenal,-323,476,748,2011
+Shakhtar Donetsk - AS Roma,Shakhtar Donetsk,AS Roma,-132,282,340,2011
+Inter - Bayern Munich,Inter,Bayern Munich,163,221,174,2011
+Marseille - Manchester Utd,Marseille,Manchester Utd,198,211,150,2011
+FC Copenhagen - Chelsea,FC Copenhagen,Chelsea,338,224,-108,2011
+Lyon - Real Madrid,Lyon,Real Madrid,326,243,-114,2011
+Arsenal - Barcelona,Arsenal,Barcelona,291,279,-116,2011
+AS Roma - Shakhtar Donetsk,AS Roma,Shakhtar Donetsk,119,223,244,2011
+AC Milan - Tottenham,AC Milan,Tottenham,-143,267,408,2011
+Valencia - Schalke,Valencia,Schalke,-147,269,426,2011
+Barcelona - Inter,Barcelona,Inter,-250,409,571,2010
+Lyon - Bayern Munich,Lyon,Bayern Munich,139,238,192,2010
+Bayern Munich - Lyon,Bayern Munich,Lyon,-152,268,442,2010
+Inter - Barcelona,Inter,Barcelona,212,223,133,2010
+Bordeaux - Lyon,Bordeaux,Lyon,106,238,262,2010
+Manchester Utd - Bayern Munich,Manchester Utd,Bayern Munich,-137,287,354,2010
+Barcelona - Arsenal,Barcelona,Arsenal,-294,423,727,2010
+CSKA Moscow - Inter,CSKA Moscow,Inter,229,225,122,2010
+Arsenal - Barcelona,Arsenal,Barcelona,198,236,131,2010
+Inter - CSKA Moscow,Inter,CSKA Moscow,-244,326,767,2010
+Bayern Munich - Manchester Utd,Bayern Munich,Manchester Utd,209,222,138,2010
+Lyon - Bordeaux,Lyon,Bordeaux,106,217,285,2010
+Barcelona - Stuttgart,Barcelona,Stuttgart,-455,528,1273,2010
+Bordeaux - Olympiakos Piraeus,Bordeaux,Olympiakos Piraeus,-189,295,566,2010
+Chelsea - Inter,Chelsea,Inter,-169,288,484,2010
+Sevilla - CSKA Moscow,Sevilla,CSKA Moscow,-182,286,548,2010
+Manchester Utd - AC Milan,Manchester Utd,AC Milan,-141,270,393,2010
+Real Madrid - Lyon,Real Madrid,Lyon,-345,453,911,2010
+Arsenal - FC Porto,Arsenal,FC Porto,-172,278,483,2010
+Fiorentina - Bayern Munich,Fiorentina,Bayern Munich,186,234,141,2010
+Inter - Chelsea,Inter,Chelsea,161,204,192,2010
+CSKA Moscow - Sevilla,CSKA Moscow,Sevilla,162,215,179,2010
+Olympiakos Piraeus - Bordeaux,Olympiakos Piraeus,Bordeaux,199,209,150,2010
+Stuttgart - Barcelona,Stuttgart,Barcelona,482,282,-164,2010
+Bayern Munich - Fiorentina,Bayern Munich,Fiorentina,-244,341,733,2010
+FC Porto - Arsenal,FC Porto,Arsenal,133,218,222,2010
+AC Milan - Manchester Utd,AC Milan,Manchester Utd,187,208,161,2010
+Lyon - Real Madrid,Lyon,Real Madrid,293,231,-101,2010
+Chelsea - Barcelona,Chelsea,Barcelona,172,235,154,2009
+Arsenal - Manchester Utd,Arsenal,Manchester Utd,170,229,159,2009
+Manchester Utd - Arsenal,Manchester Utd,Arsenal,-132,252,400,2009
+Barcelona - Chelsea,Barcelona,Chelsea,-145,262,430,2009
+Arsenal - Villarreal,Arsenal,Villarreal,-204,305,607,2009
+FC Porto - Manchester Utd,FC Porto,Manchester Utd,245,239,110,2009
+Bayern Munich - Barcelona,Bayern Munich,Barcelona,181,254,137,2009
+Chelsea - Liverpool,Chelsea,Liverpool,134,227,204,2009
+Barcelona - Bayern Munich,Barcelona,Bayern Munich,-263,367,756,2009
+Liverpool - Chelsea,Liverpool,Chelsea,120,198,273,2009
+Manchester Utd - FC Porto,Manchester Utd,FC Porto,-250,326,792,2009
+Villarreal - Arsenal,Villarreal,Arsenal,192,209,154,2009
+AS Roma - Arsenal,AS Roma,Arsenal,150,222,186,2009
+Barcelona - Lyon,Barcelona,Lyon,-256,346,802,2009
+FC Porto - Atl. Madrid,FC Porto,Atl. Madrid,108,234,254,2009
+Manchester Utd - Inter,Manchester Utd,Inter,-156,252,503,2009
+Bayern Munich - Sporting,Bayern Munich,Sporting,-139,252,407,2009
+Juventus - Chelsea,Juventus,Chelsea,163,209,179,2009
+Liverpool - Real Madrid,Liverpool,Real Madrid,127,215,227,2009
+Panathinaikos - Villarreal,Panathinaikos,Villarreal,163,217,173,2009
+Chelsea - Juventus,Chelsea,Juventus,-133,229,451,2009
+Real Madrid - Liverpool,Real Madrid,Liverpool,-105,224,323,2009
+Sporting - Bayern Munich,Sporting,Bayern Munich,175,218,163,2009
+Villarreal - Panathinaikos,Villarreal,Panathinaikos,-147,252,451,2009
+Arsenal - AS Roma,Arsenal,AS Roma,-104,221,320,2009
+Atl. Madrid - FC Porto,Atl. Madrid,FC Porto,-101,217,271,2009
+Inter - Manchester Utd,Inter,Manchester Utd,144,200,215,2009
+Lyon - Barcelona,Lyon,Barcelona,262,236,-103,2009
+Chelsea - Liverpool,Chelsea,Liverpool,116,208,270,2008
+Manchester Utd - Barcelona,Manchester Utd,Barcelona,100,223,300,2008
+Barcelona - Manchester Utd,Barcelona,Manchester Utd,216,181,273,2008
+Liverpool - Chelsea,Liverpool,Chelsea,110,222,540,2008
+Barcelona - Schalke,Barcelona,Schalke,-233,324,685,2008
+Manchester Utd - AS Roma,Manchester Utd,AS Roma,-137,257,408,2008
+Chelsea - Fenerbahce,Chelsea,Fenerbahce,-357,442,975,2008
+Liverpool - Arsenal,Liverpool,Arsenal,131,198,231,2008
+Arsenal - Liverpool,Arsenal,Liverpool,219,143,530,2008
+Fenerbahce - Chelsea,Fenerbahce,Chelsea,656,277,-128,2008
+AS Roma - Manchester Utd,AS Roma,Manchester Utd,213,202,145,2008
+Schalke - Barcelona,Schalke,Barcelona,1361,299,-115,2008
+Inter - Liverpool,Inter,Liverpool,-101,217,307,2008
+Chelsea - Olympiakos Piraeus,Chelsea,Olympiakos Piraeus,-385,413,1208,2008
+FC Porto - Schalke,FC Porto,Schalke,-135,229,454,2008
+Real Madrid - AS Roma,Real Madrid,AS Roma,-133,238,428,2008
+AC Milan - Arsenal,AC Milan,Arsenal,119,196,269,2008
+Barcelona - Celtic,Barcelona,Celtic,-556,562,2893,2008
+Manchester Utd - Lyon,Manchester Utd,Lyon,-263,357,747,2008
+Sevilla - Fenerbahce,Sevilla,Fenerbahce,-278,369,769,2008
+Arsenal - AC Milan,Arsenal,AC Milan,110,202,308,2008
+Celtic - Barcelona,Celtic,Barcelona,320,225,112,2008
+Fenerbahce - Sevilla,Fenerbahce,Sevilla,175,204,170,2008
+Lyon - Manchester Utd,Lyon,Manchester Utd,238,200,133,2008
+AS Roma - Real Madrid,AS Roma,Real Madrid,150,208,192,2008
+Liverpool - Inter,Liverpool,Inter,147,202,202,2008
+Olympiakos Piraeus - Chelsea,Olympiakos Piraeus,Chelsea,337,223,-110,2008
+Schalke - FC Porto,Schalke,FC Porto,122,213,240,2008
+Barcelona - Lyon,Barcelona,Lyon,-417,621,1090,2019
+Bayern Munich - Liverpool,Bayern Munich,Liverpool,108,256,278,2019
+Juventus - Atl. Madrid,Juventus,Atl. Madrid,-133,262,447,2019
+Manchester City - Schalke,Manchester City,Schalke,-286,878,2129,2019
+FC Porto - AS Roma,FC Porto,AS Roma,-127,309,342,2019
+Paris SG - Manchester Utd,Paris SG,Manchester Utd,-204,366,567,2019
+Dortmund - Tottenham,Dortmund,Tottenham,104,273,262,2019
+Real Madrid - Ajax,Real Madrid,Ajax,-132,305,357,2019
+Atl. Madrid - Juventus,Atl. Madrid,Juventus,190,190,194,2019
+Schalke - Manchester City,Schalke,Manchester City,972,458,-323,2019
+Liverpool - Bayern Munich,Liverpool,Bayern Munich,129,248,223,2019
+Lyon - Barcelona,Lyon,Barcelona,372,290,-130,2019
+Ajax - Real Madrid,Ajax,Real Madrid,233,265,119,2019
+Tottenham - Dortmund,Tottenham,Dortmund,110,236,290,2019
+AS Roma - FC Porto,AS Roma,FC Porto,110,240,280,2019
+Manchester Utd - Paris SG,Manchester Utd,Paris SG,135,248,214,2019
+Tottenham - Manchester City,Tottenham,Manchester City,289,260,102,2019
+Liverpool - FC Porto,Liverpool,FC Porto,-345,486,1014,2019
+Manchester Utd - Barcelona,Manchester Utd,Barcelona,313,262,-104,2019
+Ajax - Juventus,Ajax,Juventus,194,223,163,2019
+Juventus - Ajax,Juventus,Ajax,-141,292,436,2019
+Barcelona - Manchester Utd,Barcelona,Manchester Utd,-278,458,773,2019
+Manchester City - Tottenham,Manchester City,Tottenham,-333,507,938,2019
+FC Porto - Liverpool,FC Porto,Liverpool,254,244,120,2019
+Tottenham - Ajax,Tottenham,Ajax,133,229,237,2019
+Barcelona - Liverpool,Barcelona,Liverpool,-111,266,337,2019
+Liverpool - Barcelona,Liverpool,Barcelona,162,272,163,2019

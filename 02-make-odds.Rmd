@@ -40,6 +40,11 @@ head(odds)
 ```
 
 ```{r}
+odds %>% write_csv('raw/cleaned-odds.csv')
+odds = read_csv('raw/cleaned-odds-updated.csv', col_types = c(.default = 'c'))
+```
+
+```{r}
 oddstopct = function(N) {
   if(N == '-') return(NA)
   n = as.numeric(N)
@@ -63,6 +68,14 @@ odds = odds %>%
     pctdraw = pctdrawunadj / impliedsum,
     pctaway = pctawayunadj / impliedsum
   )
+```
+
+```{r}
+head(odds)
+```
+
+```{r}
+tail(odds)
 ```
 
 ```{r}
