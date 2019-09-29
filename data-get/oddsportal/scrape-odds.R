@@ -45,7 +45,8 @@ runscrape = function(dr, lg, yr) {
 
 
 lgs = c('champions-league', 'europa-league')
-yrs = 2010:2004
+# yrs = 2020:2004
+yrs = 2020
 lgyr = expand.grid(lg = lgs, yr = yrs, stringsAsFactors = FALSE)
 
 dr = remoteDriver(port = 4445L)
