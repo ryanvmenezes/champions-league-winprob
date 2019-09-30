@@ -2,7 +2,7 @@ library(here)
 library(httr)
 library(tidyverse)
 
-getandsave <- function(comp, resource, szn) {
+getandsave <- function(comp, resource, szn, delay = 0) {
   fname = str_c(comp, '-', resource, '-', szn, '.json')
   destfile = here('data-get', 'footballdata', 'raw', fname)
   if (!file.exists(destfile)) {
@@ -14,15 +14,18 @@ getandsave <- function(comp, resource, szn) {
   } else {
     print(str_c(fname, ' already exists'))
   }
-  # Sys.sleep()
+  Sys.sleep(delay)
 }
 
 leagues = c('CL') # 'EL'
 resources = c('matches','teams','standings')
 seasons = 2019:2017
 
-allrequests = expand.grid(comp = leagues,
-                          resource = resources,
-                          szn = seasons,
-                          stringsAsFactors = FALSE)
+allrequests = expand.grid(
+  comp = leagues,
+  resource = resources,
+  szn = seasons,
+  stringsAsFactors = FALSE
+  )
+
 pwalk(allrequests, getandsave)

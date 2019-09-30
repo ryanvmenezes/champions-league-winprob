@@ -1,0 +1,1510 @@
+comp,season,matchid,minute,extraTime,goaltype,team.id,team.name,scorer.id,scorer.name,assist.id,assist.name
+CL,2017,200068,39,,REGULAR,1870,FC Alashkert,14820,Uroš Nenadović,14811,Artak Dashyan
+CL,2017,200064,17,,REGULAR,1905,Víkingur Gøta,14871,Gunnar Vatnhamar,14872,Filip Đorđević
+CL,2017,200064,39,,REGULAR,1906,KF Trepça '89 Mitrovicë,14858,Fiton Hajdari,,
+CL,2017,200064,73,,REGULAR,1905,Víkingur Gøta,14865,Adeshina Lawal,14871,Gunnar Vatnhamar
+CL,2017,200066,62,,REGULAR,1892,Hibernians FC,14903,Jorginho,14902,Marco Sahanek
+CL,2017,200066,73,,OWN,1882,FCI Tallinn,14908,Aleksandr Volodin,,
+CL,2017,200070,8,,REGULAR,1874,Europa FC,14939,Álex Quillo,14943,Kike Gómez
+CL,2017,200070,44,,REGULAR,1904,The New Saints FC,14686,Scott Quigley,,
+CL,2017,200070,78,,REGULAR,1874,Europa FC,14943,Kike Gómez,5654,Liam Walker
+CL,2017,200072,89,,REGULAR,1896,Linfield FC,15007,Jordan Stewart,,
+CL,2017,200065,37,,REGULAR,1905,Víkingur Gøta,14874,Sorin Vasili Anghel,14869,Sølvi Vatnhamar
+CL,2017,200065,40,,OWN,1906,KF Trepça '89 Mitrovicë,14860,Perparim Islami,,
+CL,2017,200065,52,,REGULAR,1905,Víkingur Gøta,14869,Sølvi Vatnhamar,,
+CL,2017,200065,59,,REGULAR,1905,Víkingur Gøta,14869,Sølvi Vatnhamar,14865,Adeshina Lawal
+CL,2017,200065,65,,REGULAR,1906,KF Trepça '89 Mitrovicë,14857,Florent Hasani,14875,Kushtrim Lushtaku
+CL,2017,200067,88,,REGULAR,1892,Hibernians FC,14903,Jorginho,14900,Johann Bezzina
+CL,2017,200071,37,,OWN,1874,Europa FC,14940,Iván Moya,,
+CL,2017,200071,41,,REGULAR,1904,The New Saints FC,14686,Scott Quigley,14949,Aeron Edwards
+CL,2017,200071,53,,PENALTY,1874,Europa FC,5654,Liam Walker,,
+CL,2017,200071,104,,REGULAR,1904,The New Saints FC,14686,Scott Quigley,14947,Jamie Mullan
+CL,2017,200069,28,,REGULAR,1870,FC Alashkert,14820,Uroš Nenadović,,
+CL,2017,200069,63,,REGULAR,1879,FC Santa Coloma,14825,Ildefons Lima,15043,José Galán
+CL,2017,200078,10,,PENALTY,611,Qarabağ Ağdam FK,15063,Əfran İsmayılov,,
+CL,2017,200078,37,,REGULAR,611,Qarabağ Ağdam FK,15064,Dino Ndlovu,15057,Ansi Agolli
+CL,2017,200078,45,1,PENALTY,611,Qarabağ Ağdam FK,15064,Dino Ndlovu,,
+CL,2017,200078,83,,REGULAR,611,Qarabağ Ağdam FK,15080,Donald Guerrier,15055,Míchel
+CL,2017,200078,90,2,REGULAR,611,Qarabağ Ağdam FK,15055,Míchel,,
+CL,2017,200098,32,,PENALTY,1877,FC Red Bull Salzburg,15099,Valon Berisha,,
+CL,2017,200098,35,,REGULAR,1877,FC Red Bull Salzburg,3354,Hwang Heechan,6563,Valentino Lazaro
+CL,2017,200098,54,,REGULAR,1877,FC Red Bull Salzburg,15100,Takumi Minamino,15101,Munas Dabbur
+CL,2017,200080,53,,PENALTY,850,FK Partizan Beograd,15129,Uroš Đurđević,,
+CL,2017,200080,63,,REGULAR,850,FK Partizan Beograd,15148,Leonardo,15133,Léandre Tawamba
+CL,2017,200102,4,,REGULAR,1893,HNK Rijeka,15158,Josip Mišić,,
+CL,2017,200102,68,,REGULAR,1893,HNK Rijeka,15166,Florentin Matei,15155,Stefan Ristovski
+CL,2017,200084,73,,REGULAR,1884,Astana FK,15191,Patrick Twumasi,,
+CL,2017,200074,72,,REGULAR,752,APOEL FC,15229,Facundo Bertoglio,15249,Vander
+CL,2017,200082,79,,PENALTY,1880,FC Sheriff Tiraspol,15284,Ziguy Badibanga,,
+CL,2017,200088,35,,REGULAR,1891,Hapoel Be'er Sheva FC,15296,Miguel Vitor,15300,Maor Melikson
+CL,2017,200088,52,,REGULAR,1891,Hapoel Be'er Sheva FC,15299,Dan Einbinder,15304,Anthony Nwakaeme
+CL,2017,200088,63,,REGULAR,1872,Budapest Honvéd FC,15307,Davide Lanzafame,15305,Zsolt Laczkó
+CL,2017,200090,62,,REGULAR,1889,FK Vardar Skopje,15345,Boban Nikolov,15351,Jonathan Balotelli
+CL,2017,200090,75,,REGULAR,749,Malmö FF,15340,Franz Brorsson,15352,Magnus Wolff Eikrem
+CL,2017,200092,43,,REGULAR,734,NK Maribor,15377,Luka Zahovič,15381,Gregor Bajde
+CL,2017,200092,89,,REGULAR,1894,HŠK Zrinjski Mostar,15400,Ognjen Todorović,15384,Saša Kajkut
+CL,2017,200092,90,4,PENALTY,734,NK Maribor,15393,Marcos Tavares,,
+CL,2017,200100,43,,REGULAR,748,FK BATE Borisov,15417,Alyaksey Ryas,15414,Mikalay Signevich
+CL,2017,200100,78,,OWN,748,FK BATE Borisov,15417,Alyaksey Ryas,,
+CL,2017,200076,18,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,15448,Anicet Andrianantenaina,,
+CL,2017,200076,78,,REGULAR,1890,FK Žalgiris Vilnius,15454,Serge Nyuiadzi,15439,Darvydas Šernas
+CL,2017,200076,86,,REGULAR,1890,FK Žalgiris Vilnius,15436,Mantas Kuklys,15454,Serge Nyuiadzi
+CL,2017,200096,8,,PENALTY,1105,Legia Warszawa,2335,Guilherme,,
+CL,2017,200096,39,,REGULAR,1105,Legia Warszawa,15491,Dominik Nagy,15488,Kasper Hämäläinen
+CL,2017,200096,44,,REGULAR,1105,Legia Warszawa,15488,Kasper Hämäläinen,,
+CL,2017,200086,39,,REGULAR,1898,MSK Žilina,2559,Nikolas Špalek,15525,Eligijus Jankauskas
+CL,2017,200086,68,,REGULAR,1876,FC København,15518,Andrija Pavlović,15516,Pieros Sotiriou
+CL,2017,200086,73,,REGULAR,1876,FC København,15518,Andrija Pavlović,15519,Benjamin Verbič
+CL,2017,200086,82,,REGULAR,1876,FC København,15518,Andrija Pavlović,3453,Nicolai Boilesen
+CL,2017,200094,18,,REGULAR,1873,Dundalk FC,15559,David McMillan,15556,Michael Duffy
+CL,2017,200094,44,,REGULAR,889,Rosenborg BK,15553,Tore Reginiussen,15555,Vegar Eggen Hedenstad
+CL,2017,200104,49,,REGULAR,1907,FH Hafnarfjörður,15592,Emil Pálsson,15586,Steven Lennon
+CL,2017,200104,73,,PENALTY,1905,Víkingur Gøta,14865,Adeshina Lawal,,
+CL,2017,200106,17,,REGULAR,732,Celtic FC,15608,Scott Sinclair,,
+CL,2017,200106,23,,REGULAR,732,Celtic FC,3419,Tom Rogić,15609,Leigh Griffiths
+CL,2017,200085,59,,REGULAR,1884,Astana FK,15191,Patrick Twumasi,,
+CL,2017,200085,72,,REGULAR,1888,FK Spartaks Jūrmala,15181,Edgars Vardanjans,,
+CL,2017,200091,16,,PENALTY,749,Malmö FF,15634,Markus Rosenberg,,
+CL,2017,200091,55,,REGULAR,1889,FK Vardar Skopje,15349,Boban Grncharov,15344,Juan Felipe
+CL,2017,200091,61,,REGULAR,1889,FK Vardar Skopje,15346,Tigran Barseghyan,,
+CL,2017,200091,90,1,REGULAR,1889,FK Vardar Skopje,15345,Boban Nikolov,15362,Dejan Blazhevski
+CL,2017,200101,18,,REGULAR,1870,FC Alashkert,14820,Uroš Nenadović,14813,Artak Yedigaryan
+CL,2017,200101,23,,REGULAR,748,FK BATE Borisov,15413,Mikhail Hardzeichuk,,
+CL,2017,200101,35,,REGULAR,748,FK BATE Borisov,15413,Mikhail Hardzeichuk,15416,Ihar Stasevich
+CL,2017,200101,78,,REGULAR,748,FK BATE Borisov,15423,Maksim Valadzko,15419,Mirko Ivanić
+CL,2017,200079,22,,REGULAR,611,Qarabağ Ağdam FK,15080,Donald Guerrier,,
+CL,2017,200103,41,,REGULAR,1893,HNK Rijeka,15166,Florentin Matei,,
+CL,2017,200103,54,,REGULAR,1893,HNK Rijeka,3481,Mario Gavranović,,
+CL,2017,200103,61,,REGULAR,1893,HNK Rijeka,15156,Alexander Gorgon,,
+CL,2017,200103,64,,REGULAR,1893,HNK Rijeka,15155,Stefan Ristovski,,
+CL,2017,200103,69,,REGULAR,1904,The New Saints FC,14952,Adrian Cieslewicz,,
+CL,2017,200103,79,,REGULAR,1893,HNK Rijeka,3481,Mario Gavranović,,
+CL,2017,200105,79,,REGULAR,1907,FH Hafnarfjörður,15586,Steven Lennon,,
+CL,2017,200105,90,1,REGULAR,1907,FH Hafnarfjörður,15587,Þórarinn Valdimarsson,,
+CL,2017,200075,40,,PENALTY,752,APOEL FC,15234,Igor de Camargo,,
+CL,2017,200095,12,,REGULAR,1873,Dundalk FC,15557,Brian Gartland,,
+CL,2017,200095,43,,REGULAR,889,Rosenborg BK,15568,Yann-Erik de Lanlay,3463,Mike Jensen
+CL,2017,200095,98,,REGULAR,889,Rosenborg BK,15554,Matthías Vilhjálmsson,15555,Vegar Eggen Hedenstad
+CL,2017,200083,35,,REGULAR,1886,FK Kukësi,15280,Izair Emini,,
+CL,2017,200083,45,1,REGULAR,1886,FK Kukësi,15260,Pero Pejić,15280,Izair Emini
+CL,2017,200083,56,,REGULAR,1880,FC Sheriff Tiraspol,781,Cyrille Bayala,15271,Mateo Sušić
+CL,2017,200087,19,,REGULAR,1898,MSK Žilina,10831,Yusuf Otubanjo,,
+CL,2017,200087,48,,PENALTY,1876,FC København,15519,Benjamin Verbič,,
+CL,2017,200087,57,,REGULAR,1898,MSK Žilina,15536,Filip Kaša,15524,Michal Škvarka
+CL,2017,200077,15,,REGULAR,1890,FK Žalgiris Vilnius,15454,Serge Nyuiadzi,4688,Matija Ljujić
+CL,2017,200077,41,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,15449,Natanael Pimienta,15461,Claudiu Keșerü
+CL,2017,200077,55,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,15447,Wanderson,15689,Svetoslav Dyakov
+CL,2017,200077,56,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,15461,Claudiu Keșerü,15449,Natanael Pimienta
+CL,2017,200077,74,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,15461,Claudiu Keșerü,15452,Lucas Sasha
+CL,2017,200093,7,,REGULAR,1894,HŠK Zrinjski Mostar,15400,Ognjen Todorović,15390,Toni Jović
+CL,2017,200093,27,,REGULAR,734,NK Maribor,15375,Mitja Viler,15381,Gregor Bajde
+CL,2017,200099,11,,REGULAR,1877,FC Red Bull Salzburg,15107,Marc Rzatkowski,15101,Munas Dabbur
+CL,2017,200099,19,,REGULAR,1877,FC Red Bull Salzburg,15106,Fredrik Gulbrandsen,15104,Christoph Leitgeb
+CL,2017,200099,84,,REGULAR,1877,FC Red Bull Salzburg,15704,Amadou Haïdara,,
+CL,2017,200097,6,,REGULAR,1105,Legia Warszawa,2335,Guilherme,,
+CL,2017,200097,37,,OWN,1895,IFK Mariehamn,15474,Kristian Kojola,,
+CL,2017,200097,40,,REGULAR,1105,Legia Warszawa,15709,Michał Kucharczyk,3535,Krzysztof Mączyński
+CL,2017,200097,54,,PENALTY,1105,Legia Warszawa,15709,Michał Kucharczyk,,
+CL,2017,200097,80,,REGULAR,1105,Legia Warszawa,10201,Sebastian Szymański,15488,Kasper Hämäläinen
+CL,2017,200097,81,,REGULAR,1105,Legia Warszawa,15712,Konrad Michalak,,
+CL,2017,200107,4,,REGULAR,732,Celtic FC,15608,Scott Sinclair,,
+CL,2017,200107,46,,REGULAR,732,Celtic FC,3419,Tom Rogić,,
+CL,2017,200107,54,,REGULAR,732,Celtic FC,15608,Scott Sinclair,,
+CL,2017,200107,90,2,REGULAR,732,Celtic FC,15614,Stuart Armstrong,,
+CL,2017,200089,11,,REGULAR,1891,Hapoel Be'er Sheva FC,3391,John Ogu,,
+CL,2017,200089,16,,REGULAR,1891,Hapoel Be'er Sheva FC,15304,Anthony Nwakaeme,15300,Maor Melikson
+CL,2017,200089,45,2,PENALTY,1872,Budapest Honvéd FC,15307,Davide Lanzafame,,
+CL,2017,200089,73,,REGULAR,1872,Budapest Honvéd FC,15308,Botond Baráth,15325,Kadima Kabangu
+CL,2017,200089,84,,REGULAR,1891,Hapoel Be'er Sheva FC,15304,Anthony Nwakaeme,,
+CL,2017,200120,20,,PENALTY,930,SK Slavia Praha,15732,Milan Škoda,,
+CL,2017,200108,23,,REGULAR,1881,FC Viktoria Plzeň,15766,Michal Krmenčík,,
+CL,2017,200108,37,,REGULAR,1883,FCSB,15756,Constantin Budescu,,
+CL,2017,200108,53,,REGULAR,1881,FC Viktoria Plzeň,15767,Jan Kopic,,
+CL,2017,200108,61,,REGULAR,1883,FCSB,15753,Filipe Teixeira,15761,Marko Momčilović
+CL,2017,200114,45,1,REGULAR,1900,PFC CSKA Moskva,3676,Alan Dzagoev,15794,Viktor Vasin
+CL,2017,200114,55,,REGULAR,1900,PFC CSKA Moskva,15793,Pontus Wernbloom,15795,Vitinho
+CL,2017,200134,65,,REGULAR,1889,FK Vardar Skopje,15351,Jonathan Balotelli,,
+CL,2017,200118,6,,REGULAR,654,PAE Olympiakos SFP,15832,El Fardou Ben Nabouhane,15826,Marko Marin
+CL,2017,200118,10,,REGULAR,850,FK Partizan Beograd,15133,Léandre Tawamba,15135,Marko Janković
+CL,2017,200118,56,,REGULAR,654,PAE Olympiakos SFP,15832,El Fardou Ben Nabouhane,9246,Mehdi Carcela
+CL,2017,200118,90,1,REGULAR,654,PAE Olympiakos SFP,15834,Emmanuel Emenike,15828,Diogo Figueiras
+CL,2017,200132,36,,REGULAR,1884,Astana FK,15186,Junior Kabananga,15194,László Kleinheisler
+CL,2017,200132,45,,REGULAR,1884,Astana FK,15193,Ivan Maewski,15206,Roman Murtazaev
+CL,2017,200132,78,,REGULAR,1105,Legia Warszawa,32955,Armando Sadiku,15709,Michał Kucharczyk
+CL,2017,200132,90,4,REGULAR,1884,Astana FK,15191,Patrick Twumasi,15186,Junior Kabananga
+CL,2017,200112,15,,REGULAR,842,FK Dynamo Kyiv,163,Andrii Yarmolenko,,
+CL,2017,200112,34,,REGULAR,842,FK Dynamo Kyiv,16187,Dieumerci Mbokani,163,Andrii Yarmolenko
+CL,2017,200112,90,1,REGULAR,1871,BSC Young Boys,16281,Christian Fassnacht,16280,Roger Assalé
+CL,2017,200112,90,3,REGULAR,842,FK Dynamo Kyiv,16169,Denys Harmash,29124,Maksym Koval
+CL,2017,200128,30,,REGULAR,1893,HNK Rijeka,3481,Mario Gavranović,15155,Stefan Ristovski
+CL,2017,200128,49,,REGULAR,1877,FC Red Bull Salzburg,3354,Hwang Heechan,15102,Reinhold Yabo
+CL,2017,200124,19,,REGULAR,1891,Hapoel Be'er Sheva FC,15304,Anthony Nwakaeme,15300,Maor Melikson
+CL,2017,200124,79,,REGULAR,1891,Hapoel Be'er Sheva FC,15319,Michael Ohana,,
+CL,2017,200122,75,,REGULAR,708,FC Viitorul Constanţa,16025,Cristian Ganea,,
+CL,2017,200126,54,,REGULAR,734,NK Maribor,15393,Marcos Tavares,15374,Aleksander Rajčevič
+CL,2017,200110,32,,REGULAR,522,OGC Nice,8445,Mario Balotelli,8430,Jean Michaël Seri
+CL,2017,200110,49,,REGULAR,678,AFC Ajax,7556,Donny van de Beek,,
+CL,2017,200116,5,,REGULAR,851,Club Brugge KV,8894,Emmanuel Dennis,8880,Lior Refaelov
+CL,2017,200116,16,,REGULAR,851,Club Brugge KV,8869,Stefano Denswil,,
+CL,2017,200116,59,,REGULAR,1897,Medipol Başakşehir FK,16652,Márcio Mossoró,,
+CL,2017,200116,63,,REGULAR,1897,Medipol Başakşehir FK,16656,Eljero Elia,16645,Joseph Attamah
+CL,2017,200116,73,,REGULAR,1897,Medipol Başakşehir FK,16652,Márcio Mossoró,16650,Edin Višća
+CL,2017,200116,78,,REGULAR,851,Club Brugge KV,8869,Stefano Denswil,,
+CL,2017,200131,45,3,REGULAR,611,Qarabağ Ağdam FK,15064,Dino Ndlovu,,
+CL,2017,200131,86,,REGULAR,611,Qarabağ Ağdam FK,15055,Míchel,15057,Ansi Agolli
+CL,2017,200131,90,4,PENALTY,1880,FC Sheriff Tiraspol,15284,Ziguy Badibanga,,
+CL,2017,200115,74,,REGULAR,1900,PFC CSKA Moskva,15810,Bibras Natcho,15792,Aleksey Berezutski
+CL,2017,200121,6,,REGULAR,748,FK BATE Borisov,15414,Mikalay Signevich,15413,Mikhail Hardzeichuk
+CL,2017,200121,44,,REGULAR,930,SK Slavia Praha,15732,Milan Škoda,15727,Danny
+CL,2017,200121,46,,REGULAR,748,FK BATE Borisov,15416,Ihar Stasevich,15413,Mikhail Hardzeichuk
+CL,2017,200123,54,,REGULAR,752,APOEL FC,16114,Carlão,15245,Efstathios Aloneftis
+CL,2017,200123,93,,REGULAR,752,APOEL FC,15233,Giorgios Merkis,15228,Roberto Lago
+CL,2017,200123,94,,REGULAR,752,APOEL FC,15234,Igor de Camargo,,
+CL,2017,200123,105,1,REGULAR,752,APOEL FC,16117,Giorgos Efrem,15230,Lorenzo Ebecilio
+CL,2017,200117,7,,REGULAR,1897,Medipol Başakşehir FK,16661,Emmanuel Adebayor,16648,Gaël Clichy
+CL,2017,200117,34,,REGULAR,1897,Medipol Başakşehir FK,16650,Edin Višća,16661,Emmanuel Adebayor
+CL,2017,200135,2,,REGULAR,1876,FC København,15517,Ján Greguš,,
+CL,2017,200135,19,,REGULAR,1889,FK Vardar Skopje,15345,Boban Nikolov,15341,Hovhannes Hambardzumyan
+CL,2017,200135,26,,OWN,1889,FK Vardar Skopje,15346,Tigran Barseghyan,,
+CL,2017,200135,75,,REGULAR,1876,FC København,15534,Federico Santander,15513,Pierre Bengtsson
+CL,2017,200135,88,,PENALTY,1876,FC København,15516,Pieros Sotiriou,,
+CL,2017,200109,27,,REGULAR,1883,FCSB,15754,Mihai Bălașa,,
+CL,2017,200109,65,,REGULAR,1881,FC Viktoria Plzeň,15766,Michal Krmenčík,15772,Radim Řezník
+CL,2017,200109,71,,REGULAR,1883,FCSB,15753,Filipe Teixeira,,
+CL,2017,200109,76,,REGULAR,1883,FCSB,15762,Florin Tănase,,
+CL,2017,200109,79,,PENALTY,1883,FCSB,15757,Denis Alibec,,
+CL,2017,200113,12,,PENALTY,1871,BSC Young Boys,16279,Guillaume Hoarau,,
+CL,2017,200113,89,,REGULAR,1871,BSC Young Boys,16276,Jordan Lotomba,16273,Miralem Sulejmani
+CL,2017,200125,9,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,15447,Wanderson,15446,Marcelinho
+CL,2017,200125,33,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,15447,Wanderson,15689,Svetoslav Dyakov
+CL,2017,200125,56,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,15446,Marcelinho,15461,Claudiu Keșerü
+CL,2017,200125,61,,REGULAR,1891,Hapoel Be'er Sheva FC,15320,Mohammad Ghadir,15304,Anthony Nwakaeme
+CL,2017,200127,90,2,REGULAR,734,NK Maribor,15393,Marcos Tavares,15377,Luka Zahovič
+CL,2017,200111,3,,REGULAR,522,OGC Nice,8431,Arnaud Souquet,,
+CL,2017,200111,26,,REGULAR,678,AFC Ajax,7556,Donny van de Beek,3707,Hakim Ziyech
+CL,2017,200111,56,,REGULAR,678,AFC Ajax,3733,Davinson Sánchez,7548,Nick Viergever
+CL,2017,200111,79,,REGULAR,522,OGC Nice,8432,Vincent Marcel,8430,Jean Michaël Seri
+CL,2017,200119,21,,REGULAR,654,PAE Olympiakos SFP,9246,Mehdi Carcela,,
+CL,2017,200119,33,,REGULAR,850,FK Partizan Beograd,15839,Seydouba Soumah,,
+CL,2017,200119,51,,REGULAR,654,PAE Olympiakos SFP,15841,Kostas Fortounis,15830,Leonardo Koutris
+CL,2017,200119,84,,REGULAR,850,FK Partizan Beograd,15129,Uroš Đurđević,15135,Marko Janković
+CL,2017,200133,76,,REGULAR,1105,Legia Warszawa,43825,Jakub Czerwiński,10201,Sebastian Szymański
+CL,2017,200137,69,,REGULAR,732,Celtic FC,15611,James Forrest,15608,Scott Sinclair
+CL,2017,200138,25,,REGULAR,611,Qarabağ Ağdam FK,15065,Mahir Emreli,15064,Dino Ndlovu
+CL,2017,200140,2,,REGULAR,752,APOEL FC,15234,Igor de Camargo,15230,Lorenzo Ebecilio
+CL,2017,200140,10,,REGULAR,752,APOEL FC,15245,Efstathios Aloneftis,15230,Lorenzo Ebecilio
+CL,2017,200150,90,1,OWN,1871,BSC Young Boys,16269,Kassim Nuhu,,
+CL,2017,200154,35,,REGULAR,64,Liverpool FC,7867,Trent Alexander-Arnold,,
+CL,2017,200154,74,,OWN,2,TSG 1899 Hoffenheim,310,Håvard Nordtveit,,
+CL,2017,200154,87,,REGULAR,2,TSG 1899 Hoffenheim,319,Mark Uth,310,Håvard Nordtveit
+CL,2017,200142,41,,REGULAR,1893,HNK Rijeka,15162,Heber,3481,Mario Gavranović
+CL,2017,200142,66,,REGULAR,654,PAE Olympiakos SFP,15829,Vadis Odjidja-Ofoe,15841,Kostas Fortounis
+CL,2017,200142,90,3,REGULAR,654,PAE Olympiakos SFP,15827,Alaixys Romao,,
+CL,2017,200144,32,,OWN,1884,Astana FK,15205,Evgeny Postnikov,,
+CL,2017,200144,42,,REGULAR,732,Celtic FC,15608,Scott Sinclair,,
+CL,2017,200144,60,,REGULAR,732,Celtic FC,15608,Scott Sinclair,15609,Leigh Griffiths
+CL,2017,200144,79,,REGULAR,732,Celtic FC,15611,James Forrest,15609,Leigh Griffiths
+CL,2017,200144,88,,OWN,1884,Astana FK,15185,Ihar Shytaw,,
+CL,2017,200146,10,,REGULAR,734,NK Maribor,15393,Marcos Tavares,,
+CL,2017,200146,12,,REGULAR,1891,Hapoel Be'er Sheva FC,15304,Anthony Nwakaeme,,
+CL,2017,200146,45,2,PENALTY,1891,Hapoel Be'er Sheva FC,15302,Shir Tzedek,,
+CL,2017,200148,16,,REGULAR,559,Sevilla FC,85,Sergio Escudero,77,Joaquín Correa
+CL,2017,200148,64,,REGULAR,1897,Medipol Başakşehir FK,16656,Eljero Elia,16651,Mahmut Tekdemir
+CL,2017,200148,84,,REGULAR,559,Sevilla FC,73,Wissam Ben Yedder,54,Jesús Navas
+CL,2017,200152,13,,REGULAR,113,SSC Napoli,2103,Dries Mertens,2092,Lorenzo Insigne
+CL,2017,200152,70,,PENALTY,113,SSC Napoli,2094,Jorginho,,
+CL,2017,200145,26,,OWN,732,Celtic FC,16068,Kristoffer Ajer,,
+CL,2017,200145,33,,REGULAR,732,Celtic FC,15608,Scott Sinclair,15620,Callum McGregor
+CL,2017,200145,48,,REGULAR,1884,Astana FK,15190,Serikzhan Muzhikov,,
+CL,2017,200145,49,,REGULAR,1884,Astana FK,15191,Patrick Twumasi,15189,Dmitriy Shomko
+CL,2017,200145,69,,REGULAR,1884,Astana FK,15191,Patrick Twumasi,,
+CL,2017,200145,80,,REGULAR,732,Celtic FC,15717,Jules Ntcham,15614,Stuart Armstrong
+CL,2017,200145,90,,REGULAR,732,Celtic FC,15609,Leigh Griffiths,15619,Nir Bitton
+CL,2017,200143,25,,REGULAR,654,PAE Olympiakos SFP,15826,Marko Marin,15829,Vadis Odjidja-Ofoe
+CL,2017,200147,15,,REGULAR,734,NK Maribor,15375,Mitja Viler,,
+CL,2017,200149,17,,REGULAR,1897,Medipol Başakşehir FK,16656,Eljero Elia,16646,Júnior Caiçara
+CL,2017,200149,52,,REGULAR,559,Sevilla FC,85,Sergio Escudero,54,Jesús Navas
+CL,2017,200149,75,,REGULAR,559,Sevilla FC,73,Wissam Ben Yedder,61,Nolito
+CL,2017,200149,83,,REGULAR,1897,Medipol Başakşehir FK,16650,Edin Višća,16654,Stefano Napoleoni
+CL,2017,200153,48,,REGULAR,113,SSC Napoli,2104,José Callejón,2095,Marek Hamšík
+CL,2017,200153,89,,REGULAR,113,SSC Napoli,2092,Lorenzo Insigne,2084,Faouzi Ghoulam
+CL,2017,200139,45,,REGULAR,1876,FC København,15534,Federico Santander,15517,Ján Greguš
+CL,2017,200139,63,,REGULAR,611,Qarabağ Ağdam FK,15064,Dino Ndlovu,15057,Ansi Agolli
+CL,2017,200139,66,,REGULAR,1876,FC København,15518,Andrija Pavlović,3451,Peter Ankersen
+CL,2017,200151,45,,REGULAR,1900,PFC CSKA Moskva,15791,Georgii Shchennikov,,
+CL,2017,200151,64,,REGULAR,1900,PFC CSKA Moskva,3676,Alan Dzagoev,15795,Vitinho
+CL,2017,200155,10,,REGULAR,64,Liverpool FC,3183,Emre Can,3626,Sadio Mané
+CL,2017,200155,18,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,,
+CL,2017,200155,21,,REGULAR,64,Liverpool FC,3183,Emre Can,3233,Roberto Firmino
+CL,2017,200155,28,,REGULAR,2,TSG 1899 Hoffenheim,319,Mark Uth,375,Sandro Wagner
+CL,2017,200155,63,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,3320,Jordan Henderson
+CL,2017,200155,79,,REGULAR,2,TSG 1899 Hoffenheim,375,Sandro Wagner,318,Andrej Kramarić
+CL,2017,200157,13,,REGULAR,498,Sporting Clube de Portugal,15891,Seydou Doumbia,3212,Marcos Acuña
+CL,2017,200157,20,,REGULAR,1883,FCSB,15759,Junior Maranhão,,
+CL,2017,200157,59,,REGULAR,498,Sporting Clube de Portugal,3212,Marcos Acuña,,
+CL,2017,200157,64,,REGULAR,498,Sporting Clube de Portugal,3256,Gelson Martins,3257,Bruno Fernandes
+CL,2017,200157,75,,REGULAR,498,Sporting Clube de Portugal,15889,Bas Dost,3256,Gelson Martins
+CL,2017,200157,88,,REGULAR,498,Sporting Clube de Portugal,15885,Rodrigo Battaglia,,
+CL,2017,200194,45,,REGULAR,81,FC Barcelona,3218,Lionel Messi,3169,Luis Suárez
+CL,2017,200194,56,,REGULAR,81,FC Barcelona,3554,Ivan Rakitić,,
+CL,2017,200194,69,,REGULAR,81,FC Barcelona,3218,Lionel Messi,3197,Iniesta
+CL,2017,200195,2,,REGULAR,498,Sporting Clube de Portugal,15891,Seydou Doumbia,3212,Marcos Acuña
+CL,2017,200195,13,,REGULAR,498,Sporting Clube de Portugal,3256,Gelson Martins,15891,Seydou Doumbia
+CL,2017,200195,43,,REGULAR,498,Sporting Clube de Portugal,3257,Bruno Fernandes,3162,Sebastián Coates
+CL,2017,200195,89,,REGULAR,654,PAE Olympiakos SFP,15836,Felipe Pardo,,
+CL,2017,200195,90,3,REGULAR,654,PAE Olympiakos SFP,15836,Felipe Pardo,15828,Diogo Figueiras
+CL,2017,200158,35,,REGULAR,66,Manchester United FC,3652,Marouane Fellaini,3317,Ashley Young
+CL,2017,200158,53,,REGULAR,66,Manchester United FC,3662,Romelu Lukaku,7899,Daley Blind
+CL,2017,200158,84,,REGULAR,66,Manchester United FC,3331,Marcus Rashford,,
+CL,2017,200159,50,,REGULAR,1903,Sport Lisboa e Benfica,3482,Haris Seferović,3440,Andrija Živković
+CL,2017,200159,63,,PENALTY,1900,PFC CSKA Moskva,15795,Vitinho,,
+CL,2017,200159,71,,REGULAR,1900,PFC CSKA Moskva,16685,Timur Zhamaletdinov,,
+CL,2017,200170,12,,PENALTY,5,FC Bayern München,371,Robert Lewandowski,,
+CL,2017,200170,65,,REGULAR,5,FC Bayern München,356,Thiago Alcântara,359,Joshua Kimmich
+CL,2017,200170,90,,REGULAR,5,FC Bayern München,359,Joshua Kimmich,347,Jérôme Boateng
+CL,2017,200171,19,,REGULAR,524,Paris Saint-Germain FC,8491,Neymar,3368,Adrien Rabiot
+CL,2017,200171,34,,REGULAR,524,Paris Saint-Germain FC,3374,Kylian Mbappé,8491,Neymar
+CL,2017,200171,40,,PENALTY,524,Paris Saint-Germain FC,3170,Edinson Cavani,,
+CL,2017,200171,83,,OWN,732,Celtic FC,3489,Mikael Lustig,,
+CL,2017,200171,85,,REGULAR,524,Paris Saint-Germain FC,3170,Edinson Cavani,8478,Layvin Kurzawa
+CL,2017,200182,5,,REGULAR,61,Chelsea FC,7818,Pedro,3230,Willian
+CL,2017,200182,30,,REGULAR,61,Chelsea FC,7807,Davide Zappacosta,3641,Thibaut Courtois
+CL,2017,200182,55,,REGULAR,61,Chelsea FC,3191,Azpilicueta,7811,Fàbregas
+CL,2017,200182,71,,REGULAR,61,Chelsea FC,7812,Tiemoué Bakayoko,,
+CL,2017,200182,76,,REGULAR,61,Chelsea FC,3664,Michy Batshuayi,7812,Tiemoué Bakayoko
+CL,2017,200182,82,,OWN,611,Qarabağ Ağdam FK,15058,Maksim Medvedev,,
+CL,2017,200206,5,,REGULAR,559,Sevilla FC,73,Wissam Ben Yedder,85,Sergio Escudero
+CL,2017,200206,21,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,7860,Alberto Moreno
+CL,2017,200206,37,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,,
+CL,2017,200206,72,,REGULAR,559,Sevilla FC,77,Joaquín Correa,57,Luis Muriel
+CL,2017,200207,59,,REGULAR,754,FK Spartak Moskva,3679,Aleksandr Samedov,16144,Fernando
+CL,2017,200207,85,,REGULAR,734,NK Maribor,43837,Damjan Bohar,15397,Martin Kramarič
+CL,2017,200218,15,,REGULAR,1887,FK Shakhtar Donetsk,3237,Taison,16485,Facundo Ferreyra
+CL,2017,200218,58,,REGULAR,1887,FK Shakhtar Donetsk,16485,Facundo Ferreyra,16479,Taras Stepanenko
+CL,2017,200218,71,,PENALTY,113,SSC Napoli,2105,Arkadiusz Milik,,
+CL,2017,200219,2,,REGULAR,65,Manchester City FC,3313,John Stones,3196,David Silva
+CL,2017,200219,10,,REGULAR,65,Manchester City FC,7891,Sergio Agüero,3311,Kyle Walker
+CL,2017,200219,25,,REGULAR,65,Manchester City FC,3236,Gabriel Jesus,,
+CL,2017,200219,63,,REGULAR,65,Manchester City FC,3313,John Stones,3654,Kevin De Bruyne
+CL,2017,200230,13,,REGULAR,600,Beşiktaş JK,3234,Talisca,3247,Ricardo Quaresma
+CL,2017,200230,21,,OWN,600,Beşiktaş JK,3431,Duško Tošić,,
+CL,2017,200230,28,,REGULAR,600,Beşiktaş JK,7854,Cenk Tosun,15947,Caner Erkin
+CL,2017,200230,86,,REGULAR,600,Beşiktaş JK,15952,Ryan Babel,15953,Álvaro Negredo
+CL,2017,200231,32,,REGULAR,721,RB Leipzig,3494,Emil Forsberg,3466,Yussuf Poulsen
+CL,2017,200231,34,,REGULAR,548,AS Monaco FC,3658,Youri Tielemans,,
+CL,2017,200242,4,,REGULAR,73,Tottenham Hotspur FC,3343,Son Heungmin,8004,Harry Kane
+CL,2017,200242,11,,REGULAR,4,BV Borussia 09 Dortmund,163,Andrii Yarmolenko,6487,Shinji Kagawa
+CL,2017,200242,15,,REGULAR,73,Tottenham Hotspur FC,8004,Harry Kane,3646,Jan Vertonghen
+CL,2017,200242,60,,REGULAR,73,Tottenham Hotspur FC,8004,Harry Kane,3459,Christian Eriksen
+CL,2017,200243,12,,REGULAR,86,Real Madrid CF,44,Cristiano Ronaldo,3876,Gareth Bale
+CL,2017,200243,51,,PENALTY,86,Real Madrid CF,44,Cristiano Ronaldo,,
+CL,2017,200243,61,,REGULAR,86,Real Madrid CF,3192,Sergio Ramos,,
+CL,2017,200208,27,,REGULAR,559,Sevilla FC,73,Wissam Ben Yedder,77,Joaquín Correa
+CL,2017,200208,38,,REGULAR,559,Sevilla FC,73,Wissam Ben Yedder,60,Franco Vázquez
+CL,2017,200208,83,,PENALTY,559,Sevilla FC,73,Wissam Ben Yedder,,
+CL,2017,200209,23,,REGULAR,754,FK Spartak Moskva,16144,Fernando,,
+CL,2017,200209,31,,REGULAR,64,Liverpool FC,3228,Philippe Coutinho,3626,Sadio Mané
+CL,2017,200220,48,,REGULAR,65,Manchester City FC,3654,Kevin De Bruyne,3196,David Silva
+CL,2017,200220,90,,REGULAR,65,Manchester City FC,3329,Raheem Sterling,3254,Bernardo Silva
+CL,2017,200221,7,,REGULAR,113,SSC Napoli,2092,Lorenzo Insigne,2104,José Callejón
+CL,2017,200221,49,,REGULAR,113,SSC Napoli,2103,Dries Mertens,,
+CL,2017,200221,70,,REGULAR,113,SSC Napoli,2104,José Callejón,2103,Dries Mertens
+CL,2017,200221,90,3,REGULAR,675,Feyenoord Rotterdam,3705,Sofyan Amrabat,7469,Tonny Vilhena
+CL,2017,200232,31,,REGULAR,503,FC Porto,15915,Vincent Aboubakar,,
+CL,2017,200232,69,,REGULAR,503,FC Porto,15915,Vincent Aboubakar,15917,Moussa Maréga
+CL,2017,200232,89,,REGULAR,503,FC Porto,130,Miguel Layún,15917,Moussa Maréga
+CL,2017,200233,11,,REGULAR,600,Beşiktaş JK,15952,Ryan Babel,7854,Cenk Tosun
+CL,2017,200233,43,,REGULAR,600,Beşiktaş JK,3234,Talisca,3247,Ricardo Quaresma
+CL,2017,200244,18,,REGULAR,86,Real Madrid CF,3876,Gareth Bale,3194,Dani Carvajal
+CL,2017,200244,49,,REGULAR,86,Real Madrid CF,44,Cristiano Ronaldo,3876,Gareth Bale
+CL,2017,200244,54,,REGULAR,4,BV Borussia 09 Dortmund,7801,Pierre-Emerick Aubameyang,161,Gonzalo Castro
+CL,2017,200244,79,,REGULAR,86,Real Madrid CF,44,Cristiano Ronaldo,43,Luka Modrić
+CL,2017,200245,39,,REGULAR,73,Tottenham Hotspur FC,8004,Harry Kane,3648,Toby Alderweireld
+CL,2017,200245,62,,REGULAR,73,Tottenham Hotspur FC,8004,Harry Kane,8001,Moussa Sissoko
+CL,2017,200245,67,,REGULAR,73,Tottenham Hotspur FC,8004,Harry Kane,3312,Kieran Trippier
+CL,2017,200184,7,,REGULAR,100,AS Roma,1798,Kostas Manolas,1819,Lorenzo Pellegrini
+CL,2017,200184,15,,REGULAR,100,AS Roma,1822,Edin Džeko,1823,Stephan El Shaarawy
+CL,2017,200184,28,,REGULAR,611,Qarabağ Ağdam FK,15973,Pedro Henrique,15064,Dino Ndlovu
+CL,2017,200196,69,,REGULAR,109,Juventus FC,2047,Gonzalo Higuaín,,
+CL,2017,200196,80,,REGULAR,109,Juventus FC,2045,Mario Mandžukić,,
+CL,2017,200197,49,,OWN,498,Sporting Clube de Portugal,3162,Sebastián Coates,,
+CL,2017,200160,4,,REGULAR,66,Manchester United FC,3662,Romelu Lukaku,3372,Anthony Martial
+CL,2017,200160,19,,PENALTY,66,Manchester United FC,3372,Anthony Martial,,
+CL,2017,200160,27,,REGULAR,66,Manchester United FC,3662,Romelu Lukaku,3372,Anthony Martial
+CL,2017,200160,57,,REGULAR,66,Manchester United FC,7795,Henrikh Mkhitaryan,,
+CL,2017,200160,90,,REGULAR,1900,PFC CSKA Moskva,15812,Konstantin Kuchaev,3683,Aleksandr Golovin
+CL,2017,200161,2,,REGULAR,729,FC Basel 1893,3473,Michael Lang,,
+CL,2017,200161,20,,REGULAR,729,FC Basel 1893,3479,Dimitri Oberlin,9433,Renato Steffen
+CL,2017,200161,60,,PENALTY,729,FC Basel 1893,16061,Ricky van Wolfswinkel,,
+CL,2017,200161,69,,REGULAR,729,FC Basel 1893,3479,Dimitri Oberlin,,
+CL,2017,200161,76,,REGULAR,729,FC Basel 1893,16044,Blás Riveros,,
+CL,2017,200172,2,,REGULAR,524,Paris Saint-Germain FC,3223,Dani Alves,8491,Neymar
+CL,2017,200172,31,,REGULAR,524,Paris Saint-Germain FC,3170,Edinson Cavani,3374,Kylian Mbappé
+CL,2017,200172,63,,REGULAR,524,Paris Saint-Germain FC,8491,Neymar,,
+CL,2017,200173,38,,REGULAR,732,Celtic FC,15609,Leigh Griffiths,15615,Kieran Tierney
+CL,2017,200173,50,,REGULAR,732,Celtic FC,16076,Patrick Roberts,,
+CL,2017,200173,90,3,REGULAR,732,Celtic FC,15608,Scott Sinclair,15717,Jules Ntcham
+CL,2017,200185,40,,PENALTY,78,Club Atlético de Madrid,114,Antoine Griezmann,,
+CL,2017,200185,60,,REGULAR,61,Chelsea FC,7819,Álvaro Morata,3653,Eden Hazard
+CL,2017,200185,90,3,REGULAR,61,Chelsea FC,3664,Michy Batshuayi,3195,Marcos Alonso
+CL,2017,200210,18,,REGULAR,754,FK Spartak Moskva,16148,Quincy Promes,16130,Andrei Eshchenko
+CL,2017,200210,30,,REGULAR,559,Sevilla FC,56,Simon Kjær,,
+CL,2017,200210,58,,REGULAR,754,FK Spartak Moskva,16150,Lorenzo Melgarejo,16148,Quincy Promes
+CL,2017,200210,67,,REGULAR,754,FK Spartak Moskva,3677,Denis Glushakov,3678,Dmitrii Kombarov
+CL,2017,200210,74,,REGULAR,754,FK Spartak Moskva,16152,Luiz Adriano,16148,Quincy Promes
+CL,2017,200210,90,,REGULAR,754,FK Spartak Moskva,16148,Quincy Promes,,
+CL,2017,200211,4,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,3754,Mohamed Salah
+CL,2017,200211,13,,REGULAR,64,Liverpool FC,3228,Philippe Coutinho,7861,James Milner
+CL,2017,200211,19,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,3233,Roberto Firmino
+CL,2017,200211,39,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,7860,Alberto Moreno
+CL,2017,200211,54,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,3228,Philippe Coutinho
+CL,2017,200211,86,,REGULAR,64,Liverpool FC,3323,Alex Oxlade-Chamberlain,8034,Daniel Sturridge
+CL,2017,200211,90,,REGULAR,64,Liverpool FC,7867,Trent Alexander-Arnold,3228,Philippe Coutinho
+CL,2017,200222,9,,REGULAR,65,Manchester City FC,3329,Raheem Sterling,,
+CL,2017,200222,13,,REGULAR,65,Manchester City FC,3236,Gabriel Jesus,3654,Kevin De Bruyne
+CL,2017,200222,73,,PENALTY,113,SSC Napoli,2099,Amadou Diawara,,
+CL,2017,200223,7,,REGULAR,675,Feyenoord Rotterdam,7478,Steven Berghuis,7469,Tonny Vilhena
+CL,2017,200223,24,,REGULAR,1887,FK Shakhtar Donetsk,16476,Bernard,3232,Fred
+CL,2017,200223,54,,REGULAR,1887,FK Shakhtar Donetsk,16476,Bernard,16472,Bohdan Butko
+CL,2017,200234,30,,REGULAR,548,AS Monaco FC,3739,Radamel Falcao,3637,Keïta Baldé
+CL,2017,200234,34,,REGULAR,600,Beşiktaş JK,7854,Cenk Tosun,3247,Ricardo Quaresma
+CL,2017,200234,54,,REGULAR,600,Beşiktaş JK,7854,Cenk Tosun,15952,Ryan Babel
+CL,2017,200235,8,,REGULAR,721,RB Leipzig,9537,Willi Orban,,
+CL,2017,200235,18,,REGULAR,503,FC Porto,15915,Vincent Aboubakar,15903,Felipe
+CL,2017,200235,37,,REGULAR,721,RB Leipzig,3494,Emil Forsberg,9551,Marcel Sabitzer
+CL,2017,200235,40,,REGULAR,721,RB Leipzig,9552,Jean-Kévin Augustin,,
+CL,2017,200235,44,,REGULAR,503,FC Porto,15902,Marcano,3294,Héctor Herrera
+CL,2017,200246,28,,OWN,86,Real Madrid CF,3360,Raphaël Varane,,
+CL,2017,200246,43,,PENALTY,86,Real Madrid CF,44,Cristiano Ronaldo,,
+CL,2017,200247,62,,REGULAR,752,APOEL FC,15248,Mickaël Poté,,
+CL,2017,200247,67,,REGULAR,4,BV Borussia 09 Dortmund,137,Sokratis Papastathopoulos,140,Mario Götze
+CL,2017,200198,18,,OWN,654,PAE Olympiakos SFP,15984,Dimitrios Nikolaou,,
+CL,2017,200198,61,,REGULAR,81,FC Barcelona,3218,Lionel Messi,,
+CL,2017,200198,64,,REGULAR,81,FC Barcelona,3359,Lucas Digne,3218,Lionel Messi
+CL,2017,200198,89,,REGULAR,654,PAE Olympiakos SFP,15984,Dimitrios Nikolaou,15841,Kostas Fortounis
+CL,2017,200199,12,,OWN,109,Juventus FC,2028,Alex Sandro,,
+CL,2017,200199,29,,REGULAR,109,Juventus FC,2036,Miralem Pjanić,,
+CL,2017,200199,84,,REGULAR,109,Juventus FC,2045,Mario Mandžukić,2039,Douglas Costa
+CL,2017,200162,29,,REGULAR,729,FC Basel 1893,16043,Taulant Xhaka,,
+CL,2017,200162,90,,REGULAR,729,FC Basel 1893,3479,Dimitri Oberlin,16043,Taulant Xhaka
+CL,2017,200163,64,,REGULAR,66,Manchester United FC,3331,Marcus Rashford,,
+CL,2017,200174,17,,REGULAR,5,FC Bayern München,370,Thomas Müller,,
+CL,2017,200174,29,,REGULAR,5,FC Bayern München,359,Joshua Kimmich,360,Kingsley Coman
+CL,2017,200174,51,,REGULAR,5,FC Bayern München,350,Mats Hummels,353,Arjen Robben
+CL,2017,200175,3,,REGULAR,524,Paris Saint-Germain FC,3374,Kylian Mbappé,8482,Marco Verratti
+CL,2017,200175,44,,REGULAR,524,Paris Saint-Germain FC,3170,Edinson Cavani,3374,Kylian Mbappé
+CL,2017,200175,66,,REGULAR,524,Paris Saint-Germain FC,8491,Neymar,,
+CL,2017,200175,88,,REGULAR,524,Paris Saint-Germain FC,3210,Ángel di María,,
+CL,2017,200187,11,,REGULAR,61,Chelsea FC,7805,David Luiz,,
+CL,2017,200187,37,,REGULAR,61,Chelsea FC,3653,Eden Hazard,,
+CL,2017,200187,40,,REGULAR,100,AS Roma,1804,Aleksandar Kolarov,,
+CL,2017,200187,64,,REGULAR,100,AS Roma,1822,Edin Džeko,1800,Federico Fazio
+CL,2017,200187,70,,REGULAR,100,AS Roma,1822,Edin Džeko,1804,Aleksandar Kolarov
+CL,2017,200187,75,,REGULAR,61,Chelsea FC,3653,Eden Hazard,7818,Pedro
+CL,2017,200200,20,,REGULAR,498,Sporting Clube de Portugal,15883,Bruno César,3256,Gelson Martins
+CL,2017,200200,79,,REGULAR,109,Juventus FC,2047,Gonzalo Higuaín,2037,Juan Cuadrado
+CL,2017,200164,45,,OWN,1903,Sport Lisboa e Benfica,16735,Mile Svilar,,
+CL,2017,200164,78,,PENALTY,66,Manchester United FC,7899,Daley Blind,,
+CL,2017,200165,32,,REGULAR,729,FC Basel 1893,16049,Luca Zuffi,16060,Mohamed Elyounoussi
+CL,2017,200165,65,,REGULAR,1900,PFC CSKA Moskva,3676,Alan Dzagoev,15810,Bibras Natcho
+CL,2017,200165,79,,REGULAR,1900,PFC CSKA Moskva,15793,Pontus Wernbloom,,
+CL,2017,200176,30,,REGULAR,524,Paris Saint-Germain FC,8482,Marco Verratti,3374,Kylian Mbappé
+CL,2017,200176,45,4,REGULAR,524,Paris Saint-Germain FC,8491,Neymar,,
+CL,2017,200176,52,,REGULAR,524,Paris Saint-Germain FC,8478,Layvin Kurzawa,8491,Neymar
+CL,2017,200176,72,,REGULAR,524,Paris Saint-Germain FC,8478,Layvin Kurzawa,3216,Giovani Lo Celso
+CL,2017,200176,78,,REGULAR,524,Paris Saint-Germain FC,8478,Layvin Kurzawa,3210,Ángel di María
+CL,2017,200177,22,,REGULAR,5,FC Bayern München,360,Kingsley Coman,342,Sven Ulreich
+CL,2017,200177,74,,REGULAR,732,Celtic FC,15620,Callum McGregor,15611,James Forrest
+CL,2017,200177,77,,REGULAR,5,FC Bayern München,355,Javi Martínez,349,David Alaba
+CL,2017,200188,40,,REGULAR,611,Qarabağ Ağdam FK,15055,Míchel,15080,Donald Guerrier
+CL,2017,200188,56,,REGULAR,78,Club Atlético de Madrid,110,Teye Partey,114,Antoine Griezmann
+CL,2017,200189,1,,REGULAR,100,AS Roma,1823,Stephan El Shaarawy,1822,Edin Džeko
+CL,2017,200189,36,,REGULAR,100,AS Roma,1823,Stephan El Shaarawy,1813,Radja Nainggolan
+CL,2017,200189,63,,REGULAR,100,AS Roma,1814,Diego Perotti,1804,Aleksandar Kolarov
+CL,2017,200236,45,1,REGULAR,548,AS Monaco FC,8758,Rony,3249,João Moutinho
+CL,2017,200236,54,,PENALTY,600,Beşiktaş JK,7854,Cenk Tosun,,
+CL,2017,200212,49,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,7867,Trent Alexander-Arnold
+CL,2017,200212,64,,REGULAR,64,Liverpool FC,3183,Emre Can,7861,James Milner
+CL,2017,200212,90,,REGULAR,64,Liverpool FC,8034,Daniel Sturridge,7860,Alberto Moreno
+CL,2017,200213,30,,REGULAR,559,Sevilla FC,63,Clément Lenglet,59,Éver Banega
+CL,2017,200213,59,,REGULAR,559,Sevilla FC,59,Éver Banega,74,Pablo Sarabia
+CL,2017,200213,78,,REGULAR,754,FK Spartak Moskva,16149,Zé Luís,3677,Denis Glushakov
+CL,2017,200224,21,,REGULAR,113,SSC Napoli,2092,Lorenzo Insigne,2103,Dries Mertens
+CL,2017,200224,34,,REGULAR,65,Manchester City FC,3205,Nicolás Otamendi,3182,Ilkay Gündogan
+CL,2017,200224,48,,REGULAR,65,Manchester City FC,3313,John Stones,3184,Leroy Sané
+CL,2017,200224,62,,PENALTY,113,SSC Napoli,2094,Jorginho,,
+CL,2017,200224,69,,REGULAR,65,Manchester City FC,7891,Sergio Agüero,,
+CL,2017,200224,90,2,REGULAR,65,Manchester City FC,3329,Raheem Sterling,3654,Kevin De Bruyne
+CL,2017,200225,12,,REGULAR,675,Feyenoord Rotterdam,3469,Nicolai Jørgensen,7478,Steven Berghuis
+CL,2017,200225,14,,REGULAR,1887,FK Shakhtar Donetsk,16485,Facundo Ferreyra,,
+CL,2017,200225,17,,REGULAR,1887,FK Shakhtar Donetsk,16478,Marlos,,
+CL,2017,200225,68,,REGULAR,1887,FK Shakhtar Donetsk,16478,Marlos,16485,Facundo Ferreyra
+CL,2017,200237,13,,REGULAR,503,FC Porto,3294,Héctor Herrera,,
+CL,2017,200237,48,,REGULAR,721,RB Leipzig,3187,Timo Werner,9551,Marcel Sabitzer
+CL,2017,200237,61,,REGULAR,503,FC Porto,15909,Danilo Pereira,15904,Alex Telles
+CL,2017,200237,90,3,REGULAR,503,FC Porto,3163,Maxi Pereira,15915,Vincent Aboubakar
+CL,2017,200248,27,,REGULAR,73,Tottenham Hotspur FC,3324,Dele Alli,3312,Kieran Trippier
+CL,2017,200248,56,,REGULAR,73,Tottenham Hotspur FC,3324,Dele Alli,3314,Eric Dier
+CL,2017,200248,65,,REGULAR,73,Tottenham Hotspur FC,3459,Christian Eriksen,8004,Harry Kane
+CL,2017,200248,80,,REGULAR,86,Real Madrid CF,44,Cristiano Ronaldo,69,Borja Mayoral
+CL,2017,200249,29,,REGULAR,4,BV Borussia 09 Dortmund,3246,Raphaël Guerreiro,6487,Shinji Kagawa
+CL,2017,200249,51,,REGULAR,752,APOEL FC,15248,Mickaël Poté,16114,Carlão
+CL,2017,200214,82,,REGULAR,754,FK Spartak Moskva,16149,Zé Luís,16150,Lorenzo Melgarejo
+CL,2017,200214,90,2,REGULAR,734,NK Maribor,15394,Jasmin Mešanović,15393,Marcos Tavares
+CL,2017,200238,29,,REGULAR,503,FC Porto,15903,Felipe,10182,Ricardo Pereira
+CL,2017,200238,41,,REGULAR,600,Beşiktaş JK,3234,Talisca,7854,Cenk Tosun
+CL,2017,200215,2,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,7871,Georginio Wijnaldum
+CL,2017,200215,22,,REGULAR,64,Liverpool FC,3626,Sadio Mané,3233,Roberto Firmino
+CL,2017,200215,30,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,3626,Sadio Mané
+CL,2017,200215,51,,REGULAR,559,Sevilla FC,73,Wissam Ben Yedder,59,Éver Banega
+CL,2017,200215,60,,PENALTY,559,Sevilla FC,73,Wissam Ben Yedder,,
+CL,2017,200215,90,3,REGULAR,559,Sevilla FC,64,Guido Pizarro,,
+CL,2017,200226,88,,REGULAR,65,Manchester City FC,3329,Raheem Sterling,3182,Ilkay Gündogan
+CL,2017,200227,56,,REGULAR,113,SSC Napoli,2092,Lorenzo Insigne,,
+CL,2017,200227,81,,REGULAR,113,SSC Napoli,2097,Piotr Zieliński,2103,Dries Mertens
+CL,2017,200227,83,,REGULAR,113,SSC Napoli,2103,Dries Mertens,2085,Albiol
+CL,2017,200239,6,,OWN,548,AS Monaco FC,8753,Jemerson,,
+CL,2017,200239,9,,REGULAR,721,RB Leipzig,3187,Timo Werner,9550,Kevin Kampl
+CL,2017,200239,31,,PENALTY,721,RB Leipzig,3187,Timo Werner,,
+CL,2017,200239,43,,REGULAR,548,AS Monaco FC,3739,Radamel Falcao,8758,Rony
+CL,2017,200239,45,,REGULAR,721,RB Leipzig,9547,Naby Keïta,9538,Marcel Halstenberg
+CL,2017,200250,31,,REGULAR,4,BV Borussia 09 Dortmund,7801,Pierre-Emerick Aubameyang,163,Andrii Yarmolenko
+CL,2017,200250,49,,REGULAR,73,Tottenham Hotspur FC,8004,Harry Kane,3324,Dele Alli
+CL,2017,200250,76,,REGULAR,73,Tottenham Hotspur FC,3343,Son Heungmin,3324,Dele Alli
+CL,2017,200251,23,,REGULAR,86,Real Madrid CF,43,Luka Modrić,,
+CL,2017,200251,39,,REGULAR,86,Real Madrid CF,49,Karim Benzema,47,Toni Kroos
+CL,2017,200251,41,,REGULAR,86,Real Madrid CF,50,Nacho,3360,Raphaël Varane
+CL,2017,200251,45,1,REGULAR,86,Real Madrid CF,49,Karim Benzema,44,Cristiano Ronaldo
+CL,2017,200251,49,,REGULAR,86,Real Madrid CF,44,Cristiano Ronaldo,48,Marcelo
+CL,2017,200251,54,,REGULAR,86,Real Madrid CF,44,Cristiano Ronaldo,,
+CL,2017,200166,13,,REGULAR,1900,PFC CSKA Moskva,15791,Georgii Shchennikov,15810,Bibras Natcho
+CL,2017,200166,56,,OWN,1903,Sport Lisboa e Benfica,16738,Jardel,,
+CL,2017,200190,21,,PENALTY,61,Chelsea FC,3653,Eden Hazard,,
+CL,2017,200190,36,,REGULAR,61,Chelsea FC,3230,Willian,3653,Eden Hazard
+CL,2017,200190,73,,PENALTY,61,Chelsea FC,7811,Fàbregas,,
+CL,2017,200190,85,,REGULAR,61,Chelsea FC,3230,Willian,7818,Pedro
+CL,2017,200203,40,,REGULAR,498,Sporting Clube de Portugal,15889,Bas Dost,3256,Gelson Martins
+CL,2017,200203,43,,REGULAR,498,Sporting Clube de Portugal,15883,Bruno César,,
+CL,2017,200203,66,,REGULAR,498,Sporting Clube de Portugal,15889,Bas Dost,3257,Bruno Fernandes
+CL,2017,200203,86,,REGULAR,654,PAE Olympiakos SFP,15829,Vadis Odjidja-Ofoe,15828,Diogo Figueiras
+CL,2017,200167,89,,REGULAR,729,FC Basel 1893,3473,Michael Lang,16053,Raoul Petretta
+CL,2017,200178,1,,REGULAR,732,Celtic FC,15618,Moussa Dembélé,15717,Jules Ntcham
+CL,2017,200178,9,,REGULAR,524,Paris Saint-Germain FC,8491,Neymar,3368,Adrien Rabiot
+CL,2017,200178,22,,REGULAR,524,Paris Saint-Germain FC,8491,Neymar,8482,Marco Verratti
+CL,2017,200178,28,,REGULAR,524,Paris Saint-Germain FC,3170,Edinson Cavani,8491,Neymar
+CL,2017,200178,35,,REGULAR,524,Paris Saint-Germain FC,3374,Kylian Mbappé,3225,Marquinhos
+CL,2017,200178,75,,REGULAR,524,Paris Saint-Germain FC,8482,Marco Verratti,,
+CL,2017,200178,79,,REGULAR,524,Paris Saint-Germain FC,3170,Edinson Cavani,8478,Layvin Kurzawa
+CL,2017,200178,80,,REGULAR,524,Paris Saint-Germain FC,3223,Dani Alves,3216,Giovani Lo Celso
+CL,2017,200179,51,,REGULAR,5,FC Bayern München,371,Robert Lewandowski,366,Corentin Tolisso
+CL,2017,200179,63,,REGULAR,726,RSC Anderlecht,9352,Sofiane Hanni,3543,Łukasz Teodorczyk
+CL,2017,200179,77,,REGULAR,5,FC Bayern München,366,Corentin Tolisso,359,Joshua Kimmich
+CL,2017,200191,69,,REGULAR,78,Club Atlético de Madrid,114,Antoine Griezmann,125,Ángel Correa
+CL,2017,200191,85,,REGULAR,78,Club Atlético de Madrid,127,Kevin Gameiro,114,Antoine Griezmann
+CL,2017,200192,56,,REGULAR,78,Club Atlético de Madrid,118,Saúl,122,Fernando Torres
+CL,2017,200192,75,,OWN,78,Club Atlético de Madrid,15845,Stefan Savić,,
+CL,2017,200193,53,,REGULAR,100,AS Roma,1814,Diego Perotti,1822,Edin Džeko
+CL,2017,200204,59,,REGULAR,81,FC Barcelona,15871,Paco Alcácer,15868,Denís Suárez
+CL,2017,200204,90,1,OWN,498,Sporting Clube de Portugal,15879,Jérémy Mathieu,,
+CL,2017,200205,15,,REGULAR,109,Juventus FC,2037,Juan Cuadrado,2028,Alex Sandro
+CL,2017,200205,89,,REGULAR,109,Juventus FC,2040,Federico Bernardeschi,2035,Sami Khedira
+CL,2017,200168,45,,REGULAR,1900,PFC CSKA Moskva,15795,Vitinho,8831,Mário Fernandes
+CL,2017,200168,64,,REGULAR,66,Manchester United FC,3662,Romelu Lukaku,3366,Paul Pogba
+CL,2017,200168,66,,REGULAR,66,Manchester United FC,3331,Marcus Rashford,7909,Mata
+CL,2017,200169,5,,REGULAR,729,FC Basel 1893,16060,Mohamed Elyounoussi,3473,Michael Lang
+CL,2017,200169,65,,REGULAR,729,FC Basel 1893,3479,Dimitri Oberlin,143,Manuel Akanji
+CL,2017,200180,8,,REGULAR,5,FC Bayern München,371,Robert Lewandowski,,
+CL,2017,200180,37,,REGULAR,5,FC Bayern München,366,Corentin Tolisso,365,James Rodríguez
+CL,2017,200180,50,,REGULAR,524,Paris Saint-Germain FC,3374,Kylian Mbappé,3170,Edinson Cavani
+CL,2017,200180,69,,REGULAR,5,FC Bayern München,366,Corentin Tolisso,360,Kingsley Coman
+CL,2017,200181,62,,OWN,732,Celtic FC,15612,Jozo Šimunović,,
+CL,2017,200216,4,,PENALTY,64,Liverpool FC,3228,Philippe Coutinho,,
+CL,2017,200216,15,,REGULAR,64,Liverpool FC,3228,Philippe Coutinho,3233,Roberto Firmino
+CL,2017,200216,18,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,,
+CL,2017,200216,47,,REGULAR,64,Liverpool FC,3626,Sadio Mané,7861,James Milner
+CL,2017,200216,50,,REGULAR,64,Liverpool FC,3228,Philippe Coutinho,7861,James Milner
+CL,2017,200216,76,,REGULAR,64,Liverpool FC,3626,Sadio Mané,8034,Daniel Sturridge
+CL,2017,200216,86,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,7861,James Milner
+CL,2017,200217,10,,REGULAR,734,NK Maribor,15393,Marcos Tavares,43881,Martin Milec
+CL,2017,200217,75,,REGULAR,559,Sevilla FC,76,Ganso,77,Joaquín Correa
+CL,2017,200228,26,,REGULAR,1887,FK Shakhtar Donetsk,16476,Bernard,16478,Marlos
+CL,2017,200228,32,,REGULAR,1887,FK Shakhtar Donetsk,3226,Ismaily,16478,Marlos
+CL,2017,200228,90,2,PENALTY,65,Manchester City FC,7891,Sergio Agüero,,
+CL,2017,200229,2,,REGULAR,113,SSC Napoli,2097,Piotr Zieliński,,
+CL,2017,200229,33,,REGULAR,675,Feyenoord Rotterdam,3469,Nicolai Jørgensen,7478,Steven Berghuis
+CL,2017,200229,90,1,REGULAR,675,Feyenoord Rotterdam,7465,Jerry St. Juste,,
+CL,2017,200240,9,,REGULAR,503,FC Porto,15915,Vincent Aboubakar,15907,Yacine Brahimi
+CL,2017,200240,33,,REGULAR,503,FC Porto,15915,Vincent Aboubakar,15909,Danilo Pereira
+CL,2017,200240,45,,REGULAR,503,FC Porto,15907,Yacine Brahimi,15915,Vincent Aboubakar
+CL,2017,200240,61,,PENALTY,548,AS Monaco FC,3529,Kamil Glik,,
+CL,2017,200240,65,,REGULAR,503,FC Porto,15904,Alex Telles,15909,Danilo Pereira
+CL,2017,200240,78,,REGULAR,548,AS Monaco FC,3739,Radamel Falcao,3637,Keïta Baldé
+CL,2017,200240,88,,REGULAR,503,FC Porto,15914,Tiquinho,10182,Ricardo Pereira
+CL,2017,200241,10,,PENALTY,600,Beşiktaş JK,15953,Álvaro Negredo,,
+CL,2017,200241,87,,REGULAR,721,RB Leipzig,9547,Naby Keïta,,
+CL,2017,200241,90,,REGULAR,600,Beşiktaş JK,3234,Talisca,30091,Orkan Çınar
+CL,2017,200252,20,,REGULAR,73,Tottenham Hotspur FC,8007,Llorente,7997,Serge Aurier
+CL,2017,200252,37,,REGULAR,73,Tottenham Hotspur FC,3343,Son Heungmin,8007,Llorente
+CL,2017,200252,80,,REGULAR,73,Tottenham Hotspur FC,8045,Georges N'Koudou,3324,Dele Alli
+CL,2017,200253,8,,REGULAR,86,Real Madrid CF,69,Borja Mayoral,66,Isco
+CL,2017,200253,12,,REGULAR,86,Real Madrid CF,44,Cristiano Ronaldo,65,Mateo Kovačić
+CL,2017,200253,43,,REGULAR,4,BV Borussia 09 Dortmund,7801,Pierre-Emerick Aubameyang,6481,Marcel Schmelzer
+CL,2017,200253,48,,REGULAR,4,BV Borussia 09 Dortmund,7801,Pierre-Emerick Aubameyang,,
+CL,2017,200253,81,,REGULAR,86,Real Madrid CF,45,Lucas Vázquez,71,Theo Hernández
+CL,2017,200254,2,,REGULAR,109,Juventus FC,2047,Gonzalo Higuaín,2036,Miralem Pjanić
+CL,2017,200254,9,,PENALTY,109,Juventus FC,2047,Gonzalo Higuaín,,
+CL,2017,200254,35,,REGULAR,73,Tottenham Hotspur FC,8004,Harry Kane,3324,Dele Alli
+CL,2017,200254,71,,REGULAR,73,Tottenham Hotspur FC,3459,Christian Eriksen,,
+CL,2017,200256,14,,REGULAR,65,Manchester City FC,3182,Ilkay Gündogan,3654,Kevin De Bruyne
+CL,2017,200256,18,,REGULAR,65,Manchester City FC,3254,Bernardo Silva,,
+CL,2017,200256,23,,REGULAR,65,Manchester City FC,7891,Sergio Agüero,3227,Fernandinho
+CL,2017,200256,53,,REGULAR,65,Manchester City FC,3182,Ilkay Gündogan,7891,Sergio Agüero
+CL,2017,200258,25,,REGULAR,64,Liverpool FC,3626,Sadio Mané,7871,Georginio Wijnaldum
+CL,2017,200258,29,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,7861,James Milner
+CL,2017,200258,53,,REGULAR,64,Liverpool FC,3626,Sadio Mané,3233,Roberto Firmino
+CL,2017,200258,69,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,7861,James Milner
+CL,2017,200258,85,,REGULAR,64,Liverpool FC,3626,Sadio Mané,7875,Danny Ings
+CL,2017,200262,33,,REGULAR,524,Paris Saint-Germain FC,3368,Adrien Rabiot,,
+CL,2017,200262,45,,PENALTY,86,Real Madrid CF,44,Cristiano Ronaldo,,
+CL,2017,200262,83,,REGULAR,86,Real Madrid CF,44,Cristiano Ronaldo,,
+CL,2017,200262,86,,REGULAR,86,Real Madrid CF,48,Marcelo,52,Marco Asensio
+CL,2017,200266,62,,REGULAR,61,Chelsea FC,3230,Willian,3653,Eden Hazard
+CL,2017,200266,75,,REGULAR,81,FC Barcelona,3218,Lionel Messi,3197,Iniesta
+CL,2017,200268,43,,REGULAR,5,FC Bayern München,370,Thomas Müller,349,David Alaba
+CL,2017,200268,52,,REGULAR,5,FC Bayern München,360,Kingsley Coman,371,Robert Lewandowski
+CL,2017,200268,66,,REGULAR,5,FC Bayern München,370,Thomas Müller,359,Joshua Kimmich
+CL,2017,200268,79,,REGULAR,5,FC Bayern München,371,Robert Lewandowski,,
+CL,2017,200268,88,,REGULAR,5,FC Bayern München,371,Robert Lewandowski,370,Thomas Müller
+CL,2017,200264,41,,REGULAR,100,AS Roma,1818,Cengiz Ünder,1822,Edin Džeko
+CL,2017,200264,52,,REGULAR,1887,FK Shakhtar Donetsk,16485,Facundo Ferreyra,16470,Yaroslav Rakitskii
+CL,2017,200264,71,,REGULAR,1887,FK Shakhtar Donetsk,3232,Fred,,
+CL,2017,200263,51,,REGULAR,86,Real Madrid CF,44,Cristiano Ronaldo,45,Lucas Vázquez
+CL,2017,200263,71,,REGULAR,524,Paris Saint-Germain FC,3170,Edinson Cavani,,
+CL,2017,200263,80,,REGULAR,86,Real Madrid CF,3231,Casemiro,44,Cristiano Ronaldo
+CL,2017,200255,39,,REGULAR,73,Tottenham Hotspur FC,3343,Son Heungmin,3312,Kieran Trippier
+CL,2017,200255,64,,REGULAR,109,Juventus FC,2047,Gonzalo Higuaín,2035,Sami Khedira
+CL,2017,200255,67,,REGULAR,109,Juventus FC,2046,Paulo Dybala,2047,Gonzalo Higuaín
+CL,2017,200257,8,,REGULAR,65,Manchester City FC,3236,Gabriel Jesus,3254,Bernardo Silva
+CL,2017,200257,17,,REGULAR,729,FC Basel 1893,16060,Mohamed Elyounoussi,16044,Blás Riveros
+CL,2017,200257,71,,REGULAR,729,FC Basel 1893,3473,Michael Lang,16060,Mohamed Elyounoussi
+CL,2017,200261,74,,REGULAR,559,Sevilla FC,73,Wissam Ben Yedder,74,Pablo Sarabia
+CL,2017,200261,78,,REGULAR,559,Sevilla FC,73,Wissam Ben Yedder,77,Joaquín Correa
+CL,2017,200261,84,,REGULAR,66,Manchester United FC,3662,Romelu Lukaku,3331,Marcus Rashford
+CL,2017,200265,52,,REGULAR,100,AS Roma,1822,Edin Džeko,1812,Kevin Strootman
+CL,2017,200269,18,,REGULAR,5,FC Bayern München,356,Thiago Alcântara,370,Thomas Müller
+CL,2017,200269,46,,OWN,600,Beşiktaş JK,15938,Gökhan Gönül,,
+CL,2017,200269,59,,REGULAR,600,Beşiktaş JK,15957,Vágner Love,15938,Gökhan Gönül
+CL,2017,200269,84,,REGULAR,5,FC Bayern München,375,Sandro Wagner,,
+CL,2017,200267,3,,REGULAR,81,FC Barcelona,3218,Lionel Messi,3169,Luis Suárez
+CL,2017,200267,20,,REGULAR,81,FC Barcelona,3373,Ousmane Dembélé,3218,Lionel Messi
+CL,2017,200267,63,,REGULAR,81,FC Barcelona,3218,Lionel Messi,3169,Luis Suárez
+CL,2017,200272,32,,REGULAR,559,Sevilla FC,74,Pablo Sarabia,85,Sergio Escudero
+CL,2017,200272,37,,OWN,559,Sevilla FC,54,Jesús Navas,,
+CL,2017,200272,68,,REGULAR,5,FC Bayern München,356,Thiago Alcântara,354,Franck Ribéry
+CL,2017,200276,3,,REGULAR,86,Real Madrid CF,44,Cristiano Ronaldo,66,Isco
+CL,2017,200276,64,,REGULAR,86,Real Madrid CF,44,Cristiano Ronaldo,3194,Dani Carvajal
+CL,2017,200276,72,,REGULAR,86,Real Madrid CF,48,Marcelo,44,Cristiano Ronaldo
+CL,2017,200270,38,,OWN,100,AS Roma,1810,Daniele De Rossi,,
+CL,2017,200270,55,,OWN,100,AS Roma,1798,Kostas Manolas,,
+CL,2017,200270,59,,REGULAR,81,FC Barcelona,3190,Piqué,3169,Luis Suárez
+CL,2017,200270,80,,REGULAR,100,AS Roma,1822,Edin Džeko,1814,Diego Perotti
+CL,2017,200270,87,,REGULAR,81,FC Barcelona,3169,Luis Suárez,,
+CL,2017,200274,12,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,3233,Roberto Firmino
+CL,2017,200274,20,,REGULAR,64,Liverpool FC,3323,Alex Oxlade-Chamberlain,7861,James Milner
+CL,2017,200274,31,,REGULAR,64,Liverpool FC,3626,Sadio Mané,3754,Mohamed Salah
+CL,2017,200271,6,,REGULAR,100,AS Roma,1822,Edin Džeko,1810,Daniele De Rossi
+CL,2017,200271,58,,PENALTY,100,AS Roma,1810,Daniele De Rossi,,
+CL,2017,200271,82,,REGULAR,100,AS Roma,1798,Kostas Manolas,1818,Cengiz Ünder
+CL,2017,200275,2,,REGULAR,65,Manchester City FC,3236,Gabriel Jesus,3329,Raheem Sterling
+CL,2017,200275,56,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,,
+CL,2017,200275,77,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,,
+CL,2017,200277,2,,REGULAR,109,Juventus FC,2045,Mario Mandžukić,2035,Sami Khedira
+CL,2017,200277,37,,REGULAR,109,Juventus FC,2045,Mario Mandžukić,2026,Stephan Lichtsteiner
+CL,2017,200277,60,,REGULAR,109,Juventus FC,2042,Blaise Matuidi,,
+CL,2017,200277,90,7,PENALTY,86,Real Madrid CF,44,Cristiano Ronaldo,,
+CL,2017,200280,35,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,3233,Roberto Firmino
+CL,2017,200280,45,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,3233,Roberto Firmino
+CL,2017,200280,56,,REGULAR,64,Liverpool FC,3626,Sadio Mané,3754,Mohamed Salah
+CL,2017,200280,61,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,3754,Mohamed Salah
+CL,2017,200280,68,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,7861,James Milner
+CL,2017,200280,81,,REGULAR,100,AS Roma,1822,Edin Džeko,1813,Radja Nainggolan
+CL,2017,200280,85,,PENALTY,100,AS Roma,1814,Diego Perotti,,
+CL,2017,200278,28,,REGULAR,5,FC Bayern München,359,Joshua Kimmich,365,James Rodríguez
+CL,2017,200278,44,,REGULAR,86,Real Madrid CF,48,Marcelo,3194,Dani Carvajal
+CL,2017,200278,57,,REGULAR,86,Real Madrid CF,52,Marco Asensio,45,Lucas Vázquez
+CL,2017,200279,3,,REGULAR,5,FC Bayern München,359,Joshua Kimmich,366,Corentin Tolisso
+CL,2017,200279,11,,REGULAR,86,Real Madrid CF,49,Karim Benzema,48,Marcelo
+CL,2017,200279,46,,REGULAR,86,Real Madrid CF,49,Karim Benzema,,
+CL,2017,200279,63,,REGULAR,5,FC Bayern München,365,James Rodríguez,,
+CL,2017,200281,9,,REGULAR,64,Liverpool FC,3626,Sadio Mané,3233,Roberto Firmino
+CL,2017,200281,15,,OWN,64,Liverpool FC,7861,James Milner,,
+CL,2017,200281,25,,REGULAR,64,Liverpool FC,7871,Georginio Wijnaldum,,
+CL,2017,200281,52,,REGULAR,100,AS Roma,1822,Edin Džeko,1823,Stephan El Shaarawy
+CL,2017,200281,86,,REGULAR,100,AS Roma,1813,Radja Nainggolan,1804,Aleksandar Kolarov
+CL,2017,200281,90,4,PENALTY,100,AS Roma,1813,Radja Nainggolan,,
+CL,2017,200282,51,,REGULAR,86,Real Madrid CF,49,Karim Benzema,,
+CL,2017,200282,55,,REGULAR,64,Liverpool FC,3626,Sadio Mané,7859,Dejan Lovren
+CL,2017,200282,64,,REGULAR,86,Real Madrid CF,3876,Gareth Bale,48,Marcelo
+CL,2017,200282,83,,REGULAR,86,Real Madrid CF,3876,Gareth Bale,48,Marcelo
+CL,2018,238916,99,,REGULAR,7282,Drita KF Gjilan,67681,Xhevdet Shabani,,
+CL,2018,238916,105,3,PENALTY,7282,Drita KF Gjilan,67669,Fidan Gërbeshi,,
+CL,2018,238917,2,,REGULAR,7281,Lincoln Red Imps FC,67655,Anthony Hernandez,,
+CL,2018,238917,51,,REGULAR,7281,Lincoln Red Imps FC,67645,Alex Moreno Cerillo,,
+CL,2018,238918,2,,REGULAR,7282,Drita KF Gjilan,67670,Liridon Leci,,
+CL,2018,238918,61,,REGULAR,7281,Lincoln Red Imps FC,67648,Pedro Corral Valero,51235,Diego Gámiz
+CL,2018,238918,105,3,PENALTY,7282,Drita KF Gjilan,67670,Liridon Leci,,
+CL,2018,238918,120,,REGULAR,7282,Drita KF Gjilan,67681,Xhevdet Shabani,67680,Përparim Livoreka
+CL,2018,238918,120,4,REGULAR,7282,Drita KF Gjilan,67678,Haxhi Neziraj,,
+CL,2018,238919,14,,REGULAR,1880,FC Sheriff Tiraspol,15284,Ziguy Badibanga,,
+CL,2018,238919,24,,REGULAR,7286,FC Torpedo Kutaisi,67790,Giorgi Kimadze,,
+CL,2018,238919,64,,PENALTY,7286,FC Torpedo Kutaisi,67801,Giorgi Kukhianidze,,
+CL,2018,238941,18,,REGULAR,1891,Hapoel Be'er Sheva FC,15295,Ben Sahar,,
+CL,2018,238941,36,,PENALTY,1891,Hapoel Be'er Sheva FC,15302,Shir Tzedek,,
+CL,2018,238941,53,,REGULAR,1891,Hapoel Be'er Sheva FC,16556,Hanan Maman,,
+CL,2018,238941,73,,PENALTY,5100,FC Flora,17002,Rauno Sappinen,,
+CL,2018,238941,85,,REGULAR,1891,Hapoel Be'er Sheva FC,41031,Hen Ezra,,
+CL,2018,238927,42,,REGULAR,5961,MOL Fehérvár FC,63280,Szabolcs Huszti,63092,Danko Lazović
+CL,2018,238927,58,,REGULAR,1875,F91 Diddeleng,15240,Bryan Mélisse,15243,Danel Sinani
+CL,2018,238945,45,2,REGULAR,732,Celtic FC,16077,Odsonne Edouard,15618,Moussa Dembélé
+CL,2018,238945,81,,REGULAR,732,Celtic FC,15611,James Forrest,16070,Jack Hendry
+CL,2018,238945,90,,REGULAR,732,Celtic FC,15620,Callum McGregor,15611,James Forrest
+CL,2018,238931,9,,REGULAR,5123,Helsingin JK,55855,Sebastian Dahlström,,
+CL,2018,238931,29,,OWN,1905,Víkingur Gøta,14866,Atli Gregersen,,
+CL,2018,238931,51,,REGULAR,1905,Víkingur Gøta,14871,Gunnar Vatnhamar,14869,Sølvi Vatnhamar
+CL,2018,238921,14,,REGULAR,7285,KF Shkëndija 79,15280,Izair Emini,,
+CL,2018,238921,38,,REGULAR,7285,KF Shkëndija 79,67781,Besart Ibraimi,67770,Armend Alimi
+CL,2018,238921,53,,REGULAR,7285,KF Shkëndija 79,67781,Besart Ibraimi,,
+CL,2018,238921,60,,REGULAR,7285,KF Shkëndija 79,67781,Besart Ibraimi,,
+CL,2018,238921,66,,REGULAR,7285,KF Shkëndija 79,67781,Besart Ibraimi,,
+CL,2018,238929,13,,REGULAR,749,Malmö FF,16107,Carlos Strandberg,16102,Søren Rieks
+CL,2018,238929,39,,REGULAR,749,Malmö FF,3843,Arnór Ingvi Traustason,15634,Markus Rosenberg
+CL,2018,238929,82,,REGULAR,749,Malmö FF,15634,Markus Rosenberg,,
+CL,2018,238935,79,,REGULAR,1105,Legia Warszawa,15709,Michał Kucharczyk,3535,Krzysztof Mączyński
+CL,2018,238949,29,,PENALTY,1884,Astana FK,15206,Roman Murtazaev,,
+CL,2018,238923,9,,REGULAR,5819,FK Sūduva Marijampolė,55735,Rigino Cicilia,55736,Andro Švrljuga
+CL,2018,238923,13,,REGULAR,5819,FK Sūduva Marijampolė,55735,Rigino Cicilia,10795,Mihret Topcagić
+CL,2018,238923,19,,REGULAR,5819,FK Sūduva Marijampolė,55735,Rigino Cicilia,55733,Ovidijus Verbickas
+CL,2018,238923,90,4,REGULAR,752,APOEL FC,1303,Caju,15226,Nuno Morais
+CL,2018,238947,79,,REGULAR,7288,FC Spartak Trnava,67857,Erik Jirka,62679,Jakub Rada
+CL,2018,238933,25,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,15446,Marcelinho,16690,Cicinho
+CL,2018,238933,40,,OWN,5740,Crusaders FC,38190,Rodney Brown,,
+CL,2018,238933,53,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,15461,Claudiu Keșerü,15449,Natanael Pimienta
+CL,2018,238933,66,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,15446,Marcelinho,15463,Virgil Misidjan
+CL,2018,238933,73,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,3544,Jakub Świerczok,15446,Marcelinho
+CL,2018,238933,78,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,3544,Jakub Świerczok,,
+CL,2018,238933,80,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,3544,Jakub Świerczok,15449,Natanael Pimienta
+CL,2018,238925,79,,REGULAR,611,Qarabağ Ağdam FK,15080,Donald Guerrier,15077,Jakub Rzeźniczak
+CL,2018,238937,84,,REGULAR,5945,KF Valur,41715,Eiður Sigurbjörnsson,41744,Tobias Thomsen
+CL,2018,238932,1,,REGULAR,5123,Helsingin JK,55858,Klauss,55853,Daniel O'Shaughnessy
+CL,2018,238932,10,,REGULAR,5123,Helsingin JK,55857,Evans Mensah,55858,Klauss
+CL,2018,238932,19,,REGULAR,5123,Helsingin JK,56137,Moshtagh Yaghoubi,,
+CL,2018,238932,21,,REGULAR,1905,Víkingur Gøta,14871,Gunnar Vatnhamar,,
+CL,2018,238940,67,,REGULAR,5813,Valletta FC,67592,Santiago Malano,67579,Joseph Zerafa
+CL,2018,238940,84,,REGULAR,1886,FK Kukësi,16457,Irakli Dzaria,,
+CL,2018,238924,20,,REGULAR,752,APOEL FC,15248,Mickaël Poté,16117,Giorgos Efrem
+CL,2018,238930,55,,REGULAR,749,Malmö FF,16107,Carlos Strandberg,16098,Samuel Adrian
+CL,2018,238930,60,,REGULAR,749,Malmö FF,16097,Eric Larsson,16096,Egzon Binaku
+CL,2018,238942,15,,REGULAR,1891,Hapoel Be'er Sheva FC,41031,Hen Ezra,15301,Ben Bitton
+CL,2018,238942,27,,REGULAR,1891,Hapoel Be'er Sheva FC,16556,Hanan Maman,,
+CL,2018,238942,48,,REGULAR,1891,Hapoel Be'er Sheva FC,15300,Maor Melikson,15301,Ben Bitton
+CL,2018,238942,86,,REGULAR,5100,FC Flora,67559,Rauno Alliku,,
+CL,2018,238922,15,,REGULAR,1904,The New Saints FC,16769,Dean Ebbe,,
+CL,2018,238922,30,,REGULAR,1904,The New Saints FC,34603,Daniel Redmond,14947,Jamie Mullan
+CL,2018,238922,35,,REGULAR,1904,The New Saints FC,59089,Benjamin Cabango,14967,Blaine Hudson
+CL,2018,238922,90,6,REGULAR,1904,The New Saints FC,16635,Kurtis Byrne,16761,Chris Marriott
+CL,2018,238928,18,,REGULAR,5961,MOL Fehérvár FC,63092,Danko Lazović,63096,Loïc Nego
+CL,2018,238928,54,,REGULAR,1875,F91 Diddeleng,45077,Clément Couturier,,
+CL,2018,238928,58,,REGULAR,5961,MOL Fehérvár FC,32222,Stefan Šćepović,63096,Loïc Nego
+CL,2018,238944,78,,REGULAR,7283,FK Crvena Zvezda,15832,El Fardou Ben Nabouhane,67702,Milan Pavkov
+CL,2018,238944,81,,REGULAR,7283,FK Crvena Zvezda,67700,Nenad Krstičić,30493,Dejan Meleg
+CL,2018,238934,11,,OWN,5740,Crusaders FC,38190,Rodney Brown,,
+CL,2018,238934,65,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,3544,Jakub Świerczok,,
+CL,2018,238936,28,,REGULAR,1105,Legia Warszawa,59074,José Kanté,16233,Cafú
+CL,2018,238936,73,,PENALTY,1105,Legia Warszawa,16229,Miroslav Radović,,
+CL,2018,238936,89,,REGULAR,1105,Legia Warszawa,57971,Carlos López,16229,Miroslav Radović
+CL,2018,238920,9,,REGULAR,1880,FC Sheriff Tiraspol,15284,Ziguy Badibanga,50341,Rifet Kapič
+CL,2018,238920,40,,REGULAR,1880,FC Sheriff Tiraspol,15285,Jô Santos,15284,Ziguy Badibanga
+CL,2018,238920,55,,REGULAR,1880,FC Sheriff Tiraspol,15285,Jô Santos,,
+CL,2018,238948,15,,REGULAR,7288,FC Spartak Trnava,67852,Boris Godál,62679,Jakub Rada
+CL,2018,238948,58,,REGULAR,1894,HŠK Zrinjski Mostar,15400,Ognjen Todorović,16607,Marko Bencun
+CL,2018,238938,55,,PENALTY,889,Rosenborg BK,3465,Nicklas Bendtner,,
+CL,2018,238938,72,,REGULAR,889,Rosenborg BK,16200,Anders Trondsen,3465,Nicklas Bendtner
+CL,2018,238938,85,,PENALTY,5945,KF Valur,41735,Kristinn Sigurðsson,,
+CL,2018,238938,90,4,PENALTY,889,Rosenborg BK,3465,Nicklas Bendtner,,
+CL,2018,238950,38,,REGULAR,1884,Astana FK,15203,Đorđe Despotović,15190,Serikzhan Muzhikov
+CL,2018,238950,65,,REGULAR,1884,Astana FK,15190,Serikzhan Muzhikov,15203,Đorđe Despotović
+CL,2018,238946,8,,REGULAR,732,Celtic FC,15618,Moussa Dembélé,15611,James Forrest
+CL,2018,238946,19,,PENALTY,732,Celtic FC,15618,Moussa Dembélé,,
+CL,2018,238946,35,,REGULAR,732,Celtic FC,15611,James Forrest,15618,Moussa Dembélé
+CL,2018,247754,31,,REGULAR,1884,Astana FK,15194,László Kleinheisler,,
+CL,2018,247754,51,,REGULAR,4485,FC Midtjylland,24211,Gustav Wikheim,,
+CL,2018,247754,90,4,REGULAR,1884,Astana FK,15194,László Kleinheisler,,
+CL,2018,247752,45,,REGULAR,749,Malmö FF,16107,Carlos Strandberg,,
+CL,2018,238951,32,,REGULAR,6146,PAOK FC,43505,José Cañas,,
+CL,2018,238951,80,,REGULAR,6146,PAOK FC,3447,Aleksandar Prijović,43513,Dimitris Limnios
+CL,2018,238951,82,,REGULAR,729,FC Basel 1893,16063,Albian Ajeti,,
+CL,2018,247756,22,,REGULAR,755,GNK Dinamo Zagreb,23144,Izet Hajrović,,
+CL,2018,247756,28,,REGULAR,755,GNK Dinamo Zagreb,73401,Mislav Oršić,23133,Amer Gojak
+CL,2018,247756,51,,REGULAR,755,GNK Dinamo Zagreb,23130,Arijan Ademi,23133,Amer Gojak
+CL,2018,247756,62,,REGULAR,755,GNK Dinamo Zagreb,23130,Arijan Ademi,,
+CL,2018,247756,82,,REGULAR,755,GNK Dinamo Zagreb,23146,Armin Hodžić,23144,Izet Hajrović
+CL,2018,247758,24,,REGULAR,7285,KF Shkëndija 79,67781,Besart Ibraimi,,
+CL,2018,247760,23,,REGULAR,7283,FK Crvena Zvezda,15230,Lorenzo Ebecilio,15832,El Fardou Ben Nabouhane
+CL,2018,247760,35,,REGULAR,7283,FK Crvena Zvezda,10190,Nemanja Radonjić,67705,Nemanja Milić
+CL,2018,247760,58,,REGULAR,7283,FK Crvena Zvezda,10190,Nemanja Radonjić,3410,Miloš Degenek
+CL,2018,247762,16,,REGULAR,7288,FC Spartak Trnava,64072,Erik Grendel,67857,Erik Jirka
+CL,2018,247762,90,3,REGULAR,7288,FC Spartak Trnava,67864,Ján Vlasko,,
+CL,2018,238953,15,,REGULAR,678,AFC Ajax,3707,Hakim Ziyech,7553,Noussair Mazraoui
+CL,2018,238953,57,,REGULAR,678,AFC Ajax,3458,Lasse Schöne,,
+CL,2018,247770,16,,REGULAR,889,Rosenborg BK,15569,Birger Meling,3465,Nicklas Bendtner
+CL,2018,247770,43,,REGULAR,732,Celtic FC,16077,Odsonne Edouard,15608,Scott Sinclair
+CL,2018,247770,46,,REGULAR,732,Celtic FC,15717,Jules Ntcham,15610,Scott Brown
+CL,2018,247770,75,,REGULAR,732,Celtic FC,16077,Odsonne Edouard,15620,Callum McGregor
+CL,2018,247757,14,,REGULAR,1891,Hapoel Be'er Sheva FC,3391,John Ogu,16552,Oren Bitton
+CL,2018,247757,34,,OWN,755,GNK Dinamo Zagreb,23134,Petar Stojanovič,,
+CL,2018,247757,49,,REGULAR,755,GNK Dinamo Zagreb,23156,Mario Budimir,,
+CL,2018,247757,54,,REGULAR,755,GNK Dinamo Zagreb,23144,Izet Hajrović,,
+CL,2018,247763,63,,REGULAR,1105,Legia Warszawa,16224,Iñaki Astiz,,
+CL,2018,247765,20,,OWN,5123,Helsingin JK,55852,Rafinha,,
+CL,2018,247765,24,,REGULAR,748,FK BATE Borisov,15416,Ihar Stasevich,,
+CL,2018,247765,28,,REGULAR,5123,Helsingin JK,56137,Moshtagh Yaghoubi,56442,Riku Riski
+CL,2018,247767,24,,PENALTY,611,Qarabağ Ağdam FK,15968,Dani Quintana,,
+CL,2018,247767,57,,PENALTY,611,Qarabağ Ağdam FK,15968,Dani Quintana,,
+CL,2018,247767,89,,REGULAR,611,Qarabağ Ağdam FK,30453,Dzon Delarge,15055,Míchel
+CL,2018,247753,36,,REGULAR,5515,FC CFR 1907 Cluj,15163,Damjan Đoković,36767,Ovidiu Hoban
+CL,2018,247753,55,,REGULAR,749,Malmö FF,3843,Arnór Ingvi Traustason,,
+CL,2018,247761,8,,REGULAR,7283,FK Crvena Zvezda,15832,El Fardou Ben Nabouhane,,
+CL,2018,247761,38,,REGULAR,7283,FK Crvena Zvezda,10190,Nemanja Radonjić,67700,Nenad Krstičić
+CL,2018,238952,7,,REGULAR,6146,PAOK FC,43495,Fernando Varela,43500,Dimitris Pelkas
+CL,2018,238952,52,,REGULAR,6146,PAOK FC,3447,Aleksandar Prijović,43492,Alexandros Paschalakis
+CL,2018,238952,60,,REGULAR,6146,PAOK FC,43508,Omar El Kaddouri,43500,Dimitris Pelkas
+CL,2018,247769,45,,REGULAR,5961,MOL Fehérvár FC,63093,Anel Hadžić,63097,Stopira
+CL,2018,238954,39,,REGULAR,678,AFC Ajax,7572,Klaas-Jan Huntelaar,7571,David Neres
+CL,2018,238954,48,,REGULAR,678,AFC Ajax,3444,Dušan Tadić,,
+CL,2018,238954,77,,REGULAR,678,AFC Ajax,7572,Klaas-Jan Huntelaar,7562,Maximilian Wöber
+CL,2018,238954,89,,OWN,678,AFC Ajax,7544,André Onana,,
+CL,2018,248391,39,,REGULAR,755,GNK Dinamo Zagreb,23156,Mario Budimir,23132,Dani Olmo
+CL,2018,248391,84,,REGULAR,755,GNK Dinamo Zagreb,23132,Dani Olmo,23133,Amer Gojak
+CL,2018,248393,36,,REGULAR,748,FK BATE Borisov,16087,Stanislav Dragun,15414,Mikalay Signevich
+CL,2018,248398,62,,REGULAR,749,Malmö FF,8918,Anders Christiansen,16103,Fouad Bachirou
+CL,2018,248398,71,,REGULAR,5961,MOL Fehérvár FC,63096,Loïc Nego,,
+CL,2018,247780,82,,REGULAR,842,FK Dynamo Kyiv,15519,Benjamin Verbič,16170,Serhii Sydorchuk
+CL,2018,247780,90,5,PENALTY,930,SK Slavia Praha,15728,Josef Hušbauer,,
+CL,2018,247776,19,,REGULAR,678,AFC Ajax,7572,Klaas-Jan Huntelaar,3444,Dušan Tadić
+CL,2018,247776,34,,REGULAR,678,AFC Ajax,3444,Dušan Tadić,7571,David Neres
+CL,2018,247776,67,,REGULAR,1866,Royal Standard de Liège,9246,Mehdi Carcela,9237,Răzvan Marin
+CL,2018,247776,90,4,PENALTY,1866,Royal Standard de Liège,9249,Renaud Emond,,
+CL,2018,247774,23,,PENALTY,7283,FK Crvena Zvezda,15832,El Fardou Ben Nabouhane,,
+CL,2018,247774,25,,REGULAR,7288,FC Spartak Trnava,64072,Erik Grendel,67857,Erik Jirka
+CL,2018,247778,69,,REGULAR,1903,Sport Lisboa e Benfica,16747,Franco Cervi,16745,Eduardo Salvio
+CL,2018,248395,16,,PENALTY,1877,FC Red Bull Salzburg,15101,Munas Dabbur,,
+CL,2018,248395,45,3,REGULAR,1877,FC Red Bull Salzburg,15101,Munas Dabbur,9449,Zlatko Junuzović
+CL,2018,248395,81,,PENALTY,1877,FC Red Bull Salzburg,15103,Diadié Samassékou,,
+CL,2018,247782,7,,REGULAR,754,FK Spartak Moskva,36180,Ivelin Popov,3682,Roman Zobnin
+CL,2018,247782,17,,REGULAR,754,FK Spartak Moskva,16148,Quincy Promes,16152,Luiz Adriano
+CL,2018,247782,29,,PENALTY,6146,PAOK FC,3447,Aleksandar Prijović,,
+CL,2018,247782,37,,REGULAR,6146,PAOK FC,43513,Dimitris Limnios,43502,Léo Matos
+CL,2018,247782,44,,REGULAR,6146,PAOK FC,43500,Dimitris Pelkas,43502,Léo Matos
+CL,2018,247772,17,,REGULAR,732,Celtic FC,15620,Callum McGregor,15615,Kieran Tierney
+CL,2018,247772,44,,REGULAR,1899,PAE AEK,15815,Viktor Klonaridis,15816,Hélder Lopes
+CL,2018,247781,11,,REGULAR,842,FK Dynamo Kyiv,15519,Benjamin Verbič,16173,Viktor Tsyhankov
+CL,2018,247781,74,,REGULAR,842,FK Dynamo Kyiv,16185,Artem Biesiedin,16173,Viktor Tsyhankov
+CL,2018,248394,20,,REGULAR,748,FK BATE Borisov,15419,Mirko Ivanić,,
+CL,2018,248394,54,,REGULAR,611,Qarabağ Ağdam FK,15055,Míchel,,
+CL,2018,248392,74,,REGULAR,755,GNK Dinamo Zagreb,3481,Mario Gavranović,16581,Marin Leovac
+CL,2018,247773,6,,REGULAR,1899,PAE AEK,15804,Rodrigo Galo,3496,Niklas Hult
+CL,2018,247773,50,,REGULAR,1899,PAE AEK,15802,Marko Livaja,16666,Vassilios Lambropoulos
+CL,2018,247773,78,,REGULAR,732,Celtic FC,15608,Scott Sinclair,,
+CL,2018,247779,26,,REGULAR,1903,Sport Lisboa e Benfica,37557,Gedson,,
+CL,2018,247779,45,1,REGULAR,613,Fenerbahçe SK,30474,Alper Potuk,30511,Hasan Ali Kaldırım
+CL,2018,248396,90,2,REGULAR,1877,FC Red Bull Salzburg,15100,Takumi Minamino,,
+CL,2018,247775,6,,REGULAR,7288,FC Spartak Trnava,15786,Marek Bakoš,67853,Andrej Kadlec
+CL,2018,247775,7,,REGULAR,7283,FK Crvena Zvezda,15832,El Fardou Ben Nabouhane,30506,Nikola Stojiljković
+CL,2018,247775,98,,REGULAR,7283,FK Crvena Zvezda,10190,Nemanja Radonjić,15832,El Fardou Ben Nabouhane
+CL,2018,247777,30,,REGULAR,678,AFC Ajax,7572,Klaas-Jan Huntelaar,3208,Nicolás Tagliafico
+CL,2018,247777,34,,REGULAR,678,AFC Ajax,7549,Matthijs de Ligt,3707,Hakim Ziyech
+CL,2018,247777,46,,REGULAR,678,AFC Ajax,7571,David Neres,,
+CL,2018,249993,45,1,PENALTY,1903,Sport Lisboa e Benfica,16754,Pizzi,,
+CL,2018,249993,76,,REGULAR,6146,PAOK FC,3764,Amr Warda,,
+CL,2018,249523,9,,REGULAR,748,FK BATE Borisov,15426,Jasse Tuominen,16082,Aleksandar Filipović
+CL,2018,249523,35,,PENALTY,674,PSV,7444,Gastón Pereiro,,
+CL,2018,249523,61,,REGULAR,674,PSV,3306,Hirving Lozano,,
+CL,2018,249523,88,,REGULAR,748,FK BATE Borisov,16086,Alyaksandr Hleb,,
+CL,2018,249523,89,,REGULAR,674,PSV,7457,Donyell Malen,,
+CL,2018,249995,34,,REGULAR,1899,PAE AEK,15815,Viktor Klonaridis,,
+CL,2018,249995,49,,REGULAR,1899,PAE AEK,16675,Tasos Bakasetas,,
+CL,2018,249995,67,,REGULAR,5961,MOL Fehérvár FC,63092,Danko Lazović,63240,István Kovács
+CL,2018,249997,2,,REGULAR,678,AFC Ajax,7556,Donny van de Beek,3444,Dušan Tadić
+CL,2018,249997,16,,REGULAR,842,FK Dynamo Kyiv,3531,Tomasz Kędziora,,
+CL,2018,249997,35,,REGULAR,678,AFC Ajax,3707,Hakim Ziyech,,
+CL,2018,249997,43,,REGULAR,678,AFC Ajax,3444,Dušan Tadić,3208,Nicolás Tagliafico
+CL,2018,249524,2,,REGULAR,1871,BSC Young Boys,16268,Kevin Mbabu,16278,Nicolas Ngamaleu
+CL,2018,249524,40,,REGULAR,755,GNK Dinamo Zagreb,73401,Mislav Oršić,,
+CL,2018,249996,48,,PENALTY,1899,PAE AEK,15797,Petros Mantalos,,
+CL,2018,249996,57,,REGULAR,5961,MOL Fehérvár FC,63096,Loïc Nego,,
+CL,2018,249525,7,,REGULAR,755,GNK Dinamo Zagreb,23144,Izet Hajrović,,
+CL,2018,249525,64,,PENALTY,1871,BSC Young Boys,16279,Guillaume Hoarau,,
+CL,2018,249525,66,,REGULAR,1871,BSC Young Boys,16279,Guillaume Hoarau,,
+CL,2018,249992,45,,REGULAR,1877,FC Red Bull Salzburg,15101,Munas Dabbur,15097,Andreas Ulmer
+CL,2018,249992,48,,PENALTY,1877,FC Red Bull Salzburg,15101,Munas Dabbur,,
+CL,2018,249992,65,,REGULAR,7283,FK Crvena Zvezda,15832,El Fardou Ben Nabouhane,3410,Miloš Degenek
+CL,2018,249992,66,,REGULAR,7283,FK Crvena Zvezda,15832,El Fardou Ben Nabouhane,3410,Miloš Degenek
+CL,2018,249994,13,,REGULAR,6146,PAOK FC,3447,Aleksandar Prijović,43509,Maurício
+CL,2018,249994,20,,REGULAR,1903,Sport Lisboa e Benfica,16738,Jardel,16754,Pizzi
+CL,2018,249994,26,,PENALTY,1903,Sport Lisboa e Benfica,16745,Eduardo Salvio,,
+CL,2018,249994,39,,REGULAR,1903,Sport Lisboa e Benfica,16754,Pizzi,16747,Franco Cervi
+CL,2018,249994,50,,PENALTY,1903,Sport Lisboa e Benfica,16745,Eduardo Salvio,,
+CL,2018,249526,14,,REGULAR,674,PSV,7453,Steven Bergwijn,7452,Luuk de Jong
+CL,2018,249526,36,,REGULAR,674,PSV,7452,Luuk de Jong,7439,Jorrit Hendrix
+CL,2018,249526,62,,REGULAR,674,PSV,3306,Hirving Lozano,,
+CL,2018,250681,32,,REGULAR,81,FC Barcelona,3218,Lionel Messi,,
+CL,2018,250681,75,,REGULAR,81,FC Barcelona,3373,Ousmane Dembélé,3228,Philippe Coutinho
+CL,2018,250681,77,,REGULAR,81,FC Barcelona,3218,Lionel Messi,3554,Ivan Rakitić
+CL,2018,250681,87,,REGULAR,81,FC Barcelona,3218,Lionel Messi,3169,Luis Suárez
+CL,2018,250682,53,,REGULAR,73,Tottenham Hotspur FC,3459,Christian Eriksen,8005,Erik Lamela
+CL,2018,250682,86,,REGULAR,108,FC Internazionale Milano,2014,Mauro Icardi,2033,Kwadwo Asamoah
+CL,2018,250682,90,2,REGULAR,108,FC Internazionale Milano,2009,Matías Vecino,2053,Stefan de Vrij
+CL,2018,250669,45,1,REGULAR,78,Club Atlético de Madrid,115,José Maria Giménez,,
+CL,2018,250669,18,,REGULAR,548,AS Monaco FC,8627,Samuel Grandsir,,
+CL,2018,250669,31,,REGULAR,78,Club Atlético de Madrid,113,Diego Costa,,
+CL,2018,250670,85,,REGULAR,4,BV Borussia 09 Dortmund,145,Christian Pulisic,,
+CL,2018,250693,30,,REGULAR,64,Liverpool FC,8034,Daniel Sturridge,7868,Andrew Robertson
+CL,2018,250693,36,,PENALTY,64,Liverpool FC,7861,James Milner,,
+CL,2018,250693,40,,REGULAR,524,Paris Saint-Germain FC,3650,Thomas Meunier,,
+CL,2018,250693,83,,REGULAR,524,Paris Saint-Germain FC,3374,Kylian Mbappé,,
+CL,2018,250693,90,2,REGULAR,64,Liverpool FC,3233,Roberto Firmino,7869,Virgil van Dijk
+CL,2018,250705,64,,REGULAR,6,FC Schalke 04,3483,Breel Embolo,6507,Weston McKennie
+CL,2018,250705,75,,PENALTY,503,FC Porto,15910,Otávio,,
+CL,2018,250706,9,,REGULAR,610,Galatasaray SK,30554,Garry Rodrigues,,
+CL,2018,250706,67,,REGULAR,610,Galatasaray SK,30567,Eren Derdiyok,,
+CL,2018,250706,90,4,PENALTY,610,Galatasaray SK,30549,Selçuk İnan,,
+CL,2018,250717,46,,REGULAR,678,AFC Ajax,3208,Nicolás Tagliafico,7571,David Neres
+CL,2018,250717,77,,REGULAR,678,AFC Ajax,7556,Donny van de Beek,3444,Dušan Tadić
+CL,2018,250717,90,,REGULAR,678,AFC Ajax,3208,Nicolás Tagliafico,7560,Carel Eiting
+CL,2018,250729,6,,REGULAR,2,TSG 1899 Hoffenheim,404,Florian Grillitsch,199,Leonardo Bittencourt
+CL,2018,250729,27,,REGULAR,1887,FK Shakhtar Donetsk,3226,Ismaily,,
+CL,2018,250729,38,,REGULAR,2,TSG 1899 Hoffenheim,310,Håvard Nordtveit,318,Andrej Kramarić
+CL,2018,250729,81,,REGULAR,1887,FK Shakhtar Donetsk,1447,Maycon,16478,Marlos
+CL,2018,250718,10,,REGULAR,5,FC Bayern München,371,Robert Lewandowski,349,David Alaba
+CL,2018,250718,54,,REGULAR,5,FC Bayern München,7988,Renato Sanches,365,James Rodríguez
+CL,2018,250730,26,,REGULAR,523,Olympique Lyonnais,8471,Maxwel Cornet,,
+CL,2018,250730,43,,REGULAR,523,Olympique Lyonnais,8464,Nabil Fekir,8472,Memphis Depay
+CL,2018,250730,67,,REGULAR,65,Manchester City FC,3254,Bernardo Silva,3184,Leroy Sané
+CL,2018,250741,45,,REGULAR,86,Real Madrid CF,66,Isco,,
+CL,2018,250741,58,,REGULAR,86,Real Madrid CF,3876,Gareth Bale,43,Luka Modrić
+CL,2018,250741,90,1,REGULAR,86,Real Madrid CF,8474,Mariano Díaz,48,Marcelo
+CL,2018,250742,29,,REGULAR,1881,FC Viktoria Plzeň,15766,Michal Krmenčík,62528,Luděk Pernica
+CL,2018,250742,41,,REGULAR,1881,FC Viktoria Plzeň,15766,Michal Krmenčík,15764,David Limberský
+CL,2018,250742,49,,REGULAR,1900,PFC CSKA Moskva,8835,Fedor Chalov,,
+CL,2018,250742,90,5,PENALTY,1900,PFC CSKA Moskva,7843,Nikola Vlašić,,
+CL,2018,250753,45,,PENALTY,109,Juventus FC,2036,Miralem Pjanić,,
+CL,2018,250753,51,,PENALTY,109,Juventus FC,2036,Miralem Pjanić,,
+CL,2018,250754,35,,REGULAR,66,Manchester United FC,3366,Paul Pogba,,
+CL,2018,250754,44,,PENALTY,66,Manchester United FC,3366,Paul Pogba,,
+CL,2018,250754,66,,REGULAR,66,Manchester United FC,3372,Anthony Martial,3366,Paul Pogba
+CL,2018,250731,1,,REGULAR,2,TSG 1899 Hoffenheim,9466,Ishak Belfodil,313,Kerem Demirbay
+CL,2018,250731,8,,REGULAR,65,Manchester City FC,7891,Sergio Agüero,,
+CL,2018,250731,87,,REGULAR,65,Manchester City FC,3196,David Silva,,
+CL,2018,250755,5,,REGULAR,109,Juventus FC,2046,Paulo Dybala,1744,Leonardo Bonucci
+CL,2018,250755,33,,REGULAR,109,Juventus FC,2046,Paulo Dybala,2042,Blaise Matuidi
+CL,2018,250755,69,,REGULAR,109,Juventus FC,2046,Paulo Dybala,2037,Juan Cuadrado
+CL,2018,250719,4,,REGULAR,5,FC Bayern München,350,Mats Hummels,353,Arjen Robben
+CL,2018,250719,22,,REGULAR,678,AFC Ajax,7553,Noussair Mazraoui,,
+CL,2018,250720,6,,REGULAR,1903,Sport Lisboa e Benfica,3482,Haris Seferović,,
+CL,2018,250720,15,,REGULAR,1903,Sport Lisboa e Benfica,16739,Alejandro Grimaldo,16754,Pizzi
+CL,2018,250720,53,,REGULAR,1899,PAE AEK,15815,Viktor Klonaridis,3496,Niklas Hult
+CL,2018,250720,63,,REGULAR,1899,PAE AEK,15815,Viktor Klonaridis,2452,Marios Oikonomou
+CL,2018,250720,74,,REGULAR,1903,Sport Lisboa e Benfica,45196,Alfa Semedo,,
+CL,2018,250732,55,,REGULAR,1887,FK Shakhtar Donetsk,16186,Júnior Moraes,,
+CL,2018,250732,70,,REGULAR,523,Olympique Lyonnais,15618,Moussa Dembélé,8464,Nabil Fekir
+CL,2018,250732,72,,REGULAR,523,Olympique Lyonnais,8690,Léo Dubois,8466,Houssem Aouar
+CL,2018,250732,44,,REGULAR,1887,FK Shakhtar Donetsk,16186,Júnior Moraes,,
+CL,2018,250743,3,,REGULAR,100,AS Roma,1822,Edin Džeko,1804,Aleksandar Kolarov
+CL,2018,250743,40,,REGULAR,100,AS Roma,1822,Edin Džeko,1818,Cengiz Ünder
+CL,2018,250743,64,,REGULAR,100,AS Roma,1818,Cengiz Ünder,1819,Lorenzo Pellegrini
+CL,2018,250743,73,,REGULAR,100,AS Roma,7561,Justin Kluivert,1818,Cengiz Ünder
+CL,2018,250743,90,2,REGULAR,100,AS Roma,1822,Edin Džeko,1811,Alessandro Florenzi
+CL,2018,250744,2,,REGULAR,1900,PFC CSKA Moskva,7843,Nikola Vlašić,,
+CL,2018,250695,20,,REGULAR,524,Paris Saint-Germain FC,8491,Neymar,,
+CL,2018,250695,22,,REGULAR,524,Paris Saint-Germain FC,8491,Neymar,3374,Kylian Mbappé
+CL,2018,250695,37,,REGULAR,524,Paris Saint-Germain FC,3170,Edinson Cavani,,
+CL,2018,250695,42,,REGULAR,524,Paris Saint-Germain FC,3210,Ángel di María,3650,Thomas Meunier
+CL,2018,250695,70,,REGULAR,524,Paris Saint-Germain FC,3374,Kylian Mbappé,3170,Edinson Cavani
+CL,2018,250695,74,,REGULAR,7283,FK Crvena Zvezda,15826,Marko Marin,,
+CL,2018,250695,81,,REGULAR,524,Paris Saint-Germain FC,8491,Neymar,,
+CL,2018,250707,88,,REGULAR,6,FC Schalke 04,6507,Weston McKennie,,
+CL,2018,250671,51,,REGULAR,4,BV Borussia 09 Dortmund,9405,Jacob Bruun Larsen,146,Jadon Sancho
+CL,2018,250671,72,,REGULAR,4,BV Borussia 09 Dortmund,15871,Paco Alcácer,138,Marco Reus
+CL,2018,250671,90,2,REGULAR,4,BV Borussia 09 Dortmund,138,Marco Reus,9405,Jacob Bruun Larsen
+CL,2018,250672,28,,REGULAR,78,Club Atlético de Madrid,114,Antoine Griezmann,3369,Thomas Lemar
+CL,2018,250672,39,,REGULAR,851,Club Brugge KV,9870,Arnaut Danjuma,9326,Mats Rits
+CL,2018,250672,67,,REGULAR,78,Club Atlético de Madrid,114,Antoine Griezmann,113,Diego Costa
+CL,2018,250672,90,4,REGULAR,78,Club Atlético de Madrid,112,Koke,114,Antoine Griezmann
+CL,2018,250683,2,,REGULAR,81,FC Barcelona,3228,Philippe Coutinho,3193,Jordi Alba
+CL,2018,250683,28,,REGULAR,81,FC Barcelona,3554,Ivan Rakitić,3228,Philippe Coutinho
+CL,2018,250683,52,,REGULAR,73,Tottenham Hotspur FC,8004,Harry Kane,,
+CL,2018,250683,56,,REGULAR,81,FC Barcelona,3218,Lionel Messi,3193,Jordi Alba
+CL,2018,250683,66,,REGULAR,73,Tottenham Hotspur FC,8005,Erik Lamela,3343,Son Heungmin
+CL,2018,250683,90,,REGULAR,81,FC Barcelona,3218,Lionel Messi,3193,Jordi Alba
+CL,2018,250684,27,,REGULAR,674,PSV,7448,Pablo Rosario,3306,Hirving Lozano
+CL,2018,250684,44,,REGULAR,108,FC Internazionale Milano,1813,Radja Nainggolan,,
+CL,2018,250684,60,,REGULAR,108,FC Internazionale Milano,2014,Mauro Icardi,2009,Matías Vecino
+CL,2018,250696,90,,REGULAR,113,SSC Napoli,2092,Lorenzo Insigne,2104,José Callejón
+CL,2018,250708,49,,REGULAR,503,FC Porto,15917,Moussa Maréga,15904,Alex Telles
+CL,2018,250721,61,,REGULAR,5,FC Bayern München,355,Javi Martínez,,
+CL,2018,250721,63,,REGULAR,5,FC Bayern München,371,Robert Lewandowski,348,Rafinha
+CL,2018,250757,26,,REGULAR,95,Valencia CF,3664,Michy Batshuayi,,
+CL,2018,250757,55,,PENALTY,1871,BSC Young Boys,16279,Guillaume Hoarau,,
+CL,2018,250722,90,2,REGULAR,678,AFC Ajax,7553,Noussair Mazraoui,7571,David Neres
+CL,2018,250733,27,,REGULAR,523,Olympique Lyonnais,8467,Bertrand Traoré,,
+CL,2018,250733,33,,REGULAR,2,TSG 1899 Hoffenheim,318,Andrej Kramarić,,
+CL,2018,250733,47,,REGULAR,2,TSG 1899 Hoffenheim,318,Andrej Kramarić,313,Kerem Demirbay
+CL,2018,250733,59,,REGULAR,523,Olympique Lyonnais,8469,Tanguy Ndombèlé,8467,Bertrand Traoré
+CL,2018,250733,67,,REGULAR,523,Olympique Lyonnais,8472,Memphis Depay,8466,Houssem Aouar
+CL,2018,250733,90,2,REGULAR,2,TSG 1899 Hoffenheim,10653,Joelinton,312,Nico Schulz
+CL,2018,250734,30,,REGULAR,65,Manchester City FC,3196,David Silva,,
+CL,2018,250734,35,,REGULAR,65,Manchester City FC,7884,Aymeric Laporte,3654,Kevin De Bruyne
+CL,2018,250734,71,,REGULAR,65,Manchester City FC,3254,Bernardo Silva,8069,Riyad Mahrez
+CL,2018,250745,11,,REGULAR,86,Real Madrid CF,49,Karim Benzema,45,Lucas Vázquez
+CL,2018,250745,55,,REGULAR,86,Real Madrid CF,48,Marcelo,3876,Gareth Bale
+CL,2018,250745,79,,REGULAR,1881,FC Viktoria Plzeň,15771,Patrik Hrošovský,,
+CL,2018,250746,30,,REGULAR,100,AS Roma,1822,Edin Džeko,1819,Lorenzo Pellegrini
+CL,2018,250746,43,,REGULAR,100,AS Roma,1822,Edin Džeko,1823,Stephan El Shaarawy
+CL,2018,250746,50,,REGULAR,100,AS Roma,1818,Cengiz Ünder,1822,Edin Džeko
+CL,2018,250758,17,,REGULAR,109,Juventus FC,2046,Paulo Dybala,,
+CL,2018,250673,39,,REGULAR,851,Club Brugge KV,8891,Wesley,8888,Hans Vanaken
+CL,2018,250673,31,,REGULAR,548,AS Monaco FC,8760,Moussa Sylla,,
+CL,2018,250686,30,,REGULAR,674,PSV,3306,Hirving Lozano,,
+CL,2018,250686,39,,REGULAR,73,Tottenham Hotspur FC,8003,Lucas Moura,,
+CL,2018,250686,55,,REGULAR,73,Tottenham Hotspur FC,8004,Harry Kane,,
+CL,2018,250686,87,,REGULAR,674,PSV,7452,Luuk de Jong,7448,Pablo Rosario
+CL,2018,250674,38,,REGULAR,4,BV Borussia 09 Dortmund,3656,Axel Witsel,53,Achraf Hakimi
+CL,2018,250674,73,,REGULAR,4,BV Borussia 09 Dortmund,3246,Raphaël Guerreiro,53,Achraf Hakimi
+CL,2018,250674,83,,REGULAR,4,BV Borussia 09 Dortmund,146,Jadon Sancho,53,Achraf Hakimi
+CL,2018,250674,89,,REGULAR,4,BV Borussia 09 Dortmund,3246,Raphaël Guerreiro,,
+CL,2018,250685,32,,REGULAR,81,FC Barcelona,2012,Rafinha,3169,Luis Suárez
+CL,2018,250685,83,,REGULAR,81,FC Barcelona,3193,Jordi Alba,3554,Ivan Rakitić
+CL,2018,250697,20,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,7868,Andrew Robertson
+CL,2018,250697,45,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,7955,Xherdan Shaqiri
+CL,2018,250697,51,,PENALTY,64,Liverpool FC,3754,Mohamed Salah,,
+CL,2018,250697,80,,REGULAR,64,Liverpool FC,3626,Sadio Mané,8034,Daniel Sturridge
+CL,2018,250698,29,,REGULAR,113,SSC Napoli,2092,Lorenzo Insigne,,
+CL,2018,250698,61,,OWN,113,SSC Napoli,2090,Mário Rui,,
+CL,2018,250698,77,,REGULAR,113,SSC Napoli,2103,Dries Mertens,,
+CL,2018,250698,90,3,REGULAR,524,Paris Saint-Germain FC,3210,Ángel di María,3179,Julian Draxler
+CL,2018,250710,26,,PENALTY,503,FC Porto,15917,Moussa Maréga,,
+CL,2018,250710,35,,REGULAR,503,FC Porto,3294,Héctor Herrera,3296,Jesús Corona
+CL,2018,250710,38,,REGULAR,5455,FK Lokomotiv Moskva,3688,Anton Miranchuk,3681,Aleksei Miranchuk
+CL,2018,250710,47,,REGULAR,503,FC Porto,3296,Jesús Corona,15907,Yacine Brahimi
+CL,2018,250675,12,,REGULAR,851,Club Brugge KV,8888,Hans Vanaken,9326,Mats Rits
+CL,2018,250675,17,,PENALTY,851,Club Brugge KV,8888,Hans Vanaken,,
+CL,2018,250675,24,,REGULAR,851,Club Brugge KV,8891,Wesley,,
+CL,2018,250675,85,,REGULAR,851,Club Brugge KV,8881,Ruud Vormer,,
+CL,2018,250699,22,,REGULAR,7283,FK Crvena Zvezda,67702,Milan Pavkov,15826,Marko Marin
+CL,2018,250699,29,,REGULAR,7283,FK Crvena Zvezda,67702,Milan Pavkov,,
+CL,2018,250676,33,,REGULAR,78,Club Atlético de Madrid,118,Saúl,117,Filipe Luis
+CL,2018,250676,80,,REGULAR,78,Club Atlético de Madrid,114,Antoine Griezmann,110,Teye Partey
+CL,2018,250687,2,,REGULAR,674,PSV,7452,Luuk de Jong,7444,Gastón Pereiro
+CL,2018,250687,78,,REGULAR,73,Tottenham Hotspur FC,8004,Harry Kane,8007,Llorente
+CL,2018,250687,89,,REGULAR,73,Tottenham Hotspur FC,8004,Harry Kane,7994,Ben Davies
+CL,2018,250688,83,,REGULAR,81,FC Barcelona,8516,Malcom,3228,Philippe Coutinho
+CL,2018,250688,87,,REGULAR,108,FC Internazionale Milano,2014,Mauro Icardi,,
+CL,2018,250700,45,2,REGULAR,524,Paris Saint-Germain FC,357,Juan Bernat,3374,Kylian Mbappé
+CL,2018,250700,62,,PENALTY,113,SSC Napoli,2092,Lorenzo Insigne,,
+CL,2018,250711,4,,REGULAR,6,FC Schalke 04,6505,Guido Burgstaller,,
+CL,2018,250711,57,,REGULAR,6,FC Schalke 04,319,Mark Uth,6505,Guido Burgstaller
+CL,2018,250712,59,,REGULAR,5455,FK Lokomotiv Moskva,3779,Jefferson Farfán,3681,Aleksei Miranchuk
+CL,2018,250712,67,,REGULAR,503,FC Porto,3296,Jesús Corona,15911,Óliver Torres
+CL,2018,250712,90,3,REGULAR,503,FC Porto,15910,Otávio,,
+CL,2018,250712,2,,REGULAR,503,FC Porto,3294,Héctor Herrera,15917,Moussa Maréga
+CL,2018,250712,42,,REGULAR,503,FC Porto,15917,Moussa Maréga,3294,Héctor Herrera
+CL,2018,250747,59,,REGULAR,100,AS Roma,1819,Lorenzo Pellegrini,,
+CL,2018,250747,4,,REGULAR,100,AS Roma,1798,Kostas Manolas,1819,Lorenzo Pellegrini
+CL,2018,250747,50,,REGULAR,1900,PFC CSKA Moskva,31141,Arnór Sigurðsson,49468,Ilzat Akhmetov
+CL,2018,250759,14,,REGULAR,95,Valencia CF,33151,Santi Mina,33148,Carlos Soler
+CL,2018,250759,37,,REGULAR,1871,BSC Young Boys,16280,Roger Assalé,,
+CL,2018,250759,42,,REGULAR,95,Valencia CF,33151,Santi Mina,,
+CL,2018,250759,56,,REGULAR,95,Valencia CF,33148,Carlos Soler,,
+CL,2018,250723,31,,PENALTY,5,FC Bayern München,371,Robert Lewandowski,,
+CL,2018,250723,71,,REGULAR,5,FC Bayern München,371,Robert Lewandowski,,
+CL,2018,250724,29,,REGULAR,1903,Sport Lisboa e Benfica,16755,Jonas,16745,Eduardo Salvio
+CL,2018,250724,61,,REGULAR,678,AFC Ajax,3444,Dušan Tadić,3707,Hakim Ziyech
+CL,2018,250735,13,,REGULAR,65,Manchester City FC,3196,David Silva,8069,Riyad Mahrez
+CL,2018,250735,24,,PENALTY,65,Manchester City FC,3236,Gabriel Jesus,,
+CL,2018,250735,49,,REGULAR,65,Manchester City FC,3329,Raheem Sterling,,
+CL,2018,250735,72,,PENALTY,65,Manchester City FC,3236,Gabriel Jesus,,
+CL,2018,250735,84,,REGULAR,65,Manchester City FC,8069,Riyad Mahrez,3182,Ilkay Gündogan
+CL,2018,250735,90,2,REGULAR,65,Manchester City FC,3236,Gabriel Jesus,8069,Riyad Mahrez
+CL,2018,250736,28,,REGULAR,523,Olympique Lyonnais,8469,Tanguy Ndombèlé,8458,Ferland Mendy
+CL,2018,250736,65,,REGULAR,2,TSG 1899 Hoffenheim,318,Andrej Kramarić,,
+CL,2018,250736,90,2,REGULAR,2,TSG 1899 Hoffenheim,317,Pavel Kadeřábek,10653,Joelinton
+CL,2018,250736,19,,REGULAR,523,Olympique Lyonnais,8464,Nabil Fekir,,
+CL,2018,250748,21,,REGULAR,86,Real Madrid CF,49,Karim Benzema,,
+CL,2018,250748,23,,REGULAR,86,Real Madrid CF,3231,Casemiro,47,Toni Kroos
+CL,2018,250748,37,,REGULAR,86,Real Madrid CF,49,Karim Benzema,3876,Gareth Bale
+CL,2018,250748,40,,REGULAR,86,Real Madrid CF,3876,Gareth Bale,49,Karim Benzema
+CL,2018,250748,67,,REGULAR,86,Real Madrid CF,47,Toni Kroos,1556,Vinicius Junior
+CL,2018,250760,65,,REGULAR,109,Juventus FC,44,Cristiano Ronaldo,1744,Leonardo Bonucci
+CL,2018,250760,86,,REGULAR,66,Manchester United FC,7909,Mata,,
+CL,2018,250760,90,,OWN,109,Juventus FC,1744,Leonardo Bonucci,,
+CL,2018,250725,68,,PENALTY,678,AFC Ajax,3444,Dušan Tadić,,
+CL,2018,250725,72,,REGULAR,678,AFC Ajax,3444,Dušan Tadić,7572,Klaas-Jan Huntelaar
+CL,2018,250749,10,,PENALTY,1900,PFC CSKA Moskva,7843,Nikola Vlašić,,
+CL,2018,250749,56,,REGULAR,1881,FC Viktoria Plzeň,20316,Roman Procházka,15767,Jan Kopic
+CL,2018,250749,81,,REGULAR,1881,FC Viktoria Plzeň,16388,Lukáš Hejda,15771,Patrik Hrošovský
+CL,2018,250726,13,,REGULAR,5,FC Bayern München,353,Arjen Robben,,
+CL,2018,250726,30,,REGULAR,5,FC Bayern München,353,Arjen Robben,,
+CL,2018,250726,36,,REGULAR,5,FC Bayern München,371,Robert Lewandowski,359,Joshua Kimmich
+CL,2018,250726,46,,REGULAR,1903,Sport Lisboa e Benfica,37557,Gedson,16755,Jonas
+CL,2018,250726,51,,REGULAR,5,FC Bayern München,371,Robert Lewandowski,359,Joshua Kimmich
+CL,2018,250726,76,,REGULAR,5,FC Bayern München,354,Franck Ribéry,349,David Alaba
+CL,2018,250737,14,,REGULAR,1887,FK Shakhtar Donetsk,3226,Ismaily,3237,Taison
+CL,2018,250737,15,,REGULAR,1887,FK Shakhtar Donetsk,3237,Taison,16186,Júnior Moraes
+CL,2018,250737,17,,REGULAR,2,TSG 1899 Hoffenheim,318,Andrej Kramarić,9466,Ishak Belfodil
+CL,2018,250737,40,,REGULAR,2,TSG 1899 Hoffenheim,333,Steven Zuber,,
+CL,2018,250737,90,2,REGULAR,1887,FK Shakhtar Donetsk,3237,Taison,3226,Ismaily
+CL,2018,250738,55,,REGULAR,523,Olympique Lyonnais,8471,Maxwel Cornet,,
+CL,2018,250738,62,,REGULAR,65,Manchester City FC,7884,Aymeric Laporte,,
+CL,2018,250738,81,,REGULAR,523,Olympique Lyonnais,8471,Maxwel Cornet,8472,Memphis Depay
+CL,2018,250738,83,,REGULAR,65,Manchester City FC,7891,Sergio Agüero,8069,Riyad Mahrez
+CL,2018,250750,47,,REGULAR,86,Real Madrid CF,3876,Gareth Bale,,
+CL,2018,250750,59,,REGULAR,86,Real Madrid CF,45,Lucas Vázquez,49,Karim Benzema
+CL,2018,250761,90,1,REGULAR,66,Manchester United FC,3652,Marouane Fellaini,3662,Romelu Lukaku
+CL,2018,250762,59,,REGULAR,109,Juventus FC,2045,Mario Mandžukić,44,Cristiano Ronaldo
+CL,2018,250677,24,,REGULAR,78,Club Atlético de Madrid,114,Antoine Griezmann,,
+CL,2018,250677,2,,REGULAR,78,Club Atlético de Madrid,112,Koke,114,Antoine Griezmann
+CL,2018,250713,54,,REGULAR,5455,FK Lokomotiv Moskva,3685,Vladislav Ignatjev,,
+CL,2018,250713,43,,OWN,610,Galatasaray SK,30540,Ryan Donk,,
+CL,2018,250689,80,,REGULAR,73,Tottenham Hotspur FC,3459,Christian Eriksen,3324,Dele Alli
+CL,2018,250690,61,,REGULAR,81,FC Barcelona,3218,Lionel Messi,3373,Ousmane Dembélé
+CL,2018,250690,70,,REGULAR,81,FC Barcelona,3190,Piqué,3218,Lionel Messi
+CL,2018,250690,83,,REGULAR,674,PSV,7452,Luuk de Jong,7646,Angeliño
+CL,2018,250701,13,,REGULAR,524,Paris Saint-Germain FC,357,Juan Bernat,,
+CL,2018,250701,37,,REGULAR,524,Paris Saint-Germain FC,8491,Neymar,3170,Edinson Cavani
+CL,2018,250701,45,1,PENALTY,64,Liverpool FC,7861,James Milner,,
+CL,2018,250702,11,,REGULAR,113,SSC Napoli,2095,Marek Hamšík,3436,Nikola Maksimović
+CL,2018,250702,33,,REGULAR,113,SSC Napoli,2103,Dries Mertens,22,Fabián Ruiz
+CL,2018,250702,52,,REGULAR,113,SSC Napoli,2103,Dries Mertens,2095,Marek Hamšík
+CL,2018,250702,57,,REGULAR,7283,FK Crvena Zvezda,15832,El Fardou Ben Nabouhane,15826,Marko Marin
+CL,2018,250714,52,,REGULAR,503,FC Porto,1337,Éder Militão,15911,Óliver Torres
+CL,2018,250714,55,,REGULAR,503,FC Porto,3296,Jesús Corona,15907,Yacine Brahimi
+CL,2018,250714,89,,PENALTY,6,FC Schalke 04,6503,Nabil Bentaleb,,
+CL,2018,250714,90,4,REGULAR,503,FC Porto,15917,Moussa Maréga,15910,Otávio
+CL,2018,250715,90,1,REGULAR,6,FC Schalke 04,6501,Alessandro Schöpf,6629,Suat Serdar
+CL,2018,250716,17,,REGULAR,503,FC Porto,15903,Felipe,15904,Alex Telles
+CL,2018,250716,42,,PENALTY,503,FC Porto,15917,Moussa Maréga,,
+CL,2018,250716,45,1,PENALTY,610,Galatasaray SK,30563,Sofiane Feghouli,,
+CL,2018,250716,57,,REGULAR,503,FC Porto,15912,Sergio Oliveira,15916,Hernâni
+CL,2018,250716,65,,REGULAR,610,Galatasaray SK,30567,Eren Derdiyok,30554,Garry Rodrigues
+CL,2018,250679,15,,REGULAR,4,BV Borussia 09 Dortmund,3246,Raphaël Guerreiro,142,Maximilian Philipp
+CL,2018,250679,88,,REGULAR,4,BV Borussia 09 Dortmund,3246,Raphaël Guerreiro,15871,Paco Alcácer
+CL,2018,250691,7,,REGULAR,81,FC Barcelona,3373,Ousmane Dembélé,,
+CL,2018,250691,85,,REGULAR,73,Tottenham Hotspur FC,8003,Lucas Moura,8004,Harry Kane
+CL,2018,250692,13,,REGULAR,674,PSV,3306,Hirving Lozano,7453,Steven Bergwijn
+CL,2018,250692,73,,REGULAR,108,FC Internazionale Milano,2014,Mauro Icardi,2193,Matteo Politano
+CL,2018,250703,34,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,7861,James Milner
+CL,2018,250704,10,,REGULAR,524,Paris Saint-Germain FC,3170,Edinson Cavani,3374,Kylian Mbappé
+CL,2018,250704,40,,REGULAR,524,Paris Saint-Germain FC,8491,Neymar,3374,Kylian Mbappé
+CL,2018,250704,56,,REGULAR,7283,FK Crvena Zvezda,67698,Marko Gobeljić,,
+CL,2018,250704,74,,REGULAR,524,Paris Saint-Germain FC,3225,Marquinhos,3210,Ángel di María
+CL,2018,250704,90,2,REGULAR,524,Paris Saint-Germain FC,3374,Kylian Mbappé,8491,Neymar
+CL,2018,250751,37,,REGULAR,1900,PFC CSKA Moskva,8835,Fedor Chalov,31141,Arnór Sigurðsson
+CL,2018,250751,43,,REGULAR,1900,PFC CSKA Moskva,15791,Georgii Shchennikov,8831,Mário Fernandes
+CL,2018,250751,73,,REGULAR,1900,PFC CSKA Moskva,31141,Arnór Sigurðsson,7843,Nikola Vlašić
+CL,2018,250752,62,,REGULAR,1881,FC Viktoria Plzeň,16394,Jan Kovařík,15767,Jan Kopic
+CL,2018,250752,68,,REGULAR,100,AS Roma,1818,Cengiz Ünder,1996,Davide Santon
+CL,2018,250752,72,,REGULAR,1881,FC Viktoria Plzeň,16396,Tomáš Chorý,,
+CL,2018,250727,13,,REGULAR,5,FC Bayern München,371,Robert Lewandowski,311,Serge Gnabry
+CL,2018,250727,61,,REGULAR,678,AFC Ajax,3444,Dušan Tadić,7556,Donny van de Beek
+CL,2018,250727,82,,PENALTY,678,AFC Ajax,3444,Dušan Tadić,,
+CL,2018,250727,87,,PENALTY,5,FC Bayern München,371,Robert Lewandowski,,
+CL,2018,250727,90,,REGULAR,5,FC Bayern München,360,Kingsley Coman,356,Thiago Alcântara
+CL,2018,250727,90,5,REGULAR,678,AFC Ajax,3208,Nicolás Tagliafico,7572,Klaas-Jan Huntelaar
+CL,2018,250728,88,,REGULAR,1903,Sport Lisboa e Benfica,16739,Alejandro Grimaldo,,
+CL,2018,250739,16,,PENALTY,2,TSG 1899 Hoffenheim,318,Andrej Kramarić,,
+CL,2018,250739,45,1,REGULAR,65,Manchester City FC,3184,Leroy Sané,,
+CL,2018,250739,61,,REGULAR,65,Manchester City FC,3184,Leroy Sané,3329,Raheem Sterling
+CL,2018,250740,22,,REGULAR,1887,FK Shakhtar Donetsk,16186,Júnior Moraes,3226,Ismaily
+CL,2018,250740,65,,REGULAR,523,Olympique Lyonnais,8464,Nabil Fekir,8472,Memphis Depay
+CL,2018,250763,17,,REGULAR,95,Valencia CF,33148,Carlos Soler,,
+CL,2018,250763,47,,OWN,66,Manchester United FC,7897,Phil Jones,,
+CL,2018,250763,87,,REGULAR,66,Manchester United FC,3331,Marcus Rashford,3317,Ashley Young
+CL,2018,250764,30,,PENALTY,1871,BSC Young Boys,16279,Guillaume Hoarau,,
+CL,2018,250764,68,,REGULAR,1871,BSC Young Boys,16279,Guillaume Hoarau,16278,Nicolas Ngamaleu
+CL,2018,250764,80,,REGULAR,109,Juventus FC,2046,Paulo Dybala,44,Cristiano Ronaldo
+CL,2018,254897,53,,REGULAR,524,Paris Saint-Germain FC,3363,Presnel Kimpembe,3210,Ángel di María
+CL,2018,254897,60,,REGULAR,524,Paris Saint-Germain FC,3374,Kylian Mbappé,3210,Ángel di María
+CL,2018,254903,70,,REGULAR,100,AS Roma,2013,Nicolò Zaniolo,1822,Edin Džeko
+CL,2018,254903,76,,REGULAR,100,AS Roma,2013,Nicolò Zaniolo,1822,Edin Džeko
+CL,2018,254903,79,,REGULAR,503,FC Porto,94,Adrián,15914,Tiquinho
+CL,2018,254899,47,,REGULAR,73,Tottenham Hotspur FC,3343,Son Heungmin,3646,Jan Vertonghen
+CL,2018,254899,83,,REGULAR,73,Tottenham Hotspur FC,3646,Jan Vertonghen,7997,Serge Aurier
+CL,2018,254899,86,,REGULAR,73,Tottenham Hotspur FC,8007,Llorente,3459,Christian Eriksen
+CL,2018,254907,60,,REGULAR,86,Real Madrid CF,49,Karim Benzema,1556,Vinicius Junior
+CL,2018,254907,75,,REGULAR,678,AFC Ajax,3707,Hakim Ziyech,7571,David Neres
+CL,2018,254907,87,,REGULAR,86,Real Madrid CF,52,Marco Asensio,3194,Dani Carvajal
+CL,2018,254893,18,,REGULAR,65,Manchester City FC,7891,Sergio Agüero,3196,David Silva
+CL,2018,254893,38,,PENALTY,6,FC Schalke 04,6503,Nabil Bentaleb,,
+CL,2018,254893,45,,PENALTY,6,FC Schalke 04,6503,Nabil Bentaleb,,
+CL,2018,254893,85,,REGULAR,65,Manchester City FC,3184,Leroy Sané,,
+CL,2018,254893,90,,REGULAR,65,Manchester City FC,3329,Raheem Sterling,3222,Ederson
+CL,2018,254895,78,,REGULAR,78,Club Atlético de Madrid,115,José Maria Giménez,,
+CL,2018,254895,83,,REGULAR,78,Club Atlético de Madrid,111,Diego Godín,,
+CL,2018,254900,49,,REGULAR,73,Tottenham Hotspur FC,8004,Harry Kane,8001,Moussa Sissoko
+CL,2018,254908,7,,REGULAR,678,AFC Ajax,3707,Hakim Ziyech,3444,Dušan Tadić
+CL,2018,254908,18,,REGULAR,678,AFC Ajax,7571,David Neres,3444,Dušan Tadić
+CL,2018,254908,62,,REGULAR,678,AFC Ajax,3444,Dušan Tadić,7556,Donny van de Beek
+CL,2018,254908,70,,REGULAR,86,Real Madrid CF,52,Marco Asensio,51116,Reguilón
+CL,2018,254908,72,,REGULAR,678,AFC Ajax,3458,Lasse Schöne,,
+CL,2018,254898,2,,REGULAR,66,Manchester United FC,3662,Romelu Lukaku,,
+CL,2018,254898,12,,REGULAR,524,Paris Saint-Germain FC,357,Juan Bernat,3374,Kylian Mbappé
+CL,2018,254898,30,,REGULAR,66,Manchester United FC,3662,Romelu Lukaku,3331,Marcus Rashford
+CL,2018,254898,90,4,PENALTY,66,Manchester United FC,3331,Marcus Rashford,,
+CL,2018,254904,26,,REGULAR,503,FC Porto,15914,Tiquinho,15917,Moussa Maréga
+CL,2018,254904,37,,PENALTY,100,AS Roma,1810,Daniele De Rossi,,
+CL,2018,254904,52,,REGULAR,503,FC Porto,15917,Moussa Maréga,3296,Jesús Corona
+CL,2018,254904,117,,PENALTY,503,FC Porto,15904,Alex Telles,,
+CL,2018,254894,56,,REGULAR,65,Manchester City FC,3329,Raheem Sterling,3184,Leroy Sané
+CL,2018,254894,71,,REGULAR,65,Manchester City FC,3254,Bernardo Silva,3184,Leroy Sané
+CL,2018,254894,78,,REGULAR,65,Manchester City FC,7888,Phil Foden,3184,Leroy Sané
+CL,2018,254894,84,,REGULAR,65,Manchester City FC,3236,Gabriel Jesus,3254,Bernardo Silva
+CL,2018,254894,35,,PENALTY,65,Manchester City FC,7891,Sergio Agüero,,
+CL,2018,254894,38,,REGULAR,65,Manchester City FC,7891,Sergio Agüero,3329,Raheem Sterling
+CL,2018,254894,42,,REGULAR,65,Manchester City FC,3184,Leroy Sané,7889,Oleksandr Zinchenko
+CL,2018,254896,27,,REGULAR,109,Juventus FC,44,Cristiano Ronaldo,2040,Federico Bernardeschi
+CL,2018,254896,48,,REGULAR,109,Juventus FC,44,Cristiano Ronaldo,2000,João Cancelo
+CL,2018,254896,86,,PENALTY,109,Juventus FC,44,Cristiano Ronaldo,,
+CL,2018,254902,18,,PENALTY,81,FC Barcelona,3218,Lionel Messi,,
+CL,2018,254902,31,,REGULAR,81,FC Barcelona,3228,Philippe Coutinho,3169,Luis Suárez
+CL,2018,254902,58,,REGULAR,523,Olympique Lyonnais,8465,Lucas Tousart,,
+CL,2018,254902,78,,REGULAR,81,FC Barcelona,3218,Lionel Messi,,
+CL,2018,254902,81,,REGULAR,81,FC Barcelona,3190,Piqué,3218,Lionel Messi
+CL,2018,254902,86,,REGULAR,81,FC Barcelona,3373,Ousmane Dembélé,3218,Lionel Messi
+CL,2018,254906,26,,REGULAR,64,Liverpool FC,3626,Sadio Mané,7869,Virgil van Dijk
+CL,2018,254906,39,,OWN,64,Liverpool FC,7865,Joël Matip,,
+CL,2018,254906,69,,REGULAR,64,Liverpool FC,7869,Virgil van Dijk,7861,James Milner
+CL,2018,254906,84,,REGULAR,64,Liverpool FC,3626,Sadio Mané,3754,Mohamed Salah
+CL,2018,261007,5,,REGULAR,64,Liverpool FC,9547,Naby Keïta,3233,Roberto Firmino
+CL,2018,261007,26,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,,
+CL,2018,261009,78,,REGULAR,73,Tottenham Hotspur FC,3343,Son Heungmin,,
+CL,2018,261005,45,,REGULAR,109,Juventus FC,44,Cristiano Ronaldo,2000,João Cancelo
+CL,2018,261005,46,,REGULAR,678,AFC Ajax,7571,David Neres,,
+CL,2018,261011,12,,OWN,66,Manchester United FC,7898,Luke Shaw,,
+CL,2018,261006,28,,REGULAR,109,Juventus FC,44,Cristiano Ronaldo,2036,Miralem Pjanić
+CL,2018,261006,34,,REGULAR,678,AFC Ajax,7556,Donny van de Beek,3707,Hakim Ziyech
+CL,2018,261006,67,,REGULAR,678,AFC Ajax,7549,Matthijs de Ligt,3458,Lasse Schöne
+CL,2018,261012,16,,REGULAR,81,FC Barcelona,3218,Lionel Messi,,
+CL,2018,261012,20,,REGULAR,81,FC Barcelona,3218,Lionel Messi,,
+CL,2018,261012,61,,REGULAR,81,FC Barcelona,3228,Philippe Coutinho,3193,Jordi Alba
+CL,2018,261008,26,,REGULAR,64,Liverpool FC,3626,Sadio Mané,3754,Mohamed Salah
+CL,2018,261008,65,,REGULAR,64,Liverpool FC,3754,Mohamed Salah,7867,Trent Alexander-Arnold
+CL,2018,261008,69,,REGULAR,503,FC Porto,1337,Éder Militão,15904,Alex Telles
+CL,2018,261008,77,,REGULAR,64,Liverpool FC,3233,Roberto Firmino,3320,Jordan Henderson
+CL,2018,261008,84,,REGULAR,64,Liverpool FC,7869,Virgil van Dijk,3626,Sadio Mané
+CL,2018,261010,4,,REGULAR,65,Manchester City FC,3329,Raheem Sterling,3654,Kevin De Bruyne
+CL,2018,261010,7,,REGULAR,73,Tottenham Hotspur FC,3343,Son Heungmin,,
+CL,2018,261010,10,,REGULAR,73,Tottenham Hotspur FC,3343,Son Heungmin,3459,Christian Eriksen
+CL,2018,261010,11,,REGULAR,65,Manchester City FC,3254,Bernardo Silva,7891,Sergio Agüero
+CL,2018,261010,21,,REGULAR,65,Manchester City FC,3329,Raheem Sterling,3654,Kevin De Bruyne
+CL,2018,261010,59,,REGULAR,65,Manchester City FC,7891,Sergio Agüero,3654,Kevin De Bruyne
+CL,2018,261010,73,,REGULAR,73,Tottenham Hotspur FC,8007,Llorente,3312,Kieran Trippier
+CL,2018,263558,15,,REGULAR,678,AFC Ajax,7556,Donny van de Beek,3707,Hakim Ziyech
+CL,2018,263560,26,,REGULAR,81,FC Barcelona,3169,Luis Suárez,3193,Jordi Alba
+CL,2018,263560,75,,REGULAR,81,FC Barcelona,3218,Lionel Messi,3169,Luis Suárez
+CL,2018,263560,82,,REGULAR,81,FC Barcelona,3218,Lionel Messi,,
+CL,2018,263561,7,,REGULAR,64,Liverpool FC,3663,Divock Origi,,
+CL,2018,263561,54,,REGULAR,64,Liverpool FC,7871,Georginio Wijnaldum,,
+CL,2018,263561,56,,REGULAR,64,Liverpool FC,7871,Georginio Wijnaldum,7955,Xherdan Shaqiri
+CL,2018,263561,79,,REGULAR,64,Liverpool FC,3663,Divock Origi,7867,Trent Alexander-Arnold
+CL,2018,263559,5,,REGULAR,678,AFC Ajax,7549,Matthijs de Ligt,3458,Lasse Schöne
+CL,2018,263559,35,,REGULAR,678,AFC Ajax,3707,Hakim Ziyech,3444,Dušan Tadić
+CL,2018,263559,55,,REGULAR,73,Tottenham Hotspur FC,8003,Lucas Moura,3324,Dele Alli
+CL,2018,263559,59,,REGULAR,73,Tottenham Hotspur FC,8003,Lucas Moura,,
+CL,2018,263559,90,6,REGULAR,73,Tottenham Hotspur FC,8003,Lucas Moura,3324,Dele Alli
+CL,2018,263562,2,,PENALTY,64,Liverpool FC,3754,Mohamed Salah,,
+CL,2018,263562,87,,REGULAR,64,Liverpool FC,3663,Divock Origi,7865,Joël Matip
+CL,2019,266391,76,,REGULAR,1879,FC Santa Coloma,120151,Javier Camochu,,
+CL,2019,266390,3,,REGULAR,8101,KF Feronikeli,119954,Mendurim Hoti,,
+CL,2019,266392,52,,REGULAR,1879,FC Santa Coloma,14832,Chus Sosa,,
+CL,2019,266392,58,,REGULAR,8101,KF Feronikeli,119953,Mevlan Zeka,,
+CL,2019,266392,87,,REGULAR,8101,KF Feronikeli,120182,Kastriot Rexha,120181,Astrit Fazliu
+CL,2019,269483,68,,REGULAR,1884,Astana FK,15205,Evgeny Postnikov,,
+CL,2019,269481,3,,PENALTY,8164,FC Ararat-Armenia,84876,Petros Avetisyan,,
+CL,2019,269481,39,,REGULAR,5277,AIK Fotboll,81297,Chinedu Obasi,,
+CL,2019,269481,45,,REGULAR,8164,FC Ararat-Armenia,84876,Petros Avetisyan,,
+CL,2019,269477,81,,PENALTY,7285,KF Shkëndija 79,84564,Agim Ibraimi,,
+CL,2019,269505,21,,REGULAR,5123,Helsingin JK,55905,Lassi Lappalainen,,
+CL,2019,269505,42,,REGULAR,5123,Helsingin JK,55853,Daniel O'Shaughnessy,,
+CL,2019,269505,66,,REGULAR,5123,Helsingin JK,55905,Lassi Lappalainen,,
+CL,2019,269487,29,,REGULAR,4275,FK Sarajevo,40715,Mirko Oremuš,,
+CL,2019,269487,35,,REGULAR,732,Celtic FC,16075,Michael Johnston,,
+CL,2019,269487,51,,REGULAR,732,Celtic FC,16077,Odsonne Edouard,16075,Michael Johnston
+CL,2019,269487,85,,REGULAR,732,Celtic FC,15608,Scott Sinclair,35076,Lewis Morgan
+CL,2019,269491,26,,REGULAR,1875,F91 Diddeleng,77649,Adel Bettaieb,15242,Mario Pokar
+CL,2019,269491,45,2,REGULAR,1875,F91 Diddeleng,15224,Dominik Stolz,121410,Mohamed Bouchouari
+CL,2019,269491,64,,REGULAR,5813,Valletta FC,111093,Douglas Packer,,
+CL,2019,269491,70,,REGULAR,5813,Valletta FC,67576,Jean Borg,111093,Douglas Packer
+CL,2019,269503,49,,PENALTY,1904,The New Saints FC,14961,Greg Draper,,
+CL,2019,269503,77,,REGULAR,1904,The New Saints FC,14949,Aeron Edwards,,
+CL,2019,269503,89,,REGULAR,8101,KF Feronikeli,119953,Mevlan Zeka,,
+CL,2019,269503,90,3,PENALTY,8101,KF Feronikeli,120181,Astrit Fazliu,,
+CL,2019,269489,30,,REGULAR,8165,FC Saburtalo,71622,Ognjen Rolović,,
+CL,2019,269489,67,,REGULAR,8165,FC Saburtalo,120317,Giorgi Kokhreidze,,
+CL,2019,269489,71,,REGULAR,8165,FC Saburtalo,85333,Levan Kakubava,,
+CL,2019,269507,36,,REGULAR,5628,GKS Piast Gliwice,7734,Piotr Parzyszek,,
+CL,2019,269507,64,,REGULAR,748,FK BATE Borisov,15411,Stanislaw Drahun,15416,Ihar Stasevich
+CL,2019,269485,6,,REGULAR,5954,Ferencvárosi TC,38485,Tokmac Nguen,57213,Gergő Lovrencsics
+CL,2019,269485,31,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,3544,Jakub Świerczok,96154,Mavis Tchibota
+CL,2019,269485,65,,REGULAR,5954,Ferencvárosi TC,16486,Oleksandr Zubkov,38485,Tokmac Nguen
+CL,2019,269495,82,,REGULAR,7509,ŠK Slovan Bratislava,57705,Andraž Šporar,120703,Erik Daniel
+CL,2019,269495,90,5,REGULAR,7284,FK Sutjeska Nikšić,15360,Damir Kojašević,,
+CL,2019,269497,22,,REGULAR,889,Rosenborg BK,3463,Mike Jensen,15569,Birger Meling
+CL,2019,269497,69,,REGULAR,889,Rosenborg BK,16207,Alexander Søderlund,15549,Anders Konradsen
+CL,2019,269499,43,,REGULAR,734,NK Maribor,23108,Špiro Peričić,67822,Rok Kronaveter
+CL,2019,269499,60,,REGULAR,734,NK Maribor,15376,Dino Hotič,67822,Rok Kronaveter
+CL,2019,269499,86,,PENALTY,734,NK Maribor,67822,Rok Kronaveter,,
+CL,2019,269478,6,,REGULAR,5106,Nõmme Kalju FC,73289,Maximiliano Uggè,,
+CL,2019,269478,62,,PENALTY,7285,KF Shkëndija 79,84564,Agim Ibraimi,,
+CL,2019,269478,90,1,REGULAR,5106,Nõmme Kalju FC,74890,Liliu,,
+CL,2019,269490,11,,REGULAR,1880,FC Sheriff Tiraspol,29850,Robert Ndip Tambe,,
+CL,2019,269490,59,,REGULAR,8165,FC Saburtalo,71622,Ognjen Rolović,,
+CL,2019,269490,3,,REGULAR,1880,FC Sheriff Tiraspol,63244,Liridon Latifi,,
+CL,2019,269490,8,,OWN,8165,FC Saburtalo,120309,Gagi Margvelashvili,,
+CL,2019,269492,35,,REGULAR,5813,Valletta FC,67599,Mario Fontanella,,
+CL,2019,269492,59,,REGULAR,1875,F91 Diddeleng,15242,Mario Pokar,,
+CL,2019,269506,17,,REGULAR,8166,HB,84308,Sebastian Pingel,,
+CL,2019,269506,56,,REGULAR,8166,HB,121478,Lasse Andersen,,
+CL,2019,269506,60,,REGULAR,5123,Helsingin JK,56442,Riku Riski,,
+CL,2019,269506,77,,REGULAR,5123,Helsingin JK,56442,Riku Riski,,
+CL,2019,269480,4,,REGULAR,7283,FK Crvena Zvezda,15832,El Fardou Ben Nabouhane,,
+CL,2019,269480,29,,REGULAR,7283,FK Crvena Zvezda,15826,Marko Marin,,
+CL,2019,269480,90,6,REGULAR,5819,FK Sūduva Marijampolė,10795,Mihret Topcagić,,
+CL,2019,269504,67,,REGULAR,1904,The New Saints FC,16769,Dean Ebbe,,
+CL,2019,269482,47,,REGULAR,5277,AIK Fotboll,31153,Henok Goitom,31151,Rasmus Lindkvist
+CL,2019,269482,52,,REGULAR,5277,AIK Fotboll,31153,Henok Goitom,31171,Anton Salétros
+CL,2019,269482,62,,PENALTY,5277,AIK Fotboll,3493,Sebastian Larsson,,
+CL,2019,269482,77,,REGULAR,8164,FC Ararat-Armenia,35502,Anton Kobialko,,
+CL,2019,269494,51,,REGULAR,611,Qarabağ Ağdam FK,60459,Filip Ozobić,9562,Ailton Silva
+CL,2019,269494,90,4,REGULAR,611,Qarabağ Ağdam FK,15968,Dani Quintana,15055,Míchel
+CL,2019,269498,20,,REGULAR,889,Rosenborg BK,15549,Anders Konradsen,15555,Vegar Eggen Hedenstad
+CL,2019,269498,51,,REGULAR,889,Rosenborg BK,15549,Anders Konradsen,15552,Pål Helland
+CL,2019,269498,69,,REGULAR,889,Rosenborg BK,37963,Babajide Akintola,,
+CL,2019,269498,85,,REGULAR,889,Rosenborg BK,15552,Pål Helland,37963,Babajide Akintola
+CL,2019,269486,17,,REGULAR,5954,Ferencvárosi TC,28965,Ihor Kharatin,16486,Oleksandr Zubkov
+CL,2019,269486,21,,REGULAR,5954,Ferencvárosi TC,15524,Michal Škvarka,16486,Oleksandr Zubkov
+CL,2019,269486,24,,REGULAR,1901,PFK Ludogorets 1945 Razgrad,15445,Georgi Terziev,96154,Mavis Tchibota
+CL,2019,269486,48,,REGULAR,5954,Ferencvárosi TC,38485,Tokmac Nguen,15524,Michal Škvarka
+CL,2019,269486,69,,OWN,5954,Ferencvárosi TC,41020,Marcel Heister,,
+CL,2019,269484,4,,REGULAR,1884,Astana FK,15206,Roman Murtazaev,,
+CL,2019,269484,10,,REGULAR,5515,FC CFR 1907 Cluj,36746,Billel Omrani,15163,Damjan Đoković
+CL,2019,269484,73,,REGULAR,5515,FC CFR 1907 Cluj,36746,Billel Omrani,15271,Mateo Sušić
+CL,2019,269484,26,,REGULAR,5515,FC CFR 1907 Cluj,36746,Billel Omrani,,
+CL,2019,269508,21,,REGULAR,5628,GKS Piast Gliwice,43825,Jakub Czerwiński,64325,Joel Valencia
+CL,2019,269508,82,,PENALTY,748,FK BATE Borisov,80980,Hérvaine Moukam,,
+CL,2019,269508,87,,REGULAR,748,FK BATE Borisov,16085,Zakhar Volkov,15416,Ihar Stasevich
+CL,2019,269496,49,,OWN,7284,FK Sutjeska Nikšić,67740,Nemanja Nedić,,
+CL,2019,269496,90,3,REGULAR,7284,FK Sutjeska Nikšić,17102,Aleksandar Šofranac,37837,Stefan Nikolić
+CL,2019,269500,11,,REGULAR,734,NK Maribor,67822,Rok Kronaveter,15376,Dino Hotič
+CL,2019,269500,32,,REGULAR,734,NK Maribor,15393,Marcos Tavares,2226,Andrej Kotnik
+CL,2019,269488,26,,REGULAR,732,Celtic FC,34495,Ryan Christie,16077,Odsonne Edouard
+CL,2019,269488,62,,REGULAR,4275,FK Sarajevo,23190,Benjamin Tatar,17881,Amar Rahmanović
+CL,2019,269488,75,,REGULAR,732,Celtic FC,15620,Callum McGregor,34495,Ryan Christie
+CL,2019,269517,67,,REGULAR,755,GNK Dinamo Zagreb,73401,Mislav Oršić,23144,Izet Hajrović
+CL,2019,269517,78,,PENALTY,755,GNK Dinamo Zagreb,2174,Bruno Petković,,
+CL,2019,269511,14,,REGULAR,674,PSV,9553,Bruma,7457,Donyell Malen
+CL,2019,269511,45,1,REGULAR,729,FC Basel 1893,16063,Albian Ajeti,16049,Luca Zuffi
+CL,2019,269511,79,,REGULAR,729,FC Basel 1893,46491,Omar Alderete,16049,Luca Zuffi
+CL,2019,269511,89,,REGULAR,674,PSV,7455,Sam Lammers,7453,Steven Bergwijn
+CL,2019,269511,90,3,REGULAR,674,PSV,7457,Donyell Malen,39298,Érick Gutiérrez
+CL,2019,269513,18,,REGULAR,1876,FC København,15516,Pieros Sotiriou,24225,Karlo Bartolec
+CL,2019,269513,61,,PENALTY,1876,FC København,10195,Robert Skov,,
+CL,2019,269515,42,,PENALTY,752,APOEL FC,60463,Tomás De Vincenti,,
+CL,2019,278362,5,,PENALTY,748,FK BATE Borisov,15416,Ihar Stasevich,,
+CL,2019,278362,25,,REGULAR,889,Rosenborg BK,15549,Anders Konradsen,15555,Vegar Eggen Hedenstad
+CL,2019,278362,51,,REGULAR,748,FK BATE Borisov,16089,Maksim Skavysh,15416,Ihar Stasevich
+CL,2019,278128,36,,PENALTY,5954,Ferencvárosi TC,15307,Davide Lanzafame,,
+CL,2019,278128,19,,OWN,5813,Valletta FC,67570,Henry Bonello,,
+CL,2019,278128,59,,REGULAR,5954,Ferencvárosi TC,15307,Davide Lanzafame,16486,Oleksandr Zubkov
+CL,2019,278128,85,,REGULAR,5813,Valletta FC,122590,Yuri,67599,Mario Fontanella
+CL,2019,269519,22,,REGULAR,5515,FC CFR 1907 Cluj,36746,Billel Omrani,36755,Ciprian Deac
+CL,2019,278364,6,,REGULAR,734,NK Maribor,67822,Rok Kronaveter,15376,Dino Hotič
+CL,2019,278364,28,,REGULAR,5277,AIK Fotboll,31153,Henok Goitom,3493,Sebastian Larsson
+CL,2019,278364,38,,REGULAR,734,NK Maribor,79769,Saša Ivković,67822,Rok Kronaveter
+CL,2019,278366,4,,REGULAR,611,Qarabağ Ağdam FK,15065,Mahir Emreli,32291,Jaime Romero
+CL,2019,278366,78,,REGULAR,1873,Dundalk FC,16316,Patrick Hoban,15558,Dane Massey
+CL,2019,278126,27,,REGULAR,7283,FK Crvena Zvezda,21845,Richmond Boakye Yiadom,15419,Mirko Ivanić
+CL,2019,278126,90,,REGULAR,7283,FK Crvena Zvezda,67702,Milan Pavkov,15826,Marko Marin
+CL,2019,278130,36,,REGULAR,732,Celtic FC,16068,Kristoffer Ajer,34495,Ryan Christie
+CL,2019,278130,44,,PENALTY,732,Celtic FC,34495,Ryan Christie,,
+CL,2019,278130,45,3,REGULAR,732,Celtic FC,15609,Leigh Griffiths,,
+CL,2019,278130,65,,REGULAR,732,Celtic FC,34495,Ryan Christie,,
+CL,2019,278130,77,,REGULAR,732,Celtic FC,15620,Callum McGregor,15717,Jules Ntcham
+CL,2019,278131,10,,OWN,5106,Nõmme Kalju FC,14906,Aleksandr Kulinitš,,
+CL,2019,278131,90,3,REGULAR,732,Celtic FC,29016,Marian Shved,,
+CL,2019,269516,13,,REGULAR,752,APOEL FC,15518,Andrija Pavlović,,
+CL,2019,269516,25,,REGULAR,752,APOEL FC,15518,Andrija Pavlović,,
+CL,2019,269516,66,,REGULAR,752,APOEL FC,15518,Andrija Pavlović,,
+CL,2019,269520,15,,REGULAR,5929,Maccabi Tel Aviv FC,41906,Nick Blackman,,
+CL,2019,269520,19,,PENALTY,5515,FC CFR 1907 Cluj,36776,Emmanuel Culio,,
+CL,2019,269520,42,,REGULAR,5515,FC CFR 1907 Cluj,36710,Mário Rondón,36776,Emmanuel Culio
+CL,2019,269520,48,,REGULAR,5929,Maccabi Tel Aviv FC,42305,Yonatan Cohen,41016,Etey Shechter
+CL,2019,278129,27,,PENALTY,5813,Valletta FC,67599,Mario Fontanella,,
+CL,2019,278129,60,,REGULAR,5954,Ferencvárosi TC,38485,Tokmac Nguen,,
+CL,2019,269512,8,,REGULAR,729,FC Basel 1893,30823,Eray Cömert,3478,Fabian Frei
+CL,2019,269512,23,,REGULAR,674,PSV,9553,Bruma,7457,Donyell Malen
+CL,2019,269512,68,,REGULAR,729,FC Basel 1893,16061,Ricky van Wolfswinkel,16056,Valentin Stocker
+CL,2019,269518,77,,REGULAR,755,GNK Dinamo Zagreb,73401,Mislav Oršić,2174,Bruno Petković
+CL,2019,269518,88,,REGULAR,755,GNK Dinamo Zagreb,2174,Bruno Petković,23132,Dani Olmo
+CL,2019,269518,90,4,REGULAR,755,GNK Dinamo Zagreb,23132,Dani Olmo,2174,Bruno Petković
+CL,2019,269510,51,,REGULAR,654,PAE Olympiakos SFP,92,Guilherme,30468,Mathieu Valbuena
+CL,2019,269510,70,,REGULAR,654,PAE Olympiakos SFP,275,Guerrero,,
+CL,2019,269510,73,,OWN,1881,FC Viktoria Plzeň,8966,Jakub Brabec,,
+CL,2019,269510,82,,REGULAR,654,PAE Olympiakos SFP,33110,Rúben Semedo,3602,Yassine Meriah
+CL,2019,278127,46,,REGULAR,5123,Helsingin JK,55855,Sebastian Dahlström,,
+CL,2019,278127,56,,REGULAR,7283,FK Crvena Zvezda,67701,Dušan Jovančić,,
+CL,2019,278127,90,2,REGULAR,5123,Helsingin JK,56442,Riku Riski,,
+CL,2019,278363,73,,PENALTY,889,Rosenborg BK,15552,Pål Helland,,
+CL,2019,278363,85,,REGULAR,889,Rosenborg BK,16207,Alexander Søderlund,,
+CL,2019,278365,5,,REGULAR,5277,AIK Fotboll,31154,Per Karlsson,,
+CL,2019,278365,48,,REGULAR,734,NK Maribor,2226,Andrej Kotnik,,
+CL,2019,278365,61,,REGULAR,5277,AIK Fotboll,3493,Sebastian Larsson,,
+CL,2019,278365,93,,REGULAR,5277,AIK Fotboll,31729,Tarik Elyounoussi,,
+CL,2019,278365,117,,REGULAR,734,NK Maribor,79771,Alexandru Crețu,,
+CL,2019,278367,12,,REGULAR,611,Qarabağ Ağdam FK,32291,Jaime Romero,,
+CL,2019,278367,76,,REGULAR,611,Qarabağ Ağdam FK,9562,Ailton Silva,,
+CL,2019,278367,87,,REGULAR,611,Qarabağ Ağdam FK,32291,Jaime Romero,,
+CL,2019,269514,52,,REGULAR,1876,FC København,16332,Zeca,,
+CL,2019,279609,54,,REGULAR,611,Qarabağ Ağdam FK,15065,Mahir Emreli,32291,Jaime Romero
+CL,2019,279609,69,,REGULAR,611,Qarabağ Ağdam FK,29713,Magaye Gueye,786,Abdellah Zoubir
+CL,2019,279609,90,5,REGULAR,752,APOEL FC,15233,Giorgios Merkis,60463,Tomás De Vincenti
+CL,2019,278630,10,,REGULAR,678,AFC Ajax,3707,Hakim Ziyech,,
+CL,2019,278630,32,,REGULAR,6146,PAOK FC,9053,Chuba Akpom,43195,Dimitris Giannoulis
+CL,2019,278630,39,,REGULAR,6146,PAOK FC,43502,Léo Matos,43504,Diego Biseswar
+CL,2019,278630,57,,REGULAR,678,AFC Ajax,7572,Klaas-Jan Huntelaar,,
+CL,2019,279225,7,,REGULAR,755,GNK Dinamo Zagreb,23132,Dani Olmo,23130,Arijan Ademi
+CL,2019,279225,59,,REGULAR,5954,Ferencvárosi TC,63110,Dávid Sigér,38485,Tokmac Nguen
+CL,2019,278636,37,,PENALTY,851,Club Brugge KV,8888,Hans Vanaken,,
+CL,2019,279611,44,,REGULAR,7283,FK Crvena Zvezda,67702,Milan Pavkov,15419,Mirko Ivanić
+CL,2019,279611,84,,PENALTY,1876,FC København,16335,Jonas Wind,,
+CL,2019,278634,89,,REGULAR,503,FC Porto,15912,Sergio Oliveira,,
+CL,2019,278632,53,,REGULAR,654,PAE Olympiakos SFP,42919,Giorgos Masouras,30468,Mathieu Valbuena
+CL,2019,278638,51,,REGULAR,2016,LASK Linz,10716,Gernot Trauner,10709,Peter Michorl
+CL,2019,278638,82,,REGULAR,2016,LASK Linz,55858,Klauss,,
+CL,2019,278638,87,,REGULAR,729,FC Basel 1893,16049,Luca Zuffi,,
+CL,2019,279223,28,,REGULAR,5515,FC CFR 1907 Cluj,36710,Mário Rondón,36755,Ciprian Deac
+CL,2019,279223,37,,REGULAR,732,Celtic FC,15611,James Forrest,,
+CL,2019,279613,50,,REGULAR,889,Rosenborg BK,16207,Alexander Søderlund,,
+CL,2019,279613,64,,REGULAR,889,Rosenborg BK,16207,Alexander Søderlund,,
+CL,2019,279613,70,,REGULAR,734,NK Maribor,15393,Marcos Tavares,,
+CL,2019,279613,71,,REGULAR,889,Rosenborg BK,3463,Mike Jensen,,
+CL,2019,279610,34,,PENALTY,752,APOEL FC,60463,Tomás De Vincenti,,
+CL,2019,279610,68,,REGULAR,752,APOEL FC,122501,Urosh Matich,57709,Roman Bezjak
+CL,2019,279614,45,2,REGULAR,734,NK Maribor,121407,Rudi Požeg Vancaš,15376,Dino Hotič
+CL,2019,279614,53,,REGULAR,889,Rosenborg BK,16207,Alexander Søderlund,37963,Babajide Akintola
+CL,2019,279614,61,,REGULAR,889,Rosenborg BK,15549,Anders Konradsen,15555,Vegar Eggen Hedenstad
+CL,2019,279614,81,,REGULAR,889,Rosenborg BK,15549,Anders Konradsen,37963,Babajide Akintola
+CL,2019,278637,6,,REGULAR,842,FK Dynamo Kyiv,16171,Vitalii Buyalskyi,16165,Vitalii Mykolenko
+CL,2019,278637,38,,REGULAR,851,Club Brugge KV,15733,Simon Deli,8881,Ruud Vormer
+CL,2019,278637,50,,REGULAR,842,FK Dynamo Kyiv,16175,Volodymyr Shepeliev,15519,Benjamin Verbič
+CL,2019,278637,88,,REGULAR,851,Club Brugge KV,8881,Ruud Vormer,73215,Loïs Openda
+CL,2019,278637,90,3,OWN,851,Club Brugge KV,8873,Brandon Mechele,,
+CL,2019,278637,90,5,REGULAR,851,Club Brugge KV,73215,Loïs Openda,,
+CL,2019,279612,17,,REGULAR,7283,FK Crvena Zvezda,21845,Richmond Boakye Yiadom,15826,Marko Marin
+CL,2019,279612,45,,REGULAR,1876,FC København,30316,Dame N'Doye,15513,Pierre Bengtsson
+CL,2019,279226,16,,REGULAR,755,GNK Dinamo Zagreb,23130,Arijan Ademi,23132,Dani Olmo
+CL,2019,279226,47,,REGULAR,755,GNK Dinamo Zagreb,2174,Bruno Petković,73401,Mislav Oršić
+CL,2019,279226,55,,REGULAR,755,GNK Dinamo Zagreb,23132,Dani Olmo,23130,Arijan Ademi
+CL,2019,279226,79,,REGULAR,755,GNK Dinamo Zagreb,23133,Amer Gojak,23214,Lovro Majer
+CL,2019,278631,23,,REGULAR,6146,PAOK FC,43504,Diego Biseswar,,
+CL,2019,278631,43,,PENALTY,678,AFC Ajax,3444,Dušan Tadić,,
+CL,2019,278631,79,,REGULAR,678,AFC Ajax,3208,Nicolás Tagliafico,3707,Hakim Ziyech
+CL,2019,278631,85,,PENALTY,678,AFC Ajax,3444,Dušan Tadić,,
+CL,2019,278631,90,4,REGULAR,6146,PAOK FC,43504,Diego Biseswar,,
+CL,2019,278633,55,,REGULAR,654,PAE Olympiakos SFP,33110,Rúben Semedo,275,Guerrero
+CL,2019,278633,78,,PENALTY,654,PAE Olympiakos SFP,30468,Mathieu Valbuena,,
+CL,2019,278639,59,,REGULAR,2016,LASK Linz,10710,Reinhold Ranftl,,
+CL,2019,278639,80,,REGULAR,729,FC Basel 1893,57974,Kemal Ademi,16056,Valentin Stocker
+CL,2019,278639,89,,REGULAR,2016,LASK Linz,10714,Thomas Goiginger,10709,Peter Michorl
+CL,2019,278639,90,4,REGULAR,2016,LASK Linz,10721,Marko Raguz,10787,Dominik Frieser
+CL,2019,279224,27,,REGULAR,5515,FC CFR 1907 Cluj,36755,Ciprian Deac,36746,Billel Omrani
+CL,2019,279224,51,,REGULAR,732,Celtic FC,15611,James Forrest,16075,Michael Johnston
+CL,2019,279224,61,,REGULAR,732,Celtic FC,16077,Odsonne Edouard,16548,Hatem Abd Elhamed
+CL,2019,279224,74,,PENALTY,5515,FC CFR 1907 Cluj,36746,Billel Omrani,,
+CL,2019,279224,76,,REGULAR,732,Celtic FC,34495,Ryan Christie,16077,Odsonne Edouard
+CL,2019,279224,80,,REGULAR,5515,FC CFR 1907 Cluj,36746,Billel Omrani,36759,Alexandru Păun
+CL,2019,279224,90,7,REGULAR,5515,FC CFR 1907 Cluj,36670,George Țucudean,36759,Alexandru Păun
+CL,2019,278635,3,,REGULAR,5452,FK Krasnodar,7469,Tonny Vilhena,,
+CL,2019,278635,13,,REGULAR,5452,FK Krasnodar,49265,Shapi Suleimanov,49264,Wanderson
+CL,2019,278635,34,,REGULAR,5452,FK Krasnodar,49265,Shapi Suleimanov,,
+CL,2019,278635,57,,REGULAR,503,FC Porto,16149,Zé Luís,15904,Alex Telles
+CL,2019,278635,76,,REGULAR,503,FC Porto,22396,Luis Díaz,3296,Jesús Corona
+CL,2019,279649,28,,REGULAR,930,SK Slavia Praha,62535,Lukáš Masopust,9353,Nicolae Stanciu
+CL,2019,283066,10,,PENALTY,851,Club Brugge KV,8888,Hans Vanaken,,
+CL,2019,279650,7,,REGULAR,1871,BSC Young Boys,16280,Roger Assalé,16282,Jean-Pierre Nsamé
+CL,2019,279650,18,,REGULAR,7283,FK Crvena Zvezda,3410,Miloš Degenek,15826,Marko Marin
+CL,2019,279650,46,,REGULAR,7283,FK Crvena Zvezda,32152,Mateo García,67698,Marko Gobeljić
+CL,2019,279650,76,,PENALTY,1871,BSC Young Boys,16279,Guillaume Hoarau,,
+CL,2019,283068,8,,PENALTY,755,GNK Dinamo Zagreb,2174,Bruno Petković,,
+CL,2019,283068,28,,REGULAR,755,GNK Dinamo Zagreb,73401,Mislav Oršić,,
+CL,2019,283070,30,,REGULAR,654,PAE Olympiakos SFP,275,Guerrero,42919,Giorgos Masouras
+CL,2019,283070,78,,REGULAR,654,PAE Olympiakos SFP,85277,Lazar Ranđelović,30468,Mathieu Valbuena
+CL,2019,283070,85,,REGULAR,654,PAE Olympiakos SFP,85277,Lazar Ranđelović,15890,Daniel Podence
+CL,2019,283070,89,,REGULAR,654,PAE Olympiakos SFP,15890,Daniel Podence,11456,Andreas Bouchalakis
+CL,2019,279651,59,,REGULAR,7283,FK Crvena Zvezda,111902,Aleksa Vukanović,10189,Milan Rodić
+CL,2019,279651,81,,OWN,7283,FK Crvena Zvezda,15832,El Fardou Ben Nabouhane,,
+CL,2019,283069,11,,REGULAR,889,Rosenborg BK,37963,Babajide Akintola,,
+CL,2019,283069,71,,REGULAR,755,GNK Dinamo Zagreb,23133,Amer Gojak,23132,Dani Olmo
+CL,2019,283071,10,,REGULAR,5452,FK Krasnodar,72704,Daniil Utkin,3504,Markus Berg
+CL,2019,283071,11,,REGULAR,654,PAE Olympiakos SFP,122469,Youssef El Arabi,,
+CL,2019,283071,47,,REGULAR,654,PAE Olympiakos SFP,122469,Youssef El Arabi,30468,Mathieu Valbuena
+CL,2019,279652,66,,REGULAR,930,SK Slavia Praha,15731,Jan Bořil,62779,David Hovorka
+CL,2019,283065,43,,REGULAR,678,AFC Ajax,3293,Edson Álvarez,3707,Hakim Ziyech
+CL,2019,283065,80,,REGULAR,678,AFC Ajax,3444,Dušan Tadić,7572,Klaas-Jan Huntelaar
+CL,2019,283067,70,,REGULAR,851,Club Brugge KV,8888,Hans Vanaken,8881,Ruud Vormer
+CL,2019,283067,74,,PENALTY,2016,LASK Linz,55858,Klauss,,
+CL,2019,283067,89,,REGULAR,851,Club Brugge KV,8894,Emmanuel Dennis,33964,Percy Tau
+CL,2019,283608,63,,REGULAR,930,SK Slavia Praha,9304,Peter Olayinka,62536,Jaroslav Zelený
+CL,2019,283608,90,2,REGULAR,108,FC Internazionale Milano,1911,Nicolò Barella,2197,Stefano Sensi
+CL,2019,283620,41,,REGULAR,731,FK Zenit Sankt-Petersburg,3817,Sardar Azmoun,8834,Artem Dzyuba
+CL,2019,283620,51,,PENALTY,523,Olympique Lyonnais,8472,Memphis Depay,,
+CL,2019,283596,82,,PENALTY,113,SSC Napoli,2103,Dries Mertens,,
+CL,2019,283596,90,2,REGULAR,113,SSC Napoli,8007,Llorente,,
+CL,2019,283597,2,,REGULAR,1877,FC Red Bull Salzburg,38101,Erling Haaland,15100,Takumi Minamino
+CL,2019,283597,34,,REGULAR,1877,FC Red Bull Salzburg,38101,Erling Haaland,3354,Hwang Heechan
+CL,2019,283597,36,,REGULAR,1877,FC Red Bull Salzburg,3354,Hwang Heechan,9449,Zlatko Junuzović
+CL,2019,283597,40,,REGULAR,1858,KRC Genk,22113,Jhon Lucumí,8979,Dieumerci Ndongala
+CL,2019,283597,45,,REGULAR,1877,FC Red Bull Salzburg,38101,Erling Haaland,3354,Hwang Heechan
+CL,2019,283597,45,2,REGULAR,1877,FC Red Bull Salzburg,16347,Dominik Szoboszlai,15100,Takumi Minamino
+CL,2019,283597,52,,REGULAR,1858,KRC Genk,8982,Mbwana Samatta,9309,Theo Bongonda
+CL,2019,283597,66,,REGULAR,1877,FC Red Bull Salzburg,15097,Andreas Ulmer,9449,Zlatko Junuzović
+CL,2019,283621,69,,REGULAR,721,RB Leipzig,3187,Timo Werner,3466,Yussuf Poulsen
+CL,2019,283621,78,,REGULAR,721,RB Leipzig,3187,Timo Werner,9551,Marcel Sabitzer
+CL,2019,283621,84,,REGULAR,1903,Sport Lisboa e Benfica,3482,Haris Seferović,16748,Rafa Silva
+CL,2019,283632,74,,REGULAR,95,Valencia CF,3200,Rodrigo,3198,Dani Parejo
+CL,2019,283633,18,,REGULAR,678,AFC Ajax,16148,Quincy Promes,3208,Nicolás Tagliafico
+CL,2019,283633,50,,REGULAR,678,AFC Ajax,3293,Edson Álvarez,7571,David Neres
+CL,2019,283633,62,,REGULAR,678,AFC Ajax,3208,Nicolás Tagliafico,3707,Hakim Ziyech
+CL,2019,283560,26,,PENALTY,73,Tottenham Hotspur FC,8004,Harry Kane,,
+CL,2019,283560,30,,REGULAR,73,Tottenham Hotspur FC,8003,Lucas Moura,7994,Ben Davies
+CL,2019,283560,44,,REGULAR,654,PAE Olympiakos SFP,15890,Daniel Podence,30468,Mathieu Valbuena
+CL,2019,283560,54,,PENALTY,654,PAE Olympiakos SFP,30468,Mathieu Valbuena,,
+CL,2019,283549,14,,REGULAR,524,Paris Saint-Germain FC,3210,Ángel di María,357,Juan Bernat
+CL,2019,283549,33,,REGULAR,524,Paris Saint-Germain FC,3210,Ángel di María,3627,Idrissa Gana Guèye
+CL,2019,283549,90,1,REGULAR,524,Paris Saint-Germain FC,3650,Thomas Meunier,357,Juan Bernat
+CL,2019,283561,34,,REGULAR,5,FC Bayern München,360,Kingsley Coman,2004,Ivan Perišić
+CL,2019,283561,80,,REGULAR,5,FC Bayern München,371,Robert Lewandowski,,
+CL,2019,283561,90,1,REGULAR,5,FC Bayern München,370,Thomas Müller,356,Thiago Alcântara
+CL,2019,283572,24,,REGULAR,65,Manchester City FC,8069,Riyad Mahrez,3182,Ilkay Gündogan
+CL,2019,283572,38,,REGULAR,65,Manchester City FC,3182,Ilkay Gündogan,8069,Riyad Mahrez
+CL,2019,283572,76,,REGULAR,65,Manchester City FC,3236,Gabriel Jesus,3654,Kevin De Bruyne
+CL,2019,283573,10,,REGULAR,755,GNK Dinamo Zagreb,16581,Marin Leovac,23134,Petar Stojanovič
+CL,2019,283573,31,,REGULAR,755,GNK Dinamo Zagreb,73401,Mislav Oršić,16581,Marin Leovac
+CL,2019,283573,42,,REGULAR,755,GNK Dinamo Zagreb,73401,Mislav Oršić,23130,Arijan Ademi
+CL,2019,283573,68,,REGULAR,755,GNK Dinamo Zagreb,73401,Mislav Oršić,8528,Kévin Théophile-Catherine
+CL,2019,283584,37,,REGULAR,5455,FK Lokomotiv Moskva,36179,Dmitrii Barinov,,
+CL,2019,283584,16,,REGULAR,5455,FK Lokomotiv Moskva,3534,Grzegorz Krychowiak,3253,João Mário
+CL,2019,283584,25,,OWN,5455,FK Lokomotiv Moskva,2031,Benedikt Höwedes,,
+CL,2019,283585,48,,REGULAR,109,Juventus FC,2037,Juan Cuadrado,2047,Gonzalo Higuaín
+CL,2019,283585,65,,REGULAR,109,Juventus FC,2042,Blaise Matuidi,2028,Alex Sandro
+CL,2019,283585,70,,REGULAR,78,Club Atlético de Madrid,15845,Stefan Savić,115,José Maria Giménez
+CL,2019,283585,90,,REGULAR,78,Club Atlético de Madrid,3294,Héctor Herrera,3312,Kieran Trippier
