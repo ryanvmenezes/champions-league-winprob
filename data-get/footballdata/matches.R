@@ -194,6 +194,10 @@ walk(
   ~write_csv(tables[[.x]], here('data-get','footballdata','processed', str_c(.x, '.csv')), na = '')
   )
 
+walk(
+  tblnames,
+  ~write_rds(tables[[.x]], here('data', str_c(.x, '.rds')))
+  )
 
 # check that goal totals are same
 # summaries$matches[3][[1]] %>% transmute(scoreH + scoreA) %>% sum(na.rm = TRUE)
