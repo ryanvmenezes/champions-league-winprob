@@ -160,7 +160,7 @@ parsesubs = function(jsonobj) {
 # seasons = tibble(season = 2017:2019)
 seasons = expand.grid(
   comp = c('CL'), # 'el'
-  season = 2017:2019
+  season = 2015:2019
 ) %>% 
   as_tibble()
 

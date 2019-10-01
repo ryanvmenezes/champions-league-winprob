@@ -2,7 +2,7 @@ library(here)
 library(httr)
 library(tidyverse)
 
-getandsave <- function(comp, resource, szn, delay = 0) {
+getandsave <- function(comp, resource, szn, delay = 2) {
   fname = str_c(comp, '-', resource, '-', szn, '.json')
   destfile = here('data-get', 'footballdata', 'raw', fname)
   if (!file.exists(destfile)) {
@@ -11,15 +11,15 @@ getandsave <- function(comp, resource, szn, delay = 0) {
       add_headers('X-Auth-Token' = '87aa684e84a947daac79132d8180e2c0'))
     writeBin(content(req, 'raw'), destfile)
     print(str_c(fname, ' downloaded'))
+    Sys.sleep(delay)
   } else {
     print(str_c(fname, ' already exists'))
   }
-  Sys.sleep(delay)
 }
 
-leagues = c('CL') # 'EL'
+leagues = c('CL', 'EL')
 resources = c('matches','teams','standings')
-seasons = 2019:2017
+seasons = 2019:2015
 
 allrequests = expand.grid(
   comp = leagues,
