@@ -1,9 +1,6 @@
-library(xml2)
 library(here)
 library(rvest)
 library(tidyverse)
-
-CURRENT_SZN = '2019-20'
 
 leagues = tribble(
   ~competition, ~code_string, ~url,
@@ -12,6 +9,8 @@ leagues = tribble(
 )
 
 # todo: add szn and override = FALSE as args
+# CURRENT_SZN = '2019-20'
+
 getorretrieve = function(url) {
   fname = url %>% 
     str_split('/') %>% 
@@ -19,7 +18,7 @@ getorretrieve = function(url) {
     `[`(length(.)) %>% 
     str_c('.html')
   
-  fpath = here('data-get','fbref', 'seasons', fname)
+  fpath = here('data-get', 'fbref', 'seasons', fname)
   
   if (file.exists(fpath)) {
     h = read_html(fpath)
@@ -40,14 +39,14 @@ szns = historyhtml %>%
   mutate(
     sznshtml = map(html, ~.x %>% html_nodes('[data-stat="season"] a')),
     szn = map(sznshtml, ~.x %>% html_text()),
-    sznurl = map(sznshtml, ~.x %>% html_attr('href') %>% url_absolute('https://fbref.com'))
-    ) %>% 
+    sznurl = map(sznshtml, ~.x %>% html_attr('href') %>% str_c('https://fbref.com', .))
+  ) %>% 
   select(-url, -html, -sznshtml) %>% 
   unnest(cols = c(szn, sznurl))
 
 szns
 
-szns %>% write_csv(here('data-get','fbref','urls','season-urls.csv'))
+szns %>% write_csv(here('data-get', 'fbref', 'urls', 'season-urls.csv'))
 
 sznshtml = szns %>% 
   mutate(html = map(sznurl, getorretrieve))
@@ -63,30 +62,30 @@ qualszns = sznshtml %>%
       html_attr('href') %>% 
       `[`(str_detect(., 'qual')) %>% 
       `[`(1) %>% 
-      url_absolute('https://fbref.com')
+      str_c('https://fbref.com', .)
   )) %>% 
   select(-html)
 
 qualszns
 
-qualszns %>% write_csv(here('data-get','fbref','urls','qual-season-urls.csv'))
+qualszns %>% write_csv(here('data-get', 'fbref', 'urls', 'qual-season-urls.csv'))
 
 qualsznshtml = qualszns %>% 
   mutate(html = map(sznurl, getorretrieve))
 
 qualsznshtml
 
-extractgames = function(html) {
-  rounds = html %>%
+extractgames = function(h) {
+  round = h %>%
     html_nodes('#content > h3') %>% 
     html_text() %>% 
     str_trim()
   
-  games = html %>% 
+  games = h %>% 
     html_nodes('#content > h3 + div.matchup') %>% 
     map(~html_children(.x))
   
-  df = tibble(rounds, games) %>% 
+  df = tibble(round, games) %>%
     mutate(
       team1 = map(
         games,
@@ -125,78 +124,88 @@ extractgames = function(html) {
       ),
       date1 = map(
         games,
-        ~.x %>% 
-          html_nodes('.matches > div:nth-child(1)') %>% 
-          html_node('.match-date small') %>% 
+        ~.x %>%
+          html_node('.matches > div:nth-child(1)') %>%
+          html_node('.match-date small') %>%
           html_text()
       ),
       score1 = map(
         games,
-        ~.x %>% 
-          html_nodes('.matches > div:nth-child(1)') %>% 
-          html_node('.match-detail .match-score') %>% 
-          html_text() %>% 
+        ~.x %>%
+          html_node('.matches > div:nth-child(1)') %>%
+          html_node('.match-detail .match-score') %>%
+          html_text() %>%
           str_squish()
       ),
       url1 = map(
         games,
-        ~.x %>% 
-          html_nodes('.matches > div:nth-child(1)') %>% 
-          html_node('.match-detail .match-score > small > a') %>% 
-          html_attr('href') %>% 
-          str_squish() %>% 
-          url_absolute('https://fbref.com')
+        ~.x %>%
+          html_node('.matches > div:nth-child(1)') %>%
+          html_node('.match-detail .match-score > small > a') %>%
+          html_attr('href') %>%
+          str_squish() %>%
+          str_c('https://fbref.com', .)
       ),
       date2 = map(
         games,
-        ~.x %>% 
-          html_nodes('.matches > div:nth-child(2)') %>% 
-          html_node('.match-date small') %>% 
+        ~.x %>%
+          html_node('.matches > div:nth-child(2)') %>%
+          html_node('.match-date small') %>%
           html_text()
       ),
       score2 = map(
         games,
-        ~.x %>% 
-          html_nodes('.matches > div:nth-child(2)') %>% 
-          html_node('.match-detail .match-score') %>% 
-          html_text() %>% 
+        ~.x %>%
+          html_node('.matches > div:nth-child(2)') %>%
+          html_node('.match-detail .match-score') %>%
+          html_text() %>%
           str_squish()
       ),
       url2 = map(
         games,
-        ~.x %>% 
-          html_nodes('.matches > div:nth-child(2)') %>% 
-          html_node('.match-detail .match-score > small > a') %>% 
-          html_attr('href') %>% 
-          str_squish() %>% 
-          url_absolute('https://fbref.com')
+        ~.x %>%
+          html_node('.matches > div:nth-child(2)') %>%
+          html_node('.match-detail .match-score > small > a') %>%
+          html_attr('href') %>%
+          str_squish() %>%
+          str_c('https://fbref.com', .)
       )
     ) %>% 
-    select(-games) %>% 
-    unnest(c(team1, team2, winner, aggscore, result,
-             date1, score1, url1,
-             date2, score2, url2),
-           keep_empty = TRUE)
+    select(-games) %>%
+    unnest(
+      c(
+        team1, team2, winner, aggscore, result,
+        date1, score1, url1,
+        date2, score2, url2
+      ),
+      keep_empty = TRUE
+    )
   
   df
 }
 
-allhtml = bind_rows(
+parsedgames = bind_rows(
   sznshtml %>% 
-    mutate(round = 'knockout') %>% 
+    mutate(stage = 'knockout') %>% 
     select(-sznurl),
   qualsznshtml %>% 
-    mutate(round = 'qualifying') %>% 
+    mutate(stage = 'qualifying') %>% 
     select(-sznurl)
-)
+  ) %>% 
+  mutate(games = map(html, extractgames))
 
+parsedgames
 
-allhtml
+twolegsummary = parsedgames %>% 
+  select(-html) %>% 
+  unnest(games) %>%
+  separate(round, sep = ' \\(', into = c('round', 'dates')) %>% 
+  mutate(dates = str_replace_all(dates, '\\)', ''))
 
-for (i in 1:nrow(allhtml)) {
-  allhtml$html[[i]] %>% extractgames()
-  print(i)
-}
+twolegsummary
 
+twolegsummary %>% count(round)
 
-allhtml
+twolegsummary %>%
+  write_csv(here('data-get', 'fbref', 'urls', 'two-leg-summary.csv'), na = '')
+
