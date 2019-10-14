@@ -2,7 +2,7 @@ library(here)
 library(rvest)
 library(tidyverse)
 
-summaries = read_csv(here('data-get', 'fbref', 'cleaned', 'two-legged-ties.csv'))
+summaries = read_csv(here('data-get', 'fbref', 'processed', 'two-legged-ties.csv'))
 
 distinctteams = summaries %>% 
   select(starts_with('team')) %>% 
@@ -19,18 +19,38 @@ distinctteams = summaries %>%
 
 distinctteams
 
-fbrefteams = read_csv(here('data-get', 'fbref', 'cleaned', 'fbref-all-teams.csv'))
+fbrefteams = read_csv(here('data-get', 'fbref', 'processed', 'fbref-all-teams.csv'))
 fbrefteams
 
-clelteams = fbrefteams %>% 
+europeteamsfbref = fbrefteams %>% 
   select(club = Squad, clubid, country, countrycode = countrycode3, governingbody) %>% 
   # manually add this missing team
   bind_rows(
     tibble(club = 'Juventus', clubid = 'e0652b02', country = 'Italy', countrycode = 'ITA', governingbody = 'UEFA')
   ) %>% 
-  right_join(distinctteams, by = 'clubid')
+  right_join(distinctteams, by = 'clubid') %>% 
+  arrange(club)
 
-clelteams %>% write_csv(here('data-get', 'assemble', 'cl-el-teams-fbref.csv'), na = '')
+europeteamsfbref
+
+europeteamsfbref %>% write_csv(here('data-get', 'assemble', 'europe-teams-fbref.csv'), na = '')
 
 odds = read_csv(here('data-get', 'oddsportal', 'processed', 'odds.csv'), na = '-')
 odds
+
+europeteamsodds = odds %>% 
+  # filter(season > 2015) %>% 
+  # filter(round != 'Group Stage') %>% 
+  select(teamh, teama) %>% 
+  pivot_longer(starts_with('team')) %>% 
+  mutate(name = str_sub(name, end = -2)) %>% 
+  pivot_wider(names_from = name, values_from = value) %>% 
+  unnest(team) %>% 
+  distinct() %>% 
+  arrange(team)
+
+europeteamsodds
+
+europeteamsodds %>% write_csv(here('data-get', 'assemble', 'europe-teams-odds.csv'), na = '')
+
+europeteamsodds %>% mutate(team = gsub(' \\(.*', '', team)) %>% distinct()
