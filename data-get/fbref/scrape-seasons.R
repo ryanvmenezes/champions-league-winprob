@@ -17,7 +17,7 @@ getorretrieve = function(url, override = FALSE) {
     `[`(length(.)) %>% 
     str_c('.html')
   
-  fpath = here('data-get', 'fbref', 'seasons', fname)
+  fpath = here('data-get', 'fbref', 'raw', 'seasons', fname)
   
   if (!override & file.exists(fpath)) {
     h = read_html(fpath)
@@ -58,6 +58,8 @@ sznshtml = szns %>%
     )
   )
 
+sznshtml
+
 qualszns = sznshtml %>% 
   select(-sznurl) %>% 
   mutate(sznurl = map_chr(
@@ -94,9 +96,13 @@ allsznshtml = bind_rows(
     mutate(stage = 'qualifying')
 )
 
+allsznshtml %>% head()
+
+allsznshtml %>% tail()
+
 allsznshtml %>% 
   select(-html) %>% 
-  write_csv(here('data-get', 'fbref', 'urls', 'season-urls.csv'))
+  write_csv(here('data-get', 'fbref', 'processed', 'season-urls.csv'))
 
 extractgames = function(h) {
   round = h %>%
@@ -249,7 +255,8 @@ parsedgames = allsznshtml %>%
   mutate(games = map(html, extractgames))
 parsedgames
 
-stagecodes = read_csv(here('data-get', 'fbref', 'cleaned', 'stage-code-crosswalk.csv'))
+## hand created file with codes for each round that alpha sort
+stagecodes = read_csv(here('data-get', 'fbref', 'stage-code-crosswalk.csv'))
 stagecodes
 
 summaries = parsedgames %>% 
@@ -264,5 +271,5 @@ summaries
 
 summaries %>% count(stagecode)
 
-summaries %>% write_csv(here('data-get', 'fbref', 'urls', 'match-urls.csv'), na = '')
+summaries %>% write_csv(here('data-get', 'fbref', 'processed', 'match-urls.csv'), na = '')
 

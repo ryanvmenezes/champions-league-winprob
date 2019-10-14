@@ -2,13 +2,14 @@ library(here)
 library(rvest)
 library(tidyverse)
 
-summaries = read_csv(here('data-get', 'fbref', 'urls', 'match-urls.csv'))
+summaries = read_csv(here('data-get', 'fbref', 'processed', 'match-urls.csv'))
 summaries
 
 # team 1 in the aggregate should always be the team that hosted leg 1
 twoleggedties = summaries %>%
   drop_na(stagecode) %>% 
   arrange(szn, stagecode) %>% 
+  # filter out anything without complete data over two legs
   filter(!is.na(url1) & !is.na(url2)) %>%
   mutate(
     hometeamid1 = case_when(
@@ -57,7 +58,7 @@ twoleggedties
 
 twoleggedties %>% 
   select(-url1, -url2) %>% 
-  write_csv(here('data-get', 'fbref', 'cleaned', 'two-legged-ties.csv'), na = '')
+  write_csv(here('data-get', 'fbref', 'processed', 'two-legged-ties.csv'), na = '')
 
 legs = twoleggedties %>% 
   select(-team1, -team2, -winner, -winnerid, -aggscore, -result) %>% 
@@ -70,7 +71,8 @@ legs = twoleggedties %>%
 legs
 
 legs %>% count(stagecode)
-legs %>% count(szn)
+countbyseason = legs %>% mutate(comp = str_sub(stagecode, end = 2)) %>% count(comp, szn)
+countbyseason %>% write_csv(here('data-get', 'fbref', 'processed', 'count-leg-data-by-season.csv'))
 
 getorretrieve = function(url) {
   fname = url %>% 
@@ -79,7 +81,7 @@ getorretrieve = function(url) {
     `[`(length(.)) %>% 
     str_c('.html')
   
-  fpath = here('data-get', 'fbref', 'games', fname)
+  fpath = here('data-get', 'fbref', 'raw', 'games', fname)
   
   if (file.exists(fpath)) {
     h = read_html(fpath)
@@ -148,7 +150,8 @@ parsedevents = legshtml %>%
 
 parsedevents
 
+# checking the data
 parsedevents %>% count(eventtype)
 parsedevents %>% pull(minute) %>% str_replace_all('\\+\\d+', '') %>% unique() %>% as.integer() %>% sort()
 
-parsedevents %>% write_csv(here('data-get', 'fbref', 'cleaned', 'match-events.csv'))
+parsedevents %>% write_csv(here('data-get', 'fbref', 'processed', 'match-events.csv'))

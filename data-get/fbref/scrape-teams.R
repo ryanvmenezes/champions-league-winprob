@@ -9,7 +9,7 @@ getorretrieve = function(url) {
     `[`(length(.)) %>% 
     str_c('.html')
   
-  fpath = here('data-get', 'fbref', 'teams', fname)
+  fpath = here('data-get', 'fbref', 'raw', 'teams', fname)
   
   # url = str_c('https://fbref.com/en/squads/', teamid, '/')
   
@@ -56,6 +56,8 @@ countries
 countrieshtml = countries %>%
   mutate(rawhtml = map(countryurl, getorretrieve))
 
+countrieshtml
+
 clubs = countrieshtml %>% 
   mutate(
     table = map(
@@ -80,4 +82,4 @@ clubs = countrieshtml %>%
 
 clubs
 
-clubs %>% write_csv(here('data-get', 'fbref', 'cleaned', 'fbref-teams.csv'), na = '')
+clubs %>% write_csv(here('data-get', 'fbref', 'processed', 'fbref-all-teams.csv'), na = '')
