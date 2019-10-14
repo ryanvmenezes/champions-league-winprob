@@ -2,7 +2,7 @@ library(here)
 library(rvest)
 library(tidyverse)
 
-summaries = read_csv(here('data-get', 'fbref', 'cleaned', 'two-legged-ties-all.csv'))
+summaries = read_csv(here('data-get', 'fbref', 'cleaned', 'two-legged-ties.csv'))
 
 distinctteams = summaries %>% 
   select(starts_with('team')) %>% 
@@ -42,3 +42,64 @@ getorretrieve = function(teamid) {
 pb = progress_estimated(nrow(distinctteams))
 teamhtml = distinctteams %>% 
   mutate(html = map(teamid, getorretrieve))
+teamhtml
+
+teamhtml$html[[1]] %>% 
+  html_node('div#meta') %>% 
+  html_nodes('a') %>% 
+  `[`(str_detect(., '/country/')) %>% 
+  `[`(1) %>% 
+  html_text()
+
+teamhtml$html[[2]] %>% 
+  html_nodes('link[rel="canonical"]') %>% 
+  html_attr('href') %>% 
+  str_split('/') %>% 
+  `[[`(1) %>% 
+  `[`(length(.)) %>% 
+  str_replace_all('-Stats', '') %>% 
+  str_replace_all('-', ' ')
+
+
+tmp = teamhtml %>% 
+  mutate(
+    fullteamname = map_chr(
+      html,
+      function(.x) {
+        res = .x %>% 
+          html_nodes('title') %>% 
+          html_text() %>% 
+          str_replace(' Stats \\| FBref.com', '') %>% 
+          str_replace(' Stats and History \\| FBref.com', '') %>% 
+          str_replace('2018-2019 ', '')
+        if (res == '') {
+          res = .x %>% 
+            html_nodes('link[rel="canonical"]') %>% 
+            html_attr('href') %>% 
+            str_split('/') %>% 
+            `[[`(1) %>% 
+            `[`(length(.)) %>% 
+            str_replace_all('-Stats', '') %>% 
+            str_replace_all('-', ' ')
+        }
+        res
+      }
+    ),
+    country = map_chr(
+      html,
+      function(.x) {
+        res = .x %>%
+          html_node('div#meta') %>% 
+          html_nodes('a') %>% 
+          `[`(str_detect(., '/country/')) %>% 
+          `[`(1) %>% 
+          html_text()
+        if (length(res) == 0) { return (NA_character_) }
+        res
+      }
+    )
+  ) %>% 
+  select(-html)
+
+tmp
+

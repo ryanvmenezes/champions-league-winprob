@@ -7,10 +7,10 @@ ties
 results = ties %>% 
   separate(aggscore, into = c('aggscore1','aggscore2'), remove = FALSE) %>% 
   mutate(
-    t1win = (winner == team1) %>% as.numeric(),
-    agr = str_detect(str_to_lower(result), 'away goals') %>% as.numeric(),
-    aet = str_detect(str_to_lower(result), 'extra time') %>% as.numeric(),
-    pk = str_detect(str_to_lower(result), 'penalty') %>% as.numeric()
+    t1win = (winner == team1),
+    agr = str_detect(str_to_lower(result), 'away goals'),
+    aet = str_detect(str_to_lower(result), 'extra time'),
+    pk = str_detect(str_to_lower(result), 'penalty')
   ) %>% 
   mutate(
     # fix an error in the data
@@ -74,7 +74,7 @@ expandminutes = function(data, aet = FALSE) {
       redcardst1 = replace_na(redcardt1, 0) %>% cumsum(),
       redcardst2 = replace_na(redcardt2, 0) %>% cumsum()
     ) %>% 
-    select(minuteclean, leg, goalst1:redcardst2)
+    select(minuteclean, leg, goalst1:redcardst2, player, playerid, eventtype, minute, team)
 }
 
 eventscleaned = eventscleaned %>% 
@@ -85,3 +85,11 @@ eventscleaned %>% filter(aet) %>% head(1) %>% pull(minutematrix) %>% `[[`(1) %>%
 eventscleaned[764,]
 eventscleaned$data[[764]] %>% arrange(minuteclean)
 eventscleaned$data[[764]] %>% expandminutes() %>% tail()
+eventscleaned$data[[764]] %>% expandminutes() %>% filter(minuteclean > 90) 
+
+minutematrix = eventscleaned %>% 
+  select(-data) %>% 
+  unnest(minutematrix)
+
+minutematrix %>% write_csv('data-get/assemble/min-matrix.csv', na = '')
+minutematrix %>% write_rds('data-get/assemble/min-matrix.rds', compress = 'gz')
