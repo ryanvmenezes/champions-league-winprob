@@ -2,21 +2,75 @@ library(here)
 library(rvest)
 library(tidyverse)
 
-twolegs = read_csv(here('data-get', 'fbref', 'urls', 'two-leg-summary.csv'))
+summaries = read_csv(here('data-get', 'fbref', 'urls', 'match-urls.csv'))
+summaries
 
-matches = bind_rows(
-  twolegs %>% 
-    select(competition:result, date = date1, score = score1, url = url1) %>% 
-    mutate(leg = 1),
-  twolegs %>% 
-    select(competition:result, date = date2, score = score2, url = url2) %>% 
-    mutate(leg = 2)
-) %>% 
-  select(-code_string, -dates, -winner, -aggscore, -result) %>% 
-  drop_na(url) %>% 
-  arrange(competition, szn, stage, round, team1)
+# team 1 in the aggregate should always be the team that hosted leg 1
+twoleggedties = summaries %>%
+  drop_na(stagecode) %>% 
+  arrange(szn, stagecode) %>% 
+  filter(!is.na(url1) & !is.na(url2)) %>%
+  mutate(
+    hometeamid1 = case_when(
+      hometeam1 == team1 ~ teamid1,
+      hometeam1 == team2 ~ teamid2,
+      TRUE ~ NA_character_
+    ),
+    hometeamid2 = case_when(
+      hometeam2 == team1 ~ teamid1,
+      hometeam2 == team2 ~ teamid2,
+      TRUE ~ NA_character_
+    ),
+    winnerid = case_when(
+      winner == team1 ~ teamid1,
+      winner == team2 ~ teamid2,
+      TRUE ~ NA_character_
+    ),
+    team1 = hometeam1,
+    team2 = hometeam2,
+    teamid1 = hometeamid1,
+    teamid2 = hometeamid2
+  ) %>% 
+  select(
+    szn, stagecode,
+    team1, team2, winner,
+    teamid1, teamid2, winnerid,
+    aggscore, result,
+    score1, score2,
+    url1, url2
+  ) %>% 
+  mutate(
+    aggscore = map2_chr(
+      score1,
+      score2,
+      function(.x, .y) {
+        str_c(
+          as.numeric(str_split(.x, '–')[[1]][1]) + as.numeric(str_split(.y, '–')[[1]][2]),
+          as.numeric(str_split(.x, '–')[[1]][2]) + as.numeric(str_split(.y, '–')[[1]][1]),
+          sep = '–'
+        )
+      }
+    )
+  )
 
-matches %>% count(competition)
+twoleggedties
+
+twoleggedties %>% 
+  select(-url1, -url2) %>% 
+  write_csv(here('data-get', 'fbref', 'cleaned', 'two-legged-ties.csv'), na = '')
+
+legs = twoleggedties %>% 
+  select(-team1, -team2, -winner, -winnerid, -aggscore, -result) %>% 
+  pivot_longer(-szn:-teamid2, names_to = 'col', values_to = 'val') %>% 
+  mutate(leg = str_sub(col, start = -1),
+         col = str_replace_all(col, '1|2', '')) %>% 
+  pivot_wider(names_from = col, values_from = val) %>% 
+  arrange(szn, stagecode, teamid1, leg)
+
+legs
+
+legs %>% count(stagecode)
+legs %>% count(szn)
 
 getorretrieve = function(url) {
   fname = url %>% 
@@ -39,6 +93,62 @@ getorretrieve = function(url) {
   h
 }
 
-pb = progress_estimated(nrow(matches))
-matcheshtml = matches %>%
+pb = progress_estimated(nrow(legs))
+legshtml = legs %>%
   mutate(html = map(url, getorretrieve))
+
+legshtml
+
+parseevents = function(tm) {
+  player = tm %>%
+    html_node('a') %>%
+    html_text()
+  
+  playerid = tm %>%
+    html_node('a') %>%
+    html_attr('href') %>%
+    str_replace('/en/players/','') %>%
+    str_sub(end = 8)
+  
+  eventtype = tm %>%
+    html_node('div') %>%
+    html_attr('class') %>%
+    str_replace('event_icon ', '')
+  
+  minute = tm %>%
+    html_text() %>%
+    str_trim() %>%
+    str_replace('&rsquor;', '') %>%
+    str_split(' · ') %>%
+    map_chr(`[`, 2)
+  
+  tibble(player, playerid, eventtype, minute)
+}
+
+getevents = function(h) {
+  aevents = h %>% 
+    html_node('div#a.event') %>% 
+    html_children() %>% 
+    parseevents() %>% 
+    mutate(team = 1)
+  
+  bevents = h %>% 
+    html_node('div#b.event') %>% 
+    html_children() %>% 
+    parseevents() %>% 
+    mutate(team = 2)
+  
+  bind_rows(aevents, bevents)
+}
+
+parsedevents = legshtml %>% 
+  mutate(events = map(html, getevents)) %>% 
+  select(-url, -html) %>% 
+  unnest(events)
+
+parsedevents
+
+parsedevents %>% count(eventtype)
+parsedevents %>% pull(minute) %>% str_replace_all('\\+\\d+', '') %>% unique() %>% as.integer() %>% sort()
+
+parsedevents %>% write_csv(here('data-get', 'fbref', 'cleaned', 'match-events.csv'))
