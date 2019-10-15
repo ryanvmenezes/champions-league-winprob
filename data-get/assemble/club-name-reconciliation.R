@@ -23,7 +23,7 @@ fbrefteams = read_csv(here('data-get', 'fbref', 'processed', 'fbref-all-teams.cs
 fbrefteams
 
 europeteamsfbref = fbrefteams %>% 
-  select(club = Squad, clubid, country, countrycode = countrycode3, governingbody) %>% 
+  select(clubid, club = Squad, country, countrycode = countrycode3, governingbody) %>% 
   # manually add this missing team
   bind_rows(
     tibble(club = 'Juventus', clubid = 'e0652b02', country = 'Italy', countrycode = 'ITA', governingbody = 'UEFA')
