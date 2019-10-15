@@ -39,8 +39,8 @@ odds = read_csv(here('data-get', 'oddsportal', 'processed', 'odds.csv'), na = '-
 odds
 
 europeteamsodds = odds %>% 
-  # filter(season > 2015) %>% 
-  # filter(round != 'Group Stage') %>% 
+  filter(season > 2015) %>%
+  filter(round != 'Group Stage') %>%
   select(teamh, teama) %>% 
   pivot_longer(starts_with('team')) %>% 
   mutate(name = str_sub(name, end = -2)) %>% 
