@@ -1,5 +1,6 @@
 library(here)
 library(rvest)
+library(readxl)
 library(tidyverse)
 
 summaries = read_csv(here('data-get', 'fbref', 'processed', 'two-legged-ties.csv'))
@@ -53,4 +54,12 @@ europeteamsodds
 
 europeteamsodds %>% write_csv(here('data-get', 'assemble', 'europe-teams-odds.csv'), na = '')
 
-europeteamsodds %>% mutate(team = gsub(' \\(.*', '', team)) %>% distinct()
+# europeteamsodds %>% mutate(team = gsub(' \\(.*', '', team)) %>% distinct()
+
+joined = read_csv(here('data-get', 'assemble', 'name join - oddsportal europe.csv'))
+
+joined
+
+europeteamsfbref %>% 
+  anti_join(joined %>% select(clubid = fbrefid)) %>% 
+  View()
