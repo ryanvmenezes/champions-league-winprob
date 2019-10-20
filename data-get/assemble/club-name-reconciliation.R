@@ -27,7 +27,13 @@ europeteamsfbref = fbrefteams %>%
   select(clubid, club = Squad, country, countrycode = countrycode3, governingbody) %>% 
   # manually add this missing team
   bind_rows(
-    tibble(club = 'Juventus', clubid = 'e0652b02', country = 'Italy', countrycode = 'ITA', governingbody = 'UEFA')
+    tibble(
+      club = 'Juventus',
+      clubid = 'e0652b02',
+      country = 'Italy',
+      countrycode = 'ITA',
+      governingbody = 'UEFA'
+    )
   ) %>% 
   right_join(distinctteams, by = 'clubid') %>% 
   arrange(club)

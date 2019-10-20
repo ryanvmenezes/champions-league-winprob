@@ -32,14 +32,6 @@ twoleggedties = summaries %>%
     teamid1 = hometeamid1,
     teamid2 = hometeamid2
   ) %>% 
-  select(
-    szn, stagecode,
-    team1, team2, winner,
-    teamid1, teamid2, winnerid,
-    aggscore, result,
-    score1, score2,
-    url1, url2
-  ) %>% 
   mutate(
     aggscore = map2_chr(
       score1,
@@ -51,7 +43,16 @@ twoleggedties = summaries %>%
           sep = '–'
         )
       }
-    )
+    ),
+    tieid = map2_chr(teamid1, teamid2, ~str_c(sort(c(.x, .y)), collapse = '|'))
+  ) %>% 
+  select(
+    szn, stagecode, tieid,
+    team1, team2, winner,
+    teamid1, teamid2, winnerid,
+    aggscore, result,
+    score1, score2,
+    url1, url2
   )
 
 twoleggedties
@@ -71,8 +72,15 @@ legs = twoleggedties %>%
 legs
 
 legs %>% count(stagecode)
-countbyseason = legs %>% mutate(comp = str_sub(stagecode, end = 2)) %>% count(comp, szn)
-countbyseason %>% write_csv(here('data-get', 'fbref', 'processed', 'count-leg-data-by-season.csv'))
+
+countbyseason = legs %>%
+  mutate(comp = str_sub(stagecode, end = 2)) %>%
+  count(comp, szn)
+
+countbyseason
+
+countbyseason %>%
+  write_csv(here('data-get', 'fbref', 'processed', 'count-leg-data-by-season.csv'))
 
 getorretrieve = function(url) {
   fname = url %>% 
@@ -140,9 +148,12 @@ getevents = function(h) {
     parseevents() %>% 
     mutate(team = 2)
   
+  pb$tick()$print()
+  
   bind_rows(aevents, bevents)
 }
 
+pb = progress_estimated(nrow(legs))
 parsedevents = legshtml %>% 
   mutate(events = map(html, getevents)) %>% 
   select(-url, -html) %>% 
@@ -150,8 +161,9 @@ parsedevents = legshtml %>%
 
 parsedevents
 
-# checking the data
-parsedevents %>% count(eventtype)
-parsedevents %>% pull(minute) %>% str_replace_all('\\+\\d+', '') %>% unique() %>% as.integer() %>% sort()
+## checking the data
+# parsedevents %>% count(eventtype)
+# parsedevents %>% pull(minute) %>% str_replace_all('\\+\\d+', '') %>% unique() %>% as.integer() %>% sort()
 
-parsedevents %>% write_csv(here('data-get', 'fbref', 'processed', 'match-events.csv'))
+parsedevents %>%
+  write_csv(here('data-get', 'fbref', 'processed', 'match-events.csv'))
