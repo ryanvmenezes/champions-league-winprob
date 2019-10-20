@@ -43,10 +43,11 @@ europeteamsfbref
 europeteamsfbref %>% write_csv(here('data-get', 'assemble', 'europe-teams-fbref.csv'), na = '')
 
 odds = read_csv(here('data-get', 'oddsportal', 'processed', 'odds.csv'), na = '-')
+
 odds
 
 europeteamsodds = odds %>% 
-  filter(season > 2015) %>%
+  filter(season >= 2015) %>%
   filter(round != 'Group Stage') %>%
   select(teamh, teama) %>% 
   pivot_longer(starts_with('team')) %>% 
@@ -60,12 +61,22 @@ europeteamsodds
 
 europeteamsodds %>% write_csv(here('data-get', 'assemble', 'europe-teams-odds.csv'), na = '')
 
-# europeteamsodds %>% mutate(team = gsub(' \\(.*', '', team)) %>% distinct()
-
-joined = read_csv(here('data-get', 'assemble', 'name join - oddsportal europe.csv'))
+joined = read_csv(here('data-get', 'assemble', 'name join - joining-work.csv'))
 
 joined
 
-europeteamsfbref %>% 
-  anti_join(joined %>% select(clubid = fbrefid)) %>% 
-  View()
+didntmatch = europeteamsfbref %>%
+  anti_join(joined %>% select(clubid = fbrefid))
+
+didntmatch
+
+joiningprogress = europeteamsodds %>% 
+  left_join(joined)
+
+needsmatch = joiningprogress %>% 
+  filter(is.na(fbrefid))
+
+needsmatch
+
+joiningprogress %>%
+  write_csv(here('data-get', 'assemble', 'joining-progress.csv'), na = '')
