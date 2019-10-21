@@ -4,25 +4,40 @@ library(tidyverse)
 
 set.seed(4141)
 
-datamatrix = read_rds(here('data-get', 'assemble', 'minute-matrix.rds'))
+minmatrix = read_rds(here('data-get', 'assemble', 'minute-matrix.rds'))
 
-# minmatrix
+minmatrix
 
-# minmatrixtrim = minmatrix %>% 
-#   group_by(season, stagecode, tieid) %>% 
-#   mutate(rown = row_number()),
-#   select(
-#     season, stagecode, tieid,
-#     t1win, minuteclean
-#   )
-
-datamatrix
-
-modeling = tibble(trial = 1:10) %>% 
-  mutate(
-    training = map(trial, ~sample_frac(datamatrix, 0.75)),
-    testing = map(training, ~datamatrix %>% anti_join(.x))
+minmatrixtrim = minmatrix %>%
+  select(
+    season, stagecode, tieid,
+    t1win, minuteclean, minuterown,
+    goalst1diff, awaygoalst1diff, redcardst1diff,
+    probh1:proba2
   )
+
+minmatrixtrim
+
+modelingties = tibble(trial = 1:5) %>% 
+  mutate(
+    tiestokeep = map(trial, ~minmatrixtrim %>% distinct(season, stagecode, tieid) %>% sample_frac(0.75)),
+    training = map(tiestokeep, ~minmatrixtrim %>% semi_join(.x)),
+    testing = map(tiestokeep, ~minmatrixtrim %>% anti_join(.x))
+  )
+
+modelingties
+
+modelingrows = tibble(trial = 6:10) %>% 
+  mutate(
+    training = map(trial, ~minmatrixtrim %>% sample_frac(0.75)),
+    testing = map(training, ~minmatrixtrim %>% anti_join(.x))
+  )
+
+modelingrows
+
+modeling = modelingties %>% 
+  select(-tiestokeep) %>% 
+  bind_rows(modelingrows)
 
 modeling
 
@@ -51,6 +66,12 @@ model2 = function(df) {
 
 # add in odds from before leg 1
 model3 = function(df) {
+  newdf = df %>% 
+    mutate(
+      probh1 = replace_na(probh1, 0.33),
+      proba1 = replace_na(proba1, 0.33)
+    )
+  
   locfit(
     t1win ~ minuteclean + 
       goalst1diff + 
@@ -58,7 +79,33 @@ model3 = function(df) {
       redcardst1diff + 
       probh1 + 
       proba1,
-    data = df,
+    data = newdf,
+    family = 'binomial'
+  )
+}
+
+# at change of game, start using odds for leg 2
+model4 = function(df) {
+  newdf = df %>% 
+    mutate(
+      probh1 = replace_na(probh1, 0.33),
+      proba1 = replace_na(proba1, 0.33),
+      probh2 = replace_na(probh2, 0.33),
+      proba2 = replace_na(proba2, 0.33),
+      probh2 = case_when(minuteclean <= 90 ~ NA_real_, TRUE ~ probh2),
+      proba2 = case_when(minuteclean <= 90 ~ NA_real_, TRUE ~ proba2)
+    )
+  
+  locfit(
+    t1win ~ minuteclean + 
+      goalst1diff + 
+      awaygoalst1diff + 
+      redcardst1diff + 
+      probh1 + 
+      proba1 +
+      probh2 +
+      proba2,
+    data = newdf,
     family = 'binomial'
   )
 }
@@ -68,7 +115,8 @@ fits = modeling %>%
   mutate(
     m1 = map(training, model1),
     m2 = map(training, model2),
-    m3 = map(training, model3)
+    m3 = map(training, model3),
+    m4 = map(training, model4)
   )
 
 predictions = function(df, m) {
