@@ -13,31 +13,40 @@ minmatrixtrim = minmatrix %>%
     season, stagecode, tieid,
     t1win, minuteclean, minuterown,
     goalst1diff, awaygoalst1diff, redcardst1diff,
-    probh1:proba2
+    probh1, proba1, probh2, proba2
+  ) %>% 
+  mutate(
+    probh1 = replace_na(probh1, 0.33),
+    proba1 = replace_na(proba1, 0.33),
+    probh2 = replace_na(probh2, 0.33),
+    proba2 = replace_na(proba2, 0.33),
+    probh2 = case_when(minuteclean <= 90 ~ NA_real_, TRUE ~ probh2),
+    proba2 = case_when(minuteclean <= 90 ~ NA_real_, TRUE ~ proba2)
   )
 
 minmatrixtrim
 
 modelingties = tibble(trial = 1:5) %>% 
   mutate(
-    tiestokeep = map(trial, ~minmatrixtrim %>% distinct(season, stagecode, tieid) %>% sample_frac(0.75)),
-    training = map(tiestokeep, ~minmatrixtrim %>% semi_join(.x)),
-    testing = map(tiestokeep, ~minmatrixtrim %>% anti_join(.x))
+    tokeep = map(trial, ~minmatrixtrim %>% distinct(season, stagecode, tieid) %>% sample_frac(0.75)),
+    training = map(tokeep, ~minmatrixtrim %>% semi_join(.x)),
+    testing = map(tokeep, ~minmatrixtrim %>% anti_join(.x))
   )
 
 modelingties
 
 modelingrows = tibble(trial = 6:10) %>% 
   mutate(
-    training = map(trial, ~minmatrixtrim %>% sample_frac(0.75)),
-    testing = map(training, ~minmatrixtrim %>% anti_join(.x))
+    tokeep = map(trial, ~minmatrixtrim %>% distinct(season, stagecode, tieid, minuterown) %>% sample_frac(0.75)),
+    training = map(tokeep, ~minmatrixtrim %>% semi_join(.x)),
+    testing = map(tokeep, ~minmatrixtrim %>% anti_join(.x))
   )
 
 modelingrows
 
 modeling = modelingties %>% 
-  select(-tiestokeep) %>% 
-  bind_rows(modelingrows)
+  bind_rows(modelingrows) %>% 
+  select(-tokeep)
 
 modeling
 
@@ -52,6 +61,8 @@ model1 = function(df) {
   )
 }
 
+model1(modeling$training[[1]])
+
 # goals and red cards
 model2 = function(df) {
   locfit(
@@ -64,52 +75,38 @@ model2 = function(df) {
   )
 }
 
+model2(modeling$training[[1]])
+
 # add in odds from before leg 1
 model3 = function(df) {
-  newdf = df %>% 
-    mutate(
-      probh1 = replace_na(probh1, 0.33),
-      proba1 = replace_na(proba1, 0.33)
-    )
-  
   locfit(
     t1win ~ minuteclean + 
       goalst1diff + 
       awaygoalst1diff + 
       redcardst1diff + 
-      probh1 + 
-      proba1,
-    data = newdf,
+      probh1,
+    data = df,
     family = 'binomial'
   )
 }
+
+model3(modeling$training[[1]])
 
 # at change of game, start using odds for leg 2
 model4 = function(df) {
-  newdf = df %>% 
-    mutate(
-      probh1 = replace_na(probh1, 0.33),
-      proba1 = replace_na(proba1, 0.33),
-      probh2 = replace_na(probh2, 0.33),
-      proba2 = replace_na(proba2, 0.33),
-      probh2 = case_when(minuteclean <= 90 ~ NA_real_, TRUE ~ probh2),
-      proba2 = case_when(minuteclean <= 90 ~ NA_real_, TRUE ~ proba2)
-    )
-  
   locfit(
     t1win ~ minuteclean + 
       goalst1diff + 
       awaygoalst1diff + 
       redcardst1diff + 
       probh1 + 
-      proba1 +
-      probh2 +
-      proba2,
-    data = newdf,
+      probh2,
+    data = df,
     family = 'binomial'
   )
 }
 
+model4(modeling$training[[1]])
 
 fits = modeling %>% 
   mutate(
@@ -119,21 +116,31 @@ fits = modeling %>%
     m4 = map(training, model4)
   )
 
-predictions = function(df, m) {
-  predict(m, newdata = df, type = "response")
-}
-
-calculateerrors = function(df) {
-  df %>% 
-    mutate(error = )
-}
-
 fits %>% 
-  mutate(
-    p1 = map2(testing, m1, predictions),
-    p2 = map2(testing, m2, predictions),
-    p3 = map2(testing, m3, predictions)
-  )
+  write_rds(here('model', 'fits.rds'), compress = 'gz')
+
+
+
+
+
+
+
+# 
+# predictions = function(df, m) {
+#   predict(m, newdata = df, type = "response")
+# }
+# 
+# calculateerrors = function(df) {
+#   df %>% 
+#     mutate(error = )
+# }
+# 
+# fits %>% 
+#   mutate(
+#     p1 = map2(testing, m1, predictions),
+#     p2 = map2(testing, m2, predictions),
+#     p3 = map2(testing, m3, predictions)
+#   )
 
 # errors = winprob %>% 
 #   mutate(
