@@ -20,8 +20,8 @@ minmatrixtrim = minmatrix %>%
     proba1 = replace_na(proba1, 0.33),
     probh2 = replace_na(probh2, 0.33),
     proba2 = replace_na(proba2, 0.33),
-    probh2 = case_when(minuteclean <= 90 ~ NA_real_, TRUE ~ probh2),
-    proba2 = case_when(minuteclean <= 90 ~ NA_real_, TRUE ~ proba2)
+    probh2 = case_when(minuteclean <= 90 ~ 0, TRUE ~ probh2),
+    proba2 = case_when(minuteclean <= 90 ~ 0, TRUE ~ proba2)
   )
 
 minmatrixtrim
