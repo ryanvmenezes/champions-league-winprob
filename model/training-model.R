@@ -119,7 +119,8 @@ fits = modeling %>%
 fits %>% 
   write_rds(here('model', 'fits.rds'), compress = 'gz')
 
-
+minmatrixtrim %>% 
+  write_rds(here('model', 'min-matrix-trim.rds'), compress = 'gz')
 
 
 
