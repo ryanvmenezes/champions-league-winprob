@@ -1,3 +1,4 @@
+library(here)
 library(tidyverse)
 
 odds = read_csv(here('data-get', 'oddsportal', 'processed', 'odds.csv'), na = '-')
@@ -11,7 +12,6 @@ namesjoined
 summaries = read_csv(here('data-get', 'fbref', 'processed', 'two-legged-ties.csv'))
 
 summaries
-
 
 oddsjoined = odds %>% 
   filter(season >= 2015) %>%
@@ -33,3 +33,6 @@ oddsjoined = oddsjoined %>%
   select(-page)
 
 oddsjoined
+
+oddsjoined %>% 
+  write_csv(here('data-get', 'assemble', 'odds-joined.csv'), na = '')

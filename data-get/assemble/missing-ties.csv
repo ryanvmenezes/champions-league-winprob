@@ -1,0 +1,18 @@
+season,stagecode,tieid,team1,team2,winner,teamid1,teamid2,winnerid,aggscore,result,agr,aet,pk
+2018,cl-0q-4po,6b2d5f93|ad2be733,Sevilla,İstanbulspor,Sevilla,ad2be733,6b2d5f93,ad2be733,4–3,Sevilla won on aggregate score over two legs and advance to Group Stage.,FALSE,FALSE,FALSE
+2018,cl-0q-3tqr,6b2d5f93|f1e6c5f1,İstanbulspor,Club Brugge,İstanbulspor,6b2d5f93,f1e6c5f1,6b2d5f93,5–3,İstanbulspor won on aggregate score over two legs and advance to Play-off Round.,FALSE,FALSE,FALSE
+2018,el-0q-3tqr,1eebf7c3|dc56fe14,Milan,U Craiova,Milan,dc56fe14,1eebf7c3,dc56fe14,3–0,Milan won on aggregate score over two legs and advance to Play-off Round.,FALSE,FALSE,FALSE
+2018,el-0q-2sqr,04c011d8|0c017aa1,Maccabi Tel Aviv,Leiknir Reykjavík,Maccabi Tel Aviv,04c011d8,0c017aa1,04c011d8,5–1,Maccabi Tel Aviv won on aggregate score over two legs and advance to Third Qualifying Round.,FALSE,FALSE,FALSE
+2018,el-0q-1fqr,0c017aa1|c889f292,Leiknir Reykjavík,SJK Seinäjoki,Leiknir Reykjavík,0c017aa1,c889f292,0c017aa1,2–0,Leiknir Reykjavík won on aggregate score over two legs and advance to Second Qualifying Round.,FALSE,FALSE,FALSE
+2018,el-0q-1fqr,869753d6|b0333581,AIK Stockholm,KÍ Klaksvík,AIK Stockholm,b0333581,869753d6,b0333581,5–0,AIK Stockholm won on aggregate score over two legs and advance to Second Qualifying Round.,FALSE,FALSE,FALSE
+2018,el-0q-1fqr,ae7f2f70,ŠK Slovan Bratislava,,ŠK Slovan Bratislava,ae7f2f70,,ae7f2f70,9–,ŠK Slovan Bratislava won on aggregate score over two legs and advance to Second Qualifying Round.,FALSE,FALSE,FALSE
+2017,el-0q-4po,6b2d5f93|e89d5a28,Shakhtar,İstanbulspor,Shakhtar,e89d5a28,6b2d5f93,e89d5a28,4–1,Shakhtar won on aggregate score over two legs and advance to Group Stage.,FALSE,FALSE,FALSE
+2017,el-0q-3tqr,25dbe099|6b2d5f93,İstanbulspor,Rijeka,İstanbulspor,6b2d5f93,25dbe099,6b2d5f93,2–2,"İstanbulspor won on away goals, after aggregate score was tied and advance to Play-off Round.",TRUE,FALSE,FALSE
+2017,el-0q-2sqr,0c017aa1|7b66a29c,Grasshopper,Leiknir Reykjavík,Grasshopper,7b66a29c,0c017aa1,7b66a29c,5–4,Grasshopper won on aggregate score over two legs and advance to Third Qualifying Round.,FALSE,FALSE,FALSE
+2017,el-0q-2sqr,6e5246d8|79000faa,Beitar Jerusalem,Omo Aradippou,Beitar Jerusalem,79000faa,6e5246d8,79000faa,3–3,"Beitar Jerusalem won on away goals, after aggregate score was tied and advance to Third Qualifying Round.",TRUE,FALSE,FALSE
+2017,el-0q-2sqr,6777e16d|c12c3ccf,Hajduk Split,Poli Iași,Hajduk Split,6777e16d,c12c3ccf,6777e16d,4–3,Hajduk Split won on aggregate score over two legs and advance to Third Qualifying Round.,FALSE,FALSE,FALSE
+2017,el-0q-2sqr,099c6eb5|a338349f,Videoton,Red Star,Videoton,a338349f,099c6eb5,a338349f,3–1,Videoton won on aggregate score over two legs and advance to Third Qualifying Round.,FALSE,FALSE,FALSE
+2017,el-0q-1fqr,0c017aa1|b3b6ca5d,Leiknir Reykjavík,Glenavon FC,Leiknir Reykjavík,0c017aa1,b3b6ca5d,0c017aa1,8–1,Leiknir Reykjavík won on aggregate score over two legs and advance to Second Qualifying Round.,FALSE,FALSE,FALSE
+2017,el-0q-1fqr,75cd4ee3,Europa FC,,Europa FC,75cd4ee3,,75cd4ee3,3–,Europa FC won on aggregate score over two legs and advance to Second Qualifying Round.,FALSE,FALSE,FALSE
+2017,el-0q-1fqr,099c6eb5|38bfcdf5,Red Star,FC Ordabasy,Red Star,099c6eb5,38bfcdf5,099c6eb5,6–3,Red Star won on aggregate score over two legs and advance to Second Qualifying Round.,FALSE,FALSE,FALSE
+2017,el-0q-1fqr,6e5246d8|f0e1ca42,Omo Aradippou,FC Banants,Omo Aradippou,6e5246d8,f0e1ca42,6e5246d8,5–1,"Omo Aradippou won on aggregate score over two legs, after extra time and advance to Second Qualifying Round.",FALSE,TRUE,FALSE
