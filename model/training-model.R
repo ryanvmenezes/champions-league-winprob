@@ -13,14 +13,17 @@ minmatrixtrim = minmatrix %>%
     season, stagecode, tieid,
     t1win, minuteclean, minuterown,
     goalst1diff, awaygoalst1diff, redcardst1diff,
-    probh1, proba1, probh2, proba2
+    probh1, probd1, proba1, probh2, probd2, proba2
   ) %>% 
   mutate(
     probh1 = replace_na(probh1, 0.33),
+    probd1 = replace_na(probd1, 0.33),
     proba1 = replace_na(proba1, 0.33),
     probh2 = replace_na(probh2, 0.33),
+    probd2 = replace_na(probd2, 0.33),
     proba2 = replace_na(proba2, 0.33),
     probh2 = case_when(minuteclean <= 90 ~ 0, TRUE ~ probh2),
+    probd2 = case_when(minuteclean <= 90 ~ 0, TRUE ~ probd2),
     proba2 = case_when(minuteclean <= 90 ~ 0, TRUE ~ proba2)
   )
 
@@ -50,63 +53,63 @@ modeling = modelingties %>%
 
 modeling
 
-# just goals
-model1 = function(df) {
-  locfit(
-    t1win ~ minuteclean + 
-      goalst1diff + 
-      awaygoalst1diff,
-    data = df,
-    family = 'binomial'
-  )
-}
+models = list(
+  # just goals
+  m1 = function(df) {
+    locfit(
+      t1win ~ minuteclean + 
+        goalst1diff + 
+        awaygoalst1diff,
+      data = df,
+      family = 'binomial'
+    )
+  },
+  # goals and red cards
+  m2 = function(df) {
+    locfit(
+      t1win ~ minuteclean + 
+        goalst1diff + 
+        awaygoalst1diff + 
+        redcardst1diff,
+      data = df,
+      family = 'binomial'
+    )
+  },
+  # add in odds from before leg 1
+  m3 = function(df) {
+    locfit(
+      t1win ~ minuteclean + 
+        goalst1diff + 
+        awaygoalst1diff + 
+        redcardst1diff + 
+        probh1 +
+        probd1,
+      data = df,
+      family = 'binomial'
+    )
+  },
+  # at change of game, start using odds for leg 2
+  m4 = function(df) {
+    locfit(
+      t1win ~ minuteclean + 
+        goalst1diff + 
+        awaygoalst1diff + 
+        redcardst1diff + 
+        probh1 + 
+        probh2,
+      data = df,
+      family = 'binomial'
+    )
+  }
+)
 
-model1(modeling$training[[1]])
+models$m1(modeling$training[[1]])
 
-# goals and red cards
-model2 = function(df) {
-  locfit(
-    t1win ~ minuteclean + 
-      goalst1diff + 
-      awaygoalst1diff + 
-      redcardst1diff,
-    data = df,
-    family = 'binomial'
-  )
-}
+models$m2(modeling$training[[1]])
 
-model2(modeling$training[[1]])
+models$m3(modeling$training[[1]])
 
-# add in odds from before leg 1
-model3 = function(df) {
-  locfit(
-    t1win ~ minuteclean + 
-      goalst1diff + 
-      awaygoalst1diff + 
-      redcardst1diff + 
-      probh1,
-    data = df,
-    family = 'binomial'
-  )
-}
-
-model3(modeling$training[[1]])
-
-# at change of game, start using odds for leg 2
-model4 = function(df) {
-  locfit(
-    t1win ~ minuteclean + 
-      goalst1diff + 
-      awaygoalst1diff + 
-      redcardst1diff + 
-      probh1 + 
-      probh2,
-    data = df,
-    family = 'binomial'
-  )
-}
-
-model4(modeling$training[[1]])
+models$m4(modeling$training[[1]])
 
 fits = modeling %>% 
   mutate(
