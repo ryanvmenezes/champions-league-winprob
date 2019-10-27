@@ -96,7 +96,9 @@ models = list(
         awaygoalst1diff + 
         redcardst1diff + 
         probh1 + 
-        probh2,
+        probd1 +
+        probh2 +
+        probd2,
       data = df,
       family = 'binomial'
     )
@@ -111,16 +113,35 @@ models$m3(modeling$training[[1]])
 
 models$m4(modeling$training[[1]])
 
-fits = modeling %>% 
-  mutate(
-    m1 = map(training, model1),
-    m2 = map(training, model2),
-    m3 = map(training, model3),
-    m4 = map(training, model4)
-  )
 
-fits %>% 
-  write_rds(here('model', 'fits.rds'), compress = 'gz')
+fitsstart = tibble(
+  modelno = 1:length(models),
+  model = models,
+  data = map(model, ~modeling)
+) %>% 
+  unnest(data)
 
-minmatrixtrim %>% 
-  write_rds(here('model', 'min-matrix-trim.rds'), compress = 'gz')
+fitsstart
+
+fitmodel = function (m, df) {
+  m(df)
+  pb$tick()$print()
+}
+
+pb = progress_estimated(nrow(fitsstart))
+fits = fitsstart %>% 
+  mutate(fittedmodel = map2(model, training, fitmodel))
+# 
+# fits = modeling %>% 
+#   mutate(
+#     m1 = map(training, model1),
+#     m2 = map(training, model2),
+#     m3 = map(training, model3),
+#     m4 = map(training, model4)
+#   )
+# 
+# fits %>% 
+#   write_rds(here('model', 'fits.rds'), compress = 'gz')
+# 
+# minmatrixtrim %>% 
+#   write_rds(here('model', 'min-matrix-trim.rds'), compress = 'gz')
