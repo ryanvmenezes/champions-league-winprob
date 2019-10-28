@@ -67,7 +67,8 @@ modelcombos = expand_grid(pred1 = preds, pred2 = preds, resp1 = resps, resp2 = r
   separate(respkey, into = c('resp1', 'resp2')) %>% 
   mutate(
     formula1 = pmap_chr(list(pred1, pred2, resp1), writeformula),
-    formula2 = pmap_chr(list(pred1, pred2, resp2), writeformula)
+    formula2 = pmap_chr(list(pred1, pred2, resp2), writeformula),
+    combono = row_number()
   )
 
 modelcombos
@@ -109,11 +110,11 @@ fits
 
 # fits$testing[[1]]
 
-resp1 = 'h2'
-resp2 = 'd2'
-m1 = fits$fitted1[[1]]
-m2 = fits$fitted2[[1]]
-testing = fits$testing[[1]]
+# resp1 = 'h2'
+# resp2 = 'd2'
+# m1 = fits$fitted1[[1]]
+# m2 = fits$fitted2[[1]]
+# testing = fits$testing[[1]]
 
 calcpredictions = function(resp1, resp2, m1, m2, testing) {
   obs1 = str_c('prob', resp1)
@@ -155,39 +156,39 @@ predictions = fits %>%
 
 predictions
 
-i = 66
-predictions[i,]
-predictions$preds[[i]]
-predictions$preds[[i]] %>% arrange(-se1)
-predictions$preds[[i]] %>% arrange(-se2)
+# i = 66
+# predictions[i,]
+# predictions$preds[[i]]
+# predictions$preds[[i]] %>% arrange(-se1)
+# predictions$preds[[i]] %>% arrange(-se2)
+# 
+# 
+# predictions$preds[[i]] %>% select(se1, se2) %>% unlist() %>% mean(na.rm = TRUE) %>% sqrt()
+# 
+# a = predictions$preds[[i]]$se1 %>% mean(na.rm = TRUE) %>% sqrt()
+# b = predictions$preds[[i]]$se2 %>% mean(na.rm = TRUE) %>% sqrt()
+# a
+# b
+# (a + b) / 2
 
 
-predictions$preds[[i]] %>% select(se1, se2) %>% unlist() %>% mean(na.rm = TRUE) %>% sqrt()
+allmodelseval = predictions %>% 
+  group_by(pred1, pred2, resp1, resp2, combono) %>% 
+  summarise(rmsemean = mean(rmse)) %>% 
+  arrange(rmsemean)
 
-a = predictions$preds[[i]]$se1 %>% mean(na.rm = TRUE) %>% sqrt()
-b = predictions$preds[[i]]$se2 %>% mean(na.rm = TRUE) %>% sqrt()
-a
-b
-(a + b) / 2
+allmodelseval
 
 predictions %>% 
-  select(pred1:resp2, trial, rmse) %>% 
+  select(pred1:resp2, combono, trial, rmse) %>% 
   spread(trial, rmse) %>% 
   left_join(allmodelseval) %>% 
   arrange(rmsemean)
 
-allmodelseval = predictions %>% 
-  group_by(pred1, pred2, resp1, resp2) %>% 
-  summarise(rmsemean = mean(rmse)) %>% 
-  arrange(rmsemean)
+predictions %>% filter(combono == 9 & trial == 1)
+predictions %>% filter(combono == 9 & trial == 1) %>% pull(preds)
+predictions %>% filter(combono == 9 & trial == 1) %>% pull(fitted1)
+predictions %>% filter(combono == 9 & trial == 1) %>% pull(fitted2)
 
-allmodelseval %>% pull(rmsemean)
+predictions %>% filter(combono == 9 & trial == 1) %>% pull(fitted1) %>% `[[`(1) %>% predict(tibble(proba1 = 0.760, probd1 = 0.157), type = 'response')
 
-predictions$preds[[1]] %>%
-  select(se1, se2) %>% 
-  unlist() %>% 
-  mean(na.rm = TRUE) %>% 
-  sqrt()
-
-
-predictions
