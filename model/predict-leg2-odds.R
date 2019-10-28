@@ -134,27 +134,29 @@ calcpredictions = function(resp1, resp2, m1, m2, testing) {
 }
 
 calcrmse = function(df) {
-  df %>%
-    select(se1, se2) %>%
-    unlist() %>%
-    mean(na.rm = TRUE) %>%
-    sqrt()
-  
   # df %>%
-  #   summarise(
-  #     rmse1 = sqrt(mean(se1, na.rm = TRUE)),
-  #     rmse2 = sqrt(mean(se2, na.rm = TRUE))
-  #   ) %>% 
-  #   unlist() %>% 
-  #   mean()
+  #   select(se1, se2) %>%
+  #   unlist() %>%
+  #   mean(na.rm = TRUE) %>%
+  #   sqrt()
+  
+  df %>%
+    summarise(
+      rmse1 = sqrt(mean(se1, na.rm = TRUE)),
+      rmse2 = sqrt(mean(se2, na.rm = TRUE))
+    ) %>%
+    unlist() %>%
+    mean()
 }
 
 predictions = fits %>% 
-  mutate(preds = pmap(list(resp1, resp2, fitted1, fitted2, training), calcpredictions)) %>% 
+  mutate(preds = pmap(list(resp1, resp2, fitted1, fitted2, testing), calcpredictions)) %>% 
   mutate(rmse = map_dbl(preds, calcrmse)) %>% 
   arrange(rmse)
 
 predictions
+
+predictions %>% pull(rmse)
 
 # i = 66
 # predictions[i,]
@@ -187,8 +189,31 @@ predictions %>%
 
 predictions %>% filter(combono == 9 & trial == 1)
 predictions %>% filter(combono == 9 & trial == 1) %>% pull(preds)
-predictions %>% filter(combono == 9 & trial == 1) %>% pull(fitted1)
-predictions %>% filter(combono == 9 & trial == 1) %>% pull(fitted2)
+predictions %>% filter(combono == 9 & trial == 1) %>% pull(fitted1) %>% `[[`(1) %>% summary()
+predictions %>% filter(combono == 9 & trial == 1) %>% pull(fitted2) %>% `[[`(1) %>% summary()
 
-predictions %>% filter(combono == 9 & trial == 1) %>% pull(fitted1) %>% `[[`(1) %>% predict(tibble(proba1 = 0.760, probd1 = 0.157), type = 'response')
+predictions %>% filter(combono == 3 & trial == 1)
+predictions %>% filter(combono == 3 & trial == 1) %>% pull(preds)
+predictions %>% filter(combono == 3 & trial == 1) %>% pull(fitted1) %>% `[[`(1) %>% summary()
+predictions %>% filter(combono == 3 & trial == 1) %>% pull(fitted2) %>% `[[`(1) %>% summary()
 
+
+# evaluate on r-squared ---------------------------------------------------
+
+rsqbytrial = fits %>% 
+  mutate(gl1 = map(fitted1, broom::glance),
+         gl2 = map(fitted2, broom::glance)) %>% 
+  unnest(c(gl1, gl2), names_repair = 'unique') %>% 
+  select(pred1:resp2, combono, trial, starts_with('r.squared')) 
+
+rsqbytrial
+
+rsqbytrial %>% 
+  ggplot(aes(r.squared...13, r.squared...24, color = as.character(combono))) +
+  geom_jitter(width = 0.01)
+
+rsqbytrial %>% 
+  group_by(pred1, pred2, resp1, resp2, combono) %>% 
+  summarise(rsq1 = mean(r.squared...13), rsq2 = mean(r.squared...24)) %>% 
+  mutate(rsqavg = mean(c(rsq1, rsq2))) %>% 
+  arrange(-rsqavg)
