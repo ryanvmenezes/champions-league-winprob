@@ -5,7 +5,7 @@ fits = read_rds('model/fits.rds')
 
 fits
 
-predictions = function(df, m) {
+getpredictions = function(df, m) {
   df %>% 
     mutate(
       probwint1 = predict(m, newdata = df, type = 'response'),
@@ -14,43 +14,35 @@ predictions = function(df, m) {
     )
 }
 
-preds = fits %>% 
+eval = fits %>% 
   mutate(
-    p1 = map2(testing, m1, predictions),
-    p2 = map2(testing, m2, predictions),
-    p3 = map2(testing, m3, predictions),
-    p4 = map2(testing, m4, predictions),
+    predictions = map2(testing, fittedmodel, getpredictions),
+    rmserror = map_dbl(predictions, ~.x %>% pull(sqerror) %>% mean() %>% sqrt())
   )
 
-preds
+eval
 
-sqerrors = preds %>% 
-  mutate(
-    p1error = map_dbl(p1, ~.x %>% pull(sqerror) %>% mean() %>% sqrt()),
-    p2error = map_dbl(p2, ~.x %>% pull(sqerror) %>% mean() %>% sqrt()),
-    p3error = map_dbl(p3, ~.x %>% pull(sqerror) %>% mean() %>% sqrt()),
-    p4error = map_dbl(p4, ~.x %>% pull(sqerror) %>% mean() %>% sqrt())
-  ) %>% 
-  select(trial, starts_with('m'), ends_with('error'))
-  
+eval$predictions[[6]] %>% View()
 
+eval %>% 
+  select(modelno, modelname, trial, rmserror) %>% 
+  arrange(rmserror)
 
-sqerrors
+eval %>% 
+  select(modelno, modelname, trial, rmserror) %>% 
+  arrange(rmserror) %>% 
+  spread(trial, rmserror)
 
-preds$p3[[1]] %>% count(t1win)
-
-allpreds = preds %>%
-  select(trial, starts_with('p')) %>% 
-  gather(key = 'model', value = 'data', -trial) %>% 
-  mutate(model = str_sub(model, start = -1)) %>% 
-  unnest(cols = c(data))
+allpreds = eval %>%
+  select(modelno, modelname, predictions) %>% 
+  unnest(cols = c(predictions))
 
 allpreds
 
 allpreds %>%
-  group_by(model, minuteclean) %>% 
+  group_by(modelname, minuteclean) %>% 
   summarise(rms = sqrt(mean(sqerror))) %>% 
-  ggplot(aes(minuteclean, rms, color = model)) +
+  ggplot(aes(minuteclean, rms, color = modelname)) +
   geom_line() +
   scale_x_continuous(
     breaks = c(0, 45, 90, 135, 180, 210),
@@ -60,12 +52,14 @@ allpreds %>%
 
 autocorr = allpreds %>% 
   mutate(probbin = cut(probwint1, breaks = 100)) %>%
-  group_by(model, probbin) %>% 
+  group_by(modelname, probbin) %>% 
   summarise(
     count = n(),
+    actualwins = sum(t1win),
+    calcwins = sum(probwint1),
     prob = mean(probwint1),
     outcome = mean(t1win),
-    outcomesd = sqrt(mean(prob * (1 - prob)) / length(prob))
+    # outcomesd = sqrt(mean(outcome * (1 - outcome)) / length(outcome))
   )
 
 autocorr

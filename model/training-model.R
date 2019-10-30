@@ -14,7 +14,8 @@ minmatrixtrim = minmatrix %>%
     season, stagecode, tieid,
     t1win, minuteclean, minuterown,
     goalst1diff, awaygoalst1diff, redcardst1diff,
-    probh1, probd1, proba1, probh2, probd2, proba2
+    probh1, probd1, proba1,
+    # probh2, probd2, proba2
   ) %>% 
   mutate(
     probh1 = replace_na(probh1, 0.33),
