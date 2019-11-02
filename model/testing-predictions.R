@@ -1,9 +1,9 @@
+library(here)
 library(locfit)
 library(tidyverse)
 
-fits = read_rds('model/fits.rds')
+model = read_rds(here('model', 'final-model.rds'))
 
-fits
 
 getpredictions = function(df, m) {
   df %>% 
@@ -69,7 +69,7 @@ autocorr %>%
   geom_abline(slope=1, color="red") +
   geom_point() +
   # geom_errorbar(aes(ymin = outcome - 2 * outcomesd, ymax = outcome + 2 * outcomesd), color="gray50") +
-  facet_wrap(. ~ model) +
+  facet_wrap(. ~ modelname) +
   theme_minimal()
 
 
