@@ -29,7 +29,7 @@ predictions %>%
   nest() %>% 
   # pull(data) %>% 
   # `[[`(1070) %>% 
-  filter(season == 2015 & stagecode == 'cl-0q-3tqr' & tieid == 'a73408a7|b81aa4fa') %>%
+  filter(season == 2016 & stagecode == 'el-1k-3qf' & tieid == '822bd0ba|add600ae') %>%
   unnest(cols = c(data)) %>% 
   ggplot(aes(minuteclean, predictedprobt1)) +
   geom_line() +
@@ -59,6 +59,8 @@ predictions = minmatrixtrim %>%
   )
 
 predictions
+
+predictions %>% group_by(season, stagecode, tieid) %>% summarise(loglik = log(prod(likelihood, na.rm = TRUE))) %>% arrange(loglik)
 
 predictions %>% 
   group_by(minuteclean) %>% 
