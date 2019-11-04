@@ -4,6 +4,18 @@ Win probability models are somewhat ubiquitous in sports analysis these days, wi
 
 The model here aims to predict the winner in a specific kind of soccer competition: The [two-legged tie](https://en.wikipedia.org/wiki/Two-legged_tie). In such matchups, each team hosts one game (referred to as a "leg") and the winner is the team that scores the most goals over both games. This specifically focuses on competitions where the ["away goals rule"](https://en.wikipedia.org/wiki/Away_goals_rule) is used to break any deadlock.
 
+- [Abstract of the model](#abstract-of-the-model)
+- [Getting the data](#getting-the-data)
+  * [Scraping match events](#scraping-match-events)
+    + [scrape-seasons.R](#scrape-seasonsr)
+    + [scrape-games.R](#scrape-gamesr)
+    + [scrape-teams.R](#scrape-teamsr)
+  * [Scraping odds](#scraping-odds)
+    + [scrape-odds.R](#scrape-oddsr)
+    + [parse-odds.R](#parse-oddsr)
+- [Assembling the data](#assembling-the-data)
+
+
 ## Abstract of the model
 
 The model is created using localized logistic regression, implemented using the `locfit` package in R. It takes a few inputs:
@@ -99,6 +111,18 @@ Goes through the HTML of each page to create one massive odds file. Listed Ameri
 |------------------|--------|------|-----------|------------|---------|----------|--------|--------|-------|-------|-------|-------|---------|-----------|-----------|-------------------|-------------------|-------------------|------------------|-------------------|-------------------|-------------------|
 | champions-league | 2004 | 1 | Play Offs | 2004-05-26 | Monaco | FC Porto | 0 | 3 | 192 | 202 | 131 | FALSE | FALSE | FALSE | FALSE | 0.342465753424657 | 0.33112582781457 | 0.432900432900433 | 1.10649201413966 | 0.309505851870913 | 0.299257313729492 | 0.391236834399595 |
 | champions-league | 2004 | 1 | Play Offs | 2004-05-05 | Chelsea | Monaco | 2 | 2 | -154 | 231 | 392 | FALSE | FALSE | FALSE | FALSE | 0.606299212598425 | 0.302114803625378 | 0.203252032520325 | 1.11166604874413 | 0.545396896202213 | 0.271767590605725 | 0.182835513192063 |
+
+Also generates a list of team names in the data, which need to be manually reconciled with the fbref team names.
+
+*team-names.csv*
+
+| team | cl | el |
+|----------------|----|----|
+| Aalborg | 10 | 26 |
+| Aalborg (Den) | 4 | 2 |
+| Aalesund |  | 2 |
+| Aalesund (Nor) |  | 12 |
+| Aarhus (Den) |  | 2 |
 
 ## Assembling the data
 
