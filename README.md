@@ -24,7 +24,7 @@ Currently, this covers two competitions that both use two-legged ties and the aw
 
 ### Scraping match events
 
-All scraping of fbref.com is done in R and uses a ["get or retrieve"](blob/master/data-get/fbref/scrape-seasons.R#L13-L30) function that saves a raw copy of the entire targeted webpage on the first request, then accesses that copy on subsequent requests. This is intended to keep the number of requests to the website down and preserve the data for future access. The downside of this approach is that should the data on an already-accessed page change, it will need to be refetched. TODO: Use `override=TRUE` flag in function.
+All scraping of fbref.com is done in R and uses a ["get or retrieve"](data-get/fbref/scrape-seasons.R#L13-L30) function that saves a raw copy of the entire targeted webpage on the first request, then accesses that copy on subsequent requests. This is intended to keep the number of requests to the website down and preserve the data for future access. The downside of this approach is that should the data on an already-accessed page change, it will need to be refetched. TODO: Use `override=TRUE` flag in function.
 
 * scrape-seasons.R: Crawls over the index pages for the CL and EL gathering info on the knockout round and qualifying round ties that need to be scraped for events, and the urls at which that information is stored.
 * scrape-games.R: Crawls over the urls for each game and extracts the match events.
