@@ -32,16 +32,35 @@ Crawls over the index pages for the CL and EL gathering info on the knockout rou
 
 *match-urls.csv*
 
-| stagecode |    competition   | code_string | szn       | stage    | round      | dates                         | team1     | team2     | teamid1  | teamid2  | winner    | aggscore | result                                                       | hometeam1 | date1  | score1 | url1                                                                                             | hometeam2 | date2 | score2 | url2                                                                                          |
-|:---------:|:----------------:|-------------|-----------|----------|------------|-------------------------------|-----------|-----------|----------|----------|-----------|----------|--------------------------------------------------------------|-----------|--------|--------|--------------------------------------------------------------------------------------------------|-----------|-------|--------|-----------------------------------------------------------------------------------------------|
-|           | Champions League | cl          | 2018-2019 | knockout | Final      | June 1, 2019                  | Liverpool | Tottenham | 822bd0ba | 361ca564 | Liverpool | 2–0      | Liverpool won match in normal time.                          |           |        |        |                                                                                                  |           |       |        |                                                                                               |
-| cl-1k-3sf | Champions League | cl          | 2018-2019 | knockout | Semifinals | April 30, 2019 to May 8, 2019 | Tottenham | Ajax      | 361ca564 | 19c3f8c4 | Tottenham | 3–3      | Tottenham won on away goals, after aggregate score was tied. | Tottenham | Apr 30 | 0–1    | https://fbref.com/en/matches/41848af6/Tottenham-Hotspur-Ajax-April-30-2019-UEFA-Champions-League | Ajax      | May 8 | 2–3    | https://fbref.com/en/matches/09773f5a/Ajax-Tottenham-Hotspur-May-8-2019-UEFA-Champions-League |
+| stagecode | competition | code_string | szn | stage | round | dates | team1 | team2 | teamid1 | teamid2 | winner | aggscore | result | hometeam1 | date1 | score1 | url1 | hometeam2 | date2 | score2 | url2 |
+|:---------:|------------------|-------------|-----------|----------|------------|-------------------------------|-----------|-----------|----------|----------|-----------|----------|--------------------------------------------------------------|-----------|--------|--------|--------------------------------------------------------------------------------------------------|-----------|-------|--------|-----------------------------------------------------------------------------------------------|
+|  | Champions League | cl | 2018-2019 | knockout | Final | June 1, 2019 | Liverpool | Tottenham | 822bd0ba | 361ca564 | Liverpool | 2–0 | Liverpool won match in normal time. |  |  |  |  |  |  |  |  |
+| cl-1k-3sf | Champions League | cl | 2018-2019 | knockout | Semifinals | April 30, 2019 to May 8, 2019 | Tottenham | Ajax | 361ca564 | 19c3f8c4 | Tottenham | 3–3 | Tottenham won on away goals, after aggregate score was tied. | Tottenham | Apr 30 | 0–1 | https://fbref.com/en/matches/41848af6/Tottenham-Hotspur-Ajax-April-30-2019-UEFA-Champions-League | Ajax | May 8 | 2–3 | https://fbref.com/en/matches/09773f5a/Ajax-Tottenham-Hotspur-May-8-2019-UEFA-Champions-League |
 
 #### scrape-games.R
 
-Starts by filtering the two-legged ties set down to just ones that have detailed match data. (For both the CL and EL this is from the 2014-15 season until now.) Crawls over the urls for each game and extracts the match events.
+Starts by filtering the two-legged ties set down to just ones that have detailed match data. For both the CL and EL this is from the 2014-15 season until now. Also cleans up the summaries to follow a standard convention. **The ties are given an id of the form `teamid1|teamid2` where the first id is the alphabetically first team in the tie.**
 
+*two-legged-ties.csv*
 
+| szn | stagecode | tieid | team1 | team2 | winner | teamid1 | teamid2 | winnerid | aggscore | result | score1 | score2 |
+|:---------:|------------|-------------------|--------------|------------------|------------------|----------|----------|----------|----------|--------------------------------------------------------------------------------------------------------|--------|--------|
+| 2014-2015 | cl-0q-1fqr | 9549dc95|f0e1ca42 | Santa Coloma | FC Banants | Santa Coloma | 9549dc95 | f0e1ca42 | 9549dc95 | 3–3 | Santa Coloma won on away goals, after aggregate score was tied and advance to Second Qualifying Round. | 1–0 | 3–2 |
+| 2014-2015 | cl-0q-1fqr | 15c5743b|2d3c1b6d | Red Imps | Havnar Bóltfelag | Havnar Bóltfelag | 2d3c1b6d | 15c5743b | 15c5743b | 3–6 | Havnar Bóltfelag won on aggregate score over two legs and advance to Second Qualifying Round. | 1–1 | 5–2 |
+
+Then crawls over the urls for each game and extracts the match events.
+
+*match-events.csv*
+
+| szn | stagecode | tieid | teamid1 | teamid2 | leg | score | player | playerid | eventtype | minute | team |
+|:---------:|-----------|-------------------|----------|----------|-----|-------|---------------------|----------|-----------|--------|------|
+| 2018-2019 | cl-1k-3sf | 206d90db|822bd0ba | 206d90db | 822bd0ba | 1 | 3–0 | Luis Suárez | a6154613 | goal | 26 | 1 |
+| 2018-2019 | cl-1k-3sf | 206d90db|822bd0ba | 206d90db | 822bd0ba | 1 | 3–0 | Lionel Messi | d70ce98e | goal | 75 | 1 |
+| 2018-2019 | cl-1k-3sf | 206d90db|822bd0ba | 206d90db | 822bd0ba | 1 | 3–0 | Lionel Messi | d70ce98e | goal | 82 | 1 |
+| 2018-2019 | cl-1k-3sf | 206d90db|822bd0ba | 206d90db | 822bd0ba | 2 | 4–0 | Divock Origi | 43a166b4 | goal | 7 | 1 |
+| 2018-2019 | cl-1k-3sf | 206d90db|822bd0ba | 206d90db | 822bd0ba | 2 | 4–0 | Georginio Wijnaldum | eb58eef0 | goal | 54 | 1 |
+| 2018-2019 | cl-1k-3sf | 206d90db|822bd0ba | 206d90db | 822bd0ba | 2 | 4–0 | Georginio Wijnaldum | eb58eef0 | goal | 56 | 1 |
+| 2018-2019 | cl-1k-3sf | 206d90db|822bd0ba | 206d90db | 822bd0ba | 2 | 4–0 | Divock Origi | 43a166b4 | goal | 79 | 1 |
 
 * scrape-teams.R: Creates an index of all teams listed by fbref.com and their countries, to join back to the data later. Can be run independently of the other scripts.
 
