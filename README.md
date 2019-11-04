@@ -16,21 +16,28 @@ The model is created using localized logistic regression, implemented using the 
 
 Those factors are used to spit out a probability that the team hosting the first leg will win the tie.
 
-Currently, this covers two competitions that both use two-legged ties and the away goals rule for certain stages of their competition: the UEFA Champions League and the UEFA Europa League. It could likely be extended to other competitions, suchs as the CONMEBOL Copa Libertadores and more.
-
 ## Getting the data
 
 All data on the match events comes from [fbref.com](https://fbref.com/). Betting market information comes from [oddsportal.com](http://oddsportal.com/).
 
+Currently, this covers two competitions that both use two-legged ties and the away goals rule for certain stages of their competition: the UEFA Champions League and the UEFA Europa League (all matches except the group stages). It could likely be extended to other competitions, such as the CONMEBOL Copa Libertadores and more.
+
 ### Scraping match events
 
-This starts by scraping the games we need to analyze. 
+All scraping of fbref.com is done in R and uses a ["get or retrieve"](blob/master/data-get/fbref/scrape-seasons.R#L13-L30) function that saves a raw copy of the entire targeted webpage on the first request, then accesses that copy on subsequent requests. This is intended to keep the number of requests to the website down and preserve the data for future access. The downside of this approach is that should the data on an already-accessed page change, it will need to be refetched. TODO: Use `override=TRUE` flag in function.
 
+* scrape-seasons.R: Crawls over the index pages for the CL and EL gathering info on the knockout round and qualifying round ties that need to be scraped for events, and the urls at which that information is stored.
+* scrape-games.R: Crawls over the urls for each game and extracts the match events.
+* scrape-teams.R: Creates an index of all teams listed by fbref.com and their countries, to join back to the data later. Can be run independently of the other scripts.
 
-| stagecode | competition | code_string | szn | stage | round | dates | team1 | team2 | teamid1 | teamid2 | winner | aggscore | result | hometeam1 | date1 | score1 | url1 | hometeam2 | date2 | score2 | url2 |
-|:---------:|:----------------:|-------------|-----------|----------|---------------|---------------------------------|-----------|-----------------|----------|----------|-----------|----------|--------------------------------------------------------------|-----------|--------|--------|------------------------------------------------------------------------------------------------------------|-----------------|--------|--------|-------------------------------------------------------------------------------------------------------------|
-|  | Champions League | cl | 2018-2019 | knockout | Final | June 1, 2019 | Liverpool | Tottenham | 822bd0ba | 361ca564 | Liverpool | 2–0 | Liverpool won match in normal time. |  |  |  |  |  |  |  |  |
-| cl-1k-3sf | Champions League | cl | 2018-2019 | knockout | Semifinals | April 30, 2019 to May 8, 2019 | Tottenham | Ajax | 361ca564 | 19c3f8c4 | Tottenham | 3–3 | Tottenham won on away goals, after aggregate score was tied. | Tottenham | Apr 30 | 0–1 | https://fbref.com/en/matches/41848af6/Tottenham-Hotspur-Ajax-April-30-2019-UEFA-Champions-League | Ajax | May 8 | 2–3 | https://fbref.com/en/matches/09773f5a/Ajax-Tottenham-Hotspur-May-8-2019-UEFA-Champions-League |
-| cl-1k-3sf | Champions League | cl | 2018-2019 | knockout | Semifinals | April 30, 2019 to May 8, 2019 | Liverpool | Barcelona | 822bd0ba | 206d90db | Liverpool | 4–3 | Liverpool won on aggregate score over two legs. | Barcelona | May 1 | 3–0 | https://fbref.com/en/matches/b45b35c3/Barcelona-Liverpool-May-1-2019-UEFA-Champions-League | Liverpool | May 7 | 4–0 | https://fbref.com/en/matches/20b882b6/Liverpool-Barcelona-May-7-2019-UEFA-Champions-League |
-| cl-1k-2qf | Champions League | cl | 2018-2019 | knockout | Quarterfinals | April 9, 2019 to April 17, 2019 | Tottenham | Manchester City | 361ca564 | b8fd03ef | Tottenham | 4–4 | Tottenham won on away goals, after aggregate score was tied. | Tottenham | Apr 9 | 1–0 | https://fbref.com/en/matches/ecf6dedc/Tottenham-Hotspur-Manchester-City-April-9-2019-UEFA-Champions-League | Manchester City | Apr 17 | 4–3 | https://fbref.com/en/matches/5a2a056f/Manchester-City-Tottenham-Hotspur-April-17-2019-UEFA-Champions-League |
-| cl-1k-2qf | Champions League | cl | 2018-2019 | knockout | Quarterfinals | April 9, 2019 to April 17, 2019 | Liverpool | Porto | 822bd0ba | 5e876ee6 | Liverpool | 6–1 | Liverpool won on aggregate score over two legs. | Liverpool | Apr 9 | 2–0 | https://fbref.com/en/matches/1ff096ec/Liverpool-Porto-April-9-2019-UEFA-Champions-League | Porto | Apr 17 | 1–4 | https://fbref.com/en/matches/1ab1a0b0/Porto-Liverpool-April-17-2019-UEFA-Champions-League |
+### Scraping odds
+
+The scraping of oddsportal.com is done in R using RSelenium. That requires first firing up a docker instance with a headless Firefox browser:
+
+```bash
+sudo docker run -d -p 4445:4444 selenium/standalone-firefox:3.141.59
+```
+
+* scrape-odds.R: A lot of logic to scrape oddsportal pages, where the odds are not in the page body (they come via an XHR). Sometimes they don't show up at all! Messy code but it should capture most quirks. Dumps out just the raw HTML
+* parse-odds.R: Goes through the HTML of each page to create one massive odds file. Listed American odds (-250, +500, etc.) are converted into implied probability, then a vig-free probability.
+

@@ -4,7 +4,7 @@ library(tidyverse)
 
 rawfiles = tibble(
   f = dir(here('data-get','oddsportal','raw')),
-  p = here('data-get','oddsportal','raw',f)
+  p = here('data-get','oddsportal','raw', f)
   ) %>% 
   mutate(h = map(p, read_html))
 
