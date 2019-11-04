@@ -39,7 +39,10 @@ Crawls over the index pages for the CL and EL gathering info on the knockout rou
 
 #### scrape-games.R
 
-Starts by filtering the two-legged ties set down to just ones that have detailed match data. For both the CL and EL this is from the 2014-15 season until now. Also cleans up the summaries to follow a standard convention. **The ties are given an id of the form `teamid1|teamid2` where the first id is the alphabetically first team in the tie.**
+Starts by filtering the two-legged ties set down to just ones that have detailed match data. For both the CL and EL this is from the 2014-15 season until now. Also cleans up the summaries to follow a standard convention:
+
+* The ties are given an id of the form `teamid1|teamid2` where **the ids are sorted alphabetically**.
+* In the detailed breakdown, **`team1` is always the team that hosted the first leg**.
 
 *two-legged-ties.csv*
 
@@ -62,7 +65,17 @@ Then crawls over the urls for each game and extracts the match events.
 | 2018-2019 | cl-1k-3sf | 206d90db|822bd0ba | 206d90db | 822bd0ba | 2 | 4–0 | Georginio Wijnaldum | eb58eef0 | goal | 56 | 1 |
 | 2018-2019 | cl-1k-3sf | 206d90db|822bd0ba | 206d90db | 822bd0ba | 2 | 4–0 | Divock Origi | 43a166b4 | goal | 79 | 1 |
 
-* scrape-teams.R: Creates an index of all teams listed by fbref.com and their countries, to join back to the data later. Can be run independently of the other scripts.
+#### scrape-teams.R
+
+Creates an index of all teams listed by fbref.com and their countries, to join back to the data later. Can be run independently of the other scripts.
+
+*fbref-all-teams.csv*
+
+| country | countrycode2 | countrycode3 | governingbody | Squad | Gender | Comp | From | To | Comps | Champs | Other Names | clubid |
+|---------|--------------|--------------|---------------|---------------------|--------|------|-----------|-----------|-------|--------|--------------|----------|
+| Albania | al | ALB | UEFA | Besa Kavajë | M |  | 2010-2011 | 2010-2011 | 0 |  |  | 2fdee617 |
+| Albania | al | ALB | UEFA | FK Kukësi | M |  | 2013-2014 | 2019-2020 | 0 |  |  | f1e85b1e |
+| Albania | al | ALB | UEFA | FK Partizani Tirana | M |  | 2015-2016 | 2019-2020 | 0 |  | FK Partizani | 3ba2fddf |
 
 ### Scraping odds
 
@@ -72,8 +85,20 @@ The scraping of oddsportal.com is done in R using RSelenium. That requires first
 sudo docker run -d -p 4445:4444 selenium/standalone-firefox:3.141.59
 ```
 
-* scrape-odds.R: A lot of logic to scrape oddsportal pages, where the odds are not in the page body (they come via an XHR). Sometimes they don't show up at all! Messy code but it should capture most quirks. Dumps out just the raw HTML
-* parse-odds.R: Goes through the HTML of each page to create one massive odds file. Listed American odds (-250, +500, etc.) are converted into implied probability, then a vig-free probability.
+#### scrape-odds.R
+
+A lot of logic to scrape oddsportal pages, where the odds are not in the page body (they come via an XHR). Sometimes they don't show up at all! Messy code but it should capture most quirks. Dumps out just the raw HTML
+
+#### parse-odds.R
+
+Goes through the HTML of each page to create one massive odds file. Listed American odds (-250, +500, etc.) are converted into implied probability, then a vig-free probability.
+
+*odds.csv*
+
+| comp | season | page | round | date | teamh | teama | scoreh | scorea | oddsh | oddsd | oddsa | pens | awarded | extratime | cancelled | oddshprob | oddsdprob | oddsaprob | oddsprobtotal | probh | probd | proba |
+|------------------|--------|------|-----------|------------|---------|----------|--------|--------|-------|-------|-------|-------|---------|-----------|-----------|-------------------|-------------------|-------------------|------------------|-------------------|-------------------|-------------------|
+| champions-league | 2004 | 1 | Play Offs | 2004-05-26 | Monaco | FC Porto | 0 | 3 | 192 | 202 | 131 | FALSE | FALSE | FALSE | FALSE | 0.342465753424657 | 0.33112582781457 | 0.432900432900433 | 1.10649201413966 | 0.309505851870913 | 0.299257313729492 | 0.391236834399595 |
+| champions-league | 2004 | 1 | Play Offs | 2004-05-05 | Chelsea | Monaco | 2 | 2 | -154 | 231 | 392 | FALSE | FALSE | FALSE | FALSE | 0.606299212598425 | 0.302114803625378 | 0.203252032520325 | 1.11166604874413 | 0.545396896202213 | 0.271767590605725 | 0.182835513192063 |
 
 ## Assembling the data
 
