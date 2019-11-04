@@ -45,8 +45,8 @@ Starts by filtering the two-legged ties set down to just ones that have detailed
 
 | szn | stagecode | tieid | team1 | team2 | winner | teamid1 | teamid2 | winnerid | aggscore | result | score1 | score2 |
 |:---------:|------------|-------------------|--------------|------------------|------------------|----------|----------|----------|----------|--------------------------------------------------------------------------------------------------------|--------|--------|
-| 2014-2015 | cl-0q-1fqr | 9549dc95|f0e1ca42 | Santa Coloma | FC Banants | Santa Coloma | 9549dc95 | f0e1ca42 | 9549dc95 | 3–3 | Santa Coloma won on away goals, after aggregate score was tied and advance to Second Qualifying Round. | 1–0 | 3–2 |
-| 2014-2015 | cl-0q-1fqr | 15c5743b|2d3c1b6d | Red Imps | Havnar Bóltfelag | Havnar Bóltfelag | 2d3c1b6d | 15c5743b | 15c5743b | 3–6 | Havnar Bóltfelag won on aggregate score over two legs and advance to Second Qualifying Round. | 1–1 | 5–2 |
+| 2014-2015 | cl-0q-1fqr | 9549dc95\|f0e1ca42 | Santa Coloma | FC Banants | Santa Coloma | 9549dc95 | f0e1ca42 | 9549dc95 | 3–3 | Santa Coloma won on away goals, after aggregate score was tied and advance to Second Qualifying Round. | 1–0 | 3–2 |
+| 2014-2015 | cl-0q-1fqr | 15c5743b\|2d3c1b6d | Red Imps | Havnar Bóltfelag | Havnar Bóltfelag | 2d3c1b6d | 15c5743b | 15c5743b | 3–6 | Havnar Bóltfelag won on aggregate score over two legs and advance to Second Qualifying Round. | 1–1 | 5–2 |
 
 Then crawls over the urls for each game and extracts the match events.
 
