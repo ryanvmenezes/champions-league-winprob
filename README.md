@@ -7,14 +7,13 @@ The model here aims to predict the winner in a specific kind of soccer competiti
 - [Abstract of the model](#abstract-of-the-model)
 - [Getting the data](#getting-the-data)
   * [Scraping match events](#scraping-match-events)
-    + [scrape-seasons.R](#scrape-seasonsr)
-    + [scrape-games.R](#scrape-gamesr)
-    + [scrape-teams.R](#scrape-teamsr)
+    + [01_scrape-seasons.R](#01-scrape-seasonsr)
+    + [02_scrape-games.R](#02-scrape-gamesr)
+    + [03_scrape-teams.R](#03-scrape-teamsr)
   * [Scraping odds](#scraping-odds)
-    + [scrape-odds.R](#scrape-oddsr)
-    + [parse-odds.R](#parse-oddsr)
+    + [01_scrape-odds.R](#01-scrape-oddsr)
+    + [02_parse-odds.R](#02-parse-oddsr)
 - [Assembling the data](#assembling-the-data)
-
 
 ## Abstract of the model
 
@@ -28,6 +27,8 @@ The model is created using localized logistic regression, implemented using the 
 
 Those factors are used to spit out a probability that the team hosting the first leg will win the tie.
 
+TK: How the model performs.
+
 ## Getting the data
 
 All data on the match events comes from [fbref.com](https://fbref.com/). Betting market information comes from [oddsportal.com](http://oddsportal.com/).
@@ -36,9 +37,11 @@ Currently, this covers two competitions that both use two-legged ties and the aw
 
 ### Scraping match events
 
-All scraping of fbref.com is done in R and uses a ["get or retrieve"](data-get/fbref/scrape-seasons.R#L13-L30) function that saves a raw copy of the entire targeted webpage on the first request, then accesses that copy on subsequent requests. This is intended to keep the number of requests to the website down and preserve the data for future access. The downside of this approach is that should the data on an already-accessed page change, it will need to be refetched. TODO: Use `override=TRUE` flag in function.
+All scraping of fbref.com is done in R and uses a ["get or retrieve"](data-get/fbref/scrape-seasons.R#L13-L30) function that saves a raw copy of the entire targeted webpage on the first request, then accesses that copy on subsequent requests. This is intended to keep the number of requests to the website down and preserve the data for future access. The downside of this approach is that should the data on an already-accessed page change, it will need to be refetched.
 
-#### scrape-seasons.R
+TK: Use `override=TRUE` flag in function.
+
+#### 01_scrape-seasons.R
 
 Crawls over the index pages for the CL and EL gathering info on the knockout round and qualifying round ties that need to be scraped for events, and the urls at which that information is stored.
 
@@ -49,7 +52,7 @@ Crawls over the index pages for the CL and EL gathering info on the knockout rou
 |  | Champions League | cl | 2018-2019 | knockout | Final | June 1, 2019 | Liverpool | Tottenham | 822bd0ba | 361ca564 | Liverpool | 2–0 | Liverpool won match in normal time. |  |  |  |  |  |  |  |  |
 | cl-1k-3sf | Champions League | cl | 2018-2019 | knockout | Semifinals | April 30, 2019 to May 8, 2019 | Tottenham | Ajax | 361ca564 | 19c3f8c4 | Tottenham | 3–3 | Tottenham won on away goals, after aggregate score was tied. | Tottenham | Apr 30 | 0–1 | https://fbref.com/en/matches/41848af6/Tottenham-Hotspur-Ajax-April-30-2019-UEFA-Champions-League | Ajax | May 8 | 2–3 | https://fbref.com/en/matches/09773f5a/Ajax-Tottenham-Hotspur-May-8-2019-UEFA-Champions-League |
 
-#### scrape-games.R
+#### 02_scrape-games.R
 
 Starts by filtering the two-legged ties set down to just ones that have detailed match data. For both the CL and EL this is from the 2014-15 season until now. Also cleans up the summaries to follow a standard convention:
 
@@ -77,7 +80,7 @@ Then crawls over the urls for each game and extracts the match events.
 | 2018-2019 | cl-1k-3sf | 206d90db|822bd0ba | 206d90db | 822bd0ba | 2 | 4–0 | Georginio Wijnaldum | eb58eef0 | goal | 56 | 1 |
 | 2018-2019 | cl-1k-3sf | 206d90db|822bd0ba | 206d90db | 822bd0ba | 2 | 4–0 | Divock Origi | 43a166b4 | goal | 79 | 1 |
 
-#### scrape-teams.R
+#### 03_scrape-teams.R
 
 Creates an index of all teams listed by fbref.com and their countries, to join back to the data later. Can be run independently of the other scripts.
 
@@ -97,11 +100,11 @@ The scraping of oddsportal.com is done in R using RSelenium. That requires first
 sudo docker run -d -p 4445:4444 selenium/standalone-firefox:3.141.59
 ```
 
-#### scrape-odds.R
+#### 01_scrape-odds.R
 
 A lot of logic to scrape oddsportal pages, where the odds are not in the page body (they come via an XHR). Sometimes they don't show up at all! Messy code but it should capture most quirks. Dumps out just the raw HTML
 
-#### parse-odds.R
+#### 02_parse-odds.R
 
 Goes through the HTML of each page to create one massive odds file. Listed American odds (-250, +500, etc.) are converted into implied probability, then a vig-free probability.
 
