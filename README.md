@@ -129,5 +129,42 @@ Also generates a list of team names in the data, which need to be manually recon
 
 ## Assembling the data
 
+A few relational tables need to be created with all of the requisite data.
 
+* teams: Unique team id, their name in the fbref data, the name in the oddsportal data and the country of the team
+* summary: The summary of the two-legged ties. Who hosted each game, who won, did it go to ET, did it go to PKs, did the away goals rule apply, etc.
+* predictors: The matrix that will be fed into the logistic regression model. For each minute of the tie, what was the goal difference, what was the away goal difference, what was the red card difference, what were the pre-tie odds, etc.
+* events: The details of each match's events. Goals and red cards are labelled with a player's name and team.
+* predictions: For each minute in the match, the probability the model has assigned to team 1 winning.
 
+### Reconcile differences in the team names
+
+There are major variations between the oddsportal names and the fbref names. To ensure each team has a unique id, the fbref teams and ids are preferred.
+
+#### teams/01_reconcile-team-names.R
+
+Start with the list of all of the CL/EL ties with data. Create a list of distinct fbref teams and ids. These often use "short names" or nicknames. Get the master name from fbref for each.
+
+Bring in the list of all fbref teams from around the world. Join it against the distinct teams picked up by the scrape.
+
+*europe-teams-fbref.csv*
+
+| clubid | club | country | countrycode | governingbody | clubshortnames |
+|----------|---------------------|------------|-------------|---------------|----------------|
+| a224b06a | 1. FSV Mainz 05 | Germany | GER | UEFA | Mainz 05 |
+| 7e746554 | Aalborg BK | Denmark | DEN | UEFA | Aalborg |
+| 8bbab7cf | Aberdeen FC | Scotland | SCO | UEFA | Aberdeen |
+| 6dbe9dca | Aberystwyth Town FC | Wales | WAL | UEFA | Aberystwyth |
+| 633ae161 | AC Juvenes/Dogana | San Marino | SMR | UEFA | Juvenes/Dogana |
+
+Get the distinct names from the oddsportal data.
+
+#### odds/01_create-odds-table.R
+
+#### summary/91_finding-missing-ties.R
+
+#### summary/92_ties-with-invalid-games.R
+
+#### summary/01_compile-tie-summaries.R
+
+#### events/01_inflate-events-table.R

@@ -3,7 +3,6 @@ library(rvest)
 library(readxl)
 library(tidyverse)
 
-
 # fbref teams -------------------------------------------------------------
 
 # fbref teams from scrape of CL/EL ties
@@ -15,7 +14,7 @@ distinctteams = summaries %>%
   select(starts_with('team')) %>% 
   pivot_longer(starts_with('team')) %>% 
   mutate(name = str_sub(name, end = -2)) %>% 
-  pivot_wider(names_from = name, values_from = value) %>%
+  pivot_wider(names_from = name, values_from = value, values_fn = list(value = list)) %>%
   unnest(c(team, teamid)) %>% 
   distinct() %>%
   select(club = team, clubid = teamid) %>% 
@@ -33,25 +32,21 @@ fbrefteams
 # join for master fbref list
 europeteamsfbref = fbrefteams %>% 
   select(clubid, club = Squad, country, countrycode = countrycode3, governingbody) %>% 
-  # manually add this missing team
+  # manually add this missing team -- not on fbref.com country index
   bind_rows(
-    tibble(
-      club = 'Juventus',
-      clubid = 'e0652b02',
-      country = 'Italy',
-      countrycode = 'ITA',
-      governingbody = 'UEFA'
+    tribble(
+      ~club, ~clubid, ~country, ~countrycode, ~governingbody,
+      'Juventus', 'e0652b02', 'Italy', 'ITA', 'UEFA'
     )
   ) %>% 
-  right_join(distinctteams, by = 'clubid') %>% 
+  right_join(distinctteams, by = 'clubid') %>%
   arrange(club)
 
 # this is a list of ALL clubids that were picked up by the scrape
 # cross-referenced to their full names from the country indices
 europeteamsfbref
 
-europeteamsfbref %>% write_csv(here('data-get', 'assemble', 'europe-teams-fbref.csv'), na = '')
-
+europeteamsfbref %>% write_csv(here('data-get', 'assemble', 'teams', 'europe-teams-fbref.csv'), na = '')
 
 # oddsportal teams --------------------------------------------------------
 
@@ -66,30 +61,25 @@ europeteamsodds = odds %>%
   select(teamh, teama) %>% 
   pivot_longer(starts_with('team')) %>% 
   mutate(name = str_sub(name, end = -2)) %>% 
-  pivot_wider(names_from = name, values_from = value) %>% 
+  pivot_wider(names_from = name, values_from = value, values_fn = list(value = list)) %>% 
   unnest(team) %>% 
   distinct() %>% 
   arrange(team)
 
 europeteamsodds
 
-europeteamsodds %>% write_csv(here('data-get', 'assemble', 'europe-teams-odds.csv'), na = '')
+europeteamsodds %>% write_csv(here('data-get', 'assemble', 'teams', 'europe-teams-odds.csv'), na = '')
 
 # bring in manually joined list
-joined = read_csv(here('data-get', 'assemble', 'name join - joining-work.csv'))
-
-joined %>% mutate(nc = nchar(fbrefid)) %>% count(nc)
+joined = read_csv(here('data-get', 'assemble', 'teams', 'name join - joining-work.csv'))
 
 joined = joined %>% 
-  # manual fix
+  # manual fix for entirely numeric string that has leading 0
   mutate(
     fbrefid = str_pad(fbrefid, width = 8, side = 'left', pad = '0')
   )
 
 joined
-
-joined %>% mutate(nc = nchar(fbrefid)) %>% count(nc)
-joined %>% filter(str_detect(fbrefid, '3022')) # why above fix was necessary
 
 # fbref teams in joined CL/El-index list that did not get attached in manual join
 # this is usually because of misfires on my part
@@ -110,4 +100,17 @@ needsmatch
 
 # fully joined list
 # paste first two columns into google sheet
-joiningprogress %>% write_csv(here('data-get', 'assemble', 'joining-progress.csv'), na = '')
+joiningprogress %>% write_csv(here('data-get', 'assemble', 'teams', 'joining-progress.csv'), na = '')
+
+# create final teams table
+
+teams = joined %>% 
+  group_by(teamname = matchclub, fbrefid, teamcountry = matchcountry) %>% 
+  summarise(oddsnames = str_c(team, collapse = '||')) %>% 
+  ungroup()
+
+teams
+
+# final table
+teams %>% write_csv(here('data-get', 'assemble', 'teams', 'teams.csv'))
+teams %>% write_rds(here('data', 'teams.rds'))
