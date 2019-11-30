@@ -13,15 +13,48 @@ fullpredictions = summaries %>%
   right_join(
     predictions %>% 
       group_by(season, stagecode, tieid, t1win) %>% 
-      mutate(ag = abs(awaygoalst1diff - lag(awaygoalst1diff)) == 1) %>% 
+      mutate(
+        ag = abs(awaygoalst1diff - lag(awaygoalst1diff)) == 1,
+        ag = replace_na(ag, FALSE),
+        ag = case_when((minuteclean == 1) & (abs(awaygoalst1diff) == 1) ~ TRUE, TRUE ~ ag)
+      ) %>% 
       nest()
   )
 
 fullpredictions
 
-winprobplot = function(t1, t2, result, df, szn, stage) {
-  ggplot(data = df, aes(minuteclean, predictedprobt1)) +
+initprob = fullpredictions$data[[1]] %>% 
+  filter(minuteclean == 1) %>% 
+  pull(predictedprobt1) %>% 
+  `[`(1)
+
+winprobplot = function(t1, t2, result, df, szn, stage, aet) {
+  initprob = df %>%
+    filter(minuteclean == 1) %>% 
+    pull(predictedprobt1) %>% 
+    `[`(1)
+  
+  initteamprob = case_when(
+    initprob < 0.5 ~ str_c(t2, ' ', round((1 - initprob) * 100, digits = 1), '%'),
+    TRUE ~ str_c(t1, ' ', round(initprob * 100, digits = 1), '%')
+  )
+  
+  inittitle = str_c('Initial: ', initteamprob)
+  
+  plot = ggplot(data = df, aes(minuteclean, predictedprobt1)) +
     geom_vline(xintercept = 90, linetype = 'dashed', alpha = 0.5) +
+    annotate('text', label = str_c('at ', t1, sep = ''), x = 45, y = 0.5, size = 5, alpha = 0.2)
+  
+  if (aet) {
+    plot = plot +
+      geom_vline(xintercept = 180, linetype = 'dashed', alpha = 0.5) +
+      annotate('text', label = str_c('at ', t2, sep = ''), x = 150, y = 0.5, size = 5, alpha = 0.2)
+  } else {
+    plot = plot +
+      annotate('text', label = str_c('at ', t2, sep = ''), x = 135, y = 0.5, size = 5, alpha = 0.2)
+  }
+  
+  plot = plot +
     geom_line() +
     geom_point(
       data = . %>%
@@ -52,17 +85,19 @@ winprobplot = function(t1, t2, result, df, szn, stage) {
       breaks = c(0, 0.25, 0.5, 0.75, 1),
       labels = c('0 ', '25 ', '50 ', '75 ', '100%')
     ) +
-    ggtitle(str_c(result, '\n', szn, ' ', stage)) +
+    ggtitle(str_c(result, '\n', inittitle, '\n', szn, ' ', stage)) +
     ylab(str_c(t1, ' win probability')) +
     xlab('') +
     theme_minimal() +
     theme(panel.grid.minor = element_blank())
+  
+  return(plot)
 }
 
-plots = fullpredictions %>% 
-  mutate(plot = pmap(list(team1, team2, result, data, season, stagecode), winprobplot)) %>% 
+plots = fullpredictions %>%
+  mutate(plot = pmap(list(team1, team2, result, data, season, stagecode, aet), winprobplot)) %>% 
   select(-data)
-
+beepr::beep()
 plots
 
 plots %>% write_rds(here('model', 'plots.rds'), compress = 'gz')
@@ -91,3 +126,6 @@ plots %>%
       )
     }
   )
+
+plots$plot[[214]]
+fullpredictions$data[[214]] %>% filter(ag)
