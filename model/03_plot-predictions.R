@@ -41,6 +41,17 @@ winprobplot = function(t1, t2, result, df, szn, stage, aet) {
   
   inittitle = str_c('Initial: ', initteamprob)
   
+  t1short = iconv(t1, from = 'UTF-8', to = 'ASCII//TRANSLIT') %>%
+    str_replace_all(' ', '') %>%
+    str_replace_all("[^[:alnum:]]", "") %>% 
+    str_sub(end = 3) %>%
+    str_to_upper()
+  t2short = iconv(t2, from = 'UTF-8', to = 'ASCII//TRANSLIT') %>%
+    str_replace_all(' ', '') %>% 
+    str_replace_all("[^[:alnum:]]", "") %>% 
+    str_sub(end = 3) %>%
+    str_to_upper()
+  
   plot = ggplot(data = df, aes(minuteclean, predictedprobt1)) +
     geom_vline(xintercept = 90, linetype = 'dashed', alpha = 0.5) +
     annotate('text', label = str_c('at ', t1, sep = ''), x = 45, y = 0.5, size = 5, alpha = 0.2)
@@ -83,10 +94,10 @@ winprobplot = function(t1, t2, result, df, szn, stage, aet) {
     scale_y_continuous(
       limits = c(0,1),
       breaks = c(0, 0.25, 0.5, 0.75, 1),
-      labels = c('0 ', '25 ', '50 ', '75 ', '100%')
+      labels = c(str_c('100%\n', t2short), '75 ', '50 ', '75 ', str_c(t1short, '\n100%'))
     ) +
     ggtitle(str_c(result, '\n', inittitle, '\n', szn, ' ', stage)) +
-    ylab(str_c(t1, ' win probability')) +
+    ylab('') +
     xlab('') +
     theme_minimal() +
     theme(panel.grid.minor = element_blank())
@@ -97,10 +108,14 @@ winprobplot = function(t1, t2, result, df, szn, stage, aet) {
 plots = fullpredictions %>%
   mutate(plot = pmap(list(team1, team2, result, data, season, stagecode, aet), winprobplot)) %>% 
   select(-data)
+
 beepr::beep()
+
 plots
 
 plots %>% write_rds(here('model', 'plots.rds'), compress = 'gz')
+
+beepr::beep()
 
 plots %>%
   separate(stagecode, into = c('comp', 'round'), extra = 'merge') %>% 
@@ -127,5 +142,4 @@ plots %>%
     }
   )
 
-plots$plot[[214]]
-fullpredictions$data[[214]] %>% filter(ag)
+beepr::beep()
