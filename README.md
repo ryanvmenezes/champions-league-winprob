@@ -18,4 +18,8 @@ The model is created using localized logistic regression, implemented using the 
 
 Those factors are used to spit out a probability that the team hosting the first leg will win the tie.
 
+Plots charting the win probability according to the draft model can be found [here](model/plots/).
+
+![](/model/plots/cl/2019/1k-1r16/Liverpool-Bayern%20Munich.png)
+
 TK: How the model performs.
