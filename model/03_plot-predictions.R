@@ -23,11 +23,6 @@ fullpredictions = summaries %>%
 
 fullpredictions
 
-initprob = fullpredictions$data[[1]] %>% 
-  filter(minuteclean == 1) %>% 
-  pull(predictedprobt1) %>% 
-  `[`(1)
-
 winprobplot = function(t1, t2, result, df, szn, stage, aet) {
   initprob = df %>%
     filter(minuteclean == 1) %>% 
