@@ -30,14 +30,27 @@ predmatrix = summaries %>%
 
 predmatrix
 
-model = locfit(
-  t1win ~ minuteclean + goalst1diff + awaygoalst1diff + redcardst1diff + probh1 + proba1,
-  data = predmatrix,
-  family = 'binomial'
-)
+# version 1 ---------------------------------------------------------------
 
-model
+# model = locfit(
+#   t1win ~ minuteclean + goalst1diff + awaygoalst1diff + redcardst1diff + probh1 + proba1,
+#   data = predmatrix,
+#   family = 'binomial'
+# )
+# 
+# model
+# 
+# summary(model)
+# 
+# model %>% write_rds(here('model', 'models', 'v1.rds'))
 
-summary(model)
 
-model %>% write_rds(here('model', 'models', 'v1.rds'))
+# version 2 ---------------------------------------------------------------
+
+## 90 minutes of game 1
+## 90 minutes of game 2
+## 30 minutes of extra time
+
+## half 1, half 2, half 3, half 4, ET
+
+
