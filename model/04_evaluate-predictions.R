@@ -1,14 +1,15 @@
 library(here)
 library(tidyverse)
 
+CURRENT_VERSION = 'v1'
+
 summaries = read_rds(here('data', 'summary.rds'))
 
 summaries
 
-predictions = read_rds(here('model', 'predictions.rds'))
+predictions = read_rds(here('model', 'predictions', CURRENT_VERSION, 'predictions.rds'))
 
 predictions
-
 
 # log likelihoods ---------------------------------------------------------
 
@@ -46,9 +47,9 @@ llbyminuteplot = llbyminute %>%
 
 llbyminuteplot
 
-llbytie %>% write_csv(here('model', 'evaluation', 'loglik-by-tie.csv'), na = '')
-llbyminute %>% write_csv(here('model', 'evaluation', 'loglik-by-minute.csv'), na = '')
-ggsave(here('model', 'evaluation', 'loglik-by-minute.png'), llbyminuteplot)
+llbytie %>% write_csv(here('model', 'evaluation', CURRENT_VERSION, 'loglik-by-tie.csv'), na = '')
+llbyminute %>% write_csv(here('model', 'evaluation', CURRENT_VERSION, 'loglik-by-minute.csv'), na = '')
+ggsave(here('model', 'evaluation', CURRENT_VERSION, 'loglik-by-minute.png'), llbyminuteplot)
 
 # errors ------------------------------------------------------------------
 
@@ -71,5 +72,5 @@ rmserrorsplot = rmserrors %>%
 
 rmserrorsplot
 
-rmserrors %>% write_csv(here('model', 'evaluation', 'rms-error-by-minute.csv'), na = '')
-ggsave(here('model', 'evaluation', 'rms-error-by-minute.png'), rmserrorsplot)
+rmserrors %>% write_csv(here('model', 'evaluation', CURRENT_VERSION, 'rms-error-by-minute.csv'), na = '')
+ggsave(here('model', 'evaluation', CURRENT_VERSION, 'rms-error-by-minute.png'), rmserrorsplot)

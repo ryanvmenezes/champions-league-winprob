@@ -1,15 +1,13 @@
 library(here)
-library(furrr)
 library(tidyverse)
 
-CURRENT_VERSION = 1
-plan(multisession)
+CURRENT_VERSION = 'v1'
 
 summaries = read_rds(here('data', 'summary.rds'))
 
 summaries
 
-predictions = read_rds(here('model', 'predictions', str_c('predictions-v', CURRENT_VERSION, '.rds')))
+predictions = read_rds(here('model', 'predictions', CURRENT_VERSION, 'predictions.rds'))
 
 predictions
 
@@ -105,14 +103,14 @@ winprobplot = function(t1, t2, result, df, szn, stage, aet) {
 }
 
 plots = fullpredictions %>%
-  mutate(plot = future_pmap(list(team1, team2, result, data, season, stagecode, aet), winprobplot)) %>% 
+  mutate(plot = pmap(list(team1, team2, result, data, season, stagecode, aet), winprobplot)) %>% 
   select(-data)
 
 beepr::beep()
 
 plots
 
-plots %>% write_rds(here('model', 'plots', str_c('plots-v', CURRENT_VERSION, '.rds')), compress = 'gz')
+plots %>% write_rds(here('model', 'plots', CURRENT_VERSION, 'plots.rds'), compress = 'gz')
 
 beepr::beep()
 
