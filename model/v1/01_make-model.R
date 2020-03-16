@@ -43,3 +43,6 @@ model
 summary(model)
 
 model %>% write_rds(here('model', 'v1', 'model.rds'))
+
+# gcvstat = gcv(model) 
+# gcvstat %>% write_file(here('model', 'v1', 'gcv.txt'))
