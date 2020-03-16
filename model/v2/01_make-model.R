@@ -39,7 +39,7 @@ minute.interval = 10
 intervals = seq(0, 210 - 1, minute.interval)
 
 # various smoothing windows to try
-windows = c(0.5, 0.25, 0.15, 0.05, 0.025, 0.01, 0.005)
+windows = c(0.5, 0.2, 0.1, 0.09, 0.08, 0.07, 0.06, 0.05, 0.04, 0.03, 0.02, 0.01)
 
 set.seed(41)
 
@@ -76,43 +76,66 @@ model.by.window = function(train.data, window) {
   )
 }
 
-# run.models = function(df) {
-#   df %>% 
-#     mutate(model = map2(train.data, window, model.by.window))
-# }
-# 
-# chunk01 = run.models(train.test.by.interval[1:10,])
-# chunk02 = run.models(train.test.by.interval[11:20,])
-# chunk03 = run.models(train.test.by.interval[21:30,])
-# chunk04 = run.models(train.test.by.interval[31:40,])
-# chunk05 = run.models(train.test.by.interval[41:50,])
-# chunk06 = run.models(train.test.by.interval[51:60,])
-# chunk07 = run.models(train.test.by.interval[61:70,])
-# chunk08 = run.models(train.test.by.interval[71:80,])
-# chunk09 = run.models(train.test.by.interval[81:90,])
-# chunk10 = run.models(train.test.by.interval[91:100,])
-# chunk11 = run.models(train.test.by.interval[101:110,])
-# chunk12 = run.models(train.test.by.interval[111:120,])
-# chunk13 = run.models(train.test.by.interval[121:130,])
-# chunk14 = run.models(train.test.by.interval[131:140,])
-# chunk15 = run.models(train.test.by.interval[141:147,])
-# 
-# for (i in 1:nrow(train.test.by.interval)) {
-#   row = train.test.by.interval %>% filter(row_number() == i) 
-#   if (row$start.interval >= 180 & row$window < 0.01) {
-#     next
-#   }
-#   done = row %>% run.models()
-#   print(row %>% select(-ends_with('.data')))
-# }
-# 
-# 
-# chunk01
+gcv.by.window = function(train.data, window) {
+  gcv(
+    t1win ~ lp(minuteclean + goalst1diff + awaygoalst1diff + redcardst1diff + probh1 + proba1, nn = window),
+    data = train.data,
+    family = 'binomial'
+  )
+}
 
 models = train.test.by.interval %>% 
-  filter(!(start.interval >= 180 & window < 0.01)) %>% # take out low-n small-window models
-  mutate(model = map2(train.data, window, safely(model.by.window)))
+  mutate(
+    model = map2(train.data, window, model.by.window),
+    gcv = map2(interval.data, window, gcv.by.window)
+  )
 
 models
 
 beepr::beep()
+
+predictions = models %>% 
+  mutate(
+    predictions = map2(
+      test.data,
+      model,
+      ~.x %>% 
+        mutate(
+          predictedprobt1 = predict(.y, newdata = ., type = 'response'),
+          sqerror = (as.numeric(t1win) - predictedprobt1) ^ 2
+        )
+    ),
+    ssqerrors = map_dbl(predictions, ~.x %>% pull(sqerror) %>% sum(na.rm = TRUE)),
+    gcvstat = map_dbl(gcv, ~.x[['gcv']])
+  )
+  
+
+predictions
+
+model.eval = predictions %>% 
+  group_by(start.interval, end.interval) %>% 
+  mutate(mingcv = gcvstat == min(gcvstat), minssq = ssqerrors == min(ssqerrors)) %>% 
+  select(ends_with('val'), window, ssqerrors, gcvstat, mingcv, minssq)
+
+model.eval
+
+model.eval %>% 
+  filter(mingcv) %>% 
+  ggplot(aes(start.interval, window)) +
+  geom_line() + 
+  geom_point() +
+  scale_y_continuous(breaks = windows) +
+  scale_x_continuous(breaks = c(45,90,135,180,210)) +
+  theme_minimal()
+
+# just go with the best GCV (min) for each interval
+
+final.models = models %>% 
+  semi_join(
+    model.eval %>% 
+      filter(mingcv)
+  )
+
+final.models
+
+final.models %>% write_rds(here('model', 'v2', 'models.rds'), compress = 'gz')
