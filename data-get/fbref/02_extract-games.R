@@ -12,7 +12,7 @@ allszns = read_csv(here('data-get', 'fbref', 'processed', 'season-urls.csv'))
 allszns
 
 allsznshtml = allszns %>%
-  mutate(html = map(sznurl, getorretrieve))
+  mutate(html = map(sznurl, getorretrieve.seasons))
 
 allsznshtml
 
