@@ -6540,7 +6540,7 @@ szn,stagecode,tieid,teamid1,teamid2,leg,score,player,playerid,eventtype,minute,t
 2019-2020,cl-0q-3tqr,44b65410|eab315a6,eab315a6,44b65410,1,1–2,Magaye Gueye,82b85f5a,goal,69,2
 2019-2020,cl-0q-3tqr,44b65410|eab315a6,eab315a6,44b65410,2,0–2,Richard Almeida,bdf8165d,yellow_red_card,90+4,1
 2019-2020,cl-0q-3tqr,44b65410|eab315a6,eab315a6,44b65410,2,0–2,Tomas De Vincenti,8e3e66a0,penalty_goal,34,2
-2019-2020,cl-0q-3tqr,44b65410|eab315a6,eab315a6,44b65410,2,0–2,Urosh Matich,eb98db3c,goal,68,2
+2019-2020,cl-0q-3tqr,44b65410|eab315a6,eab315a6,44b65410,2,0–2,Uroš Matić,26a796c1,goal,68,2
 2019-2020,cl-0q-3tqr,6611f992|edd0d381,edd0d381,6611f992,1,1–1,Dani Olmo,ae44e8e2,goal,7,1
 2019-2020,cl-0q-3tqr,6611f992|edd0d381,edd0d381,6611f992,1,1–1,Dávid Sigér,3d2320f7,goal,59,2
 2019-2020,cl-0q-3tqr,6611f992|edd0d381,edd0d381,6611f992,2,0–4,Eldar Ćivić,5fcb90ac,yellow_red_card,69,1
@@ -6588,7 +6588,7 @@ szn,stagecode,tieid,teamid1,teamid2,leg,score,player,playerid,eventtype,minute,t
 2019-2020,cl-0q-4po,099c6eb5|4b682260,4b682260,099c6eb5,2,1–1,Ben Nabouhane,d4aa40b8,own_goal,81,2
 2019-2020,cl-0q-4po,d20821dd|f1e6c5f1,d20821dd,f1e6c5f1,1,0–1,Hans Vanaken,392a7aea,penalty_goal,10,2
 2019-2020,cl-0q-4po,d20821dd|f1e6c5f1,d20821dd,f1e6c5f1,2,2–1,Hans Vanaken,392a7aea,goal,70,1
-2019-2020,cl-0q-4po,d20821dd|f1e6c5f1,d20821dd,f1e6c5f1,2,2–1,Emmanuel Bonaventure Dennis,2c44a35d,goal,89,1
+2019-2020,cl-0q-4po,d20821dd|f1e6c5f1,d20821dd,f1e6c5f1,2,2–1,Emmanuel Dennis,2c44a35d,goal,89,1
 2019-2020,cl-0q-4po,d20821dd|f1e6c5f1,d20821dd,f1e6c5f1,2,2–1,Klauss,f5ae006d,penalty_goal,74,2
 2019-2020,cl-0q-4po,d20821dd|f1e6c5f1,d20821dd,f1e6c5f1,2,2–1,Gernot Trauner,9d21da85,yellow_red_card,81,2
 2019-2020,cl-0q-4po,19c3f8c4|eab315a6,eab315a6,19c3f8c4,1,0–0,Noussair Mazraoui,b74277a0,yellow_red_card,80,2
@@ -6600,6 +6600,46 @@ szn,stagecode,tieid,teamid1,teamid2,leg,score,player,playerid,eventtype,minute,t
 2019-2020,cl-0q-4po,90e37d3a|edd0d381,edd0d381,90e37d3a,2,1–1,Amer Gojak,51ffa295,goal,71,2
 2019-2020,cl-0q-4po,111cbfb1|ff04e205,ff04e205,111cbfb1,1,0–1,Lukáš Masopust,4adc7b42,goal,28,2
 2019-2020,cl-0q-4po,111cbfb1|ff04e205,ff04e205,111cbfb1,2,1–0,Jan Bořil,2b3efa4a,goal,66,1
+2019-2020,cl-1k-1r16,361ca564|acbb6a5b,361ca564,acbb6a5b,1,0–1,Timo Werner,49fe9070,penalty_goal,58,2
+2019-2020,cl-1k-1r16,361ca564|acbb6a5b,361ca564,acbb6a5b,2,3–0,Marcel Sabitzer,e280527c,goal,10,1
+2019-2020,cl-1k-1r16,361ca564|acbb6a5b,361ca564,acbb6a5b,2,3–0,Marcel Sabitzer,e280527c,goal,21,1
+2019-2020,cl-1k-1r16,361ca564|acbb6a5b,361ca564,acbb6a5b,2,3–0,Emil Forsberg,9a2e0ccc,goal,87,1
+2019-2020,cl-1k-1r16,53a2f082|b8fd03ef,53a2f082,b8fd03ef,1,1–2,Isco,a0b4bb3e,goal,60,1
+2019-2020,cl-1k-1r16,53a2f082|b8fd03ef,53a2f082,b8fd03ef,1,1–2,Sergio Ramos,08511d65,red_card,86,1
+2019-2020,cl-1k-1r16,53a2f082|b8fd03ef,53a2f082,b8fd03ef,1,1–2,Gabriel Jesus,b66315ae,goal,78,2
+2019-2020,cl-1k-1r16,53a2f082|b8fd03ef,53a2f082,b8fd03ef,1,1–2,Kevin De Bruyne,e46012d4,penalty_goal,83,2
+2019-2020,cl-1k-1r16,922493f3|dcc91a7b,922493f3,dcc91a7b,1,4–1,Hans Hateboer,3b333ac3,goal,16,1
+2019-2020,cl-1k-1r16,922493f3|dcc91a7b,922493f3,dcc91a7b,1,4–1,Josip Iličić,68252d6d,goal,42,1
+2019-2020,cl-1k-1r16,922493f3|dcc91a7b,922493f3,dcc91a7b,1,4–1,Remo Freuler,98d2c2c4,goal,57,1
+2019-2020,cl-1k-1r16,922493f3|dcc91a7b,922493f3,dcc91a7b,1,4–1,Hans Hateboer,3b333ac3,goal,62,1
+2019-2020,cl-1k-1r16,922493f3|dcc91a7b,922493f3,dcc91a7b,1,4–1,Denis Cheryshev,0ac94a23,goal,66,2
+2019-2020,cl-1k-1r16,922493f3|dcc91a7b,922493f3,dcc91a7b,2,3–4,Kévin Gameiro,42276181,goal,21,1
+2019-2020,cl-1k-1r16,922493f3|dcc91a7b,922493f3,dcc91a7b,2,3–4,Kévin Gameiro,42276181,goal,51,1
+2019-2020,cl-1k-1r16,922493f3|dcc91a7b,922493f3,dcc91a7b,2,3–4,Ferrán Torres,9e1035f8,goal,67,1
+2019-2020,cl-1k-1r16,922493f3|dcc91a7b,922493f3,dcc91a7b,2,3–4,Josip Iličić,68252d6d,penalty_goal,3,2
+2019-2020,cl-1k-1r16,922493f3|dcc91a7b,922493f3,dcc91a7b,2,3–4,Josip Iličić,68252d6d,penalty_goal,43,2
+2019-2020,cl-1k-1r16,922493f3|dcc91a7b,922493f3,dcc91a7b,2,3–4,Josip Iličić,68252d6d,goal,71,2
+2019-2020,cl-1k-1r16,922493f3|dcc91a7b,922493f3,dcc91a7b,2,3–4,Josip Iličić,68252d6d,goal,82,2
+2019-2020,cl-1k-1r16,add600ae|e2d8892c,add600ae,e2d8892c,1,2–1,Erling Braut Håland,1f44ac21,goal,69,1
+2019-2020,cl-1k-1r16,add600ae|e2d8892c,add600ae,e2d8892c,1,2–1,Erling Braut Håland,1f44ac21,goal,77,1
+2019-2020,cl-1k-1r16,add600ae|e2d8892c,add600ae,e2d8892c,1,2–1,Neymar,69384e5d,goal,75,2
+2019-2020,cl-1k-1r16,add600ae|e2d8892c,add600ae,e2d8892c,2,2–0,Neymar,69384e5d,goal,28,1
+2019-2020,cl-1k-1r16,add600ae|e2d8892c,add600ae,e2d8892c,2,2–0,Juan Bernat,433dc9a2,goal,45+1,1
+2019-2020,cl-1k-1r16,add600ae|e2d8892c,add600ae,e2d8892c,2,2–0,Emre Can,a65ce836,red_card,89,2
+2019-2020,cl-1k-1r16,054efa67|cff3d9bb,cff3d9bb,054efa67,1,0–3,Marcos Alonso,f4290206,red_card,83,1
+2019-2020,cl-1k-1r16,054efa67|cff3d9bb,cff3d9bb,054efa67,1,0–3,Serge Gnabry,88e357ef,goal,51,2
+2019-2020,cl-1k-1r16,054efa67|cff3d9bb,cff3d9bb,054efa67,1,0–3,Serge Gnabry,88e357ef,goal,54,2
+2019-2020,cl-1k-1r16,054efa67|cff3d9bb,cff3d9bb,054efa67,1,0–3,Robert Lewandowski,8d78e732,goal,76,2
+2019-2020,cl-1k-1r16,206d90db|d48ad4ff,d48ad4ff,206d90db,1,1–1,Dries Mertens,89b2c8a9,goal,30,1
+2019-2020,cl-1k-1r16,206d90db|d48ad4ff,d48ad4ff,206d90db,1,1–1,Antoine Griezmann,df69b544,goal,57,2
+2019-2020,cl-1k-1r16,206d90db|d48ad4ff,d48ad4ff,206d90db,1,1–1,Arturo Vidal,67cdbc0e,yellow_red_card,89,2
+2019-2020,cl-1k-1r16,d53c0b06|e0652b02,d53c0b06,e0652b02,1,1–0,Lucas Tousart,71ec39ef,goal,31,1
+2019-2020,cl-1k-1r16,822bd0ba|db3b9613,db3b9613,822bd0ba,1,1–0,Saúl Ñíguez,c14bc029,goal,4,1
+2019-2020,cl-1k-1r16,822bd0ba|db3b9613,db3b9613,822bd0ba,2,2–3,Georginio Wijnaldum,eb58eef0,goal,43,1
+2019-2020,cl-1k-1r16,822bd0ba|db3b9613,db3b9613,822bd0ba,2,2–3,Roberto Firmino,4c370d81,goal,94,1
+2019-2020,cl-1k-1r16,822bd0ba|db3b9613,db3b9613,822bd0ba,2,2–3,Marcos Llorente,02c15616,goal,97,2
+2019-2020,cl-1k-1r16,822bd0ba|db3b9613,db3b9613,822bd0ba,2,2–3,Marcos Llorente,02c15616,goal,105+1,2
+2019-2020,cl-1k-1r16,822bd0ba|db3b9613,db3b9613,822bd0ba,2,2–3,Álvaro Morata,129af0db,goal,120+1,2
 2019-2020,el-0q-0pre,6de42722|b784c866,6de42722,b784c866,1,0–1,Mirco Vassallo,2ced64b0,red_card,87,1
 2019-2020,el-0q-0pre,6de42722|b784c866,6de42722,b784c866,1,0–1,Aaron Sánchez,98bfc5d0,goal,31,2
 2019-2020,el-0q-0pre,6de42722|b784c866,6de42722,b784c866,1,0–1,Deivis,1cc2e30f,yellow_red_card,86,2
@@ -7087,7 +7127,7 @@ szn,stagecode,tieid,teamid1,teamid2,leg,score,player,playerid,eventtype,minute,t
 2019-2020,el-0q-2sqr,a8661628|f13065a8,a8661628,f13065a8,1,4–0,Borja Iglesias,75645f0e,goal,60,1
 2019-2020,el-0q-2sqr,a8661628|f13065a8,a8661628,f13065a8,1,4–0,Borja Iglesias,75645f0e,goal,68,1
 2019-2020,el-0q-2sqr,a8661628|f13065a8,a8661628,f13065a8,2,1–3,Baldur Sigurðsson,beb58fa4,goal,87,1
-2019-2020,el-0q-2sqr,a8661628|f13065a8,a8661628,f13065a8,2,1–3,Adrià Pedrosa,112521d1,goal,5,2
+2019-2020,el-0q-2sqr,a8661628|f13065a8,a8661628,f13065a8,2,1–3,Pedrosa,112521d1,goal,5,2
 2019-2020,el-0q-2sqr,a8661628|f13065a8,a8661628,f13065a8,2,1–3,Borja Iglesias,75645f0e,goal,52,2
 2019-2020,el-0q-2sqr,a8661628|f13065a8,a8661628,f13065a8,2,1–3,Facundo Ferreyra,b39a793e,goal,79,2
 2019-2020,el-0q-2sqr,9e3153f3|aaffe678,aaffe678,9e3153f3,1,0–5,Giedrius Matulevičius,046afc6a,goal,10,2
@@ -7320,13 +7360,13 @@ szn,stagecode,tieid,teamid1,teamid2,leg,score,player,playerid,eventtype,minute,t
 2019-2020,el-0q-3tqr,a73408a7|c9607f44,a73408a7,c9607f44,2,0–2,Valerian Gvilia,1aca6ddf,goal,51,2
 2019-2020,el-0q-3tqr,69d84c29|ab75e049,ab75e049,69d84c29,1,2–4,Dominik Kaiser,733fecf1,goal,15,1
 2019-2020,el-0q-3tqr,69d84c29|ab75e049,ab75e049,69d84c29,1,2–4,Dominik Kaiser,733fecf1,goal,50,1
-2019-2020,el-0q-3tqr,69d84c29|ab75e049,ab75e049,69d84c29,1,2–4,João Paulo Dias Fernandes,a62c16d0,goal,18,2
+2019-2020,el-0q-3tqr,69d84c29|ab75e049,ab75e049,69d84c29,1,2–4,Paulinho,a62c16d0,goal,18,2
 2019-2020,el-0q-3tqr,69d84c29|ab75e049,ab75e049,69d84c29,1,2–4,André Horta,951f1739,goal,20,2
 2019-2020,el-0q-3tqr,69d84c29|ab75e049,ab75e049,69d84c29,1,2–4,Ricardo Horta,6603fed7,goal,90+2,2
 2019-2020,el-0q-3tqr,69d84c29|ab75e049,ab75e049,69d84c29,1,2–4,Hjörtur Hermannsson,6aa0d1e2,own_goal,90+4,2
 2019-2020,el-0q-3tqr,69d84c29|ab75e049,ab75e049,69d84c29,2,3–1,João Palhinha,a78ff07f,goal,19,1
 2019-2020,el-0q-3tqr,69d84c29|ab75e049,ab75e049,69d84c29,2,3–1,André Horta,951f1739,goal,41,1
-2019-2020,el-0q-3tqr,69d84c29|ab75e049,ab75e049,69d84c29,2,3–1,João Paulo Dias Fernandes,a62c16d0,goal,66,1
+2019-2020,el-0q-3tqr,69d84c29|ab75e049,ab75e049,69d84c29,2,3–1,Paulinho,a62c16d0,goal,66,1
 2019-2020,el-0q-3tqr,69d84c29|ab75e049,ab75e049,69d84c29,2,3–1,Peter Bjur,7c962fda,goal,85,2
 2019-2020,el-0q-3tqr,ae7f2f70|e4a9d483,ae7f2f70,e4a9d483,1,1–0,Dávid Holman,588de166,goal,86,1
 2019-2020,el-0q-3tqr,ae7f2f70|e4a9d483,ae7f2f70,e4a9d483,2,1–3,Michael Duffy,db123b51,goal,70,1
@@ -7542,3 +7582,121 @@ szn,stagecode,tieid,teamid1,teamid2,leg,score,player,playerid,eventtype,minute,t
 2019-2020,el-0q-4po,133013ee|fb4ca611,fb4ca611,133013ee,2,0–3,Orkun Kökçü,9bf914b4,goal,46,2
 2019-2020,el-0q-4po,133013ee|fb4ca611,fb4ca611,133013ee,2,0–3,Steven Berghuis,713c144a,goal,52,2
 2019-2020,el-0q-4po,133013ee|fb4ca611,fb4ca611,133013ee,2,0–3,Wouter Burger,fc571dff,goal,61,2
+2019-2020,el-1k-1r32,13dc44fd|bff39cf5,13dc44fd,bff39cf5,1,3–1,Sebastián Coates,1fbbfbde,goal,3,1
+2019-2020,el-1k-1r32,13dc44fd|bff39cf5,13dc44fd,bff39cf5,1,3–1,Andraž Šporar,878f0921,goal,44,1
+2019-2020,el-1k-1r32,13dc44fd|bff39cf5,13dc44fd,bff39cf5,1,3–1,Luciano Vietto,2513a588,goal,51,1
+2019-2020,el-1k-1r32,13dc44fd|bff39cf5,13dc44fd,bff39cf5,1,3–1,Edin Višća,da1185fc,penalty_goal,77,2
+2019-2020,el-1k-1r32,13dc44fd|bff39cf5,13dc44fd,bff39cf5,2,4–1,Martin Škrtel,defb905a,goal,31,1
+2019-2020,el-1k-1r32,13dc44fd|bff39cf5,13dc44fd,bff39cf5,2,4–1,Danijel Aleksić,d68cb24c,goal,45,1
+2019-2020,el-1k-1r32,13dc44fd|bff39cf5,13dc44fd,bff39cf5,2,4–1,Edin Višća,da1185fc,goal,90+1,1
+2019-2020,el-1k-1r32,13dc44fd|bff39cf5,13dc44fd,bff39cf5,2,4–1,Edin Višća,da1185fc,penalty_goal,119,1
+2019-2020,el-1k-1r32,13dc44fd|bff39cf5,13dc44fd,bff39cf5,2,4–1,Luciano Vietto,2513a588,goal,68,2
+2019-2020,el-1k-1r32,18050b20|b81aa4fa,18050b20,b81aa4fa,1,1–1,Dame N'Doye,4574720b,goal,52,1
+2019-2020,el-1k-1r32,18050b20|b81aa4fa,18050b20,b81aa4fa,1,1–1,Odsonne Édouard,0562b7f1,goal,14,2
+2019-2020,el-1k-1r32,18050b20|b81aa4fa,18050b20,b81aa4fa,2,1–3,Odsonne Édouard,0562b7f1,penalty_goal,83,1
+2019-2020,el-1k-1r32,18050b20|b81aa4fa,18050b20,b81aa4fa,2,1–3,Michael Santos,3cb6f224,goal,51,2
+2019-2020,el-1k-1r32,18050b20|b81aa4fa,18050b20,b81aa4fa,2,1–3,Pep Biel,1c59240b,goal,85,2
+2019-2020,el-1k-1r32,18050b20|b81aa4fa,18050b20,b81aa4fa,2,1–3,Dame N'Doye,4574720b,goal,88,2
+2019-2020,el-1k-1r32,18bb7c10|2fdb4aef,2fdb4aef,18bb7c10,1,0–1,Alexandre Lacazette,9dbb75ca,goal,81,2
+2019-2020,el-1k-1r32,18bb7c10|2fdb4aef,2fdb4aef,18bb7c10,2,1–2,Pierre-Emerick Aubameyang,d5dd5f1f,goal,113,1
+2019-2020,el-1k-1r32,18bb7c10|2fdb4aef,2fdb4aef,18bb7c10,2,1–2,Pape Abou Cisse,8bc373ea,goal,53,2
+2019-2020,el-1k-1r32,18bb7c10|2fdb4aef,2fdb4aef,18bb7c10,2,1–2,Youssef El-Arabi,c63f6e46,goal,119,2
+2019-2020,el-1k-1r32,3986b791|d20821dd,3986b791,d20821dd,1,1–1,Teun Koopmeiners,a26fb8aa,penalty_goal,86,1
+2019-2020,el-1k-1r32,3986b791|d20821dd,3986b791,d20821dd,1,1–1,Marko Raguž,49e9d799,goal,26,2
+2019-2020,el-1k-1r32,3986b791|d20821dd,3986b791,d20821dd,2,2–0,Marko Raguž,49e9d799,penalty_goal,44,1
+2019-2020,el-1k-1r32,3986b791|d20821dd,3986b791,d20821dd,2,2–0,Marko Raguž,49e9d799,goal,50,1
+2019-2020,el-1k-1r32,3986b791|d20821dd,3986b791,d20821dd,2,2–0,Philipp Wiesinger,bdc8912c,yellow_red_card,88,1
+2019-2020,el-1k-1r32,488c6ba1|d609edc0,488c6ba1,d609edc0,1,0–2,Christian Eriksen,980522ec,goal,71,2
+2019-2020,el-1k-1r32,488c6ba1|d609edc0,488c6ba1,d609edc0,1,0–2,Romelu Lukaku,5eae500a,penalty_goal,90+5,2
+2019-2020,el-1k-1r32,488c6ba1|d609edc0,488c6ba1,d609edc0,2,2–1,Cristiano Biraghi,9e1577aa,goal,31,1
+2019-2020,el-1k-1r32,488c6ba1|d609edc0,488c6ba1,d609edc0,2,2–1,Romelu Lukaku,5eae500a,goal,45+4,1
+2019-2020,el-1k-1r32,488c6ba1|d609edc0,488c6ba1,d609edc0,2,2–1,Cauly Oliveira Souza,2b53f7a5,goal,26,2
+2019-2020,el-1k-1r32,4eaa11d7|f3d8c8b9,4eaa11d7,f3d8c8b9,1,2–1,Josip Brekalo,d4a2533d,goal,49,1
+2019-2020,el-1k-1r32,4eaa11d7|f3d8c8b9,4eaa11d7,f3d8c8b9,1,2–1,Isaac Kiese Thelin,b956af7d,own_goal,62,1
+2019-2020,el-1k-1r32,4eaa11d7|f3d8c8b9,4eaa11d7,f3d8c8b9,1,2–1,Isaac Kiese Thelin,b956af7d,penalty_goal,47,2
+2019-2020,el-1k-1r32,4eaa11d7|f3d8c8b9,4eaa11d7,f3d8c8b9,2,0–3,Josip Brekalo,d4a2533d,goal,41,2
+2019-2020,el-1k-1r32,4eaa11d7|f3d8c8b9,4eaa11d7,f3d8c8b9,2,0–3,Yannick Gerhardt,62ab9184,goal,65,2
+2019-2020,el-1k-1r32,4eaa11d7|f3d8c8b9,4eaa11d7,f3d8c8b9,2,0–3,João Victor Santos Sá,1a1033a1,goal,69,2
+2019-2020,el-1k-1r32,19c3f8c4|7848bd64,7848bd64,19c3f8c4,1,2–0,Deyverson,2e5e846d,goal,37,1
+2019-2020,el-1k-1r32,19c3f8c4|7848bd64,7848bd64,19c3f8c4,1,2–0,Kenedy,5eebbfdf,goal,90+3,1
+2019-2020,el-1k-1r32,19c3f8c4|7848bd64,7848bd64,19c3f8c4,2,2–1,Danilo,ccd38335,goal,10,1
+2019-2020,el-1k-1r32,19c3f8c4|7848bd64,7848bd64,19c3f8c4,2,2–1,Mathías Olivera,41c12f75,own_goal,63,1
+2019-2020,el-1k-1r32,19c3f8c4|7848bd64,7848bd64,19c3f8c4,2,2–1,Jaime Mata,02319ad7,goal,5,2
+2019-2020,el-1k-1r32,69d84c29|86b7acd2,86b7acd2,69d84c29,1,3–2,Ianis Hagi,0127419a,goal,67,1
+2019-2020,el-1k-1r32,69d84c29|86b7acd2,86b7acd2,69d84c29,1,3–2,Joe Aribo,328f7d51,goal,75,1
+2019-2020,el-1k-1r32,69d84c29|86b7acd2,86b7acd2,69d84c29,1,3–2,Ianis Hagi,0127419a,goal,82,1
+2019-2020,el-1k-1r32,69d84c29|86b7acd2,86b7acd2,69d84c29,1,3–2,Fransérgio,deba6b05,goal,11,2
+2019-2020,el-1k-1r32,69d84c29|86b7acd2,86b7acd2,69d84c29,1,3–2,Abel Ruiz,6cbf8d0d,goal,59,2
+2019-2020,el-1k-1r32,69d84c29|86b7acd2,86b7acd2,69d84c29,2,0–1,Ryan Kent,316de854,goal,61,2
+2019-2020,el-1k-1r32,8cec06e1|a8661628,8cec06e1,a8661628,1,4–0,Diogo Jota,178ae8f8,goal,15,1
+2019-2020,el-1k-1r32,8cec06e1|a8661628,8cec06e1,a8661628,1,4–0,Rúben Neves,44bfb6c5,goal,52,1
+2019-2020,el-1k-1r32,8cec06e1|a8661628,8cec06e1,a8661628,1,4–0,Diogo Jota,178ae8f8,goal,67,1
+2019-2020,el-1k-1r32,8cec06e1|a8661628,8cec06e1,a8661628,1,4–0,Diogo Jota,178ae8f8,goal,81,1
+2019-2020,el-1k-1r32,8cec06e1|a8661628,8cec06e1,a8661628,2,3–2,Jonathan Calleri,6922f806,goal,16,1
+2019-2020,el-1k-1r32,8cec06e1|a8661628,8cec06e1,a8661628,2,3–2,Jonathan Calleri,6922f806,penalty_goal,57,1
+2019-2020,el-1k-1r32,8cec06e1|a8661628,8cec06e1,a8661628,2,3–2,Jonathan Calleri,6922f806,goal,90+1,1
+2019-2020,el-1k-1r32,8cec06e1|a8661628,8cec06e1,a8661628,2,3–2,Adama Traoré,9a28eba4,goal,22,2
+2019-2020,el-1k-1r32,8cec06e1|a8661628,8cec06e1,a8661628,2,3–2,Matt Doherty,d557d734,goal,79,2
+2019-2020,el-1k-1r32,5e876ee6|c7a9f859,c7a9f859,5e876ee6,1,2–1,Lucas Alario,834d0be5,goal,29,1
+2019-2020,el-1k-1r32,5e876ee6|c7a9f859,c7a9f859,5e876ee6,1,2–1,Kai Havertz,fed7cb61,penalty_goal,57,1
+2019-2020,el-1k-1r32,5e876ee6|c7a9f859,c7a9f859,5e876ee6,1,2–1,Luis Fernando Díaz,4a1a9578,goal,73,2
+2019-2020,el-1k-1r32,5e876ee6|c7a9f859,c7a9f859,5e876ee6,2,1–3,Moussa Marega,05a84d52,goal,65,1
+2019-2020,el-1k-1r32,5e876ee6|c7a9f859,c7a9f859,5e876ee6,2,1–3,Tiquinho Soares,4d982baf,red_card,85,1
+2019-2020,el-1k-1r32,5e876ee6|c7a9f859,c7a9f859,5e876ee6,2,1–3,Lucas Alario,834d0be5,goal,10,2
+2019-2020,el-1k-1r32,5e876ee6|c7a9f859,c7a9f859,5e876ee6,2,1–3,Kerem Demirbay,54b4dc4e,goal,50,2
+2019-2020,el-1k-1r32,5e876ee6|c7a9f859,c7a9f859,5e876ee6,2,1–3,Kai Havertz,fed7cb61,goal,57,2
+2019-2020,el-1k-1r32,51e5a603|cf74a709,cf74a709,51e5a603,1,1–0,Carles Pérez,a8f21b9f,goal,13,1
+2019-2020,el-1k-1r32,51e5a603|cf74a709,cf74a709,51e5a603,2,1–1,Jonathan David,ce50fd99,goal,25,1
+2019-2020,el-1k-1r32,51e5a603|cf74a709,cf74a709,51e5a603,2,1–1,Justin Kluivert,4c3a6744,goal,29,2
+2019-2020,el-1k-1r32,a77c513e|e89d5a28,e89d5a28,a77c513e,1,2–1,Alan Patrick,00672021,goal,56,1
+2019-2020,el-1k-1r32,a77c513e|e89d5a28,e89d5a28,a77c513e,1,2–1,Viktor Kovalenko,9d60028d,goal,72,1
+2019-2020,el-1k-1r32,a77c513e|e89d5a28,e89d5a28,a77c513e,1,2–1,Pizzi,96094cbc,penalty_goal,66,2
+2019-2020,el-1k-1r32,a77c513e|e89d5a28,e89d5a28,a77c513e,2,3–3,Pizzi,96094cbc,goal,9,1
+2019-2020,el-1k-1r32,a77c513e|e89d5a28,e89d5a28,a77c513e,2,3–3,Rúben Dias,31c69ef1,goal,36,1
+2019-2020,el-1k-1r32,a77c513e|e89d5a28,e89d5a28,a77c513e,2,3–3,Rafa Silva,70cf63ca,goal,47,1
+2019-2020,el-1k-1r32,a77c513e|e89d5a28,e89d5a28,a77c513e,2,3–3,Rúben Dias,31c69ef1,own_goal,12,2
+2019-2020,el-1k-1r32,a77c513e|e89d5a28,e89d5a28,a77c513e,2,3–3,Taras Stepanenko,ee3519f5,goal,49,2
+2019-2020,el-1k-1r32,a77c513e|e89d5a28,e89d5a28,a77c513e,2,3–3,Alan Patrick,00672021,goal,71,2
+2019-2020,el-1k-1r32,d3d9424a|eab315a6,eab315a6,d3d9424a,1,0–3,Raoul Petretta,90f3beec,goal,16,2
+2019-2020,el-1k-1r32,d3d9424a|eab315a6,eab315a6,d3d9424a,1,0–3,Valentin Stocker,6b85f966,goal,53,2
+2019-2020,el-1k-1r32,d3d9424a|eab315a6,eab315a6,d3d9424a,1,0–3,Arthur,a820e429,goal,66,2
+2019-2020,el-1k-1r32,d3d9424a|eab315a6,eab315a6,d3d9424a,2,1–0,Fabian Frei,9fb640a8,penalty_goal,38,1
+2019-2020,el-1k-1r32,50f2a074|f0ac8ee6,f0ac8ee6,50f2a074,1,4–1,Daichi Kamada,15b287da,goal,12,1
+2019-2020,el-1k-1r32,50f2a074|f0ac8ee6,f0ac8ee6,50f2a074,1,4–1,Daichi Kamada,15b287da,goal,43,1
+2019-2020,el-1k-1r32,50f2a074|f0ac8ee6,f0ac8ee6,50f2a074,1,4–1,Daichi Kamada,15b287da,goal,53,1
+2019-2020,el-1k-1r32,50f2a074|f0ac8ee6,f0ac8ee6,50f2a074,1,4–1,Filip Kostić,b1cd37e6,goal,56,1
+2019-2020,el-1k-1r32,50f2a074|f0ac8ee6,f0ac8ee6,50f2a074,1,4–1,Hwang Hee-chan,169fd162,penalty_goal,85,2
+2019-2020,el-1k-1r32,50f2a074|f0ac8ee6,f0ac8ee6,50f2a074,2,2–2,Andreas Ulmer,1a799243,goal,10,1
+2019-2020,el-1k-1r32,50f2a074|f0ac8ee6,f0ac8ee6,50f2a074,2,2–2,Jerome Onguene,e81f0356,goal,71,1
+2019-2020,el-1k-1r32,50f2a074|f0ac8ee6,f0ac8ee6,50f2a074,2,2–2,André Silva,3effaa34,goal,30,2
+2019-2020,el-1k-1r32,50f2a074|f0ac8ee6,f0ac8ee6,50f2a074,2,2–2,André Silva,3effaa34,goal,83,2
+2019-2020,el-1k-1r32,19538871|f1e6c5f1,f1e6c5f1,19538871,1,1–1,Emmanuel Dennis,2c44a35d,goal,15,1
+2019-2020,el-1k-1r32,19538871|f1e6c5f1,f1e6c5f1,19538871,1,1–1,Anthony Martial,8b788c01,goal,36,2
+2019-2020,el-1k-1r32,19538871|f1e6c5f1,f1e6c5f1,19538871,2,5–0,Bruno Fernandes,507c7bdf,penalty_goal,27,1
+2019-2020,el-1k-1r32,19538871|f1e6c5f1,f1e6c5f1,19538871,2,5–0,Odion Ighalo,03622183,goal,34,1
+2019-2020,el-1k-1r32,19538871|f1e6c5f1,f1e6c5f1,19538871,2,5–0,Scott McTominay,d93c2511,goal,41,1
+2019-2020,el-1k-1r32,19538871|f1e6c5f1,f1e6c5f1,19538871,2,5–0,Fred,b853e0ad,goal,82,1
+2019-2020,el-1k-1r32,19538871|f1e6c5f1,f1e6c5f1,19538871,2,5–0,Fred,b853e0ad,goal,90+3,1
+2019-2020,el-1k-1r32,19538871|f1e6c5f1,f1e6c5f1,19538871,2,5–0,Simon Deli,6b6cbca4,red_card,22,2
+2019-2020,el-1k-1r32,ad2be733|ff04e205,ff04e205,ad2be733,1,1–1,Ciprian Deac,ed16a617,penalty_goal,59,1
+2019-2020,el-1k-1r32,ad2be733|ff04e205,ff04e205,ad2be733,1,1–1,Youssef En-Nesyri,04e17fd5,goal,82,2
+2019-2020,el-1k-1r32,ad2be733|ff04e205,ff04e205,ad2be733,2,0–0,Mihai Bordeianu,0fd37a3d,yellow_red_card,90+1,2
+2019-2020,el-1k-2r16,2fdb4aef|8cec06e1,2fdb4aef,8cec06e1,1,1–1,Rúben Semedo,c904f3d5,red_card,28,1
+2019-2020,el-1k-2r16,2fdb4aef|8cec06e1,2fdb4aef,8cec06e1,1,1–1,Youssef El-Arabi,c63f6e46,goal,54,1
+2019-2020,el-1k-2r16,2fdb4aef|8cec06e1,2fdb4aef,8cec06e1,1,1–1,Pedro Neto,7ba2eaa9,goal,67,2
+2019-2020,el-1k-2r16,4eaa11d7|e89d5a28,4eaa11d7,e89d5a28,1,1–2,John Brooks,e27da244,goal,48,1
+2019-2020,el-1k-2r16,4eaa11d7|e89d5a28,4eaa11d7,e89d5a28,1,1–2,Júnior Moraes,c43e5e7e,goal,16,2
+2019-2020,el-1k-2r16,4eaa11d7|e89d5a28,4eaa11d7,e89d5a28,1,1–2,Marcos Antônio,108fe016,goal,73,2
+2019-2020,el-1k-2r16,86b7acd2|c7a9f859,86b7acd2,c7a9f859,1,1–3,George Edmundson,46ff3923,goal,75,1
+2019-2020,el-1k-2r16,86b7acd2|c7a9f859,86b7acd2,c7a9f859,1,1–3,Kai Havertz,fed7cb61,penalty_goal,37,2
+2019-2020,el-1k-2r16,86b7acd2|c7a9f859,86b7acd2,c7a9f859,1,1–3,Charles Aránguiz,56413b1f,goal,67,2
+2019-2020,el-1k-2r16,86b7acd2|c7a9f859,86b7acd2,c7a9f859,1,1–3,Leon Bailey,3a233281,goal,88,2
+2019-2020,el-1k-2r16,18050b20|bff39cf5,bff39cf5,18050b20,1,1–0,Edin Višća,da1185fc,penalty_goal,88,1
+2019-2020,el-1k-2r16,19538871|d20821dd,d20821dd,19538871,1,0–5,Odion Ighalo,03622183,goal,28,2
+2019-2020,el-1k-2r16,19538871|d20821dd,d20821dd,19538871,1,0–5,Daniel James,c931d9f9,goal,58,2
+2019-2020,el-1k-2r16,19538871|d20821dd,d20821dd,19538871,1,0–5,Juan Mata,29733c72,goal,82,2
+2019-2020,el-1k-2r16,19538871|d20821dd,d20821dd,19538871,1,0–5,Mason Greenwood,58eee997,goal,90+1,2
+2019-2020,el-1k-2r16,19538871|d20821dd,d20821dd,19538871,1,0–5,Andreas Pereira,6639e500,goal,90+3,2
+2019-2020,el-1k-2r16,d3d9424a|f0ac8ee6,f0ac8ee6,d3d9424a,1,0–3,Samuele Campo,28b76e67,goal,27,2
+2019-2020,el-1k-2r16,d3d9424a|f0ac8ee6,f0ac8ee6,d3d9424a,1,0–3,Kevin Bua,a4f642c5,goal,73,2
+2019-2020,el-1k-2r16,d3d9424a|f0ac8ee6,f0ac8ee6,d3d9424a,1,0–3,Fabian Frei,9fb640a8,goal,85,2

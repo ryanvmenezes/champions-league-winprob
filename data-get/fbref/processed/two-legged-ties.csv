@@ -1126,204 +1126,234 @@ szn,stagecode,tieid,team1,team2,winner,teamid1,teamid2,winnerid,aggscore,result,
 2018-2019,el-1k-3qf,18bb7c10|d48ad4ff,Arsenal,Napoli,Arsenal,18bb7c10,d48ad4ff,18bb7c10,3–0,Arsenal won on aggregate score over two legs.,2–0,0–1
 2018-2019,el-1k-4sf,18bb7c10|dcc91a7b,Arsenal,Valencia,Arsenal,18bb7c10,dcc91a7b,18bb7c10,7–3,Arsenal won on aggregate score over two legs.,3–1,2–4
 2018-2019,el-1k-4sf,cff3d9bb|f0ac8ee6,Eint Frankfurt,Chelsea,Chelsea,f0ac8ee6,cff3d9bb,cff3d9bb,2–2,Chelsea won on penalty kicks following extra time.,1–1,1–1
-2019-2020,cl-0q-1fqr,3f53cc7a|baae133b,F91 Dudelange,Valletta,Valletta,baae133b,3f53cc7a,3f53cc7a,3–3,"Valletta won on away goals, after aggregate score was tied.",2–2,1–1
-2019-2020,cl-0q-1fqr,2aae7689|b838366a,Valur,Maribor,Maribor,b838366a,2aae7689,2aae7689,0–5,Maribor won on aggregate score over two legs.,0–3,2–0
-2019-2020,cl-0q-1fqr,c72c8787|ff04e205,Astana FK,CFR Cluj,CFR Cluj,c72c8787,ff04e205,ff04e205,2–3,CFR Cluj won on aggregate score over two legs.,1–0,3–1
-2019-2020,cl-0q-1fqr,55ff3845|ae7f2f70,Sl. Bratislava,Sutjeska Nik,Sutjeska Nik,ae7f2f70,55ff3845,55ff3845,2–2,Sutjeska Nik won on penalty kicks following extra time.,1–1,1–1
-2019-2020,cl-0q-1fqr,33afefe1|c480c810,Nõmme Kalju,Shkëndija 79,Nõmme Kalju,33afefe1,c480c810,33afefe1,2–2,"Nõmme Kalju won on away goals, after aggregate score was tied.",0–1,1–2
-2019-2020,cl-0q-1fqr,85dbecd4|b0333581,Ararat-Armenia,AIK Stockholm,AIK Stockholm,85dbecd4,b0333581,b0333581,3–4,AIK Stockholm won on aggregate score over two legs.,2–1,3–1
-2019-2020,cl-0q-1fqr,3ba2fddf|44b65410,Partizani,Qarabağ Ağdam,Qarabağ Ağdam,3ba2fddf,44b65410,44b65410,0–2,Qarabağ Ağdam won on aggregate score over two legs.,0–0,2–0
-2019-2020,cl-0q-1fqr,91cc0413|e4a9d483,Dundalk,Rīga FC,Dundalk,e4a9d483,91cc0413,e4a9d483,0–0,Dundalk won on penalty kicks following extra time.,0–0,0–0
-2019-2020,cl-0q-1fqr,abffa138|fd12ff13,The New Saints,Feronikeli,The New Saints,fd12ff13,abffa138,fd12ff13,3–2,The New Saints won on aggregate score over two legs.,2–2,0–1
-2019-2020,cl-0q-1fqr,488c6ba1|6611f992,Ferencváros,Ludogorets,Ferencváros,6611f992,488c6ba1,6611f992,5–3,Ferencváros won on aggregate score over two legs.,2–1,2–3
-2019-2020,cl-0q-1fqr,099c6eb5|9e3153f3,FK Sūduva,Red Star,Red Star,9e3153f3,099c6eb5,099c6eb5,1–2,Red Star won on aggregate score over two legs.,0–0,2–1
-2019-2020,cl-0q-1fqr,ad2649a5|b983b638,BATE,Piast Gliwice,BATE,b983b638,ad2649a5,b983b638,3–2,BATE won on aggregate score over two legs.,1–1,1–2
-2019-2020,cl-0q-1fqr,4c96013a|90e37d3a,Linfield,Rosenborg,Rosenborg,4c96013a,90e37d3a,90e37d3a,0–6,Rosenborg won on aggregate score over two legs.,0–2,4–0
-2019-2020,cl-0q-1fqr,15c5743b|d7319d80,HJK,HB,HJK,d7319d80,15c5743b,d7319d80,5–2,HJK won on aggregate score over two legs.,3–0,2–2
-2019-2020,cl-0q-1fqr,b81aa4fa|fac9957a,Sarajevo,Celtic,Celtic,fac9957a,b81aa4fa,b81aa4fa,2–5,Celtic won on aggregate score over two legs.,1–3,2–1
-2019-2020,cl-0q-1fqr,50995c1e|672ebb3d,Sheriff,Saburtalo,Saburtalo,50995c1e,672ebb3d,672ebb3d,3–4,Saburtalo won on aggregate score over two legs.,0–3,1–3
-2019-2020,cl-0q-2sqr,33afefe1|b81aa4fa,Celtic,Nõmme Kalju,Celtic,b81aa4fa,33afefe1,b81aa4fa,7–0,Celtic won on aggregate score over two legs.,5–0,0–2
-2019-2020,cl-0q-2sqr,90e37d3a|b983b638,BATE,Rosenborg,Rosenborg,b983b638,90e37d3a,90e37d3a,2–3,Rosenborg won on aggregate score over two legs.,2–1,2–0
-2019-2020,cl-0q-2sqr,2aae7689|b0333581,Maribor,AIK Stockholm,Maribor,2aae7689,b0333581,2aae7689,4–4,"Maribor won on away goals, after aggregate score was tied.",2–1,3–2
-2019-2020,cl-0q-2sqr,d3d9424a|e334d850,PSV Eindhoven,Basel,Basel,e334d850,d3d9424a,d3d9424a,4–4,"Basel won on away goals, after aggregate score was tied.",3–2,2–1
-2019-2020,cl-0q-2sqr,3f53cc7a|6611f992,Ferencváros,Valletta,Ferencváros,6611f992,3f53cc7a,6611f992,4–2,Ferencváros won on aggregate score over two legs.,3–1,1–1
-2019-2020,cl-0q-2sqr,02cd81bf|2fdb4aef,Viktoria Plzeň,Olympiacos,Olympiacos,02cd81bf,2fdb4aef,2fdb4aef,0–4,Olympiacos won on aggregate score over two legs.,0–0,4–0
-2019-2020,cl-0q-2sqr,44b65410|e4a9d483,Dundalk,Qarabağ Ağdam,Qarabağ Ağdam,e4a9d483,44b65410,44b65410,1–4,Qarabağ Ağdam won on aggregate score over two legs.,1–1,3–0
-2019-2020,cl-0q-2sqr,04c011d8|ff04e205,CFR Cluj,Maccabi TA,CFR Cluj,ff04e205,04c011d8,ff04e205,3–2,CFR Cluj won on aggregate score over two legs.,1–0,2–2
-2019-2020,cl-0q-2sqr,55ff3845|eab315a6,Sutjeska Nik,APOEL,APOEL,55ff3845,eab315a6,eab315a6,0–4,APOEL won on aggregate score over two legs.,0–1,3–0
-2019-2020,cl-0q-2sqr,099c6eb5|d7319d80,Red Star,HJK,Red Star,099c6eb5,d7319d80,099c6eb5,3–2,Red Star won on aggregate score over two legs.,2–0,2–1
-2019-2020,cl-0q-2sqr,672ebb3d|edd0d381,Saburtalo,Dinamo Zagreb,Dinamo Zagreb,672ebb3d,edd0d381,edd0d381,0–5,Dinamo Zagreb won on aggregate score over two legs.,0–2,3–0
-2019-2020,cl-0q-2sqr,18050b20|fd12ff13,The New Saints,FC Copenhagen,FC Copenhagen,fd12ff13,18050b20,18050b20,0–3,FC Copenhagen won on aggregate score over two legs.,0–2,1–0
-2019-2020,cl-0q-3tqr,5e876ee6|fa11a9cc,Krasnodar,Porto,Krasnodar,fa11a9cc,5e876ee6,fa11a9cc,3–3,"Krasnodar won on away goals, after aggregate score was tied.",0–1,2–3
-2019-2020,cl-0q-3tqr,44b65410|eab315a6,APOEL,Qarabağ Ağdam,APOEL,eab315a6,44b65410,eab315a6,3–2,APOEL won on aggregate score over two legs.,1–2,0–2
-2019-2020,cl-0q-3tqr,6611f992|edd0d381,Dinamo Zagreb,Ferencváros,Dinamo Zagreb,edd0d381,6611f992,edd0d381,5–1,Dinamo Zagreb won on aggregate score over two legs.,1–1,0–4
-2019-2020,cl-0q-3tqr,099c6eb5|18050b20,Red Star,FC Copenhagen,Red Star,099c6eb5,18050b20,099c6eb5,2–2,Red Star won on penalty kicks following extra time.,1–1,1–1
-2019-2020,cl-0q-3tqr,b81aa4fa|ff04e205,CFR Cluj,Celtic,CFR Cluj,ff04e205,b81aa4fa,ff04e205,5–4,CFR Cluj won on aggregate score over two legs.,1–1,3–4
-2019-2020,cl-0q-3tqr,19c3f8c4|5a5e7874,PAOK,Ajax,Ajax,5a5e7874,19c3f8c4,19c3f8c4,4–5,Ajax won on aggregate score over two legs.,2–2,3–2
-2019-2020,cl-0q-3tqr,c734e22f|f1e6c5f1,Club Brugge,Dynamo Kyiv,Club Brugge,f1e6c5f1,c734e22f,f1e6c5f1,4–3,Club Brugge won on aggregate score over two legs.,1–0,3–3
-2019-2020,cl-0q-3tqr,2aae7689|90e37d3a,Maribor,Rosenborg,Rosenborg,2aae7689,90e37d3a,90e37d3a,2–6,Rosenborg won on aggregate score over two legs.,1–3,3–1
-2019-2020,cl-0q-3tqr,d20821dd|d3d9424a,Basel,LASK Linz,LASK Linz,d3d9424a,d20821dd,d20821dd,2–5,LASK Linz won on aggregate score over two legs.,1–2,3–1
-2019-2020,cl-0q-3tqr,2fdb4aef|bff39cf5,Başakşehir,Olympiacos,Olympiacos,bff39cf5,2fdb4aef,2fdb4aef,0–3,Olympiacos won on aggregate score over two legs.,0–1,2–0
-2019-2020,cl-0q-4po,d20821dd|f1e6c5f1,LASK Linz,Club Brugge,Club Brugge,d20821dd,f1e6c5f1,f1e6c5f1,1–3,Club Brugge won on aggregate score over two legs.,0–1,2–1
-2019-2020,cl-0q-4po,099c6eb5|4b682260,Young Boys,Red Star,Red Star,4b682260,099c6eb5,099c6eb5,3–3,"Red Star won on away goals, after aggregate score was tied.",2–2,1–1
-2019-2020,cl-0q-4po,111cbfb1|ff04e205,CFR Cluj,Slavia Prague,Slavia Prague,ff04e205,111cbfb1,111cbfb1,0–2,Slavia Prague won on aggregate score over two legs.,0–1,1–0
-2019-2020,cl-0q-4po,19c3f8c4|eab315a6,APOEL,Ajax,Ajax,eab315a6,19c3f8c4,19c3f8c4,0–2,Ajax won on aggregate score over two legs.,0–0,2–0
-2019-2020,cl-0q-4po,2fdb4aef|fa11a9cc,Olympiacos,Krasnodar,Olympiacos,2fdb4aef,fa11a9cc,2fdb4aef,6–1,Olympiacos won on aggregate score over two legs.,4–0,1–2
-2019-2020,cl-0q-4po,90e37d3a|edd0d381,Dinamo Zagreb,Rosenborg,Dinamo Zagreb,edd0d381,90e37d3a,edd0d381,3–1,Dinamo Zagreb won on aggregate score over two legs.,2–0,1–1
-2019-2020,el-0q-0pre,75cd4ee3|78816dd0,UE Sant Julià,Europa,Europa,78816dd0,75cd4ee3,75cd4ee3,3–6,Europa won on aggregate score over two legs.,3–2,4–0
-2019-2020,el-0q-0pre,7de37644|bb780485,FC Prishtina,St. Joseph's,St. Joseph's,7de37644,bb780485,bb780485,1–3,St. Joseph's won on aggregate score over two legs.,1–1,2–0
-2019-2020,el-0q-0pre,017bcbe4|869753d6,KÍ,SP Tre Fiori,KÍ,869753d6,017bcbe4,869753d6,9–1,KÍ won on aggregate score over two legs.,5–1,0–4
-2019-2020,el-0q-0pre,448e1bb9|b0e70933,Ballymena Utd,NSÍ Runavík,Ballymena Utd,b0e70933,448e1bb9,b0e70933,2–0,Ballymena Utd won on aggregate score over two legs.,2–0,0–0
-2019-2020,el-0q-0pre,4872ca3d|ec560e72,FC Progrès,Cardiff Met,FC Progrès,ec560e72,4872ca3d,ec560e72,2–2,"FC Progrès won on away goals, after aggregate score was tied.",1–0,2–1
-2019-2020,el-0q-0pre,5a130b7c|d8760be1,Barry Town,Cliftonville,Cliftonville,d8760be1,5a130b7c,5a130b7c,0–4,Cliftonville won on aggregate score over two legs.,0–0,4–0
-2019-2020,el-0q-0pre,6de42722|b784c866,La Fiorita,Engordany,Engordany,6de42722,b784c866,b784c866,1–3,Engordany won on aggregate score over two legs.,0–1,2–1
-2019-2020,el-0q-1fqr,5130dd3e|e6232d10,Alashkert,Makedonija GP,Alashkert,e6232d10,5130dd3e,e6232d10,6–1,Alashkert won on aggregate score over two legs.,3–1,0–3
-2019-2020,el-0q-1fqr,8c6383a1|f1849f98,Jeunesse Esch,Tobol Qostanaı,Jeunesse Esch,f1849f98,8c6383a1,f1849f98,1–1,"Jeunesse Esch won on away goals, after aggregate score was tied.",0–0,1–1
-2019-2020,el-0q-1fqr,49a61d12|869753d6,Riteriai,KÍ,KÍ,49a61d12,869753d6,869753d6,1–1,"KÍ won on away goals, after aggregate score was tied.",1–1,0–0
-2019-2020,el-0q-1fqr,01689b1a|ae96366c,AÉK Lárnaka,Petrocub,AÉK Lárnaka,01689b1a,ae96366c,01689b1a,2–0,AÉK Lárnaka won on aggregate score over two legs.,1–0,0–1
-2019-2020,el-0q-1fqr,7795f801|aed59852,FCSB,Milsami,FCSB,aed59852,7795f801,aed59852,4–1,FCSB won on aggregate score over two legs.,2–0,1–2
-2019-2020,el-0q-1fqr,2b924bc5|869a3b6a,Ventspils,Teuta Durrës,Ventspils,869a3b6a,2b924bc5,869a3b6a,3–1,Ventspils won on aggregate score over two legs.,3–0,1–0
-2019-2020,el-0q-1fqr,b784c866|e2fa043d,Dinamo Tbilisi,Engordany,Dinamo Tbilisi,e2fa043d,b784c866,e2fa043d,7–0,Dinamo Tbilisi won on aggregate score over two legs.,6–0,0–1
-2019-2020,el-0q-1fqr,584d189a|768fb565,Široki Brijeg,Qaırat Almaty,Qaırat Almaty,584d189a,768fb565,768fb565,2–4,Qaırat Almaty won on aggregate score over two legs.,1–2,2–1
-2019-2020,el-0q-1fqr,187832f5|43a5e45a,Maccabi Haifa,NŠ Mura,Maccabi Haifa,187832f5,43a5e45a,187832f5,5–2,Maccabi Haifa won on aggregate score over two legs.,2–0,2–3
-2019-2020,el-0q-1fqr,8dc7bf66|cbde2682,CSKA Sofia,Titograd,CSKA Sofia,cbde2682,8dc7bf66,cbde2682,4–0,CSKA Sofia won on aggregate score over two legs.,4–0,0–0
-2019-2020,el-0q-1fqr,49e1cbfd|8ac05d3e,Balzan,Domžale,Domžale,49e1cbfd,8ac05d3e,8ac05d3e,3–5,Domžale won on aggregate score over two legs.,3–4,1–0
-2019-2020,el-0q-1fqr,133013ee|7a40cd8b,Laçi,Hapoel BS,Hapoel BS,7a40cd8b,133013ee,133013ee,1–2,Hapoel BS won on aggregate score over two legs.,1–1,1–0
-2019-2020,el-0q-1fqr,03022534|7416e9cd,Pyunik,Shkupi Skopje,Pyunik,03022534,7416e9cd,03022534,5–4,Pyunik won on aggregate score over two legs.,3–3,1–2
-2019-2020,el-0q-1fqr,78b01d1b|d0ab5e26,Speranţa,Neftçi,Neftçi,78b01d1b,d0ab5e26,d0ab5e26,0–9,Neftçi won on aggregate score over two legs.,0–3,6–0
-2019-2020,el-0q-1fqr,356c100c|3a7a27c6,MFK Ružomberok,Levski Sofia,Levski Sofia,356c100c,3a7a27c6,3a7a27c6,0–4,Levski Sofia won on aggregate score over two legs.,0–2,2–0
-2019-2020,el-0q-1fqr,e24ac92e|f1e85b1e,Debrecen,Kukësi,Debrecen,e24ac92e,f1e85b1e,e24ac92e,4–1,Debrecen won on aggregate score over two legs.,3–0,1–1
-2019-2020,el-0q-1fqr,5a130b7c|f4bbcd04,Cliftonville,Haugesund,Haugesund,5a130b7c,f4bbcd04,f4bbcd04,1–6,Haugesund won on aggregate score over two legs.,0–1,5–1
-2019-2020,el-0q-1fqr,1d0836d6|8a814429,St. Patrick's,Norrköping,Norrköping,8a814429,1d0836d6,1d0836d6,1–4,Norrköping won on aggregate score over two legs.,0–2,2–1
-2019-2020,el-0q-1fqr,a338349f|bda134f7,Zeta,Fehérvár,Fehérvár,bda134f7,a338349f,a338349f,1–5,Fehérvár won on aggregate score over two legs.,1–5,0–0
-2019-2020,el-0q-1fqr,4a29fb1c|b1b46fc3,Breiðablik,Vaduz,Vaduz,4a29fb1c,b1b46fc3,b1b46fc3,1–2,Vaduz won on aggregate score over two legs.,0–0,2–1
-2019-2020,el-0q-1fqr,056a9b27|0b6cd7c6,Crusaders,B36,Crusaders,0b6cd7c6,056a9b27,0b6cd7c6,5–2,Crusaders won on aggregate score over two legs.,2–0,2–3
-2019-2020,el-0q-1fqr,7c90642e|8ae75624,Olimpija Ljubl,FK Rīgas FS,Olimpija Ljubl,8ae75624,7c90642e,8ae75624,4–3,Olimpija Ljubl won on aggregate score over two legs.,2–3,0–2
-2019-2020,el-0q-1fqr,8a9775ad|f4f98e1c,Narva Trans,Budućnost,Budućnost,8a9775ad,f4f98e1c,f4f98e1c,1–6,Budućnost won on aggregate score over two legs.,0–2,4–1
-2019-2020,el-0q-1fqr,3b8af0c2|8dff1828,Kauno Žalgiris,Apollon,Apollon,3b8af0c2,8dff1828,8dff1828,0–6,Apollon won on aggregate score over two legs.,0–2,4–0
-2019-2020,el-0q-1fqr,6777e16d|8ab497d5,Gzira United,Hajduk Split,Gzira United,8ab497d5,6777e16d,8ab497d5,3–3,"Gzira United won on away goals, after aggregate score was tied.",0–2,1–3
-2019-2020,el-0q-1fqr,1eebf7c3|6642b67e,Səbail FK,U Craiova,U Craiova,6642b67e,1eebf7c3,1eebf7c3,4–6,U Craiova won on aggregate score over two legs.,2–3,3–2
-2019-2020,el-0q-1fqr,aa065002|e839c85b,Fola Esch,Chikhura,Chikhura,aa065002,e839c85b,e839c85b,2–4,Chikhura won on aggregate score over two legs.,1–2,2–1
-2019-2020,el-0q-1fqr,4c6489de|8cac5dfa,Honvéd,Žalgiris,Honvéd,8cac5dfa,4c6489de,8cac5dfa,4–2,Honvéd won on aggregate score over two legs.,3–1,1–1
-2019-2020,el-0q-1fqr,0faf8f33|7517d495,Soligorsk,Hibernians,Soligorsk,7517d495,0faf8f33,7517d495,2–0,Soligorsk won on aggregate score over two legs.,1–0,0–1
-2019-2020,el-0q-1fqr,7e4fae05|c16f1fe7,Bijeljina,Spartak Trnava,Spartak Trnava,7e4fae05,c16f1fe7,c16f1fe7,2–2,Spartak Trnava won on penalty kicks following extra time.,2–0,2–0
-2019-2020,el-0q-1fqr,3f2bd811|e6f63673,KuPS,FK Vitebsk,KuPS,e6f63673,3f2bd811,e6f63673,3–1,KuPS won on aggregate score over two legs.,2–0,1–1
-2019-2020,el-0q-1fqr,6e7c9b0b|b11bfada,DAC 1904,Cracovia,DAC 1904,b11bfada,6e7c9b0b,b11bfada,3–3,"DAC 1904 won on away goals, after aggregate score was tied.",1–1,2–2
-2019-2020,el-0q-1fqr,231f4a61|38bfcdf5,Ordabasy,Torp Kutaisi,Ordabasy,38bfcdf5,231f4a61,38bfcdf5,3–0,Ordabasy won on aggregate score over two legs.,1–0,0–2
-2019-2020,el-0q-1fqr,4936d1b7|ec560e72,Cork City FC,FC Progrès,FC Progrès,4936d1b7,ec560e72,ec560e72,2–3,FC Progrès won on aggregate score over two legs.,0–2,1–2
-2019-2020,el-0q-1fqr,ab75e049|e9fa2e8b,Brøndby,Inter Turku,Brøndby,ab75e049,e9fa2e8b,ab75e049,4–3,Brøndby won on aggregate score over two legs.,4–1,2–0
-2019-2020,el-0q-1fqr,4fea542b|8bbab7cf,Aberdeen,RoPS,Aberdeen,8bbab7cf,4fea542b,8bbab7cf,4–2,Aberdeen won on aggregate score over two legs.,2–1,1–2
-2019-2020,el-0q-1fqr,112c9642|f13065a8,Stjarnan,FCI Levadia,Stjarnan,f13065a8,112c9642,f13065a8,4–4,"Stjarnan won on away goals, after aggregate score was tied.",2–1,3–2
-2019-2020,el-0q-1fqr,86b7acd2|bb780485,St. Joseph's,Rangers,Rangers,bb780485,86b7acd2,86b7acd2,0–10,Rangers won on aggregate score over two legs.,0–4,6–0
-2019-2020,el-0q-1fqr,42e847bc|f0e1ca42,Čukarički,Banants,Čukarički,42e847bc,f0e1ca42,42e847bc,8–0,Čukarički won on aggregate score over two legs.,3–0,0–5
-2019-2020,el-0q-1fqr,719d83f1|72804f2b,Flora,Radnički Niš,Flora,719d83f1,72804f2b,719d83f1,4–2,Flora won on aggregate score over two legs.,2–0,2–2
-2019-2020,el-0q-1fqr,25f1fd26|7d326cbe,Connah's Quay,Kilmarnock,Connah's Quay,7d326cbe,25f1fd26,7d326cbe,3–2,Connah's Quay won on aggregate score over two legs.,1–2,0–2
-2019-2020,el-0q-1fqr,aeae4fe1|f082c4f3,Brann,Shamrock Rov,Shamrock Rov,aeae4fe1,f082c4f3,f082c4f3,3–4,Shamrock Rov won on aggregate score over two legs.,2–2,2–1
-2019-2020,el-0q-1fqr,75cd4ee3|a73408a7,Europa,Legia Warsaw,Legia Warsaw,75cd4ee3,a73408a7,a73408a7,0–3,Legia Warsaw won on aggregate score over two legs.,0–0,3–0
-2019-2020,el-0q-1fqr,2a6cfcb2|99875d32,Akad Pandev,Zrinjski,Zrinjski,99875d32,2a6cfcb2,2a6cfcb2,0–6,Zrinjski won on aggregate score over two legs.,0–3,3–0
-2019-2020,el-0q-1fqr,b0e70933|f3d8c8b9,Malmö,Ballymena Utd,Malmö,f3d8c8b9,b0e70933,f3d8c8b9,11–0,Malmö won on aggregate score over two legs.,7–0,0–4
-2019-2020,el-0q-1fqr,54f29d7b|e2a78c9d,FK Liepāja,Dinamo Minsk,FK Liepāja,54f29d7b,e2a78c9d,54f29d7b,3–2,FK Liepāja won on aggregate score over two legs.,1–1,1–2
-2019-2020,el-0q-1fqr,174bd5a0|ae156985,Molde,KR Reykjavík,Molde,174bd5a0,ae156985,174bd5a0,7–1,Molde won on aggregate score over two legs.,7–1,0–0
-2019-2020,el-0q-2sqr,651288fd|edddfa63,Aris,AE Lemesós,Aris,edddfa63,651288fd,edddfa63,1–0,Aris won on aggregate score over two legs.,0–0,0–1
-2019-2020,el-0q-2sqr,a338349f|b1b46fc3,Fehérvár,Vaduz,Vaduz,a338349f,b1b46fc3,b1b46fc3,1–2,"Vaduz won on aggregate score over two legs, after extra time.",1–0,2–0
-2019-2020,el-0q-2sqr,488c6ba1|b838366a,Valur,Ludogorets,Ludogorets,b838366a,488c6ba1,488c6ba1,1–5,Ludogorets won on aggregate score over two legs.,1–1,4–0
-2019-2020,el-0q-2sqr,01689b1a|3a7a27c6,AÉK Lárnaka,Levski Sofia,AÉK Lárnaka,01689b1a,3a7a27c6,01689b1a,7–0,AÉK Lárnaka won on aggregate score over two legs.,3–0,0–4
-2019-2020,el-0q-2sqr,8dff1828|f082c4f3,Shamrock Rov,Apollon,Apollon,f082c4f3,8dff1828,8dff1828,3–4,"Apollon won on aggregate score over two legs, after extra time.",2–1,3–1
-2019-2020,el-0q-2sqr,31aa0dd4|7517d495,Soligorsk,Esbjerg,Soligorsk,7517d495,31aa0dd4,7517d495,2–0,Soligorsk won on aggregate score over two legs.,2–0,0–0
-2019-2020,el-0q-2sqr,c16f1fe7|e0242ef1,Loko Plovdiv,Spartak Trnava,Loko Plovdiv,e0242ef1,c16f1fe7,e0242ef1,3–3,"Loko Plovdiv won on away goals, after aggregate score was tied.",2–0,3–1
-2019-2020,el-0q-2sqr,7d326cbe|dde3e804,Connah's Quay,Partizan,Partizan,7d326cbe,dde3e804,dde3e804,0–4,Partizan won on aggregate score over two legs.,0–1,3–0
-2019-2020,el-0q-2sqr,174bd5a0|42e847bc,Molde,Čukarički,Molde,174bd5a0,42e847bc,174bd5a0,3–1,Molde won on aggregate score over two legs.,0–0,1–3
-2019-2020,el-0q-2sqr,a73408a7|e6f63673,Legia Warsaw,KuPS,Legia Warsaw,a73408a7,e6f63673,a73408a7,1–0,Legia Warsaw won on aggregate score over two legs.,1–0,0–0
-2019-2020,el-0q-2sqr,4cc7a87b|8ae75624,Y. Malatyaspor,Olimpija Ljubl,Y. Malatyaspor,4cc7a87b,8ae75624,4cc7a87b,3–2,Y. Malatyaspor won on aggregate score over two legs.,2–2,0–1
-2019-2020,el-0q-2sqr,133013ee|768fb565,Hapoel BS,Qaırat Almaty,Hapoel BS,133013ee,768fb565,133013ee,3–1,Hapoel BS won on aggregate score over two legs.,2–0,1–1
-2019-2020,el-0q-2sqr,03022534|8424bb18,Pyunik,Jablonec,Pyunik,03022534,8424bb18,03022534,2–1,Pyunik won on aggregate score over two legs.,2–1,0–0
-2019-2020,el-0q-2sqr,91cc0413|ad2649a5,Piast Gliwice,Rīga FC,Rīga FC,ad2649a5,91cc0413,91cc0413,4–4,"Rīga FC won on away goals, after aggregate score was tied.",3–2,2–1
-2019-2020,el-0q-2sqr,38bfcdf5|70c92f33,Mladá Boleslav,Ordabasy,Mladá Boleslav,70c92f33,38bfcdf5,70c92f33,4–3,Mladá Boleslav won on aggregate score over two legs.,1–1,2–3
-2019-2020,el-0q-2sqr,869753d6|d423a378,Luzern,KÍ,Luzern,d423a378,869753d6,d423a378,2–0,Luzern won on aggregate score over two legs.,1–0,0–1
-2019-2020,el-0q-2sqr,187832f5|c0d3eab4,Strasbourg,Maccabi Haifa,Strasbourg,c0d3eab4,187832f5,c0d3eab4,4–3,Strasbourg won on aggregate score over two legs.,3–1,2–1
-2019-2020,el-0q-2sqr,a8661628|f13065a8,Espanyol,Stjarnan,Espanyol,a8661628,f13065a8,a8661628,7–1,Espanyol won on aggregate score over two legs.,4–0,1–3
-2019-2020,el-0q-2sqr,4fffe901|51e5a603,Gent,Viitorul,Gent,51e5a603,4fffe901,51e5a603,7–5,Gent won on aggregate score over two legs.,6–3,2–1
-2019-2020,el-0q-2sqr,0b6cd7c6|8cec06e1,Wolves,Crusaders,Wolves,8cec06e1,0b6cd7c6,8cec06e1,6–1,Wolves won on aggregate score over two legs.,2–0,1–4
-2019-2020,el-0q-2sqr,946a30cb|f4f98e1c,Budućnost,Zorya Luhansk,Zorya Luhansk,f4f98e1c,946a30cb,946a30cb,1–4,Zorya Luhansk won on aggregate score over two legs.,1–3,1–0
-2019-2020,el-0q-2sqr,3986b791|8774e267,AZ Alkmaar,Häcken,AZ Alkmaar,3986b791,8774e267,3986b791,3–0,AZ Alkmaar won on aggregate score over two legs.,0–0,0–3
-2019-2020,el-0q-2sqr,a1962466|e2fa043d,Qəbələ,Dinamo Tbilisi,Dinamo Tbilisi,a1962466,e2fa043d,e2fa043d,0–5,Dinamo Tbilisi won on aggregate score over two legs.,0–2,3–0
-2019-2020,el-0q-2sqr,869a3b6a|8ab497d5,Ventspils,Gzira United,Ventspils,869a3b6a,8ab497d5,869a3b6a,6–2,Ventspils won on aggregate score over two legs.,4–0,2–2
-2019-2020,el-0q-2sqr,1d0836d6|54f29d7b,Norrköping,FK Liepāja,Norrköping,1d0836d6,54f29d7b,1d0836d6,3–0,Norrköping won on aggregate score over two legs.,2–0,0–1
-2019-2020,el-0q-2sqr,abffa138|ae7f2f70,Sl. Bratislava,Feronikeli,Sl. Bratislava,ae7f2f70,abffa138,ae7f2f70,4–1,Sl. Bratislava won on aggregate score over two legs.,2–1,0–2
-2019-2020,el-0q-2sqr,57d14db5|cbde2682,CSKA Sofia,Osijek,CSKA Sofia,cbde2682,57d14db5,cbde2682,1–1,CSKA Sofia won on penalty kicks following extra time.,1–0,1–0
-2019-2020,el-0q-2sqr,0bca3a9e|d0ab5e26,Arsenal Tula,Neftçi,Neftçi,0bca3a9e,d0ab5e26,d0ab5e26,0–4,Neftçi won on aggregate score over two legs.,0–1,3–0
-2019-2020,el-0q-2sqr,9549dc95|c72c8787,Santa Coloma,Astana FK,Astana FK,9549dc95,c72c8787,c72c8787,1–4,Astana FK won on aggregate score over two legs.,0–0,4–1
-2019-2020,el-0q-2sqr,3ba2fddf|50995c1e,Partizani,Sheriff,Sheriff,3ba2fddf,50995c1e,50995c1e,1–2,Sheriff won on aggregate score over two legs.,0–1,1–1
-2019-2020,el-0q-2sqr,86b7acd2|ec560e72,Rangers,FC Progrès,Rangers,86b7acd2,ec560e72,86b7acd2,2–0,Rangers won on aggregate score over two legs.,2–0,0–0
-2019-2020,el-0q-2sqr,1eebf7c3|8cac5dfa,Honvéd,U Craiova,U Craiova,8cac5dfa,1eebf7c3,1eebf7c3,0–0,U Craiova won on penalty kicks following extra time.,0–0,0–0
-2019-2020,el-0q-2sqr,aed59852|e6232d10,Alashkert,FCSB,FCSB,e6232d10,aed59852,aed59852,3–5,FCSB won on aggregate score over two legs.,0–3,2–3
-2019-2020,el-0q-2sqr,3f4fe568|f4bbcd04,Haugesund,Sturm Graz,Haugesund,f4bbcd04,3f4fe568,f4bbcd04,3–2,Haugesund won on aggregate score over two legs.,2–0,2–1
-2019-2020,el-0q-2sqr,5d36c8f0|ab75e049,Lechia Gdańsk,Brøndby,Brøndby,5d36c8f0,ab75e049,ab75e049,3–5,"Brøndby won on aggregate score over two legs, after extra time.",2–1,4–1
-2019-2020,el-0q-2sqr,105360fe|e24ac92e,Torino,Debrecen,Torino,105360fe,e24ac92e,105360fe,7–1,Torino won on aggregate score over two legs.,3–0,1–4
-2019-2020,el-0q-2sqr,9e3153f3|aaffe678,Tre Penne,FK Sūduva,FK Sūduva,aaffe678,9e3153f3,9e3153f3,0–10,FK Sūduva won on aggregate score over two legs.,0–5,5–0
-2019-2020,el-0q-2sqr,3f319bc9|f1849f98,Jeunesse Esch,Vitória,Vitória,f1849f98,3f319bc9,3f319bc9,0–5,Vitória won on aggregate score over two legs.,0–1,4–0
-2019-2020,el-0q-2sqr,8ac05d3e|f3d8c8b9,Domžale,Malmö,Malmö,8ac05d3e,f3d8c8b9,f3d8c8b9,4–5,Malmö won on aggregate score over two legs.,2–2,3–2
-2019-2020,el-0q-2sqr,2a428619|2a6cfcb2,Utrecht,Zrinjski,Zrinjski,2a428619,2a6cfcb2,2a6cfcb2,2–3,"Zrinjski won on aggregate score over two legs, after extra time.",1–1,2–1
-2019-2020,el-0q-2sqr,b11bfada|c9607f44,DAC 1904,Atromitos,Atromitos,b11bfada,c9607f44,c9607f44,3–5,Atromitos won on aggregate score over two legs.,1–2,3–2
-2019-2020,el-0q-2sqr,8bbab7cf|e839c85b,Chikhura,Aberdeen,Aberdeen,e839c85b,8bbab7cf,8bbab7cf,1–6,Aberdeen won on aggregate score over two legs.,1–1,5–0
-2019-2020,el-0q-2sqr,2d3c1b6d|85dbecd4,Ararat-Armenia,Lincoln,Ararat-Armenia,85dbecd4,2d3c1b6d,85dbecd4,4–1,Ararat-Armenia won on aggregate score over two legs.,2–0,1–2
-2019-2020,el-0q-2sqr,baae133b|c480c810,Shkëndija 79,F91 Dudelange,F91 Dudelange,c480c810,baae133b,baae133b,2–3,F91 Dudelange won on aggregate score over two legs.,1–2,1–1
-2019-2020,el-0q-2sqr,719d83f1|f0ac8ee6,Flora,Eint Frankfurt,Eint Frankfurt,719d83f1,f0ac8ee6,f0ac8ee6,2–4,Eint Frankfurt won on aggregate score over two legs.,1–2,2–1
-2019-2020,el-0q-2sqr,15c5743b|4c96013a,HB,Linfield,Linfield,15c5743b,4c96013a,4c96013a,2–3,Linfield won on aggregate score over two legs.,2–2,1–0
-2019-2020,el-0q-3tqr,8dff1828|ee0bccc5,Austria Wien,Apollon,Apollon,ee0bccc5,8dff1828,8dff1828,2–5,Apollon won on aggregate score over two legs.,1–2,3–1
-2019-2020,el-0q-3tqr,c0d3eab4|e0242ef1,Loko Plovdiv,Strasbourg,Strasbourg,e0242ef1,c0d3eab4,c0d3eab4,0–2,Strasbourg won on aggregate score over two legs.,0–1,1–0
-2019-2020,el-0q-3tqr,3c4fb635|86b7acd2,Midtjylland,Rangers,Rangers,3c4fb635,86b7acd2,86b7acd2,3–7,Rangers won on aggregate score over two legs.,2–4,3–1
-2019-2020,el-0q-3tqr,946a30cb|cbde2682,CSKA Sofia,Zorya Luhansk,Zorya Luhansk,cbde2682,946a30cb,946a30cb,1–2,Zorya Luhansk won on aggregate score over two legs.,1–1,1–0
-2019-2020,el-0q-3tqr,174bd5a0|edddfa63,Molde,Aris,Molde,174bd5a0,edddfa63,174bd5a0,4–3,"Molde won on aggregate score over two legs, after extra time.",3–0,3–1
-2019-2020,el-0q-3tqr,672ebb3d|85dbecd4,Ararat-Armenia,Saburtalo,Ararat-Armenia,85dbecd4,672ebb3d,85dbecd4,3–2,Ararat-Armenia won on aggregate score over two legs.,1–2,0–2
-2019-2020,el-0q-3tqr,02cd81bf|c2e6b53b,Antwerp,Viktoria Plzeň,Antwerp,c2e6b53b,02cd81bf,c2e6b53b,2–2,"Antwerp won on away goals, after aggregate score was tied.",1–0,2–1
-2019-2020,el-0q-3tqr,c8ad3091|ecb862be,Sparta Prague,Trabzonspor,Trabzonspor,ecb862be,c8ad3091,c8ad3091,3–4,Trabzonspor won on aggregate score over two legs.,2–2,2–1
-2019-2020,el-0q-3tqr,3f319bc9|869a3b6a,Ventspils,Vitória,Vitória,869a3b6a,3f319bc9,3f319bc9,0–9,Vitória won on aggregate score over two legs.,0–3,6–0
-2019-2020,el-0q-3tqr,a73408a7|c9607f44,Legia Warsaw,Atromitos,Legia Warsaw,a73408a7,c9607f44,a73408a7,2–0,Legia Warsaw won on aggregate score over two legs.,0–0,0–2
-2019-2020,el-0q-3tqr,1eebf7c3|d5348c80,U Craiova,AEK Athens,AEK Athens,1eebf7c3,d5348c80,d5348c80,1–3,AEK Athens won on aggregate score over two legs.,0–2,1–1
-2019-2020,el-0q-3tqr,105360fe|7517d495,Torino,Soligorsk,Torino,105360fe,7517d495,105360fe,6–1,Torino won on aggregate score over two legs.,5–0,1–1
-2019-2020,el-0q-3tqr,69d84c29|ab75e049,Brøndby,Braga,Braga,ab75e049,69d84c29,69d84c29,3–7,Braga won on aggregate score over two legs.,2–4,3–1
-2019-2020,el-0q-3tqr,03022534|8cec06e1,Pyunik,Wolves,Wolves,03022534,8cec06e1,8cec06e1,0–8,Wolves won on aggregate score over two legs.,0–4,4–0
-2019-2020,el-0q-3tqr,e2fa043d|fb4ca611,Feyenoord,Dinamo Tbilisi,Feyenoord,fb4ca611,e2fa043d,fb4ca611,5–1,Feyenoord won on aggregate score over two legs.,4–0,1–1
-2019-2020,el-0q-3tqr,3f53cc7a|c72c8787,Astana FK,Valletta,Astana FK,c72c8787,3f53cc7a,c72c8787,9–1,Astana FK won on aggregate score over two legs.,5–1,0–4
-2019-2020,el-0q-3tqr,a8661628|d423a378,Luzern,Espanyol,Espanyol,d423a378,a8661628,a8661628,0–6,Espanyol won on aggregate score over two legs.,0–3,3–0
-2019-2020,el-0q-3tqr,25dbe099|8bbab7cf,Rijeka,Aberdeen,Rijeka,25dbe099,8bbab7cf,25dbe099,4–0,Rijeka won on aggregate score over two legs.,2–0,0–2
-2019-2020,el-0q-3tqr,70c92f33|aed59852,FCSB,Mladá Boleslav,FCSB,aed59852,70c92f33,aed59852,1–0,FCSB won on aggregate score over two legs.,0–0,0–1
-2019-2020,el-0q-3tqr,04c011d8|9e3153f3,Maccabi TA,FK Sūduva,FK Sūduva,04c011d8,9e3153f3,9e3153f3,2–4,FK Sūduva won on aggregate score over two legs.,1–2,2–1
-2019-2020,el-0q-3tqr,e334d850|f4bbcd04,Haugesund,PSV Eindhoven,PSV Eindhoven,f4bbcd04,e334d850,e334d850,0–1,PSV Eindhoven won on aggregate score over two legs.,0–1,0–0
-2019-2020,el-0q-3tqr,488c6ba1|fd12ff13,Ludogorets,The New Saints,Ludogorets,488c6ba1,fd12ff13,488c6ba1,9–0,Ludogorets won on aggregate score over two legs.,5–0,0–4
-2019-2020,el-0q-3tqr,4cc7a87b|dde3e804,Partizan,Y. Malatyaspor,Partizan,dde3e804,4cc7a87b,dde3e804,3–2,Partizan won on aggregate score over two legs.,3–1,1–0
-2019-2020,el-0q-3tqr,ae7f2f70|e4a9d483,Sl. Bratislava,Dundalk,Sl. Bratislava,ae7f2f70,e4a9d483,ae7f2f70,4–1,Sl. Bratislava won on aggregate score over two legs.,1–0,1–3
-2019-2020,el-0q-3tqr,2a6cfcb2|f3d8c8b9,Malmö,Zrinjski,Malmö,f3d8c8b9,2a6cfcb2,f3d8c8b9,3–1,Malmö won on aggregate score over two legs.,3–0,1–0
-2019-2020,el-0q-3tqr,8c635914|9ae758c2,Thun,Spartak Moscow,Spartak Moscow,9ae758c2,8c635914,8c635914,3–5,Spartak Moscow won on aggregate score over two legs.,2–3,2–1
-2019-2020,el-0q-3tqr,1040e0f7|d0ab5e26,Neftçi,Bnei Yehuda TA,Bnei Yehuda TA,d0ab5e26,1040e0f7,1040e0f7,3–4,Bnei Yehuda TA won on aggregate score over two legs.,2–2,2–1
-2019-2020,el-0q-3tqr,4c96013a|55ff3845,Sutjeska Nik,Linfield,Linfield,55ff3845,4c96013a,4c96013a,3–5,Linfield won on aggregate score over two legs.,1–2,3–2
-2019-2020,el-0q-3tqr,b1b46fc3|f0ac8ee6,Vaduz,Eint Frankfurt,Eint Frankfurt,b1b46fc3,f0ac8ee6,f0ac8ee6,0–6,Eint Frankfurt won on aggregate score over two legs.,0–5,1–0
-2019-2020,el-0q-3tqr,33afefe1|baae133b,F91 Dudelange,Nõmme Kalju,F91 Dudelange,baae133b,33afefe1,baae133b,4–1,F91 Dudelange won on aggregate score over two legs.,3–1,0–1
-2019-2020,el-0q-3tqr,b983b638|fac9957a,Sarajevo,BATE,BATE,fac9957a,b983b638,b983b638,1–2,BATE won on aggregate score over two legs.,1–2,0–0
-2019-2020,el-0q-3tqr,3986b791|42b37a13,FC Mariupol,AZ Alkmaar,AZ Alkmaar,42b37a13,3986b791,3986b791,0–4,AZ Alkmaar won on aggregate score over two legs.,0–0,4–0
-2019-2020,el-0q-3tqr,91cc0413|d7319d80,Rīga FC,HJK,Rīga FC,91cc0413,d7319d80,91cc0413,3–3,"Rīga FC won on away goals, after aggregate score was tied.",1–1,2–2
-2019-2020,el-0q-3tqr,133013ee|1d0836d6,Norrköping,Hapoel BS,Hapoel BS,1d0836d6,133013ee,133013ee,2–4,Hapoel BS won on aggregate score over two legs.,1–1,3–1
-2019-2020,el-0q-3tqr,50995c1e|b0333581,Sheriff,AIK Stockholm,AIK Stockholm,50995c1e,b0333581,b0333581,2–3,AIK Stockholm won on aggregate score over two legs.,1–2,1–1
-2019-2020,el-0q-3tqr,01689b1a|51e5a603,AÉK Lárnaka,Gent,Gent,01689b1a,51e5a603,51e5a603,1–4,Gent won on aggregate score over two legs.,1–1,3–0
-2019-2020,el-0q-4po,25dbe099|51e5a603,Gent,Rijeka,Gent,51e5a603,25dbe099,51e5a603,3–2,Gent won on aggregate score over two legs.,2–1,1–1
-2019-2020,el-0q-4po,105360fe|8cec06e1,Torino,Wolves,Wolves,105360fe,8cec06e1,8cec06e1,3–5,Wolves won on aggregate score over two legs.,2–3,2–1
-2019-2020,el-0q-4po,86b7acd2|a73408a7,Legia Warsaw,Rangers,Rangers,a73408a7,86b7acd2,86b7acd2,0–1,Rangers won on aggregate score over two legs.,0–0,1–0
-2019-2020,el-0q-4po,3f319bc9|aed59852,FCSB,Vitória,Vitória,aed59852,3f319bc9,3f319bc9,0–1,Vitória won on aggregate score over two legs.,0–0,1–0
-2019-2020,el-0q-4po,133013ee|fb4ca611,Feyenoord,Hapoel BS,Feyenoord,fb4ca611,133013ee,fb4ca611,6–0,Feyenoord won on aggregate score over two legs.,3–0,0–3
-2019-2020,el-0q-4po,8dff1828|e334d850,PSV Eindhoven,Apollon,PSV Eindhoven,e334d850,8dff1828,e334d850,7–0,PSV Eindhoven won on aggregate score over two legs.,3–0,0–4
-2019-2020,el-0q-4po,44b65410|4c96013a,Linfield,Qarabağ Ağdam,Qarabağ Ağdam,4c96013a,44b65410,44b65410,4–4,"Qarabağ Ağdam won on away goals, after aggregate score was tied.",3–2,2–1
-2019-2020,el-0q-4po,174bd5a0|dde3e804,Partizan,Molde,Partizan,dde3e804,174bd5a0,dde3e804,3–2,Partizan won on aggregate score over two legs.,2–1,1–1
-2019-2020,el-0q-4po,946a30cb|a8661628,Espanyol,Zorya Luhansk,Espanyol,a8661628,946a30cb,a8661628,5–3,Espanyol won on aggregate score over two legs.,3–1,2–2
-2019-2020,el-0q-4po,5a5e7874|ae7f2f70,Sl. Bratislava,PAOK,Sl. Bratislava,ae7f2f70,5a5e7874,ae7f2f70,3–3,"Sl. Bratislava won on away goals, after aggregate score was tied.",1–0,3–2
-2019-2020,el-0q-4po,18050b20|91cc0413,FC Copenhagen,Rīga FC,FC Copenhagen,18050b20,91cc0413,18050b20,3–2,FC Copenhagen won on aggregate score over two legs.,3–1,1–0
-2019-2020,el-0q-4po,b983b638|c72c8787,Astana FK,BATE,Astana FK,c72c8787,b983b638,c72c8787,3–2,Astana FK won on aggregate score over two legs.,3–0,2–0
-2019-2020,el-0q-4po,b0333581|b81aa4fa,Celtic,AIK Stockholm,Celtic,b81aa4fa,b0333581,b81aa4fa,6–1,Celtic won on aggregate score over two legs.,2–0,1–4
-2019-2020,el-0q-4po,6611f992|9e3153f3,FK Sūduva,Ferencváros,Ferencváros,9e3153f3,6611f992,6611f992,2–4,Ferencváros won on aggregate score over two legs.,0–0,4–2
-2019-2020,el-0q-4po,69d84c29|8c635914,Braga,Spartak Moscow,Braga,69d84c29,8c635914,69d84c29,3–1,Braga won on aggregate score over two legs.,1–0,1–2
-2019-2020,el-0q-4po,2aae7689|488c6ba1,Ludogorets,Maribor,Ludogorets,488c6ba1,2aae7689,488c6ba1,2–2,"Ludogorets won on away goals, after aggregate score was tied.",0–0,2–2
-2019-2020,el-0q-4po,c0d3eab4|f0ac8ee6,Strasbourg,Eint Frankfurt,Eint Frankfurt,c0d3eab4,f0ac8ee6,f0ac8ee6,1–3,Eint Frankfurt won on aggregate score over two legs.,1–0,3–0
-2019-2020,el-0q-4po,1040e0f7|f3d8c8b9,Malmö,Bnei Yehuda TA,Malmö,f3d8c8b9,1040e0f7,f3d8c8b9,4–0,Malmö won on aggregate score over two legs.,3–0,0–1
-2019-2020,el-0q-4po,85dbecd4|baae133b,Ararat-Armenia,F91 Dudelange,F91 Dudelange,85dbecd4,baae133b,baae133b,3–3,F91 Dudelange won on penalty kicks following extra time.,2–1,2–1
-2019-2020,el-0q-4po,3986b791|c2e6b53b,AZ Alkmaar,Antwerp,AZ Alkmaar,3986b791,c2e6b53b,3986b791,5–2,"AZ Alkmaar won on aggregate score over two legs, after extra time.",1–1,1–4
-2019-2020,el-0q-4po,c8ad3091|d5348c80,AEK Athens,Trabzonspor,Trabzonspor,d5348c80,c8ad3091,c8ad3091,3–3,"Trabzonspor won on away goals, after aggregate score was tied.",1–3,0–2
+2019-2020,cl-0q-1fqr,abffa138|fd12ff13,The New Saints,Feronikeli,The New Saints,fd12ff13,abffa138,fd12ff13,3–2,The New Saints won on aggregate score over two legs and advance to Second qualifying round.,2–2,0–1
+2019-2020,cl-0q-1fqr,c72c8787|ff04e205,Astana FK,CFR Cluj,CFR Cluj,c72c8787,ff04e205,ff04e205,2–3,CFR Cluj won on aggregate score over two legs and advance to Second qualifying round.,1–0,3–1
+2019-2020,cl-0q-1fqr,55ff3845|ae7f2f70,Slovan Bratislava,Sutjeska Nikšić,Sutjeska Nikšić,ae7f2f70,55ff3845,55ff3845,2–2,Sutjeska Nikšić won on penalty kicks following extra time and advance to Second qualifying round.,1–1,1–1
+2019-2020,cl-0q-1fqr,33afefe1|c480c810,Nõmme Kalju,Shkëndija 79,Nõmme Kalju,33afefe1,c480c810,33afefe1,2–2,"Nõmme Kalju won on away goals, after aggregate score was tied and advance to Second qualifying round.",0–1,1–2
+2019-2020,cl-0q-1fqr,85dbecd4|b0333581,Ararat-Armenia,AIK Stockholm,AIK Stockholm,85dbecd4,b0333581,b0333581,3–4,AIK Stockholm won on aggregate score over two legs and advance to Second qualifying round.,2–1,3–1
+2019-2020,cl-0q-1fqr,3ba2fddf|44b65410,Partizani Tirana,Qarabağ Ağdam,Qarabağ Ağdam,3ba2fddf,44b65410,44b65410,0–2,Qarabağ Ağdam won on aggregate score over two legs and advance to Second qualifying round.,0–0,2–0
+2019-2020,cl-0q-1fqr,91cc0413|e4a9d483,Dundalk,Rīga FC,Dundalk,e4a9d483,91cc0413,e4a9d483,0–0,Dundalk won on penalty kicks following extra time and advance to Second qualifying round.,0–0,0–0
+2019-2020,cl-0q-1fqr,3f53cc7a|baae133b,F91 Dudelange,Valletta,Valletta,baae133b,3f53cc7a,3f53cc7a,3–3,"Valletta won on away goals, after aggregate score was tied and advance to Second qualifying round.",2–2,1–1
+2019-2020,cl-0q-1fqr,488c6ba1|6611f992,Ferencváros,Ludogorets,Ferencváros,6611f992,488c6ba1,6611f992,5–3,Ferencváros won on aggregate score over two legs and advance to Second qualifying round.,2–1,2–3
+2019-2020,cl-0q-1fqr,099c6eb5|9e3153f3,Sūduva,Red Star,Red Star,9e3153f3,099c6eb5,099c6eb5,1–2,Red Star won on aggregate score over two legs and advance to Second qualifying round.,0–0,2–1
+2019-2020,cl-0q-1fqr,ad2649a5|b983b638,BATE Borisov,Piast Gliwice,BATE Borisov,b983b638,ad2649a5,b983b638,3–2,BATE Borisov won on aggregate score over two legs and advance to Second qualifying round.,1–1,1–2
+2019-2020,cl-0q-1fqr,4c96013a|90e37d3a,Linfield,Rosenborg,Rosenborg,4c96013a,90e37d3a,90e37d3a,0–6,Rosenborg won on aggregate score over two legs and advance to Second qualifying round.,0–2,4–0
+2019-2020,cl-0q-1fqr,15c5743b|d7319d80,HJK,HB,HJK,d7319d80,15c5743b,d7319d80,5–2,HJK won on aggregate score over two legs and advance to Second qualifying round.,3–0,2–2
+2019-2020,cl-0q-1fqr,b81aa4fa|fac9957a,Sarajevo,Celtic,Celtic,fac9957a,b81aa4fa,b81aa4fa,2–5,Celtic won on aggregate score over two legs and advance to Second qualifying round.,1–3,2–1
+2019-2020,cl-0q-1fqr,50995c1e|672ebb3d,Sheriff Tiraspol,Saburtalo,Saburtalo,50995c1e,672ebb3d,672ebb3d,3–4,Saburtalo won on aggregate score over two legs and advance to Second qualifying round.,0–3,1–3
+2019-2020,cl-0q-1fqr,2aae7689|b838366a,Valur,Maribor,Maribor,b838366a,2aae7689,2aae7689,0–5,Maribor won on aggregate score over two legs and advance to Second qualifying round.,0–3,2–0
+2019-2020,cl-0q-2sqr,3f53cc7a|6611f992,Ferencváros,Valletta,Ferencváros,6611f992,3f53cc7a,6611f992,4–2,Ferencváros won on aggregate score over two legs and advance to Third qualifying round.,3–1,1–1
+2019-2020,cl-0q-2sqr,2aae7689|b0333581,Maribor,AIK Stockholm,Maribor,2aae7689,b0333581,2aae7689,4–4,"Maribor won on away goals, after aggregate score was tied and advance to Third qualifying round.",2–1,3–2
+2019-2020,cl-0q-2sqr,d3d9424a|e334d850,PSV Eindhoven,Basel,Basel,e334d850,d3d9424a,d3d9424a,4–4,"Basel won on away goals, after aggregate score was tied and advance to Third qualifying round.",3–2,2–1
+2019-2020,cl-0q-2sqr,33afefe1|b81aa4fa,Celtic,Nõmme Kalju,Celtic,b81aa4fa,33afefe1,b81aa4fa,7–0,Celtic won on aggregate score over two legs and advance to Third qualifying round.,5–0,0–2
+2019-2020,cl-0q-2sqr,02cd81bf|2fdb4aef,Viktoria Plzeň,Olympiacos,Olympiacos,02cd81bf,2fdb4aef,2fdb4aef,0–4,Olympiacos won on aggregate score over two legs and advance to Third qualifying round.,0–0,4–0
+2019-2020,cl-0q-2sqr,44b65410|e4a9d483,Dundalk,Qarabağ Ağdam,Qarabağ Ağdam,e4a9d483,44b65410,44b65410,1–4,Qarabağ Ağdam won on aggregate score over two legs and advance to Third qualifying round.,1–1,3–0
+2019-2020,cl-0q-2sqr,04c011d8|ff04e205,CFR Cluj,Maccabi Tel Aviv,CFR Cluj,ff04e205,04c011d8,ff04e205,3–2,CFR Cluj won on aggregate score over two legs and advance to Third qualifying round.,1–0,2–2
+2019-2020,cl-0q-2sqr,55ff3845|eab315a6,Sutjeska Nikšić,APOEL,APOEL,55ff3845,eab315a6,eab315a6,0–4,APOEL won on aggregate score over two legs and advance to Third qualifying round.,0–1,3–0
+2019-2020,cl-0q-2sqr,099c6eb5|d7319d80,Red Star,HJK,Red Star,099c6eb5,d7319d80,099c6eb5,3–2,Red Star won on aggregate score over two legs and advance to Third qualifying round.,2–0,2–1
+2019-2020,cl-0q-2sqr,672ebb3d|edd0d381,Saburtalo,Dinamo Zagreb,Dinamo Zagreb,672ebb3d,edd0d381,edd0d381,0–5,Dinamo Zagreb won on aggregate score over two legs and advance to Third qualifying round.,0–2,3–0
+2019-2020,cl-0q-2sqr,18050b20|fd12ff13,The New Saints,FC Copenhagen,FC Copenhagen,fd12ff13,18050b20,18050b20,0–3,FC Copenhagen won on aggregate score over two legs and advance to Third qualifying round.,0–2,1–0
+2019-2020,cl-0q-2sqr,90e37d3a|b983b638,BATE Borisov,Rosenborg,Rosenborg,b983b638,90e37d3a,90e37d3a,2–3,Rosenborg won on aggregate score over two legs and advance to Third qualifying round.,2–1,2–0
+2019-2020,cl-0q-3tqr,6611f992|edd0d381,Dinamo Zagreb,Ferencváros,Dinamo Zagreb,edd0d381,6611f992,edd0d381,5–1,Dinamo Zagreb won on aggregate score over two legs and advance to Play-off Round.,1–1,0–4
+2019-2020,cl-0q-3tqr,5e876ee6|fa11a9cc,Krasnodar,Porto,Krasnodar,fa11a9cc,5e876ee6,fa11a9cc,3–3,"Krasnodar won on away goals, after aggregate score was tied and advance to Play-off Round.",0–1,2–3
+2019-2020,cl-0q-3tqr,099c6eb5|18050b20,Red Star,FC Copenhagen,Red Star,099c6eb5,18050b20,099c6eb5,2–2,Red Star won on penalty kicks following extra time and advance to Play-off Round.,1–1,1–1
+2019-2020,cl-0q-3tqr,b81aa4fa|ff04e205,CFR Cluj,Celtic,CFR Cluj,ff04e205,b81aa4fa,ff04e205,5–4,CFR Cluj won on aggregate score over two legs and advance to Play-off Round.,1–1,3–4
+2019-2020,cl-0q-3tqr,19c3f8c4|5a5e7874,PAOK,Ajax,Ajax,5a5e7874,19c3f8c4,19c3f8c4,4–5,Ajax won on aggregate score over two legs and advance to Play-off Round.,2–2,3–2
+2019-2020,cl-0q-3tqr,c734e22f|f1e6c5f1,Club Brugge,Dynamo Kyiv,Club Brugge,f1e6c5f1,c734e22f,f1e6c5f1,4–3,Club Brugge won on aggregate score over two legs and advance to Play-off Round.,1–0,3–3
+2019-2020,cl-0q-3tqr,2aae7689|90e37d3a,Maribor,Rosenborg,Rosenborg,2aae7689,90e37d3a,90e37d3a,2–6,Rosenborg won on aggregate score over two legs and advance to Play-off Round.,1–3,3–1
+2019-2020,cl-0q-3tqr,d20821dd|d3d9424a,Basel,LASK,LASK,d3d9424a,d20821dd,d20821dd,2–5,LASK won on aggregate score over two legs and advance to Play-off Round.,1–2,3–1
+2019-2020,cl-0q-3tqr,2fdb4aef|bff39cf5,Başakşehir,Olympiacos,Olympiacos,bff39cf5,2fdb4aef,2fdb4aef,0–3,Olympiacos won on aggregate score over two legs and advance to Play-off Round.,0–1,2–0
+2019-2020,cl-0q-3tqr,44b65410|eab315a6,APOEL,Qarabağ Ağdam,APOEL,eab315a6,44b65410,eab315a6,3–2,APOEL won on aggregate score over two legs and advance to Play-off Round.,1–2,0–2
+2019-2020,cl-0q-4po,099c6eb5|4b682260,Young Boys,Red Star,Red Star,4b682260,099c6eb5,099c6eb5,3–3,"Red Star won on away goals, after aggregate score was tied and advance to Group stage.",2–2,1–1
+2019-2020,cl-0q-4po,111cbfb1|ff04e205,CFR Cluj,Slavia Prague,Slavia Prague,ff04e205,111cbfb1,111cbfb1,0–2,Slavia Prague won on aggregate score over two legs and advance to Group stage.,0–1,1–0
+2019-2020,cl-0q-4po,19c3f8c4|eab315a6,APOEL,Ajax,Ajax,eab315a6,19c3f8c4,19c3f8c4,0–2,Ajax won on aggregate score over two legs and advance to Group stage.,0–0,2–0
+2019-2020,cl-0q-4po,2fdb4aef|fa11a9cc,Olympiacos,Krasnodar,Olympiacos,2fdb4aef,fa11a9cc,2fdb4aef,6–1,Olympiacos won on aggregate score over two legs and advance to Group stage.,4–0,1–2
+2019-2020,cl-0q-4po,90e37d3a|edd0d381,Dinamo Zagreb,Rosenborg,Dinamo Zagreb,edd0d381,90e37d3a,edd0d381,3–1,Dinamo Zagreb won on aggregate score over two legs and advance to Group stage.,2–0,1–1
+2019-2020,cl-0q-4po,d20821dd|f1e6c5f1,LASK,Club Brugge,Club Brugge,d20821dd,f1e6c5f1,f1e6c5f1,1–3,Club Brugge won on aggregate score over two legs and advance to Group stage.,0–1,2–1
+2019-2020,cl-1k-1r16,add600ae|e2d8892c,Dortmund,Paris S-G,Paris S-G,add600ae,e2d8892c,e2d8892c,2–3,Paris S-G won on aggregate score over two legs.,2–1,2–0
+2019-2020,cl-1k-1r16,054efa67|cff3d9bb,Chelsea,Bayern Munich,,cff3d9bb,054efa67,,,Results are the aggregate results over two legs.,0–3,↻
+2019-2020,cl-1k-1r16,d53c0b06|e0652b02,Lyon,Juventus,,d53c0b06,e0652b02,,,Results are the aggregate results over two legs.,1–0,↻
+2019-2020,cl-1k-1r16,206d90db|d48ad4ff,Napoli,Barcelona,,d48ad4ff,206d90db,,,Results are the aggregate results over two legs.,1–1,↻
+2019-2020,cl-1k-1r16,361ca564|acbb6a5b,Tottenham,RB Leipzig,RB Leipzig,361ca564,acbb6a5b,acbb6a5b,0–4,RB Leipzig won on aggregate score over two legs.,0–1,3–0
+2019-2020,cl-1k-1r16,53a2f082|b8fd03ef,Real Madrid,Manchester City,,53a2f082,b8fd03ef,,,Results are the aggregate results over two legs.,1–2,↻
+2019-2020,cl-1k-1r16,822bd0ba|db3b9613,Atlético Madrid,Liverpool,Atlético Madrid,db3b9613,822bd0ba,db3b9613,4–2,"Atlético Madrid won on aggregate score over two legs, after extra time.",1–0,2–3
+2019-2020,cl-1k-1r16,922493f3|dcc91a7b,Atalanta,Valencia,Atalanta,922493f3,dcc91a7b,922493f3,8–4,Atalanta won on aggregate score over two legs.,4–1,3–4
+2019-2020,el-0q-0pre,7de37644|bb780485,FC Prishtina,St. Joseph's,St. Joseph's,7de37644,bb780485,bb780485,1–3,St. Joseph's won on aggregate score over two legs and advance to First qualifying round.,1–1,2–0
+2019-2020,el-0q-0pre,017bcbe4|869753d6,KÍ,SP Tre Fiori,KÍ,869753d6,017bcbe4,869753d6,9–1,KÍ won on aggregate score over two legs and advance to First qualifying round.,5–1,0–4
+2019-2020,el-0q-0pre,448e1bb9|b0e70933,Ballymena Utd,NSÍ Runavík,Ballymena Utd,b0e70933,448e1bb9,b0e70933,2–0,Ballymena Utd won on aggregate score over two legs and advance to First qualifying round.,2–0,0–0
+2019-2020,el-0q-0pre,4872ca3d|ec560e72,Progrès,Cardiff Met,Progrès,ec560e72,4872ca3d,ec560e72,2–2,"Progrès won on away goals, after aggregate score was tied and advance to First qualifying round.",1–0,2–1
+2019-2020,el-0q-0pre,5a130b7c|d8760be1,Barry Town,Cliftonville,Cliftonville,d8760be1,5a130b7c,5a130b7c,0–4,Cliftonville won on aggregate score over two legs and advance to First qualifying round.,0–0,4–0
+2019-2020,el-0q-0pre,6de42722|b784c866,La Fiorita,Engordany,Engordany,6de42722,b784c866,b784c866,1–3,Engordany won on aggregate score over two legs and advance to First qualifying round.,0–1,2–1
+2019-2020,el-0q-0pre,75cd4ee3|78816dd0,UE Sant Julià,Europa,Europa,78816dd0,75cd4ee3,75cd4ee3,3–6,Europa won on aggregate score over two legs and advance to First qualifying round.,3–2,4–0
+2019-2020,el-0q-1fqr,2a6cfcb2|99875d32,Akad Pandev,Zrinjski Mostar,Zrinjski Mostar,99875d32,2a6cfcb2,2a6cfcb2,0–6,Zrinjski Mostar won on aggregate score over two legs and advance to Second qualifying round.,0–3,3–0
+2019-2020,el-0q-1fqr,b784c866|e2fa043d,Dinamo Tbilisi,Engordany,Dinamo Tbilisi,e2fa043d,b784c866,e2fa043d,7–0,Dinamo Tbilisi won on aggregate score over two legs and advance to Second qualifying round.,6–0,0–1
+2019-2020,el-0q-1fqr,584d189a|768fb565,Široki Brijeg,Qaırat Almaty,Qaırat Almaty,584d189a,768fb565,768fb565,2–4,Qaırat Almaty won on aggregate score over two legs and advance to Second qualifying round.,1–2,2–1
+2019-2020,el-0q-1fqr,187832f5|43a5e45a,Maccabi Haifa,NŠ Mura,Maccabi Haifa,187832f5,43a5e45a,187832f5,5–2,Maccabi Haifa won on aggregate score over two legs and advance to Second qualifying round.,2–0,2–3
+2019-2020,el-0q-1fqr,8dc7bf66|cbde2682,CSKA Sofia,OFK Titograd,CSKA Sofia,cbde2682,8dc7bf66,cbde2682,4–0,CSKA Sofia won on aggregate score over two legs and advance to Second qualifying round.,4–0,0–0
+2019-2020,el-0q-1fqr,49e1cbfd|8ac05d3e,Balzan,Domžale,Domžale,49e1cbfd,8ac05d3e,8ac05d3e,3–5,Domžale won on aggregate score over two legs and advance to Second qualifying round.,3–4,1–0
+2019-2020,el-0q-1fqr,03022534|7416e9cd,Pyunik,Shkupi Skopje,Pyunik,03022534,7416e9cd,03022534,5–4,Pyunik won on aggregate score over two legs and advance to Second qualifying round.,3–3,1–2
+2019-2020,el-0q-1fqr,78b01d1b|d0ab5e26,Speranţa,Neftçi,Neftçi,78b01d1b,d0ab5e26,d0ab5e26,0–9,Neftçi won on aggregate score over two legs and advance to Second qualifying round.,0–3,6–0
+2019-2020,el-0q-1fqr,356c100c|3a7a27c6,MFK Ružomberok,Levski Sofia,Levski Sofia,356c100c,3a7a27c6,3a7a27c6,0–4,Levski Sofia won on aggregate score over two legs and advance to Second qualifying round.,0–2,2–0
+2019-2020,el-0q-1fqr,e24ac92e|f1e85b1e,Debrecen,Kukësi,Debrecen,e24ac92e,f1e85b1e,e24ac92e,4–1,Debrecen won on aggregate score over two legs and advance to Second qualifying round.,3–0,1–1
+2019-2020,el-0q-1fqr,5a130b7c|f4bbcd04,Cliftonville,Haugesund,Haugesund,5a130b7c,f4bbcd04,f4bbcd04,1–6,Haugesund won on aggregate score over two legs and advance to Second qualifying round.,0–1,5–1
+2019-2020,el-0q-1fqr,b0e70933|f3d8c8b9,Malmö,Ballymena Utd,Malmö,f3d8c8b9,b0e70933,f3d8c8b9,11–0,Malmö won on aggregate score over two legs and advance to Second qualifying round.,7–0,0–4
+2019-2020,el-0q-1fqr,1d0836d6|8a814429,St. Patrick's,Norrköping,Norrköping,8a814429,1d0836d6,1d0836d6,1–4,Norrköping won on aggregate score over two legs and advance to Second qualifying round.,0–2,2–1
+2019-2020,el-0q-1fqr,a338349f|bda134f7,Zeta,Vidi,Vidi,bda134f7,a338349f,a338349f,1–5,Vidi won on aggregate score over two legs and advance to Second qualifying round.,1–5,0–0
+2019-2020,el-0q-1fqr,4a29fb1c|b1b46fc3,Breiðablik,Vaduz,Vaduz,4a29fb1c,b1b46fc3,b1b46fc3,1–2,Vaduz won on aggregate score over two legs and advance to Second qualifying round.,0–0,2–1
+2019-2020,el-0q-1fqr,056a9b27|0b6cd7c6,Crusaders,B36,Crusaders,0b6cd7c6,056a9b27,0b6cd7c6,5–2,Crusaders won on aggregate score over two legs and advance to Second qualifying round.,2–0,2–3
+2019-2020,el-0q-1fqr,7c90642e|8ae75624,Olimpija,FK Rīgas FS,Olimpija,8ae75624,7c90642e,8ae75624,4–3,Olimpija won on aggregate score over two legs and advance to Second qualifying round.,2–3,0–2
+2019-2020,el-0q-1fqr,3b8af0c2|8dff1828,Kauno Žalgiris,Apollon,Apollon,3b8af0c2,8dff1828,8dff1828,0–6,Apollon won on aggregate score over two legs and advance to Second qualifying round.,0–2,4–0
+2019-2020,el-0q-1fqr,6777e16d|8ab497d5,Gzira United,Hajduk Split,Gzira United,8ab497d5,6777e16d,8ab497d5,3–3,"Gzira United won on away goals, after aggregate score was tied and advance to Second qualifying round.",0–2,1–3
+2019-2020,el-0q-1fqr,1eebf7c3|6642b67e,Səbail FK,U Craiova,U Craiova,6642b67e,1eebf7c3,1eebf7c3,4–6,U Craiova won on aggregate score over two legs and advance to Second qualifying round.,2–3,3–2
+2019-2020,el-0q-1fqr,aa065002|e839c85b,Fola Esch,Chikhura,Chikhura,aa065002,e839c85b,e839c85b,2–4,Chikhura won on aggregate score over two legs and advance to Second qualifying round.,1–2,2–1
+2019-2020,el-0q-1fqr,4c6489de|8cac5dfa,Honvéd,Žalgiris,Honvéd,8cac5dfa,4c6489de,8cac5dfa,4–2,Honvéd won on aggregate score over two legs and advance to Second qualifying round.,3–1,1–1
+2019-2020,el-0q-1fqr,54f29d7b|e2a78c9d,FK Liepāja,Dinamo Minsk,FK Liepāja,54f29d7b,e2a78c9d,54f29d7b,3–2,FK Liepāja won on aggregate score over two legs and advance to Second qualifying round.,1–1,1–2
+2019-2020,el-0q-1fqr,0faf8f33|7517d495,Shakhtyor,Hibernians,Shakhtyor,7517d495,0faf8f33,7517d495,2–0,Shakhtyor won on aggregate score over two legs and advance to Second qualifying round.,1–0,0–1
+2019-2020,el-0q-1fqr,7e4fae05|c16f1fe7,Bijeljina,Spartak Trnava,Spartak Trnava,7e4fae05,c16f1fe7,c16f1fe7,2–2,Spartak Trnava won on penalty kicks following extra time and advance to Second qualifying round.,2–0,2–0
+2019-2020,el-0q-1fqr,3f2bd811|e6f63673,KuPS,FK Vitebsk,KuPS,e6f63673,3f2bd811,e6f63673,3–1,KuPS won on aggregate score over two legs and advance to Second qualifying round.,2–0,1–1
+2019-2020,el-0q-1fqr,6e7c9b0b|b11bfada,Dunajská Streda,Cracovia,Dunajská Streda,b11bfada,6e7c9b0b,b11bfada,3–3,"Dunajská Streda won on away goals, after aggregate score was tied and advance to Second qualifying round.",1–1,2–2
+2019-2020,el-0q-1fqr,231f4a61|38bfcdf5,Ordabasy,Torpedo Kutaisi,Ordabasy,38bfcdf5,231f4a61,38bfcdf5,3–0,Ordabasy won on aggregate score over two legs and advance to Second qualifying round.,1–0,0–2
+2019-2020,el-0q-1fqr,ab75e049|e9fa2e8b,Brøndby,Inter Turku,Brøndby,ab75e049,e9fa2e8b,ab75e049,4–3,Brøndby won on aggregate score over two legs and advance to Second qualifying round.,4–1,2–0
+2019-2020,el-0q-1fqr,4fea542b|8bbab7cf,Aberdeen,RoPS,Aberdeen,8bbab7cf,4fea542b,8bbab7cf,4–2,Aberdeen won on aggregate score over two legs and advance to Second qualifying round.,2–1,1–2
+2019-2020,el-0q-1fqr,112c9642|f13065a8,Stjarnan,Levadia Tallinn,Stjarnan,f13065a8,112c9642,f13065a8,4–4,"Stjarnan won on away goals, after aggregate score was tied and advance to Second qualifying round.",2–1,3–2
+2019-2020,el-0q-1fqr,86b7acd2|bb780485,St. Joseph's,Rangers,Rangers,bb780485,86b7acd2,86b7acd2,0–10,Rangers won on aggregate score over two legs and advance to Second qualifying round.,0–4,6–0
+2019-2020,el-0q-1fqr,42e847bc|f0e1ca42,Čukarički,Banants,Čukarički,42e847bc,f0e1ca42,42e847bc,8–0,Čukarički won on aggregate score over two legs and advance to Second qualifying round.,3–0,0–5
+2019-2020,el-0q-1fqr,174bd5a0|ae156985,Molde,KR Reykjavík,Molde,174bd5a0,ae156985,174bd5a0,7–1,Molde won on aggregate score over two legs and advance to Second qualifying round.,7–1,0–0
+2019-2020,el-0q-1fqr,719d83f1|72804f2b,Flora,Radnički Niš,Flora,719d83f1,72804f2b,719d83f1,4–2,Flora won on aggregate score over two legs and advance to Second qualifying round.,2–0,2–2
+2019-2020,el-0q-1fqr,25f1fd26|7d326cbe,Connah's Quay,Kilmarnock,Connah's Quay,7d326cbe,25f1fd26,7d326cbe,3–2,Connah's Quay won on aggregate score over two legs and advance to Second qualifying round.,1–2,0–2
+2019-2020,el-0q-1fqr,aeae4fe1|f082c4f3,Brann,Shamrock Rov,Shamrock Rov,aeae4fe1,f082c4f3,f082c4f3,3–4,Shamrock Rov won on aggregate score over two legs and advance to Second qualifying round.,2–2,2–1
+2019-2020,el-0q-1fqr,5130dd3e|e6232d10,Alashkert,Makedonija GP,Alashkert,e6232d10,5130dd3e,e6232d10,6–1,Alashkert won on aggregate score over two legs and advance to Second qualifying round.,3–1,0–3
+2019-2020,el-0q-1fqr,133013ee|7a40cd8b,Laçi,Be'er Sheva,Be'er Sheva,7a40cd8b,133013ee,133013ee,1–2,Be'er Sheva won on aggregate score over two legs and advance to Second qualifying round.,1–1,1–0
+2019-2020,el-0q-1fqr,8a9775ad|f4f98e1c,Narva Trans,Budućnost,Budućnost,8a9775ad,f4f98e1c,f4f98e1c,1–6,Budućnost won on aggregate score over two legs and advance to Second qualifying round.,0–2,4–1
+2019-2020,el-0q-1fqr,4936d1b7|ec560e72,Cork City FC,Progrès,Progrès,4936d1b7,ec560e72,ec560e72,2–3,Progrès won on aggregate score over two legs and advance to Second qualifying round.,0–2,1–2
+2019-2020,el-0q-1fqr,75cd4ee3|a73408a7,Europa,Legia Warsaw,Legia Warsaw,75cd4ee3,a73408a7,a73408a7,0–3,Legia Warsaw won on aggregate score over two legs and advance to Second qualifying round.,0–0,3–0
+2019-2020,el-0q-1fqr,8c6383a1|f1849f98,Jeunesse Esch,Tobol Qostanaı,Jeunesse Esch,f1849f98,8c6383a1,f1849f98,1–1,"Jeunesse Esch won on away goals, after aggregate score was tied and advance to Second qualifying round.",0–0,1–1
+2019-2020,el-0q-1fqr,49a61d12|869753d6,Riteriai,KÍ,KÍ,49a61d12,869753d6,869753d6,1–1,"KÍ won on away goals, after aggregate score was tied and advance to Second qualifying round.",1–1,0–0
+2019-2020,el-0q-1fqr,01689b1a|ae96366c,AÉK Lárnaka,Petrocub,AÉK Lárnaka,01689b1a,ae96366c,01689b1a,2–0,AÉK Lárnaka won on aggregate score over two legs and advance to Second qualifying round.,1–0,0–1
+2019-2020,el-0q-1fqr,7795f801|aed59852,FCSB,Milsami,FCSB,aed59852,7795f801,aed59852,4–1,FCSB won on aggregate score over two legs and advance to Second qualifying round.,2–0,1–2
+2019-2020,el-0q-1fqr,2b924bc5|869a3b6a,Ventspils,Teuta Durrës,Ventspils,869a3b6a,2b924bc5,869a3b6a,3–1,Ventspils won on aggregate score over two legs and advance to Second qualifying round.,3–0,1–0
+2019-2020,el-0q-2sqr,2d3c1b6d|85dbecd4,Ararat-Armenia,Red Imps,Ararat-Armenia,85dbecd4,2d3c1b6d,85dbecd4,4–1,Ararat-Armenia won on aggregate score over two legs and advance to Third qualifying round.,2–0,1–2
+2019-2020,el-0q-2sqr,c16f1fe7|e0242ef1,Loko Plovdiv,Spartak Trnava,Loko Plovdiv,e0242ef1,c16f1fe7,e0242ef1,3–3,"Loko Plovdiv won on away goals, after aggregate score was tied and advance to Third qualifying round.",2–0,3–1
+2019-2020,el-0q-2sqr,7d326cbe|dde3e804,Connah's Quay,Partizan,Partizan,7d326cbe,dde3e804,dde3e804,0–4,Partizan won on aggregate score over two legs and advance to Third qualifying round.,0–1,3–0
+2019-2020,el-0q-2sqr,174bd5a0|42e847bc,Molde,Čukarički,Molde,174bd5a0,42e847bc,174bd5a0,3–1,Molde won on aggregate score over two legs and advance to Third qualifying round.,0–0,1–3
+2019-2020,el-0q-2sqr,a73408a7|e6f63673,Legia Warsaw,KuPS,Legia Warsaw,a73408a7,e6f63673,a73408a7,1–0,Legia Warsaw won on aggregate score over two legs and advance to Third qualifying round.,1–0,0–0
+2019-2020,el-0q-2sqr,4cc7a87b|8ae75624,Yeni Mal'spor,Olimpija,Yeni Mal'spor,4cc7a87b,8ae75624,4cc7a87b,3–2,Yeni Mal'spor won on aggregate score over two legs and advance to Third qualifying round.,2–2,0–1
+2019-2020,el-0q-2sqr,03022534|8424bb18,Pyunik,Jablonec,Pyunik,03022534,8424bb18,03022534,2–1,Pyunik won on aggregate score over two legs and advance to Third qualifying round.,2–1,0–0
+2019-2020,el-0q-2sqr,91cc0413|ad2649a5,Piast Gliwice,Rīga FC,Rīga FC,ad2649a5,91cc0413,91cc0413,4–4,"Rīga FC won on away goals, after aggregate score was tied and advance to Third qualifying round.",3–2,2–1
+2019-2020,el-0q-2sqr,38bfcdf5|70c92f33,Mladá Boleslav,Ordabasy,Mladá Boleslav,70c92f33,38bfcdf5,70c92f33,4–3,Mladá Boleslav won on aggregate score over two legs and advance to Third qualifying round.,1–1,2–3
+2019-2020,el-0q-2sqr,869753d6|d423a378,Luzern,KÍ,Luzern,d423a378,869753d6,d423a378,2–0,Luzern won on aggregate score over two legs and advance to Third qualifying round.,1–0,0–1
+2019-2020,el-0q-2sqr,187832f5|c0d3eab4,Strasbourg,Maccabi Haifa,Strasbourg,c0d3eab4,187832f5,c0d3eab4,4–3,Strasbourg won on aggregate score over two legs and advance to Third qualifying round.,3–1,2–1
+2019-2020,el-0q-2sqr,baae133b|c480c810,Shkëndija 79,F91 Dudelange,F91 Dudelange,c480c810,baae133b,baae133b,2–3,F91 Dudelange won on aggregate score over two legs and advance to Third qualifying round.,1–2,1–1
+2019-2020,el-0q-2sqr,a8661628|f13065a8,Espanyol,Stjarnan,Espanyol,a8661628,f13065a8,a8661628,7–1,Espanyol won on aggregate score over two legs and advance to Third qualifying round.,4–0,1–3
+2019-2020,el-0q-2sqr,4fffe901|51e5a603,Gent,Viitorul,Gent,51e5a603,4fffe901,51e5a603,7–5,Gent won on aggregate score over two legs and advance to Third qualifying round.,6–3,2–1
+2019-2020,el-0q-2sqr,0b6cd7c6|8cec06e1,Wolves,Crusaders,Wolves,8cec06e1,0b6cd7c6,8cec06e1,6–1,Wolves won on aggregate score over two legs and advance to Third qualifying round.,2–0,1–4
+2019-2020,el-0q-2sqr,946a30cb|f4f98e1c,Budućnost,Zorya Luhansk,Zorya Luhansk,f4f98e1c,946a30cb,946a30cb,1–4,Zorya Luhansk won on aggregate score over two legs and advance to Third qualifying round.,1–3,1–0
+2019-2020,el-0q-2sqr,3986b791|8774e267,AZ Alkmaar,Häcken,AZ Alkmaar,3986b791,8774e267,3986b791,3–0,AZ Alkmaar won on aggregate score over two legs and advance to Third qualifying round.,0–0,0–3
+2019-2020,el-0q-2sqr,869a3b6a|8ab497d5,Ventspils,Gzira United,Ventspils,869a3b6a,8ab497d5,869a3b6a,6–2,Ventspils won on aggregate score over two legs and advance to Third qualifying round.,4–0,2–2
+2019-2020,el-0q-2sqr,1d0836d6|54f29d7b,Norrköping,FK Liepāja,Norrköping,1d0836d6,54f29d7b,1d0836d6,3–0,Norrköping won on aggregate score over two legs and advance to Third qualifying round.,2–0,0–1
+2019-2020,el-0q-2sqr,abffa138|ae7f2f70,Slovan Bratislava,Feronikeli,Slovan Bratislava,ae7f2f70,abffa138,ae7f2f70,4–1,Slovan Bratislava won on aggregate score over two legs and advance to Third qualifying round.,2–1,0–2
+2019-2020,el-0q-2sqr,57d14db5|cbde2682,CSKA Sofia,Osijek,CSKA Sofia,cbde2682,57d14db5,cbde2682,1–1,CSKA Sofia won on penalty kicks following extra time and advance to Third qualifying round.,1–0,1–0
+2019-2020,el-0q-2sqr,0bca3a9e|d0ab5e26,Arsenal Tula,Neftçi,Neftçi,0bca3a9e,d0ab5e26,d0ab5e26,0–4,Neftçi won on aggregate score over two legs and advance to Third qualifying round.,0–1,3–0
+2019-2020,el-0q-2sqr,719d83f1|f0ac8ee6,Flora,Eint Frankfurt,Eint Frankfurt,719d83f1,f0ac8ee6,f0ac8ee6,2–4,Eint Frankfurt won on aggregate score over two legs and advance to Third qualifying round.,1–2,2–1
+2019-2020,el-0q-2sqr,9549dc95|c72c8787,Santa Coloma,Astana FK,Astana FK,9549dc95,c72c8787,c72c8787,1–4,Astana FK won on aggregate score over two legs and advance to Third qualifying round.,0–0,4–1
+2019-2020,el-0q-2sqr,3ba2fddf|50995c1e,Partizani Tirana,Sheriff Tiraspol,Sheriff Tiraspol,3ba2fddf,50995c1e,50995c1e,1–2,Sheriff Tiraspol won on aggregate score over two legs and advance to Third qualifying round.,0–1,1–1
+2019-2020,el-0q-2sqr,86b7acd2|ec560e72,Rangers,Progrès,Rangers,86b7acd2,ec560e72,86b7acd2,2–0,Rangers won on aggregate score over two legs and advance to Third qualifying round.,2–0,0–0
+2019-2020,el-0q-2sqr,1eebf7c3|8cac5dfa,Honvéd,U Craiova,U Craiova,8cac5dfa,1eebf7c3,1eebf7c3,0–0,U Craiova won on penalty kicks following extra time and advance to Third qualifying round.,0–0,0–0
+2019-2020,el-0q-2sqr,aed59852|e6232d10,Alashkert,FCSB,FCSB,e6232d10,aed59852,aed59852,3–5,FCSB won on aggregate score over two legs and advance to Third qualifying round.,0–3,2–3
+2019-2020,el-0q-2sqr,5d36c8f0|ab75e049,Lechia Gdańsk,Brøndby,Brøndby,5d36c8f0,ab75e049,ab75e049,3–5,"Brøndby won on aggregate score over two legs, after extra time and advance to Third qualifying round.",2–1,4–1
+2019-2020,el-0q-2sqr,105360fe|e24ac92e,Torino,Debrecen,Torino,105360fe,e24ac92e,105360fe,7–1,Torino won on aggregate score over two legs and advance to Third qualifying round.,3–0,1–4
+2019-2020,el-0q-2sqr,9e3153f3|aaffe678,Tre Penne,Sūduva,Sūduva,aaffe678,9e3153f3,9e3153f3,0–10,Sūduva won on aggregate score over two legs and advance to Third qualifying round.,0–5,5–0
+2019-2020,el-0q-2sqr,3f319bc9|f1849f98,Jeunesse Esch,Vitória,Vitória,f1849f98,3f319bc9,3f319bc9,0–5,Vitória won on aggregate score over two legs and advance to Third qualifying round.,0–1,4–0
+2019-2020,el-0q-2sqr,8ac05d3e|f3d8c8b9,Domžale,Malmö,Malmö,8ac05d3e,f3d8c8b9,f3d8c8b9,4–5,Malmö won on aggregate score over two legs and advance to Third qualifying round.,2–2,3–2
+2019-2020,el-0q-2sqr,15c5743b|4c96013a,HB,Linfield,Linfield,15c5743b,4c96013a,4c96013a,2–3,Linfield won on aggregate score over two legs and advance to Third qualifying round.,2–2,1–0
+2019-2020,el-0q-2sqr,2a428619|2a6cfcb2,Utrecht,Zrinjski Mostar,Zrinjski Mostar,2a428619,2a6cfcb2,2a6cfcb2,2–3,"Zrinjski Mostar won on aggregate score over two legs, after extra time and advance to Third qualifying round.",1–1,2–1
+2019-2020,el-0q-2sqr,b11bfada|c9607f44,Dunajská Streda,Atromitos,Atromitos,b11bfada,c9607f44,c9607f44,3–5,Atromitos won on aggregate score over two legs and advance to Third qualifying round.,1–2,3–2
+2019-2020,el-0q-2sqr,651288fd|edddfa63,Aris,AE Lemesós,Aris,edddfa63,651288fd,edddfa63,1–0,Aris won on aggregate score over two legs and advance to Third qualifying round.,0–0,0–1
+2019-2020,el-0q-2sqr,133013ee|768fb565,Be'er Sheva,Qaırat Almaty,Be'er Sheva,133013ee,768fb565,133013ee,3–1,Be'er Sheva won on aggregate score over two legs and advance to Third qualifying round.,2–0,1–1
+2019-2020,el-0q-2sqr,a1962466|e2fa043d,Qəbələ,Dinamo Tbilisi,Dinamo Tbilisi,a1962466,e2fa043d,e2fa043d,0–5,Dinamo Tbilisi won on aggregate score over two legs and advance to Third qualifying round.,0–2,3–0
+2019-2020,el-0q-2sqr,3f4fe568|f4bbcd04,Haugesund,Sturm Graz,Haugesund,f4bbcd04,3f4fe568,f4bbcd04,3–2,Haugesund won on aggregate score over two legs and advance to Third qualifying round.,2–0,2–1
+2019-2020,el-0q-2sqr,8bbab7cf|e839c85b,Chikhura,Aberdeen,Aberdeen,e839c85b,8bbab7cf,8bbab7cf,1–6,Aberdeen won on aggregate score over two legs and advance to Third qualifying round.,1–1,5–0
+2019-2020,el-0q-2sqr,a338349f|b1b46fc3,Vidi,Vaduz,Vaduz,a338349f,b1b46fc3,b1b46fc3,1–2,"Vaduz won on aggregate score over two legs, after extra time and advance to Third qualifying round.",1–0,2–0
+2019-2020,el-0q-2sqr,488c6ba1|b838366a,Valur,Ludogorets,Ludogorets,b838366a,488c6ba1,488c6ba1,1–5,Ludogorets won on aggregate score over two legs and advance to Third qualifying round.,1–1,4–0
+2019-2020,el-0q-2sqr,01689b1a|3a7a27c6,AÉK Lárnaka,Levski Sofia,AÉK Lárnaka,01689b1a,3a7a27c6,01689b1a,7–0,AÉK Lárnaka won on aggregate score over two legs and advance to Third qualifying round.,3–0,0–4
+2019-2020,el-0q-2sqr,8dff1828|f082c4f3,Shamrock Rov,Apollon,Apollon,f082c4f3,8dff1828,8dff1828,3–4,"Apollon won on aggregate score over two legs, after extra time and advance to Third qualifying round.",2–1,3–1
+2019-2020,el-0q-2sqr,31aa0dd4|7517d495,Shakhtyor,Esbjerg,Shakhtyor,7517d495,31aa0dd4,7517d495,2–0,Shakhtyor won on aggregate score over two legs and advance to Third qualifying round.,2–0,0–0
+2019-2020,el-0q-3tqr,3986b791|42b37a13,FC Mariupol,AZ Alkmaar,AZ Alkmaar,42b37a13,3986b791,3986b791,0–4,AZ Alkmaar won on aggregate score over two legs and advance to Play-off Round.,0–0,4–0
+2019-2020,el-0q-3tqr,672ebb3d|85dbecd4,Ararat-Armenia,Saburtalo,Ararat-Armenia,85dbecd4,672ebb3d,85dbecd4,3–2,Ararat-Armenia won on aggregate score over two legs and advance to Play-off Round.,1–2,0–2
+2019-2020,el-0q-3tqr,02cd81bf|c2e6b53b,Antwerp,Viktoria Plzeň,Antwerp,c2e6b53b,02cd81bf,c2e6b53b,2–2,"Antwerp won on away goals, after aggregate score was tied and advance to Play-off Round.",1–0,2–1
+2019-2020,el-0q-3tqr,c8ad3091|ecb862be,Sparta Prague,Trabzonspor,Trabzonspor,ecb862be,c8ad3091,c8ad3091,3–4,Trabzonspor won on aggregate score over two legs and advance to Play-off Round.,2–2,2–1
+2019-2020,el-0q-3tqr,3f319bc9|869a3b6a,Ventspils,Vitória,Vitória,869a3b6a,3f319bc9,3f319bc9,0–9,Vitória won on aggregate score over two legs and advance to Play-off Round.,0–3,6–0
+2019-2020,el-0q-3tqr,a73408a7|c9607f44,Legia Warsaw,Atromitos,Legia Warsaw,a73408a7,c9607f44,a73408a7,2–0,Legia Warsaw won on aggregate score over two legs and advance to Play-off Round.,0–0,0–2
+2019-2020,el-0q-3tqr,1eebf7c3|d5348c80,U Craiova,AEK Athens,AEK Athens,1eebf7c3,d5348c80,d5348c80,1–3,AEK Athens won on aggregate score over two legs and advance to Play-off Round.,0–2,1–1
+2019-2020,el-0q-3tqr,69d84c29|ab75e049,Brøndby,Braga,Braga,ab75e049,69d84c29,69d84c29,3–7,Braga won on aggregate score over two legs and advance to Play-off Round.,2–4,3–1
+2019-2020,el-0q-3tqr,03022534|8cec06e1,Pyunik,Wolves,Wolves,03022534,8cec06e1,8cec06e1,0–8,Wolves won on aggregate score over two legs and advance to Play-off Round.,0–4,4–0
+2019-2020,el-0q-3tqr,e2fa043d|fb4ca611,Feyenoord,Dinamo Tbilisi,Feyenoord,fb4ca611,e2fa043d,fb4ca611,5–1,Feyenoord won on aggregate score over two legs and advance to Play-off Round.,4–0,1–1
+2019-2020,el-0q-3tqr,3f53cc7a|c72c8787,Astana FK,Valletta,Astana FK,c72c8787,3f53cc7a,c72c8787,9–1,Astana FK won on aggregate score over two legs and advance to Play-off Round.,5–1,0–4
+2019-2020,el-0q-3tqr,91cc0413|d7319d80,Rīga FC,HJK,Rīga FC,91cc0413,d7319d80,91cc0413,3–3,"Rīga FC won on away goals, after aggregate score was tied and advance to Play-off Round.",1–1,2–2
+2019-2020,el-0q-3tqr,a8661628|d423a378,Luzern,Espanyol,Espanyol,d423a378,a8661628,a8661628,0–6,Espanyol won on aggregate score over two legs and advance to Play-off Round.,0–3,3–0
+2019-2020,el-0q-3tqr,25dbe099|8bbab7cf,Rijeka,Aberdeen,Rijeka,25dbe099,8bbab7cf,25dbe099,4–0,Rijeka won on aggregate score over two legs and advance to Play-off Round.,2–0,0–2
+2019-2020,el-0q-3tqr,70c92f33|aed59852,FCSB,Mladá Boleslav,FCSB,aed59852,70c92f33,aed59852,1–0,FCSB won on aggregate score over two legs and advance to Play-off Round.,0–0,0–1
+2019-2020,el-0q-3tqr,04c011d8|9e3153f3,Maccabi Tel Aviv,Sūduva,Sūduva,04c011d8,9e3153f3,9e3153f3,2–4,Sūduva won on aggregate score over two legs and advance to Play-off Round.,1–2,2–1
+2019-2020,el-0q-3tqr,e334d850|f4bbcd04,Haugesund,PSV Eindhoven,PSV Eindhoven,f4bbcd04,e334d850,e334d850,0–1,PSV Eindhoven won on aggregate score over two legs and advance to Play-off Round.,0–1,0–0
+2019-2020,el-0q-3tqr,488c6ba1|fd12ff13,Ludogorets,The New Saints,Ludogorets,488c6ba1,fd12ff13,488c6ba1,9–0,Ludogorets won on aggregate score over two legs and advance to Play-off Round.,5–0,0–4
+2019-2020,el-0q-3tqr,ae7f2f70|e4a9d483,Slovan Bratislava,Dundalk,Slovan Bratislava,ae7f2f70,e4a9d483,ae7f2f70,4–1,Slovan Bratislava won on aggregate score over two legs and advance to Play-off Round.,1–0,1–3
+2019-2020,el-0q-3tqr,2a6cfcb2|f3d8c8b9,Malmö,Zrinjski Mostar,Malmö,f3d8c8b9,2a6cfcb2,f3d8c8b9,3–1,Malmö won on aggregate score over two legs and advance to Play-off Round.,3–0,1–0
+2019-2020,el-0q-3tqr,8c635914|9ae758c2,Thun,Spartak Moscow,Spartak Moscow,9ae758c2,8c635914,8c635914,3–5,Spartak Moscow won on aggregate score over two legs and advance to Play-off Round.,2–3,2–1
+2019-2020,el-0q-3tqr,1040e0f7|d0ab5e26,Neftçi,Bnei Yehuda TA,Bnei Yehuda TA,d0ab5e26,1040e0f7,1040e0f7,3–4,Bnei Yehuda TA won on aggregate score over two legs and advance to Play-off Round.,2–2,2–1
+2019-2020,el-0q-3tqr,133013ee|1d0836d6,Norrköping,Be'er Sheva,Be'er Sheva,1d0836d6,133013ee,133013ee,2–4,Be'er Sheva won on aggregate score over two legs and advance to Play-off Round.,1–1,3–1
+2019-2020,el-0q-3tqr,4c96013a|55ff3845,Sutjeska Nikšić,Linfield,Linfield,55ff3845,4c96013a,4c96013a,3–5,Linfield won on aggregate score over two legs and advance to Play-off Round.,1–2,3–2
+2019-2020,el-0q-3tqr,b1b46fc3|f0ac8ee6,Vaduz,Eint Frankfurt,Eint Frankfurt,b1b46fc3,f0ac8ee6,f0ac8ee6,0–6,Eint Frankfurt won on aggregate score over two legs and advance to Play-off Round.,0–5,1–0
+2019-2020,el-0q-3tqr,33afefe1|baae133b,F91 Dudelange,Nõmme Kalju,F91 Dudelange,baae133b,33afefe1,baae133b,4–1,F91 Dudelange won on aggregate score over two legs and advance to Play-off Round.,3–1,0–1
+2019-2020,el-0q-3tqr,8dff1828|ee0bccc5,Austria Wien,Apollon,Apollon,ee0bccc5,8dff1828,8dff1828,2–5,Apollon won on aggregate score over two legs and advance to Play-off Round.,1–2,3–1
+2019-2020,el-0q-3tqr,105360fe|7517d495,Torino,Shakhtyor,Torino,105360fe,7517d495,105360fe,6–1,Torino won on aggregate score over two legs and advance to Play-off Round.,5–0,1–1
+2019-2020,el-0q-3tqr,4cc7a87b|dde3e804,Partizan,Yeni Mal'spor,Partizan,dde3e804,4cc7a87b,dde3e804,3–2,Partizan won on aggregate score over two legs and advance to Play-off Round.,3–1,1–0
+2019-2020,el-0q-3tqr,b983b638|fac9957a,Sarajevo,BATE Borisov,BATE Borisov,fac9957a,b983b638,b983b638,1–2,BATE Borisov won on aggregate score over two legs and advance to Play-off Round.,1–2,0–0
+2019-2020,el-0q-3tqr,50995c1e|b0333581,Sheriff Tiraspol,AIK Stockholm,AIK Stockholm,50995c1e,b0333581,b0333581,2–3,AIK Stockholm won on aggregate score over two legs and advance to Play-off Round.,1–2,1–1
+2019-2020,el-0q-3tqr,01689b1a|51e5a603,AÉK Lárnaka,Gent,Gent,01689b1a,51e5a603,51e5a603,1–4,Gent won on aggregate score over two legs and advance to Play-off Round.,1–1,3–0
+2019-2020,el-0q-3tqr,c0d3eab4|e0242ef1,Loko Plovdiv,Strasbourg,Strasbourg,e0242ef1,c0d3eab4,c0d3eab4,0–2,Strasbourg won on aggregate score over two legs and advance to Play-off Round.,0–1,1–0
+2019-2020,el-0q-3tqr,3c4fb635|86b7acd2,Midtjylland,Rangers,Rangers,3c4fb635,86b7acd2,86b7acd2,3–7,Rangers won on aggregate score over two legs and advance to Play-off Round.,2–4,3–1
+2019-2020,el-0q-3tqr,946a30cb|cbde2682,CSKA Sofia,Zorya Luhansk,Zorya Luhansk,cbde2682,946a30cb,946a30cb,1–2,Zorya Luhansk won on aggregate score over two legs and advance to Play-off Round.,1–1,1–0
+2019-2020,el-0q-3tqr,174bd5a0|edddfa63,Molde,Aris,Molde,174bd5a0,edddfa63,174bd5a0,4–3,"Molde won on aggregate score over two legs, after extra time and advance to Play-off Round.",3–0,3–1
+2019-2020,el-0q-4po,69d84c29|8c635914,Braga,Spartak Moscow,Braga,69d84c29,8c635914,69d84c29,3–1,Braga won on aggregate score over two legs and advance to Group stage.,1–0,1–2
+2019-2020,el-0q-4po,3f319bc9|aed59852,FCSB,Vitória,Vitória,aed59852,3f319bc9,3f319bc9,0–1,Vitória won on aggregate score over two legs and advance to Group stage.,0–0,1–0
+2019-2020,el-0q-4po,133013ee|fb4ca611,Feyenoord,Be'er Sheva,Feyenoord,fb4ca611,133013ee,fb4ca611,6–0,Feyenoord won on aggregate score over two legs and advance to Group stage.,3–0,0–3
+2019-2020,el-0q-4po,8dff1828|e334d850,PSV Eindhoven,Apollon,PSV Eindhoven,e334d850,8dff1828,e334d850,7–0,PSV Eindhoven won on aggregate score over two legs and advance to Group stage.,3–0,0–4
+2019-2020,el-0q-4po,44b65410|4c96013a,Linfield,Qarabağ Ağdam,Qarabağ Ağdam,4c96013a,44b65410,44b65410,4–4,"Qarabağ Ağdam won on away goals, after aggregate score was tied and advance to Group stage.",3–2,2–1
+2019-2020,el-0q-4po,174bd5a0|dde3e804,Partizan,Molde,Partizan,dde3e804,174bd5a0,dde3e804,3–2,Partizan won on aggregate score over two legs and advance to Group stage.,2–1,1–1
+2019-2020,el-0q-4po,946a30cb|a8661628,Espanyol,Zorya Luhansk,Espanyol,a8661628,946a30cb,a8661628,5–3,Espanyol won on aggregate score over two legs and advance to Group stage.,3–1,2–2
+2019-2020,el-0q-4po,5a5e7874|ae7f2f70,Slovan Bratislava,PAOK,Slovan Bratislava,ae7f2f70,5a5e7874,ae7f2f70,3–3,"Slovan Bratislava won on away goals, after aggregate score was tied and advance to Group stage.",1–0,3–2
+2019-2020,el-0q-4po,18050b20|91cc0413,FC Copenhagen,Rīga FC,FC Copenhagen,18050b20,91cc0413,18050b20,3–2,FC Copenhagen won on aggregate score over two legs and advance to Group stage.,3–1,1–0
+2019-2020,el-0q-4po,b0333581|b81aa4fa,Celtic,AIK Stockholm,Celtic,b81aa4fa,b0333581,b81aa4fa,6–1,Celtic won on aggregate score over two legs and advance to Group stage.,2–0,1–4
+2019-2020,el-0q-4po,6611f992|9e3153f3,Sūduva,Ferencváros,Ferencváros,9e3153f3,6611f992,6611f992,2–4,Ferencváros won on aggregate score over two legs and advance to Group stage.,0–0,4–2
+2019-2020,el-0q-4po,2aae7689|488c6ba1,Ludogorets,Maribor,Ludogorets,488c6ba1,2aae7689,488c6ba1,2–2,"Ludogorets won on away goals, after aggregate score was tied and advance to Group stage.",0–0,2–2
+2019-2020,el-0q-4po,25dbe099|51e5a603,Gent,Rijeka,Gent,51e5a603,25dbe099,51e5a603,3–2,Gent won on aggregate score over two legs and advance to Group stage.,2–1,1–1
+2019-2020,el-0q-4po,b983b638|c72c8787,Astana FK,BATE Borisov,Astana FK,c72c8787,b983b638,c72c8787,3–2,Astana FK won on aggregate score over two legs and advance to Group stage.,3–0,2–0
+2019-2020,el-0q-4po,c0d3eab4|f0ac8ee6,Strasbourg,Eint Frankfurt,Eint Frankfurt,c0d3eab4,f0ac8ee6,f0ac8ee6,1–3,Eint Frankfurt won on aggregate score over two legs and advance to Group stage.,1–0,3–0
+2019-2020,el-0q-4po,1040e0f7|f3d8c8b9,Malmö,Bnei Yehuda TA,Malmö,f3d8c8b9,1040e0f7,f3d8c8b9,4–0,Malmö won on aggregate score over two legs and advance to Group stage.,3–0,0–1
+2019-2020,el-0q-4po,85dbecd4|baae133b,Ararat-Armenia,F91 Dudelange,F91 Dudelange,85dbecd4,baae133b,baae133b,3–3,F91 Dudelange won on penalty kicks following extra time and advance to Group stage.,2–1,2–1
+2019-2020,el-0q-4po,3986b791|c2e6b53b,AZ Alkmaar,Antwerp,AZ Alkmaar,3986b791,c2e6b53b,3986b791,5–2,"AZ Alkmaar won on aggregate score over two legs, after extra time and advance to Group stage.",1–1,1–4
+2019-2020,el-0q-4po,c8ad3091|d5348c80,AEK Athens,Trabzonspor,Trabzonspor,d5348c80,c8ad3091,c8ad3091,3–3,"Trabzonspor won on away goals, after aggregate score was tied and advance to Group stage.",1–3,0–2
+2019-2020,el-0q-4po,105360fe|8cec06e1,Torino,Wolves,Wolves,105360fe,8cec06e1,8cec06e1,3–5,Wolves won on aggregate score over two legs and advance to Group stage.,2–3,2–1
+2019-2020,el-0q-4po,86b7acd2|a73408a7,Legia Warsaw,Rangers,Rangers,a73408a7,86b7acd2,86b7acd2,0–1,Rangers won on aggregate score over two legs and advance to Group stage.,0–0,1–0
+2019-2020,el-1k-1r32,8cec06e1|a8661628,Wolves,Espanyol,Wolves,8cec06e1,a8661628,8cec06e1,6–3,Wolves won on aggregate score over two legs.,4–0,3–2
+2019-2020,el-1k-1r32,d3d9424a|eab315a6,APOEL,Basel,Basel,eab315a6,d3d9424a,d3d9424a,0–4,Basel won on aggregate score over two legs.,0–3,1–0
+2019-2020,el-1k-1r32,51e5a603|cf74a709,Roma,Gent,Roma,cf74a709,51e5a603,cf74a709,2–1,Roma won on aggregate score over two legs.,1–0,1–1
+2019-2020,el-1k-1r32,19538871|f1e6c5f1,Club Brugge,Manchester Utd,Manchester Utd,f1e6c5f1,19538871,19538871,1–6,Manchester Utd won on aggregate score over two legs.,1–1,5–0
+2019-2020,el-1k-1r32,5e876ee6|c7a9f859,Leverkusen,Porto,Leverkusen,c7a9f859,5e876ee6,c7a9f859,5–2,Leverkusen won on aggregate score over two legs.,2–1,1–3
+2019-2020,el-1k-1r32,19c3f8c4|7848bd64,Getafe,Ajax,Getafe,7848bd64,19c3f8c4,7848bd64,3–2,Getafe won on aggregate score over two legs.,2–0,2–1
+2019-2020,el-1k-1r32,69d84c29|86b7acd2,Rangers,Braga,Rangers,86b7acd2,69d84c29,86b7acd2,4–2,Rangers won on aggregate score over two legs.,3–2,0–1
+2019-2020,el-1k-1r32,3986b791|d20821dd,AZ Alkmaar,LASK,LASK,3986b791,d20821dd,d20821dd,1–3,LASK won on aggregate score over two legs.,1–1,2–0
+2019-2020,el-1k-1r32,488c6ba1|d609edc0,Ludogorets,Inter,Inter,488c6ba1,d609edc0,d609edc0,1–4,Inter won on aggregate score over two legs.,0–2,2–1
+2019-2020,el-1k-1r32,13dc44fd|bff39cf5,Sporting CP,Başakşehir,Başakşehir,13dc44fd,bff39cf5,bff39cf5,4–5,"Başakşehir won on aggregate score over two legs, after extra time.",3–1,4–1
+2019-2020,el-1k-1r32,a77c513e|e89d5a28,Shakhtar,Benfica,Shakhtar,e89d5a28,a77c513e,e89d5a28,5–4,Shakhtar won on aggregate score over two legs.,2–1,3–3
+2019-2020,el-1k-1r32,4eaa11d7|f3d8c8b9,Wolfsburg,Malmö,Wolfsburg,4eaa11d7,f3d8c8b9,4eaa11d7,5–1,Wolfsburg won on aggregate score over two legs.,2–1,0–3
+2019-2020,el-1k-1r32,18050b20|b81aa4fa,FC Copenhagen,Celtic,FC Copenhagen,18050b20,b81aa4fa,18050b20,4–2,FC Copenhagen won on aggregate score over two legs.,1–1,1–3
+2019-2020,el-1k-1r32,ad2be733|ff04e205,CFR Cluj,Sevilla,Sevilla,ff04e205,ad2be733,ad2be733,1–1,"Sevilla won on away goals, after aggregate score was tied.",1–1,0–0
+2019-2020,el-1k-1r32,50f2a074|f0ac8ee6,Eint Frankfurt,RB Salzburg,Eint Frankfurt,f0ac8ee6,50f2a074,f0ac8ee6,6–3,Eint Frankfurt won on aggregate score over two legs.,4–1,2–2
+2019-2020,el-1k-1r32,18bb7c10|2fdb4aef,Olympiacos,Arsenal,Olympiacos,2fdb4aef,18bb7c10,2fdb4aef,2–2,"Olympiacos won on away goals, after aggregate score was tied.",0–1,1–2
+2019-2020,el-1k-2r16,18050b20|bff39cf5,Başakşehir,FC Copenhagen,,bff39cf5,18050b20,,,Results are the aggregate results over two legs.,1–0,↻
+2019-2020,el-1k-2r16,d3d9424a|f0ac8ee6,Eint Frankfurt,Basel,,f0ac8ee6,d3d9424a,,,Results are the aggregate results over two legs.,0–3,↻
+2019-2020,el-1k-2r16,19538871|d20821dd,LASK,Manchester Utd,,d20821dd,19538871,,,Results are the aggregate results over two legs.,0–5,↻
+2019-2020,el-1k-2r16,2fdb4aef|8cec06e1,Olympiacos,Wolves,,2fdb4aef,8cec06e1,,,Results are the aggregate results over two legs.,1–1,↻
+2019-2020,el-1k-2r16,4eaa11d7|e89d5a28,Wolfsburg,Shakhtar,,4eaa11d7,e89d5a28,,,Results are the aggregate results over two legs.,1–2,↻
+2019-2020,el-1k-2r16,86b7acd2|c7a9f859,Rangers,Leverkusen,,86b7acd2,c7a9f859,,,Results are the aggregate results over two legs.,1–3,↻

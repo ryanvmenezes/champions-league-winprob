@@ -2,32 +2,13 @@ library(here)
 library(rvest)
 library(tidyverse)
 
-getorretrieve = function(url) {
-  fname = url %>% 
-    str_split('/') %>% 
-    `[[`(1) %>% 
-    `[`(length(.)) %>% 
-    str_c('.html')
-  
-  fpath = here('data-get', 'fbref', 'raw', 'teams', fname)
-  
-  # url = str_c('https://fbref.com/en/squads/', teamid, '/')
-  
-  if (file.exists(fpath)) {
-    h = read_html(fpath)
-  } else {
-    h = read_html(url)
-    write_html(h, fpath)
-  }
-  
-  h
-}
+source(here('data-get', 'fbref', 'utils.R'))
 
 indexpage = tibble(url = 'https://fbref.com/en/squads')
 
 countries = indexpage %>%
   mutate(
-    rawhtml = map(url, getorretrieve),
+    rawhtml = map(url, getorretrieve.teams, override = TRUE),
     table = map(
       rawhtml,
       ~.x %>%
@@ -54,7 +35,7 @@ countries = indexpage %>%
 countries
 
 countrieshtml = countries %>%
-  mutate(rawhtml = map(countryurl, getorretrieve))
+  mutate(rawhtml = map(countryurl, getorretrieve.teams, override = TRUE))
 
 countrieshtml
 

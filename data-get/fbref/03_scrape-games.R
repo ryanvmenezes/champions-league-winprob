@@ -1,16 +1,21 @@
 library(here)
 library(rvest)
+library(furrr)
 library(tidyverse)
 
-summaries = read_csv(here('data-get', 'fbref', 'processed', 'match-urls.csv'))
+plan(multicore)
+
+source(here('data-get', 'fbref', 'utils.R'))
+
+summaries = read_csv(here('data-get', 'fbref', 'processed', 'match-urls.csv'), col_types = cols(.default = 'c'))
 summaries
 
 # team 1 in the aggregate should always be the team that hosted leg 1
 twoleggedties = summaries %>%
   drop_na(stagecode) %>% 
   arrange(szn, stagecode) %>% 
-  # filter out anything without complete data over two legs
-  filter(!is.na(url1) & !is.na(url2)) %>%
+  # filter out anything without complete data over two legs, except this current season
+  filter((!is.na(url1) & !is.na(url2)) | (!is.na(url1) & szn == CURRENT_SZN)) %>%
   mutate(
     hometeamid1 = case_when(
       hometeam1 == team1 ~ teamid1,
@@ -82,78 +87,12 @@ countbyseason
 countbyseason %>%
   write_csv(here('data-get', 'fbref', 'processed', 'count-leg-data-by-season.csv'))
 
-getorretrieve = function(url) {
-  fname = url %>% 
-    str_split('/') %>% 
-    `[[`(1) %>% 
-    `[`(length(.)) %>% 
-    str_c('.html')
-  
-  fpath = here('data-get', 'fbref', 'raw', 'games', fname)
-  
-  if (file.exists(fpath)) {
-    h = read_html(fpath)
-  } else {
-    h = read_html(url)
-    write_html(h, fpath)
-  }
-  
-  pb$tick()$print()
-  
-  h
-}
-
-pb = progress_estimated(nrow(legs))
 legshtml = legs %>%
-  mutate(html = map(url, getorretrieve))
+  filter(!is.na(url)) %>% 
+  mutate(html = map(url, getorretrieve.games))
 
 legshtml
 
-parseevents = function(tm) {
-  player = tm %>%
-    html_node('a') %>%
-    html_text()
-  
-  playerid = tm %>%
-    html_node('a') %>%
-    html_attr('href') %>%
-    str_replace('/en/players/','') %>%
-    str_sub(end = 8)
-  
-  eventtype = tm %>%
-    html_node('div') %>%
-    html_attr('class') %>%
-    str_replace('event_icon ', '')
-  
-  minute = tm %>%
-    html_text() %>%
-    str_trim() %>%
-    str_replace('&rsquor;', '') %>%
-    str_split(' · ') %>%
-    map_chr(`[`, 2)
-  
-  tibble(player, playerid, eventtype, minute)
-}
-
-getevents = function(h) {
-  aevents = h %>% 
-    html_node('div#a.event') %>% 
-    html_children() %>% 
-    parseevents() %>% 
-    mutate(team = 1)
-  
-  bevents = h %>% 
-    html_node('div#b.event') %>% 
-    html_children() %>% 
-    parseevents() %>% 
-    mutate(team = 2)
-  
-  pb$tick()$print()
-  
-  bind_rows(aevents, bevents)
-}
-
-pb = progress_estimated(nrow(legs))
 parsedevents = legshtml %>% 
   mutate(events = map(html, getevents)) %>% 
   select(-url, -html) %>% 
