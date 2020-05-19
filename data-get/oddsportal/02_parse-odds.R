@@ -9,24 +9,32 @@ rawfiles = tibble(
   mutate(h = map(p, read_html))
 
 parsedtbls = rawfiles %>% 
-  mutate(t = map(h, ~.x %>% 
-                   html_node('table#tournamentTable') %>% 
-                   html_table() %>% 
-                   as_tibble(.name_repair = ~str_c('c', 1:length(.))) %>% 
-                   filter(c1 != '') %>% 
-                   mutate(c8 = case_when(
-                     c5 == 'X' ~ c1,
-                     TRUE ~ NA_character_
-                   )) %>% 
-                   fill(c8, .direction = 'down') %>% 
-                   filter(c5 != 'X') %>% 
-                   separate(c8, into = c('date','round'), sep = ' - ') %>% 
-                   separate(c2, into = c('teamh', 'teama'), sep = ' - ') %>% 
-                   select(round, date, teamh, teama, finalscore = c3,
-                          oddsh = c4, oddsd = c5, oddsa = c6) %>% 
-                   mutate(oddsh = as.character(oddsh),
-                          oddsd = as.character(oddsd),
-                          oddsa = as.character(oddsa))))
+  mutate(
+    t = map(
+      h,
+      ~.x %>%
+        html_node('table#tournamentTable') %>%
+        html_table() %>% 
+        as_tibble(.name_repair = ~str_c('c', 1:length(.))) %>%
+        filter(c1 != '') %>%
+        mutate(
+          c8 = case_when(
+            c5 == 'X' ~ c1,
+            TRUE ~ NA_character_
+            )
+        ) %>%
+        fill(c8, .direction = 'down') %>%
+        filter(c5 != 'X') %>%
+        separate(c8, into = c('date','round'), sep = ' - ') %>%
+        separate(c2, into = c('teamh', 'teama'), sep = ' - ') %>%
+        select(round, date, teamh, teama, finalscore = c3, oddsh = c4, oddsd = c5, oddsa = c6) %>%
+        mutate(
+          oddsh = as.character(oddsh),
+          oddsd = as.character(oddsd),
+          oddsa = as.character(oddsa)
+        )
+    )
+  )
 
 allodds = parsedtbls %>% 
   mutate(f = str_replace(f, '.html','')) %>% 
@@ -68,10 +76,10 @@ allodds = allodds %>%
          proba = oddsaprob / oddsprobtotal)
 
 allodds %>% write_rds(here('data', 'odds.rds'))
-allodds %>% write_csv(here('data-get','oddsportal','processed','odds.csv'), na = '')
+allodds %>% write_csv(here('data-get', 'oddsportal', 'processed', 'odds.csv'), na = '')
 
 gamesbyseason = allodds %>% group_by(comp, season) %>% count()
-gamesbyseason %>% write_csv(here('data-get','oddsportal','processed','season-game-counts.csv'), na = '')
+gamesbyseason %>% write_csv(here('data-get', 'oddsportal', 'processed', 'season-game-counts.csv'), na = '')
 
 teams = bind_rows(
   allodds %>% select(comp, team = teamh),
@@ -86,4 +94,5 @@ teams = bind_rows(
   arrange(team)
 
 teams
+
 teams %>% write_csv(here('data-get','oddsportal','processed','team-names.csv'), na = '')

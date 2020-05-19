@@ -23,7 +23,7 @@ AEL Limassol (Cyp),8,10
 AIK,4,14
 AIK (Swe),4,36
 Airbus (Wal),,6
-Ajax,67,67
+Ajax,72,69
 Ajax (Ned),18,4
 Akademija Pandev (Mkd),,2
 Akhisarspor,,6
@@ -43,7 +43,7 @@ Anderlecht (Bel),6,4
 Anorthosis,18,20
 Anorthosis (Cyp),,12
 Antwerp (Bel),,5
-APOEL,38,45
+APOEL,38,52
 APOEL (Cyp),38,14
 Apollon,2,26
 Apollon (Cyp),,34
@@ -53,11 +53,11 @@ Aris,,22
 Aris (Gre),,4
 Arka Gdynia (Pol),,2
 Arouca (Por),,4
-Arsenal,129,30
+Arsenal,129,37
 Arsenal (Eng),6,
 Arsenal Kiev (Ukr),,2
 Arsenal Tula (Rus),,2
-AS Roma,76,41
+AS Roma,76,49
 AS Roma (Ita),2,2
 Ashdod,,2
 Asteras Tripolis,,12
@@ -65,11 +65,11 @@ Asteras Tripolis (Gre),,14
 Aston Villa,,14
 Astra,,14
 Astra (Rou),2,24
-Atalanta,1,8
+Atalanta,8,8
 Atalanta (Ita),,6
 Ath Bilbao,6,73
 Ath Bilbao (Esp),2,14
-Atl. Madrid,81,57
+Atl. Madrid,88,57
 Atl. Madrid (Esp),,4
 Atlantas,,2
 Atlantas (Ltu),,10
@@ -81,9 +81,9 @@ Augsburg,,8
 Austria Vienna,8,70
 Austria Vienna (Aut),4,18
 Auxerre,8,25
-AZ Alkmaar,6,89
+AZ Alkmaar,6,96
 AZ Alkmaar (Ned),,24
-B. Monchengladbach,12,21
+B. Monchengladbach,12,26
 B. Monchengladbach (Ger),4,2
 B36 Torshavn,4,14
 B36 Torshavn (Fai),6,10
@@ -95,18 +95,18 @@ Banga (Ltu),,4
 Bangor City,,8
 Bangor City (Wal),2,6
 Banska Bystrica,,8
-Barcelona,171,4
+Barcelona,178,4
 Barry (Wal),,2
-Basaksehir,,7
+Basaksehir,,16
 Basaksehir (Tur),6,8
-Basel,60,83
+Basel,60,91
 Basel (Sui),20,4
 Bashkimi,,3
 BATE,50,45
 BATE (Blr),44,8
-Bayer Leverkusen,49,57
+Bayer Leverkusen,54,61
 Bayer Leverkusen (Ger),4,
-Bayern Munich,153,14
+Bayern Munich,160,14
 Bayern Munich (Ger),2,
 Beerschot AC,,2
 Beitar Jerusalem,4,2
@@ -114,12 +114,12 @@ Beitar Jerusalem (Isr),,18
 Belenenses,,8
 Belenenses (Por),,4
 Bellinzona,,6
-Benfica,93,74
+Benfica,98,76
 Benfica (Por),8,
 Beroe,,2
 Beroe (Bul),,10
 Besa Kavaje,,6
-Besiktas,30,77
+Besiktas,30,82
 Besiktas (Tur),4,10
 Betis,8,22
 Betis (Esp),,2
@@ -146,7 +146,7 @@ Borac Banja Luka (Bih),2,2
 Bordeaux,22,46
 Bordeaux (Fra),,14
 Botev Plovdiv (Bul),,16
-Braga,16,80
+Braga,16,87
 Braga (Por),2,14
 Brann,4,22
 Brann (Nor),,4
@@ -169,16 +169,16 @@ Celik Niksic (Mne),,8
 Celje,,2
 Celje (Slo),,6
 Celta Vigo,2,24
-Celtic,64,45
+Celtic,64,52
 Celtic (Sco),46,6
 Cercle Brugge KSV,,4
-CFR Cluj,18,13
+CFR Cluj,18,20
 CFR Cluj (Rou),14,8
 Ch. Odessa,,12
 Ch. Odessa (Ukr),,8
 Charleroi (Bel),,4
 Chateauroux,,2
-Chelsea,137,24
+Chelsea,144,24
 Cherno More,,10
 Cherno More (Bul),,2
 Chievo,2,2
@@ -186,7 +186,7 @@ Chikhura (Geo),,22
 Cibalia,,2
 Cliftonville,,6
 Cliftonville (Nir),4,14
-Club Brugge KV,25,82
+Club Brugge KV,30,84
 Club Brugge KV (Bel),12,14
 Coleraine (Nir),,4
 Connahs Q. (Wal),,12
@@ -196,12 +196,12 @@ Cracovia (Pol),,4
 Crusaders,,2
 Crusaders (Nir),8,18
 CS Petange,,1
-CSKA Moscow,78,46
+CSKA Moscow,78,51
 CSKA Moscow (Rus),8,2
 CSKA Sofia,4,39
 CSKA Sofia (Bul),,18
 Cukaricki (Srb),,16
-D. Zagreb,49,60
+D. Zagreb,54,60
 D. Zagreb (Cro),46,6
 Dacia Chisinau,,9
 Dacia Chisinau (Mda),2,16
@@ -231,14 +231,14 @@ Dnipro (Ukr),2,8
 Dnyapro,,8
 Domzale,8,7
 Domzale (Slo),,28
-Dortmund,62,26
+Dortmund,69,26
 Dortmund (Ger),,4
 Drita (Kos),4,2
 Drogheda,4,8
 Drogheda (Irl),,2
 Druids,,2
 Druids (Wal),,2
-Dudelange,12,11
+Dudelange,12,16
 Dudelange (Lux),20,18
 Dun. Streda (Svk),,8
 Dunav Ruse (Bul),,2
@@ -249,11 +249,11 @@ Dundee Utd (Sco),,4
 Dunfermline,,4
 Dungannon,,2
 DVTK (Hun),,6
-Dyn. Kyiv,68,71
+Dyn. Kyiv,68,76
 Dyn. Kyiv (Ukr),14,6
 Dynamo Moscow,2,12
 Dynamo Moscow (Rus),,8
-Eintracht Frankfurt,,29
+Eintracht Frankfurt,,37
 Eintracht Frankfurt (Ger),,8
 Ekranas,8,10
 Ekranas (Ltu),10,6
@@ -268,7 +268,7 @@ Esbjerg,,12
 Esbjerg (Den),,8
 Eschen (Lie),,2
 Eskisehirspor (Tur),,4
-Espanyol,,24
+Espanyol,,31
 Espanyol (Esp),,6
 Estoril,,12
 Estoril (Por),,4
@@ -280,11 +280,11 @@ Everton (Eng),,4
 Faetano,,2
 Falkirk,,2
 FBK Kaunas,16,8
-FC Astana,6,21
+FC Astana,6,26
 FC Astana (Kaz),24,20
 FC Astana-64,4,
 FC Botosani (Rou),,4
-FC Copenhagen,46,67
+FC Copenhagen,46,76
 FC Copenhagen (Den),28,14
 FC Daugava (Lat),2,6
 FC Gomel,2,2
@@ -294,7 +294,7 @@ FC Juniors (Aut),,2
 FC Koln,,6
 FC Minsk (Blr),,10
 FC Moscow,,4
-FC Porto,117,28
+FC Porto,117,35
 FC Porto (Por),6,
 FC Rangers,2,2
 FC Rapid Bucuresti,,35
@@ -307,12 +307,12 @@ FCSB,38,84
 FCSB (Rou),24,22
 Fenerbahce,40,64
 Fenerbahce (Tur),14,8
-Ferencvaros,4,8
+Ferencvaros,4,13
 Ferencvaros (Hun),8,20
 Feronikeli (Kos),4,2
 Ferreira,,12
 Ferreira (Por),2,
-Feyenoord,6,40
+Feyenoord,6,45
 Feyenoord (Ned),4,12
 Fingal,,2
 Fiorentina,18,56
@@ -321,7 +321,7 @@ FK Anzi Makhackala,,20
 FK Anzi Makhackala (Rus),,6
 FK Baku,6,5
 FK Baku (Aze),,2
-FK Crvena zvezda,19,35
+FK Crvena zvezda,24,35
 FK Crvena zvezda (Srb),20,26
 FK Krylya Sovetov Samara,,6
 FK Liepaja,6,19
@@ -353,7 +353,7 @@ G.A. Eagles (Ned),,2
 Gabala,,12
 Gabala (Aze),,26
 Gagra (Geo),,2
-Galatasaray,47,46
+Galatasaray,52,46
 Galatasaray (Tur),,2
 Gandzasar,,2
 Gandzasar (Arm),,10
@@ -363,12 +363,12 @@ Gaziantepspor (Tur),,4
 Gefle,,6
 Gefle (Swe),,6
 Genclerbirligi,,8
-Genk,9,46
+Genk,14,46
 Genk (Bel),4,18
 Genoa,,8
-Gent,10,25
+Gent,10,32
 Gent (Bel),,20
-Getafe,,21
+Getafe,,29
 Giannina (Gre),,4
 GKS Belchatow,,4
 Glenavon (Nir),,8
@@ -387,7 +387,7 @@ Groclin,,12
 Grodig (Aut),,4
 Groningen,,10
 Groningen (Ned),,2
-Guimaraes,2,21
+Guimaraes,2,26
 Guimaraes (Por),,12
 Guingamp,,10
 Gyor,,12
@@ -446,7 +446,7 @@ Hull (Eng),,4
 IF Fuglafjordur (Fai),,6
 Ilves (Fin),,2
 Infonet Tallinn (Est),2,2
-Inter,86,36
+Inter,91,39
 Inter (Ita),,6
 Inter Turku,2,2
 Inter Turku (Fin),,6
@@ -467,7 +467,7 @@ Jeunesse Esch (Lux),,14
 JJK Jyvaskyla (Fin),,4
 Juvenes/Dogana,,4
 Juvenes/Dogana (San),,4
-Juventus,110,22
+Juventus,117,22
 K. Almaty,1,2
 K. Almaty (Kaz),,30
 Kaerjeng,,6
@@ -501,7 +501,7 @@ Koper,2,6
 Koper (Slo),,10
 KR Reykjavik,2,10
 KR Reykjavik (Ice),4,24
-Krasnodar,,35
+Krasnodar,,40
 Krasnodar (Rus),4,18
 Kruoja (Ltu),,4
 KSV Roeselare,,3
@@ -514,10 +514,11 @@ Laci,,2
 Laci (Alb),,14
 Lahti,,6
 Lahti (Fin),,4
-LASK Linz,,1
-LASK Linz (Aut),4,4
+LASK,,10
+LASK (Aut),4,
+LASK Linz (Aut),,4
 Lausanne,,12
-Lazio,8,73
+Lazio,8,78
 Lazio (Ita),2,4
 Lech Poznan,4,32
 Lech Poznan (Pol),4,28
@@ -537,7 +538,7 @@ Liberec,2,32
 Liberec (Cze),4,20
 Libertas,,2
 Libertas (San),,6
-Lille,29,44
+Lille,34,44
 Lille (Fra),6,2
 Lillestrom,,4
 Lillestrom (Nor),,2
@@ -547,7 +548,7 @@ Linfield (Nir),12,20
 Lisburn,,2
 Litex Lovech,4,34
 Litex Lovech (Bul),4,8
-Liverpool,109,51
+Liverpool,116,51
 Liverpool (Eng),2,4
 Livorno,,8
 Llandudno (Wal),,2
@@ -560,22 +561,22 @@ Lok. Sofia (Bul),,4
 Lok. Zagreb (Cro),,14
 Lokeren,,6
 Lokeren (Bel),,4
-Lokomotiv Moscow,13,44
+Lokomotiv Moscow,18,44
 Lokomotiv Moscow (Rus),,4
 Lokomotiv Tbilisi,,1
 Longford,,2
 Lovcen (Mne),,2
-Ludogorets,12,27
+Ludogorets,12,34
 Ludogorets (Bul),32,12
 Luftetari Gjirokastra (Alb),,2
-Lugano,,7
+Lugano,,12
 Lusitanos,,2
 Lusitanos (And),4,6
 Luzern,,2
 Luzern (Sui),,14
 Lyn,,2
 Lyngby (Den),,6
-Lyon,99,38
+Lyon,106,38
 Lyon (Fra),6,4
 Maccabi Haifa,16,24
 Maccabi Haifa (Isr),6,12
@@ -589,11 +590,11 @@ Makedonija GP (Mkd),,2
 Malaga,10,
 Malaga (Esp),2,
 Mallorca,,4
-Malmo FF,16,17
+Malmo FF,16,24
 Malmo FF (Swe),26,16
-Manchester City,69,32
+Manchester City,76,32
 Manchester City (Eng),2,
-Manchester Utd,129,24
+Manchester Utd,129,33
 Manchester Utd (Eng),2,
 Maribor,16,32
 Maribor (Slo),36,16
@@ -648,7 +649,7 @@ Nacional (Por),,8
 Naftan,,2
 Naftan (Blr),,2
 Nancy,,14
-Napoli,35,56
+Napoli,42,56
 Napoli (Ita),4,
 Narva,,6
 Narva (Est),,10
@@ -685,12 +686,12 @@ Odense (Den),4,
 OFK Beograd,,7
 OFK Petrovac,,4
 Okzhetpes,,2
-Oleksandriya,,1
+Oleksandriya,,6
 Oleksandriya (Ukr),,6
 Olimpic Sarajevo (Bih),,2
 Olimpik Donetsk (Ukr),,2
 Olimps Riga,,2
-Olympiacos Piraeus,79,44
+Olympiacos Piraeus,84,48
 Olympiacos Piraeus (Gre),12,6
 Omonia,4,28
 Omonia (Cyp),,24
@@ -719,10 +720,10 @@ Panionios,,12
 Panionios (Gre),,4
 PAOK,2,64
 PAOK (Gre),14,25
-Paris SG,71,40
+Paris SG,78,40
 Paris SG (Fra),,4
 Parma,,24
-Partizan,24,63
+Partizan,24,68
 Partizan (Srb),26,26
 Partizan Minsk,,9
 Partizani,,6
@@ -748,11 +749,11 @@ Prestatyn (Wal),,4
 Primorje,,2
 Prishtina,,2
 Prishtina (Kos),,6
-PSV,64,69
+PSV,64,74
 PSV (Ned),8,14
 Pyunik Yerevan,18,
 Pyunik Yerevan (Arm),6,24
-Qarabag,6,41
+Qarabag,6,46
 Qarabag (Aze),30,24
 Queen of South,,2
 Rabotnicki,11,18
@@ -764,16 +765,16 @@ Radnicki Nis (Srb),,6
 Radnik Bijeljina (Bih),,4
 Randers FC,,18
 Randers FC (Den),,6
-Rangers,36,36
+Rangers,36,45
 Rangers (Sco),2,20
 Rapid Vienna,12,66
 Rapid Vienna (Aut),4,18
-RB Leipzig,7,12
+RB Leipzig,14,12
 RB Leipzig (Ger),,6
-Real Madrid,163,
+Real Madrid,170,
 Real Sociedad,8,8
 Real Sociedad (Esp),2,4
-Rennes,,33
+Rennes,,38
 Rennes (Fra),,4
 Renova,2,2
 Renova (Mkd),,8
@@ -789,7 +790,7 @@ Rio Ave (Por),,8
 Riteriai,,2
 Riteriai (Ltu),,18
 RNK Split (Cro),,12
-Rosenborg,32,49
+Rosenborg,32,54
 Rosenborg (Nor),24,36
 Rovaniemi (Fin),,8
 Rubin Kazan,12,46
@@ -806,7 +807,7 @@ Ruzomberok (Svk),,8
 Sabail (Aze),,2
 Saburtalo Tbilisi (Geo),4,2
 Sakhnin,,4
-Salzburg,21,80
+Salzburg,26,82
 Salzburg (Aut),24,12
 Sampdoria,2,24
 Sampdoria (Ita),,2
@@ -826,10 +827,10 @@ Senica (Svk),,8
 Servette,,2
 Servette (Sui),,4
 Setubal,,6
-Sevilla,44,103
+Sevilla,44,111
 Sevilla (Esp),2,12
 Sevojno,,4
-Shakhtar Donetsk,99,55
+Shakhtar Donetsk,104,59
 Shakhtar Donetsk (Ukr),6,2
 Shakhtar Karagandy,,10
 Shakhtar Karagandy (Kaz),8,10
@@ -871,7 +872,7 @@ Skonto (Lat),2,10
 Slask Wroclaw (Pol),4,18
 Slaven Belupo,,16
 Slaven Belupo (Cro),,4
-Slavia Prague,17,48
+Slavia Prague,22,48
 Slavia Prague (Cze),8,6
 Slavia Sofia (Bul),,6
 Slavija,,4
@@ -880,7 +881,7 @@ Sliema (Mlt),,4
 Sligo Rovers,,2
 Sligo Rovers (Irl),2,8
 Sloboda (Bih),,2
-Slovan Bratislava,4,19
+Slovan Bratislava,4,24
 Slovan Bratislava (Svk),14,30
 Sochaux,,12
 Sochaux (Fra),,2
@@ -896,16 +897,16 @@ Spartak Moscow,32,32
 Spartak Moscow (Rus),4,10
 Spartaks (Lat),4,10
 Speranta Nisporeni (Mda),,2
-Sporting,44,90
+Sporting,44,97
 Sporting (Por),4,4
-St Etienne,,33
+St Etienne,,38
 St Etienne (Fra),,14
 St Johnstone (Sco),,14
 St Josephs,,2
 St Josephs (Gib),,6
 St. Gallen,,6
 St. Gallen (Sui),,4
-St. Liege,10,61
+St. Liege,10,66
 St. Liege (Bel),8,12
 St. Patricks,,14
 St. Patricks (Irl),2,22
@@ -956,12 +957,12 @@ Torino,,10
 Torino (Ita),,10
 Torpedo Kutaisi,,1
 Torpedo Kutaisi (Geo),2,14
-Tottenham,40,77
+Tottenham,47,77
 Tottenham (Eng),,6
 Toulouse,2,14
 TPS,,4
 TPS (Fin),,4
-Trabzonspor,12,29
+Trabzonspor,12,34
 Trabzonspor (Tur),2,20
 Tre Fiori,4,2
 Tre Fiori (San),2,4
@@ -998,7 +999,7 @@ Utrecht,,18
 Utrecht (Ned),,10
 Vaduz,,15
 Vaduz (Lie),,34
-Valencia,61,67
+Valencia,68,67
 Valencia (Esp),2,
 Valerenga,6,12
 Valerenga (Nor),,4
@@ -1050,15 +1051,15 @@ Willem II,,2
 Wisla,11,26
 Wisla (Pol),6,
 WIT Georgia,4,8
-Wolfsberger AC,,1
+Wolfsberger AC,,6
 Wolfsberger AC (Aut),,4
-Wolfsburg,16,27
-Wolves,,1
+Wolfsburg,16,36
+Wolves,,10
 Wolves (Eng),,6
 Xanthi FC,,4
 Xanthi FC (Gre),,4
 Yeni Malatyaspor (Tur),,4
-Young Boys,12,49
+Young Boys,12,54
 Young Boys (Sui),14,16
 Z. Moravce,,4
 Zaglebie,2,2
@@ -1074,7 +1075,7 @@ Zaria Balti (Mda),,8
 Zawisza (Pol),,2
 Zeljeznicar,2,2
 Zeljeznicar (Bih),4,22
-Zenit,47,93
+Zenit,52,93
 Zenit (Rus),8,8
 Zestafoni,,12
 Zestafoni (Geo),6,4
