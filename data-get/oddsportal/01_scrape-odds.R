@@ -1,4 +1,5 @@
 library(here)
+library(glue)
 library(rvest)
 library(tidyverse)
 library(RSelenium)
@@ -10,6 +11,14 @@ runscrape = function(dr, lg, yr) {
   suffix = str_c('-', yr - 1, '-', yr, '/')
   if (yr == 2020) { suffix = '/' }
   if (lg == 'europa-league' & yr < 2010) { lgurl = 'uefa-cup'} else { lgurl = lg }
+  
+  outfolder = here('data-get', 'oddsportal', 'raw')
+  # purge all of this year's files
+  
+  list.files(outfolder) %>% 
+    str_c(outfolder, '/', .) %>% 
+    `[`(str_detect(., glue('{lg}-{yr-1}-{yr}'))) %>% 
+    file.remove()
   
   while (TRUE) {
     url = str_c('https://www.oddsportal.com/soccer/europe/', lgurl, suffix, 'results/#/page/', page, '/')
