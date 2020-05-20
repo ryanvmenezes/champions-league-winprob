@@ -2,6 +2,7 @@ library(here)
 library(rvest)
 library(readxl)
 library(tidyverse)
+library(googlesheets4)
 
 # fbref teams -------------------------------------------------------------
 
@@ -32,13 +33,6 @@ fbrefteams
 # join for master fbref list
 europeteamsfbref = fbrefteams %>% 
   select(clubid, club = Squad, country, countrycode = countrycode3, governingbody) %>% 
-  # manually add this missing team -- not on fbref.com country index
-  bind_rows(
-    tribble(
-      ~club, ~clubid, ~country, ~countrycode, ~governingbody,
-      'Juventus', 'e0652b02', 'Italy', 'ITA', 'UEFA'
-    )
-  ) %>% 
   right_join(distinctteams, by = 'clubid') %>%
   arrange(club)
 
@@ -54,6 +48,8 @@ europeteamsfbref %>% write_csv(here('data-get', 'assemble', 'teams', 'europe-tea
 odds = read_csv(here('data-get', 'oddsportal', 'processed', 'odds.csv'), na = '-')
 
 odds
+
+odds %>% tail(20)
 
 europeteamsodds = odds %>% 
   filter(season >= 2015) %>%
@@ -71,18 +67,25 @@ europeteamsodds
 europeteamsodds %>% write_csv(here('data-get', 'assemble', 'teams', 'europe-teams-odds.csv'), na = '')
 
 # bring in manually joined list
-joined = read_csv(here('data-get', 'assemble', 'teams', 'name join - joining-work.csv'))
+sheeturl = 'https://docs.google.com/spreadsheets/d/19yv-uBPRs5JqXiWuLwhsbMQNMtiW5UHOnLpoX-DWjBM/edit#gid=0'
+sheetname = 'joining-work'
+gs4_auth(email = 'ryanvmenezes@gmail.com')
+
+joined = read_sheet(sheeturl, sheetname)
+
+joined
 
 joined = joined %>% 
   # manual fix for entirely numeric string that has leading 0
   mutate(
+    fbrefid = map_chr(fbrefid, as.character),
     fbrefid = str_pad(fbrefid, width = 8, side = 'left', pad = '0')
   )
 
 joined
 
 # fbref teams in joined CL/El-index list that did not get attached in manual join
-# this is usually because of misfires on my part
+# this is usually because of misfires on my part, or a new team to the data
 didntmatch = europeteamsfbref %>% anti_join(joined %>% select(clubid = fbrefid))
 
 didntmatch
@@ -98,9 +101,8 @@ needsmatch = joiningprogress %>% filter(is.na(fbrefid))
 
 needsmatch
 
-# fully joined list
-# paste first two columns into google sheet
-joiningprogress %>% write_csv(here('data-get', 'assemble', 'teams', 'joining-progress.csv'), na = '')
+# fully joined list - write it back to google sheet
+joiningprogress %>% write_sheet(ss = sheeturl, sheet = sheetname)
 
 # create final teams table
 
