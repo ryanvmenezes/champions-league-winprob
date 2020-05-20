@@ -103,10 +103,12 @@ needsmatch
 
 # fully joined list - write it back to google sheet
 joiningprogress %>% write_sheet(ss = sheeturl, sheet = sheetname)
+joiningprogress %>% write_csv(here('data-get', 'assemble', 'teams', 'names-joined.csv'))
 
 # create final teams table
 
-teams = joined %>% 
+teams = joined %>%
+  drop_na(matchclub) %>% 
   group_by(teamname = matchclub, fbrefid, teamcountry = matchcountry) %>% 
   summarise(oddsnames = str_c(team, collapse = '||')) %>% 
   ungroup()
@@ -116,3 +118,4 @@ teams
 # final table
 teams %>% write_csv(here('data-get', 'assemble', 'teams', 'teams.csv'))
 teams %>% write_rds(here('data', 'teams.rds'))
+

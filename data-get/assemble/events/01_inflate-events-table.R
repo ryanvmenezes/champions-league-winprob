@@ -42,7 +42,7 @@ eventsnested
 expandminutes = function(data, aet = FALSE) {
   minutemax = if_else(aet, 210, 180)
   
-  data %>% 
+  df = data %>% 
     right_join(tibble(minuteclean = 1:minutemax), by = 'minuteclean') %>% 
     drop_na(minuteclean) %>% 
     arrange(minuteclean, minute) %>% 
@@ -65,6 +65,8 @@ expandminutes = function(data, aet = FALSE) {
     select(
       minuteclean, minuterown, leg, goalst1:redcardst1diff, player, playerid, eventtype, minute, team
     )
+  
+  return(df)
 }
 
 eventsnested = eventsnested %>% 

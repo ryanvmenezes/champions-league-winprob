@@ -60,7 +60,7 @@ Banga (Ltu),34cc3f19,FK Banga Gargždai,Lithuania
 Bangor City (Wal),dd3fa21f,Bangor City FC,Wales
 Barcelona,206d90db,FC Barcelona,Spain
 Barry (Wal),d8760be1,Barry Town United FC,Wales
-Basaksehir,,,
+Basaksehir,bff39cf5,İstanbul Başakşehir FK,Turkey
 Basaksehir (Tur),bff39cf5,İstanbul Başakşehir FK,Turkey
 Basel,d3d9424a,FC Basel,Switzerland
 Basel (Sui),d3d9424a,FC Basel,Switzerland
@@ -100,7 +100,7 @@ Celje (Slo),c56c28b0,NK Celje,Slovenia
 Celta Vigo,f25da7fb,Celta de Vigo,Spain
 Celtic,b81aa4fa,Celtic FC,Scotland
 Celtic (Sco),b81aa4fa,Celtic FC,Scotland
-CFR Cluj,,,
+CFR Cluj,ff04e205,CFR Cluj,Romania
 CFR Cluj (Rou),ff04e205,CFR Cluj,Romania
 Ch. Odessa (Ukr),cdd0bbb6,FC Chornomorets Odesa,Ukraine
 Charleroi (Bel),140e320a,R. Charleroi SC,Belgium
@@ -155,7 +155,7 @@ Elfsborg (Swe),50e85bfc,IF Elfsborg,Sweden
 Ermis (Cyp),5ac58233,Ermis Aradippou,Cyprus
 Ertis Pavlodar (Kaz),db5a37c5,FC Irtysh Pavlodar,Kazakhstan
 Esbjerg (Den),31aa0dd4,Esbjerg fB,Denmark
-Espanyol,,,
+Espanyol,a8661628,RCD Espanyol,Spain
 Espanyol (Esp),a8661628,RCD Espanyol,Spain
 Europa FC,75cd4ee3,Europa FC,Gibraltar
 Europa FC (Gib),75cd4ee3,Europa FC,Gibraltar
@@ -204,7 +204,7 @@ Genk,1e972a99,KRC Genk,Belgium
 Genk (Bel),1e972a99,KRC Genk,Belgium
 Gent,51e5a603,KAA Gent,Belgium
 Gent (Bel),51e5a603,KAA Gent,Belgium
-Getafe,,,
+Getafe,7848bd64,Getafe CF,Spain
 Giannina (Gre),6507d2b8,PAS Giannina,Greece
 Glenavon (Nir),b3b6ca5d,Glenavon FC,Northern Ireland
 Glentoran (Nir),eaa4ec68,Glentoran FC,Northern Ireland
@@ -271,8 +271,8 @@ KuPS (Fin),e6f63673,Kuopion PS,Finland
 La Fiorita (San),6de42722,S.P. La Fiorita,San Marino
 Laci (Alb),7a40cd8b,KF Laçi,Albania
 Lahti (Fin),5b8cfb05,FC Lahti,Finland
-LASK,,,
-LASK (Aut),,,
+LASK,d20821dd,LASK Linz,Austria
+LASK (Aut),d20821dd,LASK Linz,Austria
 LASK Linz (Aut),d20821dd,LASK Linz,Austria
 Lazio,7213da33,SS Lazio,Italy
 Lazio (Ita),7213da33,SS Lazio,Italy
@@ -397,7 +397,7 @@ Racing Luxembourg (Lux),406252ea,Racing FC Union Luxembourg,Luxembourg
 Radnicki Nis (Srb),72804f2b,FK Radnički Niš,Serbia
 Radnik Bijeljina (Bih),7e4fae05,FK Radnik Bijeljina,Bosnia and Herzegovina
 Randers FC (Den),d06bc460,Randers FC,Denmark
-Rangers,,,
+Rangers,86b7acd2,Rangers FC,Scotland
 Rangers (Sco),86b7acd2,Rangers FC,Scotland
 Rapid Vienna,912e4c40,SK Rapid Wien,Austria
 Rapid Vienna (Aut),912e4c40,SK Rapid Wien,Austria
@@ -550,7 +550,7 @@ Waregem (Bel),ecd34b98,SV Zulte Waregem,Belgium
 West Ham (Eng),7c21e445,West Ham United FC,England
 Wolfsberger AC (Aut),426658a6,Wolfsberger AC,Austria
 Wolfsburg,4eaa11d7,VfL Wolfsburg,Germany
-Wolves,,,
+Wolves,8cec06e1,Wolverhampton Wanderers FC,England
 Wolves (Eng),8cec06e1,Wolverhampton Wanderers FC,England
 Yeni Malatyaspor (Tur),4cc7a87b,Yeni Malatyaspor,Turkey
 Young Boys,4b682260,BSC Young Boys,Switzerland

@@ -1,9 +1,9 @@
 library(here)
 library(tidyverse)
 
-summaries = read_csv(here('data-get', 'fbref', 'processed', 'match-urls.csv'))
+summaries = read_csv(here('data-get', 'fbref', 'processed', 'match-urls.csv'), guess_max = 3000)
 
-# the missing are any ties that did not have two legs broken down in detail
+# the missing are any ties that did not have two legs broken down in detail in fbref
 
 missing = summaries %>% 
   mutate(szn = as.numeric(str_sub(szn, end = 4)) + 1) %>% 

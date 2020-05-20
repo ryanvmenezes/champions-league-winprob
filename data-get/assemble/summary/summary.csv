@@ -1143,33 +1143,33 @@ season,stagecode,tieid,team1,team2,winner,teamid1,teamid2,winnerid,aggscore,aggs
 2019,el-1k-3qf,a77c513e|f0ac8ee6,Benfica,Eint Frankfurt,Eint Frankfurt,a77c513e,f0ac8ee6,f0ac8ee6,4–4,4,4,"Benfica (4–4) Eint Frankfurt, Eint Frankfurt won on away goals",4–2,2–0,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
 2019,el-1k-4sf,18bb7c10|dcc91a7b,Arsenal,Valencia,Arsenal,18bb7c10,dcc91a7b,18bb7c10,7–3,7,3,Arsenal (7–3) Valencia,3–1,2–4,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2019,el-1k-4sf,cff3d9bb|f0ac8ee6,Eint Frankfurt,Chelsea,Chelsea,f0ac8ee6,cff3d9bb,cff3d9bb,2–2,2,2,"Eint Frankfurt (2–2 aet) Chelsea, Chelsea won on penalty kicks",1–1,1–1,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE
-2020,cl-0q-1fqr,099c6eb5|9e3153f3,FK Sūduva,Red Star,Red Star,9e3153f3,099c6eb5,099c6eb5,1–2,1,2,FK Sūduva (1–2) Red Star,0–0,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-0q-1fqr,099c6eb5|9e3153f3,Sūduva,Red Star,Red Star,9e3153f3,099c6eb5,099c6eb5,1–2,1,2,Sūduva (1–2) Red Star,0–0,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-1fqr,15c5743b|d7319d80,HJK,HB,HJK,d7319d80,15c5743b,d7319d80,5–2,5,2,HJK (5–2) HB,3–0,2–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-1fqr,2aae7689|b838366a,Valur,Maribor,Maribor,b838366a,2aae7689,2aae7689,0–5,0,5,Valur (0–5) Maribor,0–3,2–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-1fqr,33afefe1|c480c810,Nõmme Kalju,Shkëndija 79,Nõmme Kalju,33afefe1,c480c810,33afefe1,2–2,2,2,"Nõmme Kalju (2–2) Shkëndija 79, Nõmme Kalju won on away goals",0–1,1–2,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,cl-0q-1fqr,3ba2fddf|44b65410,Partizani,Qarabağ Ağdam,Qarabağ Ağdam,3ba2fddf,44b65410,44b65410,0–2,0,2,Partizani (0–2) Qarabağ Ağdam,0–0,2–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-0q-1fqr,3ba2fddf|44b65410,Partizani Tirana,Qarabağ Ağdam,Qarabağ Ağdam,3ba2fddf,44b65410,44b65410,0–2,0,2,Partizani Tirana (0–2) Qarabağ Ağdam,0–0,2–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-1fqr,3f53cc7a|baae133b,F91 Dudelange,Valletta,Valletta,baae133b,3f53cc7a,3f53cc7a,3–3,3,3,"F91 Dudelange (3–3) Valletta, Valletta won on away goals",2–2,1–1,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-1fqr,488c6ba1|6611f992,Ferencváros,Ludogorets,Ferencváros,6611f992,488c6ba1,6611f992,5–3,5,3,Ferencváros (5–3) Ludogorets,2–1,2–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-1fqr,4c96013a|90e37d3a,Linfield,Rosenborg,Rosenborg,4c96013a,90e37d3a,90e37d3a,0–6,0,6,Linfield (0–6) Rosenborg,0–2,4–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,cl-0q-1fqr,50995c1e|672ebb3d,Sheriff,Saburtalo,Saburtalo,50995c1e,672ebb3d,672ebb3d,3–4,3,4,Sheriff (3–4) Saburtalo,0–3,1–3,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,cl-0q-1fqr,55ff3845|ae7f2f70,Sl. Bratislava,Sutjeska Nik,Sutjeska Nik,ae7f2f70,55ff3845,55ff3845,2–2,2,2,"Sl. Bratislava (2–2 aet) Sutjeska Nik, Sutjeska Nik won on penalty kicks",1–1,1–1,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE
+2020,cl-0q-1fqr,50995c1e|672ebb3d,Sheriff Tiraspol,Saburtalo,Saburtalo,50995c1e,672ebb3d,672ebb3d,3–4,3,4,Sheriff Tiraspol (3–4) Saburtalo,0–3,1–3,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-0q-1fqr,55ff3845|ae7f2f70,Slovan Bratislava,Sutjeska Nikšić,Sutjeska Nikšić,ae7f2f70,55ff3845,55ff3845,2–2,2,2,"Slovan Bratislava (2–2 aet) Sutjeska Nikšić, Sutjeska Nikšić won on penalty kicks",1–1,1–1,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE
 2020,cl-0q-1fqr,85dbecd4|b0333581,Ararat-Armenia,AIK Stockholm,AIK Stockholm,85dbecd4,b0333581,b0333581,3–4,3,4,Ararat-Armenia (3–4) AIK Stockholm,2–1,3–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-1fqr,91cc0413|e4a9d483,Dundalk,Rīga FC,Dundalk,e4a9d483,91cc0413,e4a9d483,0–0,0,0,"Dundalk (0–0 aet) Rīga FC, Dundalk won on penalty kicks",0–0,0–0,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE
 2020,cl-0q-1fqr,abffa138|fd12ff13,The New Saints,Feronikeli,The New Saints,fd12ff13,abffa138,fd12ff13,3–2,3,2,The New Saints (3–2) Feronikeli,2–2,0–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,cl-0q-1fqr,ad2649a5|b983b638,BATE,Piast Gliwice,BATE,b983b638,ad2649a5,b983b638,3–2,3,2,BATE (3–2) Piast Gliwice,1–1,1–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-0q-1fqr,ad2649a5|b983b638,BATE Borisov,Piast Gliwice,BATE Borisov,b983b638,ad2649a5,b983b638,3–2,3,2,BATE Borisov (3–2) Piast Gliwice,1–1,1–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-1fqr,b81aa4fa|fac9957a,Sarajevo,Celtic,Celtic,fac9957a,b81aa4fa,b81aa4fa,2–5,2,5,Sarajevo (2–5) Celtic,1–3,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-1fqr,c72c8787|ff04e205,Astana FK,CFR Cluj,CFR Cluj,c72c8787,ff04e205,ff04e205,2–3,2,3,Astana FK (2–3) CFR Cluj,1–0,3–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-2sqr,02cd81bf|2fdb4aef,Viktoria Plzeň,Olympiacos,Olympiacos,02cd81bf,2fdb4aef,2fdb4aef,0–4,0,4,Viktoria Plzeň (0–4) Olympiacos,0–0,4–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,cl-0q-2sqr,04c011d8|ff04e205,CFR Cluj,Maccabi TA,CFR Cluj,ff04e205,04c011d8,ff04e205,3–2,3,2,CFR Cluj (3–2) Maccabi TA,1–0,2–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-0q-2sqr,04c011d8|ff04e205,CFR Cluj,Maccabi Tel Aviv,CFR Cluj,ff04e205,04c011d8,ff04e205,3–2,3,2,CFR Cluj (3–2) Maccabi Tel Aviv,1–0,2–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-2sqr,099c6eb5|d7319d80,Red Star,HJK,Red Star,099c6eb5,d7319d80,099c6eb5,3–2,3,2,Red Star (3–2) HJK,2–0,2–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-2sqr,18050b20|fd12ff13,The New Saints,FC Copenhagen,FC Copenhagen,fd12ff13,18050b20,18050b20,0–3,0,3,The New Saints (0–3) FC Copenhagen,0–2,1–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-2sqr,2aae7689|b0333581,Maribor,AIK Stockholm,Maribor,2aae7689,b0333581,2aae7689,4–4,4,4,"Maribor (4–4) AIK Stockholm, Maribor won on away goals",2–1,3–2,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-2sqr,33afefe1|b81aa4fa,Celtic,Nõmme Kalju,Celtic,b81aa4fa,33afefe1,b81aa4fa,7–0,7,0,Celtic (7–0) Nõmme Kalju,5–0,0–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-2sqr,3f53cc7a|6611f992,Ferencváros,Valletta,Ferencváros,6611f992,3f53cc7a,6611f992,4–2,4,2,Ferencváros (4–2) Valletta,3–1,1–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-2sqr,44b65410|e4a9d483,Dundalk,Qarabağ Ağdam,Qarabağ Ağdam,e4a9d483,44b65410,44b65410,1–4,1,4,Dundalk (1–4) Qarabağ Ağdam,1–1,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,cl-0q-2sqr,55ff3845|eab315a6,Sutjeska Nik,APOEL,APOEL,55ff3845,eab315a6,eab315a6,0–4,0,4,Sutjeska Nik (0–4) APOEL,0–1,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-0q-2sqr,55ff3845|eab315a6,Sutjeska Nikšić,APOEL,APOEL,55ff3845,eab315a6,eab315a6,0–4,0,4,Sutjeska Nikšić (0–4) APOEL,0–1,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-2sqr,672ebb3d|edd0d381,Saburtalo,Dinamo Zagreb,Dinamo Zagreb,672ebb3d,edd0d381,edd0d381,0–5,0,5,Saburtalo (0–5) Dinamo Zagreb,0–2,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,cl-0q-2sqr,90e37d3a|b983b638,BATE,Rosenborg,Rosenborg,b983b638,90e37d3a,90e37d3a,2–3,2,3,BATE (2–3) Rosenborg,2–1,2–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-0q-2sqr,90e37d3a|b983b638,BATE Borisov,Rosenborg,Rosenborg,b983b638,90e37d3a,90e37d3a,2–3,2,3,BATE Borisov (2–3) Rosenborg,2–1,2–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-2sqr,d3d9424a|e334d850,PSV Eindhoven,Basel,Basel,e334d850,d3d9424a,d3d9424a,4–4,4,4,"PSV Eindhoven (4–4) Basel, Basel won on away goals",3–2,2–1,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-3tqr,099c6eb5|18050b20,Red Star,FC Copenhagen,Red Star,099c6eb5,18050b20,099c6eb5,2–2,2,2,"Red Star (2–2 aet) FC Copenhagen, Red Star won on penalty kicks",1–1,1–1,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE
 2020,cl-0q-3tqr,19c3f8c4|5a5e7874,PAOK,Ajax,Ajax,5a5e7874,19c3f8c4,19c3f8c4,4–5,4,5,PAOK (4–5) Ajax,2–2,3–2,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
@@ -1180,16 +1180,24 @@ season,stagecode,tieid,team1,team2,winner,teamid1,teamid2,winnerid,aggscore,aggs
 2020,cl-0q-3tqr,6611f992|edd0d381,Dinamo Zagreb,Ferencváros,Dinamo Zagreb,edd0d381,6611f992,edd0d381,5–1,5,1,Dinamo Zagreb (5–1) Ferencváros,1–1,0–4,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-3tqr,b81aa4fa|ff04e205,CFR Cluj,Celtic,CFR Cluj,ff04e205,b81aa4fa,ff04e205,5–4,5,4,CFR Cluj (5–4) Celtic,1–1,3–4,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-3tqr,c734e22f|f1e6c5f1,Club Brugge,Dynamo Kyiv,Club Brugge,f1e6c5f1,c734e22f,f1e6c5f1,4–3,4,3,Club Brugge (4–3) Dynamo Kyiv,1–0,3–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,cl-0q-3tqr,d20821dd|d3d9424a,Basel,LASK Linz,LASK Linz,d3d9424a,d20821dd,d20821dd,2–5,2,5,Basel (2–5) LASK Linz,1–2,3–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-0q-3tqr,d20821dd|d3d9424a,Basel,LASK,LASK,d3d9424a,d20821dd,d20821dd,2–5,2,5,Basel (2–5) LASK,1–2,3–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-4po,099c6eb5|4b682260,Young Boys,Red Star,Red Star,4b682260,099c6eb5,099c6eb5,3–3,3,3,"Young Boys (3–3) Red Star, Red Star won on away goals",2–2,1–1,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-4po,111cbfb1|ff04e205,CFR Cluj,Slavia Prague,Slavia Prague,ff04e205,111cbfb1,111cbfb1,0–2,0,2,CFR Cluj (0–2) Slavia Prague,0–1,1–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-4po,19c3f8c4|eab315a6,APOEL,Ajax,Ajax,eab315a6,19c3f8c4,19c3f8c4,0–2,0,2,APOEL (0–2) Ajax,0–0,2–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-4po,2fdb4aef|fa11a9cc,Olympiacos,Krasnodar,Olympiacos,2fdb4aef,fa11a9cc,2fdb4aef,6–1,6,1,Olympiacos (6–1) Krasnodar,4–0,1–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,cl-0q-4po,90e37d3a|edd0d381,Dinamo Zagreb,Rosenborg,Dinamo Zagreb,edd0d381,90e37d3a,edd0d381,3–1,3,1,Dinamo Zagreb (3–1) Rosenborg,2–0,1–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,cl-0q-4po,d20821dd|f1e6c5f1,LASK Linz,Club Brugge,Club Brugge,d20821dd,f1e6c5f1,f1e6c5f1,1–3,1,3,LASK Linz (1–3) Club Brugge,0–1,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-0q-4po,d20821dd|f1e6c5f1,LASK,Club Brugge,Club Brugge,d20821dd,f1e6c5f1,f1e6c5f1,1–3,1,3,LASK (1–3) Club Brugge,0–1,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-1k-1r16,054efa67|cff3d9bb,Chelsea,Bayern Munich,,cff3d9bb,054efa67,,,,,,0–3,↻,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-1k-1r16,206d90db|d48ad4ff,Napoli,Barcelona,,d48ad4ff,206d90db,,,,,,1–1,↻,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-1k-1r16,361ca564|acbb6a5b,Tottenham,RB Leipzig,RB Leipzig,361ca564,acbb6a5b,acbb6a5b,0–4,0,4,Tottenham (0–4) RB Leipzig,0–1,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-1k-1r16,53a2f082|b8fd03ef,Real Madrid,Manchester City,,53a2f082,b8fd03ef,,,,,,1–2,↻,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-1k-1r16,822bd0ba|db3b9613,Atlético Madrid,Liverpool,Atlético Madrid,db3b9613,822bd0ba,db3b9613,4–2,4,2,Atlético Madrid (4–2 aet) Liverpool,1–0,2–3,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE
+2020,cl-1k-1r16,922493f3|dcc91a7b,Atalanta,Valencia,Atalanta,922493f3,dcc91a7b,922493f3,8–4,8,4,Atalanta (8–4) Valencia,4–1,3–4,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-1k-1r16,add600ae|e2d8892c,Dortmund,Paris S-G,Paris S-G,add600ae,e2d8892c,e2d8892c,2–3,2,3,Dortmund (2–3) Paris S-G,2–1,2–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,cl-1k-1r16,d53c0b06|e0652b02,Lyon,Juventus,,d53c0b06,e0652b02,,,,,,1–0,↻,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-0pre,017bcbe4|869753d6,KÍ,SP Tre Fiori,KÍ,869753d6,017bcbe4,869753d6,9–1,9,1,KÍ (9–1) SP Tre Fiori,5–1,0–4,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-0pre,448e1bb9|b0e70933,Ballymena Utd,NSÍ Runavík,Ballymena Utd,b0e70933,448e1bb9,b0e70933,2–0,2,0,Ballymena Utd (2–0) NSÍ Runavík,2–0,0–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-0pre,4872ca3d|ec560e72,FC Progrès,Cardiff Met,FC Progrès,ec560e72,4872ca3d,ec560e72,2–2,2,2,"FC Progrès (2–2) Cardiff Met, FC Progrès won on away goals",1–0,2–1,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-0pre,4872ca3d|ec560e72,Progrès,Cardiff Met,Progrès,ec560e72,4872ca3d,ec560e72,2–2,2,2,"Progrès (2–2) Cardiff Met, Progrès won on away goals",1–0,2–1,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-0pre,5a130b7c|d8760be1,Barry Town,Cliftonville,Cliftonville,d8760be1,5a130b7c,5a130b7c,0–4,0,4,Barry Town (0–4) Cliftonville,0–0,4–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-0pre,6de42722|b784c866,La Fiorita,Engordany,Engordany,6de42722,b784c866,b784c866,1–3,1,3,La Fiorita (1–3) Engordany,0–1,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-0pre,75cd4ee3|78816dd0,UE Sant Julià,Europa,Europa,78816dd0,75cd4ee3,75cd4ee3,3–6,3,6,UE Sant Julià (3–6) Europa,3–2,4–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
@@ -1197,22 +1205,22 @@ season,stagecode,tieid,team1,team2,winner,teamid1,teamid2,winnerid,aggscore,aggs
 2020,el-0q-1fqr,01689b1a|ae96366c,AÉK Lárnaka,Petrocub,AÉK Lárnaka,01689b1a,ae96366c,01689b1a,2–0,2,0,AÉK Lárnaka (2–0) Petrocub,1–0,0–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,03022534|7416e9cd,Pyunik,Shkupi Skopje,Pyunik,03022534,7416e9cd,03022534,5–4,5,4,Pyunik (5–4) Shkupi Skopje,3–3,1–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,056a9b27|0b6cd7c6,Crusaders,B36,Crusaders,0b6cd7c6,056a9b27,0b6cd7c6,5–2,5,2,Crusaders (5–2) B36,2–0,2–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-1fqr,0faf8f33|7517d495,Soligorsk,Hibernians,Soligorsk,7517d495,0faf8f33,7517d495,2–0,2,0,Soligorsk (2–0) Hibernians,1–0,0–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-1fqr,112c9642|f13065a8,Stjarnan,FCI Levadia,Stjarnan,f13065a8,112c9642,f13065a8,4–4,4,4,"Stjarnan (4–4) FCI Levadia, Stjarnan won on away goals",2–1,3–2,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-1fqr,133013ee|7a40cd8b,Laçi,Hapoel BS,Hapoel BS,7a40cd8b,133013ee,133013ee,1–2,1,2,Laçi (1–2) Hapoel BS,1–1,1–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-1fqr,0faf8f33|7517d495,Shakhtyor,Hibernians,Shakhtyor,7517d495,0faf8f33,7517d495,2–0,2,0,Shakhtyor (2–0) Hibernians,1–0,0–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-1fqr,112c9642|f13065a8,Stjarnan,Levadia Tallinn,Stjarnan,f13065a8,112c9642,f13065a8,4–4,4,4,"Stjarnan (4–4) Levadia Tallinn, Stjarnan won on away goals",2–1,3–2,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-1fqr,133013ee|7a40cd8b,Laçi,Be'er Sheva,Be'er Sheva,7a40cd8b,133013ee,133013ee,1–2,1,2,Laçi (1–2) Be'er Sheva,1–1,1–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,174bd5a0|ae156985,Molde,KR Reykjavík,Molde,174bd5a0,ae156985,174bd5a0,7–1,7,1,Molde (7–1) KR Reykjavík,7–1,0–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,187832f5|43a5e45a,Maccabi Haifa,NŠ Mura,Maccabi Haifa,187832f5,43a5e45a,187832f5,5–2,5,2,Maccabi Haifa (5–2) NŠ Mura,2–0,2–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,1d0836d6|8a814429,St. Patrick's,Norrköping,Norrköping,8a814429,1d0836d6,1d0836d6,1–4,1,4,St. Patrick's (1–4) Norrköping,0–2,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,1eebf7c3|6642b67e,Səbail FK,U Craiova,U Craiova,6642b67e,1eebf7c3,1eebf7c3,4–6,4,6,Səbail FK (4–6) U Craiova,2–3,3–2,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-1fqr,231f4a61|38bfcdf5,Ordabasy,Torp Kutaisi,Ordabasy,38bfcdf5,231f4a61,38bfcdf5,3–0,3,0,Ordabasy (3–0) Torp Kutaisi,1–0,0–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-1fqr,231f4a61|38bfcdf5,Ordabasy,Torpedo Kutaisi,Ordabasy,38bfcdf5,231f4a61,38bfcdf5,3–0,3,0,Ordabasy (3–0) Torpedo Kutaisi,1–0,0–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,25f1fd26|7d326cbe,Connah's Quay,Kilmarnock,Connah's Quay,7d326cbe,25f1fd26,7d326cbe,3–2,3,2,Connah's Quay (3–2) Kilmarnock,1–2,0–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-1fqr,2a6cfcb2|99875d32,Akad Pandev,Zrinjski,Zrinjski,99875d32,2a6cfcb2,2a6cfcb2,0–6,0,6,Akad Pandev (0–6) Zrinjski,0–3,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-1fqr,2a6cfcb2|99875d32,Akad Pandev,Zrinjski Mostar,Zrinjski Mostar,99875d32,2a6cfcb2,2a6cfcb2,0–6,0,6,Akad Pandev (0–6) Zrinjski Mostar,0–3,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,2b924bc5|869a3b6a,Ventspils,Teuta Durrës,Ventspils,869a3b6a,2b924bc5,869a3b6a,3–1,3,1,Ventspils (3–1) Teuta Durrës,3–0,1–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,356c100c|3a7a27c6,MFK Ružomberok,Levski Sofia,Levski Sofia,356c100c,3a7a27c6,3a7a27c6,0–4,0,4,MFK Ružomberok (0–4) Levski Sofia,0–2,2–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,3b8af0c2|8dff1828,Kauno Žalgiris,Apollon,Apollon,3b8af0c2,8dff1828,8dff1828,0–6,0,6,Kauno Žalgiris (0–6) Apollon,0–2,4–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,3f2bd811|e6f63673,KuPS,FK Vitebsk,KuPS,e6f63673,3f2bd811,e6f63673,3–1,3,1,KuPS (3–1) FK Vitebsk,2–0,1–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,42e847bc|f0e1ca42,Čukarički,Banants,Čukarički,42e847bc,f0e1ca42,42e847bc,8–0,8,0,Čukarički (8–0) Banants,3–0,0–5,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-1fqr,4936d1b7|ec560e72,Cork City FC,FC Progrès,FC Progrès,4936d1b7,ec560e72,ec560e72,2–3,2,3,Cork City FC (2–3) FC Progrès,0–2,1–2,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-1fqr,4936d1b7|ec560e72,Cork City FC,Progrès,Progrès,4936d1b7,ec560e72,ec560e72,2–3,2,3,Cork City FC (2–3) Progrès,0–2,1–2,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,49a61d12|869753d6,Riteriai,KÍ,KÍ,49a61d12,869753d6,869753d6,1–1,1,1,"Riteriai (1–1) KÍ, KÍ won on away goals",1–1,0–0,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,49e1cbfd|8ac05d3e,Balzan,Domžale,Domžale,49e1cbfd,8ac05d3e,8ac05d3e,3–5,3,5,Balzan (3–5) Domžale,3–4,1–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,4a29fb1c|b1b46fc3,Breiðablik,Vaduz,Vaduz,4a29fb1c,b1b46fc3,b1b46fc3,1–2,1,2,Breiðablik (1–2) Vaduz,0–0,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
@@ -1223,18 +1231,18 @@ season,stagecode,tieid,team1,team2,winner,teamid1,teamid2,winnerid,aggscore,aggs
 2020,el-0q-1fqr,584d189a|768fb565,Široki Brijeg,Qaırat Almaty,Qaırat Almaty,584d189a,768fb565,768fb565,2–4,2,4,Široki Brijeg (2–4) Qaırat Almaty,1–2,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,5a130b7c|f4bbcd04,Cliftonville,Haugesund,Haugesund,5a130b7c,f4bbcd04,f4bbcd04,1–6,1,6,Cliftonville (1–6) Haugesund,0–1,5–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,6777e16d|8ab497d5,Gzira United,Hajduk Split,Gzira United,8ab497d5,6777e16d,8ab497d5,3–3,3,3,"Gzira United (3–3) Hajduk Split, Gzira United won on away goals",0–2,1–3,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-1fqr,6e7c9b0b|b11bfada,DAC 1904,Cracovia,DAC 1904,b11bfada,6e7c9b0b,b11bfada,3–3,3,3,"DAC 1904 (3–3) Cracovia, DAC 1904 won on away goals",1–1,2–2,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-1fqr,6e7c9b0b|b11bfada,Dunajská Streda,Cracovia,Dunajská Streda,b11bfada,6e7c9b0b,b11bfada,3–3,3,3,"Dunajská Streda (3–3) Cracovia, Dunajská Streda won on away goals",1–1,2–2,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,719d83f1|72804f2b,Flora,Radnički Niš,Flora,719d83f1,72804f2b,719d83f1,4–2,4,2,Flora (4–2) Radnički Niš,2–0,2–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,75cd4ee3|a73408a7,Europa,Legia Warsaw,Legia Warsaw,75cd4ee3,a73408a7,a73408a7,0–3,0,3,Europa (0–3) Legia Warsaw,0–0,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,7795f801|aed59852,FCSB,Milsami,FCSB,aed59852,7795f801,aed59852,4–1,4,1,FCSB (4–1) Milsami,2–0,1–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,78b01d1b|d0ab5e26,Speranţa,Neftçi,Neftçi,78b01d1b,d0ab5e26,d0ab5e26,0–9,0,9,Speranţa (0–9) Neftçi,0–3,6–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-1fqr,7c90642e|8ae75624,Olimpija Ljubl,FK Rīgas FS,Olimpija Ljubl,8ae75624,7c90642e,8ae75624,4–3,4,3,Olimpija Ljubl (4–3) FK Rīgas FS,2–3,0–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-1fqr,7c90642e|8ae75624,Olimpija,FK Rīgas FS,Olimpija,8ae75624,7c90642e,8ae75624,4–3,4,3,Olimpija (4–3) FK Rīgas FS,2–3,0–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,7e4fae05|c16f1fe7,Bijeljina,Spartak Trnava,Spartak Trnava,7e4fae05,c16f1fe7,c16f1fe7,2–2,2,2,"Bijeljina (2–2 aet) Spartak Trnava, Spartak Trnava won on penalty kicks",2–0,2–0,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,86b7acd2|bb780485,St. Joseph's,Rangers,Rangers,bb780485,86b7acd2,86b7acd2,0–10,0,10,St. Joseph's (0–10) Rangers,0–4,6–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,8a9775ad|f4f98e1c,Narva Trans,Budućnost,Budućnost,8a9775ad,f4f98e1c,f4f98e1c,1–6,1,6,Narva Trans (1–6) Budućnost,0–2,4–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,8c6383a1|f1849f98,Jeunesse Esch,Tobol Qostanaı,Jeunesse Esch,f1849f98,8c6383a1,f1849f98,1–1,1,1,"Jeunesse Esch (1–1) Tobol Qostanaı, Jeunesse Esch won on away goals",0–0,1–1,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-1fqr,8dc7bf66|cbde2682,CSKA Sofia,Titograd,CSKA Sofia,cbde2682,8dc7bf66,cbde2682,4–0,4,0,CSKA Sofia (4–0) Titograd,4–0,0–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-1fqr,a338349f|bda134f7,Zeta,Fehérvár,Fehérvár,bda134f7,a338349f,a338349f,1–5,1,5,Zeta (1–5) Fehérvár,1–5,0–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-1fqr,8dc7bf66|cbde2682,CSKA Sofia,OFK Titograd,CSKA Sofia,cbde2682,8dc7bf66,cbde2682,4–0,4,0,CSKA Sofia (4–0) OFK Titograd,4–0,0–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-1fqr,a338349f|bda134f7,Zeta,Vidi,Vidi,bda134f7,a338349f,a338349f,1–5,1,5,Zeta (1–5) Vidi,1–5,0–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,aa065002|e839c85b,Fola Esch,Chikhura,Chikhura,aa065002,e839c85b,e839c85b,2–4,2,4,Fola Esch (2–4) Chikhura,1–2,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,ab75e049|e9fa2e8b,Brøndby,Inter Turku,Brøndby,ab75e049,e9fa2e8b,ab75e049,4–3,4,3,Brøndby (4–3) Inter Turku,4–1,2–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-1fqr,aeae4fe1|f082c4f3,Brann,Shamrock Rov,Shamrock Rov,aeae4fe1,f082c4f3,f082c4f3,3–4,3,4,Brann (3–4) Shamrock Rov,2–2,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
@@ -1246,22 +1254,22 @@ season,stagecode,tieid,team1,team2,winner,teamid1,teamid2,winnerid,aggscore,aggs
 2020,el-0q-2sqr,0b6cd7c6|8cec06e1,Wolves,Crusaders,Wolves,8cec06e1,0b6cd7c6,8cec06e1,6–1,6,1,Wolves (6–1) Crusaders,2–0,1–4,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,0bca3a9e|d0ab5e26,Arsenal Tula,Neftçi,Neftçi,0bca3a9e,d0ab5e26,d0ab5e26,0–4,0,4,Arsenal Tula (0–4) Neftçi,0–1,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,105360fe|e24ac92e,Torino,Debrecen,Torino,105360fe,e24ac92e,105360fe,7–1,7,1,Torino (7–1) Debrecen,3–0,1–4,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-2sqr,133013ee|768fb565,Hapoel BS,Qaırat Almaty,Hapoel BS,133013ee,768fb565,133013ee,3–1,3,1,Hapoel BS (3–1) Qaırat Almaty,2–0,1–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-2sqr,133013ee|768fb565,Be'er Sheva,Qaırat Almaty,Be'er Sheva,133013ee,768fb565,133013ee,3–1,3,1,Be'er Sheva (3–1) Qaırat Almaty,2–0,1–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,15c5743b|4c96013a,HB,Linfield,Linfield,15c5743b,4c96013a,4c96013a,2–3,2,3,HB (2–3) Linfield,2–2,1–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,174bd5a0|42e847bc,Molde,Čukarički,Molde,174bd5a0,42e847bc,174bd5a0,3–1,3,1,Molde (3–1) Čukarički,0–0,1–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,187832f5|c0d3eab4,Strasbourg,Maccabi Haifa,Strasbourg,c0d3eab4,187832f5,c0d3eab4,4–3,4,3,Strasbourg (4–3) Maccabi Haifa,3–1,2–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,1d0836d6|54f29d7b,Norrköping,FK Liepāja,Norrköping,1d0836d6,54f29d7b,1d0836d6,3–0,3,0,Norrköping (3–0) FK Liepāja,2–0,0–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,1eebf7c3|8cac5dfa,Honvéd,U Craiova,U Craiova,8cac5dfa,1eebf7c3,1eebf7c3,0–0,0,0,"Honvéd (0–0 aet) U Craiova, U Craiova won on penalty kicks",0–0,0–0,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE
-2020,el-0q-2sqr,2a428619|2a6cfcb2,Utrecht,Zrinjski,Zrinjski,2a428619,2a6cfcb2,2a6cfcb2,2–3,2,3,Utrecht (2–3 aet) Zrinjski,1–1,2–1,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-2sqr,2d3c1b6d|85dbecd4,Ararat-Armenia,Lincoln,Ararat-Armenia,85dbecd4,2d3c1b6d,85dbecd4,4–1,4,1,Ararat-Armenia (4–1) Lincoln,2–0,1–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-2sqr,31aa0dd4|7517d495,Soligorsk,Esbjerg,Soligorsk,7517d495,31aa0dd4,7517d495,2–0,2,0,Soligorsk (2–0) Esbjerg,2–0,0–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-2sqr,2a428619|2a6cfcb2,Utrecht,Zrinjski Mostar,Zrinjski Mostar,2a428619,2a6cfcb2,2a6cfcb2,2–3,2,3,Utrecht (2–3 aet) Zrinjski Mostar,1–1,2–1,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-2sqr,2d3c1b6d|85dbecd4,Ararat-Armenia,Red Imps,Ararat-Armenia,85dbecd4,2d3c1b6d,85dbecd4,4–1,4,1,Ararat-Armenia (4–1) Red Imps,2–0,1–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-2sqr,31aa0dd4|7517d495,Shakhtyor,Esbjerg,Shakhtyor,7517d495,31aa0dd4,7517d495,2–0,2,0,Shakhtyor (2–0) Esbjerg,2–0,0–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,38bfcdf5|70c92f33,Mladá Boleslav,Ordabasy,Mladá Boleslav,70c92f33,38bfcdf5,70c92f33,4–3,4,3,Mladá Boleslav (4–3) Ordabasy,1–1,2–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,3986b791|8774e267,AZ Alkmaar,Häcken,AZ Alkmaar,3986b791,8774e267,3986b791,3–0,3,0,AZ Alkmaar (3–0) Häcken,0–0,0–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-2sqr,3ba2fddf|50995c1e,Partizani,Sheriff,Sheriff,3ba2fddf,50995c1e,50995c1e,1–2,1,2,Partizani (1–2) Sheriff,0–1,1–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-2sqr,3ba2fddf|50995c1e,Partizani Tirana,Sheriff Tiraspol,Sheriff Tiraspol,3ba2fddf,50995c1e,50995c1e,1–2,1,2,Partizani Tirana (1–2) Sheriff Tiraspol,0–1,1–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,3f319bc9|f1849f98,Jeunesse Esch,Vitória,Vitória,f1849f98,3f319bc9,3f319bc9,0–5,0,5,Jeunesse Esch (0–5) Vitória,0–1,4–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,3f4fe568|f4bbcd04,Haugesund,Sturm Graz,Haugesund,f4bbcd04,3f4fe568,f4bbcd04,3–2,3,2,Haugesund (3–2) Sturm Graz,2–0,2–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,488c6ba1|b838366a,Valur,Ludogorets,Ludogorets,b838366a,488c6ba1,488c6ba1,1–5,1,5,Valur (1–5) Ludogorets,1–1,4–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-2sqr,4cc7a87b|8ae75624,Y. Malatyaspor,Olimpija Ljubl,Y. Malatyaspor,4cc7a87b,8ae75624,4cc7a87b,3–2,3,2,Y. Malatyaspor (3–2) Olimpija Ljubl,2–2,0–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-2sqr,4cc7a87b|8ae75624,Yeni Mal'spor,Olimpija,Yeni Mal'spor,4cc7a87b,8ae75624,4cc7a87b,3–2,3,2,Yeni Mal'spor (3–2) Olimpija,2–2,0–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,4fffe901|51e5a603,Gent,Viitorul,Gent,51e5a603,4fffe901,51e5a603,7–5,7,5,Gent (7–5) Viitorul,6–3,2–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,57d14db5|cbde2682,CSKA Sofia,Osijek,CSKA Sofia,cbde2682,57d14db5,cbde2682,1–1,1,1,"CSKA Sofia (1–1 aet) Osijek, CSKA Sofia won on penalty kicks",1–0,1–0,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,5d36c8f0|ab75e049,Lechia Gdańsk,Brøndby,Brøndby,5d36c8f0,ab75e049,ab75e049,3–5,3,5,Lechia Gdańsk (3–5 aet) Brøndby,2–1,4–1,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE
@@ -1270,43 +1278,43 @@ season,stagecode,tieid,team1,team2,winner,teamid1,teamid2,winnerid,aggscore,aggs
 2020,el-0q-2sqr,7d326cbe|dde3e804,Connah's Quay,Partizan,Partizan,7d326cbe,dde3e804,dde3e804,0–4,0,4,Connah's Quay (0–4) Partizan,0–1,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,869753d6|d423a378,Luzern,KÍ,Luzern,d423a378,869753d6,d423a378,2–0,2,0,Luzern (2–0) KÍ,1–0,0–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,869a3b6a|8ab497d5,Ventspils,Gzira United,Ventspils,869a3b6a,8ab497d5,869a3b6a,6–2,6,2,Ventspils (6–2) Gzira United,4–0,2–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-2sqr,86b7acd2|ec560e72,Rangers,FC Progrès,Rangers,86b7acd2,ec560e72,86b7acd2,2–0,2,0,Rangers (2–0) FC Progrès,2–0,0–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-2sqr,86b7acd2|ec560e72,Rangers,Progrès,Rangers,86b7acd2,ec560e72,86b7acd2,2–0,2,0,Rangers (2–0) Progrès,2–0,0–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,8ac05d3e|f3d8c8b9,Domžale,Malmö,Malmö,8ac05d3e,f3d8c8b9,f3d8c8b9,4–5,4,5,Domžale (4–5) Malmö,2–2,3–2,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,8bbab7cf|e839c85b,Chikhura,Aberdeen,Aberdeen,e839c85b,8bbab7cf,8bbab7cf,1–6,1,6,Chikhura (1–6) Aberdeen,1–1,5–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,8dff1828|f082c4f3,Shamrock Rov,Apollon,Apollon,f082c4f3,8dff1828,8dff1828,3–4,3,4,Shamrock Rov (3–4 aet) Apollon,2–1,3–1,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,91cc0413|ad2649a5,Piast Gliwice,Rīga FC,Rīga FC,ad2649a5,91cc0413,91cc0413,4–4,4,4,"Piast Gliwice (4–4) Rīga FC, Rīga FC won on away goals",3–2,2–1,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,946a30cb|f4f98e1c,Budućnost,Zorya Luhansk,Zorya Luhansk,f4f98e1c,946a30cb,946a30cb,1–4,1,4,Budućnost (1–4) Zorya Luhansk,1–3,1–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,9549dc95|c72c8787,Santa Coloma,Astana FK,Astana FK,9549dc95,c72c8787,c72c8787,1–4,1,4,Santa Coloma (1–4) Astana FK,0–0,4–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-2sqr,9e3153f3|aaffe678,Tre Penne,FK Sūduva,FK Sūduva,aaffe678,9e3153f3,9e3153f3,0–10,0,10,Tre Penne (0–10) FK Sūduva,0–5,5–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-2sqr,9e3153f3|aaffe678,Tre Penne,Sūduva,Sūduva,aaffe678,9e3153f3,9e3153f3,0–10,0,10,Tre Penne (0–10) Sūduva,0–5,5–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,a1962466|e2fa043d,Qəbələ,Dinamo Tbilisi,Dinamo Tbilisi,a1962466,e2fa043d,e2fa043d,0–5,0,5,Qəbələ (0–5) Dinamo Tbilisi,0–2,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-2sqr,a338349f|b1b46fc3,Fehérvár,Vaduz,Vaduz,a338349f,b1b46fc3,b1b46fc3,1–2,1,2,Fehérvár (1–2 aet) Vaduz,1–0,2–0,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-2sqr,a338349f|b1b46fc3,Vidi,Vaduz,Vaduz,a338349f,b1b46fc3,b1b46fc3,1–2,1,2,Vidi (1–2 aet) Vaduz,1–0,2–0,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,a73408a7|e6f63673,Legia Warsaw,KuPS,Legia Warsaw,a73408a7,e6f63673,a73408a7,1–0,1,0,Legia Warsaw (1–0) KuPS,1–0,0–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,a8661628|f13065a8,Espanyol,Stjarnan,Espanyol,a8661628,f13065a8,a8661628,7–1,7,1,Espanyol (7–1) Stjarnan,4–0,1–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-2sqr,abffa138|ae7f2f70,Sl. Bratislava,Feronikeli,Sl. Bratislava,ae7f2f70,abffa138,ae7f2f70,4–1,4,1,Sl. Bratislava (4–1) Feronikeli,2–1,0–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-2sqr,abffa138|ae7f2f70,Slovan Bratislava,Feronikeli,Slovan Bratislava,ae7f2f70,abffa138,ae7f2f70,4–1,4,1,Slovan Bratislava (4–1) Feronikeli,2–1,0–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,aed59852|e6232d10,Alashkert,FCSB,FCSB,e6232d10,aed59852,aed59852,3–5,3,5,Alashkert (3–5) FCSB,0–3,2–3,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-2sqr,b11bfada|c9607f44,DAC 1904,Atromitos,Atromitos,b11bfada,c9607f44,c9607f44,3–5,3,5,DAC 1904 (3–5) Atromitos,1–2,3–2,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-2sqr,b11bfada|c9607f44,Dunajská Streda,Atromitos,Atromitos,b11bfada,c9607f44,c9607f44,3–5,3,5,Dunajská Streda (3–5) Atromitos,1–2,3–2,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,baae133b|c480c810,Shkëndija 79,F91 Dudelange,F91 Dudelange,c480c810,baae133b,baae133b,2–3,2,3,Shkëndija 79 (2–3) F91 Dudelange,1–2,1–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-2sqr,c16f1fe7|e0242ef1,Loko Plovdiv,Spartak Trnava,Loko Plovdiv,e0242ef1,c16f1fe7,e0242ef1,3–3,3,3,"Loko Plovdiv (3–3) Spartak Trnava, Loko Plovdiv won on away goals",2–0,3–1,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,01689b1a|51e5a603,AÉK Lárnaka,Gent,Gent,01689b1a,51e5a603,51e5a603,1–4,1,4,AÉK Lárnaka (1–4) Gent,1–1,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,02cd81bf|c2e6b53b,Antwerp,Viktoria Plzeň,Antwerp,c2e6b53b,02cd81bf,c2e6b53b,2–2,2,2,"Antwerp (2–2) Viktoria Plzeň, Antwerp won on away goals",1–0,2–1,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,03022534|8cec06e1,Pyunik,Wolves,Wolves,03022534,8cec06e1,8cec06e1,0–8,0,8,Pyunik (0–8) Wolves,0–4,4–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-3tqr,04c011d8|9e3153f3,Maccabi TA,FK Sūduva,FK Sūduva,04c011d8,9e3153f3,9e3153f3,2–4,2,4,Maccabi TA (2–4) FK Sūduva,1–2,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-3tqr,04c011d8|9e3153f3,Maccabi Tel Aviv,Sūduva,Sūduva,04c011d8,9e3153f3,9e3153f3,2–4,2,4,Maccabi Tel Aviv (2–4) Sūduva,1–2,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,1040e0f7|d0ab5e26,Neftçi,Bnei Yehuda TA,Bnei Yehuda TA,d0ab5e26,1040e0f7,1040e0f7,3–4,3,4,Neftçi (3–4) Bnei Yehuda TA,2–2,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-3tqr,105360fe|7517d495,Torino,Soligorsk,Torino,105360fe,7517d495,105360fe,6–1,6,1,Torino (6–1) Soligorsk,5–0,1–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-3tqr,133013ee|1d0836d6,Norrköping,Hapoel BS,Hapoel BS,1d0836d6,133013ee,133013ee,2–4,2,4,Norrköping (2–4) Hapoel BS,1–1,3–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-3tqr,105360fe|7517d495,Torino,Shakhtyor,Torino,105360fe,7517d495,105360fe,6–1,6,1,Torino (6–1) Shakhtyor,5–0,1–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-3tqr,133013ee|1d0836d6,Norrköping,Be'er Sheva,Be'er Sheva,1d0836d6,133013ee,133013ee,2–4,2,4,Norrköping (2–4) Be'er Sheva,1–1,3–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,174bd5a0|edddfa63,Molde,Aris,Molde,174bd5a0,edddfa63,174bd5a0,4–3,4,3,Molde (4–3 aet) Aris,3–0,3–1,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,1eebf7c3|d5348c80,U Craiova,AEK Athens,AEK Athens,1eebf7c3,d5348c80,d5348c80,1–3,1,3,U Craiova (1–3) AEK Athens,0–2,1–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,25dbe099|8bbab7cf,Rijeka,Aberdeen,Rijeka,25dbe099,8bbab7cf,25dbe099,4–0,4,0,Rijeka (4–0) Aberdeen,2–0,0–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-3tqr,2a6cfcb2|f3d8c8b9,Malmö,Zrinjski,Malmö,f3d8c8b9,2a6cfcb2,f3d8c8b9,3–1,3,1,Malmö (3–1) Zrinjski,3–0,1–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-3tqr,2a6cfcb2|f3d8c8b9,Malmö,Zrinjski Mostar,Malmö,f3d8c8b9,2a6cfcb2,f3d8c8b9,3–1,3,1,Malmö (3–1) Zrinjski Mostar,3–0,1–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,33afefe1|baae133b,F91 Dudelange,Nõmme Kalju,F91 Dudelange,baae133b,33afefe1,baae133b,4–1,4,1,F91 Dudelange (4–1) Nõmme Kalju,3–1,0–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,3986b791|42b37a13,FC Mariupol,AZ Alkmaar,AZ Alkmaar,42b37a13,3986b791,3986b791,0–4,0,4,FC Mariupol (0–4) AZ Alkmaar,0–0,4–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,3c4fb635|86b7acd2,Midtjylland,Rangers,Rangers,3c4fb635,86b7acd2,86b7acd2,3–7,3,7,Midtjylland (3–7) Rangers,2–4,3–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,3f319bc9|869a3b6a,Ventspils,Vitória,Vitória,869a3b6a,3f319bc9,3f319bc9,0–9,0,9,Ventspils (0–9) Vitória,0–3,6–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,3f53cc7a|c72c8787,Astana FK,Valletta,Astana FK,c72c8787,3f53cc7a,c72c8787,9–1,9,1,Astana FK (9–1) Valletta,5–1,0–4,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,488c6ba1|fd12ff13,Ludogorets,The New Saints,Ludogorets,488c6ba1,fd12ff13,488c6ba1,9–0,9,0,Ludogorets (9–0) The New Saints,5–0,0–4,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-3tqr,4c96013a|55ff3845,Sutjeska Nik,Linfield,Linfield,55ff3845,4c96013a,4c96013a,3–5,3,5,Sutjeska Nik (3–5) Linfield,1–2,3–2,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-3tqr,4cc7a87b|dde3e804,Partizan,Y. Malatyaspor,Partizan,dde3e804,4cc7a87b,dde3e804,3–2,3,2,Partizan (3–2) Y. Malatyaspor,3–1,1–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-3tqr,50995c1e|b0333581,Sheriff,AIK Stockholm,AIK Stockholm,50995c1e,b0333581,b0333581,2–3,2,3,Sheriff (2–3) AIK Stockholm,1–2,1–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-3tqr,4c96013a|55ff3845,Sutjeska Nikšić,Linfield,Linfield,55ff3845,4c96013a,4c96013a,3–5,3,5,Sutjeska Nikšić (3–5) Linfield,1–2,3–2,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-3tqr,4cc7a87b|dde3e804,Partizan,Yeni Mal'spor,Partizan,dde3e804,4cc7a87b,dde3e804,3–2,3,2,Partizan (3–2) Yeni Mal'spor,3–1,1–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-3tqr,50995c1e|b0333581,Sheriff Tiraspol,AIK Stockholm,AIK Stockholm,50995c1e,b0333581,b0333581,2–3,2,3,Sheriff Tiraspol (2–3) AIK Stockholm,1–2,1–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,672ebb3d|85dbecd4,Ararat-Armenia,Saburtalo,Ararat-Armenia,85dbecd4,672ebb3d,85dbecd4,3–2,3,2,Ararat-Armenia (3–2) Saburtalo,1–2,0–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,69d84c29|ab75e049,Brøndby,Braga,Braga,ab75e049,69d84c29,69d84c29,3–7,3,7,Brøndby (3–7) Braga,2–4,3–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,70c92f33|aed59852,FCSB,Mladá Boleslav,FCSB,aed59852,70c92f33,aed59852,1–0,1,0,FCSB (1–0) Mladá Boleslav,0–0,0–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
@@ -1316,16 +1324,16 @@ season,stagecode,tieid,team1,team2,winner,teamid1,teamid2,winnerid,aggscore,aggs
 2020,el-0q-3tqr,946a30cb|cbde2682,CSKA Sofia,Zorya Luhansk,Zorya Luhansk,cbde2682,946a30cb,946a30cb,1–2,1,2,CSKA Sofia (1–2) Zorya Luhansk,1–1,1–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,a73408a7|c9607f44,Legia Warsaw,Atromitos,Legia Warsaw,a73408a7,c9607f44,a73408a7,2–0,2,0,Legia Warsaw (2–0) Atromitos,0–0,0–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,a8661628|d423a378,Luzern,Espanyol,Espanyol,d423a378,a8661628,a8661628,0–6,0,6,Luzern (0–6) Espanyol,0–3,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-3tqr,ae7f2f70|e4a9d483,Sl. Bratislava,Dundalk,Sl. Bratislava,ae7f2f70,e4a9d483,ae7f2f70,4–1,4,1,Sl. Bratislava (4–1) Dundalk,1–0,1–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-3tqr,ae7f2f70|e4a9d483,Slovan Bratislava,Dundalk,Slovan Bratislava,ae7f2f70,e4a9d483,ae7f2f70,4–1,4,1,Slovan Bratislava (4–1) Dundalk,1–0,1–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,b1b46fc3|f0ac8ee6,Vaduz,Eint Frankfurt,Eint Frankfurt,b1b46fc3,f0ac8ee6,f0ac8ee6,0–6,0,6,Vaduz (0–6) Eint Frankfurt,0–5,1–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-3tqr,b983b638|fac9957a,Sarajevo,BATE,BATE,fac9957a,b983b638,b983b638,1–2,1,2,Sarajevo (1–2) BATE,1–2,0–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-3tqr,b983b638|fac9957a,Sarajevo,BATE Borisov,BATE Borisov,fac9957a,b983b638,b983b638,1–2,1,2,Sarajevo (1–2) BATE Borisov,1–2,0–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,c0d3eab4|e0242ef1,Loko Plovdiv,Strasbourg,Strasbourg,e0242ef1,c0d3eab4,c0d3eab4,0–2,0,2,Loko Plovdiv (0–2) Strasbourg,0–1,1–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,c8ad3091|ecb862be,Sparta Prague,Trabzonspor,Trabzonspor,ecb862be,c8ad3091,c8ad3091,3–4,3,4,Sparta Prague (3–4) Trabzonspor,2–2,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,e2fa043d|fb4ca611,Feyenoord,Dinamo Tbilisi,Feyenoord,fb4ca611,e2fa043d,fb4ca611,5–1,5,1,Feyenoord (5–1) Dinamo Tbilisi,4–0,1–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-3tqr,e334d850|f4bbcd04,Haugesund,PSV Eindhoven,PSV Eindhoven,f4bbcd04,e334d850,e334d850,0–1,0,1,Haugesund (0–1) PSV Eindhoven,0–1,0–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,1040e0f7|f3d8c8b9,Malmö,Bnei Yehuda TA,Malmö,f3d8c8b9,1040e0f7,f3d8c8b9,4–0,4,0,Malmö (4–0) Bnei Yehuda TA,3–0,0–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,105360fe|8cec06e1,Torino,Wolves,Wolves,105360fe,8cec06e1,8cec06e1,3–5,3,5,Torino (3–5) Wolves,2–3,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-4po,133013ee|fb4ca611,Feyenoord,Hapoel BS,Feyenoord,fb4ca611,133013ee,fb4ca611,6–0,6,0,Feyenoord (6–0) Hapoel BS,3–0,0–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-4po,133013ee|fb4ca611,Feyenoord,Be'er Sheva,Feyenoord,fb4ca611,133013ee,fb4ca611,6–0,6,0,Feyenoord (6–0) Be'er Sheva,3–0,0–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,174bd5a0|dde3e804,Partizan,Molde,Partizan,dde3e804,174bd5a0,dde3e804,3–2,3,2,Partizan (3–2) Molde,2–1,1–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,18050b20|91cc0413,FC Copenhagen,Rīga FC,FC Copenhagen,18050b20,91cc0413,18050b20,3–2,3,2,FC Copenhagen (3–2) Rīga FC,3–1,1–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,25dbe099|51e5a603,Gent,Rijeka,Gent,51e5a603,25dbe099,51e5a603,3–2,3,2,Gent (3–2) Rijeka,2–1,1–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
@@ -1333,14 +1341,36 @@ season,stagecode,tieid,team1,team2,winner,teamid1,teamid2,winnerid,aggscore,aggs
 2020,el-0q-4po,3986b791|c2e6b53b,AZ Alkmaar,Antwerp,AZ Alkmaar,3986b791,c2e6b53b,3986b791,5–2,5,2,AZ Alkmaar (5–2 aet) Antwerp,1–1,1–4,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,3f319bc9|aed59852,FCSB,Vitória,Vitória,aed59852,3f319bc9,3f319bc9,0–1,0,1,FCSB (0–1) Vitória,0–0,1–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,44b65410|4c96013a,Linfield,Qarabağ Ağdam,Qarabağ Ağdam,4c96013a,44b65410,44b65410,4–4,4,4,"Linfield (4–4) Qarabağ Ağdam, Qarabağ Ağdam won on away goals",3–2,2–1,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-4po,5a5e7874|ae7f2f70,Sl. Bratislava,PAOK,Sl. Bratislava,ae7f2f70,5a5e7874,ae7f2f70,3–3,3,3,"Sl. Bratislava (3–3) PAOK, Sl. Bratislava won on away goals",1–0,3–2,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-4po,6611f992|9e3153f3,FK Sūduva,Ferencváros,Ferencváros,9e3153f3,6611f992,6611f992,2–4,2,4,FK Sūduva (2–4) Ferencváros,0–0,4–2,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-4po,5a5e7874|ae7f2f70,Slovan Bratislava,PAOK,Slovan Bratislava,ae7f2f70,5a5e7874,ae7f2f70,3–3,3,3,"Slovan Bratislava (3–3) PAOK, Slovan Bratislava won on away goals",1–0,3–2,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-4po,6611f992|9e3153f3,Sūduva,Ferencváros,Ferencváros,9e3153f3,6611f992,6611f992,2–4,2,4,Sūduva (2–4) Ferencváros,0–0,4–2,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,69d84c29|8c635914,Braga,Spartak Moscow,Braga,69d84c29,8c635914,69d84c29,3–1,3,1,Braga (3–1) Spartak Moscow,1–0,1–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,85dbecd4|baae133b,Ararat-Armenia,F91 Dudelange,F91 Dudelange,85dbecd4,baae133b,baae133b,3–3,3,3,"Ararat-Armenia (3–3 aet) F91 Dudelange, F91 Dudelange won on penalty kicks",2–1,2–1,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE
 2020,el-0q-4po,86b7acd2|a73408a7,Legia Warsaw,Rangers,Rangers,a73408a7,86b7acd2,86b7acd2,0–1,0,1,Legia Warsaw (0–1) Rangers,0–0,1–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,8dff1828|e334d850,PSV Eindhoven,Apollon,PSV Eindhoven,e334d850,8dff1828,e334d850,7–0,7,0,PSV Eindhoven (7–0) Apollon,3–0,0–4,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,946a30cb|a8661628,Espanyol,Zorya Luhansk,Espanyol,a8661628,946a30cb,a8661628,5–3,5,3,Espanyol (5–3) Zorya Luhansk,3–1,2–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,b0333581|b81aa4fa,Celtic,AIK Stockholm,Celtic,b81aa4fa,b0333581,b81aa4fa,6–1,6,1,Celtic (6–1) AIK Stockholm,2–0,1–4,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-2020,el-0q-4po,b983b638|c72c8787,Astana FK,BATE,Astana FK,c72c8787,b983b638,c72c8787,3–2,3,2,Astana FK (3–2) BATE,3–0,2–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-0q-4po,b983b638|c72c8787,Astana FK,BATE Borisov,Astana FK,c72c8787,b983b638,c72c8787,3–2,3,2,Astana FK (3–2) BATE Borisov,3–0,2–0,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,c0d3eab4|f0ac8ee6,Strasbourg,Eint Frankfurt,Eint Frankfurt,c0d3eab4,f0ac8ee6,f0ac8ee6,1–3,1,3,Strasbourg (1–3) Eint Frankfurt,1–0,3–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
 2020,el-0q-4po,c8ad3091|d5348c80,AEK Athens,Trabzonspor,Trabzonspor,d5348c80,c8ad3091,c8ad3091,3–3,3,3,"AEK Athens (3–3) Trabzonspor, Trabzonspor won on away goals",1–3,0–2,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,13dc44fd|bff39cf5,Sporting CP,Başakşehir,Başakşehir,13dc44fd,bff39cf5,bff39cf5,4–5,4,5,Sporting CP (4–5 aet) Başakşehir,3–1,4–1,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,18050b20|b81aa4fa,FC Copenhagen,Celtic,FC Copenhagen,18050b20,b81aa4fa,18050b20,4–2,4,2,FC Copenhagen (4–2) Celtic,1–1,1–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,18bb7c10|2fdb4aef,Olympiacos,Arsenal,Olympiacos,2fdb4aef,18bb7c10,2fdb4aef,2–2,2,2,"Olympiacos (2–2) Arsenal, Olympiacos won on away goals",0–1,1–2,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,19538871|f1e6c5f1,Club Brugge,Manchester Utd,Manchester Utd,f1e6c5f1,19538871,19538871,1–6,1,6,Club Brugge (1–6) Manchester Utd,1–1,5–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,19c3f8c4|7848bd64,Getafe,Ajax,Getafe,7848bd64,19c3f8c4,7848bd64,3–2,3,2,Getafe (3–2) Ajax,2–0,2–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,3986b791|d20821dd,AZ Alkmaar,LASK,LASK,3986b791,d20821dd,d20821dd,1–3,1,3,AZ Alkmaar (1–3) LASK,1–1,2–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,488c6ba1|d609edc0,Ludogorets,Inter,Inter,488c6ba1,d609edc0,d609edc0,1–4,1,4,Ludogorets (1–4) Inter,0–2,2–1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,4eaa11d7|f3d8c8b9,Wolfsburg,Malmö,Wolfsburg,4eaa11d7,f3d8c8b9,4eaa11d7,5–1,5,1,Wolfsburg (5–1) Malmö,2–1,0–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,50f2a074|f0ac8ee6,Eint Frankfurt,RB Salzburg,Eint Frankfurt,f0ac8ee6,50f2a074,f0ac8ee6,6–3,6,3,Eint Frankfurt (6–3) RB Salzburg,4–1,2–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,51e5a603|cf74a709,Roma,Gent,Roma,cf74a709,51e5a603,cf74a709,2–1,2,1,Roma (2–1) Gent,1–0,1–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,5e876ee6|c7a9f859,Leverkusen,Porto,Leverkusen,c7a9f859,5e876ee6,c7a9f859,5–2,5,2,Leverkusen (5–2) Porto,2–1,1–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,69d84c29|86b7acd2,Rangers,Braga,Rangers,86b7acd2,69d84c29,86b7acd2,4–2,4,2,Rangers (4–2) Braga,3–2,0–1,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,8cec06e1|a8661628,Wolves,Espanyol,Wolves,8cec06e1,a8661628,8cec06e1,6–3,6,3,Wolves (6–3) Espanyol,4–0,3–2,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,a77c513e|e89d5a28,Shakhtar,Benfica,Shakhtar,e89d5a28,a77c513e,e89d5a28,5–4,5,4,Shakhtar (5–4) Benfica,2–1,3–3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,ad2be733|ff04e205,CFR Cluj,Sevilla,Sevilla,ff04e205,ad2be733,ad2be733,1–1,1,1,"CFR Cluj (1–1) Sevilla, Sevilla won on away goals",1–1,0–0,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-1r32,d3d9424a|eab315a6,APOEL,Basel,Basel,eab315a6,d3d9424a,d3d9424a,0–4,0,4,APOEL (0–4) Basel,0–3,1–0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-2r16,18050b20|bff39cf5,Başakşehir,FC Copenhagen,,bff39cf5,18050b20,,,,,,1–0,↻,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-2r16,19538871|d20821dd,LASK,Manchester Utd,,d20821dd,19538871,,,,,,0–5,↻,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-2r16,2fdb4aef|8cec06e1,Olympiacos,Wolves,,2fdb4aef,8cec06e1,,,,,,1–1,↻,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-2r16,4eaa11d7|e89d5a28,Wolfsburg,Shakhtar,,4eaa11d7,e89d5a28,,,,,,1–2,↻,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-2r16,86b7acd2|c7a9f859,Rangers,Leverkusen,,86b7acd2,c7a9f859,,,,,,1–3,↻,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+2020,el-1k-2r16,d3d9424a|f0ac8ee6,Eint Frankfurt,Basel,,f0ac8ee6,d3d9424a,,,,,,0–3,↻,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE

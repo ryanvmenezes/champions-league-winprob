@@ -5,7 +5,7 @@ odds = read_csv(here('data-get', 'oddsportal', 'processed', 'odds.csv'), na = '-
 
 odds
 
-namesjoined = read_csv(here('data-get', 'assemble', 'teams', 'joining-progress.csv'))
+namesjoined = read_csv(here('data-get', 'assemble', 'teams', 'names-joined.csv'))
 
 namesjoined
 
