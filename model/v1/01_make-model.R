@@ -11,6 +11,7 @@ odds
 events
 
 predmatrix = summaries %>% 
+  # train model on everything but this most recent season
   filter(season < 2020) %>% 
   filter(has_events) %>% 
   filter(!has_invalid_match) %>% 

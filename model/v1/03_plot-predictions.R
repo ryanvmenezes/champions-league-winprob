@@ -2,7 +2,7 @@ library(here)
 library(furrr)
 library(tidyverse)
 
-plan(multisession)
+plan(multiprocess)
 availableCores()
 
 summaries = read_rds(here('data', 'summary.rds'))
@@ -95,7 +95,16 @@ winprobplot = function(t1, t2, result, df, szn, stage, aet) {
       breaks = c(0, 0.25, 0.5, 0.75, 1),
       labels = c(str_c('100%\n', t2short), '75 ', '50 ', '75 ', str_c(t1short, '\n100%'))
     ) +
-    ggtitle(str_c(result, '\n', inittitle, '\n', szn, ' ', stage)) +
+    ggtitle(
+      str_c(
+        if_else(
+          is.na(result),
+          str_c(t1, '-', t2, ' in progress'),
+          result
+        ),
+        '\n', inittitle, '\n', szn, ' ', stage
+      )
+    ) +
     ylab('') +
     xlab('') +
     theme_minimal() +
@@ -170,4 +179,3 @@ output = plots %>%
 beepr::beep()
 
 output
-
