@@ -26,9 +26,12 @@ llbytie = likelihoods %>%
   arrange(loglik) %>% 
   ungroup() %>% 
   left_join(summaries) %>% 
+  filter(!is.na(winner)) %>% 
   select(season, stagecode, tieid, team1, team2, winner, aggscore, loglik)
 
 llbytie
+
+llbytie %>% tail()
 
 llbyminute = likelihoods %>% 
   mutate(predset = case_when(season == 2020 ~ 'predictions', TRUE ~ 'training')) %>% 

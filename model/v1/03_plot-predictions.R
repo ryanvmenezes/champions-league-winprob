@@ -53,15 +53,15 @@ winprobplot = function(t1, t2, result, df, szn, stage, aet) {
   
   plot = ggplot(data = df, aes(minuteclean, predictedprobt1)) +
     geom_vline(xintercept = 90, linetype = 'dashed', alpha = 0.5) +
-    annotate('text', label = str_c('at ', t1, sep = ''), x = 45, y = 0.75, size = 5, alpha = 0.2)
+    annotate('text', label = str_c('at ', t1, sep = ''), x = 45, y = 0.5, size = 5, alpha = 0.2)
   
   if (aet) {
     plot = plot +
       geom_vline(xintercept = 180, linetype = 'dashed', alpha = 0.5) +
-      annotate('text', label = str_c('at ', t2, sep = ''), x = 150, y = 0.25, size = 5, alpha = 0.2)
+      annotate('text', label = str_c('at ', t2, sep = ''), x = 150, y = 0.5, size = 5, alpha = 0.2)
   } else {
     plot = plot +
-      annotate('text', label = str_c('at ', t2, sep = ''), x = 135, y = 0.25, size = 5, alpha = 0.2)
+      annotate('text', label = str_c('at ', t2, sep = ''), x = 135, y = 0.5, size = 5, alpha = 0.2)
   }
   
   plot = plot +
@@ -88,7 +88,7 @@ winprobplot = function(t1, t2, result, df, szn, stage, aet) {
     ) +
     scale_x_continuous(
       breaks = c(0, 45, 90, 135, 180, 210),
-      labels = c('G1 Start','G1 Half','G1 End\nG2 Start','G2 Half','G2 End\nET Start','ET End')
+      labels = c('G1 Start','G1 Half','G1 End\nG2 Start','G2 Half',if_else(aet, 'G2 End\nET Start', 'G2 End'),'ET End')
     ) +
     scale_y_continuous(
       limits = c(0,1),
