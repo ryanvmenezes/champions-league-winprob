@@ -53,15 +53,15 @@ winprobplot = function(t1, t2, result, df, szn, stage, aet) {
   
   plot = ggplot(data = df, aes(minuteclean, predictedprobt1)) +
     geom_vline(xintercept = 90, linetype = 'dashed', alpha = 0.5) +
-    annotate('text', label = str_c('at ', t1, sep = ''), x = 45, y = 0.5, size = 5, alpha = 0.2)
+    annotate('text', label = str_c('at ', t1, sep = ''), x = 45, y = 0.75, size = 5, alpha = 0.2)
   
   if (aet) {
     plot = plot +
       geom_vline(xintercept = 180, linetype = 'dashed', alpha = 0.5) +
-      annotate('text', label = str_c('at ', t2, sep = ''), x = 150, y = 0.5, size = 5, alpha = 0.2)
+      annotate('text', label = str_c('at ', t2, sep = ''), x = 150, y = 0.25, size = 5, alpha = 0.2)
   } else {
     plot = plot +
-      annotate('text', label = str_c('at ', t2, sep = ''), x = 135, y = 0.5, size = 5, alpha = 0.2)
+      annotate('text', label = str_c('at ', t2, sep = ''), x = 135, y = 0.25, size = 5, alpha = 0.2)
   }
   
   plot = plot +

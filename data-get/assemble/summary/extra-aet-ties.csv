@@ -1,0 +1,11 @@
+season,stagecode,tieid,team1,team2,winner,teamid1,teamid2,winnerid,aggscore,goalt1.tie,goalt2.tie,result,score1,score2,goalt1.tie.180,goalt2.tie.180
+2015,cl-1k-1r16,cff3d9bb|e2d8892c,Paris S-G,Chelsea,Paris S-G,e2d8892c,cff3d9bb,e2d8892c,3–3,3,3,Paris S-G and advance to Quarterfinals.,1–1,2–2,2,2
+2015,el-0q-1fqr,7bc6abf1|c3071553,Sillamäe Kalev,FC Honka,Sillamäe Kalev,7bc6abf1,c3071553,7bc6abf1,4–4,4,4,Sillamäe Kalev and advance to Second Qualifying Round.,2–1,3–2,3,3
+2015,el-1k-2r16,19c3f8c4|c4770a69,Dnipro,Ajax,Dnipro,c4770a69,19c3f8c4,c4770a69,2–2,2,2,Dnipro and advance to Quarterfinals.,1–0,2–1,1,1
+2016,el-0q-3tqr,99f258c2|e5dea1f1,MŠK Žilina,Vorskla Poltava,MŠK Žilina,e5dea1f1,99f258c2,e5dea1f1,3–3,3,3,MŠK Žilina and advance to Play-off Round.,2–0,3–1,2,2
+2016,el-1k-1r32,08ad393c|2fdb4aef,Anderlecht,Olympiacos,Anderlecht,08ad393c,2fdb4aef,08ad393c,3–1,3,1,Anderlecht won on aggregate score over two legs and advance to Round of 16.,1–0,1–2,1,1
+2020,cl-0q-2sqr,2aae7689|b0333581,Maribor,AIK Stockholm,Maribor,2aae7689,b0333581,2aae7689,4–4,4,4,"Maribor won on away goals, after aggregate score was tied and advance to Third qualifying round.",2–1,3–2,3,3
+2020,el-0q-1fqr,6e7c9b0b|b11bfada,Dunajská Streda,Cracovia,Dunajská Streda,b11bfada,6e7c9b0b,b11bfada,3–3,3,3,"Dunajská Streda won on away goals, after aggregate score was tied and advance to Second qualifying round.",1–1,2–2,2,2
+2020,el-0q-1fqr,112c9642|f13065a8,Stjarnan,Levadia Tallinn,Stjarnan,f13065a8,112c9642,f13065a8,4–4,4,4,"Stjarnan won on away goals, after aggregate score was tied and advance to Second qualifying round.",2–1,3–2,3,3
+2020,el-0q-3tqr,02cd81bf|c2e6b53b,Antwerp,Viktoria Plzeň,Antwerp,c2e6b53b,02cd81bf,c2e6b53b,2–2,2,2,"Antwerp won on away goals, after aggregate score was tied and advance to Play-off Round.",1–0,2–1,1,1
+2020,el-1k-1r32,18bb7c10|2fdb4aef,Olympiacos,Arsenal,Olympiacos,2fdb4aef,18bb7c10,2fdb4aef,2–2,2,2,"Olympiacos won on away goals, after aggregate score was tied.",0–1,1–2,1,1
