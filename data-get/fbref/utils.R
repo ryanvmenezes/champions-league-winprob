@@ -1,4 +1,4 @@
-CURRENT_SZN = '2019-2020'
+source('utils.R')
 
 getorretrieve = function(subfolder, url, override = FALSE) {
   fname = url %>% 

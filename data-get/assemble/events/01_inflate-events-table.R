@@ -16,7 +16,7 @@ eventscleaned = events %>%
   rename(season = szn) %>%
   right_join(
     summaries %>% 
-      select(season, stagecode, tieid, aet, has_events) %>% 
+      select(season, stagecode, tieid, aet, has_events, in_progress) %>% 
       filter(has_events)
   ) %>% 
   mutate(
@@ -34,13 +34,17 @@ eventscleaned = events %>%
 eventscleaned
 
 eventsnested = eventscleaned %>% 
-  group_by(season, stagecode, tieid, aet, has_events) %>% 
+  group_by(season, stagecode, tieid, aet, in_progress, has_events) %>% 
   nest()
 
 eventsnested
 
-expandminutes = function(data, aet = FALSE) {
-  minutemax = if_else(aet, 210, 180)
+expandminutes = function(data, aet = FALSE, in_progress = FALSE) {
+  minutemax = case_when(
+    aet ~ 210,
+    in_progress ~ 90,
+    TRUE ~ 180
+  )
   
   df = data %>% 
     right_join(tibble(minuteclean = 1:minutemax), by = 'minuteclean') %>% 
@@ -63,14 +67,15 @@ expandminutes = function(data, aet = FALSE) {
       redcardst1diff = redcardst1 - redcardst2
     ) %>% 
     select(
-      minuteclean, minuterown, leg, goalst1:redcardst1diff, player, playerid, eventtype, minute, team
+      minuteclean, minuterown, leg, goalst1:redcardst1diff,
+      player, playerid, eventtype, minute, team
     )
   
   return(df)
 }
 
 eventsnested = eventsnested %>% 
-  mutate(minutematrix = map2(data, aet, expandminutes))
+  mutate(minutematrix = pmap(list(data, aet, in_progress), expandminutes))
 
 eventsnested
 

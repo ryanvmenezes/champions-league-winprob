@@ -98,7 +98,8 @@ assemblingsummary = results %>%
   mutate(
     has_events = replace_na(has_events, TRUE),
     has_odds = replace_na(has_odds, FALSE),
-    has_invalid_match = replace_na(has_invalid_match, FALSE)
+    has_invalid_match = replace_na(has_invalid_match, FALSE),
+    in_progress = is.na(winner)
   ) %>% 
   arrange(season, stagecode, tieid)
 

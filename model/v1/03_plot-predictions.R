@@ -87,8 +87,9 @@ winprobplot = function(t1, t2, result, df, szn, stage, aet) {
       shape = 22
     ) +
     scale_x_continuous(
-      breaks = c(0, 45, 90, 135, 180, 210),
-      labels = c('G1 Start','G1 Half','G1 End\nG2 Start','G2 Half',if_else(aet, 'G2 End\nET Start', 'G2 End'),'ET End')
+      limits = c(0, if_else(aet, 210, 180)),
+      breaks = c(0, 45, 90, 135, 180, 195, 210),
+      labels = c('G1 Start','G1 Half','G1 End\nG2 Start','G2 Half',if_else(aet, 'G2 End\nET Start', 'G2 End'),'','ET End')
     ) +
     scale_y_continuous(
       limits = c(0,1),
@@ -117,9 +118,9 @@ plots = fullpredictions %>%
   mutate(plot = future_pmap(list(team1, team2, result, data, season, stagecode, aet), winprobplot, .progress = TRUE)) %>% 
   select(-data)
 
-plots
-
 plots %>% write_rds(here('model', 'v1', 'all-plots.rds'), compress = 'gz')
+
+# beepr::beep()
 # plots = read_rds(here('model', 'v1', 'all-plots.rds'))
 
 # make destination directories
@@ -142,10 +143,9 @@ plots %>%
 
 pb = progress_estimated(nrow(plots))
 
-output = plots %>%
+outplots = plots %>%
   separate(stagecode, into = c('comp', 'round'), extra = 'merge') %>% 
-  select(season, comp, round, team1, team2, plot) %>% 
-  mutate(
+  transmute(
     outpath = pmap_chr(
       list(comp, season, round, team1, team2),
       function(comp, season, round, team1, team2) {
@@ -156,26 +156,29 @@ output = plots %>%
         return (outpath)
       }
     ),
-    plot.outputted = map2_lgl(
-      outpath,
-      plot,
-      function(outpath, plot, ...) {
-        ggsave(
-          filename = outpath,
-          plot = plot,
-          device = 'png',
-          width = 10,
-          height = 5,
-          units = 'in'
-          # dpi = 'retina'
-        )
-        pb$tick()$print()
-        return (file.exists(outpath))
-      },
-      # .progress = TRUE
-    )
+    plot
   )
+
+outplots
+
+null.output = future_map2(
+  outplots$outpath,
+  outplots$plot,
+  function(outpath, plot) {
+    ggsave(
+      filename = outpath,
+      plot = plot,
+      device = 'png',
+      width = 10,
+      height = 5,
+      units = 'in'
+    )
+
+    return (NULL)
+  },
+  .progress = TRUE
+)
 
 beepr::beep()
 
-output
+null.output
