@@ -2,16 +2,11 @@ library(here)
 library(locfit)
 library(tidyverse)
 
-summaries = read_rds(here('data', 'summary.rds'))
-odds = read_rds(here('data', 'odds.rds'))
-events = read_rds(here('data', 'events.rds'))
+source(here('model', 'v1', 'utils.R'))
 
-summaries
-odds
-events
-
-model = read_rds(here('model', 'v1', 'model.rds'))
+model = read_rds(here('model', this.version, 'model.rds'))
 model
+
 summary(model)
 
 predmatrix = summaries %>%
@@ -37,4 +32,4 @@ predmatrix = summaries %>%
 
 predmatrix
 
-predmatrix %>% write_rds(here('model', 'v1', 'predictions.rds'))
+predmatrix %>% write_rds(here('model', this.version, 'predictions.rds'))

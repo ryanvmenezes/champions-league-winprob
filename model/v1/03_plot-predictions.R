@@ -2,14 +2,12 @@ library(here)
 library(furrr)
 library(tidyverse)
 
+source(here('model', 'v1', 'utils.R'))
+
 plan(multiprocess)
 availableCores()
 
-summaries = read_rds(here('data', 'summary.rds'))
-
-summaries
-
-predictions = read_rds(here('model','v1', 'predictions.rds'))
+predictions = read_rds(here('model', this.version, 'predictions.rds'))
 
 predictions
 

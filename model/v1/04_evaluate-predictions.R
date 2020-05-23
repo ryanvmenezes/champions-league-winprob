@@ -1,11 +1,9 @@
 library(here)
 library(tidyverse)
 
-summaries = read_rds(here('data', 'summary.rds'))
+source(here('model', 'v1', 'utils.R'))
 
-summaries
-
-predictions = read_rds(here('model', 'v1', 'predictions.rds'))
+predictions = read_rds(here('model', this.version, 'predictions.rds'))
 
 predictions
 
@@ -48,7 +46,7 @@ llbyminuteplot = llbyminute %>%
 
 llbyminuteplot
 
-evalfolder = here('model', 'v1', 'evaluation')
+evalfolder = here('model', this.version, 'evaluation')
 
 llbytie %>% write_csv(file.path(evalfolder, 'loglik-by-tie.csv'), na = '')
 llbyminute %>% write_csv(file.path(evalfolder, 'loglik-by-minute.csv'), na = '')

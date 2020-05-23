@@ -16,3 +16,8 @@ updateodds:
 	-docker run -d -p 4445:4444 selenium/standalone-firefox:3.141.59
 	Rscript data-get/oddsportal/01_scrape-odds.R
 	Rscript data-get/oddsportal/02_parse-odds.R
+
+runmodelv1:
+	Rscript model/v1/01_make-model.R
+	Rscript model/v1/02_make-predictions.R
+	Rscript model/v1/03_plot-predictions.R
