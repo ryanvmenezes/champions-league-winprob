@@ -116,10 +116,10 @@ plots = fullpredictions %>%
   mutate(plot = future_pmap(list(team1, team2, result, data, season, stagecode, aet), winprobplot, .progress = TRUE)) %>% 
   select(-data)
 
-plots %>% write_rds(here('model', 'v1', 'all-plots.rds'), compress = 'gz')
+plots %>% write_rds(here('model', this.version, 'all-plots.rds'), compress = 'gz')
 
 # beepr::beep()
-# plots = read_rds(here('model', 'v1', 'all-plots.rds'))
+# plots = read_rds(here('model', this.version, 'all-plots.rds'))
 
 # make destination directories
 plots %>% 
@@ -128,7 +128,7 @@ plots %>%
   distinct() %>% 
   pwalk(
     function(comp, season, round) {
-      plotsfolder = here('model', 'v1', 'plots')
+      plotsfolder = here('model', this.version, 'plots')
       if (!dir.exists(plotsfolder)) { dir.create(plotsfolder) }
       compfolder = file.path(plotsfolder, comp)
       if(!dir.exists(compfolder)) { dir.create(compfolder) }
@@ -139,15 +139,13 @@ plots %>%
     }
   )
 
-pb = progress_estimated(nrow(plots))
-
 outplots = plots %>%
   separate(stagecode, into = c('comp', 'round'), extra = 'merge') %>% 
   transmute(
     outpath = pmap_chr(
       list(comp, season, round, team1, team2),
       function(comp, season, round, team1, team2) {
-        roundfolder = here('model', 'v1', 'plots', comp, season, round)
+        roundfolder = here('model', this.version, 'plots', comp, season, round)
         fpath = str_c(team1, '-', team2, '.png')
         fpath = str_replace_all(fpath, '/', '')
         outpath = file.path(roundfolder, fpath)
@@ -178,5 +176,3 @@ null.output = future_map2(
 )
 
 beepr::beep()
-
-null.output

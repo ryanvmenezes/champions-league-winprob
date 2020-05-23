@@ -9,8 +9,8 @@ predmatrix = summaries %>%
   filter(season < 2020) %>% 
   filter(has_events) %>% 
   filter(!has_invalid_match) %>% 
-  left_join(events) %>% 
-  left_join(odds) %>% 
+  left_join(events, by = c("season", "stagecode", "tieid", "aet", "has_events", "in_progress")) %>% 
+  left_join(odds, by = c("season", "stagecode", "tieid")) %>% 
   select(
     season, stagecode, tieid,
     t1win, minuteclean, minuterown,

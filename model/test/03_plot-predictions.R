@@ -172,5 +172,3 @@ output = plots %>%
 
 beepr::beep()
 
-output
-

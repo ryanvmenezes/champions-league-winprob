@@ -119,6 +119,10 @@ eval.pred.by.window = predictions %>%
 
 eval.pred.by.window
 
+eval.pred.by.window %>% 
+  group_by(minute.bin) %>% 
+  filter(rmserror == min(rmserror))
+
 # model.eval = models %>% 
 #   group_by(start.interval, end.interval) %>% 
 #   mutate(mingcv = gcvstat == min(gcvstat)) %>% 

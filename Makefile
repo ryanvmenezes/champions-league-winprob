@@ -21,3 +21,8 @@ runmodelv1:
 	Rscript model/v1/01_make-model.R
 	Rscript model/v1/02_make-predictions.R
 	Rscript model/v1/03_plot-predictions.R
+
+runmodelv2:
+	Rscript model/v2/01_make-model.R
+	Rscript model/v2/02_make-predictions.R
+	Rscript model/v2/03_plot-predictions.R
