@@ -106,6 +106,26 @@ predictions = models %>%
   unnest(c(predictions)) %>% 
   mutate(minute.bin = (((minuteclean - 1) %/% 5) + 1) * 5)
 
+predictions
+
+predictions.games = predictions %>% 
+  distinct(season, stagecode, tieid) %>% 
+  left_join(summaries)
+
+predictions.games
+
+predictions %>% 
+  filter(tieid == '822bd0ba|cf74a709', season == 2018) %>% 
+  ggplot(aes(minuteclean, predictedprobt1, color = as.factor(window))) +
+  geom_line() +
+  geom_point(
+    data = . %>% 
+      filter(goalst1diff - lag(goalst1diff) > 0)
+  ) +
+  scale_color_brewer(palette = 'Paired') +
+  scale_y_continuous(limits = c(0,1)) +
+  theme_minimal()
+
 eval.pred.by.window = predictions %>% 
   mutate(
     error = as.numeric(t1win) - predictedprobt1,
