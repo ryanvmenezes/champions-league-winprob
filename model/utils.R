@@ -34,6 +34,14 @@ all.data = summaries %>%
   ) %>% 
   ungroup()
 
+run.glm = function(data) {
+  glm(
+    t1win ~ minuteclean + goalst1diff + awaygoalst1diff + redcardst1diff + probh1 + proba1,
+    data = data,
+    family = 'binomial'
+  )
+}
+
 # train model on everything but this most recent season
 training.data = all.data %>% filter(season < test.season.cutoff)
 
@@ -56,6 +64,45 @@ save.predictions = function(predictions, version) {
   
   predictions %>% 
     write_rds(here('model', 'predictions', glue::glue('{version}.csv')))
+}
+
+read.predictions = function(predictions, version) {
+  predictions %>% 
+    read_rds(here('model', 'predictions', glue::glue('{version}.rds')))
+}
+
+winprobplot.simple = function(match.data) {
+  match.data %>% 
+    ggplot(aes(minuteclean, predictedprobt1)) +
+    geom_line() +
+    geom_point(
+      data = . %>%
+        filter(ag),
+      aes(minuteclean, predictedprobt1),
+      color = 'pink',
+      size = 3
+    ) +
+    geom_point(
+      data = . %>%
+        filter(str_detect(eventtype, 'goal')),
+      aes(minuteclean, predictedprobt1),
+      color = 'blue'
+    ) +
+    geom_point(
+      data = . %>%
+        filter(str_detect(eventtype, 'red')),
+      aes(minuteclean, predictedprobt1),
+      fill = 'red',
+      shape = 22
+    ) +
+    scale_x_continuous(
+      breaks = c(0, 45, 90, 135, 180, 195, 210),
+    ) +
+    scale_y_continuous(
+      limits = c(0,1),
+      breaks = c(0, 0.25, 0.5, 0.75, 1)
+    ) +
+    theme_minimal()
 }
 
 winprobplot = function(t1, t2, result, df, szn, stage, aet) {
@@ -236,6 +283,33 @@ calculate.rms.errors.by.minute = function(predictions) {
     mutate(predset = case_when(season == test.season.cutoff ~ 'predictions', TRUE ~ 'training')) %>% 
     group_by(predset, minuteclean) %>%
     summarise(rmserror = sqrt(mean(sqerror, na.rm = TRUE)))
+}
+
+# window of data for each minute
+# shrink window toward end
+
+filter.by.minute = function(m) {
+  if(m < 170) {
+    filtered = training.data %>%
+      filter(minuteclean >= m - 10, minuteclean <= m + 10)
+  }
+  if(m >= 170 & m < 180) {
+    filtered = training.data %>%
+      filter(minuteclean >= m - 3, minuteclean <= m + 3)
+  }
+  if(m == 180) {
+    filtered = training.data %>%
+      filter(minuteclean >= m - 1, minuteclean <= m + 1)
+  }
+  if(m > 180 & m < 210) {
+    filtered = training.data %>%
+      filter(minuteclean >= m - 3, minuteclean <= m + 3)
+  }
+  if(m == 210) {
+    filtered = training.data %>%
+      filter(minuteclean >= m - 1, minuteclean <= m + 1)
+  }
+  return(filtered)
 }
 
 

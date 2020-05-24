@@ -1,102 +1,85 @@
 library(here)
 library(tidyverse)
 
-this.version = 'v2'
-
 source(here('model', 'utils.R'))
 
-predictions = tribble(
-  ~version, ~predpath,
-  'v1', 'model/v1/predictions.rds',
-  'v2.1', 'model/v2/predictions21.rds',
-  'v2.2', 'model/v2/predictions22.rds'
-) %>% 
+preds.folder = here('model', 'predictions')
+
+predictions = tibble(version = list.files(preds.folder)) %>% 
+  filter(str_ends(version, 'rds')) %>% 
   mutate(
-    predictions = map(predpath, read_rds),
-    ll = map(predictions, calculate.ll.by.minute),
-    rms = map(predictions, calculate.rms.errors.by.minute)
+    fpath = glue::glue('{preds.folder}/{version}'),
+    preds = map(fpath, read_rds),
+    version = str_replace(version, '.rds', '')
+  ) %>% 
+  select(-fpath) %>% 
+  mutate(
+    loglik = map(preds, calculate.ll.by.minute),
+    rms = map(preds, calculate.rms.errors.by.minute)
   )
 
 predictions
 
-predictions %>% 
-  select(version, ll) %>% 
-  unnest(c(ll)) %>% 
-  filter(predset == 'predictions') %>% 
-  select(-predset) %>% 
-  pivot_wider(names_from = 'version', values_from = 'loglik') %>% 
-  mutate(diff2 = v2.2 - v1) %>% 
-  ggplot(aes(minuteclean, diff2)) +
-  geom_vline(xintercept = 170, color = 'red') +
-  geom_bar(stat = 'identity')
+compare.loglik = predictions %>% 
+  select(version, loglik) %>% 
+  unnest(c(loglik)) %>% 
+  filter(predset == 'predictions')
 
-predictions %>% 
-  select(version, ll) %>% 
-  unnest(c(ll)) %>% 
-  filter(predset == 'predictions') %>% 
+compare.loglik
+
+loglik.winner.by.minute = compare.loglik %>% 
+  group_by(minuteclean) %>% 
+  filter(loglik == min(loglik)) %>% 
+  arrange(minuteclean)
+
+loglik.winner.by.minute
+
+plot.compare.ll = compare.loglik %>%
   ggplot(aes(minuteclean, loglik, color = version)) +
-  geom_line() +
-  geom_point() +
-  scale_x_continuous(
-    # limits = c(170, 190),
-    breaks = c(0,45,90,135,180,195,210)
-  ) +
-  theme_minimal()
-
-predictions %>% 
-  select(version, rms) %>% 
-  unnest(c(rms)) %>% 
-  filter(predset == 'predictions') %>% 
-  ggplot(aes(minuteclean, rmserror, color = version)) +
   geom_line() +
   # geom_point() +
   scale_x_continuous(
-    # limits = c(170, 190),
     breaks = c(0,45,90,135,180,195,210)
   ) +
   theme_minimal()
 
-# predictions = read_rds(here('model', this.version, 'predictions.rds'))
+plot.compare.ll
 
-# predictions
+compare.rms = predictions %>% 
+  select(version, rms) %>% 
+  unnest(c(rms)) %>% 
+  filter(predset == 'predictions')
 
-# log likelihoods ---------------------------------------------------------
+compare.rms
 
-llbytie = calculate.ll.by.tie(predictions)
+rms.winner.by.minute = compare.rms %>% 
+  group_by(minuteclean) %>% 
+  filter(rmserror == min(rmserror)) %>% 
+  arrange(minuteclean)
 
-llbytie
+rms.winner.by.minute
 
-llbytie %>% tail()
-
-llbyminute = calculate.ll.by.minute(predictions)
-
-llbyminute
-
-llbyminuteplot = llbyminute %>% 
-  ggplot(aes(minuteclean, loglik, color = predset)) +
+plot.compare.rms = compare.rms %>% 
+  ggplot(aes(minuteclean, rmserror, color = version)) +
   geom_line() +
+  scale_x_continuous(
+    breaks = c(0,45,90,135,180,195,210)
+  ) +
   theme_minimal()
 
-llbyminuteplot
+plot.compare.rms
 
-evalfolder = here('model', this.version, 'evaluation')
+loglik.winner.by.minute %>% write_csv('model/evaluation/log-lik-top-model-by-minute.csv', na = '')
+rms.winner.by.minute %>% write_csv('model/evaluation/rms-top-model-by-minute.csv', na = '')
 
-llbytie %>% write_csv(file.path(evalfolder, 'loglik-by-tie.csv'), na = '')
-llbyminute %>% write_csv(file.path(evalfolder, 'loglik-by-minute.csv'), na = '')
-ggsave(file.path(evalfolder, 'loglik-by-minute.png'), llbyminuteplot, width = 10, height = 5)
+ggsave(plot = plot.compare.ll, filename = 'model/evaluation/compare-log-lik.png', width = 10, height = 5)
+ggsave(plot = plot.compare.rms, filename = 'model/evaluation/compare-rms.png', width = 10, height = 5)
 
-# errors ------------------------------------------------------------------
+llbytie = predictions %>% 
+  mutate(tie.ll = map(preds, calculate.ll.by.tie)) %>% 
+  select(version, tie.ll) %>% 
+  unnest(c(tie.ll)) %>% 
+  pivot_wider(names_from = 'version', values_from = 'loglik') %>% 
+  arrange(v2.2.1)
 
-rmserrors = calculate.rms.errors.by.minute(predictions)
-
-rmserrors
-
-rmserrorsplot = rmserrors %>% 
-  ggplot(aes(minuteclean, rmserror, color = predset)) +
-  geom_line() +
-  theme_minimal()
-
-rmserrorsplot
-
-rmserrors %>% write_csv(file.path(evalfolder, 'rms-error-by-minute.csv'), na = '')
-ggsave(file.path(evalfolder, 'rms-error-by-minute.png'), rmserrorsplot, width = 10, height = 5)
+llbytie %>% write_csv('model/evaluation/log-lik-by-tie.csv', na = '')
