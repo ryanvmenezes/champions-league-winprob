@@ -18,6 +18,7 @@ updateodds:
 	Rscript data-get/oddsportal/02_parse-odds.R
 
 runmodelv1:
-	Rscript model/v1/01_make-model.R
-	Rscript model/v1/02_make-predictions.R
-	Rscript model/v1/03_plot-predictions.R
+	Rscript model/v1/01_model.R
+	Rscript model/v1/02_predict.R
+	Rscript model/v1/03_evaluate.R
+	Rscript model/v1/04_plot.R
