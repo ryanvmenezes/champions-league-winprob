@@ -37,8 +37,8 @@ all.data = summaries %>%
 # train model on everything but this most recent season
 training.data = all.data %>% filter(season < test.season.cutoff)
 
-make.predictions = function(model) {
-  all.data %>% 
+make.predictions = function(model, data = all.data) {
+  data %>% 
     mutate(
       predictedprobt1 = predict(model, newdata = ., type = 'response'),
       likelihood = case_when(
@@ -48,6 +48,14 @@ make.predictions = function(model) {
       error = as.numeric(t1win) - predictedprobt1,
       sqerror = error ^ 2
     )
+}
+
+save.predictions = function(predictions, version) {
+  predictions %>% 
+    write_rds(here('model', 'predictions', glue::glue('{version}.rds')))
+  
+  predictions %>% 
+    write_rds(here('model', 'predictions', glue::glue('{version}.csv')))
 }
 
 winprobplot = function(t1, t2, result, df, szn, stage, aet) {
