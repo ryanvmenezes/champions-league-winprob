@@ -36,7 +36,7 @@ all.data = summaries %>%
 
 run.glm = function(data) {
   glm(
-    t1win ~ minuteclean + goalst1diff + awaygoalst1diff + redcardst1diff + probh1 + proba1,
+    t1win ~ goalst1diff + awaygoalst1diff + redcardst1diff + probh1 + proba1,
     data = data,
     family = 'binomial'
   )
@@ -301,7 +301,11 @@ filter.by.minute = function(m) {
     filtered = training.data %>%
       filter(minuteclean >= m - 1, minuteclean <= m + 1)
   }
-  if(m > 180 & m < 210) {
+  if(m > 180 & m < 200) {
+    filtered = training.data %>%
+      filter(minuteclean >= m - 10, minuteclean <= m + 10)
+  }
+  if(m >= 200 & m < 210) {
     filtered = training.data %>%
       filter(minuteclean >= m - 3, minuteclean <= m + 3)
   }

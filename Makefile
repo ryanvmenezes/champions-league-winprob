@@ -26,3 +26,4 @@ createmodels:
 	Rscript model/v2.1/01_model-predict.R
 	Rscript model/v2.2/01_model-predict.R
 	Rscript model/v2.2.1/01_model-predict.R
+	Rscript model/evaluate.R
