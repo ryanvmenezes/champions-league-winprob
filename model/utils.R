@@ -66,9 +66,8 @@ save.predictions = function(predictions, version) {
     write_rds(here('model', 'predictions', glue::glue('{version}.csv')))
 }
 
-read.predictions = function(predictions, version) {
-  predictions %>% 
-    read_rds(here('model', 'predictions', glue::glue('{version}.rds')))
+read.predictions = function(version) {
+  read_rds(here('model', 'predictions', glue::glue('{version}.rds')))
 }
 
 winprobplot.simple = function(match.data) {
@@ -203,13 +202,14 @@ make.all.plots = function(predictions) {
     select(-data)
 }
 
-export.all.plots = function(plots, plotsfolder) {
+export.all.plots = function(plots, version) {
   plots %>% 
     separate(stagecode, into = c('comp', 'round'), extra = 'merge') %>% 
     select(comp, season, round) %>%
     distinct() %>% 
     pwalk(
       function(comp, season, round) {
+        plotsfolder =  here('model', version, 'plots')
         if (!dir.exists(plotsfolder)) { dir.create(plotsfolder) }
         compfolder = file.path(plotsfolder, comp)
         if(!dir.exists(compfolder)) { dir.create(compfolder) }
@@ -226,7 +226,7 @@ export.all.plots = function(plots, plotsfolder) {
       outpath = pmap_chr(
         list(comp, season, round, team1, team2),
         function(comp, season, round, team1, team2) {
-          roundfolder = here('model', this.version, 'plots', comp, season, round)
+          roundfolder = here('model', version, 'plots', comp, season, round)
           fpath = str_c(team1, '-', team2, '.png')
           fpath = str_replace_all(fpath, '/', '')
           outpath = file.path(roundfolder, fpath)

@@ -74,10 +74,10 @@ adjust.match.predictions = function(match.data) {
     ) %>%
     # do this again to prevent rounding errors
     mutate(
-      predictedprobt1 = case_when(
+      perminprobchg = case_when(
         minuteclean == 180 & !aet ~ as.numeric(t1win),
         minuteclean == 210 & !pk ~ as.numeric(t1win),
-        TRUE ~ predictedprobt1
+        TRUE ~ perminprobchg
       )
     ) %>% 
     select(

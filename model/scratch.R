@@ -7,9 +7,10 @@ predictions = read_rds('model/predictions/v2.1.rds')
 predictions1 = read_rds('model/predictions/v2.2.rds')
 predictions2 = read_rds('model/predictions/v2.2.1.rds')
 
+library(furrr)
+plan(multiprocess)
 
 plots.tmp = summaries %>% 
-  filter(aet) %>% 
   left_join(predictions1) %>% 
   left_join(predictions2 %>% select(season, stagecode, tieid, minuteclean, minuterown, predictedprobt1.smooth = predictedprobt1)) %>% 
   left_join(predictions %>% select(season, stagecode, tieid, minuteclean, minuterown, predictedprobt1.bymin = predictedprobt1)) %>% 
@@ -27,6 +28,7 @@ plots.tmp = summaries %>%
   )
 
 plots.tmp %>%
+  # filter(season == 2020) %>% 
   ungroup() %>% 
   sample_n(5) %>% 
   print() %>% 
