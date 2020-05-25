@@ -13,6 +13,8 @@ models = training.data %>%
   ) %>%
   select(-data)
 
+models
+
 predictions = models %>%
   mutate(
     predictions = map2(
@@ -50,6 +52,7 @@ adjust.match.predictions = function(match.data) {
         redcardst1diff != lead(redcardst1diff) |
         redcardst1diff != lag(redcardst1diff) |
         (!aet & minuteclean == 180) |
+        minuteclean == 181 |
         minuteclean == 210
     ) %>% 
     ungroup()
@@ -68,6 +71,14 @@ adjust.match.predictions = function(match.data) {
     mutate(
       perminprobchg = if_else(minuteclean == 1, predictedprobt1, perminprobchg),
       perminprobchg = cumsum(perminprobchg)
+    ) %>%
+    # do this again to prevent rounding errors
+    mutate(
+      predictedprobt1 = case_when(
+        minuteclean == 180 & !aet ~ as.numeric(t1win),
+        minuteclean == 210 & !pk ~ as.numeric(t1win),
+        TRUE ~ predictedprobt1
+      )
     ) %>% 
     select(
       t1win, probh1, probd1, proba1, minuteclean, minuterown, goalst1diff, awaygoalst1diff, redcardst1diff,
