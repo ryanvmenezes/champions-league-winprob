@@ -2,8 +2,8 @@ library(here)
 library(tidyverse)
 
 source(here('model', 'utils.R'))
-
-predictions = read_rds('model/predictions/v2.1.rds')
+# 
+# predictions = read_rds('model/predictions/v2.1.rds')
 predictions1 = read_rds('model/predictions/v2.2.rds')
 predictions2 = read_rds('model/predictions/v2.2.1.rds')
 
@@ -49,3 +49,19 @@ read_csv('model/evaluation/compare-log-lik.csv')
 predictions2 %>% 
   group_by(season, stagecode, tieid) %>% 
   filter(minuterown == max(minuterown)) %>% 
+  right_join(summaries) %>% 
+  filter(predictedprobt1 != 0) %>% 
+  filter(predictedprobt1 != 1) %>% 
+  filter(!pk) %>% 
+  view()
+
+
+match.data = summaries %>% 
+  filter(team1 == 'Young Boys') %>% 
+  filter(team2 == 'Red Star') %>% 
+  left_join(predictions2) %>% 
+  view()
+
+filtered.predictions %>% 
+  select(predictedprobt1, minuteclean, minuterown) %>% 
+  

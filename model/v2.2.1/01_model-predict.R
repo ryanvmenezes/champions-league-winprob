@@ -57,7 +57,11 @@ adjust.match.predictions = function(match.data) {
     ) %>% 
     ungroup()
   
-  if (179 %in% filtered.predictions$minuteclean & 180 %in% filtered.predictions$minuteclean) {
+  if (
+    179 %in% filtered.predictions$minuteclean &
+    180 %in% filtered.predictions$minuteclean & 
+    !(178 %in% filtered.predictions$minuteclean)
+  ) {
     filtered.predictions = filtered.predictions %>% 
       filter(minuteclean != 179)
   }
