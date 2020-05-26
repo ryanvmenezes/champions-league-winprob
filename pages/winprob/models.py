@@ -14,6 +14,7 @@ class Competition(models.Model):
 
 class Team(models.Model):
     team_name = models.CharField(max_length=50)
+    team_slug = models.CharField(max_length=50)
     country = models.CharField(max_length=50)
     fbrefid = models.CharField(max_length=10)
     # other_names = models.CharField(max_length=100)
