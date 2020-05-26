@@ -303,15 +303,15 @@ filter.by.minute = function(m) {
   }
   if(m > 180 & m < 200) {
     filtered = training.data %>%
-      filter(minuteclean > 180, minuteclean >= m - 15, minuteclean <= m + 15)
+      filter(minuteclean >= m - 10, minuteclean <= m + 10)
   }
   if(m >= 200 & m < 210) {
     filtered = training.data %>%
-      filter(minuteclean > 180, minuteclean >= m - 3, minuteclean <= m + 3)
+      filter(minuteclean >= m - 3, minuteclean <= m + 3)
   }
   if(m == 210) {
     filtered = training.data %>%
-      filter(minuteclean > 180, minuteclean >= m - 1, minuteclean <= m + 1)
+      filter(minuteclean >= m - 1, minuteclean <= m + 1)
   }
   return(filtered)
 }

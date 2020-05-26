@@ -57,6 +57,11 @@ adjust.match.predictions = function(match.data) {
     ) %>% 
     ungroup()
   
+  if (179 %in% filtered.predictions$minuteclean & 180 %in% filtered.predictions$minuteclean) {
+    filtered.predictions = filtered.predictions %>% 
+      filter(minuteclean != 179)
+  }
+  
   # apply linear smooth in between major jumps
   filtered.predictions %>% 
     select(predictedprobt1, minuteclean, minuterown) %>% 
