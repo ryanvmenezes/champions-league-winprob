@@ -124,5 +124,5 @@ STATIC_URL = '/static/'
 
 BAKERY_VIEWS = (
     'winprob.views.TeamListView',
-    # 'yourapp.views.DummyDe­tailView',
+    'winprob.views.TeamDetailView',
 )

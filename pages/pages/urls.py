@@ -19,6 +19,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('winprob/', include('winprob.urls')),
-    path('teams/', views.TeamListView.as_view()),
+    path('teams/', views.TeamListView.as_view(), name='teamlist'),
+    path('teams/<slug:slug>/', views.TeamDetailView.as_view(), name='teamdetail'),
 ]
