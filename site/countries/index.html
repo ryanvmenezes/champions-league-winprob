@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    
+    
+
+    <title>Countries - Win probability</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Two-legged tie win probability</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/teams/">Teams <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/countries/">Countries</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Matches</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- <h1>Hello, world!</h1> -->
+    <div class='content' style="padding: 5rem 2rem">
+    
+    <h2>Countries</h2>
+    <table id="teams" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>No. teams</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td><a href="/countries/england/">England</a></td>
+                <td>13</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/germany/">Germany</a></td>
+                <td>13</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/poland/">Poland</a></td>
+                <td>12</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/spain/">Spain</a></td>
+                <td>12</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/finland/">Finland</a></td>
+                <td>11</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/france/">France</a></td>
+                <td>11</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/italy/">Italy</a></td>
+                <td>11</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/netherlands/">Netherlands</a></td>
+                <td>11</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/north-macedonia/">North Macedonia</a></td>
+                <td>11</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/romania/">Romania</a></td>
+                <td>11</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/wales/">Wales</a></td>
+                <td>11</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/austria/">Austria</a></td>
+                <td>10</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/belgium/">Belgium</a></td>
+                <td>10</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/bulgaria/">Bulgaria</a></td>
+                <td>10</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/georgia/">Georgia</a></td>
+                <td>10</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/moldova/">Moldova</a></td>
+                <td>10</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/norway/">Norway</a></td>
+                <td>10</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/portugal/">Portugal</a></td>
+                <td>10</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/russia/">Russia</a></td>
+                <td>10</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/ukraine/">Ukraine</a></td>
+                <td>10</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/albania/">Albania</a></td>
+                <td>9</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/denmark/">Denmark</a></td>
+                <td>9</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/greece/">Greece</a></td>
+                <td>9</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/hungary/">Hungary</a></td>
+                <td>9</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/latvia/">Latvia</a></td>
+                <td>9</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/lithuania/">Lithuania</a></td>
+                <td>9</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/scotland/">Scotland</a></td>
+                <td>9</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/sweden/">Sweden</a></td>
+                <td>9</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/turkey/">Turkey</a></td>
+                <td>9</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/armenia/">Armenia</a></td>
+                <td>8</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/iceland/">Iceland</a></td>
+                <td>8</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/israel/">Israel</a></td>
+                <td>8</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/montenegro/">Montenegro</a></td>
+                <td>8</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/serbia/">Serbia</a></td>
+                <td>8</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/slovakia/">Slovakia</a></td>
+                <td>8</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/slovenia/">Slovenia</a></td>
+                <td>8</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/switzerland/">Switzerland</a></td>
+                <td>8</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/azerbaijan/">Azerbaijan</a></td>
+                <td>7</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/belarus/">Belarus</a></td>
+                <td>7</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/bosnia-and-herzegovina/">Bosnia and Herzegovina</a></td>
+                <td>7</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/cyprus/">Cyprus</a></td>
+                <td>7</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/czech-republic/">Czech Republic</a></td>
+                <td>7</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/estonia/">Estonia</a></td>
+                <td>7</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/ireland/">Ireland</a></td>
+                <td>7</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/kazakhstan/">Kazakhstan</a></td>
+                <td>7</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/malta/">Malta</a></td>
+                <td>7</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/northern-ireland/">Northern Ireland</a></td>
+                <td>7</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/croatia/">Croatia</a></td>
+                <td>6</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/faroe-islands/">Faroe Islands</a></td>
+                <td>6</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/luxembourg/">Luxembourg</a></td>
+                <td>6</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/san-marino/">San Marino</a></td>
+                <td>6</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/andorra/">Andorra</a></td>
+                <td>5</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/gibraltar/">Gibraltar</a></td>
+                <td>3</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/kosovo/">Kosovo</a></td>
+                <td>3</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/countries/liechtenstein/">Liechtenstein</a></td>
+                <td>1</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    </div>
+
+    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    
+    
+  </body>
+</html>

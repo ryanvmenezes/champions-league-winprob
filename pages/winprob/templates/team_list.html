@@ -1,10 +1,23 @@
 {% extends "base.html" %}
 
+{% block title %}Teams{% endblock %}
+
 {% block content %}
     <h2>Teams</h2>
-    <ul>
-        {% for team in team_list %}
-            <li><a href="{{ team.get_absolute_url }}">{{ team.team_name }}</a>, {{ team.country }}</li>
-        {% endfor %}
-    </ul>
+    <table id="teams" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for team in team_list %}
+            <tr>
+                <td><a href="{{ team.get_absolute_url }}">{{ team.team_name }}</a></td>
+                <td><a href="{{ team.country.get_absolute_url }}">{{ team.country }}</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}

@@ -1,11 +1,9 @@
 {% extends 'base.html' %}
 
+{% block title %}{{ team.team_name }}{% endblock %}
+
 {% block content %}
 
-<p>{{ team.team_name }}</p>
-<p>{{ team.slug }}</p>
-<p>{{ team.country }}</p>
-<p>{{ team.fbrefid }}</p>
-
-<p>Back to <a href="{% url 'teamlist' %}">teams</a></p>
+<h2>{{ team.team_name }}</h2>
+<h3>{{ team.country }}</h3>
 {% endblock %}
