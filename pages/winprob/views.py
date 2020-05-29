@@ -3,9 +3,15 @@ from .models import *
 from django.conf import settings
 from django.db.models import Count
 from django.http import HttpResponse
-from django.views.generic import ListView, DetailView
 from django.shortcuts import render, get_object_or_404
-from bakery.views import BuildableListView, BuildableDetailView
+from django.views.generic import ListView, DetailView, RedirectView
+from bakery.views import BuildableListView, BuildableDetailView, BuildableRedirectView
+
+class ToTeamsRedirectView(BuildableRedirectView):
+    # url = 'teams/'
+    pattern_name = 'teamlist'
+    build_path = 'index.html'
+    permanent = True
 
 class TeamListView(BuildableListView):
     '''
@@ -43,12 +49,13 @@ class CountryListView(BuildableListView):
         .annotate(num_teams = Count('team'))\
         .order_by('-num_teams')
 
-class CountryTeamsListView(BuildableListView):
+class CountryTeamsListView(BuildableDetailView):
     '''
     A page with all of the teams for a country
     '''
+    model = Country
     template_name = 'country_teams_list.html'
-    context_object_name = 'country_teams_list'
+    context_object_name = 'country'
 
     def get_build_path(self, obj):
         dir_path = "countries/"
@@ -56,11 +63,7 @@ class CountryTeamsListView(BuildableListView):
         os.path.exists(dir_path) or os.makedirs(dir_path)
         return os.path.join(dir_path, 'index.html')
 
-    def get_queryset(self):
-        self.country = get_object_or_404(Country, slug=self.kwargs['slug'])
-        return Team.objects.filter(country=self.country)
-
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['country'] = self.country
+        context['country_teams_list'] = Team.objects.filter(country=context['country'])
         return context

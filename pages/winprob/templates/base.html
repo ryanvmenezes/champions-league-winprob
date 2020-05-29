@@ -1,11 +1,13 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'jquery.dataTables.min.css' %}">
     {% block extracss %}
     {% endblock %}
 
@@ -33,16 +35,15 @@
       </div>
     </nav>
 
-    <!-- <h1>Hello, world!</h1> -->
     <div class='content' style="padding: 5rem 2rem">
     {% block content %}
     {% endblock %}
     </div>
 
-    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="{% static 'jquery-3.5.1.slim.min.js' %}"></script>
+    <script src="{% static 'popper.min.js' %}"></script>
+    <script src="{% static 'bootstrap.min.js' %}"></script>
+    <script src="{% static 'jquery.dataTables.min.js' %}"></script>
     {% block extrajs %}
     {% endblock %}
   </body>
