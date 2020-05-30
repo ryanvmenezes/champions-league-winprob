@@ -126,6 +126,6 @@ BAKERY_VIEWS = (
     'winprob.views.TeamListView',
     'winprob.views.TeamDetailView',
     'winprob.views.CountryListView',
-    'winprob.views.CountryTeamsListView',
+    'winprob.views.CountryTeamsDetailView',
     'winprob.views.ToTeamsRedirectView',
 )

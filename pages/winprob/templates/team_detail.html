@@ -1,9 +1,33 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ team.team_name }}{% endblock %}
+{% block title %}{{ team.name }}{% endblock %}
 
 {% block content %}
 
-<h2>{{ team.team_name }}</h2>
+<h2>{{ team.name }}</h2>
 <h3>{{ team.country }}</h3>
+
+<table id="teams" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Season</th>
+            <th>Stage</th>
+            <th>Team 1</th>
+            <th>Team 2</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for tie in ties %}
+        <tr>
+            <td>{{ tie.season }}</td>
+            <td>{{ tie.stage }}</td>
+            <td><a href="{{ tie.team1.get_absolute_url }}">{{ tie.team1 }}</a><a href="{{ tie.team1.country.get_absolute_url }}"><img class='flagicon' src="/static/img/{{ tie.team1.country.slug }}.png" /></a></td>
+            <td><a href="{{ tie.team2.get_absolute_url }}">{{ tie.team2 }}</a><a href="{{ tie.team1.country.get_absolute_url }}"><img class='flagicon' src="/static/img/{{ tie.team2.country.slug }}.png" /></a></td>
+            <td>{{ tie.result }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
 {% endblock %}

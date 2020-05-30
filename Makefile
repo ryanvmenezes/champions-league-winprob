@@ -33,3 +33,12 @@ createplots:
 # 	Rscript model/v1/02_plot.R
 # 	Rscript model/v2.2/02_plot.R
 	Rscript model/v2.2.1/02_plot.R
+
+djangoroutine:
+	rm -rf pages/db.sqlite3
+	rm -rf pages/winprob/migrations/0*.py
+	python pages/manage.py migrate
+	python pages/manage.py makemigrations
+	python pages/manage.py migrate
+	python pages/manage.py load
+

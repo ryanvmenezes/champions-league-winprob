@@ -8,14 +8,13 @@
         <thead>
             <tr>
                 <th>Team</th>
-                <th>Country</th>
             </tr>
         </thead>
         <tbody>
             {% for team in team_list %}
             <tr>
-                <td><a href="{{ team.get_absolute_url }}">{{ team.team_name }}</a></td>
-                <td><a href="{{ team.country.get_absolute_url }}">{{ team.country }}</a></td>
+                <td><a href="{{ team.get_absolute_url }}">{{ team.name }}</a><a href="{{ team.country.get_absolute_url }}"><img class='flagicon' src="/static/img/{{ team.country.slug }}.png" /></a></td>
+                {% comment %}<td><a href="{{ team.country.get_absolute_url }}">{{ team.country }}</a></td>{% endcomment %}
             </tr>
             {% endfor %}
         </tbody>

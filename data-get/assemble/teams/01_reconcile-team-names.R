@@ -11,12 +11,21 @@ summaries = read_csv(here('data-get', 'fbref', 'processed', 'two-legged-ties.csv
 
 summaries
 
+missingties = read_csv(here('data-get', 'assemble', 'summary', 'missing-ties.csv'))
+
+missingties
+
 distinctteams = summaries %>% 
   select(starts_with('team')) %>% 
+  bind_rows(
+    missingties %>% 
+      select(starts_with('team'))
+  ) %>% 
   pivot_longer(starts_with('team')) %>% 
   mutate(name = str_sub(name, end = -2)) %>% 
   pivot_wider(names_from = name, values_from = value, values_fn = list(value = list)) %>%
   unnest(c(team, teamid)) %>% 
+  filter(!is.na(teamid)) %>% 
   distinct() %>%
   select(club = team, clubid = teamid) %>% 
   group_by(clubid) %>% 
@@ -92,7 +101,12 @@ didntmatch
 
 # take list of oddsportal teams names and link it to previously completed joining
 # columns: 1) oddsportal team name 2) fbrefid 3) fbref team name 4) fbref country
-joiningprogress = europeteamsodds %>% left_join(joined)
+joiningprogress = europeteamsodds %>%
+  left_join(joined) %>% 
+  bind_rows(
+    didntmatch %>% 
+      select(fbrefid = clubid, matchclub = club, matchcountry = country)
+  )
 
 joiningprogress
 
@@ -107,7 +121,7 @@ joiningprogress %>% write_csv(here('data-get', 'assemble', 'teams', 'names-joine
 
 # create final teams table
 
-teams = joined %>%
+teams = joiningprogress %>%
   drop_na(matchclub) %>% 
   group_by(teamname = matchclub, fbrefid, teamcountry = matchcountry) %>% 
   summarise(oddsnames = str_c(team, collapse = '||')) %>% 
