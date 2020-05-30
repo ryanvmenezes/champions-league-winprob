@@ -6,8 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="/static/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/jquery.dataTables.min.css">
+    <style>
+      .flagicon {
+        width: 25px;
+        margin: 2px 5px;
+      }
+    </style>
     
     
 
@@ -15,7 +21,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Two-legged tie win probability</a>
+      <a class="navbar-brand" href="/">Two-legged tie win probability</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,15 +35,15 @@
             <a class="nav-link" href="/countries/">Countries</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Matches</a>
+            <a class="nav-link" href="/ties/">Ties</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div class='content' style="padding: 5rem 2rem">
-    
-    <h2>Teams from Liechtenstein</h2>
+      
+    <h2>Teams from Liechtenstein<img class='flagicon' src="/static/img/liechtenstein.png" /></h2>
     <table id="teams" class="display" style="width:100%">
         <thead>
             <tr>
@@ -55,10 +61,10 @@
 
     </div>
 
-    <script src="/static/jquery-3.5.1.slim.min.js"></script>
-    <script src="/static/popper.min.js"></script>
-    <script src="/static/bootstrap.min.js"></script>
-    <script src="/static/jquery.dataTables.min.js"></script>
+    <script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.dataTables.min.js"></script>
     
     
   </body>

@@ -6,8 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="/static/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/jquery.dataTables.min.css">
+    <style>
+      .flagicon {
+        width: 25px;
+        margin: 2px 5px;
+      }
+    </style>
     
     
 
@@ -15,7 +21,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Two-legged tie win probability</a>
+      <a class="navbar-brand" href="/">Two-legged tie win probability</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,24 +35,80 @@
             <a class="nav-link" href="/countries/">Countries</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Matches</a>
+            <a class="nav-link" href="/ties/">Ties</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div class='content' style="padding: 5rem 2rem">
-    
+      
 
 <h2>UE Sant Julià</h2>
 <h3>Andorra</h3>
 
+<table id="teams" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Season</th>
+            <th>Stage</th>
+            <th>Team 1</th>
+            <th>Team 2</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>2015</td>
+            <td>el-0q-1fqr</td>
+            <td><a href="/teams/fk-cukaricki/">FK Čukarički</a><a href="/countries/serbia/"><img class='flagicon' src="/static/img/serbia.png" /></a></td>
+            <td><a href="/teams/ue-sant-julia/">UE Sant Julià</a><a href="/countries/serbia/"><img class='flagicon' src="/static/img/andorra.png" /></a></td>
+            <td>Čukarički (4–0) UE Sant Julià</td>
+        </tr>
+        
+        <tr>
+            <td>2016</td>
+            <td>el-0q-1fqr</td>
+            <td><a href="/teams/ue-sant-julia/">UE Sant Julià</a><a href="/countries/andorra/"><img class='flagicon' src="/static/img/andorra.png" /></a></td>
+            <td><a href="/teams/randers-fc/">Randers FC</a><a href="/countries/andorra/"><img class='flagicon' src="/static/img/denmark.png" /></a></td>
+            <td>UE Sant Julià (0–4) Randers</td>
+        </tr>
+        
+        <tr>
+            <td>2018</td>
+            <td>el-0q-1fqr</td>
+            <td><a href="/teams/kf-skenderbeu-korce/">KF Skënderbeu Korçë</a><a href="/countries/albania/"><img class='flagicon' src="/static/img/albania.png" /></a></td>
+            <td><a href="/teams/ue-sant-julia/">UE Sant Julià</a><a href="/countries/albania/"><img class='flagicon' src="/static/img/andorra.png" /></a></td>
+            <td>Skënderbeu Korçë (6–0) UE Sant Julià</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>el-0q-0pre</td>
+            <td><a href="/teams/ue-sant-julia/">UE Sant Julià</a><a href="/countries/andorra/"><img class='flagicon' src="/static/img/andorra.png" /></a></td>
+            <td><a href="/teams/gzira-united-fc/">Gżira United FC</a><a href="/countries/andorra/"><img class='flagicon' src="/static/img/malta.png" /></a></td>
+            <td>UE Sant Julià (1–4) Gżira United FC</td>
+        </tr>
+        
+        <tr>
+            <td>2020</td>
+            <td>el-0q-0pre</td>
+            <td><a href="/teams/ue-sant-julia/">UE Sant Julià</a><a href="/countries/andorra/"><img class='flagicon' src="/static/img/andorra.png" /></a></td>
+            <td><a href="/teams/europa-fc/">Europa FC</a><a href="/countries/andorra/"><img class='flagicon' src="/static/img/gibraltar.png" /></a></td>
+            <td>UE Sant Julià (3–6) Europa</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
     </div>
 
-    <script src="/static/jquery-3.5.1.slim.min.js"></script>
-    <script src="/static/popper.min.js"></script>
-    <script src="/static/bootstrap.min.js"></script>
-    <script src="/static/jquery.dataTables.min.js"></script>
+    <script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.dataTables.min.js"></script>
     
     
   </body>

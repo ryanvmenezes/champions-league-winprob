@@ -6,8 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="/static/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/jquery.dataTables.min.css">
+    <style>
+      .flagicon {
+        width: 25px;
+        margin: 2px 5px;
+      }
+    </style>
     
     
 
@@ -15,7 +21,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Two-legged tie win probability</a>
+      <a class="navbar-brand" href="/">Two-legged tie win probability</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,24 +35,120 @@
             <a class="nav-link" href="/countries/">Countries</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Matches</a>
+            <a class="nav-link" href="/ties/">Ties</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div class='content' style="padding: 5rem 2rem">
-    
+      
 
 <h2>FC Zorya Luhansk</h2>
 <h3>Ukraine</h3>
 
+<table id="teams" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Season</th>
+            <th>Stage</th>
+            <th>Team 1</th>
+            <th>Team 2</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>2015</td>
+            <td>el-0q-3tqr</td>
+            <td><a href="/teams/fc-zorya-luhansk/">FC Zorya Luhansk</a><a href="/countries/ukraine/"><img class='flagicon' src="/static/img/ukraine.png" /></a></td>
+            <td><a href="/teams/molde-fk/">Molde FK</a><a href="/countries/ukraine/"><img class='flagicon' src="/static/img/norway.png" /></a></td>
+            <td>Zorya Luhansk (3–2) Molde</td>
+        </tr>
+        
+        <tr>
+            <td>2015</td>
+            <td>el-0q-4po</td>
+            <td><a href="/teams/fc-zorya-luhansk/">FC Zorya Luhansk</a><a href="/countries/ukraine/"><img class='flagicon' src="/static/img/ukraine.png" /></a></td>
+            <td><a href="/teams/feyenoord-rotterdam/">Feyenoord Rotterdam</a><a href="/countries/ukraine/"><img class='flagicon' src="/static/img/netherlands.png" /></a></td>
+            <td>Zorya Luhansk (4–5) Feyenoord</td>
+        </tr>
+        
+        <tr>
+            <td>2015</td>
+            <td>el-0q-2sqr</td>
+            <td><a href="/teams/kf-laci/">KF Laçi</a><a href="/countries/albania/"><img class='flagicon' src="/static/img/albania.png" /></a></td>
+            <td><a href="/teams/fc-zorya-luhansk/">FC Zorya Luhansk</a><a href="/countries/albania/"><img class='flagicon' src="/static/img/ukraine.png" /></a></td>
+            <td>KF Laçi (1–5) Zorya Luhansk</td>
+        </tr>
+        
+        <tr>
+            <td>2016</td>
+            <td>el-0q-4po</td>
+            <td><a href="/teams/fc-zorya-luhansk/">FC Zorya Luhansk</a><a href="/countries/ukraine/"><img class='flagicon' src="/static/img/ukraine.png" /></a></td>
+            <td><a href="/teams/legia-warsaw/">Legia Warsaw</a><a href="/countries/ukraine/"><img class='flagicon' src="/static/img/poland.png" /></a></td>
+            <td>Zorya Luhansk (2–4) Legia Warsaw</td>
+        </tr>
+        
+        <tr>
+            <td>2016</td>
+            <td>el-0q-3tqr</td>
+            <td><a href="/teams/r-charleroi-sc/">R. Charleroi SC</a><a href="/countries/belgium/"><img class='flagicon' src="/static/img/belgium.png" /></a></td>
+            <td><a href="/teams/fc-zorya-luhansk/">FC Zorya Luhansk</a><a href="/countries/belgium/"><img class='flagicon' src="/static/img/ukraine.png" /></a></td>
+            <td>Charleroi (0–5) Zorya Luhansk</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>el-0q-3tqr</td>
+            <td><a href="/teams/fc-zorya-luhansk/">FC Zorya Luhansk</a><a href="/countries/ukraine/"><img class='flagicon' src="/static/img/ukraine.png" /></a></td>
+            <td><a href="/teams/sc-braga/">SC Braga</a><a href="/countries/ukraine/"><img class='flagicon' src="/static/img/portugal.png" /></a></td>
+            <td>Zorya Luhansk (3–3) Braga, Zorya Luhansk won on away goals</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>el-0q-4po</td>
+            <td><a href="/teams/fc-zorya-luhansk/">FC Zorya Luhansk</a><a href="/countries/ukraine/"><img class='flagicon' src="/static/img/ukraine.png" /></a></td>
+            <td><a href="/teams/rb-leipzig/">RB Leipzig</a><a href="/countries/ukraine/"><img class='flagicon' src="/static/img/germany.png" /></a></td>
+            <td>Zorya Luhansk (2–3) RB Leipzig</td>
+        </tr>
+        
+        <tr>
+            <td>2020</td>
+            <td>el-0q-2sqr</td>
+            <td><a href="/teams/fk-buducnost-podgorica/">FK Budućnost Podgorica</a><a href="/countries/montenegro/"><img class='flagicon' src="/static/img/montenegro.png" /></a></td>
+            <td><a href="/teams/fc-zorya-luhansk/">FC Zorya Luhansk</a><a href="/countries/montenegro/"><img class='flagicon' src="/static/img/ukraine.png" /></a></td>
+            <td>Budućnost (1–4) Zorya Luhansk</td>
+        </tr>
+        
+        <tr>
+            <td>2020</td>
+            <td>el-0q-3tqr</td>
+            <td><a href="/teams/pfc-cska-sofia/">PFC CSKA Sofia</a><a href="/countries/bulgaria/"><img class='flagicon' src="/static/img/bulgaria.png" /></a></td>
+            <td><a href="/teams/fc-zorya-luhansk/">FC Zorya Luhansk</a><a href="/countries/bulgaria/"><img class='flagicon' src="/static/img/ukraine.png" /></a></td>
+            <td>CSKA Sofia (1–2) Zorya Luhansk</td>
+        </tr>
+        
+        <tr>
+            <td>2020</td>
+            <td>el-0q-4po</td>
+            <td><a href="/teams/rcd-espanyol/">RCD Espanyol</a><a href="/countries/spain/"><img class='flagicon' src="/static/img/spain.png" /></a></td>
+            <td><a href="/teams/fc-zorya-luhansk/">FC Zorya Luhansk</a><a href="/countries/spain/"><img class='flagicon' src="/static/img/ukraine.png" /></a></td>
+            <td>Espanyol (5–3) Zorya Luhansk</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
     </div>
 
-    <script src="/static/jquery-3.5.1.slim.min.js"></script>
-    <script src="/static/popper.min.js"></script>
-    <script src="/static/bootstrap.min.js"></script>
-    <script src="/static/jquery.dataTables.min.js"></script>
+    <script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.dataTables.min.js"></script>
     
     
   </body>

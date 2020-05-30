@@ -6,8 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="/static/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/jquery.dataTables.min.css">
+    <style>
+      .flagicon {
+        width: 25px;
+        margin: 2px 5px;
+      }
+    </style>
     
     
 
@@ -15,7 +21,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Two-legged tie win probability</a>
+      <a class="navbar-brand" href="/">Two-legged tie win probability</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,24 +35,88 @@
             <a class="nav-link" href="/countries/">Countries</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Matches</a>
+            <a class="nav-link" href="/ties/">Ties</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div class='content' style="padding: 5rem 2rem">
-    
+      
 
 <h2>FC Torpedo Kutaisi</h2>
 <h3>Georgia</h3>
 
+<table id="teams" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Season</th>
+            <th>Stage</th>
+            <th>Team 1</th>
+            <th>Team 2</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>2018</td>
+            <td>el-0q-1fqr</td>
+            <td><a href="/teams/fk-as-trencin/">FK AS Trenčín</a><a href="/countries/slovakia/"><img class='flagicon' src="/static/img/slovakia.png" /></a></td>
+            <td><a href="/teams/fc-torpedo-kutaisi/">FC Torpedo Kutaisi</a><a href="/countries/slovakia/"><img class='flagicon' src="/static/img/georgia.png" /></a></td>
+            <td>FK AS Trenčín (8–1) Torpedo Kutaisi</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>cl-0q-1fqr</td>
+            <td><a href="/teams/fc-torpedo-kutaisi/">FC Torpedo Kutaisi</a><a href="/countries/georgia/"><img class='flagicon' src="/static/img/georgia.png" /></a></td>
+            <td><a href="/teams/fc-sheriff-tiraspol/">FC Sheriff Tiraspol</a><a href="/countries/georgia/"><img class='flagicon' src="/static/img/moldova.png" /></a></td>
+            <td>Torpedo Kutaisi (2–4) Sheriff Tiraspol</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>el-0q-2sqr</td>
+            <td><a href="/teams/fc-torpedo-kutaisi/">FC Torpedo Kutaisi</a><a href="/countries/georgia/"><img class='flagicon' src="/static/img/georgia.png" /></a></td>
+            <td><a href="/teams/vikingur-gta/">Víkingur Gøta</a><a href="/countries/georgia/"><img class='flagicon' src="/static/img/faroe-islands.png" /></a></td>
+            <td>Torpedo Kutaisi (7–0) Víkingur Gøta</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>el-0q-3tqr</td>
+            <td><a href="/teams/fc-torpedo-kutaisi/">FC Torpedo Kutaisi</a><a href="/countries/georgia/"><img class='flagicon' src="/static/img/georgia.png" /></a></td>
+            <td><a href="/teams/fk-kukesi/">FK Kukësi</a><a href="/countries/georgia/"><img class='flagicon' src="/static/img/albania.png" /></a></td>
+            <td>Torpedo Kutaisi (5–4) FK Kukësi</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>el-0q-4po</td>
+            <td><a href="/teams/fc-torpedo-kutaisi/">FC Torpedo Kutaisi</a><a href="/countries/georgia/"><img class='flagicon' src="/static/img/georgia.png" /></a></td>
+            <td><a href="/teams/pfc-ludogorets-razgrad/">PFC Ludogorets Razgrad</a><a href="/countries/georgia/"><img class='flagicon' src="/static/img/bulgaria.png" /></a></td>
+            <td>Torpedo Kutaisi (0–5) Ludogorets</td>
+        </tr>
+        
+        <tr>
+            <td>2020</td>
+            <td>el-0q-1fqr</td>
+            <td><a href="/teams/fc-ordabasy/">FC Ordabasy</a><a href="/countries/kazakhstan/"><img class='flagicon' src="/static/img/kazakhstan.png" /></a></td>
+            <td><a href="/teams/fc-torpedo-kutaisi/">FC Torpedo Kutaisi</a><a href="/countries/kazakhstan/"><img class='flagicon' src="/static/img/georgia.png" /></a></td>
+            <td>Ordabasy (3–0) Torpedo Kutaisi</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
     </div>
 
-    <script src="/static/jquery-3.5.1.slim.min.js"></script>
-    <script src="/static/popper.min.js"></script>
-    <script src="/static/bootstrap.min.js"></script>
-    <script src="/static/jquery.dataTables.min.js"></script>
+    <script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.dataTables.min.js"></script>
     
     
   </body>

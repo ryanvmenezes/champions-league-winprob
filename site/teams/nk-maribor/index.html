@@ -6,8 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="/static/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/jquery.dataTables.min.css">
+    <style>
+      .flagicon {
+        width: 25px;
+        margin: 2px 5px;
+      }
+    </style>
     
     
 
@@ -15,7 +21,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Two-legged tie win probability</a>
+      <a class="navbar-brand" href="/">Two-legged tie win probability</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,24 +35,176 @@
             <a class="nav-link" href="/countries/">Countries</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Matches</a>
+            <a class="nav-link" href="/ties/">Ties</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div class='content' style="padding: 5rem 2rem">
-    
+      
 
 <h2>NK Maribor</h2>
 <h3>Slovenia</h3>
 
+<table id="teams" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Season</th>
+            <th>Stage</th>
+            <th>Team 1</th>
+            <th>Team 2</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>2015</td>
+            <td>cl-0q-3tqr</td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td><a href="/teams/maccabi-tel-aviv-fc/">Maccabi Tel Aviv FC</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/israel.png" /></a></td>
+            <td>NK Maribor (3–2) Maccabi Tel Aviv</td>
+        </tr>
+        
+        <tr>
+            <td>2015</td>
+            <td>cl-0q-4po</td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td><a href="/teams/celtic-fc/">Celtic FC</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/scotland.png" /></a></td>
+            <td>NK Maribor (2–1) Celtic</td>
+        </tr>
+        
+        <tr>
+            <td>2015</td>
+            <td>cl-0q-2sqr</td>
+            <td><a href="/teams/hsk-zrinjski-mostar/">HŠK Zrinjski Mostar</a><a href="/countries/bosnia-and-herzegovina/"><img class='flagicon' src="/static/img/bosnia-and-herzegovina.png" /></a></td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/bosnia-and-herzegovina/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td>Zrinjski Mostar (0–2) NK Maribor</td>
+        </tr>
+        
+        <tr>
+            <td>2016</td>
+            <td>cl-0q-2sqr</td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td><a href="/teams/fc-astana/">FC Astana</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/kazakhstan.png" /></a></td>
+            <td>NK Maribor (2–3) FC Astana</td>
+        </tr>
+        
+        <tr>
+            <td>2017</td>
+            <td>el-0q-2sqr</td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td><a href="/teams/pfc-levski-sofia/">PFC Levski Sofia</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/bulgaria.png" /></a></td>
+            <td>NK Maribor (1–1) Levski Sofia, NK Maribor won on away goals</td>
+        </tr>
+        
+        <tr>
+            <td>2017</td>
+            <td>el-0q-3tqr</td>
+            <td><a href="/teams/aberdeen-fc/">Aberdeen FC</a><a href="/countries/scotland/"><img class='flagicon' src="/static/img/scotland.png" /></a></td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/scotland/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td>Aberdeen (1–2) NK Maribor</td>
+        </tr>
+        
+        <tr>
+            <td>2017</td>
+            <td>el-0q-4po</td>
+            <td><a href="/teams/gabala-fk/">Gabala FK</a><a href="/countries/azerbaijan/"><img class='flagicon' src="/static/img/azerbaijan.png" /></a></td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/azerbaijan/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td>Gabala FK (3–2) NK Maribor</td>
+        </tr>
+        
+        <tr>
+            <td>2018</td>
+            <td>cl-0q-3tqr</td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td><a href="/teams/fimleikafelag-hafnarfjarar/">Fimleikafélag Hafnarfjarðar</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/iceland.png" /></a></td>
+            <td>NK Maribor (2–0) FH</td>
+        </tr>
+        
+        <tr>
+            <td>2018</td>
+            <td>cl-0q-2sqr</td>
+            <td><a href="/teams/hsk-zrinjski-mostar/">HŠK Zrinjski Mostar</a><a href="/countries/bosnia-and-herzegovina/"><img class='flagicon' src="/static/img/bosnia-and-herzegovina.png" /></a></td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/bosnia-and-herzegovina/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td>Zrinjski Mostar (2–3) NK Maribor</td>
+        </tr>
+        
+        <tr>
+            <td>2018</td>
+            <td>cl-0q-4po</td>
+            <td><a href="/teams/hapoel-beer-sheva-fc/">Hapoel Be&#x27;er Sheva FC</a><a href="/countries/israel/"><img class='flagicon' src="/static/img/israel.png" /></a></td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/israel/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td>Be&#x27;er Sheva (2–2) NK Maribor, NK Maribor won on away goals</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>el-0q-1fqr</td>
+            <td><a href="/teams/fk-partizani-tirana/">FK Partizani Tirana</a><a href="/countries/albania/"><img class='flagicon' src="/static/img/albania.png" /></a></td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/albania/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td>Partizani Tirana (0–3) NK Maribor</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>el-0q-2sqr</td>
+            <td><a href="/teams/fc-chikhura-sachkhere/">FC Chikhura Sachkhere</a><a href="/countries/georgia/"><img class='flagicon' src="/static/img/georgia.png" /></a></td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/georgia/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td>Chikhura (0–2) NK Maribor</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>el-0q-3tqr</td>
+            <td><a href="/teams/rangers-fc/">Rangers FC</a><a href="/countries/scotland/"><img class='flagicon' src="/static/img/scotland.png" /></a></td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/scotland/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td>Rangers (3–1) NK Maribor</td>
+        </tr>
+        
+        <tr>
+            <td>2020</td>
+            <td>cl-0q-2sqr</td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td><a href="/teams/aik-stockholm/">AIK Stockholm</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/sweden.png" /></a></td>
+            <td>Maribor (4–4 aet) AIK Stockholm, Maribor won on away goals</td>
+        </tr>
+        
+        <tr>
+            <td>2020</td>
+            <td>cl-0q-3tqr</td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td><a href="/teams/rosenborg-bk/">Rosenborg BK</a><a href="/countries/slovenia/"><img class='flagicon' src="/static/img/norway.png" /></a></td>
+            <td>Maribor (2–6) Rosenborg</td>
+        </tr>
+        
+        <tr>
+            <td>2020</td>
+            <td>cl-0q-1fqr</td>
+            <td><a href="/teams/valur/">Valur</a><a href="/countries/iceland/"><img class='flagicon' src="/static/img/iceland.png" /></a></td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/iceland/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td>Valur (0–5) Maribor</td>
+        </tr>
+        
+        <tr>
+            <td>2020</td>
+            <td>el-0q-4po</td>
+            <td><a href="/teams/pfc-ludogorets-razgrad/">PFC Ludogorets Razgrad</a><a href="/countries/bulgaria/"><img class='flagicon' src="/static/img/bulgaria.png" /></a></td>
+            <td><a href="/teams/nk-maribor/">NK Maribor</a><a href="/countries/bulgaria/"><img class='flagicon' src="/static/img/slovenia.png" /></a></td>
+            <td>Ludogorets (2–2) Maribor, Ludogorets won on away goals</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
     </div>
 
-    <script src="/static/jquery-3.5.1.slim.min.js"></script>
-    <script src="/static/popper.min.js"></script>
-    <script src="/static/bootstrap.min.js"></script>
-    <script src="/static/jquery.dataTables.min.js"></script>
+    <script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.dataTables.min.js"></script>
     
     
   </body>

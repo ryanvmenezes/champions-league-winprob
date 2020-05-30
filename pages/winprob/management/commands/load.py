@@ -32,6 +32,7 @@ class Command(BaseCommand):
             summarycsvreader = csv.DictReader(summarycsvfile)
             for row in summarycsvreader:
                 tie, tie_created = Tie.objects.get_or_create(
+                    slug=f"{slugify(row['season'])}-{slugify(row['stagecode'])}-{slugify(row['team1'])}-{slugify(row['team2'])}",
                     season=int(row['season']),
                     competition=row['stagecode'][:2],
                     stage=row['stagecode'],

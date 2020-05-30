@@ -33,6 +33,20 @@ class TieListView(BuildableListView):
     #     context = super().get_context_data(**kwargs)
     #     context['cl_ties'] = context['']
 
+class TieDetailView(BuildableDetailView):
+    '''
+    A page for each Tie
+    '''
+    model = Tie
+    template_name = 'tie_detail.html'
+    context_object_name = 'tie'
+
+    def get_build_path(self, obj):
+        dir_path = "ties/"
+        dir_path = os.path.join(settings.BUILD_DIR, dir_path, obj.get_slug())
+        os.path.exists(dir_path) or os.makedirs(dir_path)
+        return os.path.join(dir_path, 'index.html')
+
 class TeamDetailView(BuildableDetailView):
     '''
     A page for each team

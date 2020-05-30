@@ -2,7 +2,7 @@ import os
 import csv
 from django.core.management.base import BaseCommand
 
-from winprob.models import Team, Country
+from winprob.models import *
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
@@ -10,3 +10,5 @@ class Command(BaseCommand):
         Team.objects.all().delete()
         print('deleting Country model')
         Country.objects.all().delete()
+        print('deleting Tie model')
+        Tie.objects.all().delete()

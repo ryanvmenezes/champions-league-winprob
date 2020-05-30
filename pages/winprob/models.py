@@ -41,6 +41,7 @@ class Team(BuildableModel):
         return self.slug
 
 class Tie(BuildableModel):
+    slug = models.SlugField(unique=True)
     season = models.IntegerField()
     COMPETITION_CHOICES = [
         ('cl', 'UEFA Champions League'),
@@ -87,3 +88,15 @@ class Tie(BuildableModel):
     has_odds = models.BooleanField()
     has_invalid_match = models.BooleanField()
     in_progress = models.BooleanField()
+
+    def __str__(self):
+        return f"{self.team1 if self.team1 is not None else 'UNKNOWN'} v. {self.team2 if self.team2 is not None else 'UNKNOWN'}"
+
+    def get_absolute_url(self):
+        return reverse('tiedetail', kwargs={'slug': self.slug})
+
+    def get_tie_name(self):
+        return str(self)
+
+    def get_slug(self):
+        return self.slug

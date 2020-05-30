@@ -6,8 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="/static/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/jquery.dataTables.min.css">
+    <style>
+      .flagicon {
+        width: 25px;
+        margin: 2px 5px;
+      }
+    </style>
     
     
 
@@ -15,7 +21,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Two-legged tie win probability</a>
+      <a class="navbar-brand" href="/">Two-legged tie win probability</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,24 +35,136 @@
             <a class="nav-link" href="/countries/">Countries</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Matches</a>
+            <a class="nav-link" href="/ties/">Ties</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div class='content' style="padding: 5rem 2rem">
-    
+      
 
 <h2>F91 Dudelange</h2>
 <h3>Luxembourg</h3>
 
+<table id="teams" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Season</th>
+            <th>Stage</th>
+            <th>Team 1</th>
+            <th>Team 2</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>2015</td>
+            <td>cl-0q-2sqr</td>
+            <td><a href="/teams/pfc-ludogorets-razgrad/">PFC Ludogorets Razgrad</a><a href="/countries/bulgaria/"><img class='flagicon' src="/static/img/bulgaria.png" /></a></td>
+            <td><a href="/teams/f91-dudelange/">F91 Dudelange</a><a href="/countries/bulgaria/"><img class='flagicon' src="/static/img/luxembourg.png" /></a></td>
+            <td>Ludogorets (5–1) F91 Dudelange</td>
+        </tr>
+        
+        <tr>
+            <td>2016</td>
+            <td>el-0q-1fqr</td>
+            <td><a href="/teams/university-college-dublin-afc/">University College Dublin AFC</a><a href="/countries/ireland/"><img class='flagicon' src="/static/img/ireland.png" /></a></td>
+            <td><a href="/teams/f91-dudelange/">F91 Dudelange</a><a href="/countries/ireland/"><img class='flagicon' src="/static/img/luxembourg.png" /></a></td>
+            <td>UC Dublin (2–2) F91 Dudelange, UC Dublin won on away goals</td>
+        </tr>
+        
+        <tr>
+            <td>2017</td>
+            <td>cl-0q-2sqr</td>
+            <td><a href="/teams/qarabag-fk/">Qarabağ FK</a><a href="/countries/azerbaijan/"><img class='flagicon' src="/static/img/azerbaijan.png" /></a></td>
+            <td><a href="/teams/f91-dudelange/">F91 Dudelange</a><a href="/countries/azerbaijan/"><img class='flagicon' src="/static/img/luxembourg.png" /></a></td>
+            <td>Qarabağ FK (3–1) F91 Dudelange</td>
+        </tr>
+        
+        <tr>
+            <td>2018</td>
+            <td>cl-0q-2sqr</td>
+            <td><a href="/teams/apoel-fc/">APOEL FC</a><a href="/countries/cyprus/"><img class='flagicon' src="/static/img/cyprus.png" /></a></td>
+            <td><a href="/teams/f91-dudelange/">F91 Dudelange</a><a href="/countries/cyprus/"><img class='flagicon' src="/static/img/luxembourg.png" /></a></td>
+            <td>APOEL FC (2–0) F91 Dudelange</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>cl-0q-1fqr</td>
+            <td><a href="/teams/f91-dudelange/">F91 Dudelange</a><a href="/countries/luxembourg/"><img class='flagicon' src="/static/img/luxembourg.png" /></a></td>
+            <td><a href="/teams/mol-fehervar-fc/">MOL Fehérvár FC</a><a href="/countries/luxembourg/"><img class='flagicon' src="/static/img/hungary.png" /></a></td>
+            <td>F91 Dudelange (2–3) Vidi</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>el-0q-2sqr</td>
+            <td><a href="/teams/f91-dudelange/">F91 Dudelange</a><a href="/countries/luxembourg/"><img class='flagicon' src="/static/img/luxembourg.png" /></a></td>
+            <td><a href="/teams/kf-drita/">KF Drita</a><a href="/countries/luxembourg/"><img class='flagicon' src="/static/img/kosovo.png" /></a></td>
+            <td>F91 Dudelange (3–2) KF Drita</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>el-0q-4po</td>
+            <td><a href="/teams/f91-dudelange/">F91 Dudelange</a><a href="/countries/luxembourg/"><img class='flagicon' src="/static/img/luxembourg.png" /></a></td>
+            <td><a href="/teams/cfr-cluj/">CFR Cluj</a><a href="/countries/luxembourg/"><img class='flagicon' src="/static/img/romania.png" /></a></td>
+            <td>F91 Dudelange (5–2) CFR Cluj</td>
+        </tr>
+        
+        <tr>
+            <td>2019</td>
+            <td>el-0q-3tqr</td>
+            <td><a href="/teams/legia-warsaw/">Legia Warsaw</a><a href="/countries/poland/"><img class='flagicon' src="/static/img/poland.png" /></a></td>
+            <td><a href="/teams/f91-dudelange/">F91 Dudelange</a><a href="/countries/poland/"><img class='flagicon' src="/static/img/luxembourg.png" /></a></td>
+            <td>Legia Warsaw (3–4) F91 Dudelange</td>
+        </tr>
+        
+        <tr>
+            <td>2020</td>
+            <td>cl-0q-1fqr</td>
+            <td><a href="/teams/f91-dudelange/">F91 Dudelange</a><a href="/countries/luxembourg/"><img class='flagicon' src="/static/img/luxembourg.png" /></a></td>
+            <td><a href="/teams/valletta-fc/">Valletta FC</a><a href="/countries/luxembourg/"><img class='flagicon' src="/static/img/malta.png" /></a></td>
+            <td>F91 Dudelange (3–3) Valletta, Valletta won on away goals</td>
+        </tr>
+        
+        <tr>
+            <td>2020</td>
+            <td>el-0q-3tqr</td>
+            <td><a href="/teams/f91-dudelange/">F91 Dudelange</a><a href="/countries/luxembourg/"><img class='flagicon' src="/static/img/luxembourg.png" /></a></td>
+            <td><a href="/teams/nomme-kalju-fc/">Nõmme Kalju FC</a><a href="/countries/luxembourg/"><img class='flagicon' src="/static/img/estonia.png" /></a></td>
+            <td>F91 Dudelange (4–1) Nõmme Kalju</td>
+        </tr>
+        
+        <tr>
+            <td>2020</td>
+            <td>el-0q-2sqr</td>
+            <td><a href="/teams/fk-shkendija/">FK Shkëndija</a><a href="/countries/north-macedonia/"><img class='flagicon' src="/static/img/north-macedonia.png" /></a></td>
+            <td><a href="/teams/f91-dudelange/">F91 Dudelange</a><a href="/countries/north-macedonia/"><img class='flagicon' src="/static/img/luxembourg.png" /></a></td>
+            <td>Shkëndija 79 (2–3) F91 Dudelange</td>
+        </tr>
+        
+        <tr>
+            <td>2020</td>
+            <td>el-0q-4po</td>
+            <td><a href="/teams/fc-ararat-armenia/">FC Ararat-Armenia</a><a href="/countries/armenia/"><img class='flagicon' src="/static/img/armenia.png" /></a></td>
+            <td><a href="/teams/f91-dudelange/">F91 Dudelange</a><a href="/countries/armenia/"><img class='flagicon' src="/static/img/luxembourg.png" /></a></td>
+            <td>Ararat-Armenia (3–3 aet) F91 Dudelange, F91 Dudelange won on penalty kicks</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
     </div>
 
-    <script src="/static/jquery-3.5.1.slim.min.js"></script>
-    <script src="/static/popper.min.js"></script>
-    <script src="/static/bootstrap.min.js"></script>
-    <script src="/static/jquery.dataTables.min.js"></script>
+    <script src="/static/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.dataTables.min.js"></script>
     
     
   </body>
