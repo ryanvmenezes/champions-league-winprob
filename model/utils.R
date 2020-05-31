@@ -63,7 +63,7 @@ save.predictions = function(predictions, version) {
     write_rds(here('model', 'predictions', glue::glue('{version}.rds')))
   
   predictions %>% 
-    write_rds(here('model', 'predictions', glue::glue('{version}.csv')))
+    write_csv(here('model', 'predictions', glue::glue('{version}.csv')))
 }
 
 read.predictions = function(version) {

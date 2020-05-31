@@ -14,8 +14,10 @@
         margin: 2px 5px;
       }
     </style>
-    {% block extracss %}
-    {% endblock %}
+    <style>
+      {% block extracss %}
+      {% endblock %}
+    </style>
 
     <title>{% block title %}{% endblock %} - Win probability</title>
   </head>
@@ -50,7 +52,9 @@
     <script src="{% static 'js/popper.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/jquery.dataTables.min.js' %}"></script>
-    {% block extrajs %}
-    {% endblock %}
+    <script>
+      {% block extrajs %}
+      {% endblock %}
+    </script>
   </body>
 </html>

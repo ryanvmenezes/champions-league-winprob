@@ -1,5 +1,6 @@
 import os
 import csv
+from tqdm import tqdm
 from django.conf import settings
 from django.utils.text import slugify
 from django.core.management.base import BaseCommand
@@ -54,3 +55,26 @@ class Command(BaseCommand):
                 )
                 if tie_created:
                     print(f'created Tie {tie.season} {tie.id}')
+
+        predictionsdatapath = os.path.join(settings.ROOT_DIR, 'model', 'predictions', 'v2.2.1.csv')
+        with open(predictionsdatapath, 'r') as predictionscsvfile:
+            predictionscsvreader = csv.DictReader(predictionscsvfile)
+            for row in tqdm(predictionscsvreader):
+                tie = Tie.objects.get(
+                    season=int(row['season']),
+                    stage=row['stagecode'],
+                    tieid=row['tieid'],
+                )
+                pred, pred_created = Prediction.objects.get_or_create(
+                    tie=tie,
+                    minuteclean=int(row['minuteclean']),
+                    minuterown=int(row['minuterown']),
+                    goalst1diff=int(row['goalst1diff']),
+                    awaygoalst1diff=int(row['awaygoalst1diff']),
+                    redcardst1diff=int(row['redcardst1diff']),
+                    player=row['player'],
+                    playerid=row['playerid'],
+                    eventtype=row['eventtype'],
+                    ag=(row['ag'] == 'TRUE'),
+                    predictedprobt1=float(row['predictedprobt1']),
+                )

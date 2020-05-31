@@ -5,6 +5,9 @@
 {% block content %}
 
 <h2>{{ tie.get_tie_name }}</h2>
-
-
 {% endblock %}
+
+{% block extrajs %}
+var winprob_data = {{ preds|safe }}
+{% endblock %}
+

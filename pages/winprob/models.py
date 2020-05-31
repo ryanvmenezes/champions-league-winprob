@@ -89,6 +89,10 @@ class Tie(BuildableModel):
     has_invalid_match = models.BooleanField()
     in_progress = models.BooleanField()
 
+    # probh1 
+    # probd1
+    # proba1
+
     def __str__(self):
         return f"{self.team1 if self.team1 is not None else 'UNKNOWN'} v. {self.team2 if self.team2 is not None else 'UNKNOWN'}"
 
@@ -100,3 +104,44 @@ class Tie(BuildableModel):
 
     def get_slug(self):
         return self.slug
+
+    def t1win(self):
+        if self.team1 is None or self.team2 is None or self.winning_team is None:
+            return None
+        return self.team1.fbrefid == self.winning_team.fbrefid
+
+    def minprob_winner(self):
+        if not self.has_events or self.has_invalid_match or self.t1win == None:
+            return None
+        if self.t1win():
+            return min([d['predictedprobt1'] for d in self.prediction_set.all().values('predictedprobt1')])
+        if not self.t1win():
+            return min([1 - d['predictedprobt1'] for d in self.prediction_set.all().values('predictedprobt1')])
+
+class Prediction(BuildableModel):
+    tie = models.ForeignKey(Tie, on_delete=models.CASCADE)
+    minuteclean = models.IntegerField()
+    minuterown = models.IntegerField()
+    goalst1diff = models.IntegerField()
+    awaygoalst1diff = models.IntegerField()
+    redcardst1diff = models.IntegerField()
+    player = models.CharField(max_length=50, null=True)
+    playerid = models.CharField(max_length=20, null=True)
+    eventtype = models.CharField(max_length=20, null=True)
+    ag = models.BooleanField()
+    predictedprobt1 = models.FloatField()
+
+    def get_change_probability(self):
+        if self.minuterown == 1:
+            return None
+        minute_before = Prediction.objects.get(
+            tie=self.tie,
+            minuterown=self.minuterown - 1
+        )
+        return self.predictedprobt1 - minute_before.predictedprobt1
+
+    def get_predictedprobt2(self):
+        return 1 - self.predictedprobt1
+    # likelihood
+    # error
+    # sqerror

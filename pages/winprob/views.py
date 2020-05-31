@@ -1,8 +1,9 @@
 import os
+import json
 from .models import *
 from django.conf import settings
 from django.db.models import Q, Count
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, RedirectView
 from bakery.views import BuildableListView, BuildableDetailView, BuildableRedirectView
@@ -24,14 +25,14 @@ class TieListView(BuildableListView):
     '''
     A page with all of the ties
     '''
-    model = Tie
+    # model = Tie
     build_path = 'ties/index.html'
     template_name = 'ties_list.html'
     context_object_name = 'ties'
 
-    # def get_context_data(self, **kwargs):
-    #     context = super().get_context_data(**kwargs)
-    #     context['cl_ties'] = context['']
+    def get_queryset(self):
+        ties = Tie.objects.all()
+        return sorted(ties, key=lambda x: (x.minprob_winner() is None, x.minprob_winner()))
 
 class TieDetailView(BuildableDetailView):
     '''
@@ -40,6 +41,13 @@ class TieDetailView(BuildableDetailView):
     model = Tie
     template_name = 'tie_detail.html'
     context_object_name = 'tie'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        preds = context['tie'].prediction_set.all()\
+            .values('minuteclean','minuterown','goalst1diff','awaygoalst1diff','redcardst1diff','player','playerid','eventtype','ag','predictedprobt1')
+        context['preds'] = json.dumps(list(preds), ensure_ascii=False)
+        return context
 
     def get_build_path(self, obj):
         dir_path = "ties/"
