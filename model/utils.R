@@ -17,6 +17,7 @@ all.data = summaries %>%
     t1win,
     probh1, probd1, proba1,
     minuteclean, minuterown,
+    goalst1, goalst2, awaygoalst1, awaygoalst2,
     goalst1diff, awaygoalst1diff, redcardst1diff,
     player, playerid, eventtype
   ) %>% 
@@ -59,11 +60,17 @@ make.predictions = function(model, data = all.data) {
 }
 
 save.predictions = function(predictions, version) {
-  predictions %>% 
+  preds = predictions %>% 
+    arrange(season, stagecode, tieid, minuterown) %>% 
+    group_by(season, stagecode, tieid) %>% 
+    mutate(chgpredictedprobt1 = predictedprobt1 - lag(predictedprobt1)) %>% 
+    ungroup()
+  
+  preds %>% 
     write_rds(here('model', 'predictions', glue::glue('{version}.rds')))
   
-  predictions %>% 
-    write_csv(here('model', 'predictions', glue::glue('{version}.csv')))
+  preds %>% 
+    write_csv(here('model', 'predictions', glue::glue('{version}.csv')), na = '')
 }
 
 read.predictions = function(version) {
@@ -257,17 +264,6 @@ export.all.plots = function(plots, version) {
   )
   
   beepr::beep()
-}
-
-calculate.ll.by.tie = function(predictions) {
-  predictions %>% 
-    group_by(season, stagecode, tieid) %>%
-    summarise(loglik = log(prod(likelihood, na.rm = TRUE))) %>%
-    arrange(loglik) %>% 
-    ungroup() %>% 
-    left_join(summaries) %>% 
-    filter(!is.na(winner)) %>% 
-    select(season, stagecode, tieid, team1, team2, winner, aggscore, loglik)
 }
 
 calculate.ll.by.minute = function(predictions) {

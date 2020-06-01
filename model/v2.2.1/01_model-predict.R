@@ -40,8 +40,8 @@ adjust.match.predictions = function(match.data) {
     # assign probability at 180 UNLESS it's aet
     mutate(
       predictedprobt1 = case_when(
-        minuteclean == 180 & !aet ~ as.numeric(t1win),
-        minuteclean == 210 & !pk ~ as.numeric(t1win),
+        !aet & minuteclean == 180 & (minuterown == max(minuterown)) ~ as.numeric(t1win),
+        !pk & minuteclean == 210 & (minuterown == max(minuterown)) ~ as.numeric(t1win),
         TRUE ~ predictedprobt1
       )
     ) %>% 
@@ -51,6 +51,8 @@ adjust.match.predictions = function(match.data) {
         goalst1diff != lead(goalst1diff) |
         redcardst1diff != lead(redcardst1diff) |
         redcardst1diff != lag(redcardst1diff) |
+        # (in_progress & minuteclean == 90) |
+        minuteclean == 90 |
         (!aet & minuteclean == 180) |
         minuteclean == 181 |
         minuteclean == 210
@@ -64,6 +66,15 @@ adjust.match.predictions = function(match.data) {
   ) {
     filtered.predictions = filtered.predictions %>% 
       filter(minuteclean != 179)
+  }
+  
+  if (
+    209 %in% filtered.predictions$minuteclean &
+    210 %in% filtered.predictions$minuteclean & 
+    !(208 %in% filtered.predictions$minuteclean)
+  ) {
+    filtered.predictions = filtered.predictions %>% 
+      filter(minuteclean != 209)
   }
   
   # apply linear smooth in between major jumps
@@ -84,13 +95,15 @@ adjust.match.predictions = function(match.data) {
     # do this again to prevent rounding errors
     mutate(
       perminprobchg = case_when(
-        minuteclean == 180 & !aet ~ as.numeric(t1win),
-        minuteclean == 210 & !pk ~ as.numeric(t1win),
+        !aet & minuteclean == 180 & (minuterown == max(minuterown)) ~ as.numeric(t1win),
+        !pk & minuteclean == 210 & (minuterown == max(minuterown)) ~ as.numeric(t1win),
         TRUE ~ perminprobchg
       )
     ) %>% 
     select(
-      t1win, probh1, probd1, proba1, minuteclean, minuterown, goalst1diff, awaygoalst1diff, redcardst1diff,
+      t1win, probh1, probd1, proba1, minuteclean, minuterown, 
+      goalst1, goalst2, awaygoalst1, awaygoalst2,
+      goalst1diff, awaygoalst1diff, redcardst1diff,
       player, playerid, eventtype, ag, predictedprobt1 = perminprobchg
     )
 }
@@ -98,7 +111,7 @@ adjust.match.predictions = function(match.data) {
 nested.predictions = predictions %>% 
   left_join(
     summaries %>% 
-      select(season, stagecode, tieid, aet, pk),
+      select(season, stagecode, tieid, aet, pk, in_progress),
     by = c("season", "stagecode", "tieid")
   ) %>% 
   group_by(season, stagecode, tieid) %>% 

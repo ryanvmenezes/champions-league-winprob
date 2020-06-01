@@ -1,0 +1,1357 @@
+season,stagecode,tieid,t1win,team1,team2,winner,minprob,minprobminute,minprobscore,finalscore
+2020,el-0q-1fqr,6777e16d|8ab497d5,TRUE,Gzira United,Hajduk Split,Gzira United,4.8725334780911483e-4,146,0-3,3*-3
+2017,cl-1k-1r16,206d90db|e2d8892c,FALSE,Paris S-G,Barcelona,Barcelona,0.0017601618602750557,177,5-3,5-6
+2016,el-1k-3qf,822bd0ba|add600ae,FALSE,Dortmund,Liverpool,Liverpool,0.006657613142971419,155,4-2,4-5
+2019,cl-1k-3sf,19c3f8c4|361ca564,TRUE,Tottenham,Ajax,Tottenham,0.008201728362848479,144,0-3,3*-3
+2020,el-0q-1fqr,25f1fd26|7d326cbe,TRUE,Connah's Quay,Kilmarnock,Connah's Quay,0.010160373675312593,139,1-2,3-2
+2015,cl-1k-1r16,cff3d9bb|e2d8892c,TRUE,Paris S-G,Chelsea,Paris S-G,0.012836431003513294,175,1-2,3*-3
+2017,el-1k-1r32,32f3ee20|421387cf,TRUE,M'gladbach,Fiorentina,M'gladbach,0.014534802186221335,133,0-3,4-3
+2017,cl-0q-4po,50f2a074|edd0d381,TRUE,Dinamo Zagreb,RB Salzburg,Dinamo Zagreb,0.01727820732019944,176,1-2,3-2
+2016,cl-0q-3tqr,02cd81bf|04c011d8,TRUE,Maccabi Tel Aviv,Viktoria Plzeň,Maccabi Tel Aviv,0.02073769634159844,164,1-2,3-2
+2019,cl-0q-4po,099c6eb5|50f2a074,TRUE,Red Star,RB Salzburg,Red Star,0.02344538322876143,154,0-2,2*-2
+2018,cl-1k-2qf,206d90db|cf74a709,FALSE,Barcelona,Roma,Roma,0.024007831362384935,79,3-0,4-4*
+2019,el-0q-3tqr,98ce363d|e2a78c9d,FALSE,Dinamo Minsk,Zenit,Zenit,0.02401408098804758,155,4-1,5-8
+2019,el-1k-2r16,111cbfb1|ad2be733,FALSE,Sevilla,Slavia Prague,Slavia Prague,0.024207172592946136,188,5-4,5-6
+2016,cl-0q-3tqr,c72c8787|d7319d80,FALSE,HJK Helsinki,FC Astana,FC Astana,0.026338584732293335,133,2-0,3-4
+2019,el-0q-1fqr,b11bfada|e2fa043d,TRUE,Dunajská Streda,Dinamo Tbilisi,Dunajská Streda,0.02656612729527444,175,1-2,3-2
+2018,el-1k-3qf,50f2a074|7213da33,FALSE,Lazio,RB Salzburg,RB Salzburg,0.028279888871840853,145,5-2,5-6
+2016,el-0q-1fqr,835be610|8a898dad,TRUE,FK Jelgava,Litex Lovech,FK Jelgava,0.02878934911245762,50,0-1,3*-3
+2017,el-1k-2r16,32f3ee20|c539e393,TRUE,Schalke 04,M'gladbach,Schalke 04,0.028863412966366096,143,1-3,3*-3
+2019,el-0q-3tqr,69d84c29|946a30cb,TRUE,Zorya Luhansk,Braga,Zorya Luhansk,0.0322181266500395,159,1-2,3*-3
+2017,el-0q-1fqr,33afefe1|49a61d12,FALSE,Trakai,Nõmme Kalju FC,Nõmme Kalju FC,0.032786023060244474,155,3-1,3-5
+2015,el-0q-2sqr,ee945014|fd36fea1,TRUE,Metalurg Skopje,Željezničar,Metalurg Skopje,0.03374822681948571,151,0-2,2*-2
+2020,cl-0q-1fqr,ad2649a5|b983b638,TRUE,BATE Borisov,Piast Gliwice,BATE Borisov,0.036911078298272774,171,1-2,3-2
+2016,cl-1k-1r16,054efa67|e0652b02,FALSE,Juventus,Bayern Munich,Bayern Munich,0.03727239656644776,162,4-2,4-6
+2020,cl-1k-1r16,822bd0ba|db3b9613,TRUE,Atlético Madrid,Liverpool,Atlético Madrid,0.03820564554758015,184,1-2,4-2
+2017,el-0q-1fqr,24cd860c|e839c85b,TRUE,Zimbru Chișinău,Chikhura,Zimbru Chișinău,0.03895565489824723,134,0-2,3*-3
+2019,cl-1k-1r16,19538871|e2d8892c,TRUE,Manchester Utd,Paris S-G,Manchester Utd,0.0396747280741979,90,0-2,3*-3
+2020,cl-0q-1fqr,33afefe1|c480c810,TRUE,Nõmme Kalju,Shkëndija 79,Nõmme Kalju,0.04135361779226394,95,0-1,2*-2
+2016,cl-0q-3tqr,ecb862be|f0c0c2c2,TRUE,CSKA Moscow,Sparta Prague,CSKA Moscow,0.043429085352525716,123,2-4,5-4
+2017,el-0q-2sqr,1e972a99|f4f98e1c,FALSE,Genk,Budućnost,Budućnost,0.0443702562184356,90,2-0,2-2
+2019,cl-1k-3sf,206d90db|822bd0ba,FALSE,Barcelona,Liverpool,Liverpool,0.04453417154261419,96,3-0,3-4
+2018,el-0q-4po,577e2606|5a5e7874,FALSE,PAOK,Östersund,Östersund,0.044645976873944226,160,3-1,3-3*
+2019,cl-1k-1r16,19c3f8c4|53a2f082,TRUE,Ajax,Real Madrid,Ajax,0.04583606395040507,96,1-2,5-3
+2018,cl-1k-1r16,361ca564|e0652b02,TRUE,Juventus,Tottenham,Juventus,0.04922461814896717,153,2-3,4-3
+2018,el-1k-3qf,5725cc7b|acbb6a5b,FALSE,RB Leipzig,Marseille,Marseille,0.05044831332914157,95,2-0,3-5
+2015,el-0q-3tqr,a224b06a|d884c383,FALSE,Mainz 05,Asteras Tripoli,Asteras Tripoli,0.05156871385242601,157,2-1,2-3
+2015,el-0q-3tqr,c9607f44|fac9957a,TRUE,FK Sarajevo,Atromitos,FK Sarajevo,0.0532487071819353,113,1-2,4-3
+2015,cl-0q-4po,50f2a074|f3d8c8b9,FALSE,RB Salzburg,Malmö,Malmö,0.053335679121670476,89,2-0,2-4
+2017,el-0q-2sqr,ab75e049|f3aacc58,TRUE,Hibernian,Brøndby,Hibernian,0.0539217993449704,151,0-1,1-1
+2017,el-0q-4po,7700eac9|ecb862be,FALSE,SønderjyskE,Sparta Prague,Sparta Prague,0.055520561333316176,133,2-0,2-3
+2020,el-0q-1fqr,7c90642e|8ae75624,TRUE,Olimpija,FK Rīgas FS,Olimpija,0.05575195617032907,134,2-3,4-3
+2020,cl-0q-2sqr,2aae7689|b0333581,TRUE,Maribor,AIK Stockholm,Maribor,0.0562824142207456,183,3-4,4*-4
+2015,el-0q-4po,5a8dc328|8dff1828,TRUE,Apollon Limassol,Loko Moscow,Apollon Limassol,0.05777964959013249,39,0-1,5-2
+2015,el-0q-2sqr,253fffc4|d0ab5e26,TRUE,Neftchi PFK,FC Koper,Neftchi PFK,0.05794679956550969,41,0-2,3-2
+2020,el-0q-3tqr,02cd81bf|c2e6b53b,TRUE,Antwerp,Viktoria Plzeň,Antwerp,0.058297335906013825,187,1-2,2*-2
+2020,el-1k-1r32,18bb7c10|2fdb4aef,TRUE,Olympiacos,Arsenal,Olympiacos,0.05871829219035122,208,1-2,2*-2
+2020,cl-0q-1fqr,c72c8787|ff04e205,FALSE,Astana FK,CFR Cluj,CFR Cluj,0.060282991355864124,99,2-0,2-3
+2017,el-0q-4po,12d53956|7c21e445,TRUE,Astra Giurgiu,West Ham,Astra Giurgiu,0.060777341589865835,45,0-1,2-1
+2018,el-0q-1fqr,86b7acd2|ec560e72,FALSE,Rangers,Progrès,Progrès,0.062146347328942864,37,1-0,1-2
+2015,cl-0q-3tqr,b983b638|e24ac92e,FALSE,Debrecen,BATE Borisov,BATE Borisov,0.062157136677175595,127,2-0,2-3
+2018,el-0q-2sqr,1d0836d6|49a61d12,FALSE,Norrköping,Trakai,Trakai,0.06344995598498715,65,2-0,3-3
+2018,el-0q-1fqr,79000faa|bbb935cb,TRUE,Beitar Jerusalem,Vasas,Beitar Jerusalem,0.06371681390009758,87,1-3,7-3
+2020,el-0q-1fqr,8c6383a1|f1849f98,TRUE,Jeunesse Esch,Tobol Qostanaı,Jeunesse Esch,0.06551759069421749,148,0-1,1*-1
+2018,el-0q-2sqr,356c100c|aeae4fe1,TRUE,Ružomberok,Brann,Ružomberok,0.06563836104346832,153,0-1,2-1
+2016,el-1k-2r16,69d84c29|ae1e2d7d,FALSE,Fenerbahçe,Braga,Braga,0.0677193837905774,155,2-1,2-4
+2020,cl-0q-3tqr,44b65410|eab315a6,TRUE,APOEL,Qarabağ Ağdam,APOEL,0.06816161353064824,89,0-2,3-2
+2017,el-0q-2sqr,7700eac9|90eb0dcc,TRUE,SønderjyskE,Strømsgodset,SønderjyskE,0.06827610886508656,158,2-3,4-3
+2018,el-0q-4po,5b47810a|ae1e2d7d,TRUE,FK Vardar,Fenerbahçe,FK Vardar,0.06849319115966025,19,0-0,4-1
+2015,cl-0q-1fqr,9549dc95|f0e1ca42,TRUE,Santa Coloma,FC Banants,Santa Coloma,0.06868590709461954,4,0-0,3*-3
+2017,cl-1k-1r16,a2d435b3|ad2be733,FALSE,Sevilla,Leicester City,Leicester City,0.06921277889241684,72,2-0,2-3
+2016,el-0q-1fqr,4936d1b7|ae156985,FALSE,Cork City FC,KR Reykjavík,KR Reykjavík,0.06926304159417485,164,2-1,2-3
+2019,el-0q-0pre,017bcbe4|56b45f69,TRUE,S.P. Tre Fiori,Bala Town FC,S.P. Tre Fiori,0.07024389153610675,6,0-0,3-1
+2018,el-0q-2sqr,768fb565|df526548,FALSE,FC Kairat,Skënderbeu Korçë,Skënderbeu Korçë,0.07080000195730374,9,1-0,1-3
+2015,el-0q-2sqr,9d04848a|f13065a8,FALSE,Motherwell,Stjarnan,Stjarnan,0.07171455598995646,174,4-3,4-5
+2020,el-0q-1fqr,03022534|7416e9cd,TRUE,Pyunik,Shkupi Skopje,Pyunik,0.07291866813774057,79,1-3,5-4
+2019,el-0q-2sqr,d884c383|f3aacc58,TRUE,Hibernian,Asteras Tripoli,Hibernian,0.07543491923511716,63,0-2,4-3
+2017,el-1k-1r32,08ad393c|98ce363d,TRUE,Anderlecht,Zenit,Anderlecht,0.07642960229855378,168,2-3,3*-3
+2017,el-0q-1fqr,7d326cbe|c2153ae4,TRUE,Connah's Quay,Stabæk,Connah's Quay,0.07651471265618655,1,0-0,1-0
+2019,el-0q-2sqr,8ac05d3e|ec7fdeb7,TRUE,Ufa,NK Domžale,Ufa,0.07688674450383674,176,0-1,1*-1
+2020,el-0q-4po,85dbecd4|baae133b,FALSE,Ararat-Armenia,F91 Dudelange,F91 Dudelange,0.07825955836338316,137,3-1,3-3
+2020,el-1k-1r32,13dc44fd|bff39cf5,FALSE,Sporting CP,Başakşehir,Başakşehir,0.08012355934227888,76,3-0,4-5
+2016,cl-0q-4po,13dc44fd|f0c0c2c2,FALSE,Sporting CP,CSKA Moscow,CSKA Moscow,0.08084042578532957,138,3-1,3-4
+2020,el-1k-1r32,18050b20|b81aa4fa,TRUE,FC Copenhagen,Celtic,FC Copenhagen,0.08147077363477284,51,0-1,4-2
+2015,el-0q-2sqr,0baacc84|90e37d3a,TRUE,Rosenborg,Sligo Rovers FC,Rosenborg,0.08150264229014713,105,1-3,4-3
+2016,cl-0q-4po,b81aa4fa|f3d8c8b9,FALSE,Celtic,Malmö,Malmö,0.08167932811920986,10,2-0,3-4
+2019,el-0q-2sqr,6d139ec5|ecb862be,TRUE,Spartak Subotic,Sparta Prague,Spartak Subotic,0.08213492041084894,7,0-0,3-2
+2019,el-0q-2sqr,31742d51|c9607f44,TRUE,FC Dinamo Brest,Atromitos,FC Dinamo Brest,0.08223528198738478,170,4-4,5-4
+2016,cl-0q-3tqr,19c3f8c4|912e4c40,TRUE,Rapid Wien,Ajax,Rapid Wien,0.08249033933833944,43,0-2,5-4
+2020,el-0q-0pre,7de37644|bb780485,FALSE,FC Prishtina,St. Joseph's,St. Joseph's,0.0828896347240613,28,1-0,1-3
+2018,cl-0q-3tqr,4b682260|c734e22f,FALSE,Dynamo Kyiv,Young Boys,Young Boys,0.08377905661088936,89,2-0,3-3*
+2017,el-0q-3tqr,01689b1a|8c635914,TRUE,AEK Larnaca FC,Spartak Moscow,AEK Larnaca FC,0.08417756196517387,39,0-1,2-1
+2018,cl-0q-3tqr,132ebc33|19c3f8c4,TRUE,Nice,Ajax,Nice,0.08442207692044487,168,2-3,3*-3
+2015,cl-0q-3tqr,7e746554|edd0d381,TRUE,Aalborg,Dinamo Zagreb,Aalborg,0.08500541923011404,125,0-1,2-1
+2015,el-0q-2sqr,a3ee587a|ea73b616,TRUE,Víkingur Gøta,Tromsø,Víkingur Gøta,0.08516824416033472,1,0-0,2-1
+2015,el-0q-1fqr,7bc6abf1|c3071553,TRUE,Sillamäe Kalev,FC Honka,Sillamäe Kalev,0.08571636017819036,195,3-4,4*-4
+2017,el-1k-1r32,2b390eca|eab315a6,FALSE,Athletic Bilbao,APOEL FC,APOEL FC,0.08713557535059901,72,3-1,3-4
+2017,cl-0q-3tqr,02cd81bf|44b65410,TRUE,Viktoria Plzeň,Qarabağ FK,Viktoria Plzeň,0.08771746627336482,174,0-1,1*-1
+2018,el-0q-4po,797d38d2|b983b638,TRUE,BATE Borisov,FC Oleksandriya,BATE Borisov,0.08784079879332345,159,1-2,3-2
+2019,el-0q-2sqr,03022534|8c6383a1,FALSE,FC Tobol,FC Pyunik,FC Pyunik,0.08925894853716398,89,2-0,2-2*
+2019,cl-0q-1fqr,9e3153f3|eab315a6,TRUE,Sūduva,APOEL FC,Sūduva,0.08978075636396367,8,0-0,3-2
+2017,el-0q-3tqr,2818f8bc|ab75e049,FALSE,Hertha BSC,Brøndby,Brøndby,0.09011441407685339,120,2-1,2-3
+2020,el-0q-3tqr,91cc0413|d7319d80,TRUE,Rīga FC,HJK,Rīga FC,0.09048400831871756,169,2-3,3*-3
+2020,el-0q-1fqr,7e4fae05|c16f1fe7,FALSE,Bijeljina,Spartak Trnava,Spartak Trnava,0.09049911425803514,176,2-1,2-2
+2020,el-0q-2sqr,91cc0413|ad2649a5,FALSE,Piast Gliwice,Rīga FC,Rīga FC,0.0907801726921339,115,4-2,4-4*
+2017,cl-0q-1fqr,2d3c1b6d|719d83f1,FALSE,FC Flora,Red Imps,Red Imps,0.09185326875016375,50,2-0,2-3
+2019,cl-0q-1fqr,3f53cc7a|f1e85b1e,TRUE,FK Kukësi,Valletta FC,FK Kukësi,0.09203500741205717,173,0-1,1*-1
+2015,el-0q-4po,912e4c40|d7319d80,TRUE,HJK Helsinki,Rapid Wien,HJK Helsinki,0.09208564178043056,104,2-3,5-4
+2018,el-0q-3tqr,3c4fb635|d51bc6dd,FALSE,Arka Gdynia,Midtjylland,Midtjylland,0.09225424442090424,166,4-2,4-4*
+2020,cl-0q-3tqr,b81aa4fa|ff04e205,TRUE,CFR Cluj,Celtic,CFR Cluj,0.09270909456250685,163,2-3,5-4
+2016,el-0q-3tqr,12d53956|7c21e445,FALSE,West Ham,Astra Giurgiu,Astra Giurgiu,0.09294274313375983,51,2-0,3-4
+2019,cl-0q-3tqr,5a5e7874|8c635914,TRUE,PAOK,Spartak Moscow,PAOK,0.093080473559303,28,0-2,3-2
+2019,cl-1k-2qf,19c3f8c4|e0652b02,TRUE,Ajax,Juventus,Ajax,0.09319740754139559,123,1-2,3-2
+2018,el-0q-3tqr,2eaa8331|9e3153f3,TRUE,Sūduva,Sion,Sūduva,0.09353035606670027,2,0-0,4-1
+2020,cl-0q-1fqr,55ff3845|ae7f2f70,FALSE,Slovan Bratislava,Sutjeska Nikšić,Sutjeska Nikšić,0.09380137599320815,82,1-0,2-2
+2020,el-1k-1r32,69d84c29|86b7acd2,TRUE,Rangers,Braga,Rangers,0.09496798094543406,66,0-2,4-2
+2018,el-0q-3tqr,123f3efe|a338349f,FALSE,Bordeaux,Videoton,Videoton,0.0955737615519282,18,1-0,2-2*
+2017,cl-0q-3tqr,90e37d3a|eab315a6,FALSE,Rosenborg,APOEL FC,APOEL FC,0.09590286905531642,45,2-0,2-4
+2019,el-1k-3qf,a77c513e|f0ac8ee6,FALSE,Benfica,Eint Frankfurt,Eint Frankfurt,0.09830341783569374,54,4-1,4-4*
+2019,el-0q-1fqr,79000faa|e839c85b,TRUE,Chikhura,Beitar Jerusalem,Chikhura,0.09966610271250538,162,0-1,2-1
+2019,cl-0q-4po,4b682260|edd0d381,TRUE,Young Boys,Dinamo Zagreb,Young Boys,0.10257498273379562,153,1-2,3-2
+2015,el-1k-1r32,0f9294bd|822bd0ba,FALSE,Liverpool,Beşiktaş,Beşiktaş,0.10566735692590734,161,1-0,1-1
+2017,cl-0q-3tqr,099c6eb5|488c6ba1,TRUE,Ludogorets,Red Star,Ludogorets,0.10577786281551439,113,2-3,6-4
+2020,cl-0q-1fqr,3f53cc7a|baae133b,FALSE,F91 Dudelange,Valletta,Valletta,0.10798603424380071,45,2-0,3-3*
+2018,el-0q-1fqr,278db974|356c100c,FALSE,Vojvodina,Ružomberok,Ružomberok,0.1081299003620999,21,2-0,2-3
+2020,el-0q-1fqr,6e7c9b0b|b11bfada,TRUE,Dunajská Streda,Cracovia,Dunajská Streda,0.10978997363805855,136,1-2,3*-3
+2019,el-1k-1r32,b3072e00|fc536746,TRUE,Rennes,Betis,Rennes,0.11100453429177984,111,3-3,6-4
+2018,el-1k-2r16,d53c0b06|f0c0c2c2,TRUE,CSKA Moscow,Lyon,CSKA Moscow,0.11171924348834102,128,0-1,3*-3
+2015,el-0q-3tqr,31aa0dd4|c39b0fab,TRUE,Ruch Chorzów,Esbjerg,Ruch Chorzów,0.11244808215459966,175,1-2,2*-2
+2020,cl-0q-3tqr,5e876ee6|fa11a9cc,TRUE,Krasnodar,Porto,Krasnodar,0.11254813859002374,92,0-1,3*-3
+2020,el-0q-4po,3986b791|c2e6b53b,TRUE,AZ Alkmaar,Antwerp,AZ Alkmaar,0.11307868306989088,163,1-2,5-2
+2015,el-0q-1fqr,7a40cd8b|933ac71c,FALSE,Rudar Velenje,KF Laçi,KF Laçi,0.11418172999036769,17,1-0,2-2
+2018,cl-0q-1fqr,75cd4ee3|fd12ff13,TRUE,The New Saints,Europa FC,The New Saints,0.11482826237381522,126,1-2,4-3
+2020,el-0q-2sqr,2a428619|2a6cfcb2,FALSE,Utrecht,Zrinjski Mostar,Zrinjski Mostar,0.11488765929515399,154,2-1,2-3
+2019,el-0q-4po,946a30cb|acbb6a5b,FALSE,Zorya Luhansk,RB Leipzig,RB Leipzig,0.11500916811046868,158,2-1,2-3
+2016,el-0q-1fqr,89873a40|8a814429,TRUE,Skonto FC,St Patrick's,Skonto FC,0.11650659654492632,37,0-1,4-1
+2018,el-0q-3tqr,8ac05d3e|a486e511,FALSE,Freiburg,NK Domžale,NK Domžale,0.11693984412671166,20,1-0,1-2
+2016,cl-0q-2sqr,2aae7689|c72c8787,FALSE,NK Maribor,FC Astana,FC Astana,0.116986653959949,132,2-1,2-3
+2016,cl-0q-1fqr,2d3c1b6d|9549dc95,TRUE,Red Imps,Santa Coloma,Red Imps,0.12041877132581956,137,0-1,2-1
+2018,el-1k-1r32,922493f3|add600ae,TRUE,Dortmund,Atalanta,Dortmund,0.12182100704116096,172,3-3,4-3
+2018,el-0q-4po,df526548|edd0d381,FALSE,Dinamo Zagreb,Skënderbeu Korçë,Skënderbeu Korçë,0.12307106197506079,1,0-0,1-1*
+2020,el-0q-2sqr,a338349f|b1b46fc3,FALSE,Vidi,Vaduz,Vaduz,0.1231226529092665,5,1-0,1-2
+2018,el-0q-4po,099c6eb5|fa11a9cc,FALSE,Krasnodar,Red Star,Red Star,0.12538969993011284,46,2-0,4-4*
+2019,cl-1k-1r16,db3b9613|e0652b02,FALSE,Atlético Madrid,Juventus,Juventus,0.1271858410148724,116,2-0,2-3
+2016,cl-0q-3tqr,aed59852|dde3e804,FALSE,Steaua,Partizan,Partizan,0.12777847022336486,137,3-2,3-5
+2018,cl-0q-2sqr,5b47810a|f3d8c8b9,FALSE,Malmö,FK Vardar,FK Vardar,0.1287029972164594,144,2-1,2-4
+2017,el-1k-1r32,e89d5a28|f25da7fb,TRUE,Celta Vigo,Shakhtar,Celta Vigo,0.1302295129228417,90,0-1,2-1
+2015,el-0q-4po,e31d1cd9|fa11a9cc,FALSE,Real Sociedad,Krasnodar,Krasnodar,0.13093645693767886,160,1-0,1-3
+2018,el-0q-4po,50995c1e|a73408a7,FALSE,Legia Warsaw,Sheriff Tiraspol,Sheriff Tiraspol,0.13153471491980429,86,1-0,1-1*
+2019,el-0q-1fqr,7a40cd8b|d27fe90c,FALSE,Anorthosis,KF Laçi,KF Laçi,0.1317277269001641,177,2-1,2-2*
+2015,el-0q-1fqr,2fc6183e|ea73b616,TRUE,Víkingur Gøta,FC Daugava,Víkingur Gøta,0.13247986684079138,177,2-2,3-2
+2016,el-0q-1fqr,04dcef70|baae133b,TRUE,UC Dublin,F91 Dudelange,UC Dublin,0.13270379524889703,1,0-0,2*-2
+2020,el-0q-3tqr,672ebb3d|85dbecd4,TRUE,Ararat-Armenia,Saburtalo,Ararat-Armenia,0.1327326803173211,99,1-2,3-2
+2017,el-0q-2sqr,e24ac92e|f7e8060a,FALSE,Debrecen,Torpedo Zho,Torpedo Zho,0.13276309568872524,1,1-0,1-3
+2018,el-0q-3tqr,69d84c29|b0333581,FALSE,AIK Stockholm,Braga,Braga,0.1333399190659903,163,2-1,2-3
+2015,cl-0q-4po,2aae7689|b81aa4fa,TRUE,NK Maribor,Celtic,NK Maribor,0.1345772288716763,6,0-1,2-1
+2017,el-0q-3tqr,d7319d80|ef1ab26a,TRUE,Göteborg,HJK Helsinki,Göteborg,0.13498021727351064,124,1-2,3-2
+2017,el-0q-4po,04c011d8|6777e16d,FALSE,Maccabi Tel Aviv,Hajduk Split,Hajduk Split,0.1367270271530605,148,3-2,3-3
+2015,el-0q-3tqr,f13065a8|fdba14df,TRUE,Stjarnan,Lech Poznań,Stjarnan,0.1375479621564882,1,0-0,1-0
+2019,el-0q-1fqr,108607cf|d0ab5e26,FALSE,Neftchi PFK,Újpest,Újpest,0.13823719088058828,108,3-1,3-5
+2016,el-1k-2r16,2b390eca|dcc91a7b,TRUE,Athletic Bilbao,Valencia,Athletic Bilbao,0.13867950989325112,165,1-2,2*-2
+2016,el-0q-3tqr,4ebc9920|c8ad3091,TRUE,FK Rabotnički,Trabzonspor,FK Rabotnički,0.13888580739329426,22,0-0,2-1
+2018,el-1k-1r32,132ebc33|5a8dc328,FALSE,Nice,Loko Moscow,Loko Moscow,0.1391796147506157,28,2-0,2-4
+2017,cl-0q-3tqr,b983b638|e4a9d483,FALSE,BATE Borisov,Dundalk FC,Dundalk FC,0.14177935192239655,134,1-0,1-3
+2016,cl-0q-2sqr,488c6ba1|7795f801,FALSE,Ludogorets,FC Milsami Orhei,FC Milsami Orhei,0.14191424256049,1,0-0,1-3
+2017,el-1k-3qf,0f9294bd|d53c0b06,FALSE,Lyon,Beşiktaş,Beşiktaş,0.14283964702561236,147,3-2,3-3
+2015,el-0q-4po,12d53956|d53c0b06,FALSE,Lyon,Astra Giurgiu,Astra Giurgiu,0.14288254103102183,25,1-0,2-2*
+2020,el-0q-3tqr,4c96013a|55ff3845,FALSE,Sutjeska Nikšić,Linfield,Linfield,0.14306968337769077,11,1-0,3-5
+2017,el-1k-2r16,cf74a709|d53c0b06,TRUE,Lyon,Roma,Lyon,0.14366555216612403,46,1-2,5-4
+2017,el-1k-1r32,361ca564|51e5a603,TRUE,Gent,Tottenham,Gent,0.14409968448573623,1,0-0,3-2
+2019,el-0q-1fqr,056a9b27|8dc7bf66,TRUE,B36 Tórshavn,OFK Titograd,B36 Tórshavn,0.14442991644464825,140,0-1,2-1
+2015,el-1k-4sf,c4770a69|d48ad4ff,FALSE,Napoli,Dnipro,Dnipro,0.14459237596881058,50,1-0,1-2
+2015,el-0q-1fqr,24cd860c|c480c810,FALSE,FK Shkëndija,Zimbru Chișinău,Zimbru Chișinău,0.1453694525897039,47,2-0,2-3
+2018,el-0q-3tqr,57d14db5|e334d850,FALSE,PSV Eindhoven,Osijek,Osijek,0.1461073542931003,1,0-0,0-2
+2015,el-0q-2sqr,6a3b81bf|e839c85b,FALSE,Bursaspor,Chikhura,Chikhura,0.14766039035913003,1,0-0,0-0
+2015,el-0q-2sqr,133013ee|27b6696c,TRUE,RNK Split,Be'er Sheva,RNK Split,0.14896783276219194,77,0-1,2-1
+2016,el-0q-1fqr,dd289621|e6232d10,TRUE,Alashkert FC,St Johnstone,Alashkert FC,0.1524766623276952,155,1-1,2*-2
+2019,el-0q-4po,baae133b|ff04e205,TRUE,F91 Dudelange,CFR Cluj,F91 Dudelange,0.15347955768831467,1,0-0,5-2
+2018,el-0q-2sqr,79000faa|e56e174a,FALSE,Beitar Jerusalem,Botev Plovdiv,Botev Plovdiv,0.15448354704156952,11,1-0,1-5
+2019,el-0q-3tqr,a73408a7|baae133b,FALSE,Legia Warsaw,F91 Dudelange,F91 Dudelange,0.15589798823865175,1,0-0,3-4
+2016,el-0q-4po,123f3efe|768fb565,TRUE,Bordeaux,FC Kairat,Bordeaux,0.15894712493449417,165,1-2,2*-2
+2019,cl-0q-3tqr,a338349f|f3d8c8b9,FALSE,Malmö,Vidi,Vidi,0.1594148742578786,70,1-0,1-1*
+2019,cl-1k-1r16,5e876ee6|cf74a709,FALSE,Roma,Porto,Porto,0.159901791104206,78,2-0,3-4
+2015,el-0q-4po,44b65410|a1f721d3,TRUE,Qarabağ FK,Twente,Qarabağ FK,0.16089446062529064,140,0-1,1*-1
+2019,cl-0q-2sqr,488c6ba1|a338349f,FALSE,Ludogorets,Vidi,Vidi,0.1633794899117793,1,0-0,0-1
+2017,cl-0q-2sqr,9ac2ced1|e4a9d483,TRUE,Dundalk FC,FH,Dundalk FC,0.1636997327443789,141,1-2,3*-3
+2020,el-0q-1fqr,112c9642|f13065a8,TRUE,Stjarnan,Levadia Tallinn,Stjarnan,0.1646003187958412,195,3-4,4*-4
+2016,el-0q-3tqr,18050b20|8424bb18,TRUE,Jablonec,FC Copenhagen,Jablonec,0.16515157051791085,103,0-1,3*-3
+2015,cl-0q-4po,2b390eca|d48ad4ff,FALSE,Napoli,Athletic Bilbao,Athletic Bilbao,0.16524264399555988,150,2-1,2-4
+2016,el-0q-1fqr,33afefe1|c8282e20,FALSE,FC Aktobe,Nõmme Kalju FC,Nõmme Kalju FC,0.16526966904943152,1,0-0,0-1
+2015,el-1k-1r32,08ad393c|541a280b,FALSE,Anderlecht,Dynamo Mosc,Dynamo Mosc,0.16653121782640967,136,1-0,1-3
+2018,el-0q-1fqr,7517d495|9e3153f3,FALSE,Shakhtyor,Sūduva,Sūduva,0.1673761915587333,1,0-0,1-2
+2016,el-1k-1r32,d298ef2c|d3d9424a,FALSE,Saint-Étienne,Basel,Basel,0.16824362386291958,179,4-3,4-4*
+2020,el-0q-3tqr,04c011d8|9e3153f3,FALSE,Maccabi Tel Aviv,Sūduva,Sūduva,0.17058224319450033,1,0-0,2-4
+2018,el-0q-1fqr,0b6cd7c6|54f29d7b,FALSE,Crusaders FC,FK Liepāja,FK Liepāja,0.17145771541058574,55,3-0,3-3*
+2017,cl-0q-3tqr,19c3f8c4|5a5e7874,TRUE,Ajax,PAOK,Ajax,0.17384922862295696,134,1-2,3-2
+2016,cl-0q-3tqr,50f2a074|f3d8c8b9,FALSE,RB Salzburg,Malmö,Malmö,0.17433716491463902,96,2-0,2-3
+2019,el-1k-2r16,a77c513e|edd0d381,FALSE,Dinamo Zagreb,Benfica,Benfica,0.17470876175432382,160,1-0,1-3
+2017,el-0q-2sqr,2aae7689|3a7a27c6,TRUE,NK Maribor,Levski Sofia,NK Maribor,0.17578456647492874,157,0-1,1*-1
+2017,cl-0q-3tqr,aed59852|ecb862be,FALSE,Sparta Prague,Steaua,Steaua,0.17687991001058478,35,1-0,1-3
+2016,el-0q-1fqr,654ac5a4|f4f98e1c,FALSE,Budućnost,Spartaks Jūrmala,Spartaks Jūrmala,0.17696133143100878,6,1-0,1-3
+2017,el-0q-2sqr,7bb567b2|7c77b0bc,TRUE,Birkirkara FC,Hearts,Birkirkara FC,0.17703372678090132,1,0-0,2-1
+2017,cl-0q-4po,5e876ee6|cf74a709,TRUE,Porto,Roma,Porto,0.17723661724079084,40,0-1,4-1
+2020,el-0q-3tqr,c8ad3091|ecb862be,FALSE,Sparta Prague,Trabzonspor,Trabzonspor,0.17741760548238705,83,2-0,3-4
+2020,cl-0q-1fqr,50995c1e|672ebb3d,FALSE,Sheriff Tiraspol,Saburtalo,Saburtalo,0.17823555823853887,1,0-0,3-4
+2017,cl-0q-3tqr,08ad393c|d60423ef,TRUE,Rostov,Anderlecht,Rostov,0.17906698714650868,52,1-2,4-2
+2018,el-0q-2sqr,4f7b798d|a1962466,TRUE,Gabala FK,Jagiellonia,Gabala FK,0.17912590406612353,46,0-1,3-1
+2019,cl-1k-2qf,361ca564|b8fd03ef,TRUE,Tottenham,Manchester City,Tottenham,0.17954689347588448,1,0-0,4*-4
+2015,el-0q-2sqr,e56e174a|f722bd04,FALSE,Botev Plovdiv,St. Pölten,St. Pölten,0.18036452459929542,39,1-0,2-3
+2018,cl-0q-3tqr,02cd81bf|aed59852,TRUE,FCSB,Viktoria Plzeň,FCSB,0.18085753386594752,53,1-2,6-3
+2020,el-0q-0pre,4872ca3d|ec560e72,TRUE,Progrès,Cardiff Met,Progrès,0.1810113230486677,162,1-2,2*-2
+2015,cl-0q-3tqr,ecb862be|f3d8c8b9,FALSE,Sparta Prague,Malmö,Malmö,0.1817063189885234,124,4-2,4-4*
+2017,el-0q-1fqr,f1e85b1e|fe8bc2a6,TRUE,FK Kukësi,FK Rudar Pljevlja,FK Kukësi,0.18274552636873478,155,1-1,2-1
+2020,el-0q-2sqr,03022534|8424bb18,TRUE,Pyunik,Jablonec,Pyunik,0.18315004028425202,5,0-0,2-1
+2017,cl-1k-1r16,b8fd03ef|fd6114db,FALSE,Manchester City,Monaco,Monaco,0.183903349350782,26,1-0,6-6*
+2017,el-1k-3qf,19c3f8c4|c539e393,TRUE,Ajax,Schalke 04,Ajax,0.18403672978473434,200,2-3,4-3
+2018,cl-0q-3tqr,133013ee|488c6ba1,TRUE,Be'er Sheva,Ludogorets,Be'er Sheva,0.1844998603943601,150,2-3,3*-3
+2018,cl-1k-1r16,53a2f082|e2d8892c,TRUE,Real Madrid,Paris S-G,Real Madrid,0.18480665848840502,44,0-1,5-2
+2017,cl-0q-3tqr,133013ee|2fdb4aef,FALSE,Olympiacos,Be'er Sheva,Be'er Sheva,0.18493592935702807,1,0-0,0-1
+2019,el-0q-3tqr,d8b8c85b|fb4ca611,TRUE,FK AS Trenčín,Feyenoord,FK AS Trenčín,0.18515500424675602,5,0-0,5-1
+2020,el-0q-4po,5a5e7874|ae7f2f70,TRUE,Slovan Bratislava,PAOK,Slovan Bratislava,0.18524297579665874,1,0-0,3*-3
+2019,el-1k-1r32,c7a9f859|fa11a9cc,TRUE,Krasnodar,Bayer,Krasnodar,0.18542490425377303,1,0-0,1*-1
+2016,el-0q-3tqr,8dff1828|a1962466,FALSE,Apollon Limassol,Gabala FK,Gabala FK,0.1855886101165084,89,1-0,1-2
+2015,el-0q-3tqr,b0333581|c72c8787,TRUE,FC Astana,AIK Stockholm,FC Astana,0.18566824087473902,41,0-1,4-1
+2020,el-1k-1r32,a77c513e|e89d5a28,TRUE,Shakhtar,Benfica,Shakhtar,0.18589061383982156,138,3-4,5-4
+2018,el-0q-2sqr,63866313|aa065002,FALSE,Keşla,CS Fola Esch,CS Fola Esch,0.18593497812197635,110,1-0,2-4
+2017,el-0q-3tqr,c16f1fe7|ee0bccc5,FALSE,Austria Wien,Spartak Trnava,Spartak Trnava,0.1866122257591104,1,0-0,1-1
+2019,el-0q-3tqr,25dbe099|47b3e736,TRUE,Sarpsborg 08,Rijeka,Sarpsborg 08,0.18662437008118923,172,1-1,2-1
+2019,el-0q-4po,3c4fb635|f3d8c8b9,TRUE,Malmö,Midtjylland,Malmö,0.18837307761302335,121,2-2,4-2
+2017,el-0q-1fqr,58ff3cd4|5a130b7c,FALSE,Differdange 03,Cliftonville FC,Cliftonville FC,0.18887844190756709,88,1-0,1-3
+2019,cl-0q-3tqr,b81aa4fa|d5348c80,FALSE,Celtic,AEK Athens,AEK Athens,0.1893456934279374,17,1-0,2-3
+2019,el-0q-1fqr,3a7a27c6|b1b46fc3,TRUE,Vaduz,Levski Sofia,Vaduz,0.1898417354609833,13,0-0,3*-3
+2015,el-0q-2sqr,b1b46fc3|c39b0fab,TRUE,Ruch Chorzów,Vaduz,Ruch Chorzów,0.18984992955326477,18,0-1,3-2
+2020,el-0q-2sqr,baae133b|c480c810,FALSE,Shkëndija 79,F91 Dudelange,F91 Dudelange,0.1941943585273319,7,1-0,2-3
+2017,el-0q-3tqr,7b66a29c|8dff1828,TRUE,Grasshopper,Apollon Limassol,Grasshopper,0.19457625792156377,192,3-4,5-4
+2015,el-0q-1fqr,3d81ccdb|88ee782c,FALSE,FC Sioni Bolnisi,Flamurtari Vlorë,Flamurtari Vlorë,0.1948388761615525,174,4-3,4-4*
+2018,el-0q-4po,3c4fb635|8dff1828,TRUE,Apollon Limassol,Midtjylland,Apollon Limassol,0.1948392124814423,139,3-3,4-3
+2019,el-0q-0pre,7bb567b2|869753d6,FALSE,Birkirkara FC,KÍ Klaksvík,KÍ Klaksvík,0.1973286008122337,87,1-0,2-3
+2018,el-0q-2sqr,c480c810|d7319d80,TRUE,FK Shkëndija,HJK Helsinki,FK Shkëndija,0.20073332482369358,44,0-1,4-2
+2015,el-0q-3tqr,174bd5a0|946a30cb,TRUE,Zorya Luhansk,Molde,Zorya Luhansk,0.20140418767134807,90,1-1,3-2
+2016,el-0q-3tqr,278db974|8ff9e3b3,FALSE,Sampdoria,Vojvodina,Vojvodina,0.20179707470518538,1,0-0,2-4
+2018,el-0q-2sqr,f4bbcd04|fdba14df,FALSE,Haugesund,Lech Poznań,Lech Poznań,0.20447457092485022,74,3-0,3-4
+2017,el-0q-3tqr,a1962466|cb188c0c,FALSE,Lille,Gabala FK,Gabala FK,0.206182622911263,1,0-0,1-2
+2019,el-0q-3tqr,0f9294bd|d20821dd,TRUE,Beşiktaş,LASK Linz,Beşiktaş,0.20623225823528746,159,1-2,2*-2
+2016,cl-1k-2qf,206d90db|db3b9613,FALSE,Barcelona,Atlético Madrid,Atlético Madrid,0.2064379215653046,74,2-1,2-3
+2015,el-0q-3tqr,6777e16d|a8ba56e5,FALSE,Shakhter,Hajduk Split,Hajduk Split,0.20691700121462953,77,3-1,4-5
+2020,el-0q-1fqr,aeae4fe1|f082c4f3,FALSE,Brann,Shamrock Rov,Shamrock Rov,0.20813090197204398,12,1-0,3-4
+2016,el-0q-4po,50f2a074|e2a78c9d,TRUE,Dinamo Minsk,RB Salzburg,Dinamo Minsk,0.2088111168734817,1,0-0,2-2
+2020,el-0q-1fqr,54f29d7b|e2a78c9d,TRUE,FK Liepāja,Dinamo Minsk,FK Liepāja,0.20902031686825162,88,1-1,3-2
+2015,el-0q-2sqr,24cd860c|cbde2682,FALSE,CSKA Sofia,Zimbru Chișinău,Zimbru Chișinău,0.2091838304332041,1,0-0,1-1*
+2017,el-0q-1fqr,584d189a|7bb567b2,FALSE,NK Široki Brijeg,Birkirkara FC,Birkirkara FC,0.21383114701529982,1,0-0,1-3
+2016,el-0q-4po,a1962466|f3a5726c,TRUE,Gabala FK,Panathinaikos,Gabala FK,0.2154275497996415,1,0-0,2*-2
+2018,el-0q-4po,19c3f8c4|90e37d3a,FALSE,Ajax,Rosenborg,Rosenborg,0.2169409179783457,1,0-0,2-4
+2020,el-0q-2sqr,4cc7a87b|8ae75624,TRUE,Yeni Mal'spor,Olimpija,Yeni Mal'spor,0.21709571079352646,127,2-2,3-2
+2017,cl-1k-2qf,054efa67|53a2f082,FALSE,Bayern Munich,Real Madrid,Real Madrid,0.21765481783059626,25,1-0,3-6
+2018,cl-0q-4po,133013ee|2aae7689,FALSE,Be'er Sheva,NK Maribor,NK Maribor,0.21800460903591512,45,2-1,2-2*
+2015,el-0q-3tqr,27b6696c|cdd0bbb6,TRUE,RNK Split,Chornomorets,RNK Split,0.21847057193169975,24,0-0,2-0
+2020,cl-0q-1fqr,abffa138|fd12ff13,TRUE,The New Saints,Feronikeli,The New Saints,0.21925141812015703,156,2-2,3-2
+2020,el-0q-2sqr,c16f1fe7|e0242ef1,TRUE,Loko Plovdiv,Spartak Trnava,Loko Plovdiv,0.2202637768303323,163,2-3,3*-3
+2015,el-0q-4po,50e85bfc|eea856da,FALSE,Elfsborg,Rio Ave,Rio Ave,0.22043230044535944,38,2-0,2-2*
+2016,el-0q-3tqr,99f258c2|e5dea1f1,TRUE,MŠK Žilina,Vorskla Poltava,MŠK Žilina,0.2205055899147775,191,2-3,3*-3
+2015,el-0q-2sqr,f4bbcd04|fac9957a,TRUE,FK Sarajevo,Haugesund,FK Sarajevo,0.2213714970514417,110,0-1,3-2
+2020,el-0q-1fqr,49a61d12|869753d6,FALSE,Riteriai,KÍ,KÍ,0.22330937949489682,46,1-0,1-1*
+2015,el-0q-3tqr,24cd860c|d40080b0,FALSE,Grödig,Zimbru Chișinău,Zimbru Chișinău,0.22416261665792214,1,0-0,2-2*
+2020,el-1k-2r16,18050b20|bff39cf5,,Başakşehir,FC Copenhagen,,0.2253951386377837,90,1-0,1-0
+2020,cl-0q-2sqr,d3d9424a|e334d850,FALSE,PSV Eindhoven,Basel,Basel,0.22619640216147452,14,1-0,4-4*
+2019,el-0q-4po,8dff1828|d3d9424a,FALSE,Basel,Apollon,Apollon,0.22638341299759834,6,1-0,3-3*
+2018,el-0q-2sqr,1040e0f7|d8b8c85b,FALSE,FK AS Trenčín,Bnei Yehuda,Bnei Yehuda,0.22684880711506095,1,0-0,1-3
+2016,el-0q-2sqr,42e847bc|a1962466,FALSE,Čukarički,Gabala FK,Gabala FK,0.22740541002240922,128,1-0,1-2
+2019,cl-0q-2sqr,a73408a7|c16f1fe7,FALSE,Legia Warsaw,Spartak Trnava,Spartak Trnava,0.22822195511425836,1,0-0,1-2
+2015,el-0q-4po,d0ab5e26|dde3e804,TRUE,Partizan,Neftchi PFK,Partizan,0.22896943350442692,28,0-2,5-3
+2019,el-0q-4po,c72c8787|eab315a6,FALSE,APOEL FC,Astana FK,Astana FK,0.23104658391254873,105,1-0,1-1
+2018,cl-0q-3tqr,4fffe901|eab315a6,FALSE,Viitorul,APOEL FC,APOEL FC,0.2316070587873159,143,1-0,1-4
+2017,el-0q-2sqr,7517d495|8ac05d3e,FALSE,Shakhtyor,NK Domžale,NK Domžale,0.2325241823980495,35,1-0,2-3
+2020,el-0q-3tqr,133013ee|1d0836d6,FALSE,Norrköping,Be'er Sheva,Be'er Sheva,0.2329965071704273,51,1-0,2-4
+2015,el-1k-1r32,105360fe|2b390eca,TRUE,Torino,Athletic Bilbao,Torino,0.23325482770656178,105,2-2,5-4
+2015,el-0q-4po,15e031af|541a280b,TRUE,Dynamo Mosc,AC Omonia,Dynamo Mosc,0.23326862970872914,163,3-3,3-3*
+2016,el-0q-1fqr,8dc7bf66|d0ab5e26,FALSE,Neftchi PFK,Mladost,Mladost,0.23381114781879864,161,3-2,3-3*
+2017,el-0q-2sqr,6507d2b8|b70ec3fa,TRUE,PAS Giannina,Odd,PAS Giannina,0.23450732979843983,6,0-0,4-3
+2018,cl-0q-1fqr,cc98b556|ea73b616,TRUE,Víkingur Gøta,KF Trepça'89,Víkingur Gøta,0.23483597980325738,39,1-1,6-2
+2017,el-0q-2sqr,8a898dad|ae7f2f70,FALSE,ŠK Slovan Bratislava,FK Jelgava,FK Jelgava,0.2353184717311757,1,0-0,0-3
+2015,el-0q-4po,946a30cb|fb4ca611,FALSE,Zorya Luhansk,Feyenoord,Feyenoord,0.23602709636974784,170,4-4,4-5
+2019,el-0q-1fqr,03022534|5b47810a,TRUE,FC Pyunik,FK Vardar,FC Pyunik,0.2368943436011975,27,0-0,3-0
+2018,el-0q-2sqr,3f4fe568|8dc7bf66,TRUE,Sturm Graz,Mladost,Sturm Graz,0.23833283693302,123,0-1,3-1
+2016,el-0q-4po,33c895d4|3c4fb635,FALSE,Southampton,Midtjylland,Midtjylland,0.23921831410218852,1,0-0,1-2
+2015,el-0q-3tqr,02cd81bf|4f30dd8b,TRUE,Petrolul,Viktoria Plzeň,Petrolul,0.23988621229904475,109,1-1,5-2
+2019,el-0q-4po,04c011d8|47b3e736,TRUE,Sarpsborg 08,Maccabi Tel Aviv,Sarpsborg 08,0.2401146093922696,170,3-3,4-3
+2020,cl-0q-4po,099c6eb5|4b682260,FALSE,Young Boys,Red Star,Red Star,0.24044111540794133,7,1-0,3-3*
+2020,el-0q-1fqr,719d83f1|72804f2b,TRUE,Flora,Radnički Niš,Flora,0.2408494173057426,1,0-0,4-2
+2015,el-1k-2r16,c734e22f|d3fd31cc,FALSE,Everton,Dynamo Kyiv,Dynamo Kyiv,0.24094431019004192,124,3-2,4-6
+2015,el-0q-3tqr,30f3de93|90e37d3a,TRUE,Karabükspor,Rosenborg,Karabükspor,0.24172232729837573,124,0-1,1*-1
+2019,el-1k-1r32,98ce363d|ae1e2d7d,FALSE,Fenerbahçe,Zenit,Zenit,0.24258415132280908,93,1-0,2-3
+2015,el-1k-2r16,0f9294bd|f1e6c5f1,TRUE,Club Brugge,Beşiktaş,Club Brugge,0.24350719456684955,46,0-1,5-2
+2018,el-0q-4po,d5348c80|f1e6c5f1,FALSE,Club Brugge,AEK Athens,AEK Athens,0.24379930711590048,58,0-0,0-3
+2018,el-0q-2sqr,577e2606|ecd11ca2,TRUE,Östersund,Galatasaray,Östersund,0.24403603206959124,1,0-0,3-1
+2020,el-0q-4po,6611f992|9e3153f3,FALSE,Sūduva,Ferencváros,Ferencváros,0.24448950638136657,125,1-0,2-4
+2016,el-0q-1fqr,278db974|e44db2c6,FALSE,MTK Budapest,Vojvodina,Vojvodina,0.24487943193998318,103,1-0,1-3
+2016,el-0q-3tqr,3f319bc9|80beba99,TRUE,SCR Altach,Vitória,SCR Altach,0.24612008717973988,23,0-0,6-2
+2016,el-0q-1fqr,3f53cc7a|584106a8,TRUE,Newtown AFC,Valletta FC,Newtown AFC,0.24620961571229855,84,1-1,4-2
+2016,el-0q-2sqr,8dc7bf66|f1e85b1e,TRUE,FK Kukësi,Mladost,FK Kukësi,0.24682957213040474,102,0-1,4-3
+2016,cl-0q-4po,04c011d8|d3d9424a,FALSE,Basel,Maccabi Tel Aviv,Maccabi Tel Aviv,0.24913148055362044,88,2-1,3-3*
+2018,cl-1k-2qf,822bd0ba|b8fd03ef,TRUE,Liverpool,Manchester City,Liverpool,0.25007858374713715,11,0-0,5-1
+2017,el-0q-4po,2aae7689|a1962466,TRUE,Gabala FK,NK Maribor,Gabala FK,0.2523399528413151,37,0-1,3-2
+2017,el-0q-3tqr,70c92f33|c480c810,TRUE,FK Shkëndija,Mladá Boleslav,FK Shkëndija,0.25568318749155106,1,0-0,2-1
+2019,el-0q-2sqr,8cac5dfa|ec560e72,FALSE,Honvéd,Progrès,Progrès,0.2560216609517133,110,1-0,1-2
+2018,el-0q-1fqr,99a0526b|fac9957a,FALSE,FC Zaria Bălți,FK Sarajevo,FK Sarajevo,0.2562200665948915,74,2-0,3-3
+2020,el-0q-4po,174bd5a0|dde3e804,TRUE,Partizan,Molde,Partizan,0.2571491940262476,43,0-1,3-2
+2015,el-0q-2sqr,d423a378|dd289621,FALSE,Luzern,St Johnstone,St Johnstone,0.2604398243486197,1,0-0,2-2
+2016,el-0q-2sqr,70c92f33|90eb0dcc,FALSE,Mladá Boleslav,Strømsgodset,Strømsgodset,0.26047399998917,39,1-0,2-2*
+2019,el-1k-1r32,111cbfb1|1e972a99,TRUE,Slavia Prague,Genk,Slavia Prague,0.2609029879606694,112,0-1,4-1
+2020,el-0q-2sqr,3f4fe568|f4bbcd04,TRUE,Haugesund,Sturm Graz,Haugesund,0.2609290621427246,1,0-0,3-2
+2019,el-1k-1r32,2fdb4aef|c734e22f,FALSE,Olympiacos,Dynamo Kyiv,Dynamo Kyiv,0.26160670340996117,9,1-0,2-3
+2015,cl-0q-3tqr,33c6b26e|f3a5726c,TRUE,Standard Liège,Panathinaikos,Standard Liège,0.2621882339071663,125,0-1,2-1
+2019,el-0q-1fqr,49e1cbfd|63866313,TRUE,Balzan FC,Keşla,Balzan FC,0.26252715263398596,11,0-0,5-3
+2018,el-0q-3tqr,51e5a603|80beba99,FALSE,Gent,SCR Altach,SCR Altach,0.26326670429920274,1,0-0,2-4
+2019,el-0q-1fqr,49a61d12|db5a37c5,TRUE,Riteriai,Irtysh Pavlodar,Riteriai,0.2636032411978859,1,0-0,1-0
+2020,cl-0q-3tqr,099c6eb5|18050b20,TRUE,Red Star,FC Copenhagen,Red Star,0.2649283480368026,144,2-2,2-2
+2019,el-0q-2sqr,1850e3f9|b0333581,TRUE,Nordsjælland,AIK Stockholm,Nordsjælland,0.26523738249897694,10,0-0,2-0
+2016,cl-1k-3sf,054efa67|db3b9613,TRUE,Atlético Madrid,Bayern Munich,Atlético Madrid,0.2652726837344821,10,0-0,2*-2
+2019,cl-0q-4po,5a5e7874|a77c513e,TRUE,Benfica,PAOK,Benfica,0.26634539960365405,109,1-2,5-2
+2015,el-0q-1fqr,58ff3cd4|d7478aa0,FALSE,Differdange 03,FK Atlantas,FK Atlantas,0.26659802954437706,99,1-0,2-3
+2016,el-0q-2sqr,25dbe099|8bbab7cf,FALSE,Rijeka,Aberdeen,Aberdeen,0.2702533953127728,1,0-0,2-5
+2016,el-0q-1fqr,2a6cfcb2|8771d9cd,TRUE,FC Shirak,Zrinjski Mostar,FC Shirak,0.27162972845649086,17,0-0,3-2
+2018,el-0q-1fqr,49a61d12|dd289621,FALSE,St Johnstone,Trakai,Trakai,0.27239769378346357,1,0-0,1-3
+2016,el-0q-1fqr,a1962466|e2fa043d,FALSE,Dinamo Tbilisi,Gabala FK,Gabala FK,0.27315029268044677,177,2-1,2-3
+2019,el-1k-4sf,18bb7c10|dcc91a7b,TRUE,Arsenal,Valencia,Arsenal,0.27407973918380096,17,0-1,7-3
+2015,cl-1k-3sf,53a2f082|e0652b02,TRUE,Juventus,Real Madrid,Juventus,0.27623521875629004,57,1-1,3-2
+2015,el-0q-4po,04c011d8|d884c383,TRUE,Asteras Tripoli,Maccabi Tel Aviv,Asteras Tripoli,0.27839095958299515,28,0-0,3*-3
+2018,cl-0q-3tqr,18050b20|5b47810a,FALSE,FK Vardar,FC Copenhagen,FC Copenhagen,0.2792591312960946,161,2-2,2-4
+2017,el-0q-2sqr,04c011d8|768fb565,FALSE,FC Kairat,Maccabi Tel Aviv,Maccabi Tel Aviv,0.28244258934977795,89,1-0,2-3
+2016,el-0q-1fqr,56b45f69|58ff3cd4,TRUE,Differdange 03,Bala Town FC,Differdange 03,0.2825583439482411,173,3-3,4-3
+2018,el-1k-4sf,18bb7c10|db3b9613,FALSE,Arsenal,Atlético Madrid,Atlético Madrid,0.28354156104600126,61,1-0,1-2
+2015,el-1k-1r32,2fdb4aef|c4770a69,TRUE,Dnipro,Olympiacos,Dnipro,0.2835682640489961,1,0-0,4-2
+2016,el-1k-2r16,7213da33|ecb862be,TRUE,Sparta Prague,Lazio,Sparta Prague,0.2838850673601922,38,1-1,4-1
+2019,el-0q-4po,18050b20|922493f3,FALSE,Atalanta,FC Copenhagen,FC Copenhagen,0.2852958888004081,1,0-0,0-0
+2017,el-0q-3tqr,0d36ddd4|c882b88e,FALSE,Heracles Almelo,Arouca,Arouca,0.2870425833153053,89,1-0,1-1*
+2018,cl-0q-4po,111cbfb1|eab315a6,TRUE,APOEL FC,Slavia Prague,APOEL FC,0.28823870530559825,1,0-0,2-0
+2015,el-0q-2sqr,835be610|e4babb95,FALSE,Litex Lovech,Diósgyőr,Diósgyőr,0.28947165345701575,1,0-0,2-3
+2019,el-0q-3tqr,133013ee|eab315a6,FALSE,Be'er Sheva,APOEL FC,APOEL FC,0.2896215988307599,153,3-2,3-5
+2017,el-0q-1fqr,6e7c9b0b|c480c810,TRUE,FK Shkëndija,Cracovia,FK Shkëndija,0.2907405206898781,1,0-0,4-1
+2016,el-0q-1fqr,4ebc9920|719d83f1,FALSE,FC Flora,FK Rabotnički,FK Rabotnički,0.2913171146161252,137,1-0,1-2
+2015,el-0q-2sqr,50e85bfc|63866313,TRUE,Elfsborg,Inter Baku,Elfsborg,0.29135949467986133,93,0-1,1-1
+2020,cl-0q-2sqr,90e37d3a|b983b638,FALSE,BATE Borisov,Rosenborg,Rosenborg,0.2920939741898123,162,2-1,2-3
+2018,el-0q-1fqr,7795f801|aa065002,TRUE,CS Fola Esch,FC Milsami Orhei,CS Fola Esch,0.2927064883513373,147,2-2,3-2
+2019,el-0q-0pre,b784c866|c582b1da,TRUE,UE Engordany,Folgore,UE Engordany,0.2932246313448058,176,2-2,3-2
+2019,el-0q-2sqr,3986b791|768fb565,TRUE,FC Kairat,AZ Alkmaar,FC Kairat,0.2937259359413195,11,0-0,3-2
+2018,cl-0q-2sqr,488c6ba1|4c6489de,FALSE,Žalgiris,Ludogorets,Ludogorets,0.29379335272689244,130,3-1,3-5
+2019,el-1k-2r16,dcc91a7b|fa11a9cc,TRUE,Valencia,Krasnodar,Valencia,0.2941430616936287,175,2-2,3-2
+2015,el-0q-3tqr,4b238d92|541a280b,TRUE,Dynamo Mosc,Kiryat Shmona,Dynamo Mosc,0.29868520348949223,111,1-2,3-2
+2017,cl-1k-2qf,add600ae|fd6114db,FALSE,Dortmund,Monaco,Monaco,0.2994347653383207,1,0-0,3-6
+2019,el-0q-3tqr,03022534|04c011d8,FALSE,FC Pyunik,Maccabi Tel Aviv,Maccabi Tel Aviv,0.2995800032860835,144,1-0,1-2
+2019,el-0q-1fqr,a1962466|ec560e72,FALSE,Gabala FK,Progrès,Progrès,0.30075659685946643,1,0-0,1-2
+2015,el-0q-4po,bada91db|bd8769d1,TRUE,Lokeren,Hull City,Lokeren,0.3009749855216682,1,0-0,2*-2
+2019,el-0q-2sqr,42b37a13|9423c05a,FALSE,Djurgården,FC Mariupol,FC Mariupol,0.30140516111502846,1,0-0,2-3
+2016,el-0q-3tqr,3986b791|bff39cf5,TRUE,AZ Alkmaar,Başakşehir,AZ Alkmaar,0.30279666732943855,13,0-0,4-1
+2016,cl-0q-3tqr,3c4fb635|eab315a6,FALSE,Midtjylland,APOEL FC,APOEL FC,0.3042748494232117,120,2-2,2-2*
+2018,cl-0q-2sqr,50995c1e|f1e85b1e,TRUE,Sheriff Tiraspol,FK Kukësi,Sheriff Tiraspol,0.30474432155997994,145,1-2,2*-2
+2016,el-0q-3tqr,9ae758c2|b1b46fc3,TRUE,Thun,Vaduz,Thun,0.3060378143673891,127,0-1,2*-2
+2015,cl-1k-1r16,18bb7c10|fd6114db,FALSE,Arsenal,Monaco,Monaco,0.30659754680984086,1,0-0,3-3*
+2016,cl-1k-2qf,b8fd03ef|e2d8892c,FALSE,Paris S-G,Manchester City,Manchester City,0.3066768499627579,71,2-1,2-3
+2020,el-0q-2sqr,0bca3a9e|d0ab5e26,FALSE,Arsenal Tula,Neftçi,Neftçi,0.3069763229511585,1,0-0,0-4
+2019,el-0q-2sqr,2d3c1b6d|fd12ff13,TRUE,The New Saints,Red Imps,The New Saints,0.308022573891888,171,2-2,3-2
+2016,el-1k-1r32,08ad393c|2fdb4aef,TRUE,Anderlecht,Olympiacos,Anderlecht,0.31106825649970143,1,0-0,3-1
+2015,cl-0q-4po,488c6ba1|aed59852,FALSE,Steaua,Ludogorets,Ludogorets,0.3111764065740742,90,1-0,1-1
+2015,cl-0q-3tqr,04c011d8|2aae7689,TRUE,NK Maribor,Maccabi Tel Aviv,NK Maribor,0.3124816291756367,1,0-0,3-2
+2020,el-0q-3tqr,1040e0f7|d0ab5e26,FALSE,Neftçi,Bnei Yehuda TA,Bnei Yehuda TA,0.3126262230676625,1,0-0,3-4
+2020,el-0q-2sqr,38bfcdf5|70c92f33,TRUE,Mladá Boleslav,Ordabasy,Mladá Boleslav,0.31268855646147037,44,0-1,4-3
+2015,el-1k-2r16,421387cf|cf74a709,TRUE,Fiorentina,Roma,Fiorentina,0.31284995506589286,98,1-1,4-1
+2015,el-0q-2sqr,8bb196a5|c72c8787,TRUE,FC Astana,Hapoel Tel Aviv,FC Astana,0.3155565638225572,14,0-0,3-1
+2020,cl-0q-1fqr,488c6ba1|6611f992,TRUE,Ferencváros,Ludogorets,Ferencváros,0.31571919194761316,64,1-1,5-3
+2018,cl-1k-3sf,054efa67|53a2f082,FALSE,Bayern Munich,Real Madrid,Real Madrid,0.31679259482244393,28,1-0,3-4
+2015,el-0q-2sqr,8bbab7cf|bec05adb,TRUE,Aberdeen,Groningen,Aberdeen,0.31725104706493923,1,0-0,2-1
+2019,el-0q-3tqr,6777e16d|aed59852,FALSE,Hajduk Split,FCSB,FCSB,0.3176645218843278,172,1-1,1-2
+2016,cl-0q-4po,7213da33|c7a9f859,FALSE,Lazio,Bayer,Bayer,0.3187122700576852,129,1-0,1-3
+2019,el-0q-2sqr,8ff9960d|9ac2ced1,TRUE,Hapoel Haifa FC,FH,Hapoel Haifa FC,0.319664886364476,64,0-1,2-1
+2018,el-0q-1fqr,8ae75624|8b63ce55,TRUE,VPS,Olimpija,VPS,0.3199159413724608,11,0-0,2-0
+2017,el-0q-4po,90e37d3a|ee0bccc5,TRUE,Austria Wien,Rosenborg,Austria Wien,0.32069492084880563,1,0-0,4-2
+2016,el-0q-2sqr,133013ee|9ae758c2,FALSE,Be'er Sheva,Thun,Thun,0.32215611880178474,109,2-1,2-3
+2016,el-0q-1fqr,099c6eb5|768fb565,FALSE,Red Star,FC Kairat,FC Kairat,0.3221835094872091,1,0-0,1-4
+2017,cl-1k-2qf,206d90db|e0652b02,TRUE,Juventus,Barcelona,Juventus,0.32236329797208874,6,0-0,3-0
+2018,cl-0q-2sqr,b983b638|e6232d10,TRUE,BATE Borisov,Alashkert FC,BATE Borisov,0.32375572178362017,112,1-2,4-2
+2017,el-0q-3tqr,99f258c2|ea115eb3,TRUE,Lokomotiva,Vorskla Poltava,Lokomotiva,0.32455885216240493,1,0-0,3-2
+2017,cl-0q-2sqr,133013ee|50995c1e,TRUE,Be'er Sheva,Sheriff Tiraspol,Be'er Sheva,0.33015694374094257,25,0-1,3-2
+2015,el-1k-3qf,421387cf|c734e22f,FALSE,Dynamo Kyiv,Fiorentina,Fiorentina,0.3307466906148374,89,1-0,1-3
+2018,cl-1k-1r16,19538871|ad2be733,TRUE,Sevilla,Manchester Utd,Sevilla,0.3331870177181735,1,0-0,2-1
+2016,el-0q-2sqr,6611f992|ee945014,FALSE,Ferencváros,Željezničar,Željezničar,0.3332135447332336,1,0-0,0-3
+2019,el-0q-2sqr,2a6cfcb2|3f53cc7a,TRUE,Zrinjski Mostar,Valletta FC,Zrinjski Mostar,0.33610455141644185,146,2-2,3-2
+2015,cl-0q-3tqr,d7319d80|eab315a6,FALSE,HJK Helsinki,APOEL FC,APOEL FC,0.337016177320676,45,2-0,2-4
+2018,el-0q-3tqr,49a61d12|c480c810,FALSE,Trakai,FK Shkëndija,FK Shkëndija,0.3378805203615963,62,2-1,2-4
+2015,el-1k-3qf,98ce363d|ad2be733,TRUE,Sevilla,Zenit,Sevilla,0.338694243401875,72,0-1,4-3
+2019,el-0q-2sqr,47b3e736|cdaf4e6d,FALSE,St. Gallen,Sarpsborg 08,Sarpsborg 08,0.33928167479199944,120,2-1,2-2*
+2020,el-1k-1r32,50f2a074|f0ac8ee6,TRUE,Eint Frankfurt,RB Salzburg,Eint Frankfurt,0.33932823622554736,11,0-0,6-3
+2018,cl-0q-2sqr,9ac2ced1|ea73b616,TRUE,FH,Víkingur Gøta,FH,0.3395517174860805,167,1-1,3-1
+2016,el-0q-4po,174bd5a0|33c6b26e,TRUE,Molde,Standard Liège,Molde,0.3397625895884321,23,0-0,3*-3
+2017,el-0q-1fqr,8771d9cd|ae098b55,TRUE,FC Dila Gori,FC Shirak,FC Dila Gori,0.3398584879433204,210,1-1,1-1
+2017,el-0q-4po,44b65410|ef1ab26a,FALSE,Göteborg,Qarabağ FK,Qarabağ FK,0.341728183374275,108,1-0,1-3
+2019,el-0q-4po,44b65410|50995c1e,FALSE,Sheriff Tiraspol,Qarabağ Ağdam,Qarabağ Ağdam,0.342702674587792,98,1-0,1-3
+2015,cl-1k-1r16,c7a9f859|db3b9613,FALSE,Bayer,Atlético Madrid,Atlético Madrid,0.3438229761732541,116,1-0,1-1
+2020,el-0q-3tqr,946a30cb|cbde2682,FALSE,CSKA Sofia,Zorya Luhansk,Zorya Luhansk,0.3445211713168712,44,1-0,1-2
+2020,cl-0q-1fqr,91cc0413|e4a9d483,TRUE,Dundalk,Rīga FC,Dundalk,0.3445391531520594,201,0-0,0-0
+2016,el-0q-2sqr,5a5e7874|ea115eb3,FALSE,Lokomotiva,PAOK,PAOK,0.34520307295837616,89,2-0,2-7
+2018,el-0q-1fqr,38bfcdf5|584d189a,TRUE,NK Široki Brijeg,FC Ordabasy,NK Široki Brijeg,0.3455094031005319,1,0-0,2-0
+2017,el-0q-1fqr,3cb9ad76|820a1312,TRUE,Kapaz PFK,Dacia Chișinău,Kapaz PFK,0.3461481589303634,1,0-0,1-0
+2019,el-0q-2sqr,209d7fa2|4fffe901,FALSE,Viitorul,Vitesse,Vitesse,0.3462690592943044,49,2-0,3-5
+2016,el-1k-4sf,2a8183b3|822bd0ba,FALSE,Villarreal,Liverpool,Liverpool,0.3467107658731827,96,1-0,1-3
+2020,el-0q-4po,c8ad3091|d5348c80,FALSE,AEK Athens,Trabzonspor,Trabzonspor,0.3467299878393715,27,1-0,3-3*
+2017,cl-0q-4po,19c3f8c4|d60423ef,FALSE,Ajax,Rostov,Rostov,0.34708466862104315,1,0-0,2-5
+2018,cl-0q-4po,25dbe099|2fdb4aef,TRUE,Olympiacos,Rijeka,Olympiacos,0.3472334079532119,41,0-1,3-1
+2015,cl-0q-3tqr,18050b20|c4770a69,FALSE,Dnipro,FC Copenhagen,FC Copenhagen,0.349857407501304,1,0-0,0-2
+2016,el-0q-3tqr,50e85bfc|b70ec3fa,FALSE,Elfsborg,Odd,Odd,0.3499172554856068,116,2-1,2-3
+2015,cl-0q-3tqr,50995c1e|ae7f2f70,TRUE,ŠK Slovan Bratislava,Sheriff Tiraspol,ŠK Slovan Bratislava,0.3500063467822071,74,1-1,2-1
+2019,el-0q-4po,912e4c40|aed59852,TRUE,Rapid Wien,FCSB,Rapid Wien,0.35017573528700513,152,3-3,4-3
+2018,el-1k-2r16,50f2a074|add600ae,FALSE,Dortmund,RB Salzburg,RB Salzburg,0.35020641938606956,1,0-0,1-2
+2020,el-0q-2sqr,57d14db5|cbde2682,TRUE,CSKA Sofia,Osijek,CSKA Sofia,0.3541598421368862,210,1-1,1-1
+2016,cl-0q-1fqr,0b6cd7c6|112c9642,TRUE,Crusaders FC,Levadia Tallinn,Crusaders FC,0.35477079093446745,1,0-0,1*-1
+2016,el-1k-1r32,c539e393|e89d5a28,TRUE,Shakhtar,Schalke 04,Shakhtar,0.35503148676408064,1,0-0,3-0
+2018,el-0q-4po,01689b1a|02cd81bf,TRUE,Viktoria Plzeň,AEK Larnaca FC,Viktoria Plzeň,0.355802624786714,28,0-1,3-1
+2017,el-1k-1r32,ae1e2d7d|fa11a9cc,TRUE,Krasnodar,Fenerbahçe,Krasnodar,0.3575923775287802,3,0-0,2-1
+2016,el-0q-2sqr,7bb567b2|7c21e445,TRUE,West Ham,Birkirkara FC,West Ham,0.35970627267772515,135,1-1,1-1
+2017,el-0q-3tqr,278db974|e2a78c9d,TRUE,Vojvodina,Dinamo Minsk,Vojvodina,0.35975366457611274,122,1-1,3-1
+2015,el-0q-3tqr,7517d495|ecd34b98,FALSE,Zulte Waregem,Shakhtyor,Shakhtyor,0.36144325424408275,1,0-0,4-7
+2015,el-0q-3tqr,bd8769d1|d8b8c85b,FALSE,FK AS Trenčín,Hull City,Hull City,0.3621673842120008,116,1-0,1-2
+2018,el-1k-1r32,50f2a074|e31d1cd9,FALSE,Real Sociedad,RB Salzburg,RB Salzburg,0.3626542785559109,89,2-1,3-4
+2017,el-1k-2r16,18050b20|19c3f8c4,FALSE,FC Copenhagen,Ajax,Ajax,0.36307732335713394,31,1-0,2-3
+2018,el-1k-1r32,acbb6a5b|d48ad4ff,FALSE,Napoli,RB Leipzig,RB Leipzig,0.364457417907444,60,1-0,3-3*
+2017,el-0q-2sqr,4936d1b7|8774e267,FALSE,Häcken,Cork City FC,Cork City FC,0.36541610027849514,1,0-0,1-2
+2018,el-1k-1r32,98ce363d|b81aa4fa,FALSE,Celtic,Zenit,Zenit,0.36546530039089486,96,1-0,1-3
+2017,cl-0q-3tqr,b81aa4fa|c72c8787,FALSE,FC Astana,Celtic,Celtic,0.36687800434466433,77,1-0,2-3
+2018,el-0q-3tqr,8bbab7cf|8dff1828,FALSE,Aberdeen,Apollon Limassol,Apollon Limassol,0.36770078170648324,58,1-0,2-3
+2018,el-1k-2r16,7213da33|c734e22f,TRUE,Lazio,Dynamo Kyiv,Lazio,0.36814883795193737,112,2-2,4-2
+2019,el-0q-3tqr,01689b1a|3f4fe568,FALSE,Sturm Graz,AÉK Lárnaka,AÉK Lárnaka,0.36841729769958276,1,0-0,0-7
+2015,el-0q-1fqr,8b63ce55|bb9e11b2,FALSE,VPS,Brommapojkarna,Brommapojkarna,0.37022059113529937,153,2-1,2-3
+2016,cl-0q-3tqr,f1e6c5f1|f3a5726c,FALSE,Panathinaikos,Club Brugge,Club Brugge,0.37061884743791973,142,2-1,2-4
+2016,el-0q-1fqr,3bc8afc5|7bb567b2,TRUE,Birkirkara FC,Ulisses FC,Birkirkara FC,0.3707000216005408,1,0-0,3-1
+2018,el-0q-4po,57d14db5|ee0bccc5,FALSE,Osijek,Austria Wien,Austria Wien,0.3715349623300006,25,1-0,2-2*
+2016,el-1k-3qf,2b390eca|ad2be733,FALSE,Athletic Bilbao,Sevilla,Sevilla,0.37493786613338076,47,1-0,3-3
+2020,el-0q-1fqr,5130dd3e|e6232d10,TRUE,Alashkert,Makedonija GP,Alashkert,0.3805605825318417,52,1-1,6-1
+2016,el-0q-2sqr,63866313|9ac2ced1,FALSE,FH,Inter Baku,Inter Baku,0.38066744952594955,39,1-0,3-4
+2019,el-0q-1fqr,7de37644|aa065002,TRUE,CS Fola Esch,FC Prishtina,CS Fola Esch,0.38107539878578317,210,0-0,0-0
+2016,el-0q-4po,44b65410|4b682260,FALSE,Young Boys,Qarabağ FK,Qarabağ FK,0.38148342158037163,1,0-0,0-4
+2015,el-0q-1fqr,0b6cd7c6|3ca079d2,TRUE,Crusaders FC,FK Ekranas,Crusaders FC,0.3815365830133012,22,0-0,5-2
+2016,el-0q-3tqr,19dc476f|ef1ab26a,TRUE,Belenenses,Göteborg,Belenenses,0.38194349104498915,22,0-0,2-1
+2018,el-0q-4po,04c011d8|80beba99,FALSE,SCR Altach,Maccabi Tel Aviv,Maccabi Tel Aviv,0.38214303602935684,162,2-2,2-3
+2020,el-0q-4po,25dbe099|51e5a603,TRUE,Gent,Rijeka,Gent,0.3824091953379259,56,0-1,3-2
+2017,el-0q-4po,b983b638|c72c8787,TRUE,FC Astana,BATE Borisov,FC Astana,0.38263625395655493,1,0-0,4-2
+2015,el-0q-1fqr,584d189a|a1962466,FALSE,Gabala FK,NK Široki Brijeg,NK Široki Brijeg,0.38528154189813757,1,0-0,0-5
+2020,el-0q-2sqr,8dff1828|f082c4f3,FALSE,Shamrock Rov,Apollon,Apollon,0.38537843588752485,159,3-3,3-4
+2019,el-0q-3tqr,8ae75624|d7319d80,TRUE,Olimpija,HJK Helsinki,Olimpija,0.38619248908692694,1,0-0,7-1
+2015,cl-0q-2sqr,8a814429|a73408a7,TRUE,Legia Warsaw,St Patrick's,Legia Warsaw,0.38622162596628906,89,0-1,6-1
+2016,el-1k-1r32,19538871|3c4fb635,FALSE,Midtjylland,Manchester Utd,Manchester Utd,0.38777328920577203,121,3-1,3-6
+2019,el-0q-1fqr,04c011d8|6611f992,FALSE,Ferencváros,Maccabi Tel Aviv,Maccabi Tel Aviv,0.38813828714196774,89,1-0,1-2
+2017,el-0q-1fqr,112c9642|15c5743b,TRUE,Levadia Tallinn,Havnar Bóltfelag,Levadia Tallinn,0.3887318371289603,160,1-1,3-1
+2017,el-0q-1fqr,4ebc9920|f4f98e1c,FALSE,FK Rabotnički,Budućnost,Budućnost,0.38883383996453424,1,0-0,1-2
+2015,el-1k-2r16,4eaa11d7|d609edc0,TRUE,Wolfsburg,Inter,Wolfsburg,0.38993096629256574,27,0-1,5-2
+2018,cl-0q-3tqr,a73408a7|c72c8787,TRUE,FC Astana,Legia Warsaw,FC Astana,0.39005210322886114,1,0-0,3-2
+2018,el-1k-4sf,50f2a074|5725cc7b,TRUE,Marseille,RB Salzburg,Marseille,0.3915821419434744,205,2-2,3-2
+2019,cl-0q-2sqr,50995c1e|c480c810,TRUE,FK Shkëndija,Sheriff Tiraspol,FK Shkëndija,0.3916790606780452,23,0-0,1-0
+2015,el-0q-2sqr,584d189a|70c92f33,TRUE,Mladá Boleslav,NK Široki Brijeg,Mladá Boleslav,0.3922722246174604,67,0-1,6-1
+2019,el-0q-2sqr,4c6489de|b1b46fc3,TRUE,Žalgiris,Vaduz,Žalgiris,0.3923348803040469,1,0-0,2-1
+2015,el-0q-4po,5c9eb756|e2a78c9d,TRUE,Dinamo Minsk,Nacional,Dinamo Minsk,0.3939605693206144,1,0-0,5-2
+2019,cl-0q-3tqr,099c6eb5|c16f1fe7,TRUE,Red Star,Spartak Trnava,Red Star,0.39778885596887764,96,1-2,3-2
+2018,el-0q-2sqr,584d189a|8bbab7cf,TRUE,Aberdeen,NK Široki Brijeg,Aberdeen,0.3978656360372345,161,1-1,3-1
+2015,el-0q-3tqr,e2a78c9d|ff04e205,TRUE,Dinamo Minsk,CFR Cluj,Dinamo Minsk,0.39810848729377835,1,0-0,3-0
+2016,cl-0q-4po,912e4c40|e89d5a28,FALSE,Rapid Wien,Shakhtar,Shakhtar,0.39814322695033577,116,2-2,2-3
+2018,cl-0q-3tqr,25dbe099|50f2a074,FALSE,RB Salzburg,Rijeka,Rijeka,0.39923651627791834,1,0-0,1-1*
+2015,el-0q-4po,3c4fb635|f3a5726c,TRUE,Panathinaikos,Midtjylland,Panathinaikos,0.399326590768554,20,0-1,6-2
+2019,cl-0q-2sqr,90e37d3a|b81aa4fa,TRUE,Celtic,Rosenborg,Celtic,0.3995674930293493,42,0-1,3-1
+2016,el-1k-1r32,2a8183b3|d48ad4ff,TRUE,Villarreal,Napoli,Villarreal,0.40013638701856424,1,0-0,2-1
+2019,cl-0q-1fqr,90e37d3a|b838366a,FALSE,Valur,Rosenborg,Rosenborg,0.40016727763124227,180,2-2,2-3
+2020,el-1k-2r16,4eaa11d7|e89d5a28,,Wolfsburg,Shakhtar,,0.40020071026526716,1,0-0,1-2
+2017,cl-0q-3tqr,ae1e2d7d|fd6114db,FALSE,Fenerbahçe,Monaco,Monaco,0.40302067844591716,41,1-0,3-4
+2016,el-1k-2r16,2a8183b3|c7a9f859,TRUE,Villarreal,Bayer,Villarreal,0.40486904183099964,3,0-0,2-0
+2018,el-0q-3tqr,099c6eb5|ecb862be,TRUE,Red Star,Sparta Prague,Red Star,0.405077583826899,12,0-0,3-0
+2020,el-0q-2sqr,187832f5|c0d3eab4,TRUE,Strasbourg,Maccabi Haifa,Strasbourg,0.40615405544251165,43,0-1,4-3
+2016,el-0q-1fqr,50995c1e|b70ec3fa,FALSE,Sheriff Tiraspol,Odd,Odd,0.406178246774632,1,0-0,0-3
+2019,el-0q-2sqr,77b23ba3|baae133b,TRUE,F91 Dudelange,KF Drita,F91 Dudelange,0.406350820962594,65,0-1,3-2
+2018,el-0q-3tqr,70c92f33|df526548,TRUE,Mladá Boleslav,Skënderbeu Korçë,Mladá Boleslav,0.4067363087994815,210,3-3,3-3
+2018,el-1k-1r32,02cd81bf|dde3e804,FALSE,Partizan,Viktoria Plzeň,Viktoria Plzeň,0.40684499476667924,80,1-0,1-3
+2018,cl-0q-2sqr,90e37d3a|e4a9d483,FALSE,Dundalk FC,Rosenborg,Rosenborg,0.4074080686206778,132,2-1,2-3
+2017,el-1k-2r16,0f9294bd|2fdb4aef,FALSE,Olympiacos,Beşiktaş,Beşiktaş,0.4074819820130008,52,1-0,2-5
+2015,cl-1k-2qf,054efa67|5e876ee6,FALSE,Porto,Bayern Munich,Bayern Munich,0.40771405338116007,103,3-1,4-7
+2019,el-1k-3qf,18bb7c10|d48ad4ff,TRUE,Arsenal,Napoli,Arsenal,0.41007585340704045,14,0-0,3-0
+2019,el-1k-2r16,d609edc0|f0ac8ee6,TRUE,Eint Frankfurt,Inter,Eint Frankfurt,0.4107153109072547,1,0-0,1-0
+2018,cl-1k-1r16,cf74a709|e89d5a28,FALSE,Shakhtar,Roma,Roma,0.4120607183877997,141,2-1,2-2*
+2016,el-0q-2sqr,4ebc9920|8a898dad,FALSE,FK Jelgava,FK Rabotnički,FK Rabotnički,0.4125163328829692,95,1-0,1-2
+2019,el-0q-3tqr,41c6978d|768fb565,TRUE,Sigma Olomouc,FC Kairat,Sigma Olomouc,0.414704675664028,20,0-0,4-1
+2015,el-0q-2sqr,31aa0dd4|768fb565,FALSE,FC Kairat,Esbjerg,Esbjerg,0.4147058187976128,89,1-0,1-2
+2019,cl-0q-2sqr,3c4fb635|c72c8787,TRUE,Astana FK,Midtjylland,Astana FK,0.4149022226443655,89,1-1,2-1
+2018,el-0q-1fqr,3ba2fddf|e56e174a,FALSE,Partizani Tirana,Botev Plovdiv,Botev Plovdiv,0.4160975416305164,26,1-0,1-4
+2016,el-0q-3tqr,22a5a99c|e2a78c9d,FALSE,Zürich,Dinamo Minsk,Dinamo Minsk,0.41766537096856615,94,1-1,1-2
+2019,cl-1k-1r16,054efa67|822bd0ba,TRUE,Liverpool,Bayern Munich,Liverpool,0.4180883999137477,1,0-0,3-1
+2015,el-1k-1r32,361ca564|421387cf,FALSE,Tottenham,Fiorentina,Fiorentina,0.4187251896747266,35,1-0,1-3
+2017,el-0q-1fqr,4a29fb1c|8a898dad,FALSE,Breiðablik UBK,FK Jelgava,FK Jelgava,0.4194897307940598,1,0-0,4-5
+2019,cl-0q-1fqr,2a6cfcb2|c16f1fe7,TRUE,Spartak Trnava,Zrinjski Mostar,Spartak Trnava,0.41974021683884505,1,0-0,2-1
+2017,el-0q-2sqr,3458af25|dde3e804,TRUE,Partizan,Zagłębie Lubin,Partizan,0.42015866462698065,210,0-0,0-0
+2015,el-0q-4po,6777e16d|c4770a69,TRUE,Dnipro,Hajduk Split,Dnipro,0.4217983667600045,47,0-1,2-1
+2020,el-0q-1fqr,aa065002|e839c85b,FALSE,Fola Esch,Chikhura,Chikhura,0.4232013534839083,58,1-0,2-4
+2017,el-1k-4sf,19c3f8c4|d53c0b06,TRUE,Ajax,Lyon,Ajax,0.4245803228490837,24,0-0,5-4
+2019,el-0q-3tqr,2aae7689|86b7acd2,TRUE,Rangers,NK Maribor,Rangers,0.4248250611690251,49,1-1,3-1
+2018,cl-0q-4po,18050b20|44b65410,TRUE,Qarabağ FK,FC Copenhagen,Qarabağ FK,0.42484410529556843,24,0-0,2*-2
+2020,el-0q-4po,946a30cb|a8661628,TRUE,Espanyol,Zorya Luhansk,Espanyol,0.425656485604697,57,0-1,5-3
+2019,el-0q-1fqr,3fdad06c|6d139ec5,TRUE,Spartak Subotic,Coleraine FC,Spartak Subotic,0.42703605371972103,89,0-1,3-1
+2016,cl-0q-4po,b983b638|dde3e804,TRUE,BATE Borisov,Partizan,BATE Borisov,0.42781899873947005,1,0-0,2*-2
+2018,el-0q-3tqr,6777e16d|ab75e049,FALSE,Brøndby,Hajduk Split,Hajduk Split,0.428077569686783,1,0-0,0-2
+2015,cl-0q-4po,7e746554|eab315a6,FALSE,Aalborg,APOEL FC,APOEL FC,0.42995173713741797,53,1-0,1-5
+2016,cl-1k-2qf,4eaa11d7|53a2f082,FALSE,Wolfsburg,Real Madrid,Real Madrid,0.43008851668320547,104,2-0,2-3
+2017,el-0q-3tqr,2c9bebcd|d7d06475,FALSE,Admira,Slovan Liberec,Slovan Liberec,0.430819531244814,8,1-0,1-4
+2015,el-1k-3qf,4eaa11d7|d48ad4ff,FALSE,Wolfsburg,Napoli,Napoli,0.4315510225708331,1,0-0,3-6
+2015,el-1k-1r32,cf74a709|fb4ca611,TRUE,Roma,Feyenoord,Roma,0.4325180167695484,134,1-1,3-2
+2018,el-0q-4po,2b390eca|f3a5726c,FALSE,Panathinaikos,Athletic Bilbao,Athletic Bilbao,0.4325763173803925,67,2-0,2-4
+2015,el-1k-2r16,19c3f8c4|c4770a69,TRUE,Dnipro,Ajax,Dnipro,0.4330959258242321,29,0-0,2*-2
+2018,el-0q-2sqr,3c4fb635|6611f992,FALSE,Ferencváros,Midtjylland,Midtjylland,0.4347793750401969,42,2-0,3-7
+2017,cl-0q-4po,02cd81bf|488c6ba1,TRUE,Ludogorets,Viktoria Plzeň,Ludogorets,0.4351815417989117,1,0-0,4-2
+2017,el-1k-1r32,d60423ef|ecb862be,TRUE,Rostov,Sparta Prague,Rostov,0.4354387037605618,14,0-0,5-1
+2015,cl-0q-2sqr,c8282e20|e2fa043d,FALSE,Dinamo Tbilisi,FC Aktobe,FC Aktobe,0.4375913514485429,1,0-0,0-4
+2015,el-1k-1r32,2a8183b3|50f2a074,TRUE,Villarreal,RB Salzburg,Villarreal,0.43792436682605196,122,2-2,5-2
+2016,el-0q-2sqr,4c96013a|c16f1fe7,TRUE,Spartak Trnava,Linfield FC,Spartak Trnava,0.43794404710496965,143,2-2,5-2
+2020,el-1k-1r32,19c3f8c4|7848bd64,TRUE,Getafe,Ajax,Getafe,0.43928980563328895,36,0-0,3-2
+2019,el-0q-3tqr,943e8050|bff39cf5,FALSE,Başakşehir,Burnley,Burnley,0.4398577914838889,90,0-0,0-1
+2019,el-0q-1fqr,91cc0413|cbde2682,TRUE,CSKA Sofia,Riga FC,CSKA Sofia,0.4401176123782559,164,1-1,1-1
+2020,el-1k-1r32,4eaa11d7|f3d8c8b9,TRUE,Wolfsburg,Malmö,Wolfsburg,0.44024912315399645,48,0-1,5-1
+2020,el-0q-4po,c0d3eab4|f0ac8ee6,FALSE,Strasbourg,Eint Frankfurt,Eint Frankfurt,0.44209521454235146,144,1-1,1-3
+2020,el-0q-2sqr,5d36c8f0|ab75e049,FALSE,Lechia Gdańsk,Brøndby,Brøndby,0.4429623936125665,58,1-0,3-5
+2017,el-1k-3qf,1e972a99|f25da7fb,TRUE,Celta Vigo,Genk,Celta Vigo,0.4461977945714391,14,0-1,4-3
+2020,el-0q-2sqr,01689b1a|3a7a27c6,TRUE,AÉK Lárnaka,Levski Sofia,AÉK Lárnaka,0.4475971389745953,1,0-0,7-0
+2016,el-0q-4po,12d53956|3986b791,FALSE,Astra Giurgiu,AZ Alkmaar,AZ Alkmaar,0.4481130117557165,169,3-2,3-4
+2020,el-0q-1fqr,4936d1b7|ec560e72,FALSE,Cork City FC,Progrès,Progrès,0.44890588961409716,137,2-2,2-3
+2017,el-0q-3tqr,3458af25|7700eac9,FALSE,Zagłębie Lubin,SønderjyskE,SønderjyskE,0.4499928105025438,1,0-0,2-3
+2019,cl-0q-2sqr,f3d8c8b9|ff04e205,FALSE,CFR Cluj,Malmö,Malmö,0.45014812596426346,144,1-1,1-2
+2019,el-0q-2sqr,7517d495|fdba14df,FALSE,Shakhtyor,Lech Poznań,Lech Poznań,0.4519859539575888,88,1-0,2-4
+2019,el-0q-4po,01689b1a|d8b8c85b,FALSE,FK AS Trenčín,AÉK Lárnaka,AÉK Lárnaka,0.4531706358221984,59,1-0,1-4
+2019,el-0q-4po,174bd5a0|98ce363d,TRUE,Zenit,Molde,Zenit,0.45341841765510355,70,0-1,4-3
+2016,el-0q-1fqr,15e031af|840ff2b7,FALSE,Dinamo Batumi,AC Omonia,AC Omonia,0.4543655949703852,143,1-0,1-2
+2016,el-0q-3tqr,768fb565|8bbab7cf,TRUE,FC Kairat,Aberdeen,FC Kairat,0.45443327541873607,12,0-0,3-2
+2017,el-0q-3tqr,2aae7689|8bbab7cf,FALSE,Aberdeen,NK Maribor,NK Maribor,0.4561916128512986,82,0-0,1-2
+2020,el-0q-0pre,448e1bb9|b0e70933,TRUE,Ballymena Utd,NSÍ Runavík,Ballymena Utd,0.4574189854829495,1,0-0,2-0
+2017,el-0q-2sqr,187832f5|33afefe1,TRUE,Maccabi Haifa,Nõmme Kalju FC,Maccabi Haifa,0.4579920383128524,69,0-1,2-2
+2015,cl-1k-1r16,add600ae|e0652b02,TRUE,Juventus,Dortmund,Juventus,0.45803327289522483,42,1-1,5-1
+2019,el-0q-1fqr,4ebc9920|8cac5dfa,FALSE,FK Rabotnički,Honvéd,Honvéd,0.45883768040125406,44,1-0,2-5
+2020,el-0q-3tqr,174bd5a0|edddfa63,TRUE,Molde,Aris,Molde,0.45985558866935095,194,3-3,4-3
+2017,cl-1k-1r16,a77c513e|add600ae,FALSE,Benfica,Dortmund,Dortmund,0.46056585820424967,93,1-0,1-4
+2015,el-1k-2r16,541a280b|d48ad4ff,TRUE,Napoli,Dynamo Mosc,Napoli,0.46135245578592554,24,0-1,3-1
+2016,el-0q-2sqr,253fffc4|6777e16d,FALSE,FC Koper,Hajduk Split,Hajduk Split,0.46513809045112475,28,2-0,4-6
+2018,el-0q-2sqr,12d53956|ffb7956e,TRUE,Astra Giurgiu,Zira,Astra Giurgiu,0.46567543999182887,54,1-1,3-1
+2015,el-1k-1r32,c734e22f|d41b5f53,FALSE,Guingamp,Dynamo Kyiv,Dynamo Kyiv,0.4664448768588235,75,2-1,3-4
+2017,cl-0q-3tqr,4b682260|e89d5a28,TRUE,Shakhtar,Young Boys,Shakhtar,0.46699856517458666,210,2-2,2-2
+2019,el-0q-1fqr,0e3f0159|869a3b6a,TRUE,FK Ventspils,Luftëtari,FK Ventspils,0.4686475145710459,7,0-0,8-3
+2017,el-0q-3tqr,111cbfb1|eea856da,TRUE,Slavia Prague,Rio Ave,Slavia Prague,0.4693516542365249,1,0-0,1*-1
+2018,el-0q-2sqr,31742d51|80beba99,TRUE,SCR Altach,FC Dinamo Brest,SCR Altach,0.4698150300351879,97,1-1,4-1
+2019,el-0q-4po,1e972a99|ab75e049,TRUE,Genk,Brøndby,Genk,0.47008457878630017,54,2-2,9-4
+2017,el-0q-2sqr,8771d9cd|c16f1fe7,FALSE,FC Shirak,Spartak Trnava,Spartak Trnava,0.4706485822508204,86,1-0,1-3
+2018,el-1k-2r16,02cd81bf|13dc44fd,TRUE,Sporting CP,Viktoria Plzeň,Sporting CP,0.47152423725678516,196,2-2,3-2
+2016,cl-0q-3tqr,174bd5a0|edd0d381,TRUE,Dinamo Zagreb,Molde,Dinamo Zagreb,0.47166400669334885,65,1-1,4*-4
+2019,el-0q-0pre,056a9b27|bb780485,TRUE,B36 Tórshavn,St. Joseph's,B36 Tórshavn,0.4718326905833562,210,2-2,2-2
+2019,el-0q-2sqr,55ff3845|e6232d10,FALSE,Sutjeska Nikšić,Alashkert FC,Alashkert FC,0.4719799247777997,1,0-0,0-1
+2015,el-1k-3qf,c4770a69|f1e6c5f1,FALSE,Club Brugge,Dnipro,Dnipro,0.47327766473159594,90,0-0,0-1
+2016,el-1k-2r16,19538871|822bd0ba,TRUE,Liverpool,Manchester Utd,Liverpool,0.4745752762229501,19,0-0,3-1
+2020,el-0q-2sqr,31aa0dd4|7517d495,TRUE,Shakhtyor,Esbjerg,Shakhtyor,0.47478005300439685,4,0-0,2-0
+2017,cl-0q-4po,2a8183b3|fd6114db,FALSE,Villarreal,Monaco,Monaco,0.4771021875391679,1,0-0,1-3
+2019,el-0q-3tqr,ec560e72|ec7fdeb7,TRUE,Ufa,Progrès,Ufa,0.4783035358588597,140,2-2,4-3
+2018,el-0q-2sqr,57d14db5|d423a378,TRUE,Osijek,Luzern,Osijek,0.4788944242580784,1,0-0,3-2
+2020,el-0q-2sqr,133013ee|768fb565,TRUE,Be'er Sheva,Qaırat Almaty,Be'er Sheva,0.48017177657755017,9,0-0,3-1
+2018,el-0q-1fqr,231f4a61|d8b8c85b,TRUE,FK AS Trenčín,Torpedo Kutaisi,FK AS Trenčín,0.48067195311115557,35,0-1,8-1
+2020,cl-0q-3tqr,6611f992|edd0d381,TRUE,Dinamo Zagreb,Ferencváros,Dinamo Zagreb,0.48113956787772066,105,1-1,5-1
+2018,el-0q-2sqr,713d0672|ae7f2f70,FALSE,ŠK Slovan Bratislava,Lyngby,Lyngby,0.4815128296274286,74,0-0,1-3
+2020,el-0q-3tqr,70c92f33|aed59852,TRUE,FCSB,Mladá Boleslav,FCSB,0.48271229376699315,1,0-0,1-0
+2017,cl-1k-1r16,53a2f082|d48ad4ff,TRUE,Real Madrid,Napoli,Real Madrid,0.48587559732179664,17,0-1,6-2
+2020,cl-0q-2sqr,04c011d8|ff04e205,TRUE,CFR Cluj,Maccabi Tel Aviv,CFR Cluj,0.48647481185446534,21,0-0,3-2
+2018,el-1k-1r32,2a8183b3|d53c0b06,TRUE,Lyon,Villarreal,Lyon,0.4877672588357597,45,0-0,4-1
+2016,cl-1k-1r16,98ce363d|a77c513e,TRUE,Benfica,Zenit,Benfica,0.48869786728093284,174,1-1,3-1
+2019,cl-0q-2sqr,133013ee|edd0d381,TRUE,Dinamo Zagreb,Be'er Sheva,Dinamo Zagreb,0.48890684182371713,21,0-0,7-2
+2018,el-0q-3tqr,713d0672|fa11a9cc,TRUE,Krasnodar,Lyngby,Krasnodar,0.49019160241638715,66,0-1,5-2
+2019,el-0q-4po,123f3efe|51e5a603,FALSE,Gent,Bordeaux,Bordeaux,0.4904927619432792,90,0-0,0-2
+2016,el-0q-3tqr,6777e16d|90eb0dcc,TRUE,Hajduk Split,Strømsgodset,Hajduk Split,0.49112867027142487,1,0-0,4-0
+2019,cl-1k-1r16,361ca564|add600ae,TRUE,Tottenham,Dortmund,Tottenham,0.49147759741975383,1,0-0,4-0
+2020,el-0q-2sqr,b11bfada|c9607f44,FALSE,Dunajská Streda,Atromitos,Atromitos,0.4945165684287507,1,0-0,3-5
+2018,el-0q-3tqr,2a428619|fdba14df,TRUE,Utrecht,Lech Poznań,Utrecht,0.49462094131367196,1,0-0,2*-2
+2019,el-1k-2r16,18bb7c10|b3072e00,FALSE,Rennes,Arsenal,Arsenal,0.49617642389293815,94,3-1,3-4
+2019,el-0q-2sqr,01689b1a|e4a9d483,FALSE,Dundalk FC,AÉK Lárnaka,AÉK Lárnaka,0.4964356714787195,102,0-0,0-4
+2019,el-0q-2sqr,4f7b798d|eea856da,TRUE,Jagiellonia,Rio Ave,Jagiellonia,0.4969347352842281,8,0-0,5-4
+2015,el-1k-1r32,19c3f8c4|a73408a7,TRUE,Ajax,Legia Warsaw,Ajax,0.49745511865026865,33,0-0,4-0
+2019,cl-0q-3tqr,c72c8787|edd0d381,FALSE,Astana FK,Dinamo Zagreb,Dinamo Zagreb,0.4975376329852065,1,0-0,0-3
+2016,el-1k-1r32,7213da33|ecd11ca2,FALSE,Galatasaray,Lazio,Lazio,0.49816584112624607,20,1-0,2-4
+2017,el-0q-1fqr,591295f1|d7d06475,TRUE,Admira,Spartak Myjava,Admira,0.4987147720616143,91,1-1,4-3
+2016,el-0q-3tqr,b0333581|c9607f44,FALSE,AIK Stockholm,Atromitos,Atromitos,0.4997189465958155,1,0-0,1-4
+2016,cl-0q-4po,dcc91a7b|fd6114db,TRUE,Valencia,Monaco,Valencia,0.5015921005754294,58,1-1,4-3
+2016,el-0q-1fqr,d921c99f|e6561daf,TRUE,Botoșani,Tskhinvali,Botoșani,0.5016871739634782,95,1-1,4-2
+2018,el-0q-3tqr,12d53956|797d38d2,FALSE,Astra Giurgiu,FC Oleksandriya,FC Oleksandriya,0.5016934745978638,78,0-0,0-1
+2017,el-0q-4po,3c4fb635|ed6b1d21,FALSE,Midtjylland,Osmanlıspor,Osmanlıspor,0.5018755999358353,1,0-0,0-3
+2017,el-0q-1fqr,3458af25|b35f18af,FALSE,Slavia Sofia,Zagłębie Lubin,Zagłębie Lubin,0.5028393997530394,110,1-0,1-3
+2020,cl-0q-3tqr,d20821dd|d3d9424a,FALSE,Basel,LASK,LASK,0.5037056067805809,50,0-0,2-5
+2019,el-1k-1r32,02cd81bf|edd0d381,FALSE,Viktoria Plzeň,Dinamo Zagreb,Dinamo Zagreb,0.5048435865354566,104,2-1,2-4
+2020,cl-1k-1r16,53a2f082|b8fd03ef,,Real Madrid,Manchester City,,0.504854036629052,77,1-0,1-2
+2019,el-0q-0pre,75cd4ee3|7de37644,FALSE,Europa FC,FC Prishtina,FC Prishtina,0.5066336906010265,49,1-0,1-6
+2018,el-1k-2r16,18bb7c10|dc56fe14,FALSE,Milan,Arsenal,Arsenal,0.5074487920059987,1,0-0,1-5
+2016,el-1k-1r32,ecb862be|fa11a9cc,TRUE,Sparta Prague,Krasnodar,Sparta Prague,0.5078332097523351,1,0-0,4-0
+2015,el-0q-2sqr,278db974|d8b8c85b,TRUE,FK AS Trenčín,Vojvodina,FK AS Trenčín,0.5112963520366944,19,0-0,4-3
+2016,cl-0q-4po,c72c8787|eab315a6,TRUE,FC Astana,APOEL FC,FC Astana,0.5121189890056719,12,0-0,2-1
+2015,el-1k-1r32,4b682260|d3fd31cc,FALSE,Young Boys,Everton,Everton,0.5129624470410112,23,1-0,2-7
+2019,el-0q-4po,8ae75624|c16f1fe7,FALSE,Olimpija,Spartak Trnava,Spartak Trnava,0.5135592324612313,1,0-0,1-3
+2018,el-0q-1fqr,448e1bb9|e2a78c9d,TRUE,Dinamo Minsk,NSÍ Runavík,Dinamo Minsk,0.5139003174548139,121,2-1,4-1
+2019,el-0q-4po,2fdb4aef|943e8050,TRUE,Olympiacos,Burnley,Olympiacos,0.514749812685646,48,1-1,4-2
+2019,el-0q-2sqr,922493f3|fac9957a,TRUE,Atalanta,FK Sarajevo,Atalanta,0.5159650614280348,93,2-2,10-2
+2016,el-0q-1fqr,9ac2ced1|c889f292,FALSE,SJK Seinäjoki,FH,FH,0.5166240483919999,55,0-0,0-2
+2020,el-0q-1fqr,3f2bd811|e6f63673,TRUE,KuPS,FK Vitebsk,KuPS,0.5177321446776694,1,0-0,3-1
+2020,cl-0q-2sqr,02cd81bf|2fdb4aef,FALSE,Viktoria Plzeň,Olympiacos,Olympiacos,0.5184653969780109,140,0-0,0-4
+2017,cl-0q-4po,133013ee|b81aa4fa,TRUE,Celtic,Be'er Sheva,Celtic,0.5188138144839105,72,3-2,5-4
+2019,cl-0q-3tqr,111cbfb1|c734e22f,FALSE,Slavia Prague,Dynamo Kyiv,Dynamo Kyiv,0.519114869930767,81,0-0,1-3
+2017,el-1k-2r16,1e972a99|51e5a603,FALSE,Gent,Genk,Genk,0.5196161603537628,1,0-0,3-6
+2017,el-0q-1fqr,4fea542b|f082c4f3,FALSE,Shamrock Rov,RoPS,RoPS,0.5206779149716441,1,0-0,1-3
+2016,el-0q-4po,9ae758c2|ecb862be,TRUE,Sparta Prague,Thun,Sparta Prague,0.5207062084630684,42,0-1,6-4
+2018,el-0q-1fqr,f082c4f3|f13065a8,FALSE,Stjarnan,Shamrock Rov,Shamrock Rov,0.5211589730291784,1,0-0,0-2
+2020,cl-1k-1r16,add600ae|e2d8892c,FALSE,Dortmund,Paris S-G,Paris S-G,0.5223311682525186,74,1-0,2-3
+2020,el-0q-1fqr,4a29fb1c|b1b46fc3,FALSE,Breiðablik,Vaduz,Vaduz,0.5230603136360756,146,0-0,1-2
+2020,el-0q-0pre,6de42722|b784c866,FALSE,La Fiorita,Engordany,Engordany,0.52339242469526015,1,0-0,1-3
+2019,cl-0q-3tqr,44b65410|b983b638,FALSE,Qarabağ Ağdam,BATE Borisov,BATE Borisov,0.5244903603830646,35,0-0,1-2
+2020,el-1k-1r32,19538871|f1e6c5f1,FALSE,Club Brugge,Manchester Utd,Manchester Utd,0.5269429189905943,35,1-0,1-6
+2018,el-0q-1fqr,869a3b6a|b838366a,FALSE,FK Ventspils,Valur,Valur,0.5270169245055805,161,0-0,0-1
+2018,el-0q-3tqr,3f4fe568|ae1e2d7d,FALSE,Sturm Graz,Fenerbahçe,Fenerbahçe,0.5270812209431273,28,1-0,2-3
+2018,el-0q-2sqr,01689b1a|4936d1b7,FALSE,Cork City FC,AEK Larnaca FC,AEK Larnaca FC,0.5280097603592038,69,0-0,0-2
+2019,el-0q-3tqr,18050b20|cbde2682,FALSE,CSKA Sofia,FC Copenhagen,FC Copenhagen,0.528359904161221,63,1-0,2-4
+2015,el-0q-4po,c8ad3091|d60423ef,TRUE,Trabzonspor,Rostov,Trabzonspor,0.5291099703221438,36,0-0,2-0
+2016,cl-0q-2sqr,869a3b6a|d7319d80,FALSE,FK Ventspils,HJK Helsinki,HJK Helsinki,0.5293099011135696,74,1-0,1-4
+2016,el-0q-2sqr,140e320a|79000faa,TRUE,Charleroi,Beitar Jerusalem,Charleroi,0.5308589041189932,44,1-1,9-2
+2020,el-1k-1r32,5e876ee6|c7a9f859,TRUE,Leverkusen,Porto,Leverkusen,0.5316251418070356,28,0-0,5-2
+2018,el-1k-1r32,7213da33|aed59852,FALSE,FCSB,Lazio,Lazio,0.5324786221348095,96,1-0,2-5
+2016,el-0q-3tqr,140e320a|946a30cb,FALSE,Charleroi,Zorya Luhansk,Zorya Luhansk,0.5350073374683957,69,0-0,0-5
+2016,cl-1k-1r16,cff3d9bb|e2d8892c,TRUE,Paris S-G,Chelsea,Paris S-G,0.5360453058000865,77,1-1,4-2
+2015,el-0q-3tqr,12d53956|2c9bebcd,TRUE,Astra Giurgiu,Slovan Liberec,Astra Giurgiu,0.5365824237134148,3,0-0,6-2
+2020,cl-0q-1fqr,85dbecd4|b0333581,FALSE,Ararat-Armenia,AIK Stockholm,AIK Stockholm,0.5366365119148772,13,1-0,3-4
+2020,el-0q-3tqr,8dff1828|ee0bccc5,FALSE,Austria Wien,Apollon,Apollon,0.536650039006308,1,0-0,2-5
+2019,cl-0q-2sqr,5a5e7874|d3d9424a,TRUE,PAOK,Basel,PAOK,0.5372630649874546,31,0-0,5-1
+2015,el-0q-2sqr,25a0a787|ecd34b98,TRUE,Zulte Waregem,Zawisza,Zulte Waregem,0.537860783552026,44,1-1,5-2
+2017,el-1k-2r16,f25da7fb|fa11a9cc,TRUE,Celta Vigo,Krasnodar,Celta Vigo,0.538238942179573,89,1-1,4-1
+2020,el-0q-1fqr,4fea542b|8bbab7cf,TRUE,Aberdeen,RoPS,Aberdeen,0.5384443146735549,116,2-2,4-2
+2018,el-0q-2sqr,3a7a27c6|6777e16d,TRUE,Hajduk Split,Levski Sofia,Hajduk Split,0.5402352733093082,169,1-1,3-1
+2016,el-1k-4sf,ad2be733|e89d5a28,FALSE,Shakhtar,Sevilla,Sevilla,0.5444489541615589,81,2-1,3-5
+2016,el-0q-2sqr,50e85bfc|d06bc460,FALSE,Randers,Elfsborg,Elfsborg,0.5467458717749116,173,0-0,0-1
+2015,cl-0q-3tqr,0f9294bd|fb4ca611,FALSE,Feyenoord,Beşiktaş,Beşiktaş,0.5469952872403816,1,0-0,2-5
+2018,el-1k-1r32,099c6eb5|f0c0c2c2,FALSE,Red Star,CSKA Moscow,CSKA Moscow,0.5470157047724471,134,0-0,0-1
+2016,el-0q-2sqr,15e031af|4f7b798d,FALSE,Jagiellonia,AC Omonia,AC Omonia,0.5472296117615408,97,0-0,0-1
+2017,el-0q-3tqr,d423a378|e2befd26,FALSE,Luzern,Sassuolo,Sassuolo,0.5472926552148358,41,1-0,1-4
+2016,el-0q-2sqr,426658a6|7517d495,FALSE,Shakhtyor,Wolfsberger AC,Wolfsberger AC,0.5478848292623226,61,0-0,0-3
+2017,el-0q-1fqr,654ac5a4|e2a78c9d,TRUE,Dinamo Minsk,Spartaks Jūrmala,Dinamo Minsk,0.5481203934201294,80,1-1,4-1
+2019,el-1k-1r32,13dc44fd|2a8183b3,FALSE,Sporting CP,Villarreal,Villarreal,0.549186043736157,139,1-1,1-2
+2017,el-0q-4po,51e5a603|c480c810,TRUE,Gent,FK Shkëndija,Gent,0.550450033983739,44,0-1,6-1
+2015,cl-1k-1r16,5e876ee6|d3d9424a,FALSE,Basel,Porto,Porto,0.5506974514928537,77,1-0,1-5
+2018,el-0q-3tqr,c1b0f61b|e56e174a,FALSE,Botev Plovdiv,Marítimo,Marítimo,0.5507333305810573,123,0-0,0-2
+2018,el-0q-2sqr,8ac05d3e|b838366a,FALSE,Valur,NK Domžale,NK Domžale,0.5511898108543403,158,3-3,3-5
+2015,el-0q-2sqr,4c96013a|b0333581,FALSE,Linfield FC,AIK Stockholm,AIK Stockholm,0.5524360746332238,145,1-0,1-2
+2020,cl-0q-4po,2fdb4aef|fa11a9cc,TRUE,Olympiacos,Krasnodar,Olympiacos,0.5529865519921744,29,0-0,6-1
+2019,el-0q-1fqr,99a0526b|d2f21b23,TRUE,Górnik Zabrze,FC Zaria Bălți,Górnik Zabrze,0.5531254526675464,174,1-1,2-1
+2015,el-0q-2sqr,e5cd7bb3|ff04e205,TRUE,CFR Cluj,Jagodina,CFR Cluj,0.5532529930632558,170,0-0,1-0
+2020,cl-1k-1r16,d53c0b06|e0652b02,,Lyon,Juventus,,0.5534397262383743,90,1-0,1-0
+2015,el-0q-4po,30f3de93|d298ef2c,FALSE,Karabükspor,Saint-Étienne,Saint-Étienne,0.5541115030702022,102,1-0,1-1
+2018,cl-1k-1r16,206d90db|cff3d9bb,FALSE,Chelsea,Barcelona,Barcelona,0.55534911595434,74,1-0,1-4
+2016,cl-0q-2sqr,aed59852|d8b8c85b,FALSE,FK AS Trenčín,Steaua,Steaua,0.5558105359889276,146,2-2,3-4
+2018,el-0q-4po,2a428619|98ce363d,FALSE,Utrecht,Zenit,Zenit,0.556778308686525,98,1-0,1-2
+2020,cl-0q-3tqr,c734e22f|f1e6c5f1,TRUE,Club Brugge,Dynamo Kyiv,Club Brugge,0.5570326135603549,127,1-1,4-3
+2017,cl-0q-4po,18050b20|eab315a6,TRUE,FC Copenhagen,APOEL FC,FC Copenhagen,0.5577545848882595,175,1-1,2-1
+2015,el-0q-4po,e3db180b|ecb862be,FALSE,Zwolle,Sparta Prague,Sparta Prague,0.5594766378785196,81,1-0,2-4
+2016,el-0q-2sqr,c582b57f|ef1ab26a,FALSE,Śląsk Wrocław,Göteborg,Göteborg,0.5605763258350691,144,0-0,0-2
+2016,el-0q-1fqr,63866313|7a40cd8b,FALSE,KF Laçi,Inter Baku,Inter Baku,0.5635541271801245,46,1-0,1-1*
+2016,el-0q-1fqr,6777e16d|7bc6abf1,FALSE,Sillamäe Kalev,Hajduk Split,Hajduk Split,0.5652708181910879,134,3-2,3-7
+2020,el-1k-1r32,ad2be733|ff04e205,FALSE,CFR Cluj,Sevilla,Sevilla,0.5657720255170102,81,1-0,1-1*
+2020,el-0q-4po,3f319bc9|aed59852,FALSE,FCSB,Vitória,Vitória,0.5659164854412319,142,0-0,0-1
+2020,el-0q-1fqr,4c6489de|8cac5dfa,TRUE,Honvéd,Žalgiris,Honvéd,0.5662703257633145,31,0-0,4-2
+2018,el-0q-1fqr,58ff3cd4|ffb7956e,TRUE,Zira,Differdange 03,Zira,0.5664224261014588,21,0-0,4-1
+2019,el-0q-4po,0f9294bd|dde3e804,FALSE,Partizan,Beşiktaş,Beşiktaş,0.5665047909893599,14,1-0,1-4
+2016,el-0q-4po,5a5e7874|ab75e049,TRUE,PAOK,Brøndby,PAOK,0.5669057828347261,16,0-0,6-1
+2016,cl-0q-2sqr,b983b638|e4a9d483,TRUE,BATE Borisov,Dundalk FC,BATE Borisov,0.5672521241179942,37,1-1,2-1
+2016,cl-0q-2sqr,aa065002|edd0d381,TRUE,Dinamo Zagreb,CS Fola Esch,Dinamo Zagreb,0.5673263266945646,118,1-1,4-1
+2019,el-1k-4sf,cff3d9bb|f0ac8ee6,FALSE,Eint Frankfurt,Chelsea,Chelsea,0.5680886461183408,44,1-0,2-2
+2015,el-0q-3tqr,d0ab5e26|e839c85b,TRUE,Neftchi PFK,Chikhura,Neftchi PFK,0.568530272867334,1,0-0,3-2
+2015,cl-0q-3tqr,488c6ba1|dde3e804,TRUE,Ludogorets,Partizan,Ludogorets,0.5696237339698508,1,0-0,2*-2
+2018,cl-0q-4po,4b682260|f0c0c2c2,FALSE,Young Boys,CSKA Moscow,CSKA Moscow,0.5705417591251649,89,0-0,0-3
+2017,el-0q-2sqr,8a814429|e2a78c9d,TRUE,Dinamo Minsk,St Patrick's,Dinamo Minsk,0.572358463934643,108,1-1,2-1
+2015,el-1k-1r32,32f3ee20|ad2be733,TRUE,Sevilla,M'gladbach,Sevilla,0.5751135739364367,69,0-0,4-2
+2019,el-0q-3tqr,912e4c40|ae7f2f70,FALSE,Slovan Bratislava,Rapid Wien,Rapid Wien,0.5758416747319053,92,2-1,2-5
+2016,cl-0q-3tqr,ae1e2d7d|e89d5a28,FALSE,Fenerbahçe,Shakhtar,Shakhtar,0.5761310823130037,114,0-0,0-3
+2016,el-1k-1r32,912e4c40|dcc91a7b,TRUE,Valencia,Rapid Wien,Valencia,0.5762859447586732,3,0-0,10-0
+2017,el-0q-1fqr,8a814429|f1849f98,TRUE,St Patrick's,Jeunesse Esch,St Patrick's,0.576602058206573,162,1-1,2*-2
+2016,cl-1k-3sf,53a2f082|b8fd03ef,FALSE,Manchester City,Real Madrid,Real Madrid,0.5766306993743009,109,0-0,0-1
+2016,el-1k-1r32,2b390eca|5725cc7b,FALSE,Marseille,Athletic Bilbao,Athletic Bilbao,0.5769084099361584,170,1-1,1-2
+2018,cl-0q-1fqr,0faf8f33|82d952b5,TRUE,Hibernians FC,FC Infonet,Hibernians FC,0.5774089228785538,61,0-0,3-0
+2016,el-0q-3tqr,15e031af|ab75e049,TRUE,Brøndby,AC Omonia,Brøndby,0.577548708256209,1,0-0,2*-2
+2016,el-0q-3tqr,90e37d3a|e24ac92e,FALSE,Debrecen,Rosenborg,Rosenborg,0.5784966329819754,51,1-0,3-6
+2015,el-0q-1fqr,aa065002|ef1ab26a,TRUE,Göteborg,CS Fola Esch,Göteborg,0.5791791863859507,165,0-0,2-0
+2017,el-0q-1fqr,7e4fae05|ab7b2fe7,TRUE,Beroe,Radnik Bijeljina,Beroe,0.5793832259167121,168,0-0,2-0
+2015,el-0q-2sqr,4fea542b|d884c383,FALSE,RoPS,Asteras Tripoli,Asteras Tripoli,0.581800973959214,162,3-3,3-5
+2016,el-0q-1fqr,38bfcdf5|79000faa,FALSE,FC Ordabasy,Beitar Jerusalem,Beitar Jerusalem,0.5822631092401296,106,0-0,1-2
+2020,cl-0q-3tqr,2aae7689|90e37d3a,FALSE,Maribor,Rosenborg,Rosenborg,0.5823676327705845,49,0-0,2-6
+2015,cl-1k-2qf,53a2f082|db3b9613,FALSE,Atlético Madrid,Real Madrid,Real Madrid,0.5826386392658451,165,0-0,0-1
+2019,el-1k-1r32,e89d5a28|f0ac8ee6,FALSE,Shakhtar,Eint Frankfurt,Eint Frankfurt,0.5842754478534582,1,0-0,3-6
+2016,cl-0q-2sqr,4c6489de|f3d8c8b9,TRUE,Malmö,Žalgiris,Malmö,0.5852632088613822,144,0-0,1-0
+2018,cl-0q-3tqr,90e37d3a|b81aa4fa,TRUE,Celtic,Rosenborg,Celtic,0.5853093275968249,158,0-0,1-0
+2018,el-0q-1fqr,719d83f1|8ac05d3e,TRUE,NK Domžale,FC Flora,NK Domžale,0.5854608520300547,129,2-2,5-2
+2018,el-0q-4po,a338349f|dde3e804,TRUE,Partizan,Videoton,Partizan,0.5860054073001144,95,0-0,4-0
+2020,el-1k-2r16,2fdb4aef|8cec06e1,,Olympiacos,Wolves,,0.5863599533007998,66,1-0,1-1*
+2017,el-0q-3tqr,6777e16d|797d38d2,FALSE,FC Oleksandriya,Hajduk Split,Hajduk Split,0.5865432371080253,51,0-0,1-6
+2016,cl-0q-4po,19538871|f1e6c5f1,TRUE,Manchester Utd,Club Brugge,Manchester Utd,0.5865575784145236,8,0-1,7-1
+2018,el-0q-2sqr,b0333581|ee945014,FALSE,Željezničar,AIK Stockholm,AIK Stockholm,0.5867371895584133,137,0-0,0-2
+2018,el-1k-1r32,13dc44fd|c72c8787,FALSE,FC Astana,Sporting CP,Sporting CP,0.5874986692216431,47,1-0,4-6
+2017,cl-0q-2sqr,4c6489de|c72c8787,FALSE,Žalgiris,FC Astana,FC Astana,0.5879346949638173,147,1-1,1-2
+2015,el-0q-3tqr,50e85bfc|9ac2ced1,TRUE,Elfsborg,FH,Elfsborg,0.5888854162103259,69,1-1,5-3
+2016,cl-0q-2sqr,a338349f|fd12ff13,FALSE,The New Saints,Videoton,Videoton,0.5889674401059888,168,1-1,1-2
+2019,el-0q-3tqr,174bd5a0|f3aacc58,FALSE,Hibernian,Molde,Molde,0.5891979654819373,124,0-0,0-3
+2015,el-0q-4po,4f30dd8b|edd0d381,FALSE,Petrolul,Dinamo Zagreb,Dinamo Zagreb,0.5893075100589957,1,0-0,2-5
+2020,el-0q-3tqr,69d84c29|ab75e049,FALSE,Brøndby,Braga,Braga,0.5899289364911312,15,1-0,3-7
+2020,el-1k-1r32,3986b791|d20821dd,FALSE,AZ Alkmaar,LASK,LASK,0.5900740124329078,1,0-0,1-3
+2018,cl-1k-2qf,53a2f082|e0652b02,FALSE,Juventus,Real Madrid,Real Madrid,0.5904622863510064,150,3-3,3-4
+2017,el-1k-1r32,2fdb4aef|ed6b1d21,TRUE,Olympiacos,Osmanlıspor,Olympiacos,0.5921317192133694,74,0-0,3-0
+2018,el-0q-1fqr,63866313|9db96189,FALSE,Mladost Lučani,Keşla,Keşla,0.5929965702220477,1,0-0,0-5
+2016,el-0q-4po,90e37d3a|aed59852,FALSE,Steaua,Rosenborg,Rosenborg,0.5933771154419717,60,0-0,1-3
+2015,el-0q-4po,4b682260|e24ac92e,TRUE,Young Boys,Debrecen,Young Boys,0.5934793694827574,66,1-1,3-1
+2019,el-0q-3tqr,1850e3f9|dde3e804,FALSE,Nordsjælland,Partizan,Partizan,0.593742146998707,1,0-0,3-5
+2018,el-0q-2sqr,54f29d7b|9e3153f3,FALSE,FK Liepāja,Sūduva,Sūduva,0.5938326620981378,1,0-0,1-2
+2019,cl-0q-4po,19c3f8c4|c734e22f,TRUE,Ajax,Dynamo Kyiv,Ajax,0.5944444318900054,34,1-1,3-1
+2020,cl-1k-1r16,206d90db|d48ad4ff,,Napoli,Barcelona,,0.5950742826706945,56,1-0,1-1*
+2016,cl-0q-3tqr,7795f801|df526548,FALSE,FC Milsami Orhei,Skënderbeu Korçë,Skënderbeu Korçë,0.5950948615057674,48,0-0,0-4
+2016,el-0q-4po,2c9bebcd|6777e16d,TRUE,Slovan Liberec,Hajduk Split,Slovan Liberec,0.5964592619078282,78,0-0,2-0
+2016,el-1k-1r32,2eaa8331|69d84c29,FALSE,Sion,Braga,Braga,0.5970423594570445,137,3-3,3-4
+2019,el-0q-3tqr,50995c1e|b838366a,TRUE,Sheriff Tiraspol,Valur,Sheriff Tiraspol,0.5972346227294063,157,1-1,2*-2
+2018,cl-0q-2sqr,2a6cfcb2|2aae7689,FALSE,Zrinjski Mostar,NK Maribor,NK Maribor,0.5973279023146717,42,0-0,2-3
+2017,cl-0q-3tqr,12d53956|18050b20,FALSE,Astra Giurgiu,FC Copenhagen,FC Copenhagen,0.5973688737830112,63,1-0,1-4
+2020,el-0q-1fqr,2b924bc5|869a3b6a,TRUE,Ventspils,Teuta Durrës,Ventspils,0.5977885124263621,4,0-0,3-1
+2016,el-0q-2sqr,ab75e049|ab7b2fe7,FALSE,Beroe,Brøndby,Brøndby,0.5986970747763665,84,0-0,0-1
+2016,el-0q-2sqr,e2a78c9d|f61e60c9,FALSE,Cherno More,Dinamo Minsk,Dinamo Minsk,0.5991621557063542,71,1-0,1-5
+2020,el-0q-2sqr,15c5743b|4c96013a,FALSE,HB,Linfield,Linfield,0.5993295780238568,1,0-0,2-3
+2017,cl-1k-3sf,53a2f082|db3b9613,TRUE,Real Madrid,Atlético Madrid,Real Madrid,0.5994231117567612,9,0-0,4-2
+2019,el-1k-2r16,2a8183b3|98ce363d,FALSE,Zenit,Villarreal,Villarreal,0.6000781752391086,1,0-0,2-5
+2015,cl-1k-3sf,054efa67|206d90db,TRUE,Barcelona,Bayern Munich,Barcelona,0.6006198783750124,76,0-0,5-3
+2020,el-0q-1fqr,356c100c|3a7a27c6,FALSE,MFK Ružomberok,Levski Sofia,Levski Sofia,0.6010483174752832,35,0-0,0-4
+2015,el-1k-1r32,98ce363d|e334d850,FALSE,PSV Eindhoven,Zenit,Zenit,0.6018383864122498,62,0-0,0-4
+2019,el-0q-2sqr,8bbab7cf|943e8050,FALSE,Aberdeen,Burnley,Burnley,0.6021811519459481,79,1-0,2-4
+2020,el-0q-2sqr,3986b791|8774e267,TRUE,AZ Alkmaar,Häcken,AZ Alkmaar,0.6021891413704064,131,0-0,3-0
+2017,el-0q-1fqr,79000faa|a3548289,FALSE,Sloboda Tuzla,Beitar Jerusalem,Beitar Jerusalem,0.6037397232174287,156,0-0,0-1
+2017,el-0q-4po,ab75e049|f3a5726c,TRUE,Panathinaikos,Brøndby,Panathinaikos,0.6041651580249595,32,0-0,4-1
+2020,cl-0q-3tqr,2fdb4aef|bff39cf5,FALSE,Başakşehir,Olympiacos,Olympiacos,0.6042150432044665,52,0-0,0-3
+2019,el-0q-1fqr,5f2630fb|fdba14df,TRUE,Lech Poznań,Gandzasar,Lech Poznań,0.6044722718471961,157,2-2,3-2
+2015,el-0q-4po,7b66a29c|f1e6c5f1,FALSE,Grasshopper,Club Brugge,Club Brugge,0.6048425349336928,13,1-0,1-3
+2015,cl-0q-4po,5e876ee6|cb188c0c,FALSE,Lille,Porto,Porto,0.6053388045532738,60,0-0,0-3
+2018,el-0q-3tqr,b70ec3fa|edd0d381,TRUE,Dinamo Zagreb,Odd,Dinamo Zagreb,0.6053638327705098,29,0-1,2-1
+2017,el-0q-1fqr,8bbab7cf|aa065002,TRUE,Aberdeen,CS Fola Esch,Aberdeen,0.6056728988100205,89,1-1,3-2
+2017,el-0q-2sqr,ab7b2fe7|d7319d80,FALSE,Beroe,HJK Helsinki,HJK Helsinki,0.6059856549177187,36,0-0,1-2
+2020,el-0q-4po,b983b638|c72c8787,TRUE,Astana FK,BATE Borisov,Astana FK,0.6062281551528551,22,0-0,3-2
+2015,el-0q-3tqr,eea856da|ef1ab26a,FALSE,Göteborg,Rio Ave,Rio Ave,0.6069571552836731,1,0-0,0-1
+2015,el-0q-1fqr,7bb567b2|e4babb95,TRUE,Diósgyőr,Birkirkara FC,Diósgyőr,0.6070914224692513,89,1-1,6-2
+2019,el-1k-1r32,50f2a074|f1e6c5f1,FALSE,Club Brugge,RB Salzburg,RB Salzburg,0.6086090775211046,106,2-1,2-5
+2019,el-0q-2sqr,b11bfada|e2a78c9d,FALSE,Dunajská Streda,Dinamo Minsk,Dinamo Minsk,0.6096056956278404,1,0-0,2-7
+2018,el-1k-1r32,c734e22f|d5348c80,FALSE,AEK Athens,Dynamo Kyiv,Dynamo Kyiv,0.6099464404020204,1,0-0,1-1*
+2016,el-1k-3qf,2a8183b3|ecb862be,TRUE,Villarreal,Sparta Prague,Villarreal,0.609967400620349,62,1-1,6-3
+2020,el-0q-2sqr,651288fd|edddfa63,TRUE,Aris,AE Lemesós,Aris,0.6112797146998228,103,0-0,1-0
+2017,el-0q-1fqr,7c77b0bc|82d952b5,TRUE,Hearts,FC Infonet,Hearts,0.6119622635615731,27,0-1,6-3
+2020,el-0q-4po,105360fe|8cec06e1,FALSE,Torino,Wolves,Wolves,0.6123655969535582,42,0-0,3-5
+2017,el-0q-4po,01689b1a|2c9bebcd,FALSE,AEK Larnaca FC,Slovan Liberec,Slovan Liberec,0.6128154007241299,1,0-0,0-4
+2019,el-0q-3tqr,209d7fa2|d3d9424a,FALSE,Vitesse,Basel,Basel,0.6128419119788467,89,0-0,0-2
+2019,cl-0q-2sqr,b983b638|d7319d80,TRUE,BATE Borisov,HJK Helsinki,BATE Borisov,0.613830570989476,109,0-0,2-1
+2016,el-0q-3tqr,5a5e7874|c16f1fe7,TRUE,PAOK,Spartak Trnava,PAOK,0.6142031213956208,2,0-0,2-1
+2017,cl-0q-1fqr,056a9b27|3f53cc7a,TRUE,Valletta FC,B36 Tórshavn,Valletta FC,0.6144411837614291,114,1-1,2*-2
+2019,el-0q-2sqr,57d14db5|86b7acd2,FALSE,Osijek,Rangers,Rangers,0.615526527224209,1,0-0,1-2
+2017,cl-0q-1fqr,9549dc95|e6232d10,FALSE,Santa Coloma,Alashkert FC,Alashkert FC,0.6160375918767481,116,0-1,0-3
+2018,el-0q-3tqr,a1962466|f3a5726c,TRUE,Panathinaikos,Gabala FK,Panathinaikos,0.6166714588721003,152,1-1,3-1
+2019,el-0q-1fqr,acffac85|b35f18af,FALSE,Ilves,Slavia Sofia,Slavia Sofia,0.617505990967709,79,0-0,1-3
+2020,el-0q-4po,2aae7689|488c6ba1,TRUE,Ludogorets,Maribor,Ludogorets,0.6179243856149172,106,0-0,2*-2
+2017,el-0q-2sqr,111cbfb1|112c9642,FALSE,Levadia Tallinn,Slavia Prague,Slavia Prague,0.619129669832819,156,3-2,3-3*
+2015,el-0q-2sqr,c1322cab|c16f1fe7,FALSE,FC Zestafoni,Spartak Trnava,Spartak Trnava,0.6197597770881195,93,0-0,0-3
+2019,el-1k-1r32,7213da33|ad2be733,FALSE,Lazio,Sevilla,Sevilla,0.6198633764435082,1,0-0,0-3
+2016,cl-0q-2sqr,5b47810a|eab315a6,TRUE,APOEL FC,FK Vardar,APOEL FC,0.6198917899455116,149,0-0,1*-1
+2020,el-0q-3tqr,3c4fb635|86b7acd2,FALSE,Midtjylland,Rangers,Rangers,0.6208412858321102,42,0-0,3-7
+2018,el-0q-1fqr,5f2630fb|8dc7bf66,TRUE,Mladost,Gandzasar,Mladost,0.6214637591465535,56,0-0,4-0
+2020,el-0q-4po,69d84c29|8c635914,TRUE,Braga,Spartak Moscow,Braga,0.6215277987999461,73,0-0,3-1
+2015,el-1k-4sf,421387cf|ad2be733,TRUE,Sevilla,Fiorentina,Sevilla,0.6218251106604553,16,0-0,5-0
+2020,el-0q-2sqr,3ba2fddf|50995c1e,FALSE,Partizani Tirana,Sheriff Tiraspol,Sheriff Tiraspol,0.6234594859293348,152,1-1,1-2
+2020,el-0q-2sqr,869a3b6a|8ab497d5,TRUE,Ventspils,Gzira United,Ventspils,0.6238483453582411,40,0-0,6-2
+2019,el-0q-2sqr,9549dc95|b838366a,FALSE,Santa Coloma,Valur,Valur,0.62392842942251,142,1-0,1-3
+2020,el-0q-3tqr,a73408a7|c9607f44,TRUE,Legia Warsaw,Atromitos,Legia Warsaw,0.6240447724485935,118,0-0,2-0
+2016,el-0q-4po,946a30cb|a73408a7,FALSE,Zorya Luhansk,Legia Warsaw,Legia Warsaw,0.6243689476422261,47,0-0,2-4
+2020,el-1k-1r32,51e5a603|cf74a709,TRUE,Roma,Gent,Roma,0.6245276163472304,118,1-1,2-1
+2015,el-0q-4po,24cd860c|5a5e7874,FALSE,Zimbru Chișinău,PAOK,PAOK,0.6245735350224109,100,1-0,1-4
+2017,el-0q-1fqr,a1962466|b8b2d55e,TRUE,Gabala FK,FC Samtredia,Gabala FK,0.6248957405447442,15,0-0,6-3
+2019,el-0q-3tqr,231f4a61|f1e85b1e,TRUE,Torpedo Kutaisi,FK Kukësi,Torpedo Kutaisi,0.6269629225064436,166,5-4,5-4
+2015,cl-0q-1fqr,15c5743b|2d3c1b6d,FALSE,Red Imps,Havnar Bóltfelag,Havnar Bóltfelag,0.62716019870182,70,1-0,3-6
+2019,el-0q-2sqr,49e1cbfd|ae7f2f70,FALSE,Balzan FC,Slovan Bratislava,Slovan Bratislava,0.6272006221342881,73,2-0,3-4
+2015,el-0q-1fqr,a7dfc896|ee945014,TRUE,Željezničar,FK Lovćen,Željezničar,0.6278198915578596,100,0-0,1-0
+2020,el-0q-1fqr,584d189a|768fb565,FALSE,Široki Brijeg,Qaırat Almaty,Qaırat Almaty,0.6280394338901238,1,0-0,2-4
+2016,el-1k-1r32,13dc44fd|c7a9f859,FALSE,Sporting CP,Bayer,Bayer,0.6288090408280314,1,0-0,1-4
+2017,el-0q-2sqr,c480c810|d0ab5e26,FALSE,Neftchi PFK,FK Shkëndija,FK Shkëndija,0.6293536358908408,120,0-0,0-1
+2018,el-0q-1fqr,056a9b27|33afefe1,TRUE,Nõmme Kalju FC,B36 Tórshavn,Nõmme Kalju FC,0.6297859884590087,78,1-1,4-2
+2016,el-0q-1fqr,42e847bc|8ac05d3e,FALSE,NK Domžale,Čukarički,Čukarički,0.6300092418361547,42,0-0,0-1
+2020,el-0q-2sqr,1eebf7c3|8cac5dfa,FALSE,Honvéd,U Craiova,U Craiova,0.630129361585012,181,0-0,0-0
+2016,el-1k-1r32,361ca564|421387cf,FALSE,Fiorentina,Tottenham,Tottenham,0.6315606269744365,36,0-0,1-4
+2020,cl-0q-3tqr,19c3f8c4|5a5e7874,FALSE,PAOK,Ajax,Ajax,0.6324481538759863,132,3-2,4-5
+2020,el-0q-3tqr,25dbe099|8bbab7cf,TRUE,Rijeka,Aberdeen,Rijeka,0.6328635645819495,61,0-0,4-0
+2016,cl-0q-2sqr,44b65410|fe8bc2a6,TRUE,Qarabağ FK,FK Rudar Pljevlja,Qarabağ FK,0.6332919292680238,146,0-0,1-0
+2016,el-1k-2r16,08ad393c|e89d5a28,TRUE,Shakhtar,Anderlecht,Shakhtar,0.6337366279064277,20,0-0,4-1
+2015,el-0q-1fqr,3927dae8|e839c85b,FALSE,FK Turnovo,Chikhura,Chikhura,0.6337897016343821,1,0-0,1-4
+2018,el-0q-3tqr,577e2606|aa065002,TRUE,Östersund,CS Fola Esch,Östersund,0.6347938924813302,148,1-1,3-1
+2018,cl-0q-3tqr,111cbfb1|b983b638,TRUE,Slavia Prague,BATE Borisov,Slavia Prague,0.6356965522477286,133,1-1,2*-2
+2018,el-1k-1r32,2b390eca|8c635914,FALSE,Spartak Moscow,Athletic Bilbao,Athletic Bilbao,0.6361967023588374,1,0-0,3-4
+2020,el-1k-1r32,d3d9424a|eab315a6,FALSE,APOEL,Basel,Basel,0.636500793060057,1,0-0,0-4
+2016,el-0q-4po,add600ae|b70ec3fa,FALSE,Odd,Dortmund,Dortmund,0.6366147508595883,22,3-0,5-11
+2020,el-0q-3tqr,4cc7a87b|dde3e804,TRUE,Partizan,Yeni Mal'spor,Partizan,0.6368881256122229,3,0-0,3-2
+2019,el-1k-1r32,a77c513e|ecd11ca2,FALSE,Galatasaray,Benfica,Benfica,0.6376067291661662,1,0-0,1-2
+2016,el-0q-1fqr,8b63ce55|b0333581,FALSE,VPS,AIK Stockholm,AIK Stockholm,0.6387953159455343,69,2-0,2-6
+2016,el-1k-2r16,ad2be733|d3d9424a,FALSE,Basel,Sevilla,Sevilla,0.639753889700793,124,0-0,0-3
+2019,el-0q-2sqr,cbde2682|d7d06475,TRUE,CSKA Sofia,Admira,CSKA Sofia,0.6398738067330065,28,0-0,6-1
+2017,el-1k-1r32,0f9294bd|133013ee,FALSE,Be'er Sheva,Beşiktaş,Beşiktaş,0.6400456365650403,41,0-0,2-5
+2015,el-1k-1r32,13dc44fd|4eaa11d7,TRUE,Wolfsburg,Sporting CP,Wolfsburg,0.6400694869635487,45,0-0,2-0
+2015,el-0q-1fqr,768fb565|f1e85b1e,TRUE,FC Kairat,FK Kukësi,FC Kairat,0.6401887621344868,88,0-0,1-0
+2017,el-1k-1r32,2a8183b3|cf74a709,FALSE,Villarreal,Roma,Roma,0.6412275853492617,1,0-0,1-4
+2017,el-0q-3tqr,3c4fb635|a338349f,FALSE,Videoton,Midtjylland,Midtjylland,0.6423802880708986,192,1-1,1-2
+2017,el-0q-3tqr,d298ef2c|d5348c80,TRUE,Saint-Étienne,AEK Athens,Saint-Étienne,0.6426144050169831,112,0-0,1-0
+2015,el-1k-2r16,105360fe|98ce363d,TRUE,Zenit,Torino,Zenit,0.6428453000984927,27,0-0,2-1
+2019,el-0q-1fqr,33afefe1|f13065a8,TRUE,Stjarnan,Nõmme Kalju FC,Stjarnan,0.6450497468311904,18,0-0,3-1
+2018,el-0q-3tqr,651288fd|ee0bccc5,TRUE,Austria Wien,AEL Limassol,Austria Wien,0.645116642714818,116,0-0,2-1
+2015,el-0q-2sqr,0b6cd7c6|bb9e11b2,TRUE,Brommapojkarna,Crusaders FC,Brommapojkarna,0.6451611377103059,8,0-0,5-1
+2020,el-0q-1fqr,056a9b27|0b6cd7c6,TRUE,Crusaders,B36,Crusaders,0.6454086242806897,32,0-0,5-2
+2015,el-0q-2sqr,15f9a98b|7517d495,FALSE,Derry City FC,Shakhtyor,Shakhtyor,0.6457771120116156,98,1-1,1-6
+2018,el-0q-3tqr,01689b1a|e2a78c9d,TRUE,AEK Larnaca FC,Dinamo Minsk,AEK Larnaca FC,0.6461589322029428,41,0-0,3-1
+2015,el-0q-2sqr,33afefe1|fdba14df,FALSE,Nõmme Kalju FC,Lech Poznań,Lech Poznań,0.6465743052621223,122,1-0,1-3
+2017,cl-0q-3tqr,a73408a7|d8b8c85b,FALSE,FK AS Trenčín,Legia Warsaw,Legia Warsaw,0.6474476165870731,69,0-0,0-1
+2017,cl-1k-1r16,054efa67|18bb7c10,TRUE,Bayern Munich,Arsenal,Bayern Munich,0.6489433315048554,52,1-1,10-2
+2018,cl-0q-3tqr,44b65410|50995c1e,TRUE,Qarabağ FK,Sheriff Tiraspol,Qarabağ FK,0.6490980121231757,134,0-0,2-1
+2015,cl-0q-4po,ae7f2f70|b983b638,FALSE,ŠK Slovan Bratislava,BATE Borisov,BATE Borisov,0.6495186750708782,43,0-0,1-4
+2016,el-0q-1fqr,63bc42eb|c16f1fe7,FALSE,FK Olimpic,Spartak Trnava,Spartak Trnava,0.6515900619625439,69,1-0,1-1*
+2018,el-0q-1fqr,bda134f7|ee945014,TRUE,Željezničar,FK Zeta,Željezničar,0.6517294236474326,121,1-1,3-2
+2017,cl-0q-2sqr,3ba2fddf|6611f992,FALSE,Partizani Tirana,Ferencváros,Ferencváros,0.6523671570425491,70,1-0,2-2
+2016,el-0q-3tqr,2c9bebcd|4b238d92,TRUE,Slovan Liberec,Kiryat Shmona,Slovan Liberec,0.652707947369334,42,0-0,5-1
+2016,el-1k-3qf,69d84c29|e89d5a28,FALSE,Braga,Shakhtar,Shakhtar,0.6549396255089945,43,0-0,1-6
+2019,el-0q-3tqr,31742d51|8dff1828,TRUE,Apollon,FC Dinamo Brest,Apollon,0.6556644269051588,45,0-0,4-1
+2019,cl-0q-1fqr,44b65410|8ae75624,FALSE,Olimpija,Qarabağ Ağdam,Qarabağ Ağdam,0.6562032810886411,78,0-0,0-1
+2018,el-1k-2r16,98ce363d|acbb6a5b,TRUE,RB Leipzig,Zenit,RB Leipzig,0.6564911305437171,55,0-0,3-2
+2020,el-0q-0pre,75cd4ee3|78816dd0,FALSE,UE Sant Julià,Europa,Europa,0.6565173155048601,127,3-2,3-6
+2019,cl-0q-4po,b983b638|e334d850,FALSE,BATE Borisov,PSV Eindhoven,PSV Eindhoven,0.6565425498213755,34,1-0,2-6
+2016,el-0q-1fqr,448e1bb9|4c96013a,TRUE,Linfield FC,NSÍ Runavík,Linfield FC,0.6574205837907995,56,0-0,5-4
+2018,cl-0q-3tqr,2aae7689|9ac2ced1,TRUE,NK Maribor,FH,NK Maribor,0.6575769975840393,53,0-0,2-0
+2016,cl-1k-1r16,db3b9613|e334d850,FALSE,PSV Eindhoven,Atlético Madrid,Atlético Madrid,0.6577623058360764,210,0-0,0-0
+2016,cl-1k-1r16,4eaa11d7|51e5a603,FALSE,Gent,Wolfsburg,Wolfsburg,0.6581511021168472,43,0-0,2-4
+2016,el-0q-1fqr,3cb9ad76|623ecff4,FALSE,FK Renova,Dacia Chișinău,Dacia Chișinău,0.6584884030361623,1,0-0,1-5
+2015,el-0q-3tqr,ab75e049|f1e6c5f1,TRUE,Club Brugge,Brøndby,Club Brugge,0.6586789987016541,13,0-0,5-0
+2016,el-1k-1r32,5a8dc328|ae1e2d7d,TRUE,Fenerbahçe,Loko Moscow,Fenerbahçe,0.6590801070876843,17,0-0,3-1
+2016,el-0q-4po,19dc476f|80beba99,FALSE,SCR Altach,Belenenses,Belenenses,0.6591967925918459,1,0-0,0-1
+2017,el-0q-4po,099c6eb5|e2befd26,TRUE,Sassuolo,Red Star,Sassuolo,0.659476031527345,16,0-0,4-1
+2019,el-0q-2sqr,49a61d12|dde3e804,TRUE,Partizan,Riteriai,Partizan,0.6596308340943069,134,1-1,2-1
+2016,el-0q-4po,19c3f8c4|8424bb18,TRUE,Ajax,Jablonec,Ajax,0.6605995199545874,53,0-0,1-0
+2016,cl-0q-1fqr,056a9b27|fd12ff13,FALSE,B36 Tórshavn,The New Saints,The New Saints,0.6615840130179222,8,1-0,2-6
+2018,cl-0q-3tqr,d5348c80|f0c0c2c2,FALSE,AEK Athens,CSKA Moscow,CSKA Moscow,0.6616913809198528,44,0-0,0-3
+2015,el-0q-2sqr,28e7926c|9ac2ced1,FALSE,Neman Grodno,FH,FH,0.6628584520539912,66,1-1,1-3
+2020,el-0q-1fqr,0faf8f33|7517d495,TRUE,Shakhtyor,Hibernians,Shakhtyor,0.6631356305658948,123,1-0,2-0
+2015,el-0q-4po,25dbe099|50995c1e,TRUE,Rijeka,Sheriff Tiraspol,Rijeka,0.6637075488776281,84,0-0,4-0
+2020,el-0q-1fqr,ab75e049|e9fa2e8b,TRUE,Brøndby,Inter Turku,Brøndby,0.6641728283268734,66,1-1,4-3
+2018,el-0q-1fqr,3cb9ad76|c480c810,TRUE,FK Shkëndija,Dacia Chișinău,FK Shkëndija,0.6649578048831362,6,0-0,7-0
+2017,el-0q-4po,0d36ddd4|2fdb4aef,FALSE,Arouca,Olympiacos,Olympiacos,0.6651889040132859,170,1-1,1-3
+2017,el-0q-2sqr,a1962466|e44db2c6,FALSE,MTK Budapest,Gabala FK,Gabala FK,0.6654833486705459,1,0-0,1-4
+2018,el-0q-2sqr,b1b46fc3|b70ec3fa,FALSE,Vaduz,Odd,Odd,0.6668903565827086,41,0-0,0-2
+2020,cl-1k-1r16,361ca564|acbb6a5b,FALSE,Tottenham,RB Leipzig,RB Leipzig,0.667163556454295,57,0-0,0-4
+2019,cl-0q-1fqr,a338349f|baae133b,FALSE,F91 Dudelange,Vidi,Vidi,0.667499586511519,147,2-2,2-3
+2016,cl-1k-2qf,054efa67|a77c513e,TRUE,Bayern Munich,Benfica,Bayern Munich,0.6678944460202615,127,1-1,3-2
+2017,cl-0q-2sqr,1d0836d6|90e37d3a,TRUE,Rosenborg,Norrköping,Rosenborg,0.6688554146057938,47,0-0,5-4
+2017,el-1k-1r32,19c3f8c4|a73408a7,FALSE,Legia Warsaw,Ajax,Ajax,0.6731469214743435,138,0-0,0-1
+2017,el-0q-3tqr,b0333581|f3a5726c,TRUE,Panathinaikos,AIK Stockholm,Panathinaikos,0.6737522774944426,78,0-0,3-0
+2016,el-0q-1fqr,f1e85b1e|f7e8060a,TRUE,FK Kukësi,Torpedo Zho,FK Kukësi,0.6740410929077082,8,0-0,2-0
+2016,el-0q-2sqr,89873a40|e24ac92e,FALSE,Skonto FC,Debrecen,Debrecen,0.6745789186932096,71,2-1,4-11
+2020,cl-1k-1r16,922493f3|dcc91a7b,TRUE,Atalanta,Valencia,Atalanta,0.6757448288856274,15,0-0,8-4
+2019,el-0q-1fqr,5b8cfb05|9ac2ced1,FALSE,Lahti,FH,FH,0.6767009500169725,1,0-0,0-3
+2016,el-0q-3tqr,3f4fe568|5625a7da,FALSE,Sturm Graz,Rubin Kazan,Rubin Kazan,0.6771344307457555,1,0-0,3-4
+2019,el-0q-4po,86b7acd2|ec7fdeb7,TRUE,Rangers,Ufa,Rangers,0.6790608002117758,40,0-0,2-1
+2017,el-0q-4po,79000faa|d298ef2c,FALSE,Beitar Jerusalem,Saint-Étienne,Saint-Étienne,0.6801104556393185,14,1-0,1-2
+2019,el-1k-2r16,50f2a074|d48ad4ff,TRUE,Napoli,RB Salzburg,Napoli,0.6808891878111761,9,0-0,4-3
+2015,el-0q-3tqr,c16f1fe7|dd289621,FALSE,St Johnstone,Spartak Trnava,Spartak Trnava,0.6811222265375845,33,0-0,2-3
+2015,el-0q-2sqr,4149e9fd|ef1ab26a,FALSE,Győr,Göteborg,Göteborg,0.6812361906041053,1,0-0,1-3
+2020,el-0q-0pre,5a130b7c|d8760be1,FALSE,Barry Town,Cliftonville,Cliftonville,0.6817759316546856,114,0-0,0-4
+2016,cl-0q-3tqr,a338349f|b983b638,FALSE,Videoton,BATE Borisov,BATE Borisov,0.6817794239235864,55,0-0,1-2
+2015,el-0q-2sqr,6777e16d|e4a9d483,FALSE,Dundalk FC,Hajduk Split,Hajduk Split,0.6822804915463738,1,0-0,2-3
+2017,el-0q-2sqr,01689b1a|5a130b7c,FALSE,Cliftonville FC,AEK Larnaca FC,AEK Larnaca FC,0.6823688974009396,59,2-0,2-5
+2018,el-1k-1r32,5725cc7b|69d84c29,TRUE,Marseille,Braga,Marseille,0.6843243614698306,3,0-0,3-1
+2020,el-0q-2sqr,4fffe901|51e5a603,TRUE,Gent,Viitorul,Gent,0.6860855985514028,3,0-0,7-5
+2016,cl-0q-2sqr,04c011d8|0faf8f33,FALSE,Hibernians FC,Maccabi Tel Aviv,Maccabi Tel Aviv,0.6864784035031058,147,3-2,3-6
+2020,el-0q-2sqr,8ac05d3e|f3d8c8b9,FALSE,Domžale,Malmö,Malmö,0.6875786176917456,110,3-2,4-5
+2020,el-0q-3tqr,01689b1a|51e5a603,FALSE,AÉK Lárnaka,Gent,Gent,0.688159139597533,1,0-0,1-4
+2017,el-0q-2sqr,4fea542b|ea115eb3,FALSE,RoPS,Lokomotiva,Lokomotiva,0.6886930695901572,73,0-0,1-4
+2020,el-1k-2r16,d3d9424a|f0ac8ee6,,Eint Frankfurt,Basel,,0.6889317435002986,1,0-0,0-3
+2017,el-0q-4po,08ad393c|111cbfb1,FALSE,Slavia Prague,Anderlecht,Anderlecht,0.6902001293090682,49,0-0,0-6
+2015,cl-0q-2sqr,90eb0dcc|aed59852,FALSE,Strømsgodset,Steaua,Steaua,0.6906872576814378,48,0-0,0-3
+2015,el-0q-1fqr,8771d9cd|a8ba56e5,FALSE,FC Shirak,Shakhter,Shakhter,0.6909459014276275,70,0-0,1-6
+2018,el-1k-2r16,2b390eca|5725cc7b,TRUE,Marseille,Athletic Bilbao,Marseille,0.6921281051674213,56,2-1,5-2
+2017,cl-0q-2sqr,5b47810a|edd0d381,FALSE,FK Vardar,Dinamo Zagreb,Dinamo Zagreb,0.6924829279324125,159,3-3,3-5
+2017,el-0q-2sqr,3c4fb635|b1b46fc3,TRUE,Midtjylland,Vaduz,Midtjylland,0.6942328547723471,19,0-0,5-2
+2015,cl-0q-3tqr,651288fd|98ce363d,FALSE,AEL Limassol,Zenit,Zenit,0.6948935871350626,116,1-0,1-3
+2019,cl-0q-3tqr,a77c513e|ae1e2d7d,TRUE,Benfica,Fenerbahçe,Benfica,0.6951977808409696,68,0-0,2-1
+2015,el-0q-1fqr,33afefe1|5a8bd0bd,FALSE,Fram Reykjavík,Nõmme Kalju FC,Nõmme Kalju FC,0.6963973958145512,59,0-0,2-3
+2018,cl-1k-3sf,822bd0ba|cf74a709,TRUE,Liverpool,Roma,Liverpool,0.6967266802137425,34,0-0,7-6
+2019,el-0q-3tqr,4f7b798d|51e5a603,FALSE,Jagiellonia,Gent,Gent,0.6973777905736709,84,0-0,1-4
+2017,el-1k-1r32,18050b20|488c6ba1,FALSE,Ludogorets,FC Copenhagen,FC Copenhagen,0.6979979013681896,1,0-0,1-2
+2017,el-0q-3tqr,3986b791|6507d2b8,TRUE,AZ Alkmaar,PAS Giannina,AZ Alkmaar,0.7000186122026152,118,1-1,3-1
+2020,el-0q-3tqr,33afefe1|baae133b,TRUE,F91 Dudelange,Nõmme Kalju,F91 Dudelange,0.7004821520447948,27,0-0,4-1
+2017,el-0q-2sqr,869a3b6a|8bbab7cf,TRUE,Aberdeen,FK Ventspils,Aberdeen,0.70089736561659,71,0-0,4-0
+2018,el-0q-3tqr,04c011d8|1ad6cc2c,TRUE,Maccabi Tel Aviv,Panionios,Maccabi Tel Aviv,0.7012692599977737,47,0-0,2-0
+2020,cl-0q-4po,90e37d3a|edd0d381,TRUE,Dinamo Zagreb,Rosenborg,Dinamo Zagreb,0.7021865656128327,7,0-0,3-1
+2019,el-0q-0pre,0876564a|49a61d12,FALSE,Cefn Druids AFC,Riteriai,Riteriai,0.7036950032330902,85,1-0,1-2
+2017,el-0q-1fqr,b70ec3fa|c4e86b86,TRUE,Odd,IFK Mariehamn,Odd,0.7039898482279797,62,0-0,3-1
+2015,el-0q-2sqr,25dbe099|6611f992,TRUE,Rijeka,Ferencváros,Rijeka,0.7042209067628143,84,0-0,3-1
+2016,el-0q-1fqr,253fffc4|ead990c4,FALSE,Víkingur Reyk,FC Koper,FC Koper,0.7047802062785321,76,0-0,2-3
+2018,cl-0q-2sqr,18050b20|e5dea1f1,FALSE,MŠK Žilina,FC Copenhagen,FC Copenhagen,0.7049856818426761,60,1-0,3-4
+2015,cl-0q-2sqr,b983b638|df526548,TRUE,BATE Borisov,Skënderbeu Korçë,BATE Borisov,0.7053693506073204,118,0-0,1*-1
+2016,el-0q-2sqr,a73408a7|d921c99f,TRUE,Legia Warsaw,Botoșani,Legia Warsaw,0.7055738313572063,77,0-0,4-0
+2020,el-0q-4po,86b7acd2|a73408a7,FALSE,Legia Warsaw,Rangers,Rangers,0.7059509814394542,90,0-0,0-1
+2020,el-0q-1fqr,187832f5|43a5e45a,TRUE,Maccabi Haifa,NŠ Mura,Maccabi Haifa,0.708488228541804,63,0-0,5-2
+2019,el-1k-1r32,b81aa4fa|dcc91a7b,FALSE,Celtic,Valencia,Valencia,0.7085163854248675,41,0-0,0-3
+2018,cl-0q-4po,13dc44fd|aed59852,TRUE,Sporting CP,FCSB,Sporting CP,0.711149784527215,102,0-0,5-1
+2016,el-0q-2sqr,b70ec3fa|f082c4f3,FALSE,Shamrock Rov,Odd,Odd,0.7123444285743898,52,0-0,1-4
+2018,cl-0q-4po,033ea6b8|822bd0ba,FALSE,Hoffenheim,Liverpool,Liverpool,0.7126057556601857,34,0-0,3-6
+2020,el-0q-4po,18050b20|91cc0413,TRUE,FC Copenhagen,Rīga FC,FC Copenhagen,0.7127116543544658,61,1-1,3-2
+2017,cl-1k-1r16,5e876ee6|e0652b02,FALSE,Porto,Juventus,Juventus,0.7127353182349859,71,0-0,0-3
+2020,cl-0q-2sqr,44b65410|e4a9d483,FALSE,Dundalk,Qarabağ Ağdam,Qarabağ Ağdam,0.7127730105006991,1,0-0,1-4
+2018,cl-0q-3tqr,2fdb4aef|dde3e804,FALSE,Partizan,Olympiacos,Olympiacos,0.71277641721048135,1,0-0,3-5
+2015,cl-1k-2qf,e0652b02|fd6114db,TRUE,Juventus,Monaco,Juventus,0.712862016781507,55,0-0,1-0
+2016,cl-0q-3tqr,d3d9424a|fdba14df,FALSE,Lech Poznań,Basel,Basel,0.7128640996713511,33,0-0,1-4
+2020,el-0q-3tqr,b983b638|fac9957a,FALSE,Sarajevo,BATE Borisov,BATE Borisov,0.7130056458607759,1,0-0,1-2
+2018,el-0q-2sqr,1ad6cc2c|e404a61d,TRUE,Panionios,ND Gorica,Panionios,0.713033377113403,11,0-0,5-2
+2020,el-0q-2sqr,174bd5a0|42e847bc,TRUE,Molde,Čukarički,Molde,0.7132185601543668,93,0-0,3-1
+2017,el-0q-2sqr,820a1312|d7d06475,TRUE,Admira,Kapaz PFK,Admira,0.7140344342123786,40,0-0,3-0
+2019,el-0q-2sqr,924759ab|d20821dd,TRUE,LASK Linz,Lillestrøm,LASK Linz,0.7140933074330988,5,0-0,6-1
+2016,cl-0q-4po,df526548|edd0d381,FALSE,Skënderbeu Korçë,Dinamo Zagreb,Dinamo Zagreb,0.7141933270363652,65,1-0,2-6
+2020,cl-0q-1fqr,3ba2fddf|44b65410,FALSE,Partizani Tirana,Qarabağ Ağdam,Qarabağ Ağdam,0.7143388676876945,140,0-0,0-2
+2015,el-1k-2r16,2a8183b3|ad2be733,FALSE,Villarreal,Sevilla,Sevilla,0.7147756166064538,1,0-1,2-5
+2020,cl-0q-4po,d20821dd|f1e6c5f1,FALSE,LASK,Club Brugge,Club Brugge,0.7147952776857308,1,0-0,1-3
+2019,cl-0q-1fqr,231f4a61|50995c1e,FALSE,Torpedo Kutaisi,Sheriff Tiraspol,Sheriff Tiraspol,0.7153183049574334,98,2-1,2-4
+2015,cl-0q-2sqr,869a3b6a|f3d8c8b9,TRUE,Malmö,FK Ventspils,Malmö,0.7153396266683545,108,0-0,1-0
+2017,cl-1k-1r16,c7a9f859|db3b9613,FALSE,Bayer,Atlético Madrid,Atlético Madrid,0.7169633013295591,1,0-0,2-4
+2020,el-0q-1fqr,e24ac92e|f1e85b1e,TRUE,Debrecen,Kukësi,Debrecen,0.7175778704785672,53,0-0,4-1
+2017,cl-0q-2sqr,e2fa043d|e6232d10,TRUE,Dinamo Tbilisi,Alashkert FC,Dinamo Tbilisi,0.7176802814661607,54,0-0,3-1
+2016,el-0q-1fqr,15c5743b|49a61d12,TRUE,Trakai,Havnar Bóltfelag,Trakai,0.7194079241588207,19,0-0,7-1
+2020,el-0q-3tqr,ae7f2f70|e4a9d483,TRUE,Slovan Bratislava,Dundalk,Slovan Bratislava,0.7198386015990001,85,0-0,4-1
+2015,el-0q-4po,44ef020f|c39b0fab,FALSE,Ruch Chorzów,Metalist Kharkiv,Metalist Kharkiv,0.720052626469325,194,0-0,0-1
+2015,cl-0q-3tqr,44b65410|50f2a074,FALSE,Qarabağ FK,RB Salzburg,RB Salzburg,0.7206900549359228,41,1-0,2-3
+2017,el-1k-4sf,19538871|f25da7fb,FALSE,Celta Vigo,Manchester Utd,Manchester Utd,0.721336962781378,66,0-0,1-2
+2015,cl-0q-2sqr,2a6cfcb2|2aae7689,FALSE,Zrinjski Mostar,NK Maribor,NK Maribor,0.72136899501217,134,0-0,0-2
+2019,el-0q-3tqr,1e972a99|fdba14df,TRUE,Genk,Lech Poznań,Genk,0.7227167477351218,43,0-0,4-1
+2018,el-0q-1fqr,8771d9cd|e404a61d,FALSE,FC Shirak,ND Gorica,ND Gorica,0.7247216539351129,1,0-0,2-4
+2019,el-0q-2sqr,231f4a61|ea73b616,TRUE,Torpedo Kutaisi,Víkingur Gøta,Torpedo Kutaisi,0.7255894760435794,26,0-0,7-0
+2019,el-0q-2sqr,d2f21b23|d8b8c85b,FALSE,Górnik Zabrze,FK AS Trenčín,FK AS Trenčín,0.7257740561581765,38,0-0,1-5
+2018,el-0q-3tqr,4deda092|5a5e7874,FALSE,Olimpik Donetsk,PAOK,PAOK,0.7261275876080691,59,1-0,1-3
+2020,el-0q-3tqr,50995c1e|b0333581,FALSE,Sheriff Tiraspol,AIK Stockholm,AIK Stockholm,0.7266098311307077,1,0-0,2-3
+2020,el-0q-2sqr,a1962466|e2fa043d,FALSE,Qəbələ,Dinamo Tbilisi,Dinamo Tbilisi,0.7267920802163197,40,0-0,0-5
+2015,el-1k-1r32,b81aa4fa|d609edc0,FALSE,Celtic,Inter,Inter,0.7272690140527118,1,0-0,3-4
+2016,el-1k-2r16,361ca564|add600ae,TRUE,Dortmund,Tottenham,Dortmund,0.7272722885664281,29,0-0,5-1
+2017,el-1k-1r32,12d53956|1e972a99,FALSE,Astra Giurgiu,Genk,Genk,0.7284757719191262,1,0-0,2-3
+2018,el-0q-2sqr,4ebc9920|e2a78c9d,FALSE,FK Rabotnički,Dinamo Minsk,Dinamo Minsk,0.7307858386609147,52,0-0,1-4
+2015,el-0q-2sqr,15e031af|f4f98e1c,FALSE,Budućnost,AC Omonia,AC Omonia,0.730885934423874,35,0-0,0-2
+2015,el-0q-2sqr,2c9bebcd|f75c6442,FALSE,MFK Košice,Slovan Liberec,Slovan Liberec,0.7311421150131298,81,0-0,0-4
+2019,el-0q-2sqr,8dff1828|ee945014,FALSE,Željezničar,Apollon,Apollon,0.7326501305546071,1,0-0,2-5
+2019,el-0q-2sqr,04c011d8|72804f2b,TRUE,Maccabi Tel Aviv,Radnički Niš,Maccabi Tel Aviv,0.7337802031854361,50,0-0,4-2
+2019,el-0q-3tqr,654ac5a4|9e3153f3,FALSE,Spartaks Jūrmala,Sūduva,Sūduva,0.7345599412194532,51,0-0,0-1
+2019,el-0q-1fqr,72804f2b|8ab497d5,TRUE,Radnički Niš,Gżira United FC,Radnički Niš,0.7347867219595074,13,0-0,5-0
+2016,el-0q-2sqr,49a61d12|8dff1828,TRUE,Apollon Limassol,Trakai,Apollon Limassol,0.7350577528857104,20,0-0,4-0
+2016,el-0q-3tqr,ae7f2f70|fa11a9cc,TRUE,Krasnodar,ŠK Slovan Bratislava,Krasnodar,0.7363984064371912,44,0-0,5-3
+2020,el-0q-1fqr,231f4a61|38bfcdf5,TRUE,Ordabasy,Torpedo Kutaisi,Ordabasy,0.73696961642267,66,0-0,3-0
+2020,el-0q-2sqr,8bbab7cf|e839c85b,FALSE,Chikhura,Aberdeen,Aberdeen,0.7378526773070027,67,1-0,1-6
+2017,el-0q-4po,1e972a99|ea115eb3,FALSE,Lokomotiva,Genk,Genk,0.7381064167634326,34,0-0,2-4
+2020,el-0q-4po,8dff1828|e334d850,TRUE,PSV Eindhoven,Apollon,PSV Eindhoven,0.7381274224162729,46,0-0,7-0
+2019,el-0q-1fqr,584d189a|8ac05d3e,FALSE,NK Široki Brijeg,NK Domžale,NK Domžale,0.7387418135923778,1,0-0,3-3*
+2018,cl-0q-4po,b81aa4fa|c72c8787,TRUE,Celtic,FC Astana,Celtic,0.7404143845993328,31,0-0,8-4
+2020,el-0q-2sqr,9549dc95|c72c8787,FALSE,Santa Coloma,Astana FK,Astana FK,0.7407277753342412,113,1-0,1-4
+2016,cl-0q-3tqr,44b65410|b81aa4fa,TRUE,Celtic,Qarabağ FK,Celtic,0.7409040841250902,81,0-0,1-0
+2020,el-0q-4po,b0333581|b81aa4fa,TRUE,Celtic,AIK Stockholm,Celtic,0.7414553422189727,47,0-0,6-1
+2020,el-0q-3tqr,e2fa043d|fb4ca611,TRUE,Feyenoord,Dinamo Tbilisi,Feyenoord,0.741856916514482,42,0-0,5-1
+2016,el-0q-2sqr,04dcef70|ae7f2f70,TRUE,ŠK Slovan Bratislava,UC Dublin,ŠK Slovan Bratislava,0.7422644869622164,29,0-0,6-1
+2018,el-0q-4po,69d84c29|9ac2ced1,FALSE,FH,Braga,Braga,0.7426017259779294,169,3-3,3-5
+2018,el-0q-3tqr,5725cc7b|95b895fe,TRUE,Marseille,Oostende,Marseille,0.7427127585857274,81,3-2,4-2
+2017,el-1k-3qf,08ad393c|19538871,FALSE,Anderlecht,Manchester Utd,Manchester Utd,0.744117682967264,181,2-2,2-3
+2015,cl-0q-2sqr,50995c1e|55ff3845,TRUE,Sheriff Tiraspol,Sutjeska Nikšić,Sheriff Tiraspol,0.7443840512270784,70,0-0,5-0
+2017,el-0q-3tqr,1e972a99|4936d1b7,TRUE,Genk,Cork City FC,Genk,0.7451000926104482,30,0-0,3-1
+2016,el-0q-1fqr,c56c28b0|c582b57f,FALSE,NK Celje,Śląsk Wrocław,Śląsk Wrocław,0.7453043395429496,31,0-0,1-4
+2020,el-0q-3tqr,1eebf7c3|d5348c80,FALSE,U Craiova,AEK Athens,AEK Athens,0.7453884063065535,59,0-0,1-3
+2017,cl-1k-3sf,e0652b02|fd6114db,FALSE,Monaco,Juventus,Juventus,0.7461220312144856,1,0-0,1-4
+2019,el-0q-2sqr,2aae7689|e839c85b,FALSE,Chikhura,NK Maribor,NK Maribor,0.7469139738917416,159,0-0,0-2
+2016,el-0q-1fqr,6611f992|e33d6108,FALSE,Go Ahead Eag,Ferencváros,Ferencváros,0.747088401000741,1,0-0,2-5
+2018,el-1k-3qf,18bb7c10|f0c0c2c2,TRUE,Arsenal,CSKA Moscow,Arsenal,0.7491630958062757,140,4-3,6-3
+2016,el-0q-2sqr,3cb9ad76|e5dea1f1,FALSE,Dacia Chișinău,MŠK Žilina,MŠK Žilina,0.7497519176376446,52,0-0,3-6
+2015,el-0q-1fqr,15f9a98b|6dbe9dca,TRUE,Derry City FC,Aberystwyth,Derry City FC,0.7497801063689218,14,0-0,9-0
+2017,el-0q-4po,278db974|3986b791,FALSE,Vojvodina,AZ Alkmaar,AZ Alkmaar,0.7500971805228686,1,0-0,0-3
+2017,el-0q-1fqr,c8282e20|e44db2c6,FALSE,FC Aktobe,MTK Budapest,MTK Budapest,0.750962290759343,1,0-0,1-3
+2016,el-0q-3tqr,209d7fa2|33c895d4,TRUE,Southampton,Vitesse,Southampton,0.7514753340806282,35,0-0,5-0
+2018,el-0q-1fqr,6611f992|8a898dad,TRUE,Ferencváros,FK Jelgava,Ferencváros,0.7526492033612097,10,0-0,3-0
+2020,cl-0q-1fqr,2aae7689|b838366a,FALSE,Valur,Maribor,Maribor,0.754214428749133,42,0-0,0-5
+2020,el-0q-4po,44b65410|4c96013a,FALSE,Linfield,Qarabağ Ağdam,Qarabağ Ağdam,0.7546486993194783,89,3-1,4-4*
+2019,el-1k-3qf,2a8183b3|dcc91a7b,FALSE,Villarreal,Valencia,Valencia,0.7546862655856162,1,0-0,1-5
+2018,el-0q-1fqr,7d326cbe|d7319d80,FALSE,Connah's Quay,HJK Helsinki,HJK Helsinki,0.7547361656725565,100,1-0,1-3
+2020,el-0q-1fqr,133013ee|7a40cd8b,FALSE,Laçi,Be'er Sheva,Be'er Sheva,0.7552939388055215,77,1-0,1-2
+2017,el-1k-2r16,08ad393c|eab315a6,FALSE,APOEL FC,Anderlecht,Anderlecht,0.7558944357740496,1,0-0,0-2
+2017,el-0q-2sqr,ad2649a5|ef1ab26a,FALSE,Piast Gliwice,Göteborg,Göteborg,0.7563938342174579,1,0-0,0-3
+2019,el-0q-2sqr,6777e16d|b35f18af,TRUE,Hajduk Split,Slavia Sofia,Hajduk Split,0.7568436811486001,78,0-0,4-2
+2017,cl-0q-1fqr,aaffe678|fd12ff13,TRUE,The New Saints,S.P. Tre Penne,The New Saints,0.7572649432754514,134,2-1,5-1
+2020,el-0q-1fqr,42e847bc|f0e1ca42,TRUE,Čukarički,Banants,Čukarički,0.7578115842374644,42,0-0,8-0
+2015,cl-0q-4po,0f9294bd|18bb7c10,FALSE,Beşiktaş,Arsenal,Arsenal,0.758546924141049,134,0-0,0-1
+2018,el-0q-1fqr,97171221|db5a37c5,TRUE,Irtysh Pavlodar,Dunav Ruse,Irtysh Pavlodar,0.7585605193198789,4,0-0,3-0
+2015,el-0q-2sqr,42e847bc|d40080b0,FALSE,Čukarički,Grödig,Grödig,0.7586847065625177,1,0-0,2-5
+2017,el-0q-1fqr,857b60c3|8ac05d3e,TRUE,NK Domžale,FC Lusitanos,NK Domžale,0.7590082840852641,5,0-1,5-2
+2016,el-0q-4po,02cd81bf|278db974,TRUE,Viktoria Plzeň,Vojvodina,Viktoria Plzeň,0.760285208726003,24,0-0,5-0
+2020,el-1k-1r32,8cec06e1|a8661628,TRUE,Wolves,Espanyol,Wolves,0.760507941143267,14,0-0,6-3
+2015,cl-0q-2sqr,4ebc9920|d7319d80,FALSE,FK Rabotnički,HJK Helsinki,HJK Helsinki,0.7606992745027066,111,0-0,1-2
+2015,el-0q-3tqr,8bbab7cf|e31d1cd9,TRUE,Real Sociedad,Aberdeen,Real Sociedad,0.7609385685602832,52,0-0,5-2
+2020,el-1k-2r16,86b7acd2|c7a9f859,,Rangers,Leverkusen,,0.761001102098828,36,0-0,1-3
+2016,cl-1k-1r16,b8fd03ef|c734e22f,FALSE,Dynamo Kyiv,Manchester City,Manchester City,0.7619947353156539,1,0-0,1-3
+2018,el-1k-1r32,488c6ba1|dc56fe14,FALSE,Ludogorets,Milan,Milan,0.7632899006794935,44,0-0,0-4
+2016,el-0q-3tqr,01689b1a|123f3efe,TRUE,Bordeaux,AEK Larnaca FC,Bordeaux,0.7633008070449455,52,0-0,4-0
+2016,el-0q-1fqr,1a1d4c22|ea115eb3,FALSE,AUK Broughton,Lokomotiva,Lokomotiva,0.7635394930323535,47,1-0,3-5
+2020,el-0q-1fqr,2a6cfcb2|99875d32,FALSE,Akad Pandev,Zrinjski Mostar,Zrinjski Mostar,0.7656479683475421,1,0-0,0-6
+2019,cl-0q-4po,a338349f|d5348c80,FALSE,Vidi,AEK Athens,AEK Athens,0.7673373564778923,33,0-0,2-3
+2019,el-0q-1fqr,b0333581|f082c4f3,FALSE,Shamrock Rov,AIK Stockholm,AIK Stockholm,0.7675567652327137,181,1-1,1-2
+2020,el-0q-3tqr,8c635914|9ae758c2,FALSE,Thun,Spartak Moscow,Spartak Moscow,0.767775661092811,1,0-0,3-5
+2015,el-0q-1fqr,dd3fa21f|f13065a8,TRUE,Stjarnan,Bangor City FC,Stjarnan,0.7680028965479699,12,0-0,8-0
+2016,cl-0q-2sqr,0b6cd7c6|df526548,TRUE,Skënderbeu Korçë,Crusaders FC,Skënderbeu Korçë,0.7684309922563453,14,0-0,6-4
+2016,el-0q-4po,a338349f|fdba14df,TRUE,Lech Poznań,Videoton,Lech Poznań,0.7685905743362176,10,0-0,4-0
+2015,el-0q-3tqr,15e031af|fd36fea1,TRUE,AC Omonia,Metalurg Skopje,AC Omonia,0.7686040202921125,8,0-0,4-0
+2017,el-0q-1fqr,869a3b6a|ea73b616,TRUE,FK Ventspils,Víkingur Gøta,FK Ventspils,0.7690300595080088,4,0-0,4-0
+2018,el-0q-1fqr,112c9642|4936d1b7,FALSE,Levadia Tallinn,Cork City FC,Cork City FC,0.7709375154405123,41,0-0,2-6
+2017,cl-0q-3tqr,e2fa043d|edd0d381,TRUE,Dinamo Zagreb,Dinamo Tbilisi,Dinamo Zagreb,0.7712891015820275,38,0-0,3-0
+2020,cl-0q-2sqr,3f53cc7a|6611f992,TRUE,Ferencváros,Valletta,Ferencváros,0.7730559676177183,149,3-2,4-2
+2016,cl-0q-2sqr,fac9957a|fdba14df,FALSE,FK Sarajevo,Lech Poznań,Lech Poznań,0.7738362040889133,39,0-0,0-3
+2016,el-1k-1r32,5e876ee6|add600ae,TRUE,Dortmund,Porto,Dortmund,0.7747268265555075,5,0-0,3-0
+2020,el-0q-4po,1040e0f7|f3d8c8b9,TRUE,Malmö,Bnei Yehuda TA,Malmö,0.7748452423741236,35,0-0,4-0
+2015,el-0q-3tqr,e334d850|f722bd04,TRUE,PSV Eindhoven,St. Pölten,PSV Eindhoven,0.7751382281918446,55,0-0,4-2
+2016,el-0q-1fqr,ec560e72|f082c4f3,FALSE,Progrès,Shamrock Rov,Shamrock Rov,0.7752269544152872,110,0-0,0-3
+2015,el-0q-1fqr,27b6696c|9558d297,TRUE,RNK Split,FC Mika,RNK Split,0.7753113619070356,38,0-0,3-1
+2020,el-0q-4po,133013ee|fb4ca611,TRUE,Feyenoord,Be'er Sheva,Feyenoord,0.7754745489140646,32,0-0,6-0
+2015,el-0q-1fqr,63866313|6e8ad38a,FALSE,FC Tiraspol,Inter Baku,Inter Baku,0.7759686818259841,1,0-0,3-6
+2015,el-0q-1fqr,9ac2ced1|b3b6ca5d,TRUE,FH,Glenavon FC,FH,0.7761071258404839,81,0-0,6-2
+2019,el-0q-1fqr,d8b8c85b|f4f98e1c,FALSE,Budućnost,FK AS Trenčín,FK AS Trenčín,0.7763078585462521,1,0-0,1-3
+2017,el-0q-3tqr,4fffe901|51e5a603,TRUE,Gent,Viitorul,Gent,0.7771394408871459,16,0-0,5-0
+2019,el-1k-3qf,111cbfb1|cff3d9bb,FALSE,Slavia Prague,Chelsea,Chelsea,0.7786500329904831,85,0-0,3-5
+2019,el-0q-1fqr,31ef340d|8dff1828,FALSE,FC Stumbras,Apollon,Apollon,0.7788776062731957,96,1-0,1-2
+2018,cl-0q-2sqr,44b65410|b8b2d55e,TRUE,Qarabağ FK,FC Samtredia,Qarabağ FK,0.7788984917992628,9,0-0,6-0
+2017,el-0q-2sqr,75cd4ee3|b0333581,TRUE,AIK Stockholm,Europa FC,AIK Stockholm,0.779395894458605,88,0-0,2-0
+2015,el-0q-1fqr,251418b2|b393ffaf,TRUE,MYPA,ÍF Fuglafjørður,MYPA,0.7795954786916628,75,0-0,1-0
+2016,cl-0q-2sqr,ae098b55|dde3e804,TRUE,Partizan,FC Dila Gori,Partizan,0.7797838489472856,81,0-0,3-0
+2020,el-0q-2sqr,869753d6|d423a378,TRUE,Luzern,KÍ,Luzern,0.7798447511668273,89,0-0,2-0
+2019,el-0q-1fqr,18050b20|e6f63673,FALSE,KuPS,FC Copenhagen,FC Copenhagen,0.7798834960202817,170,1-1,1-2
+2019,el-0q-3tqr,2fdb4aef|d423a378,TRUE,Olympiacos,Luzern,Olympiacos,0.7798858281758192,9,0-0,7-1
+2018,el-0q-4po,6777e16d|d3fd31cc,TRUE,Everton,Hajduk Split,Everton,0.7802919700463561,29,0-0,3-1
+2017,el-0q-2sqr,278db974|7d326cbe,TRUE,Vojvodina,Connah's Quay,Vojvodina,0.7803343696800098,85,0-0,3-1
+2016,el-1k-1r32,0cdc4311|822bd0ba,FALSE,Augsburg,Liverpool,Liverpool,0.7806055812518435,94,0-0,0-1
+2018,cl-0q-1fqr,4c96013a|6de42722,TRUE,Linfield FC,S.P. La Fiorita,Linfield FC,0.7813917679226112,88,0-0,1-0
+2015,cl-0q-3tqr,aed59852|c8282e20,FALSE,FC Aktobe,Steaua,Steaua,0.7819782856414575,43,0-0,3-4
+2015,el-0q-2sqr,251418b2|e2a78c9d,TRUE,Dinamo Minsk,MYPA,Dinamo Minsk,0.7827871172266126,24,0-0,3-0
+2019,cl-0q-2sqr,44b65410|f1e85b1e,FALSE,FK Kukësi,Qarabağ Ağdam,Qarabağ Ağdam,0.7829364867209384,113,0-0,0-3
+2018,cl-0q-2sqr,baae133b|eab315a6,TRUE,APOEL FC,F91 Dudelange,APOEL FC,0.7835648241384975,71,0-0,2-0
+2017,el-1k-1r32,19538871|d298ef2c,TRUE,Manchester Utd,Saint-Étienne,Manchester Utd,0.7835665149391192,14,0-0,4-0
+2016,el-0q-3tqr,33c6b26e|ee945014,TRUE,Standard Liège,Željezničar,Standard Liège,0.783758843515691,157,2-1,3-1
+2018,cl-0q-2sqr,133013ee|8cac5dfa,TRUE,Be'er Sheva,Honvéd,Be'er Sheva,0.7838991146533361,34,0-0,5-3
+2015,cl-0q-4po,18050b20|c7a9f859,FALSE,FC Copenhagen,Bayer,Bayer,0.7852190148688926,12,2-1,2-7
+2020,el-0q-3tqr,2a6cfcb2|f3d8c8b9,TRUE,Malmö,Zrinjski Mostar,Malmö,0.7861381075096218,35,0-0,3-1
+2016,el-0q-1fqr,55ff3845|e24ac92e,TRUE,Debrecen,Sutjeska Nikšić,Debrecen,0.787192453652972,15,0-0,3-2
+2016,el-0q-4po,ae1e2d7d|c9607f44,FALSE,Atromitos,Fenerbahçe,Fenerbahçe,0.7875845073532214,89,0-0,0-4
+2015,el-0q-1fqr,1a1d4c22|f4bbcd04,FALSE,AUK Broughton,Haugesund,Haugesund,0.7876279567688246,42,1-0,2-3
+2015,el-0q-2sqr,a8ba56e5|d7478aa0,FALSE,FK Atlantas,Shakhter,Shakhter,0.7886968482204333,135,0-0,0-3
+2016,cl-0q-2sqr,03022534|174bd5a0,TRUE,Molde,FC Pyunik,Molde,0.7888304197791767,35,0-0,5-1
+2015,el-0q-1fqr,056a9b27|4c96013a,FALSE,B36 Tórshavn,Linfield FC,Linfield FC,0.7889583393693229,37,0-0,2-3
+2015,cl-0q-2sqr,5a130b7c|e24ac92e,FALSE,Cliftonville FC,Debrecen,Debrecen,0.7892306235802923,143,0-0,0-2
+2018,el-0q-2sqr,099c6eb5|db5a37c5,FALSE,Irtysh Pavlodar,Red Star,Red Star,0.7897792608047595,50,0-0,1-3
+2015,el-0q-3tqr,70c92f33|d53c0b06,FALSE,Mladá Boleslav,Lyon,Lyon,0.7899295523846932,1,0-0,2-6
+2015,cl-0q-2sqr,ae7f2f70|fd12ff13,TRUE,ŠK Slovan Bratislava,The New Saints,ŠK Slovan Bratislava,0.7903692373266709,51,0-0,3-0
+2018,el-0q-4po,c1b0f61b|c734e22f,FALSE,Marítimo,Dynamo Kyiv,Dynamo Kyiv,0.7904789455977292,122,0-0,1-3
+2017,cl-1k-2qf,a2d435b3|db3b9613,TRUE,Atlético Madrid,Leicester City,Atlético Madrid,0.7906745936285143,27,0-0,2-1
+2017,el-0q-1fqr,0a6448a7|b1b46fc3,TRUE,Vaduz,FK Sileks,Vaduz,0.791280174721024,121,3-2,5-2
+2019,el-0q-3tqr,123f3efe|42b37a13,FALSE,FC Mariupol,Bordeaux,Bordeaux,0.7917908472170312,32,1-0,2-5
+2020,cl-0q-4po,111cbfb1|ff04e205,FALSE,CFR Cluj,Slavia Prague,Slavia Prague,0.7918225895770449,1,0-0,0-2
+2020,el-0q-2sqr,abffa138|ae7f2f70,TRUE,Slovan Bratislava,Feronikeli,Slovan Bratislava,0.7927027148296163,108,2-1,4-1
+2016,el-0q-2sqr,33afefe1|b1b46fc3,TRUE,Vaduz,Nõmme Kalju FC,Vaduz,0.7928909396361882,89,2-1,5-1
+2018,el-0q-1fqr,49e1cbfd|a338349f,TRUE,Videoton,Balzan FC,Videoton,0.7944395416807775,78,0-0,5-3
+2017,el-0q-3tqr,33afefe1|ed6b1d21,TRUE,Osmanlıspor,Nõmme Kalju FC,Osmanlıspor,0.7944932751313788,73,0-0,3-0
+2015,el-0q-4po,22a5a99c|c16f1fe7,FALSE,Spartak Trnava,Zürich,Zürich,0.7951578035179278,1,0-0,2-4
+2018,cl-1k-1r16,5e876ee6|822bd0ba,FALSE,Porto,Liverpool,Liverpool,0.7956818303077651,1,0-0,0-5
+2015,el-0q-4po,7517d495|e334d850,TRUE,PSV Eindhoven,Shakhtyor,PSV Eindhoven,0.7971608594602738,58,0-0,3-0
+2017,cl-0q-2sqr,2a6cfcb2|a73408a7,FALSE,Zrinjski Mostar,Legia Warsaw,Legia Warsaw,0.7972194556944673,48,0-0,1-3
+2015,cl-0q-3tqr,7b66a29c|cb188c0c,FALSE,Grasshopper,Lille,Lille,0.797480244387166,1,0-0,1-3
+2015,el-0q-4po,a73408a7|c8282e20,FALSE,FC Aktobe,Legia Warsaw,Legia Warsaw,0.7975083411717033,47,0-0,0-3
+2018,el-0q-1fqr,3f53cc7a|c582b1da,TRUE,Valletta FC,Folgore,Valletta FC,0.7981441721712483,41,0-0,3-0
+2016,el-0q-4po,4ebc9920|5625a7da,FALSE,FK Rabotnički,Rubin Kazan,Rubin Kazan,0.7987140190946105,53,0-0,1-2
+2015,el-0q-2sqr,174bd5a0|e404a61d,TRUE,Molde,ND Gorica,Molde,0.7988430342660854,15,0-0,5-2
+2015,el-0q-2sqr,3d81ccdb|4f30dd8b,TRUE,Petrolul,Flamurtari Vlorë,Petrolul,0.8000109204360303,76,0-0,5-1
+2019,cl-0q-2sqr,19c3f8c4|3f4fe568,TRUE,Ajax,Sturm Graz,Ajax,0.8010918441735047,14,0-0,5-1
+2018,cl-1k-2qf,054efa67|ad2be733,FALSE,Sevilla,Bayern Munich,Bayern Munich,0.8015536217274808,36,1-0,1-2
+2016,el-0q-2sqr,12d53956|4463fecb,FALSE,Inverness CT,Astra Giurgiu,Astra Giurgiu,0.8022647046712527,1,0-0,0-1
+2017,el-0q-1fqr,278db974|9bc3bc52,FALSE,FK Bokelj,Vojvodina,Vojvodina,0.8047092692744982,6,1-0,1-6
+2016,el-0q-3tqr,c7d6f62e|d298ef2c,FALSE,Târgu Mureș,Saint-Étienne,Saint-Étienne,0.8058672643728758,1,0-0,2-4
+2019,el-0q-3tqr,4936d1b7|90e37d3a,FALSE,Cork City FC,Rosenborg,Rosenborg,0.8060834460041109,1,0-0,0-5
+2016,cl-1k-1r16,18bb7c10|206d90db,FALSE,Arsenal,Barcelona,Barcelona,0.8062598038870146,70,0-0,1-5
+2015,el-0q-3tqr,4b682260|5ac58233,TRUE,Young Boys,Ermis Aradippou,Young Boys,0.8072851331769718,57,0-0,3-0
+2016,el-0q-2sqr,8771d9cd|b0333581,TRUE,AIK Stockholm,FC Shirak,AIK Stockholm,0.8076291979527788,28,0-0,4-0
+2017,el-0q-4po,7b66a29c|ae1e2d7d,TRUE,Fenerbahçe,Grasshopper,Fenerbahçe,0.8076664404335933,3,0-0,5-0
+2017,el-0q-4po,5a5e7874|e2fa043d,FALSE,Dinamo Tbilisi,PAOK,PAOK,0.8081309600365121,1,0-0,0-5
+2017,el-1k-1r32,5a5e7874|c539e393,FALSE,PAOK,Schalke 04,Schalke 04,0.8085674504462147,1,0-0,1-4
+2019,cl-1k-1r16,206d90db|d53c0b06,FALSE,Lyon,Barcelona,Barcelona,0.8086237951885469,107,0-0,1-5
+2017,el-0q-1fqr,4936d1b7|4c96013a,FALSE,Linfield FC,Cork City FC,Cork City FC,0.8092825146382718,62,0-0,1-2
+2019,cl-0q-1fqr,c480c810|fd12ff13,TRUE,FK Shkëndija,The New Saints,FK Shkëndija,0.8101102019040751,13,0-0,5-4
+2019,el-0q-1fqr,4c6489de|869753d6,FALSE,KÍ Klaksvík,Žalgiris,Žalgiris,0.8106943508074427,39,0-0,2-3
+2015,el-0q-1fqr,0baacc84|34cc3f19,FALSE,Banga Gargždai,Sligo Rovers FC,Sligo Rovers FC,0.8108467089420401,134,0-0,0-4
+2019,el-1k-1r32,18bb7c10|b983b638,FALSE,BATE Borisov,Arsenal,Arsenal,0.8109004305116958,90,1-0,1-3
+2020,el-0q-2sqr,2d3c1b6d|85dbecd4,TRUE,Ararat-Armenia,Red Imps,Ararat-Armenia,0.8109022175211088,30,0-0,4-1
+2017,cl-0q-2sqr,b983b638|c889f292,TRUE,BATE Borisov,SJK Seinäjoki,BATE Borisov,0.811341126064227,31,0-0,4-2
+2019,el-0q-1fqr,112c9642|e4a9d483,FALSE,Levadia Tallinn,Dundalk FC,Dundalk FC,0.8117704306862578,52,0-0,1-3
+2019,el-0q-0pre,78816dd0|8ab497d5,FALSE,UE Sant Julià,Gżira United FC,Gżira United FC,0.8119676979858433,1,0-0,1-4
+2019,el-0q-4po,90e37d3a|c480c810,TRUE,Rosenborg,FK Shkëndija,Rosenborg,0.8121194035630076,10,0-0,5-1
+2017,el-0q-3tqr,79000faa|8a898dad,FALSE,FK Jelgava,Beitar Jerusalem,Beitar Jerusalem,0.8123953511637122,1,0-0,1-4
+2016,cl-0q-3tqr,4b682260|fd6114db,FALSE,Young Boys,Monaco,Monaco,0.8126277433491187,63,0-0,1-7
+2018,el-0q-2sqr,8b63ce55|ab75e049,TRUE,Brøndby,VPS,Brøndby,0.8146704870285238,141,3-2,3-2
+2015,cl-0q-2sqr,4c6489de|edd0d381,TRUE,Dinamo Zagreb,Žalgiris,Dinamo Zagreb,0.8152985519146624,57,0-0,4-0
+2019,el-1k-2r16,c734e22f|cff3d9bb,TRUE,Chelsea,Dynamo Kyiv,Chelsea,0.8162106531610566,16,0-0,8-0
+2019,el-0q-1fqr,7795f801|ae7f2f70,FALSE,FC Milsami Orhei,Slovan Bratislava,Slovan Bratislava,0.8166798298013936,1,0-0,2-9
+2019,el-0q-1fqr,57d14db5|ae96366c,FALSE,Petrocub,Osijek,Osijek,0.8169811007842445,150,2-2,2-3
+2020,el-0q-2sqr,488c6ba1|b838366a,FALSE,Valur,Ludogorets,Ludogorets,0.817489999089398,89,1-0,1-5
+2017,cl-0q-2sqr,eab315a6|fd12ff13,FALSE,The New Saints,APOEL FC,APOEL FC,0.8176304610818947,143,0-0,0-3
+2015,el-0q-2sqr,7a40cd8b|946a30cb,FALSE,KF Laçi,Zorya Luhansk,Zorya Luhansk,0.8179607474003378,1,0-0,1-5
+2017,cl-0q-2sqr,8ae75624|d8b8c85b,FALSE,Olimpija,FK AS Trenčín,FK AS Trenčín,0.818825970750865,1,0-0,6-6*
+2017,cl-0q-2sqr,50f2a074|54f29d7b,TRUE,RB Salzburg,FK Liepāja,RB Salzburg,0.8196209596870359,82,0-0,3-0
+2017,el-0q-3tqr,04c011d8|46554cb7,FALSE,Pandurii,Maccabi Tel Aviv,Maccabi Tel Aviv,0.8199756801105222,1,0-0,2-5
+2015,el-0q-4po,361ca564|651288fd,FALSE,AEL Limassol,Tottenham,Tottenham,0.8208252382601224,73,1-0,1-5
+2017,cl-0q-4po,32f3ee20|4b682260,FALSE,Young Boys,M'gladbach,M'gladbach,0.8210023583486659,1,0-0,2-9
+2018,el-0q-4po,488c6ba1|9e3153f3,TRUE,Ludogorets,Sūduva,Ludogorets,0.8210963833625313,60,0-0,2-0
+2017,el-0q-3tqr,7c21e445|8ac05d3e,FALSE,NK Domžale,West Ham,West Ham,0.821454606765659,97,2-1,2-4
+2017,el-0q-2sqr,ee0bccc5|f1e85b1e,TRUE,Austria Wien,FK Kukësi,Austria Wien,0.8219210980325405,23,0-0,5-1
+2019,cl-0q-1fqr,4936d1b7|a73408a7,FALSE,Cork City FC,Legia Warsaw,Legia Warsaw,0.8220085799073154,78,0-0,0-4
+2020,cl-0q-1fqr,15c5743b|d7319d80,TRUE,HJK,HB,HJK,0.8221162641263116,41,1-0,5-2
+2015,cl-1k-1r16,206d90db|b8fd03ef,FALSE,Manchester City,Barcelona,Barcelona,0.8231164945117072,1,0-0,1-3
+2017,el-0q-1fqr,99a0526b|a338349f,TRUE,Videoton,FC Zaria Bălți,Videoton,0.8233167031849461,17,0-0,3-2
+2019,el-0q-2sqr,8774e267|acbb6a5b,TRUE,RB Leipzig,Häcken,RB Leipzig,0.8239013498148241,34,0-0,5-1
+2017,el-0q-1fqr,d7319d80|d7478aa0,FALSE,FK Atlantas,HJK Helsinki,HJK Helsinki,0.8246638020643915,52,0-0,1-3
+2019,el-0q-2sqr,0b6cd7c6|8ae75624,TRUE,Olimpija,Crusaders FC,Olimpija,0.8248758750232479,29,0-0,6-2
+2020,el-0q-1fqr,49e1cbfd|8ac05d3e,FALSE,Balzan,Domžale,Domžale,0.8249419180006891,38,2-1,3-5
+2016,cl-1k-1r16,53a2f082|cf74a709,FALSE,Roma,Real Madrid,Real Madrid,0.8250583108130821,56,0-0,0-4
+2015,el-1k-1r32,7e746554|f1e6c5f1,FALSE,Aalborg,Club Brugge,Club Brugge,0.82571233932600685,1,0-0,1-6
+2018,el-0q-1fqr,78816dd0|df526548,TRUE,Skënderbeu Korçë,UE Sant Julià,Skënderbeu Korçë,0.8261108567101308,68,0-0,6-0
+2019,cl-1k-2qf,5e876ee6|822bd0ba,TRUE,Liverpool,Porto,Liverpool,0.8275991599102993,4,0-0,6-1
+2017,el-0q-1fqr,3c4fb635|9e3153f3,TRUE,Midtjylland,Sūduva,Midtjylland,0.8280965525986794,55,0-0,2-0
+2020,cl-0q-1fqr,b81aa4fa|fac9957a,FALSE,Sarajevo,Celtic,Celtic,0.8281786152866526,34,1-0,2-5
+2015,el-0q-1fqr,33a249c1|835be610,FALSE,Veris Chișinău,Litex Lovech,Litex Lovech,0.8299540660960247,116,0-0,0-3
+2018,el-1k-1r32,18050b20|db3b9613,FALSE,FC Copenhagen,Atlético Madrid,Atlético Madrid,0.8299686127814008,20,1-0,1-5
+2015,el-0q-1fqr,03022534|c72c8787,FALSE,FC Pyunik,FC Astana,FC Astana,0.8303526638806253,39,0-0,1-6
+2016,el-0q-2sqr,768fb565|e6232d10,TRUE,FC Kairat,Alashkert FC,FC Kairat,0.8309801381094836,13,0-0,4-2
+2016,cl-0q-1fqr,03022534|c582b1da,TRUE,FC Pyunik,Folgore,FC Pyunik,0.8310616176158009,95,2-1,4-2
+2017,el-0q-1fqr,0faf8f33|c16f1fe7,TRUE,Spartak Trnava,Hibernians FC,Spartak Trnava,0.8319296937571302,6,0-0,6-0
+2017,el-0q-4po,912e4c40|d8b8c85b,FALSE,FK AS Trenčín,Rapid Wien,Rapid Wien,0.8322331101433833,1,0-0,2-4
+2019,el-0q-1fqr,54f29d7b|8774e267,FALSE,FK Liepāja,Häcken,Häcken,0.8323677303555517,73,0-0,2-4
+2016,el-0q-2sqr,58ff3cd4|c8ad3091,TRUE,Trabzonspor,Differdange 03,Trabzonspor,0.8328817147244162,43,0-0,3-1
+2018,cl-0q-2sqr,dde3e804|f4f98e1c,TRUE,Partizan,Budućnost,Partizan,0.8329073191817151,52,0-0,2-0
+2020,cl-1k-1r16,054efa67|cff3d9bb,,Chelsea,Bayern Munich,,0.8332161540390424,50,0-0,0-3
+2018,cl-0q-1fqr,9549dc95|e6232d10,TRUE,Alashkert FC,Santa Coloma,Alashkert FC,0.8333338560965813,38,0-0,2-1
+2016,cl-0q-2sqr,b81aa4fa|f13065a8,TRUE,Celtic,Stjarnan,Celtic,0.8338886089802934,43,0-0,6-1
+2019,cl-1k-2qf,19538871|206d90db,FALSE,Manchester Utd,Barcelona,Barcelona,0.8344376651839791,1,0-0,0-4
+2015,el-0q-4po,105360fe|27b6696c,FALSE,RNK Split,Torino,Torino,0.8344511830394559,111,0-0,0-1
+2018,cl-0q-4po,132ebc33|d48ad4ff,TRUE,Napoli,Nice,Napoli,0.8361505941691343,12,0-0,4-0
+2017,el-0q-1fqr,ab75e049|b838366a,FALSE,Valur,Brøndby,Brøndby,0.8364112012094256,46,0-0,1-10
+2019,cl-0q-2sqr,099c6eb5|9e3153f3,TRUE,Red Star,Sūduva,Red Star,0.836505419212239,22,0-0,5-0
+2017,el-0q-1fqr,04c011d8|e404a61d,TRUE,Maccabi Tel Aviv,ND Gorica,Maccabi Tel Aviv,0.8366888223482013,13,0-0,4-0
+2017,cl-0q-3tqr,3ba2fddf|50f2a074,FALSE,Partizani Tirana,RB Salzburg,RB Salzburg,0.837467530830882,54,0-0,0-3
+2020,cl-0q-2sqr,099c6eb5|d7319d80,TRUE,Red Star,HJK,Red Star,0.8376860120166267,26,0-0,3-2
+2016,el-0q-1fqr,3ba2fddf|90eb0dcc,TRUE,Strømsgodset,Partizani Tirana,Strømsgodset,0.8378383410395264,72,2-1,4-1
+2017,cl-0q-2sqr,44b65410|baae133b,TRUE,Qarabağ FK,F91 Dudelange,Qarabağ FK,0.8389207985263413,10,0-0,3-1
+2018,el-0q-3tqr,356c100c|d3fd31cc,TRUE,Everton,Ružomberok,Everton,0.841171019719581,64,0-0,2-0
+2020,el-0q-2sqr,a73408a7|e6f63673,TRUE,Legia Warsaw,KuPS,Legia Warsaw,0.8413272135062061,8,0-0,1-0
+2019,cl-0q-3tqr,19c3f8c4|33c6b26e,FALSE,Standard Liège,Ajax,Ajax,0.841594947152756,1,0-0,2-5
+2016,el-0q-2sqr,278db974|654ac5a4,TRUE,Vojvodina,Spartaks Jūrmala,Vojvodina,0.8422798825272461,5,0-0,4-1
+2016,el-0q-4po,d7319d80|fa11a9cc,TRUE,Krasnodar,HJK Helsinki,Krasnodar,0.8425038412911694,56,2-1,5-1
+2016,el-0q-4po,2b390eca|e5dea1f1,FALSE,MŠK Žilina,Athletic Bilbao,Athletic Bilbao,0.8428179968606313,113,3-2,3-3*
+2015,cl-0q-4po,33c6b26e|98ce363d,FALSE,Standard Liège,Zenit,Zenit,0.8438379698293278,1,0-0,0-4
+2018,el-0q-4po,5725cc7b|8ac05d3e,FALSE,NK Domžale,Marseille,Marseille,0.8438617964688605,62,1-0,1-4
+2016,el-0q-1fqr,50e85bfc|5b8cfb05,FALSE,Lahti,Elfsborg,Elfsborg,0.8442346584904,1,0-0,2-7
+2018,el-0q-1fqr,80beba99|e839c85b,FALSE,Chikhura,SCR Altach,SCR Altach,0.8450881084474458,1,0-0,1-2
+2016,el-1k-1r32,174bd5a0|ad2be733,TRUE,Sevilla,Molde,Sevilla,0.8451467630838736,34,0-0,3-1
+2020,el-0q-3tqr,c0d3eab4|e0242ef1,FALSE,Loko Plovdiv,Strasbourg,Strasbourg,0.8471879396235653,1,0-0,0-2
+2015,el-1k-1r32,c8ad3091|d48ad4ff,FALSE,Trabzonspor,Napoli,Napoli,0.8479080332767641,1,0-0,0-5
+2017,cl-0q-4po,a73408a7|e4a9d483,FALSE,Dundalk FC,Legia Warsaw,Legia Warsaw,0.8479958221314212,55,0-0,1-3
+2020,el-0q-3tqr,3f53cc7a|c72c8787,TRUE,Astana FK,Valletta,Astana FK,0.8490142983531385,7,0-0,9-1
+2019,cl-0q-1fqr,55ff3845|c72c8787,TRUE,Astana FK,Sutjeska Nikšić,Astana FK,0.8493369109691536,28,0-0,3-0
+2019,el-0q-1fqr,f0e1ca42|fac9957a,FALSE,FC Banants,FK Sarajevo,FK Sarajevo,0.8493524446546237,1,0-0,1-5
+2015,el-0q-1fqr,e4a9d483|f1849f98,FALSE,Jeunesse Esch,Dundalk FC,Dundalk FC,0.8497618392033429,58,0-0,1-5
+2020,el-0q-2sqr,946a30cb|f4f98e1c,FALSE,Budućnost,Zorya Luhansk,Zorya Luhansk,0.8502684592202481,1,0-0,1-4
+2020,el-1k-1r32,488c6ba1|d609edc0,FALSE,Ludogorets,Inter,Inter,0.8516598503849355,70,0-0,1-4
+2015,cl-1k-2qf,206d90db|e2d8892c,FALSE,Paris S-G,Barcelona,Barcelona,0.851913238656558,1,0-0,1-5
+2018,el-1k-2r16,5a8dc328|db3b9613,TRUE,Atlético Madrid,Loko Moscow,Atlético Madrid,0.8520551811379422,21,0-0,8-1
+2018,el-0q-1fqr,099c6eb5|9c088d4e,TRUE,Red Star,Floriana FC,Red Star,0.8524009036531738,44,0-0,6-3
+2020,el-0q-3tqr,a8661628|d423a378,FALSE,Luzern,Espanyol,Espanyol,0.8533358882500777,1,0-0,0-6
+2017,el-0q-2sqr,24cd860c|ed6b1d21,FALSE,Zimbru Chișinău,Osmanlıspor,Osmanlıspor,0.8537854454417566,76,2-1,2-7
+2017,el-0q-1fqr,56b45f69|b0333581,TRUE,AIK Stockholm,Bala Town FC,AIK Stockholm,0.8543993008930795,26,0-0,4-0
+2017,el-1k-2r16,19538871|d60423ef,FALSE,Rostov,Manchester Utd,Manchester Utd,0.8544322334592952,159,1-1,1-2
+2019,el-0q-2sqr,719d83f1|eab315a6,TRUE,APOEL FC,FC Flora,APOEL FC,0.8549777101710674,24,0-0,5-2
+2018,el-0q-2sqr,70c92f33|f082c4f3,FALSE,Shamrock Rov,Mladá Boleslav,Mladá Boleslav,0.8549916900827736,34,0-0,2-5
+2017,el-1k-1r32,3986b791|d53c0b06,FALSE,AZ Alkmaar,Lyon,Lyon,0.8551945780018337,1,0-0,2-11
+2020,el-0q-1fqr,8dc7bf66|cbde2682,TRUE,CSKA Sofia,OFK Titograd,CSKA Sofia,0.8557429188070033,39,0-0,4-0
+2015,cl-1k-1r16,53a2f082|c539e393,FALSE,Schalke 04,Real Madrid,Real Madrid,0.8561935105353706,174,4-5,4-5
+2017,el-0q-4po,3ba2fddf|fa11a9cc,TRUE,Krasnodar,Partizani Tirana,Krasnodar,0.8583907310332797,17,0-0,4-0
+2016,el-0q-1fqr,8bbab7cf|c480c810,FALSE,FK Shkëndija,Aberdeen,Aberdeen,0.8593728405535122,78,0-0,1-1*
+2019,cl-0q-1fqr,099c6eb5|654ac5a4,FALSE,Spartaks Jūrmala,Red Star,Red Star,0.8600094478095534,167,0-0,0-2
+2019,el-0q-3tqr,e6232d10|ff04e205,FALSE,Alashkert FC,CFR Cluj,CFR Cluj,0.8615644147799739,1,0-0,0-7
+2020,el-0q-2sqr,105360fe|e24ac92e,TRUE,Torino,Debrecen,Torino,0.8638053891069634,19,0-0,7-1
+2018,el-0q-1fqr,6d2aac76|fdba14df,TRUE,Lech Poznań,FK Pelister,Lech Poznań,0.8650292118074062,27,0-0,7-0
+2019,el-0q-1fqr,8c6383a1|b8b2d55e,FALSE,FC Samtredia,FC Tobol,FC Tobol,0.8651130373891679,89,0-0,0-3
+2018,el-0q-1fqr,15f9a98b|3c4fb635,TRUE,Midtjylland,Derry City FC,Midtjylland,0.8651215767142497,3,0-0,10-2
+2020,el-0q-2sqr,aed59852|e6232d10,FALSE,Alashkert,FCSB,FCSB,0.8651719614914173,135,3-4,3-5
+2019,el-0q-2sqr,18050b20|f13065a8,FALSE,Stjarnan,FC Copenhagen,FC Copenhagen,0.8657652606002655,51,0-0,0-7
+2015,el-0q-1fqr,56b555e4|8bbab7cf,TRUE,Aberdeen,FK Daugava,Aberdeen,0.8661448632606681,32,0-0,8-0
+2020,cl-0q-4po,19c3f8c4|eab315a6,FALSE,APOEL,Ajax,Ajax,0.8662457301580353,132,0-0,0-2
+2020,el-0q-2sqr,a8661628|f13065a8,TRUE,Espanyol,Stjarnan,Espanyol,0.8665699317571272,48,0-0,7-1
+2020,el-0q-1fqr,174bd5a0|ae156985,TRUE,Molde,KR Reykjavík,Molde,0.8670019114035759,6,0-0,7-1
+2015,cl-0q-2sqr,488c6ba1|baae133b,TRUE,Ludogorets,F91 Dudelange,Ludogorets,0.8681986403097016,34,0-0,5-1
+2018,el-0q-1fqr,01689b1a|2d3c1b6d,TRUE,AEK Larnaca FC,Red Imps,AEK Larnaca FC,0.8682562930771317,21,0-0,6-1
+2016,cl-0q-2sqr,2d3c1b6d|3c4fb635,TRUE,Midtjylland,Red Imps,Midtjylland,0.8683665946219081,133,1-0,3-0
+2020,el-0q-3tqr,105360fe|7517d495,TRUE,Torino,Shakhtyor,Torino,0.8686119090550743,1,0-0,6-1
+2020,el-0q-1fqr,1d0836d6|8a814429,FALSE,St. Patrick's,Norrköping,Norrköping,0.8690710172114633,54,0-0,1-4
+2015,el-0q-1fqr,8a898dad|90e37d3a,TRUE,Rosenborg,FK Jelgava,Rosenborg,0.8691284031953751,22,0-0,6-0
+2020,el-0q-1fqr,5a130b7c|f4bbcd04,FALSE,Cliftonville,Haugesund,Haugesund,0.870232069725785,41,0-0,1-6
+2018,el-1k-3qf,13dc44fd|db3b9613,TRUE,Atlético Madrid,Sporting CP,Atlético Madrid,0.8706866833398033,118,2-1,2-1
+2017,cl-0q-2sqr,488c6ba1|8dc7bf66,TRUE,Ludogorets,Mladost,Ludogorets,0.8709123884213069,12,0-0,5-0
+2019,el-0q-1fqr,017bcbe4|933ac71c,TRUE,Rudar Velenje,S.P. Tre Fiori,Rudar Velenje,0.8713522565455667,32,0-0,10-0
+2016,el-0q-3tqr,2b390eca|63866313,TRUE,Athletic Bilbao,Inter Baku,Athletic Bilbao,0.871510305361391,11,0-0,2-0
+2020,el-1k-2r16,19538871|d20821dd,,LASK,Manchester Utd,,0.872274535584093,1,0-0,0-5
+2015,cl-0q-2sqr,112c9642|ecb862be,TRUE,Sparta Prague,Levadia Tallinn,Sparta Prague,0.8737915710181818,21,0-0,8-1
+2019,el-0q-3tqr,8ff9960d|922493f3,FALSE,Hapoel Haifa FC,Atalanta,Atalanta,0.8740261750483693,17,1-0,1-6
+2020,el-0q-3tqr,488c6ba1|fd12ff13,TRUE,Ludogorets,The New Saints,Ludogorets,0.8740280407221764,9,0-0,9-0
+2020,el-0q-0pre,017bcbe4|869753d6,TRUE,KÍ,SP Tre Fiori,KÍ,0.8741478189024582,8,0-0,9-1
+2019,el-0q-3tqr,2a6cfcb2|488c6ba1,TRUE,Ludogorets,Zrinjski Mostar,Ludogorets,0.8746851721205167,15,0-0,2-1
+2019,el-0q-3tqr,1eebf7c3|acbb6a5b,TRUE,RB Leipzig,U Craiova,RB Leipzig,0.8747862078497017,24,0-0,4-2
+2020,el-0q-1fqr,1eebf7c3|6642b67e,FALSE,Səbail FK,U Craiova,U Craiova,0.8748102767341644,1,0-0,4-6
+2019,el-0q-2sqr,174bd5a0|7a40cd8b,TRUE,Molde,KF Laçi,Molde,0.8753878393408914,5,0-0,5-0
+2018,el-0q-1fqr,768fb565|d7478aa0,TRUE,FC Kairat,FK Atlantas,FC Kairat,0.87560025454683,20,0-0,8-1
+2018,el-0q-1fqr,3fdad06c|f4bbcd04,TRUE,Haugesund,Coleraine FC,Haugesund,0.8758298024497811,7,0-0,7-0
+2017,cl-0q-2sqr,2d3c1b6d|b81aa4fa,FALSE,Red Imps,Celtic,Celtic,0.8784654544435805,112,1-0,1-3
+2018,el-0q-2sqr,8dff1828|99a0526b,TRUE,Apollon Limassol,FC Zaria Bălți,Apollon Limassol,0.8790056538226921,9,0-0,5-1
+2018,el-0q-4po,4fffe901|50f2a074,FALSE,Viitorul,RB Salzburg,RB Salzburg,0.879501997171562,1,0-0,1-7
+2019,el-0q-1fqr,47b3e736|e0afb445,FALSE,ÍBV,Sarpsborg 08,Sarpsborg 08,0.8828820881352194,58,0-0,0-6
+2017,el-0q-3tqr,912e4c40|f7e8060a,FALSE,Torpedo Zho,Rapid Wien,Rapid Wien,0.8830401602202599,115,0-0,0-3
+2019,el-0q-1fqr,2aae7689|3ba2fddf,FALSE,Partizani Tirana,NK Maribor,NK Maribor,0.8832720095899564,49,0-0,0-3
+2018,el-0q-2sqr,33afefe1|a338349f,FALSE,Nõmme Kalju FC,Videoton,Videoton,0.8833193574956681,1,0-0,1-4
+2020,cl-0q-2sqr,55ff3845|eab315a6,FALSE,Sutjeska Nikšić,APOEL,APOEL,0.883335115022194,41,0-0,0-4
+2019,cl-1k-1r16,b8fd03ef|c539e393,FALSE,Schalke 04,Manchester City,Manchester City,0.8836630862300032,68,2-1,2-10
+2018,el-0q-1fqr,1d0836d6|7de37644,TRUE,Norrköping,FC Prishtina,Norrköping,0.8837727268178487,9,0-0,6-0
+2018,el-0q-1fqr,04c011d8|83310fa5,TRUE,Maccabi Tel Aviv,KF Tirana,Maccabi Tel Aviv,0.883892163886539,26,0-0,5-0
+2016,el-0q-1fqr,7c21e445|857b60c3,TRUE,West Ham,FC Lusitanos,West Ham,0.8841830748306275,39,0-0,4-0
+2019,el-0q-1fqr,448e1bb9|f3aacc58,TRUE,Hibernian,NSÍ Runavík,Hibernian,0.8842682857787286,2,0-0,12-5
+2020,el-0q-1fqr,01689b1a|ae96366c,TRUE,AÉK Lárnaka,Petrocub,AÉK Lárnaka,0.8852119242196242,3,0-0,2-0
+2015,el-0q-1fqr,1286546c|e56e174a,TRUE,Botev Plovdiv,AC Libertas,Botev Plovdiv,0.8862137067514836,24,0-0,6-0
+2019,el-0q-3tqr,4c6489de|ad2be733,TRUE,Sevilla,Žalgiris,Sevilla,0.8866856447564101,33,0-0,6-0
+2020,cl-0q-2sqr,33afefe1|b81aa4fa,TRUE,Celtic,Nõmme Kalju,Celtic,0.8868317594296974,35,0-0,7-0
+2020,el-0q-2sqr,0b6cd7c6|8cec06e1,TRUE,Wolves,Crusaders,Wolves,0.887285868412859,36,0-0,6-1
+2018,cl-1k-1r16,054efa67|0f9294bd,TRUE,Bayern Munich,Beşiktaş,Bayern Munich,0.888392081397016,15,0-0,8-1
+2020,el-0q-2sqr,1d0836d6|54f29d7b,TRUE,Norrköping,FK Liepāja,Norrköping,0.8884154612026592,79,1-0,3-0
+2015,el-0q-1fqr,6611f992|7465f27b,FALSE,Sliema,Ferencváros,Ferencváros,0.8888457038616728,76,1-0,2-3
+2015,cl-0q-2sqr,15c5743b|dde3e804,TRUE,Partizan,Havnar Bóltfelag,Partizan,0.8890190373678846,13,0-0,6-1
+2016,el-0q-2sqr,90e37d3a|ae156985,FALSE,KR Reykjavík,Rosenborg,Rosenborg,0.889164557554077,55,0-0,0-4
+2019,el-1k-1r32,912e4c40|d609edc0,FALSE,Rapid Wien,Inter,Inter,0.8897302135209988,38,0-0,0-5
+2018,cl-0q-2sqr,654ac5a4|c72c8787,FALSE,Spartaks Jūrmala,FC Astana,FC Astana,0.8900938062572935,72,0-0,1-2
+2018,el-0q-1fqr,4f7b798d|840ff2b7,FALSE,Dinamo Batumi,Jagiellonia,Jagiellonia,0.890676571262035,48,0-0,0-5
+2015,el-0q-1fqr,42e847bc|78816dd0,TRUE,Čukarički,UE Sant Julià,Čukarički,0.8910118889428488,7,0-0,4-0
+2015,cl-0q-2sqr,3f53cc7a|44b65410,FALSE,Valletta FC,Qarabağ FK,Qarabağ FK,0.8922014889598331,1,0-0,0-5
+2015,cl-1k-1r16,054efa67|e89d5a28,FALSE,Shakhtar,Bayern Munich,Bayern Munich,0.8928797489210745,65,0-0,0-7
+2019,el-0q-1fqr,7416e9cd|86b7acd2,TRUE,Rangers,FK Shkupi,Rangers,0.8935179105909306,22,0-0,2-0
+2019,cl-0q-3tqr,50f2a074|c480c810,TRUE,RB Salzburg,FK Shkëndija,RB Salzburg,0.893682602857908,15,0-0,4-0
+2020,el-0q-3tqr,3986b791|42b37a13,FALSE,FC Mariupol,AZ Alkmaar,AZ Alkmaar,0.8938020155607564,109,0-0,0-4
+2020,el-0q-1fqr,b0e70933|f3d8c8b9,TRUE,Malmö,Ballymena Utd,Malmö,0.8941719168486431,30,0-0,11-0
+2019,cl-0q-1fqr,0b6cd7c6|488c6ba1,TRUE,Ludogorets,Crusaders FC,Ludogorets,0.8944504836708956,24,0-0,9-0
+2020,cl-0q-1fqr,099c6eb5|9e3153f3,FALSE,Sūduva,Red Star,Red Star,0.8948310078862082,93,0-0,1-2
+2018,el-0q-4po,c480c810|dc56fe14,TRUE,Milan,FK Shkëndija,Milan,0.8950176103176676,12,0-0,7-0
+2015,el-0q-4po,32f3ee20|fac9957a,FALSE,FK Sarajevo,M'gladbach,M'gladbach,0.895018931730648,1,0-0,2-10
+2018,el-0q-1fqr,713d0672|dd3fa21f,TRUE,Lyngby,Bangor City FC,Lyngby,0.8952369312617446,90,1-0,4-0
+2019,el-0q-2sqr,1e972a99|aa065002,TRUE,Genk,CS Fola Esch,Genk,0.8965583209435625,3,0-0,9-1
+2015,el-0q-1fqr,75cd4ee3|b1b46fc3,TRUE,Vaduz,Europa FC,Vaduz,0.8972053822729131,5,0-0,4-0
+2017,cl-0q-2sqr,099c6eb5|3f53cc7a,FALSE,Valletta FC,Red Star,Red Star,0.8975591600077697,65,1-0,2-4
+2017,el-0q-1fqr,63235dc5|ef1ab26a,TRUE,Göteborg,Llandudno FC,Göteborg,0.8982953308423484,10,0-0,7-1
+2018,el-0q-1fqr,3a7a27c6|55ff3845,TRUE,Levski Sofia,Sutjeska Nikšić,Levski Sofia,0.8984564731505319,20,1-0,3-1
+2019,cl-0q-1fqr,133013ee|719d83f1,FALSE,FC Flora,Be'er Sheva,Be'er Sheva,0.8992072641034833,1,0-0,2-7
+2016,el-0q-1fqr,ab7b2fe7|d7478aa0,FALSE,FK Atlantas,Beroe,Beroe,0.9008225252373021,59,0-0,1-5
+2018,el-0q-2sqr,651288fd|ec560e72,FALSE,Progrès,AEL Limassol,AEL Limassol,0.9010439120317635,65,0-0,1-3
+2017,el-0q-1fqr,49e1cbfd|d0ab5e26,FALSE,Balzan FC,Neftchi PFK,Neftchi PFK,0.9011309202284952,1,0-0,2-3
+2015,el-0q-4po,2a8183b3|c72c8787,FALSE,FC Astana,Villarreal,Villarreal,0.901838857907031,1,0-0,0-7
+2020,el-0q-2sqr,86b7acd2|ec560e72,TRUE,Rangers,Progrès,Rangers,0.9022109867996762,19,0-0,2-0
+2019,el-0q-1fqr,15f9a98b|e2a78c9d,FALSE,Derry City FC,Dinamo Minsk,Dinamo Minsk,0.9030313482558734,1,0-0,2-3
+2019,el-0q-1fqr,7517d495|7d326cbe,FALSE,Connah's Quay,Shakhtyor,Shakhtyor,0.9034348237332925,1,0-0,1-5
+2019,el-0q-4po,231f4a61|488c6ba1,FALSE,Torpedo Kutaisi,Ludogorets,Ludogorets,0.9057827476717295,44,0-0,0-5
+2016,el-0q-2sqr,18050b20|584106a8,TRUE,FC Copenhagen,Newtown AFC,FC Copenhagen,0.9058042489294797,2,0-0,5-1
+2018,cl-0q-2sqr,25dbe099|fd12ff13,TRUE,Rijeka,The New Saints,Rijeka,0.9064538633175792,3,0-0,7-1
+2019,el-0q-2sqr,123f3efe|869a3b6a,FALSE,FK Ventspils,Bordeaux,Bordeaux,0.9071397155844703,1,0-0,1-3
+2017,el-0q-1fqr,2b924bc5|768fb565,FALSE,KF Teuta Durrës,FC Kairat,FC Kairat,0.9072076543494846,69,0-0,0-6
+2019,el-0q-1fqr,1850e3f9|5a130b7c,FALSE,Cliftonville FC,Nordsjælland,Nordsjælland,0.9088394202445031,147,1-1,1-3
+2017,cl-0q-4po,aed59852|b8fd03ef,FALSE,Steaua,Manchester City,Manchester City,0.9096804215399501,1,0-0,0-6
+2019,el-0q-2sqr,933ac71c|aed59852,FALSE,Rudar Velenje,FCSB,FCSB,0.9097684415928208,1,0-0,0-6
+2015,el-0q-1fqr,253fffc4|738cdee0,FALSE,FK Čelik Nikšić,FC Koper,FC Koper,0.9108534105692883,1,0-0,0-9
+2020,el-0q-1fqr,b784c866|e2fa043d,TRUE,Dinamo Tbilisi,Engordany,Dinamo Tbilisi,0.9115475445890929,5,0-0,7-0
+2019,el-0q-2sqr,654ac5a4|6de42722,TRUE,Spartaks Jūrmala,S.P. La Fiorita,Spartaks Jūrmala,0.9115531932951404,5,0-0,9-0
+2016,el-0q-4po,7795f801|d298ef2c,FALSE,FC Milsami Orhei,Saint-Étienne,Saint-Étienne,0.9118554847265627,56,1-1,1-2
+2017,el-0q-1fqr,01689b1a|c582b1da,TRUE,AEK Larnaca FC,Folgore,AEK Larnaca FC,0.9118967603202811,21,0-0,6-1
+2018,el-0q-2sqr,2a428619|3f53cc7a,FALSE,Valletta FC,Utrecht,Utrecht,0.9120143863660152,107,0-0,1-3
+2019,el-0q-2sqr,108607cf|ad2be733,TRUE,Sevilla,Újpest,Sevilla,0.9134459064113628,6,0-0,7-1
+2018,el-0q-1fqr,b0e70933|b70ec3fa,TRUE,Odd,Ballymena Utd,Odd,0.9134507807748199,52,1-0,5-0
+2020,el-0q-1fqr,7795f801|aed59852,TRUE,FCSB,Milsami,FCSB,0.9142342258022967,11,0-0,4-1
+2018,el-0q-1fqr,56b45f69|b1b46fc3,FALSE,Bala Town FC,Vaduz,Vaduz,0.9158817384988793,1,0-0,1-5
+2016,el-0q-1fqr,78816dd0|d06bc460,FALSE,UE Sant Julià,Randers,Randers,0.9162925272980393,17,0-0,0-4
+2018,el-0q-3tqr,2b390eca|4472d406,FALSE,Dinamo,Athletic Bilbao,Athletic Bilbao,0.9182712738458547,1,0-0,1-4
+2019,el-0q-4po,41c6978d|ad2be733,FALSE,Sigma Olomouc,Sevilla,Sevilla,0.9189907821629236,83,0-0,0-4
+2018,el-1k-1r32,18bb7c10|577e2606,FALSE,Östersund,Arsenal,Arsenal,0.9202184098152473,1,0-0,2-4
+2020,el-0q-1fqr,3b8af0c2|8dff1828,FALSE,Kauno Žalgiris,Apollon,Apollon,0.9214411185814585,1,0-0,0-6
+2015,cl-0q-2sqr,ae156985|b81aa4fa,FALSE,KR Reykjavík,Celtic,Celtic,0.9224385450298789,83,0-0,0-5
+2019,el-0q-1fqr,8a9775ad|ee945014,FALSE,JK Narva Trans,Željezničar,Željezničar,0.9228708403522344,1,0-0,1-5
+2016,el-0q-1fqr,7517d495|b3b6ca5d,FALSE,Glenavon FC,Shakhtyor,Shakhtyor,0.9232940077344761,1,0-0,1-5
+2016,el-0q-1fqr,633ae161|ab75e049,TRUE,Brøndby,Juvenes/Dogana,Brøndby,0.9243965650267743,5,0-0,11-0
+2015,el-0q-3tqr,e4babb95|fa11a9cc,FALSE,Diósgyőr,Krasnodar,Krasnodar,0.9244447373132998,1,0-0,1-8
+2019,el-0q-1fqr,174bd5a0|b3b6ca5d,FALSE,Glenavon FC,Molde,Molde,0.924518094559877,117,2-1,3-6
+2018,el-0q-1fqr,4ebc9920|aaffe678,FALSE,S.P. Tre Penne,FK Rabotnički,FK Rabotnički,0.9251840765214203,89,0-0,0-7
+2019,el-0q-3tqr,6d139ec5|ab75e049,FALSE,Spartak Subotic,Brøndby,Brøndby,0.9253468489897069,1,0-0,1-4
+2015,el-0q-3tqr,105360fe|bb9e11b2,FALSE,Brommapojkarna,Torino,Torino,0.9257059190111728,43,0-0,0-7
+2016,el-0q-1fqr,49e1cbfd|ee945014,FALSE,Balzan FC,Željezničar,Željezničar,0.9263647628798566,1,0-0,0-3
+2015,el-0q-1fqr,84a33cca|fd36fea1,FALSE,Santa Coloma,Metalurg Skopje,Metalurg Skopje,0.926736713211898,1,0-0,0-5
+2020,el-0q-3tqr,e334d850|f4bbcd04,FALSE,Haugesund,PSV Eindhoven,PSV Eindhoven,0.9285359146175155,1,0-0,0-1
+2020,el-0q-1fqr,8a9775ad|f4f98e1c,FALSE,Narva Trans,Budućnost,Budućnost,0.9291385827157285,1,0-0,1-6
+2020,el-0q-2sqr,3f319bc9|f1849f98,FALSE,Jeunesse Esch,Vitória,Vitória,0.9291859669612486,89,0-0,0-5
+2019,el-0q-1fqr,406252ea|4fffe901,FALSE,Racing Lux'bg,Viitorul,Viitorul,0.9307610487441816,1,0-0,0-2
+2016,el-0q-1fqr,2471f5fa|4f7b798d,FALSE,Kruoja Pakruojis,Jagiellonia,Jagiellonia,0.9311789930042672,89,0-0,0-9
+2017,cl-0q-2sqr,0b6cd7c6|18050b20,FALSE,Crusaders FC,FC Copenhagen,FC Copenhagen,0.9313618337451829,1,0-0,0-9
+2020,el-0q-3tqr,3f319bc9|869a3b6a,FALSE,Ventspils,Vitória,Vitória,0.9323301916195087,1,0-0,0-9
+2015,cl-0q-1fqr,112c9642|6de42722,FALSE,S.P. La Fiorita,Levadia Tallinn,Levadia Tallinn,0.9323885407007535,89,0-0,0-8
+2019,cl-0q-1fqr,d7319d80|ea73b616,FALSE,Víkingur Gøta,HJK Helsinki,HJK Helsinki,0.9332823106298745,1,0-0,2-5
+2015,el-0q-1fqr,0faf8f33|c16f1fe7,FALSE,Hibernians FC,Spartak Trnava,Spartak Trnava,0.9335477204229032,1,0-0,2-9
+2020,el-0q-1fqr,78b01d1b|d0ab5e26,FALSE,Speranţa,Neftçi,Neftçi,0.9340842657557007,1,0-0,0-9
+2019,el-1k-1r32,cff3d9bb|f3d8c8b9,FALSE,Malmö,Chelsea,Chelsea,0.9340963234858821,1,0-0,1-5
+2020,cl-0q-1fqr,4c96013a|90e37d3a,FALSE,Linfield,Rosenborg,Rosenborg,0.9342487112156393,1,0-0,0-6
+2019,el-0q-1fqr,dde3e804|fe8bc2a6,FALSE,FK Rudar Pljevlja,Partizan,Partizan,0.9344981102325325,43,0-0,0-6
+2019,el-0q-3tqr,3c4fb635|fd12ff13,FALSE,The New Saints,Midtjylland,Midtjylland,0.9347066533405375,1,0-0,1-5
+2017,el-0q-1fqr,448e1bb9|7517d495,FALSE,NSÍ Runavík,Shakhtyor,Shakhtyor,0.9363691347071477,44,0-0,0-7
+2019,el-0q-4po,9e3153f3|b81aa4fa,FALSE,Sūduva,Celtic,Celtic,0.9375171879925653,1,0-0,1-4
+2016,el-0q-1fqr,e5dea1f1|eaa4ec68,FALSE,Glentoran FC,MŠK Žilina,MŠK Žilina,0.937621121905624,1,0-0,1-7
+2016,el-0q-1fqr,8c424f8f|8dff1828,FALSE,FC Saxan,Apollon Limassol,Apollon Limassol,0.9390692558890155,1,0-0,0-4
+2018,cl-0q-2sqr,a73408a7|c4e86b86,FALSE,IFK Mariehamn,Legia Warsaw,Legia Warsaw,0.939802453114872,1,0-0,0-9
+2015,el-0q-1fqr,c582b1da|f4f98e1c,FALSE,Folgore,Budućnost,Budućnost,0.940899951634678,1,0-0,1-5
+2019,el-1k-1r32,22a5a99c|d48ad4ff,FALSE,Zürich,Napoli,Napoli,0.9418960202653798,1,0-0,1-5
+2018,el-0q-3tqr,1040e0f7|98ce363d,FALSE,Bnei Yehuda,Zenit,Zenit,0.9424122812508784,58,0-0,1-2
+2020,cl-0q-2sqr,672ebb3d|edd0d381,FALSE,Saburtalo,Dinamo Zagreb,Dinamo Zagreb,0.9445560447154883,66,0-0,0-5
+2018,cl-1k-1r16,b8fd03ef|d3d9424a,FALSE,Basel,Manchester City,Manchester City,0.9450951181590557,1,0-0,2-5
+2020,el-0q-1fqr,75cd4ee3|a73408a7,FALSE,Europa,Legia Warsaw,Legia Warsaw,0.9468479761753233,96,0-0,0-3
+2019,el-0q-1fqr,768fb565|b784c866,FALSE,UE Engordany,FC Kairat,FC Kairat,0.9470176211856669,1,0-0,1-10
+2020,el-0q-3tqr,b1b46fc3|f0ac8ee6,FALSE,Vaduz,Eint Frankfurt,Eint Frankfurt,0.9471237275468344,1,0-0,0-6
+2019,cl-0q-1fqr,b81aa4fa|e6232d10,FALSE,Alashkert FC,Celtic,Celtic,0.947292640223981,44,0-0,0-6
+2018,el-0q-1fqr,651288fd|bb780485,FALSE,St. Joseph's,AEL Limassol,AEL Limassol,0.9488178208259233,1,0-0,0-10
+2020,el-0q-2sqr,7d326cbe|dde3e804,FALSE,Connah's Quay,Partizan,Partizan,0.950935833788693,61,0-0,0-4
+2017,el-0q-3tqr,7bb567b2|fa11a9cc,FALSE,Birkirkara FC,Krasnodar,Krasnodar,0.9517477985179388,44,0-0,1-6
+2020,cl-0q-2sqr,18050b20|fd12ff13,FALSE,The New Saints,FC Copenhagen,FC Copenhagen,0.9522830363724359,1,0-0,0-3
+2020,el-0q-3tqr,03022534|8cec06e1,FALSE,Pyunik,Wolves,Wolves,0.9527061448978325,1,0-0,0-8
+2015,el-0q-4po,d609edc0|f13065a8,FALSE,Stjarnan,Inter,Inter,0.9533364049933697,1,0-0,0-9
+2018,cl-0q-2sqr,0faf8f33|50f2a074,FALSE,Hibernians FC,RB Salzburg,RB Salzburg,0.955967147027012,1,0-0,0-6
+2018,el-0q-1fqr,57d14db5|84a33cca,FALSE,Santa Coloma,Osijek,Osijek,0.9560255619663509,79,0-0,0-6
+2016,el-0q-3tqr,426658a6|add600ae,FALSE,Wolfsberger AC,Dortmund,Dortmund,0.9561908647572681,1,0-0,0-6
+2016,el-0q-1fqr,90e37d3a|ea73b616,FALSE,Víkingur Gøta,Rosenborg,Rosenborg,0.9565768824438536,81,0-0,0-2
+2015,el-0q-3tqr,25dbe099|ea73b616,FALSE,Víkingur Gøta,Rijeka,Rijeka,0.9575687658210909,1,0-0,1-9
+2015,el-0q-2sqr,7bc6abf1|fa11a9cc,FALSE,Sillamäe Kalev,Krasnodar,Krasnodar,0.9595368782056046,1,0-0,0-9
+2019,cl-0q-1fqr,77b23ba3|f3d8c8b9,FALSE,KF Drita,Malmö,Malmö,0.9600302591382164,1,0-0,0-5
+2015,cl-0q-2sqr,04c011d8|9549dc95,FALSE,Santa Coloma,Maccabi Tel Aviv,Maccabi Tel Aviv,0.9606122842968886,63,0-0,0-3
+2015,el-0q-1fqr,0d984553|a3ee587a,FALSE,FC Santos Tartu,Tromsø,Tromsø,0.9610230189366169,1,0-0,1-13
+2019,el-0q-2sqr,056a9b27|0f9294bd,FALSE,B36 Tórshavn,Beşiktaş,Beşiktaş,0.9612624461147803,1,0-0,0-8
+2020,el-0q-2sqr,719d83f1|f0ac8ee6,FALSE,Flora,Eint Frankfurt,Eint Frankfurt,0.9625023032240068,1,0-0,2-4
+2020,el-0q-2sqr,9e3153f3|aaffe678,FALSE,Tre Penne,Sūduva,Sūduva,0.9627112952900555,1,0-0,0-10
+2016,el-0q-1fqr,6de42722|b1b46fc3,FALSE,S.P. La Fiorita,Vaduz,Vaduz,0.9631926996657572,1,0-0,1-10
+2017,el-0q-1fqr,84a33cca|ea115eb3,FALSE,Santa Coloma,Lokomotiva,Lokomotiva,0.9646266420503258,1,0-0,2-7
+2018,cl-0q-2sqr,4c96013a|b81aa4fa,FALSE,Linfield FC,Celtic,Celtic,0.965128836333046,1,0-0,0-6
+2016,el-0q-1fqr,75cd4ee3|ae7f2f70,FALSE,Europa FC,ŠK Slovan Bratislava,ŠK Slovan Bratislava,0.9676945290858138,1,0-0,0-9
+2020,el-0q-1fqr,86b7acd2|bb780485,FALSE,St. Joseph's,Rangers,Rangers,0.9690098547565723,1,0-0,0-10
+2020,el-0q-1fqr,a338349f|bda134f7,FALSE,Zeta,Vidi,Vidi,0.9692443163527963,1,0-0,1-5
+2017,el-0q-1fqr,6de42722|e24ac92e,FALSE,S.P. La Fiorita,Debrecen,Debrecen,0.9705538801853957,1,0-0,0-7

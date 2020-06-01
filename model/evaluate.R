@@ -85,11 +85,11 @@ rms.winner.by.minute %>% write_csv('model/evaluation/rms-top-model-by-minute.csv
 ggsave(plot = plot.compare.ll, filename = 'model/evaluation/compare-log-lik.png', width = 10, height = 5)
 ggsave(plot = plot.compare.rms, filename = 'model/evaluation/compare-rms.png', width = 10, height = 5)
 
-llbytie = predictions %>% 
-  mutate(tie.ll = map(preds, calculate.ll.by.tie)) %>% 
-  select(version, tie.ll) %>% 
-  unnest(c(tie.ll)) %>% 
-  pivot_wider(names_from = 'version', values_from = 'loglik') %>% 
-  arrange(v2.2.1)
-
-llbytie %>% write_csv('model/evaluation/log-lik-by-tie.csv', na = '')
+training.data %>%
+  distinct(minuteclean) %>%
+  mutate(
+    data = map(minuteclean, filter.by.minute),
+    rows = map_int(data, nrow)
+  ) %>% 
+  select(-data) %>% 
+  write_csv('model/evaluation/rows-per-window.csv')

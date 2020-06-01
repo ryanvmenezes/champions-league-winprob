@@ -22,23 +22,12 @@ runmodelv1:
 	Rscript model/v1/02_plot.R
 	
 createmodels:
-# 	Rscript model/v1/01_model-predict.R
-# 	Rscript model/v2.1/01_model-predict.R
-# 	Rscript model/v2.2/01_model-predict.R
+	Rscript model/v1/01_model-predict.R
+	Rscript model/v2.1/01_model-predict.R
+	Rscript model/v2.2/01_model-predict.R
 	Rscript model/v2.2.1/01_model-predict.R
-# 	Rscript model/v2.2.2/01_model-predict.R
 	Rscript model/evaluate.R
+	Rscript model/tie-calculations.R
 
 createplots:
-# 	Rscript model/v1/02_plot.R
-# 	Rscript model/v2.2/02_plot.R
-	Rscript model/v2.2.1/02_plot.R
-
-djangoroutine:
-	rm -rf pages/db.sqlite3
-	rm -rf pages/winprob/migrations/0*.py
-	python pages/manage.py migrate
-	python pages/manage.py makemigrations
-	python pages/manage.py migrate
-	python pages/manage.py load
-
+	Rscript model/plot.R
