@@ -44,8 +44,9 @@ class TieDetailView(BuildableDetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        preds = context['tie'].prediction_set.all()\
-            .values('minuteclean','minuterown','goalst1diff','awaygoalst1diff','redcardst1diff','player','playerid','eventtype','ag','predictedprobt1')
+        preds = context['tie'].get_predictions()\
+            .values('minuteclean','minuterown','predictedprobt1')
+            # .values('minuteclean','minuterown','goalst1diff','awaygoalst1diff','redcardst1diff','player','playerid','eventtype','ag','predictedprobt1')
         context['preds'] = json.dumps(list(preds), ensure_ascii=False)
         return context
 
