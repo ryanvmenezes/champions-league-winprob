@@ -31,3 +31,12 @@ createmodels:
 
 createplots:
 	Rscript model/plot.R
+
+runserver:
+	python pages/manage.py runserver
+
+buildserver:
+	python pages/manage.py buildserver
+
+build:
+	python pages/manage.py build
