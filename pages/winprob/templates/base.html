@@ -8,12 +8,7 @@
 
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/jquery.dataTables.min.css' %}">
-    <style>
-      .flagicon {
-        width: 25px;
-        margin: 2px 5px;
-      }
-    </style>
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
     <style>
       {% block extracss %}
       {% endblock %}
@@ -56,5 +51,6 @@
       {% block extrajs %}
       {% endblock %}
     </script>
+    <script src="{% static 'js/custom.js' %}"></script>
   </body>
 </html>
