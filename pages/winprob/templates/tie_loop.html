@@ -1,0 +1,50 @@
+<div class='row'>
+  <div class='col-12 legend'>
+    <div class='row'>
+      <div class='col-auto tiedetail cl'>Champions Lg.</div>
+      <div class='col-auto tiedetail el'>Europa Lg.</div>
+      <div class='col-auto tiedetail knockout'>Knockout Rd.</div>
+    </div>
+  </div>
+  {% for tie in ties %}
+  <div class='col-lg-6'>
+    <div class='tiedetail col-12 {{ tie.competition }} {% if tie.is_knockout %}knockout{% endif %}'>
+      <p class='blockheader'>
+        {{ tie.season }}<br />
+        {{ tie.get_clean_competition }}<br />
+        {{ tie.get_stage_name }}
+      </p>
+      <div class='row result'>
+        <div class="col-5">
+          <p class='team one text-right'>
+            <img class='flagicon' src="/static/img/{{ tie.team1.country.slug }}.png" />
+            {% if source_template == 'team' and tie.team1.fbrefid == team.fbrefid %}
+            {{ tie.team1.short_name }}
+            {% else %}
+            <a href="{{ tie.team1.get_absolute_url }}">{{ tie.team1.short_name }}</a>
+            {% endif %}
+          </p>
+        </div>
+        <div class="col-2">
+          <p class='result text-center'>
+            <a href='{{ tie.get_absolute_url }}'>0-0</a>
+          </p>
+        </div>
+        <div class="col-5">
+          <p class='team two'>
+            {% if source_template == 'team' and tie.team2.fbrefid == team.fbrefid %}
+            {{ tie.team2.short_name }}
+            {% else %}
+            <a href="{{ tie.team2.get_absolute_url }}">{{ tie.team2.short_name }}</a>
+            {% endif %}
+            <img class='flagicon' src="/static/img/{{ tie.team2.country.slug }}.png" />
+          </p>
+        </div>
+        <div class='col-12'>
+          <p>{{ tie.result }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

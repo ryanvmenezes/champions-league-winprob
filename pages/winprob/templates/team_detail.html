@@ -3,31 +3,9 @@
 {% block title %}{{ team.name }}{% endblock %}
 
 {% block content %}
-
-<h2>{{ team.name }}</h2>
-<h3>{{ team.country }}</h3>
-
-<table id="teams" class="display" style="width:100%">
-    <thead>
-        <tr>
-            <th>Season</th>
-            <th>Stage</th>
-            <th>Team 1</th>
-            <th>Team 2</th>
-            <th>Result</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for tie in ties %}
-        <tr>
-            <td>{{ tie.season }}</td>
-            <td>{{ tie.stage }}</td>
-            <td><a href="{{ tie.team1.get_absolute_url }}">{{ tie.team1 }}</a><img class='flagicon' src="/static/img/{{ tie.team1.country.slug }}.png" /></td>
-            <td><a href="{{ tie.team2.get_absolute_url }}">{{ tie.team2 }}</a><img class='flagicon' src="/static/img/{{ tie.team2.country.slug }}.png" /></td>
-            <td><a href="{{ tie.get_absolute_url }}">{{ tie.result }}</a></td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
-
+<div class="container">
+  <h3>{{ team.name }}</h3>
+  <h4>{{ team.country }}</h4>
+  {% include "tie_loop.html" with source_template='team' %}
+</div>
 {% endblock %}

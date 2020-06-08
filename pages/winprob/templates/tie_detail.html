@@ -4,10 +4,12 @@
 
 {% block content %}
 
-<h2>{{ tie.get_tie_name }}</h2>
+<div class="container">
+  <h3>{{ tie.get_tie_name }}</h3>
+  
+</div>
 {% endblock %}
 
 {% block extrajs %}
 var winprob_data = {{ preds|safe }}
 {% endblock %}
-

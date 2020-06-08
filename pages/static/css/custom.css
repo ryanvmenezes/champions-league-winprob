@@ -1,5 +1,5 @@
  .content {
-   margin-top:80px;
+   padding-top: 80px;
  }
 
 .flagicon {
@@ -16,27 +16,28 @@
 }
 
 .tiedetail {
-  margin:5px;
+  margin: 5px;
   border-radius: 5px;
+  border: 1.5px white solid;
 }
 
 .result p {
   font-size: 0.9rem;
 }
 .cl {
-  background-color: #008fd530;
+  background-color: #67a9cf30;
 }
 
 .el {
-  background-color: #ff7f0030;
+  background-color: #ef8a6230;
 }
 
 .knockout {
-  border: 2.5px solid;
+  border-color: black;
 }
 
 @media (max-width: 991px) {
-  .blockheader {
+  .countrylist .blockheader {
     text-align: left!important;
     margin-left: 20px;
   }
