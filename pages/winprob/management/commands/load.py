@@ -54,11 +54,57 @@ class Command(BaseCommand):
                     in_progress=(row['in_progress'] == 'TRUE'),
                 )
                 if tie_created:
-                    print(f'created Tie {tie.season} {tie}')
+                    print(f'created Tie {tie}')
 
         print(f'loading Predction file')
         predictionsdatapath = os.path.join(settings.ROOT_DIR, 'model', 'predictions', 'v2.2.1.csv')
         insert_count = Prediction.objects.from_csv(predictionsdatapath)
         print(f"{insert_count} Prediction records inserted")
-        
-        
+
+        excitementdatapath = os.path.join(settings.ROOT_DIR, 'model', 'post-model', 'excitement.csv')
+        with open(excitementdatapath, 'r') as excitementcsvfile:
+            excitementcsvreader = csv.DictReader(excitementcsvfile)
+            for row in excitementcsvreader:
+                tie = Tie.objects.get(
+                    season=int(row['season']),
+                    stage=row['stagecode'],
+                    tieid=row['tieid'],
+                )
+                tie.excitement = float(row['excitement'])
+                tie.save()
+                print(f'saved excitement for {tie}')
+
+        minprobdatapath = os.path.join(settings.ROOT_DIR, 'model', 'post-model', 'min-prob-winner.csv')
+        with open(minprobdatapath, 'r') as minprobcsvfile:
+            minprobcsvreader = csv.DictReader(minprobcsvfile)
+            for row in minprobcsvreader:
+                tie = Tie.objects.get(
+                    season=int(row['season']),
+                    stage=row['stagecode'],
+                    tieid=row['tieid'],
+                )
+                tie.minprob_winner = float(row['minprob'])
+                tie.save()
+                print(f'saved min prob winner for {tie}')
+
+        tensiondatapath = os.path.join(settings.ROOT_DIR, 'model', 'post-model', 'tension.csv')
+        with open(tensiondatapath, 'r') as tensioncsvfile:
+            tensioncsvreader = csv.DictReader(tensioncsvfile)
+            for row in tensioncsvreader:
+                tie = Tie.objects.get(
+                    season=int(row['season']),
+                    stage=row['stagecode'],
+                    tieid=row['tieid'],
+                )
+                tie.tension = float(row['tension'])
+                tie.save()
+                print(f'saved tension for {tie}')
+
+        teamsshortdatapath = os.path.join(settings.ROOT_DIR, 'data-get', 'assemble', 'teams', 'europe-teams-fbref.csv')
+        with open(teamsshortdatapath, 'r') as teamsshortcsvfile:
+            teamsshortcsvreader = csv.DictReader(teamsshortcsvfile)
+            for row in teamsshortcsvreader:
+                team = Team.objects.get(fbrefid=row['clubid'])
+                team.shortnames = row['clubshortnames']
+                team.save()
+                print(f"added short names {row['clubshortnames']} to {team}")

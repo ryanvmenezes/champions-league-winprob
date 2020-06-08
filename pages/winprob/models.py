@@ -31,15 +31,23 @@ class Team(BuildableModel):
     slug = models.SlugField(unique=True)
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
     fbrefid = models.CharField(max_length=10)
+    shortnames = models.TextField(null=True)
 
     def __str__(self):
         return self.name
+
+    def num_ties(self):
+        return len(self.team1.all()) + len(self.team2.all())
 
     def get_absolute_url(self):
         return reverse('teamdetail', kwargs={'slug': self.slug})
 
     def get_slug(self):
         return self.slug
+
+    def short_name(self):
+        shortnames = self.shortnames.split('|')
+        return sorted(shortnames, key=lambda x: len(x))[0]
 
 class Tie(BuildableModel):
     slug = models.SlugField(unique=True, max_length=200)
@@ -89,9 +97,12 @@ class Tie(BuildableModel):
     has_odds = models.BooleanField()
     has_invalid_match = models.BooleanField()
     in_progress = models.BooleanField()
-    
+    excitement = models.FloatField(null=True)
+    minprob_winner = models.FloatField(null=True)
+    tension = models.FloatField(null=True)
+
     def __str__(self):
-        return f"{self.team1 if self.team1 is not None else 'UNKNOWN'} v. {self.team2 if self.team2 is not None else 'UNKNOWN'}"
+        return f"{self.season} {self.team1 if self.team1 is not None else 'UNKNOWN'} v. {self.team2 if self.team2 is not None else 'UNKNOWN'}"
 
     def get_predictions(self):
         return Prediction.objects.filter(
@@ -99,6 +110,15 @@ class Tie(BuildableModel):
             stagecode=self.stage,
             tieid=self.tieid
         )
+
+    def get_stage_name(self):
+        return self.get_stage_display().replace('Champions League ', '').replace('Europa League ', '')
+
+    def get_clean_competition(self):
+        return self.get_competition_display().replace('UEFA ', '')
+
+    def is_knockout(self):
+        return '1k' in self.stage
 
     def get_absolute_url(self):
         return reverse('tiedetail', kwargs={'slug': self.slug})
@@ -114,13 +134,13 @@ class Tie(BuildableModel):
             return None
         return self.team1.fbrefid == self.winning_team.fbrefid
 
-    def minprob_winner(self):
-        if not self.has_events or self.has_invalid_match or self.t1win == None:
-            return None
-        if self.t1win():
-            return min([d['predictedprobt1'] for d in self.get_predictions().all().values('predictedprobt1')])
-        if not self.t1win():
-            return min([1 - d['predictedprobt1'] for d in self.get_predictions().all().values('predictedprobt1')])
+    # def minprob_winner(self):
+    #     if not self.has_events or self.has_invalid_match or self.t1win == None:
+    #         return None
+    #     if self.t1win():
+    #         return min([d['predictedprobt1'] for d in self.get_predictions().all().values('predictedprobt1')])
+    #     if not self.t1win():
+    #         return min([1 - d['predictedprobt1'] for d in self.get_predictions().all().values('predictedprobt1')])
 
 class Prediction(BuildableModel):
     # tie = models.ForeignKey(Tie, on_delete=models.CASCADE, null=True)

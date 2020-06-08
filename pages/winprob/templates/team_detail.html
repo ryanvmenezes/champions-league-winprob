@@ -22,8 +22,8 @@
         <tr>
             <td>{{ tie.season }}</td>
             <td>{{ tie.stage }}</td>
-            <td><a href="{{ tie.team1.get_absolute_url }}">{{ tie.team1 }}</a><a href="{{ tie.team1.country.get_absolute_url }}"><img class='flagicon' src="/static/img/{{ tie.team1.country.slug }}.png" /></a></td>
-            <td><a href="{{ tie.team2.get_absolute_url }}">{{ tie.team2 }}</a><a href="{{ tie.team1.country.get_absolute_url }}"><img class='flagicon' src="/static/img/{{ tie.team2.country.slug }}.png" /></a></td>
+            <td><a href="{{ tie.team1.get_absolute_url }}">{{ tie.team1 }}</a><img class='flagicon' src="/static/img/{{ tie.team1.country.slug }}.png" /></td>
+            <td><a href="{{ tie.team2.get_absolute_url }}">{{ tie.team2 }}</a><img class='flagicon' src="/static/img/{{ tie.team2.country.slug }}.png" /></td>
             <td><a href="{{ tie.get_absolute_url }}">{{ tie.result }}</a></td>
         </tr>
         {% endfor %}

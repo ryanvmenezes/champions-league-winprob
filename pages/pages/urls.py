@@ -20,10 +20,10 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.ToTeamsRedirectView.as_view(), name='homepage'),
-    path('teams/', views.TeamListView.as_view(), name='teamlist'),
+    path('teams/', views.CountryListView.as_view(), name='teamlist'),
     path('teams/<slug:slug>/', views.TeamDetailView.as_view(), name='teamdetail'),
-    path('countries/', views.CountryListView.as_view(), name='countrylist'),
-    path('countries/<slug:slug>/', views.CountryTeamsDetailView.as_view(), name='countryteamslist'),
+    # path('countries/', views.CountryListView.as_view(), name='countrylist'),
+    # path('countries/<slug:slug>/', views.CountryTeamsDetailView.as_view(), name='countryteamslist'),
     path('ties/', views.TieListView.as_view(), name='tieslist'),
     path('ties/<slug:slug>', views.TieDetailView.as_view(), name='tiedetail'),
 ]

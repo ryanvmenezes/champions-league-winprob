@@ -1,33 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Countries{% endblock %}
+{% block title %}Teams by country{% endblock %}
 
 {% block content %}
-    {% comment %}
-    <table id="teams" class="display" style="width:100%">
-        <thead>
-            <tr>
-                <th>Country</th>
-                <th>No. teams</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for country in country_list %}
-            <tr>
-                <td><a href="{{ country.get_absolute_url }}">{{ country.name }}<img class='flagicon' src="/static/img/{{ country.slug }}.png" /></a></td>
-                <td>{{ country.num_teams }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% endcomment %}
-    <h2>Countries</h2>
     <div class='container'>
+      <h3>Teams by country</h3>
         <div class='row'>
         {% for country in country_list %}
-            <div class='col-md-3' style='border:solid'>
-                <p>{{ country.name }}<a href="{{ country.get_absolute_url }}"><img class='flagicon' src="/static/img/{{ country.slug }}.png" /></a></p>
+            <div class='countrylist col-lg-3'>
+              <p class='blockheader'>
+                <img class='flagicon' src="/static/img/{{ country.slug }}.png" /><br />
+                {{ country.name }}<br />
+                {{ country.num_teams }} teams
+              </p>
+
+              <ul>
+                {% for team in country.team_set.all %}
+                  <li>
+                    <a href="{{ team.get_absolute_url }}">{{ team.name }}</a> ({{ team.num_ties }}{% if forloop.parentloop.first %}{% if forloop.first %} tie{% if team.num_ties != 1 %}s{% endif %}{% endif %}{% endif %})
+                  </li>
+                {% endfor %}
+              </ul>
             </div>
         {% endfor %}
         </div>

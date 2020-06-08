@@ -32,7 +32,7 @@ class TieListView(BuildableListView):
 
     def get_queryset(self):
         ties = Tie.objects.all()
-        return sorted(ties, key=lambda x: (x.minprob_winner() is None, x.minprob_winner()))
+        return sorted(ties, key=lambda x: (x.minprob_winner is None, x.minprob_winner))
 
 class TieDetailView(BuildableDetailView):
     '''
@@ -46,7 +46,6 @@ class TieDetailView(BuildableDetailView):
         context = super().get_context_data(**kwargs)
         preds = context['tie'].get_predictions()\
             .values('minuteclean','minuterown','predictedprobt1')
-            # .values('minuteclean','minuterown','goalst1diff','awaygoalst1diff','redcardst1diff','player','playerid','eventtype','ag','predictedprobt1')
         context['preds'] = json.dumps(list(preds), ensure_ascii=False)
         return context
 
