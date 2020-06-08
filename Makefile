@@ -20,7 +20,7 @@ updateodds:
 runmodelv1:
 	Rscript model/v1/01_model-predict.R
 	Rscript model/v1/02_plot.R
-	
+
 createmodels:
 	Rscript model/v1/01_model-predict.R
 	Rscript model/v2.1/01_model-predict.R
@@ -39,4 +39,5 @@ buildserver:
 	python pages/manage.py buildserver
 
 build:
-	python pages/manage.py build
+	find site -not -name '*.git' -delete
+	python pages/manage.py build --keep-build-dir
