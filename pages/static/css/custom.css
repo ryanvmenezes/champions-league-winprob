@@ -1,0 +1,43 @@
+ .content {
+   margin-top:80px;
+ }
+
+.flagicon {
+    width: 25px;
+    margin: 2px 5px;
+}
+
+.countrylist {
+  padding: 5px;
+}
+
+.blockheader {
+  text-align: center!important;
+}
+
+.tiedetail {
+  margin:5px;
+  border-radius: 5px;
+}
+
+.result p {
+  font-size: 0.9rem;
+}
+.cl {
+  background-color: #008fd530;
+}
+
+.el {
+  background-color: #ff7f0030;
+}
+
+.knockout {
+  border: 2.5px solid;
+}
+
+@media (max-width: 991px) {
+  .blockheader {
+    text-align: left!important;
+    margin-left: 20px;
+  }
+}
