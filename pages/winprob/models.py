@@ -88,6 +88,8 @@ class Tie(BuildableModel):
     winning_team = models.ForeignKey(Team, on_delete=models.CASCADE, related_name='winning_team', null=True)
     result = models.CharField(max_length=200)
     aggscore = models.CharField(max_length=10)
+    aggscore_t1 = models.IntegerField(null=True)
+    aggscore_t2 = models.IntegerField(null=True)
     score_leg1 = models.CharField(max_length=10)
     score_leg2 = models.CharField(max_length=10)
     away_goals_rule = models.BooleanField()
@@ -133,14 +135,6 @@ class Tie(BuildableModel):
         if self.team1 is None or self.team2 is None or self.winning_team is None:
             return None
         return self.team1.fbrefid == self.winning_team.fbrefid
-
-    # def minprob_winner(self):
-    #     if not self.has_events or self.has_invalid_match or self.t1win == None:
-    #         return None
-    #     if self.t1win():
-    #         return min([d['predictedprobt1'] for d in self.get_predictions().all().values('predictedprobt1')])
-    #     if not self.t1win():
-    #         return min([1 - d['predictedprobt1'] for d in self.get_predictions().all().values('predictedprobt1')])
 
 class Prediction(BuildableModel):
     # tie = models.ForeignKey(Tie, on_delete=models.CASCADE, null=True)

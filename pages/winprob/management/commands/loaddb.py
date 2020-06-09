@@ -43,6 +43,8 @@ class Command(BaseCommand):
                     winning_team=Team.objects.get(fbrefid=row['winnerid']) if row['winnerid'] != '' else None,
                     result=row['result'],
                     aggscore=row['aggscore'],
+                    aggscore_t1=int(row['aggscore1']) if row['aggscore1'] != '' else None,
+                    aggscore_t2=int(row['aggscore2']) if row['aggscore2'] != '' else None,
                     score_leg1=row['score1'],
                     score_leg2=row['score2'],
                     away_goals_rule=(row['agr'] == 'TRUE'),

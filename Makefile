@@ -38,6 +38,22 @@ runserver:
 buildserver:
 	python pages/manage.py buildserver
 
+makemigrations:
+	python pages/manage.py makemigrations
+
+migrate:
+	python pages/manage.py migrate
+
+flushdb:
+	python pages/manage.py flushdb
+
+loaddb:
+	python pages/manage.py loaddb
+
+recreatedb:
+	make flushdb
+	make loaddb
+
 build:
-	find site -not -name '*.git' -delete
+	find site -not -name '*.git' -delete || true
 	python pages/manage.py build --keep-build-dir

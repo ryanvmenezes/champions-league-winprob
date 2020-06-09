@@ -27,7 +27,13 @@
         </div>
         <div class="col-2">
           <p class='result text-center'>
-            <a href='{{ tie.get_absolute_url }}'>0-0</a>
+            <a href='{{ tie.get_absolute_url }}'>
+            {% if tie.in_progress %}
+            TBD
+            {% else %}
+              {{ tie.aggscore_t1 }}{% if tie.away_goals_rule or tie.penalty_kicks %}{% if tie.t1win %}*{% endif %}{% endif %}-{{ tie.aggscore_t2 }}{% if tie.away_goals_rule or tie.penalty_kicks %}{% if not tie.t1win %}*{% endif %}{% endif %}{% if tie.away_goals_rule %}<br />agr{% endif %}{% if tie.after_extra_time and not tie.penalty_kicks %}<br />aet{% endif %}{% if tie.penalty_kicks %}<br />pk{% endif %}
+            {% endif %}
+            </a>
           </p>
         </div>
         <div class="col-5">
@@ -39,9 +45,6 @@
             {% endif %}
             <img class='flagicon' src="/static/img/{{ tie.team2.country.slug }}.png" />
           </p>
-        </div>
-        <div class='col-12'>
-          <p>{{ tie.result }}</p>
         </div>
       </div>
     </div>
