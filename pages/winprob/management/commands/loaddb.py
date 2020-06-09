@@ -59,7 +59,7 @@ class Command(BaseCommand):
                     print(f'created Tie {tie}')
 
         print(f'loading Predction file')
-        predictionsdatapath = os.path.join(settings.ROOT_DIR, 'model', 'predictions', 'v2.2.1.csv')
+        predictionsdatapath = os.path.join(settings.ROOT_DIR, 'model', 'predictions', 'v2.2.csv')
         insert_count = Prediction.objects.from_csv(predictionsdatapath)
         print(f"{insert_count} Prediction records inserted")
 

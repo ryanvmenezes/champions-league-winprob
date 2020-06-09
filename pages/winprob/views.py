@@ -50,6 +50,10 @@ class TieDetailView(BuildableDetailView):
         preds = context['tie'].get_predictions()\
             .values('minuteclean','minuterown','predictedprobt1')
         context['preds'] = json.dumps(list(preds), ensure_ascii=False)
+        events = context['tie'].get_predictions()\
+            .filter(~Q(eventtype = None))\
+            .values('minuteclean', 'minuterown', 'player', 'playerid', 'eventtype', 'ag')
+        context['events'] = json.dumps(list(events), ensure_ascii=False)
         return context
 
     def get_build_path(self, obj):
