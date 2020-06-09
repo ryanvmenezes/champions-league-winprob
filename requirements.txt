@@ -1,5 +1,0 @@
-django
-django-bakery
-tqdm
-psycopg2
-django-postgres-copy

@@ -50,6 +50,9 @@ flushdb:
 loaddb:
 	python pages/manage.py loaddb
 
+shell:
+	python pages/manage.py shell
+
 recreatedb:
 	make flushdb
 	make loaddb

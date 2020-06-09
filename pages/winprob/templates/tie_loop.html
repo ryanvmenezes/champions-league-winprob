@@ -1,4 +1,5 @@
 <div class='row'>
+  {% if not showlegend %}
   <div class='col-12 legend'>
     <div class='row'>
       <div class='col-auto tiedetail cl'>Champions Lg.</div>
@@ -6,6 +7,7 @@
       <div class='col-auto tiedetail knockout'>Knockout Rd.</div>
     </div>
   </div>
+  {% endif %}
   {% for tie in ties %}
   <div class='col-lg-6'>
     <div class='tiedetail col-12 {{ tie.competition }} {% if tie.is_knockout %}knockout{% endif %}'>

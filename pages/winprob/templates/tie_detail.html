@@ -1,15 +1,29 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}{{ tie.get_tie_name }}{% endblock %}
 
 {% block content %}
 
 <div class="container">
-  <h3>{{ tie.get_tie_name }}</h3>
-  
+  <h3 class='text-center'>
+    <a href='{{ tie.team1.get_absolute_url}}'>{{ tie.team1.name }}</a>
+    {{ tie.aggscore_t1 }}-{{ tie.aggscore_t2 }}
+    <a href='{{ tie.team2.get_absolute_url}}'>{{ tie.team2.name }}</a>
+  </h3>
+  <div id='chartholder'></div>
 </div>
 {% endblock %}
 
 {% block extrajs %}
-var winprob_data = {{ preds|safe }}
+<script src="{% static 'js/d3.v5.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<script>
+  app.winProbData = {{ preds|safe }}
+</script>
+<script type="text/javascript">
+$(function () {
+    app.resize();
+});
+</script>
 {% endblock %}

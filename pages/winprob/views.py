@@ -76,7 +76,7 @@ class TeamDetailView(BuildableDetailView):
         context = super().get_context_data(**kwargs)
         team = context['team']
         context['ties'] = Tie.objects.filter(Q(team1 = team) | Q(team2 = team))\
-            .order_by('season')
+            .order_by('season', 'stage')
         return context
 
 # class CountryTeamsDetailView(BuildableDetailView):

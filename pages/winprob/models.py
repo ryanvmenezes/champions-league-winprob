@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Q
 from django.urls import reverse
 from postgres_copy import CopyManager
 from bakery.models import BuildableModel
@@ -136,9 +137,25 @@ class Tie(BuildableModel):
             return None
         return self.team1.fbrefid == self.winning_team.fbrefid
 
-class Prediction(BuildableModel):
-    # tie = models.ForeignKey(Tie, on_delete=models.CASCADE, null=True)
+    def get_next_knockout_match(self):
+        round_orders = {
+            'cl-0q': ['cl-0q-1fqr','cl-0q-2sqr','cl-0q-3tqr','cl-0q-4po'],
+            'cl-1k': ['cl-1k-1r16','cl-1k-2qf','cl-1k-3sf'],
+            'el-0q': ['el-0q-0pre','el-0q-1fqr','el-0q-2sqr','el-0q-3tqr','el-0q-4po'],
+            'el-1k': ['el-1k-1r32','el-1k-2r16','el-1k-3qf','el-1k-4sf'],
+        }
+        round_order = round_orders[self.stage[:5]]
+        match_index = round_order.index(self.stage)
+        if match_index == len(round_order) - 1:
+            return None
+        winning_team = self.team1 if self.t1win() else self.team2
+        return Tie.objects.get(
+            Q(season = self.season) &
+            Q(stage = round_order[match_index + 1]) &
+            (Q(team1 = winning_team) | Q(team2 = winning_team))
+        )
 
+class Prediction(BuildableModel):
     season = models.IntegerField()
     stagecode = models.CharField(max_length=15)
     tieid = models.CharField(max_length=20)
