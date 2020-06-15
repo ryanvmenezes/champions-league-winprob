@@ -11,7 +11,9 @@ app.resize = function() {
 app.drawWinProbChart = function() {
   app.updateDimensionsChart();
 
-  app.data = app.winProbData.sort((a, b) => d3.ascending(a.minuterown, b.minuterown))
+  app.data = app.winProbData.sort((a, b) => d3.ascending(a.minuterown, b.minuterown));
+
+  d3.select('#chartholder svg').remove();
 
   app.svg = app.chartholder.append('svg')
     .attr("width", app.width + app.margin.left + app.margin.right)
@@ -31,19 +33,41 @@ app.drawWinProbChart = function() {
     .range([app.height - app.margin.bottom, app.margin.top]);
 
   app.xTickFormat = function(i) {
-    if (i == 0 | i == 1) {
-      return 'TM\n100%';
-    } else if (i == 0.25 | i == 0.75) {
-      return '75%'
-    } else if (i == 0.5) {
-      return '50%'
+    if (i == 0) {
+      return 'G1 start';
+    } else if (i == 45) {
+      return 'G1 half'
+    } else if (i == 90) {
+      return 'G1 end / G2 start'
+    } else if (i == 135) {
+      return 'G2 half'
+    } else if (i == 180) {
+      if (app.aet) {
+        return 'G2 end / ET start'
+      }
+      return 'G2 end'
+    } else if (app.aet && i == 195) {
+      return 'ET half'
+    } else if (app.aet && i == 210) {
+      return 'ET end'
     }
   }
 
   app.xAxis = g => g
     .attr("transform", `translate(0,${app.height})`)
-    .call(d3.axisBottom(app.xScale).tickValues([0, 45, 90, 135, 180, 195, 210]).tickSizeOuter(0).tickSizeInner(-app.height))
+    .call(
+      d3.axisBottom(app.xScale)
+        .tickValues([0, 45, 90, 135, 180, 195, 210])
+        .tickFormat(app.xTickFormat)
+        .tickSizeOuter(0)
+        .tickSizeInner(-app.height)
+    )
     .call(g => g.select(".domain").remove())
+    .call(
+      g => g.selectAll("text")
+        .attr("transform", "rotate(45)")
+        .style("text-anchor", "start")
+    )
 
   app.yTickFormat = function(i) {
     if (i == 0 | i == 1) {
@@ -68,13 +92,38 @@ app.drawWinProbChart = function() {
   app.svg.append('g').call(app.yAxis);
 
   app.svg.append('g')
+    .attr('class', 'extraGridLine')
+  .append('line')
+    .attr('x1', app.xScale(90))
+    .attr('x2', app.xScale(90))
+    .attr('y1', 0)
+    .attr('y2', app.height)
+    .attr("fill", "none")
+    .attr('stroke', '#666666')
+    .attr('stroke-dasharray', '20')
+    .attr('stroke-width', '2.5px');
+
+  app.svg.append('g')
+    .attr('class', 'extraGridLine')
+  .append('line')
+    .attr('x1', app.xScale(app.aet ? 210 : 180))
+    .attr('x2', app.xScale(app.aet ? 210 : 180))
+    .attr('y1', 0)
+    .attr('y2', app.height)
+    .attr("fill", "none")
+    .attr('stroke', '#666666')
+    .attr('stroke-dasharray', '20')
+    .attr('stroke-width', '2.5px');
+
+  app.svg.append('g')
     .attr('class', 'teamLabel')
   .append('text')
     .attr('dominant-baseline', 'central')
     .attr('text-anchor', 'middle')
     .attr('x', app.xScale(45))
     .attr('y', app.yScale(0.5))
-    .text('at ' + app.team1short);
+    .text('at ' + app.team1short)
+    .style('font-size', app.isMobile ? '20px' : '25px')
 
   app.svg.append('g')
     .attr('class', 'teamLabel')
@@ -84,6 +133,7 @@ app.drawWinProbChart = function() {
     .attr('x', app.xScale(app.aet ? 150 : 135))
     .attr('y', app.yScale(0.5))
     .text('at ' + app.team2short)
+    .style('font-size', app.isMobile ? '20px' : '25px')
 
 
   app.lineDraw = d3.line()
@@ -104,7 +154,7 @@ app.drawWinProbChart = function() {
      .attr('class', 'awaygoal')
    .append('circle')
      .attr('cx', d => app.xScale(d.minuteclean))
-     .attr('cy', d => app.yScale(app.data.filter(e => e.minuteclean == d.minuteclean)[0].predictedprobt1))
+     .attr('cy', d => app.yScale(app.data.filter(e => e.minuterown == d.minuterown)[0].predictedprobt1))
      .attr('r', 7)
      .attr('fill', '#fcc5c0')
 
@@ -115,7 +165,7 @@ app.drawWinProbChart = function() {
       .attr('class', 'goal')
     .append('circle')
       .attr('cx', d => app.xScale(d.minuteclean))
-      .attr('cy', d => app.yScale(app.data.filter(e => e.minuteclean == d.minuteclean)[0].predictedprobt1))
+      .attr('cy', d => app.yScale(app.data.filter(e => e.minuterown == d.minuterown)[0].predictedprobt1))
       .attr('r', 4)
       .attr('fill', '#0570b0')
 }
@@ -123,7 +173,7 @@ app.drawWinProbChart = function() {
 // make chart div responsive to window width
 app.updateDimensionsChart = function() {
     // margins for d3 chart
-    app.margin = {top: 20, right: 20, bottom: 20, left: 20};
+    app.margin = {top: 20, right: 20, bottom: 70, left: 20};
 
     // width of graphic depends on width of chart div
     app.chartElW = document.getElementById("chartholder").clientWidth;
@@ -133,6 +183,6 @@ app.updateDimensionsChart = function() {
     if (app.isMobile){
         app.height = 600 - app.margin.top - app.margin.bottom;
     } else {
-        app.height = 600 - app.margin.top - app.margin.bottom;
+        app.height = 700 - app.margin.top - app.margin.bottom;
     }
 }
