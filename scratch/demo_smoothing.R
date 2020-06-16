@@ -224,5 +224,5 @@ lines(a, df[,3], lty=3)
 
 #As the bandwidth gets larger (more smoothing) all of these should approach the degree of the local polynomials
 abline(h = 3)
-remember that the default is local quadratic
+# remember that the default is local quadratic
 legend("topright", c("Effective df","Fitted df","Variance df"), lty=1:3)

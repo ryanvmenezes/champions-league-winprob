@@ -56,5 +56,5 @@ match.data = summaries %>%
   view()
 
 filtered.predictions %>% 
-  select(predictedprobt1, minuteclean, minuterown) %>% 
+  select(predictedprobt1, minuteclean, minuterown)
   
