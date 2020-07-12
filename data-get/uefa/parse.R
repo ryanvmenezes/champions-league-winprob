@@ -36,4 +36,18 @@ parsed = teams %>%
 
 str(parsed)
 
-parsed$text %>% map(~.x[-2])
+countrytext = parsed$text[[42]]
+
+countrytext %>% 
+  `[`(3:(length(.)-2)) %>% 
+  str_pad(width = 200, side = 'right', pad = ' ') %>% `[`(47) %>% str_sub(1 + 41*2, 41 + 41*2)
+
+pdfdata[[34]] %>%
+  arrange(y, x) %>%
+  mutate(
+    linebreak = !space,
+    lineno = replace_na(lag(cumsum(linebreak)) + 1, 1)
+  ) %>% 
+  group_by(lineno) %>% 
+  summarise(line = str_c(text, collapse = ' ')) %>% 
+  view()
