@@ -1,0 +1,8 @@
+.tick line {
+  stroke: #cccccc;
+}
+
+.teamLabel text {
+  /* font-size: 35px; */
+  fill-opacity: 0.25;
+}

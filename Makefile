@@ -58,5 +58,4 @@ recreatedb:
 	make loaddb
 
 build:
-	find site -not -name '*.git*' -delete || true
-	python pages/manage.py build --keep-build-dir
+	python pages/manage.py build
