@@ -46,15 +46,17 @@ compshtml
 
 qualszns = compshtml %>% 
   select(-compurl) %>%
-  mutate(sznurl = map_chr(
-    html,
-    ~.x %>% 
-      html_nodes('#inner_nav a') %>%
-      html_attr('href') %>% 
-      `[`(str_detect(., 'qual')) %>% 
-      `[`(1) %>% 
-      str_c('https://fbref.com', .)
-  )) %>% 
+  mutate(
+    sznurl = map_chr(
+      html,
+      ~.x %>% 
+        html_nodes('#inner_nav a') %>%
+        html_attr('href') %>% 
+        `[`(str_detect(., 'qual')) %>% 
+        `[`(1) %>% 
+        str_c('https://fbref.com', .)
+    )
+  ) %>% 
   select(-html) %>% 
   drop_na(sznurl)
 
