@@ -4,15 +4,25 @@ cl-0q-1fqr,Champions League,First Qualifying Round
 cl-0q-2sqr,Champions League,Second Qualifying Round
 cl-0q-3tqr,Champions League,Third Qualifying Round
 cl-0q-4po,Champions League,Play-off Round
-cl-1k-1r16,Champions League,Round of 16
-cl-1k-2qf,Champions League,Quarterfinals
-cl-1k-3sf,Champions League,Semifinals
+cl-1k-0qual,Champions League,Qualifying Round
+cl-1k-1first,Champions League,First Round
+cl-1k-2second,Champions League,Second Round
+cl-1k-3r16,Champions League,Round of 16
+cl-1k-4qf,Champions League,Quarter-finals
+cl-1k-5sf,Champions League,Semi-finals
+cl-1k-6final,Champions League,Final
 el-0q-0pre,Europa League,Preliminary Round
 el-0q-1fqr,Europa League,First Qualifying Round
 el-0q-2sqr,Europa League,Second Qualifying Round
 el-0q-3tqr,Europa League,Third Qualifying Round
 el-0q-4po,Europa League,Play-off Round
-el-1k-1r32,Europa League,Round of 32
-el-1k-2r16,Europa League,Round of 16
-el-1k-3qf,Europa League,Quarterfinals
-el-1k-4sf,Europa League,Semifinals
+el-1k-0qual,Europa League,Qualifying Round
+el-1k-1first,Europa League,First Round
+el-1k-2second,Europa League,Second Round
+el-1k-3third,Europa League,Third Round
+el-1k-4fourth,Europa League,Fourth Round
+el-1k-5r32,Europa League,Round of 32
+el-1k-6r16,Europa League,Round of 16
+el-1k-7qf,Europa League,Quarter-finals
+el-1k-8sf,Europa League,Semi-finals
+cl-1k-9f,Europa League,Final

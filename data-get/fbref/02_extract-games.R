@@ -18,7 +18,7 @@ allsznshtml
 
 parsedgames = allsznshtml %>%
   # quicker eval with mutlticore, but won't work within rstudio
-  mutate(games = future_map(html, extractgames, .progress = TRUE)) 
+  mutate(games = future_map(html, extractgames, .progress = TRUE))
   # mutate(games = map(html, extractgames)) # line to run within rstudio, takes 40 seconds
 
 parsedgames
@@ -37,8 +37,7 @@ summaries = parsedgames %>%
     round = str_to_upper(round),
   ) %>% 
   left_join(
-    stagecodes %>%
-        mutate(round = str_to_upper(round))
+    stagecodes %>% mutate(round = str_to_upper(round))
   ) %>% 
   select(stagecode, everything())
 
