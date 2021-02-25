@@ -4,11 +4,33 @@ library(tidyverse)
 
 source(here('data-get', 'fbref', 'utils.R'))
 
-comps = read_csv(here('data-get', 'fbref', 'competition-urls.csv'))
+leagues = tribble(
+  ~competition, ~code_string, ~url,
+  'Champions League','cl','https://fbref.com/en/comps/8/history/UEFA-Champions-League-Seasons',
+  'Europa League','el','https://fbref.com/en/comps/19/history/UEFA-Europa-League-Seasons'
+)
+
+historyhtml = leagues %>% 
+  mutate(html = map(url, read_html))
+
+historyhtml
+
+comps = historyhtml %>% 
+  mutate(
+    sznshtml = map(html, ~.x %>% html_nodes('[data-stat="season"] a')),
+    szn = map(sznshtml, ~.x %>% html_text()),
+    compurl = map(sznshtml, ~.x %>% html_attr('href') %>% str_c('https://fbref.com', .))
+  ) %>% 
+  select(-url, -html, -sznshtml) %>% 
+  unnest(cols = c(szn, compurl))
 
 comps
 
-compshtml = comps %>% 
+# comps = read_csv(here('data-get', 'fbref', 'competition-urls.csv'))
+# 
+# comps
+
+compshtml = comps %>%
   mutate(
     html = map2(
       compurl,
@@ -33,7 +55,8 @@ qualszns = compshtml %>%
       `[`(1) %>% 
       str_c('https://fbref.com', .)
   )) %>% 
-  select(-html)
+  select(-html) %>% 
+  drop_na(sznurl)
 
 qualszns
 

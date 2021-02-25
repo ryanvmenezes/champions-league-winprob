@@ -1,3 +1,4 @@
+library(lubridate)
 library(here)
 library(rvest)
 library(tidyverse)
@@ -5,7 +6,7 @@ library(tidyverse)
 rawfiles = tibble(
   f = dir(here('data-get','oddsportal','raw')),
   p = here('data-get','oddsportal','raw', f)
-  ) %>% 
+) %>% 
   mutate(h = map(p, read_html))
 
 parsedtbls = rawfiles %>% 
@@ -25,7 +26,7 @@ parsedtbls = rawfiles %>%
         ) %>%
         fill(c8, .direction = 'down') %>%
         filter(c5 != 'X') %>%
-        separate(c8, into = c('date','round'), sep = ' - ') %>%
+        separate(c8, into = c('date', 'round'), sep = ' - ') %>%
         separate(c2, into = c('teamh', 'teama'), sep = ' - ') %>%
         select(round, date, teamh, teama, finalscore = c3, oddsh = c4, oddsd = c5, oddsa = c6) %>%
         mutate(
@@ -41,7 +42,7 @@ allodds = parsedtbls %>%
   separate(f, into = c('l1','l2','y1','y2','page','p')) %>% 
   unite('lg', l1:l2, sep = '-') %>% 
   select(comp = lg, season = y2, page = p, table = t) %>% 
-  unnest() %>% 
+  unnest(cols = c(table)) %>% 
   mutate(
     pens = str_detect(finalscore, 'pen.'),
     awarded = str_detect(finalscore, 'award.'),
@@ -53,8 +54,15 @@ allodds = parsedtbls %>%
       TRUE ~ finalscore
       ),
     finalscore = str_replace(finalscore, '\\spen.|\\sET', ''),
-    date = lubridate::dmy(date)
-    ) %>% 
+    date = case_when(
+      str_detect(date, 'Yesterday') ~ str_c(date, year(today())),
+      str_detect(date, 'Today') ~ str_c(date, year(today())),
+      TRUE ~ date
+    ),
+    date = str_remove(date, 'Yesterday, '),
+    date = str_remove(date, 'Today, '),
+    date = dmy(date)
+  ) %>% 
   separate(finalscore, into = c('scoreh','scorea'), sep = ':')
 
 convertodds = function(o) {
@@ -67,13 +75,15 @@ convertodds = function(o) {
 }
 
 allodds = allodds %>% 
-  mutate(oddshprob = map_dbl(oddsh, convertodds),
-         oddsdprob = map_dbl(oddsd, convertodds),
-         oddsaprob = map_dbl(oddsa, convertodds),
-         oddsprobtotal = oddshprob + oddsdprob + oddsaprob,
-         probh = oddshprob / oddsprobtotal,
-         probd = oddsdprob / oddsprobtotal,
-         proba = oddsaprob / oddsprobtotal)
+  mutate(
+    oddshprob = map_dbl(oddsh, convertodds),
+    oddsdprob = map_dbl(oddsd, convertodds),
+    oddsaprob = map_dbl(oddsa, convertodds),
+    oddsprobtotal = oddshprob + oddsdprob + oddsaprob,
+    probh = oddshprob / oddsprobtotal,
+    probd = oddsdprob / oddsprobtotal,
+    proba = oddsaprob / oddsprobtotal
+  )
 
 allodds %>% write_rds(here('data', 'odds.rds'))
 allodds %>% write_csv(here('data-get', 'oddsportal', 'processed', 'odds.csv'), na = '')
@@ -84,7 +94,7 @@ gamesbyseason %>% write_csv(here('data-get', 'oddsportal', 'processed', 'season-
 teams = bind_rows(
   allodds %>% select(comp, team = teamh),
   allodds %>% select(comp, team = teama)
-  ) %>% 
+) %>% 
   mutate(team = str_trim(team)) %>% 
   group_by(team, comp) %>% 
   count() %>% 

@@ -6,10 +6,12 @@ library(RSelenium)
 
 # sudo docker run -d -p 4445:4444 selenium/standalone-firefox:3.141.59
 
+current_szn = 2021
+
 runscrape = function(dr, lg, yr) {
   page = 1
   suffix = str_c('-', yr - 1, '-', yr, '/')
-  if (yr == 2020) { suffix = '/' }
+  if (yr == current_szn) { suffix = '/' }
   if (lg == 'europa-league' & yr < 2010) { lgurl = 'uefa-cup'} else { lgurl = lg }
   
   outfolder = here('data-get', 'oddsportal', 'raw')
@@ -55,7 +57,7 @@ runscrape = function(dr, lg, yr) {
 
 lgs = c('champions-league', 'europa-league')
 # yrs = 2020:2004
-yrs = 2020
+yrs = 2020:2021
 lgyr = expand.grid(lg = lgs, yr = yrs, stringsAsFactors = FALSE)
 
 dr = remoteDriver(port = 4445L)
