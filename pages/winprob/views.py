@@ -8,10 +8,10 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, RedirectView
 from bakery.views import BuildableListView, BuildableDetailView, BuildableRedirectView
 
-class ToTeamsRedirectView(BuildableRedirectView):
+class ToTeamsRedirectView(RedirectView):
     pattern_name = 'teamlist'
     build_path = 'index.html'
-    permanent = True
+    # permanent = True
 
 class CountryListView(BuildableListView):
     '''
@@ -21,8 +21,8 @@ class CountryListView(BuildableListView):
     template_name = 'country_list.html'
     context_object_name = 'country_list'
     queryset = Country.objects.all()\
-    .annotate(num_teams = Count('team'))\
-    .order_by('-num_teams')
+        .annotate(num_teams = Count('team'))\
+        .order_by('-num_teams')
 
 class TieListView(BuildableListView):
     '''
