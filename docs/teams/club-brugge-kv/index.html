@@ -13,6 +13,7 @@
 
     <title>Club Brugge KV - Win probability</title>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="/futbol-winprob-model/">Win probability</a>
@@ -33,506 +34,719 @@
     </nav>
 
     <div class='content'>
-      
+        
 <div class="container">
-  <h3>Club Brugge KV</h3>
-  <h4>Belgium</h4>
-  <div class='row'>
-  
-  <div class='col-12 legend'>
+  <div class="row teaminfo">
+    <h2 class='col'>Club Brugge KV</h2>
+    <div class='w-100'></div>
+    <h3 class='col'>Belgium</h3>
+  </div>
+  <div class='row legend'>
+  <div class='col-12 header'>
+    <p>Legend</p>
+  </div>
+  <div class='col-12 key'>
+    <div class='row items'>
+      <div class='col-auto cl'><p class='text-left'>Champions Lg.</p></div>
+      <div class='w-100 d-lg-none'></div>
+      <div class='col-auto el'><p class='text-left'>Europa Lg.</p></div>
+      <div class='w-100 d-lg-none'></div>
+      <div class='col-auto knockout'><p class='text-left'>Knockout Rd.</p></div>
+    </div>
+  </div>
+  <div class='col-12 notes'>
+    <p>agr: Tie decided by <a href="">away goals rule</a></p>
+    <p>aet: Tie decided <a href="">after extra time</a></p>
+    <p>pk: Tie decided by <a href="">penalty kicks</a></p>
+  </div>
+</div>
+
+
+<!-- one row per tie -->
+<div class='row tie el knockout'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
     <div class='row'>
-      <div class='col-auto tiedetail cl'>Champions Lg.</div>
-      <div class='col-auto tiedetail el'>Europa Lg.</div>
-      <div class='col-auto tiedetail knockout'>Knockout Rd.</div>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 32</p></div>
     </div>
   </div>
-  
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2015<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
-            
-            Club Brugge
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2015-el-0q-3tqr-club-brugge-brndby'>
-            
-              5-0
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/brndby-if/">Brøndby</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/denmark.png" />
-          </p>
-        </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
+          
+          Club Brugge
+          
+        </p>
       </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2015<br />
-        Europa League<br />
-        Qualifying Play-off Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/switzerland.png" />
-            
-            <a href="/futbol-winprob-model/teams/grasshopper-club-zurich/">Grasshopper</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2015-el-0q-4po-grasshopper-club-brugge'>
-            
-              1-3
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            Club Brugge
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
-          </p>
-        </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2020-el-1k-1r32-club-brugge-manchester-utd'>
+          
+            1-6
+          
+          </a>
+        </p>
       </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el knockout'>
-      <p class='blockheader'>
-        2015<br />
-        Europa League<br />
-        Round of 32
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/denmark.png" />
-            
-            <a href="/futbol-winprob-model/teams/aalborg-bk/">Aalborg</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2015-el-1k-1r32-aalborg-club-brugge'>
-            
-              1-6
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
+      <div class='col-5'>
           <p class='team two'>
-            
-            Club Brugge
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el knockout'>
-      <p class='blockheader'>
-        2015<br />
-        Europa League<br />
-        Round of 16
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
-            
-            Club Brugge
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2015-el-1k-2r16-club-brugge-besiktas'>
-            
-              5-2
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/besiktas-jk/">Beşiktaş</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/turkey.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el knockout'>
-      <p class='blockheader'>
-        2015<br />
-        Europa League<br />
-        Quarterfinals
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
-            
-            Club Brugge
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2015-el-1k-3qf-club-brugge-dnipro'>
-            
-              0-1
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fc-dnipro/">Dnipro</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2016<br />
-        Champions League<br />
-        Third Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
-            
-            <a href="/futbol-winprob-model/teams/panathinaikos-fc/">Panathinaikos</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2016-cl-0q-3tqr-panathinaikos-club-brugge'>
-            
-              2-4
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            Club Brugge
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2016<br />
-        Champions League<br />
-        Qualifying Play-off Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/england.png" />
             
             <a href="/futbol-winprob-model/teams/manchester-united-fc/">Manchester Utd</a>
             
+            <img class='flagicon' src="/futbol-winprob-model/static/img/england.png" />
           </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2016-cl-0q-4po-manchester-utd-club-brugge'>
-            
-              7-1
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/austria.png" />
+          
+          <a href="/futbol-winprob-model/teams/lask-linz/">LASK</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2020-cl-0q-4po-lask-club-brugge'>
+          
+            1-3
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
           <p class='team two'>
             
             Club Brugge
             
             <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
           </p>
-        </div>
       </div>
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2018<br />
-        Champions League<br />
-        Third Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/turkey.png" />
-            
-            <a href="/futbol-winprob-model/teams/istanbulspor/">İstanbulspor</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2018-cl-0q-3tqr-istanbulspor-club-brugge'>
-            
-              None-None
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            Club Brugge
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
-          </p>
-        </div>
-      </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2018<br />
-        Europa League<br />
-        Qualifying Play-off Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
-            
-            Club Brugge
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2018-el-0q-4po-club-brugge-aek-athens'>
-            
-              0-3
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/aek-athens-fc/">AEK Athens</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
-          </p>
-        </div>
-      </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el knockout'>
-      <p class='blockheader'>
-        2019<br />
-        Europa League<br />
-        Round of 32
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
-            
-            Club Brugge
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2019-el-1k-1r32-club-brugge-rb-salzburg'>
-            
-              2-5
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fc-red-bull-salzburg/">RB Salzburg</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/austria.png" />
-          </p>
-        </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
+          
+          Club Brugge
+          
+        </p>
       </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2020<br />
-        Champions League<br />
-        Third Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
-            
-            Club Brugge
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2020-cl-0q-3tqr-club-brugge-dynamo-kyiv'>
-            
-              4-3
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2020-cl-0q-3tqr-club-brugge-dynamo-kyiv'>
+          
+            4-3
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
           <p class='team two'>
             
             <a href="/futbol-winprob-model/teams/fc-dynamo-kyiv/">Dynamo Kyiv</a>
             
             <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
           </p>
-        </div>
       </div>
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2020<br />
-        Champions League<br />
-        Qualifying Play-off Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el knockout'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 32</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
+          
+          Club Brugge
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2019-el-1k-1r32-club-brugge-rb-salzburg'>
+          
+            2-5
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/fc-red-bull-salzburg/">RB Salzburg</a>
+            
             <img class='flagicon' src="/futbol-winprob-model/static/img/austria.png" />
-            
-            <a href="/futbol-winprob-model/teams/lask-linz/">LASK</a>
-            
           </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2020-cl-0q-4po-lask-club-brugge'>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2018 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
+          
+          Club Brugge
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2018-el-0q-4po-club-brugge-aek-athens'>
+          
+            0-3
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
             
-              1-3
+            <a href="/futbol-winprob-model/teams/aek-athens-fc/">AEK Athens</a>
             
-            </a>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
           </p>
-        </div>
-        <div class="col-5">
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2018 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/turkey.png" />
+          
+          <a href="/futbol-winprob-model/teams/istanbulspor/">İstanbulspor</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2018-cl-0q-3tqr-istanbulspor-club-brugge'>
+          
+            None-None
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
           <p class='team two'>
             
             Club Brugge
             
             <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
           </p>
-        </div>
       </div>
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el knockout'>
-      <p class='blockheader'>
-        2020<br />
-        Europa League<br />
-        Round of 32
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/england.png" />
+          
+          <a href="/futbol-winprob-model/teams/manchester-united-fc/">Manchester Utd</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2016-cl-0q-4po-manchester-utd-club-brugge'>
+          
+            7-1
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
             
             Club Brugge
             
+            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
           </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2020-el-1k-1r32-club-brugge-manchester-utd'>
-            
-              1-6
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/manchester-united-fc/">Manchester Utd</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/england.png" />
-          </p>
-        </div>
       </div>
     </div>
   </div>
-  
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
 </div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
+          
+          <a href="/futbol-winprob-model/teams/panathinaikos-fc/">Panathinaikos</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2016-cl-0q-3tqr-panathinaikos-club-brugge'>
+          
+            2-4
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            Club Brugge
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el knockout'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Quarterfinals</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
+          
+          Club Brugge
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2015-el-1k-3qf-club-brugge-dnipro'>
+          
+            0-1
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/fc-dnipro/">Dnipro</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el knockout'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 16</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
+          
+          Club Brugge
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2015-el-1k-2r16-club-brugge-besiktas'>
+          
+            5-2
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/besiktas-jk/">Beşiktaş</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/turkey.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el knockout'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 32</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/denmark.png" />
+          
+          <a href="/futbol-winprob-model/teams/aalborg-bk/">Aalborg</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2015-el-1k-1r32-aalborg-club-brugge'>
+          
+            1-6
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            Club Brugge
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/switzerland.png" />
+          
+          <a href="/futbol-winprob-model/teams/grasshopper-club-zurich/">Grasshopper</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2015-el-0q-4po-grasshopper-club-brugge'>
+          
+            1-3
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            Club Brugge
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
+          
+          Club Brugge
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2015-el-0q-3tqr-club-brugge-brndby'>
+          
+            5-0
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/brndby-if/">Brøndby</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/denmark.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 </div>
 
+      </div>
     </div>
 
     <script src="/futbol-winprob-model/static/js/jquery-3.5.1.slim.min.js"></script>

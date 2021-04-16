@@ -13,6 +13,7 @@
 
     <title>Knattspyrnufélag Reykjavíkur - Win probability</title>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="/futbol-winprob-model/">Win probability</a>
@@ -33,173 +34,255 @@
     </nav>
 
     <div class='content'>
-      
+        
 <div class="container">
-  <h3>Knattspyrnufélag Reykjavíkur</h3>
-  <h4>Iceland</h4>
-  <div class='row'>
-  
-  <div class='col-12 legend'>
+  <div class="row teaminfo">
+    <h2 class='col'>Knattspyrnufélag Reykjavíkur</h2>
+    <div class='w-100'></div>
+    <h3 class='col'>Iceland</h3>
+  </div>
+  <div class='row legend'>
+  <div class='col-12 header'>
+    <p>Legend</p>
+  </div>
+  <div class='col-12 key'>
+    <div class='row items'>
+      <div class='col-auto cl'><p class='text-left'>Champions Lg.</p></div>
+      <div class='w-100 d-lg-none'></div>
+      <div class='col-auto el'><p class='text-left'>Europa Lg.</p></div>
+      <div class='w-100 d-lg-none'></div>
+      <div class='col-auto knockout'><p class='text-left'>Knockout Rd.</p></div>
+    </div>
+  </div>
+  <div class='col-12 notes'>
+    <p>agr: Tie decided by <a href="">away goals rule</a></p>
+    <p>aet: Tie decided <a href="">after extra time</a></p>
+    <p>pk: Tie decided by <a href="">penalty kicks</a></p>
+  </div>
+</div>
+
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
     <div class='row'>
-      <div class='col-auto tiedetail cl'>Champions Lg.</div>
-      <div class='col-auto tiedetail el'>Europa Lg.</div>
-      <div class='col-auto tiedetail knockout'>Knockout Rd.</div>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
     </div>
   </div>
-  
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2015<br />
-        Champions League<br />
-        Second Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/iceland.png" />
-            
-            KR Reykjavík
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2015-cl-0q-2sqr-kr-reykjavik-celtic'>
-            
-              0-5
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/celtic-fc/">Celtic</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/scotland.png" />
-          </p>
-        </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/norway.png" />
+          
+          <a href="/futbol-winprob-model/teams/molde-fk/">Molde</a>
+          
+        </p>
       </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2016<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/ireland.png" />
-            
-            <a href="/futbol-winprob-model/teams/cork-city-fc/">Cork City FC</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2016-el-0q-1fqr-cork-city-fc-kr-reykjavik'>
-            
-              2-3<br />aet
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2020-el-0q-1fqr-molde-kr-reykjavik'>
+          
+            7-1
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
           <p class='team two'>
             
             KR Reykjavík
             
             <img class='flagicon' src="/futbol-winprob-model/static/img/iceland.png" />
           </p>
-        </div>
       </div>
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2016<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/iceland.png" />
-            
-            KR Reykjavík
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2016-el-0q-2sqr-kr-reykjavik-rosenborg'>
-            
-              0-4
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/iceland.png" />
+          
+          KR Reykjavík
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2016-el-0q-2sqr-kr-reykjavik-rosenborg'>
+          
+            0-4
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
           <p class='team two'>
             
             <a href="/futbol-winprob-model/teams/rosenborg-bk/">Rosenborg</a>
             
             <img class='flagicon' src="/futbol-winprob-model/static/img/norway.png" />
           </p>
-        </div>
       </div>
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2020<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/norway.png" />
-            
-            <a href="/futbol-winprob-model/teams/molde-fk/">Molde</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2020-el-0q-1fqr-molde-kr-reykjavik'>
-            
-              7-1
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/ireland.png" />
+          
+          <a href="/futbol-winprob-model/teams/cork-city-fc/">Cork City FC</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2016-el-0q-1fqr-cork-city-fc-kr-reykjavik'>
+          
+            2-3
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
           <p class='team two'>
             
             KR Reykjavík
             
             <img class='flagicon' src="/futbol-winprob-model/static/img/iceland.png" />
           </p>
-        </div>
       </div>
     </div>
   </div>
-  
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      <div class='col-lg-4'>
+        <p class='text-center'>aet</p>
+      </div>
+      
+      
+    </div>
+  </div>
 </div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Second Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/iceland.png" />
+          
+          KR Reykjavík
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2015-cl-0q-2sqr-kr-reykjavik-celtic'>
+          
+            0-5
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/celtic-fc/">Celtic</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/scotland.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 </div>
 
+      </div>
     </div>
 
     <script src="/futbol-winprob-model/static/js/jquery-3.5.1.slim.min.js"></script>

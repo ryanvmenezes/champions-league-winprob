@@ -13,6 +13,7 @@
 
     <title>FK Liepāja - Win probability</title>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="/futbol-winprob-model/">Win probability</a>
@@ -33,247 +34,359 @@
     </nav>
 
     <div class='content'>
-      
+        
 <div class="container">
-  <h3>FK Liepāja</h3>
-  <h4>Latvia</h4>
-  <div class='row'>
-  
-  <div class='col-12 legend'>
+  <div class="row teaminfo">
+    <h2 class='col'>FK Liepāja</h2>
+    <div class='w-100'></div>
+    <h3 class='col'>Latvia</h3>
+  </div>
+  <div class='row legend'>
+  <div class='col-12 header'>
+    <p>Legend</p>
+  </div>
+  <div class='col-12 key'>
+    <div class='row items'>
+      <div class='col-auto cl'><p class='text-left'>Champions Lg.</p></div>
+      <div class='w-100 d-lg-none'></div>
+      <div class='col-auto el'><p class='text-left'>Europa Lg.</p></div>
+      <div class='w-100 d-lg-none'></div>
+      <div class='col-auto knockout'><p class='text-left'>Knockout Rd.</p></div>
+    </div>
+  </div>
+  <div class='col-12 notes'>
+    <p>agr: Tie decided by <a href="">away goals rule</a></p>
+    <p>aet: Tie decided <a href="">after extra time</a></p>
+    <p>pk: Tie decided by <a href="">penalty kicks</a></p>
+  </div>
+</div>
+
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
     <div class='row'>
-      <div class='col-auto tiedetail cl'>Champions Lg.</div>
-      <div class='col-auto tiedetail el'>Europa Lg.</div>
-      <div class='col-auto tiedetail knockout'>Knockout Rd.</div>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
     </div>
   </div>
-  
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2017<br />
-        Champions League<br />
-        Second Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/austria.png" />
-            
-            <a href="/futbol-winprob-model/teams/fc-red-bull-salzburg/">RB Salzburg</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2017-cl-0q-2sqr-rb-salzburg-fk-liepaja'>
-            
-              3-0
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
+          
+          <a href="/futbol-winprob-model/teams/ifk-norrkoping/">Norrköping</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2020-el-0q-2sqr-norrkoping-fk-liepaja'>
+          
+            3-0
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
           <p class='team two'>
             
             FK Liepāja
             
             <img class='flagicon' src="/futbol-winprob-model/static/img/latvia.png" />
           </p>
-        </div>
       </div>
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2018<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/northern-ireland.png" />
-            
-            <a href="/futbol-winprob-model/teams/crusaders-fc/">Crusaders</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2018-el-0q-1fqr-crusaders-fc-fk-liepaja'>
-            
-              3-3*<br />agr
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            FK Liepāja
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/latvia.png" />
-          </p>
-        </div>
-      </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2018<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/latvia.png" />
-            
-            FK Liepāja
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2018-el-0q-2sqr-fk-liepaja-suduva'>
-            
-              1-2
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fk-suduva-marijampole/">Sūduva</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/lithuania.png" />
-          </p>
-        </div>
-      </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2019<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/latvia.png" />
-            
-            FK Liepāja
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2019-el-0q-1fqr-fk-liepaja-hacken'>
-            
-              2-4
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/bk-hacken/">Häcken</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          </p>
-        </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/latvia.png" />
+          
+          FK Liepāja
+          
+        </p>
       </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2020<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/latvia.png" />
-            
-            FK Liepāja
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2020-el-0q-1fqr-fk-liepaja-dinamo-minsk'>
-            
-              3-2
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2020-el-0q-1fqr-fk-liepaja-dinamo-minsk'>
+          
+            3-2
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
           <p class='team two'>
             
             <a href="/futbol-winprob-model/teams/fc-dinamo-minsk/">Dinamo Minsk</a>
             
             <img class='flagicon' src="/futbol-winprob-model/static/img/belarus.png" />
           </p>
-        </div>
       </div>
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2020<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/latvia.png" />
+          
+          FK Liepāja
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2019-el-0q-1fqr-fk-liepaja-hacken'>
+          
+            2-4
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/bk-hacken/">Häcken</a>
+            
             <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-            
-            <a href="/futbol-winprob-model/teams/ifk-norrkoping/">Norrköping</a>
-            
           </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2020-el-0q-2sqr-norrkoping-fk-liepaja'>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2018 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/latvia.png" />
+          
+          FK Liepāja
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2018-el-0q-2sqr-fk-liepaja-suduva'>
+          
+            1-2
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
             
-              3-0
+            <a href="/futbol-winprob-model/teams/fk-suduva-marijampole/">Sūduva</a>
             
-            </a>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/lithuania.png" />
           </p>
-        </div>
-        <div class="col-5">
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2018 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/northern-ireland.png" />
+          
+          <a href="/futbol-winprob-model/teams/crusaders-fc/">Crusaders</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2018-el-0q-1fqr-crusaders-fc-fk-liepaja'>
+          
+            3-3*
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
           <p class='team two'>
             
             FK Liepāja
             
             <img class='flagicon' src="/futbol-winprob-model/static/img/latvia.png" />
           </p>
-        </div>
       </div>
     </div>
   </div>
-  
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      <div class='col-lg-4'>
+        <p class='text-center'>agr</p>
+      </div>
+      
+      
+      
+    </div>
+  </div>
 </div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2017 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Second Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/austria.png" />
+          
+          <a href="/futbol-winprob-model/teams/fc-red-bull-salzburg/">RB Salzburg</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2017-cl-0q-2sqr-rb-salzburg-fk-liepaja'>
+          
+            3-0
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            FK Liepāja
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/latvia.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 </div>
 
+      </div>
     </div>
 
     <script src="/futbol-winprob-model/static/js/jquery-3.5.1.slim.min.js"></script>

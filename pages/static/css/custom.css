@@ -1,10 +1,12 @@
- .content {
-   padding-top: 80px;
- }
+.content {
+ padding-top: 80px;
+}
+
+/* teams by country list */
 
 .flagicon {
-    width: 25px;
-    margin: 2px 5px;
+  width: 25px;
+  margin: 2px 5px;
 }
 
 .countrylist {
@@ -12,18 +14,63 @@
 }
 
 .blockheader {
-  text-align: center!important;
+  text-align: center !important;
 }
 
-.tiedetail {
-  margin: 5px;
+@media (max-width: 991px) {
+  .countrylist .blockheader {
+    text-align: left!important;
+    margin-left: 20px;
+  }
+}
+
+/* tie list */
+
+.teaminfo {
+  margin-bottom: 10px;
+}
+
+.legend {
+  margin-bottom: 15px;
+}
+
+.legend p {
+  /* font-size: 0.9rem; */
+  margin-top: 0;
+  margin-bottom: 0;
+  /* margin-left: 13px; */
+}
+
+.legend .header p {
+  font-weight: bold;
+}
+
+.legend .items {
+  margin: 8px -3px;
+}
+
+.legend .items div {
+  border: 2px white solid;
   border-radius: 5px;
-  border: 1.5px white solid;
+  margin-right: 10px;
 }
 
-.result p {
-  font-size: 0.9rem;
+.items .w-100 {
+  height: 5px;
 }
+
+.tie {
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 2px white solid;
+  padding: 5px 0;
+}
+
+.tie p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
 .cl {
   background-color: #67a9cf30;
 }
@@ -33,12 +80,9 @@
 }
 
 .knockout {
-  border-color: black;
+  border-color: #666 !important;
 }
 
-@media (max-width: 991px) {
-  .countrylist .blockheader {
-    text-align: left!important;
-    margin-left: 20px;
-  }
+.result p {
+  font-size: 0.9rem;
 }

@@ -13,6 +13,7 @@
 
     <title>FC Pyunik - Win probability</title>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="/futbol-winprob-model/">Win probability</a>
@@ -33,358 +34,515 @@
     </nav>
 
     <div class='content'>
-      
+        
 <div class="container">
-  <h3>FC Pyunik</h3>
-  <h4>Armenia</h4>
-  <div class='row'>
-  
-  <div class='col-12 legend'>
+  <div class="row teaminfo">
+    <h2 class='col'>FC Pyunik</h2>
+    <div class='w-100'></div>
+    <h3 class='col'>Armenia</h3>
+  </div>
+  <div class='row legend'>
+  <div class='col-12 header'>
+    <p>Legend</p>
+  </div>
+  <div class='col-12 key'>
+    <div class='row items'>
+      <div class='col-auto cl'><p class='text-left'>Champions Lg.</p></div>
+      <div class='w-100 d-lg-none'></div>
+      <div class='col-auto el'><p class='text-left'>Europa Lg.</p></div>
+      <div class='w-100 d-lg-none'></div>
+      <div class='col-auto knockout'><p class='text-left'>Knockout Rd.</p></div>
+    </div>
+  </div>
+  <div class='col-12 notes'>
+    <p>agr: Tie decided by <a href="">away goals rule</a></p>
+    <p>aet: Tie decided <a href="">after extra time</a></p>
+    <p>pk: Tie decided by <a href="">penalty kicks</a></p>
+  </div>
+</div>
+
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
     <div class='row'>
-      <div class='col-auto tiedetail cl'>Champions Lg.</div>
-      <div class='col-auto tiedetail el'>Europa Lg.</div>
-      <div class='col-auto tiedetail knockout'>Knockout Rd.</div>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
     </div>
   </div>
-  
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2015<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
-            
-            Pyunik
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2015-el-0q-1fqr-fc-pyunik-fc-astana'>
-            
-              1-6
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fc-astana/">FC Astana</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/kazakhstan.png" />
-          </p>
-        </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
+          
+          Pyunik
+          
+        </p>
       </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2016<br />
-        Champions League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
-            
-            Pyunik
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2016-cl-0q-1fqr-fc-pyunik-folgore'>
-            
-              4-2
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/ss-folgore-falciano-calcio/">Folgore</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/san-marino.png" />
-          </p>
-        </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2020-el-0q-3tqr-pyunik-wolves'>
+          
+            0-8
+          
+          </a>
+        </p>
       </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2016<br />
-        Champions League<br />
-        Second Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/norway.png" />
-            
-            <a href="/futbol-winprob-model/teams/molde-fk/">Molde</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2016-cl-0q-2sqr-molde-fc-pyunik'>
-            
-              5-1
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            Pyunik
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2019<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
-            
-            Pyunik
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2019-el-0q-1fqr-fc-pyunik-fk-vardar'>
-            
-              3-0
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fk-vardar/">FK Vardar</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/north-macedonia.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2019<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/kazakhstan.png" />
-            
-            <a href="/futbol-winprob-model/teams/fc-tobol/">FC Tobol</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2019-el-0q-2sqr-fc-tobol-fc-pyunik'>
-            
-              2-2*<br />agr
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            Pyunik
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2019<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
-            
-            Pyunik
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2019-el-0q-3tqr-fc-pyunik-maccabi-tel-aviv'>
-            
-              1-2
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/maccabi-tel-aviv-fc/">Maccabi Tel Aviv</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/israel.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2020<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
-            
-            Pyunik
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2020-el-0q-1fqr-pyunik-shkupi-skopje'>
-            
-              5-4
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fk-shkupi/">FK Shkupi</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/north-macedonia.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2020<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
-            
-            Pyunik
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2020-el-0q-2sqr-pyunik-jablonec'>
-            
-              2-1
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fk-jablonec/">Jablonec</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/czech-republic.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2020<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
-            
-            Pyunik
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2020-el-0q-3tqr-pyunik-wolves'>
-            
-              0-8
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
+      <div class='col-5'>
           <p class='team two'>
             
             <a href="/futbol-winprob-model/teams/wolverhampton-wanderers-fc/">Wolves</a>
             
             <img class='flagicon' src="/futbol-winprob-model/static/img/england.png" />
           </p>
-        </div>
       </div>
     </div>
   </div>
-  
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
 </div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
+          
+          Pyunik
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2020-el-0q-2sqr-pyunik-jablonec'>
+          
+            2-1
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/fk-jablonec/">Jablonec</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/czech-republic.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
+          
+          Pyunik
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2020-el-0q-1fqr-pyunik-shkupi-skopje'>
+          
+            5-4
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/fk-shkupi/">FK Shkupi</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/north-macedonia.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
+          
+          Pyunik
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2019-el-0q-3tqr-fc-pyunik-maccabi-tel-aviv'>
+          
+            1-2
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/maccabi-tel-aviv-fc/">Maccabi Tel Aviv</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/israel.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/kazakhstan.png" />
+          
+          <a href="/futbol-winprob-model/teams/fc-tobol/">FC Tobol</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2019-el-0q-2sqr-fc-tobol-fc-pyunik'>
+          
+            2-2*
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            Pyunik
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      <div class='col-lg-4'>
+        <p class='text-center'>agr</p>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
+          
+          Pyunik
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2019-el-0q-1fqr-fc-pyunik-fk-vardar'>
+          
+            3-0
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/fk-vardar/">FK Vardar</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/north-macedonia.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Second Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/norway.png" />
+          
+          <a href="/futbol-winprob-model/teams/molde-fk/">Molde</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2016-cl-0q-2sqr-molde-fc-pyunik'>
+          
+            5-1
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            Pyunik
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
+          
+          Pyunik
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2016-cl-0q-1fqr-fc-pyunik-folgore'>
+          
+            4-2
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/ss-folgore-falciano-calcio/">Folgore</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/san-marino.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/armenia.png" />
+          
+          Pyunik
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2015-el-0q-1fqr-fc-pyunik-fc-astana'>
+          
+            1-6
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/fc-astana/">FC Astana</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/kazakhstan.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 </div>
 
+      </div>
     </div>
 
     <script src="/futbol-winprob-model/static/js/jquery-3.5.1.slim.min.js"></script>

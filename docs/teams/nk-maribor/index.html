@@ -13,6 +13,7 @@
 
     <title>NK Maribor - Win probability</title>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="/futbol-winprob-model/">Win probability</a>
@@ -33,654 +34,947 @@
     </nav>
 
     <div class='content'>
-      
+        
 <div class="container">
-  <h3>NK Maribor</h3>
-  <h4>Slovenia</h4>
-  <div class='row'>
-  
-  <div class='col-12 legend'>
+  <div class="row teaminfo">
+    <h2 class='col'>NK Maribor</h2>
+    <div class='w-100'></div>
+    <h3 class='col'>Slovenia</h3>
+  </div>
+  <div class='row legend'>
+  <div class='col-12 header'>
+    <p>Legend</p>
+  </div>
+  <div class='col-12 key'>
+    <div class='row items'>
+      <div class='col-auto cl'><p class='text-left'>Champions Lg.</p></div>
+      <div class='w-100 d-lg-none'></div>
+      <div class='col-auto el'><p class='text-left'>Europa Lg.</p></div>
+      <div class='w-100 d-lg-none'></div>
+      <div class='col-auto knockout'><p class='text-left'>Knockout Rd.</p></div>
+    </div>
+  </div>
+  <div class='col-12 notes'>
+    <p>agr: Tie decided by <a href="">away goals rule</a></p>
+    <p>aet: Tie decided <a href="">after extra time</a></p>
+    <p>pk: Tie decided by <a href="">penalty kicks</a></p>
+  </div>
+</div>
+
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
     <div class='row'>
-      <div class='col-auto tiedetail cl'>Champions Lg.</div>
-      <div class='col-auto tiedetail el'>Europa Lg.</div>
-      <div class='col-auto tiedetail knockout'>Knockout Rd.</div>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
     </div>
   </div>
-  
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2015<br />
-        Champions League<br />
-        Second Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/bosnia-and-herzegovina.png" />
-            
-            <a href="/futbol-winprob-model/teams/hsk-zrinjski-mostar/">Zrinjski Mostar</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2015-cl-0q-2sqr-zrinjski-mostar-nk-maribor'>
-            
-              0-2
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/bulgaria.png" />
+          
+          <a href="/futbol-winprob-model/teams/pfc-ludogorets-razgrad/">Ludogorets</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2020-el-0q-4po-ludogorets-maribor'>
+          
+            2*-2
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
           <p class='team two'>
             
             Maribor
             
             <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
           </p>
-        </div>
       </div>
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2015<br />
-        Champions League<br />
-        Third Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-            
-            Maribor
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2015-cl-0q-3tqr-nk-maribor-maccabi-tel-aviv'>
-            
-              3-2
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/maccabi-tel-aviv-fc/">Maccabi Tel Aviv</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/israel.png" />
-          </p>
-        </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      <div class='col-lg-4'>
+        <p class='text-center'>agr</p>
       </div>
+      
+      
+      
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2015<br />
-        Champions League<br />
-        Qualifying Play-off Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-            
-            Maribor
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2015-cl-0q-4po-nk-maribor-celtic'>
-            
-              2-1
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/celtic-fc/">Celtic</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/scotland.png" />
-          </p>
-        </div>
-      </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2016<br />
-        Champions League<br />
-        Second Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-            
-            Maribor
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2016-cl-0q-2sqr-nk-maribor-fc-astana'>
-            
-              2-3
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fc-astana/">FC Astana</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/kazakhstan.png" />
-          </p>
-        </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          
+          Maribor
+          
+        </p>
       </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2017<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-            
-            Maribor
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2017-el-0q-2sqr-nk-maribor-levski-sofia'>
-            
-              1*-1<br />agr
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/pfc-levski-sofia/">Levski Sofia</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/bulgaria.png" />
-          </p>
-        </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2020-cl-0q-3tqr-maribor-rosenborg'>
+          
+            2-6
+          
+          </a>
+        </p>
       </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2017<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/scotland.png" />
-            
-            <a href="/futbol-winprob-model/teams/aberdeen-fc/">Aberdeen</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2017-el-0q-3tqr-aberdeen-nk-maribor'>
-            
-              1-2
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            Maribor
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2017<br />
-        Europa League<br />
-        Qualifying Play-off Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/azerbaijan.png" />
-            
-            <a href="/futbol-winprob-model/teams/gabala-fk/">Qəbələ</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2017-el-0q-4po-gabala-fk-nk-maribor'>
-            
-              3-2
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            Maribor
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2018<br />
-        Champions League<br />
-        Second Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/bosnia-and-herzegovina.png" />
-            
-            <a href="/futbol-winprob-model/teams/hsk-zrinjski-mostar/">Zrinjski Mostar</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2018-cl-0q-2sqr-zrinjski-mostar-nk-maribor'>
-            
-              2-3
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            Maribor
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2018<br />
-        Champions League<br />
-        Third Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-            
-            Maribor
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2018-cl-0q-3tqr-nk-maribor-fh'>
-            
-              2-0
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fimleikafelag-hafnarfjarar/">FH</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/iceland.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2018<br />
-        Champions League<br />
-        Qualifying Play-off Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/israel.png" />
-            
-            <a href="/futbol-winprob-model/teams/hapoel-beer-sheva-fc/">Be&#x27;er Sheva</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2018-cl-0q-4po-beer-sheva-nk-maribor'>
-            
-              2-2*<br />agr
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            Maribor
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2019<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/albania.png" />
-            
-            <a href="/futbol-winprob-model/teams/fk-partizani-tirana/">Partizani Tirana</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2019-el-0q-1fqr-partizani-tirana-nk-maribor'>
-            
-              0-3
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            Maribor
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2019<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/georgia.png" />
-            
-            <a href="/futbol-winprob-model/teams/fc-chikhura-sachkhere/">Chikhura</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2019-el-0q-2sqr-chikhura-nk-maribor'>
-            
-              0-2
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            Maribor
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2019<br />
-        Europa League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/scotland.png" />
-            
-            <a href="/futbol-winprob-model/teams/rangers-fc/">Rangers</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2019-el-0q-3tqr-rangers-nk-maribor'>
-            
-              3-1
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            Maribor
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2020<br />
-        Champions League<br />
-        First Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/iceland.png" />
-            
-            <a href="/futbol-winprob-model/teams/valur/">Valur</a>
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2020-cl-0q-1fqr-valur-maribor'>
-            
-              0-5
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            Maribor
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2020<br />
-        Champions League<br />
-        Second Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-            
-            Maribor
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2020-cl-0q-2sqr-maribor-aik-stockholm'>
-            
-              4*-4<br />agr<br />aet
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/aik-stockholm/">AIK Stockholm</a>
-            
-            <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 cl '>
-      <p class='blockheader'>
-        2020<br />
-        Champions League<br />
-        Third Qualifying Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-            
-            Maribor
-            
-          </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2020-cl-0q-3tqr-maribor-rosenborg'>
-            
-              2-6
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
+      <div class='col-5'>
           <p class='team two'>
             
             <a href="/futbol-winprob-model/teams/rosenborg-bk/">Rosenborg</a>
             
             <img class='flagicon' src="/futbol-winprob-model/static/img/norway.png" />
           </p>
-        </div>
       </div>
     </div>
   </div>
-  
-  <div class='col-lg-6'>
-    <div class='tiedetail col-12 el '>
-      <p class='blockheader'>
-        2020<br />
-        Europa League<br />
-        Qualifying Play-off Round
-      </p>
-      <div class='row result'>
-        <div class="col-5">
-          <p class='team one text-right'>
-            <img class='flagicon' src="/futbol-winprob-model/static/img/bulgaria.png" />
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Second Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          
+          Maribor
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2020-cl-0q-2sqr-maribor-aik-stockholm'>
+          
+            4*-4
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
             
-            <a href="/futbol-winprob-model/teams/pfc-ludogorets-razgrad/">Ludogorets</a>
+            <a href="/futbol-winprob-model/teams/aik-stockholm/">AIK Stockholm</a>
             
+            <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
           </p>
-        </div>
-        <div class="col-2">
-          <p class='result text-center'>
-            <a href='/futbol-winprob-model/ties/2020-el-0q-4po-ludogorets-maribor'>
-            
-              2*-2<br />agr
-            
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      <div class='col-lg-4'>
+        <p class='text-center'>agr</p>
+      </div>
+      
+      
+      <div class='col-lg-4'>
+        <p class='text-center'>aet</p>
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/iceland.png" />
+          
+          <a href="/futbol-winprob-model/teams/valur/">Valur</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2020-cl-0q-1fqr-valur-maribor'>
+          
+            0-5
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
           <p class='team two'>
             
             Maribor
             
             <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
           </p>
-        </div>
       </div>
     </div>
   </div>
-  
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
 </div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/scotland.png" />
+          
+          <a href="/futbol-winprob-model/teams/rangers-fc/">Rangers</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2019-el-0q-3tqr-rangers-nk-maribor'>
+          
+            3-1
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            Maribor
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/georgia.png" />
+          
+          <a href="/futbol-winprob-model/teams/fc-chikhura-sachkhere/">Chikhura</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2019-el-0q-2sqr-chikhura-nk-maribor'>
+          
+            0-2
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            Maribor
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/albania.png" />
+          
+          <a href="/futbol-winprob-model/teams/fk-partizani-tirana/">Partizani Tirana</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2019-el-0q-1fqr-partizani-tirana-nk-maribor'>
+          
+            0-3
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            Maribor
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2018 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/israel.png" />
+          
+          <a href="/futbol-winprob-model/teams/hapoel-beer-sheva-fc/">Be&#x27;er Sheva</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2018-cl-0q-4po-beer-sheva-nk-maribor'>
+          
+            2-2*
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            Maribor
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      <div class='col-lg-4'>
+        <p class='text-center'>agr</p>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2018 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          
+          Maribor
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2018-cl-0q-3tqr-nk-maribor-fh'>
+          
+            2-0
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/fimleikafelag-hafnarfjarar/">FH</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/iceland.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2018 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Second Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/bosnia-and-herzegovina.png" />
+          
+          <a href="/futbol-winprob-model/teams/hsk-zrinjski-mostar/">Zrinjski Mostar</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2018-cl-0q-2sqr-zrinjski-mostar-nk-maribor'>
+          
+            2-3
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            Maribor
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2017 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/azerbaijan.png" />
+          
+          <a href="/futbol-winprob-model/teams/gabala-fk/">Qəbələ</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2017-el-0q-4po-gabala-fk-nk-maribor'>
+          
+            3-2
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            Maribor
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2017 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/scotland.png" />
+          
+          <a href="/futbol-winprob-model/teams/aberdeen-fc/">Aberdeen</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2017-el-0q-3tqr-aberdeen-nk-maribor'>
+          
+            1-2
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            Maribor
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie el'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2017 E.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          
+          Maribor
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2017-el-0q-2sqr-nk-maribor-levski-sofia'>
+          
+            1*-1
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/pfc-levski-sofia/">Levski Sofia</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/bulgaria.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      <div class='col-lg-4'>
+        <p class='text-center'>agr</p>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Second Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          
+          Maribor
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2016-cl-0q-2sqr-nk-maribor-fc-astana'>
+          
+            2-3
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/fc-astana/">FC Astana</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/kazakhstan.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          
+          Maribor
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2015-cl-0q-4po-nk-maribor-celtic'>
+          
+            2-1
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/celtic-fc/">Celtic</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/scotland.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          
+          Maribor
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2015-cl-0q-3tqr-nk-maribor-maccabi-tel-aviv'>
+          
+            3-2
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            <a href="/futbol-winprob-model/teams/maccabi-tel-aviv-fc/">Maccabi Tel Aviv</a>
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/israel.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- one row per tie -->
+<div class='row tie cl'>
+  <!-- year and round -->
+  <div class='col-lg-4'>
+    <div class='row'>
+      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 C.L.</p></div>
+      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
+      <div class='col-lg-7'><p class='text-center text-lg-left'>Second Qual. Rd.</p></div>
+    </div>
+  </div>
+
+  <!-- teams and score -->
+  <div class='col-lg-7'>
+    <div class='row'>
+      <div class='col-5'>
+        <p class='team one text-right'>
+          <img class='flagicon' src="/futbol-winprob-model/static/img/bosnia-and-herzegovina.png" />
+          
+          <a href="/futbol-winprob-model/teams/hsk-zrinjski-mostar/">Zrinjski Mostar</a>
+          
+        </p>
+      </div>
+      <div class='col-2'>
+        <p class='result text-center'>
+          <a href='/futbol-winprob-model/ties/2015-cl-0q-2sqr-zrinjski-mostar-nk-maribor'>
+          
+            0-2
+          
+          </a>
+        </p>
+      </div>
+      <div class='col-5'>
+          <p class='team two'>
+            
+            Maribor
+            
+            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- notes (agr/aet) -->
+  <div class='col-lg-1'>
+    <div class='row'>
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 </div>
 
+      </div>
     </div>
 
     <script src="/futbol-winprob-model/static/js/jquery-3.5.1.slim.min.js"></script>
