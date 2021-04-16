@@ -124,7 +124,7 @@ class AfterExtraTimeListView(BuildableListView):
     queryset = Tie.objects.filter(after_extra_time=True)\
         .order_by('-season', '-stage')
 
-class PenaltyKickListView(BuildableListView):
+class PenaltyKicksListView(BuildableListView):
     '''
     A page with all of the ties that required a penalty kick shootout
     '''
