@@ -41,12 +41,13 @@
     <div class='w-100'></div>
     <h3 class='col'>Ukraine</h3>
   </div>
-  <div class='row legend'>
+  
+<div class='row legend'>
   <div class='col-12 header'>
     <p>Legend</p>
   </div>
   <div class='col-12 key'>
-    <div class='row items'>
+    <div class='row'>
       <div class='col-auto cl'><p class='text-left'>Champions Lg.</p></div>
       <div class='w-100 d-lg-none'></div>
       <div class='col-auto el'><p class='text-left'>Europa Lg.</p></div>
@@ -63,29 +64,41 @@
 
 
 <!-- one row per tie -->
+
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Semifinals</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2015 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Semifinals</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/italy.png" />
-          
-          <a href="/futbol-winprob-model/teams/ssc-napoli/">Napoli</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/italy.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/ssc-napoli/">Napoli</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2015-el-1k-4sf-napoli-dnipro'>
           
             1-2
@@ -93,19 +106,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Dnipro
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Dnipro
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -114,30 +136,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Quarterfinals</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2015 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Quarterfinals</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
-          
-          <a href="/futbol-winprob-model/teams/club-brugge-kv/">Club Brugge</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/club-brugge-kv/">Club Brugge</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2015-el-1k-3qf-club-brugge-dnipro'>
           
             0-1
@@ -145,19 +177,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Dnipro
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Dnipro
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -166,30 +207,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 16</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2015 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Rd. of 16</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          
-          Dnipro
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Dnipro
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2015-el-1k-2r16-dnipro-ajax'>
           
             2*-2
@@ -197,19 +248,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/afc-ajax/">Ajax</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/afc-ajax/">Ajax</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/netherlands.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       <div class='col-lg-4'>
@@ -226,30 +286,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 32</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2015 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Rd. of 32</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          
-          Dnipro
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Dnipro
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2015-el-1k-1r32-dnipro-olympiacos'>
           
             4-2
@@ -257,19 +327,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/olympiacos-fc/">Olympiacos</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/olympiacos-fc/">Olympiacos</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -278,30 +357,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2015 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Qual. Play-off Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          
-          Dnipro
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Dnipro
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2015-el-0q-4po-dnipro-hajduk-split'>
           
             2-1
@@ -309,19 +398,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/hnk-hajduk-split/">Hajduk Split</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/hnk-hajduk-split/">Hajduk Split</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/croatia.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -330,30 +428,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2015 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Third Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          
-          Dnipro
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Dnipro
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2015-cl-0q-3tqr-dnipro-fc-copenhagen'>
           
             0-2
@@ -361,19 +469,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fc-copenhagen/">FC Copenhagen</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/fc-copenhagen/">FC Copenhagen</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/denmark.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -381,11 +498,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
 
 
 </div>

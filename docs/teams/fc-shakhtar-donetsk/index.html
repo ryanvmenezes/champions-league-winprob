@@ -41,12 +41,13 @@
     <div class='w-100'></div>
     <h3 class='col'>Ukraine</h3>
   </div>
-  <div class='row legend'>
+  
+<div class='row legend'>
   <div class='col-12 header'>
     <p>Legend</p>
   </div>
   <div class='col-12 key'>
-    <div class='row items'>
+    <div class='row'>
       <div class='col-auto cl'><p class='text-left'>Champions Lg.</p></div>
       <div class='w-100 d-lg-none'></div>
       <div class='col-auto el'><p class='text-left'>Europa Lg.</p></div>
@@ -63,29 +64,41 @@
 
 
 <!-- one row per tie -->
+
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 16</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2020 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Rd. of 16</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/germany.png" />
-          
-          <a href="/futbol-winprob-model/teams/vfl-wolfsburg/">Wolfsburg</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/germany.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/vfl-wolfsburg/">Wolfsburg</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2020-el-1k-2r16-wolfsburg-shakhtar'>
           
             TBD
@@ -93,19 +106,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Shakhtar
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -114,30 +136,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 32</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2020 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Rd. of 32</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          
-          Shakhtar
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2020-el-1k-1r32-shakhtar-benfica'>
           
             5-4
@@ -145,19 +177,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/sl-benfica/">Benfica</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/sl-benfica/">Benfica</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/portugal.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -166,30 +207,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 32</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2019 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Rd. of 32</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          
-          Shakhtar
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2019-el-1k-1r32-shakhtar-eint-frankfurt'>
           
             3-6
@@ -197,19 +248,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/eintracht-frankfurt/">Eint Frankfurt</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/eintracht-frankfurt/">Eint Frankfurt</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/germany.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -218,30 +278,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2018 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 16</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2018 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Rd. of 16</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          
-          Shakhtar
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2018-cl-1k-1r16-shakhtar-roma'>
           
             2-2*
@@ -249,19 +319,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/as-roma/">Roma</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/as-roma/">Roma</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/italy.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       <div class='col-lg-4'>
@@ -274,30 +353,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2017 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 32</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2017 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Rd. of 32</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/spain.png" />
-          
-          <a href="/futbol-winprob-model/teams/celta-de-vigo/">Celta Vigo</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/spain.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/celta-de-vigo/">Celta Vigo</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2017-el-1k-1r32-celta-vigo-shakhtar'>
           
             2-1
@@ -305,19 +394,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Shakhtar
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -330,30 +428,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2017 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2017 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Qual. Play-off Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          
-          Shakhtar
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2017-el-0q-4po-shakhtar-istanbulspor'>
           
             None-None
@@ -361,19 +469,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/istanbulspor/">İstanbulspor</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/istanbulspor/">İstanbulspor</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/turkey.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -382,30 +499,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2017 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2017 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Third Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          
-          Shakhtar
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2017-cl-0q-3tqr-shakhtar-young-boys'>
           
             2*-2
@@ -413,19 +540,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/bsc-young-boys/">Young Boys</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/bsc-young-boys/">Young Boys</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/switzerland.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -442,30 +578,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Semifinals</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2016 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Semifinals</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          
-          Shakhtar
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2016-el-1k-4sf-shakhtar-sevilla'>
           
             3-5
@@ -473,19 +619,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/sevilla-fc/">Sevilla</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/sevilla-fc/">Sevilla</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/spain.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -494,30 +649,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Quarterfinals</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2016 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Quarterfinals</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/portugal.png" />
-          
-          <a href="/futbol-winprob-model/teams/sc-braga/">Braga</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/portugal.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/sc-braga/">Braga</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2016-el-1k-3qf-braga-shakhtar'>
           
             1-6
@@ -525,19 +690,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Shakhtar
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -546,30 +720,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 16</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2016 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Rd. of 16</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          
-          Shakhtar
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2016-el-1k-2r16-shakhtar-anderlecht'>
           
             4-1
@@ -577,19 +761,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/rsc-anderlecht/">Anderlecht</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/rsc-anderlecht/">Anderlecht</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -598,30 +791,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 32</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2016 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Rd. of 32</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          
-          Shakhtar
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2016-el-1k-1r32-shakhtar-schalke-04'>
           
             3-0
@@ -629,19 +832,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fc-schalke-04/">Schalke 04</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/fc-schalke-04/">Schalke 04</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/germany.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -650,30 +862,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2016 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Qual. Play-off Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/austria.png" />
-          
-          <a href="/futbol-winprob-model/teams/sk-rapid-wien/">Rapid Wien</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/austria.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/sk-rapid-wien/">Rapid Wien</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2016-cl-0q-4po-rapid-wien-shakhtar'>
           
             2-3
@@ -681,19 +903,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Shakhtar
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -702,30 +933,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2016 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Third Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/turkey.png" />
-          
-          <a href="/futbol-winprob-model/teams/fenerbahce-sk/">Fenerbahçe</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/turkey.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/fenerbahce-sk/">Fenerbahçe</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2016-cl-0q-3tqr-fenerbahce-shakhtar'>
           
             0-3
@@ -733,19 +974,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Shakhtar
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -754,30 +1004,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 16</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2015 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Rd. of 16</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          
-          Shakhtar
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Shakhtar
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2015-cl-1k-1r16-shakhtar-bayern-munich'>
           
             0-7
@@ -785,19 +1045,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fc-bayern-munich/">Bayern Munich</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/fc-bayern-munich/">Bayern Munich</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/germany.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -805,11 +1074,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
 
 
 </div>

@@ -41,12 +41,13 @@
     <div class='w-100'></div>
     <h3 class='col'>Greece</h3>
   </div>
-  <div class='row legend'>
+  
+<div class='row legend'>
   <div class='col-12 header'>
     <p>Legend</p>
   </div>
   <div class='col-12 key'>
-    <div class='row items'>
+    <div class='row'>
       <div class='col-auto cl'><p class='text-left'>Champions Lg.</p></div>
       <div class='w-100 d-lg-none'></div>
       <div class='col-auto el'><p class='text-left'>Europa Lg.</p></div>
@@ -63,29 +64,41 @@
 
 
 <!-- one row per tie -->
+
 <div class='row tie el'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2020 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Qual. Play-off Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
-          
-          AEK Athens
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              AEK Athens
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2020-el-0q-4po-aek-athens-trabzonspor'>
           
             3-3*
@@ -93,19 +106,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/trabzonspor/">Trabzonspor</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/trabzonspor/">Trabzonspor</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/turkey.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       <div class='col-lg-4'>
@@ -118,30 +140,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2020 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>First Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/romania.png" />
-          
-          <a href="/futbol-winprob-model/teams/cs-universitatea-craiova/">U Craiova</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/romania.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/cs-universitatea-craiova/">U Craiova</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2020-el-0q-3tqr-u-craiova-aek-athens'>
           
             1-3
@@ -149,19 +181,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            AEK Athens
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              AEK Athens
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -170,30 +211,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2019 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Qual. Play-off Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/hungary.png" />
-          
-          <a href="/futbol-winprob-model/teams/mol-fehervar-fc/">Vidi</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/hungary.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/mol-fehervar-fc/">Vidi</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2019-cl-0q-4po-vidi-aek-athens'>
           
             2-3
@@ -201,19 +252,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            AEK Athens
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              AEK Athens
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -222,30 +282,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2019 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Third Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/scotland.png" />
-          
-          <a href="/futbol-winprob-model/teams/celtic-fc/">Celtic</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/scotland.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/celtic-fc/">Celtic</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2019-cl-0q-3tqr-celtic-aek-athens'>
           
             2-3
@@ -253,19 +323,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            AEK Athens
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              AEK Athens
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -274,30 +353,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2018 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 32</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2018 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Rd. of 32</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
-          
-          AEK Athens
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              AEK Athens
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2018-el-1k-1r32-aek-athens-dynamo-kyiv'>
           
             1-1*
@@ -305,19 +394,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fc-dynamo-kyiv/">Dynamo Kyiv</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/fc-dynamo-kyiv/">Dynamo Kyiv</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/ukraine.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       <div class='col-lg-4'>
@@ -330,30 +428,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2018 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2018 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Qual. Play-off Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
-          
-          <a href="/futbol-winprob-model/teams/club-brugge-kv/">Club Brugge</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/belgium.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/club-brugge-kv/">Club Brugge</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2018-el-0q-4po-club-brugge-aek-athens'>
           
             0-3
@@ -361,19 +469,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            AEK Athens
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              AEK Athens
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -382,30 +499,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2018 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2018 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Third Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
-          
-          AEK Athens
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              AEK Athens
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2018-cl-0q-3tqr-aek-athens-cska-moscow'>
           
             0-3
@@ -413,19 +540,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/pfc-cska-moscow/">CSKA Moscow</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/pfc-cska-moscow/">CSKA Moscow</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/russia.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -434,30 +570,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2017 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2017 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>First Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/france.png" />
-          
-          <a href="/futbol-winprob-model/teams/as-saint-etienne/">Saint-Étienne</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/france.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/as-saint-etienne/">Saint-Étienne</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2017-el-0q-3tqr-saint-etienne-aek-athens'>
           
             1-0
@@ -465,19 +611,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            AEK Athens
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              AEK Athens
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/greece.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -485,11 +640,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
 
 
 </div>

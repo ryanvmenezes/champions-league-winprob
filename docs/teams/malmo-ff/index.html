@@ -41,12 +41,13 @@
     <div class='w-100'></div>
     <h3 class='col'>Sweden</h3>
   </div>
-  <div class='row legend'>
+  
+<div class='row legend'>
   <div class='col-12 header'>
     <p>Legend</p>
   </div>
   <div class='col-12 key'>
-    <div class='row items'>
+    <div class='row'>
       <div class='col-auto cl'><p class='text-left'>Champions Lg.</p></div>
       <div class='w-100 d-lg-none'></div>
       <div class='col-auto el'><p class='text-left'>Europa Lg.</p></div>
@@ -63,29 +64,41 @@
 
 
 <!-- one row per tie -->
+
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 32</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2020 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Rd. of 32</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/germany.png" />
-          
-          <a href="/futbol-winprob-model/teams/vfl-wolfsburg/">Wolfsburg</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/germany.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/vfl-wolfsburg/">Wolfsburg</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2020-el-1k-1r32-wolfsburg-malmo'>
           
             5-1
@@ -93,19 +106,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Malmö
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Malmö
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -114,30 +136,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2020 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Qual. Play-off Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          
-          Malmö
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Malmö
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2020-el-0q-4po-malmo-bnei-yehuda-ta'>
           
             4-0
@@ -145,19 +177,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/bnei-yehuda-tel-aviv-fc/">Bnei Yehuda</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/bnei-yehuda-tel-aviv-fc/">Bnei Yehuda</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/israel.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -166,30 +207,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2020 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>First Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          
-          Malmö
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Malmö
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2020-el-0q-3tqr-malmo-zrinjski-mostar'>
           
             3-1
@@ -197,19 +248,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/hsk-zrinjski-mostar/">Zrinjski Mostar</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/hsk-zrinjski-mostar/">Zrinjski Mostar</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/bosnia-and-herzegovina.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -218,30 +278,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2020 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>First Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
-          
-          <a href="/futbol-winprob-model/teams/nk-domzale/">Domžale</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/slovenia.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/nk-domzale/">Domžale</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2020-el-0q-2sqr-domzale-malmo'>
           
             4-5
@@ -249,19 +319,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Malmö
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Malmö
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -270,30 +349,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2020 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2020 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>First Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          
-          Malmö
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Malmö
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2020-el-0q-1fqr-malmo-ballymena-utd'>
           
             11-0
@@ -301,19 +390,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/ballymena-united-fc/">Ballymena Utd</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/ballymena-united-fc/">Ballymena Utd</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/northern-ireland.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -322,30 +420,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el knockout'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Rd. of 32</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2019 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Rd. of 32</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          
-          Malmö
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Malmö
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2019-el-1k-1r32-malmo-chelsea'>
           
             1-5
@@ -353,19 +461,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/chelsea-fc/">Chelsea</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/chelsea-fc/">Chelsea</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/england.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -374,30 +491,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie el'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 E.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2019 E.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Qual. Play-off Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          
-          Malmö
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Malmö
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2019-el-0q-4po-malmo-midtjylland'>
           
             4-2
@@ -405,19 +532,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fc-midtjylland/">Midtjylland</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/fc-midtjylland/">Midtjylland</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/denmark.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -426,30 +562,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2019 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Third Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          
-          Malmö
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Malmö
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2019-cl-0q-3tqr-malmo-vidi'>
           
             1-1*
@@ -457,19 +603,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/mol-fehervar-fc/">Vidi</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/mol-fehervar-fc/">Vidi</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/hungary.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       <div class='col-lg-4'>
@@ -482,30 +637,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Second Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2019 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Second Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/romania.png" />
-          
-          <a href="/futbol-winprob-model/teams/cfr-cluj/">CFR Cluj</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/romania.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/cfr-cluj/">CFR Cluj</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2019-cl-0q-2sqr-cfr-cluj-malmo'>
           
             1-2
@@ -513,19 +678,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Malmö
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Malmö
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -534,30 +708,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2019 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>First Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2019 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>First Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/kosovo.png" />
-          
-          <a href="/futbol-winprob-model/teams/kf-drita/">KF Drita</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/kosovo.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/kf-drita/">KF Drita</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2019-cl-0q-1fqr-kf-drita-malmo'>
           
             0-5
@@ -565,19 +749,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Malmö
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Malmö
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -586,30 +779,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2018 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Second Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2018 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Second Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          
-          Malmö
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Malmö
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2018-cl-0q-2sqr-malmo-fk-vardar'>
           
             2-4
@@ -617,19 +820,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fk-vardar/">FK Vardar</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/fk-vardar/">FK Vardar</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/north-macedonia.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -638,30 +850,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2016 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Qual. Play-off Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/scotland.png" />
-          
-          <a href="/futbol-winprob-model/teams/celtic-fc/">Celtic</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/scotland.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/celtic-fc/">Celtic</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2016-cl-0q-4po-celtic-malmo'>
           
             3-4
@@ -669,19 +891,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Malmö
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Malmö
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -690,30 +921,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2016 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Third Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/austria.png" />
-          
-          <a href="/futbol-winprob-model/teams/fc-red-bull-salzburg/">RB Salzburg</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/austria.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/fc-red-bull-salzburg/">RB Salzburg</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2016-cl-0q-3tqr-rb-salzburg-malmo'>
           
             2-3
@@ -721,19 +962,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Malmö
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Malmö
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -742,30 +992,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2016 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Second Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2016 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Second Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          
-          Malmö
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Malmö
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2016-cl-0q-2sqr-malmo-zalgiris'>
           
             1-0
@@ -773,19 +1033,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/vmfd-zalgiris-vilnius/">Žalgiris</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/vmfd-zalgiris-vilnius/">Žalgiris</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/lithuania.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -794,30 +1063,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Qual. Play-off Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2015 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Qual. Play-off Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/austria.png" />
-          
-          <a href="/futbol-winprob-model/teams/fc-red-bull-salzburg/">RB Salzburg</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/austria.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/fc-red-bull-salzburg/">RB Salzburg</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2015-cl-0q-4po-rb-salzburg-malmo'>
           
             2-4
@@ -825,19 +1104,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Malmö
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Malmö
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -846,30 +1134,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Third Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2015 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Third Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/czech-republic.png" />
-          
-          <a href="/futbol-winprob-model/teams/ac-sparta-prague/">Sparta Prague</a>
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/czech-republic.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              <a href="/futbol-winprob-model/teams/ac-sparta-prague/">Sparta Prague</a>
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2015-cl-0q-3tqr-sparta-prague-malmo'>
           
             4-4*
@@ -877,19 +1175,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            Malmö
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              Malmö
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       <div class='col-lg-4'>
@@ -902,30 +1209,40 @@
   </div>
 </div>
 
-<!-- one row per tie -->
 <div class='row tie cl'>
   <!-- year and round -->
-  <div class='col-lg-4'>
+  <div class='col-lg-4 metadata'>
     <div class='row'>
-      <div class='col-lg-5'><p class='text-center text-lg-left'>2015 C.L.</p></div>
-      <!-- <div class='col-lg-2'><p class='text-center text-lg-left'></p></div> -->
-      <div class='col-lg-7'><p class='text-center text-lg-left'>Second Qual. Rd.</p></div>
+      <div class='col-lg-5 season'>
+        <p class='text-center text-lg-left'>2015 C.L.</p>
+      </div>
+      <div class='col-lg-7 stage'>
+        <p class='text-center text-lg-left'>Second Qual. Rd.</p>
+      </div>
     </div>
   </div>
 
   <!-- teams and score -->
-  <div class='col-lg-7'>
-    <div class='row'>
-      <div class='col-5'>
-        <p class='team one text-right'>
-          <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
-          
-          Malmö
-          
-        </p>
+  <div class='col-lg-7 summary'>
+    <div class='row justify-content-center align-items-center'>
+      <div class='col-4 team one'>
+        <div class='row justify-content-end align-items-center'>
+          <div class='col-auto flag'>
+            <img class='flagicon' src="/futbol-winprob-model/static/img/sweden.png" />
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto name'>
+            <p class='text-right'>
+              
+              Malmö
+              
+            </p>
+          </div>
+        </div>
       </div>
-      <div class='col-2'>
-        <p class='result text-center'>
+
+      <div class='col-auto result'>
+        <p class='text-center'>
           <a href='/futbol-winprob-model/ties/2015-cl-0q-2sqr-malmo-fk-ventspils'>
           
             1-0
@@ -933,19 +1250,28 @@
           </a>
         </p>
       </div>
-      <div class='col-5'>
-          <p class='team two'>
-            
-            <a href="/futbol-winprob-model/teams/fk-ventspils/">Ventspils</a>
-            
+
+      <div class='col-4 team two'>
+        <div class='row justify-content-start align-items-center'>
+          <div class='col-auto name'>
+            <p class='text-left'>
+              
+              <a href="/futbol-winprob-model/teams/fk-ventspils/">Ventspils</a>
+              
+            </p>
+          </div>
+          <div class='w-100 d-lg-none'></div>
+          <div class='col-auto flag'>
             <img class='flagicon' src="/futbol-winprob-model/static/img/latvia.png" />
-          </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
   <!-- notes (agr/aet) -->
-  <div class='col-lg-1'>
+  <div class='col-lg-1 notes'>
     <div class='row'>
       
       
@@ -953,11 +1279,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
 
 
 </div>

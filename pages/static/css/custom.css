@@ -35,41 +35,28 @@
 }
 
 .legend p {
-  /* font-size: 0.9rem; */
+  font-size: 14px;
   margin-top: 0;
   margin-bottom: 0;
-  /* margin-left: 13px; */
 }
 
-.legend .header p {
-  font-weight: bold;
-}
+  .legend .header p {
+    font-weight: bold;
+  }
 
-.legend .items {
-  margin: 8px -3px;
-}
+  .legend .key .row {
+    margin: 8px -3px;
+  }
 
-.legend .items div {
-  border: 2px white solid;
-  border-radius: 5px;
-  margin-right: 10px;
-}
+    .legend .key div {
+      border: 2px white solid;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
 
-.items .w-100 {
-  height: 5px;
-}
-
-.tie {
-  margin: 10px 0px;
-  border-radius: 5px;
-  border: 2px white solid;
-  padding: 5px 0;
-}
-
-.tie p {
-  margin-top: 5px;
-  margin-bottom: 0;
-}
+    .legend .key .w-100 {
+      height: 5px;
+    }
 
 .cl {
   background-color: #67a9cf30;
@@ -83,6 +70,43 @@
   border-color: #666 !important;
 }
 
-.result p {
-  font-size: 0.9rem;
+.tie {
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 2px white solid;
+  padding: 5px 0;
 }
+
+  .tie p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  .tie .summary .team .flag, .tie .summary .team .name {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .tie .summary .team .flag .flagicon {
+    margin: 0 5px -4px;  
+  }
+
+  @media (max-width: 991px) {
+    .tie .summary .team.two .row .flag {
+      order: 10;
+    }
+
+    .tie .summary .team.two .row .w-100 {
+      order: 20;
+    }
+
+    .tie .summary .team.two .row .name {
+      order: 30;
+    }
+  }
+
+
+
+
+/* margin: 0 5px -4px; */

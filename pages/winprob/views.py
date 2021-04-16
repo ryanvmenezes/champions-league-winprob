@@ -104,6 +104,17 @@ class TeamDetailView(BuildableDetailView):
             .order_by('-season', '-stage')
         return context
 
+class AwayGoalsRuleListView(BuildableListView):
+    '''
+    A page with all of the ties decided by the away goals rule
+    '''
+    build_path = 'teams/index.html'
+    template_name = 'country_list.html'
+    context_object_name = 'country_list'
+    queryset = Country.objects.all()\
+        .annotate(num_teams = Count('team'))\
+        .order_by('-num_teams')
+
 # class CountryTeamsDetailView(BuildableDetailView):
 #     '''
 #     A page for each country, with all of its teams
