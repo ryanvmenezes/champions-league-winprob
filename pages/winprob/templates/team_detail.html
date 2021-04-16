@@ -4,8 +4,11 @@
 
 {% block content %}
 <div class="container">
-  <h3>{{ team.name }}</h3>
-  <h4>{{ team.country }}</h4>
+  <div class="row teaminfo">
+    <h2 class='col'>{{ team.name }}</h2>
+    <div class='w-100'></div>
+    <h3 class='col'>{{ team.country }}</h3>
+  </div>
   {% include "tie_loop.html" with source_template='team' %}
 </div>
 {% endblock %}

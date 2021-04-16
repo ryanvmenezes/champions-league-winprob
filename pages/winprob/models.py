@@ -115,10 +115,10 @@ class Tie(BuildableModel):
         )
 
     def get_stage_name(self):
-        return self.get_stage_display().replace('Champions League ', '').replace('Europa League ', '')
+        return self.get_stage_display().replace('Champions League ', '').replace('Europa League ', '').replace('Round', 'Rd.').replace('Qualifying', 'Qual.')
 
     def get_clean_competition(self):
-        return self.get_competition_display().replace('UEFA ', '')
+        return self.get_competition_display().replace('UEFA ', '').replace('Champions League', 'C.L.').replace('Europa League', 'E.L.')
 
     def is_knockout(self):
         return '1k' in self.stage

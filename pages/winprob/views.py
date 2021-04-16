@@ -26,7 +26,7 @@ class CountryListView(BuildableListView):
 
 class TieListView(BuildableListView):
     '''
-    A page with all of the ties
+    A page with a list of the 100 best ties (rated by comeback)
     '''
     # model = Tie
     build_path = 'ties/index.html'
@@ -35,7 +35,7 @@ class TieListView(BuildableListView):
 
     def get_queryset(self):
         ties = Tie.objects.all()
-        return sorted(ties, key=lambda x: (x.minprob_winner is None, x.minprob_winner))
+        return sorted(ties, key=lambda x: (x.minprob_winner is None, x.minprob_winner))[:100]
 
 class TieDetailView(BuildableDetailView):
     '''
@@ -80,7 +80,28 @@ class TeamDetailView(BuildableDetailView):
         context = super().get_context_data(**kwargs)
         team = context['team']
         context['ties'] = Tie.objects.filter(Q(team1 = team) | Q(team2 = team))\
-            .order_by('season', 'stage')
+            .order_by('-season', '-stage')
+        return context
+
+class TeamDetailView(BuildableDetailView):
+    '''
+    A page for each team
+    '''
+    model = Team
+    template_name = 'team_detail.html'
+    context_object_name = 'team'
+
+    def get_build_path(self, obj):
+        dir_path = "teams/"
+        dir_path = os.path.join(settings.BUILD_DIR, dir_path, obj.get_slug())
+        os.path.exists(dir_path) or os.makedirs(dir_path)
+        return os.path.join(dir_path, 'index.html')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        team = context['team']
+        context['ties'] = Tie.objects.filter(Q(team1 = team) | Q(team2 = team))\
+            .order_by('-season', '-stage')
         return context
 
 # class CountryTeamsDetailView(BuildableDetailView):
