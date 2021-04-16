@@ -4,7 +4,8 @@
 
 {% block content %}
 <div class='container'>
-  <h3>All two-legged ties</h3>
+  <h1>{% block headline %}Biggest comebacks{% endblock %}</h1>
+  <p>{% block description %}The 100 two-legged ties with the greatest comebacks.{% endblock %}</p>
   {% include "tie_loop.html" %}
 </div>
 {% endblock %}

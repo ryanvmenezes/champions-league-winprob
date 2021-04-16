@@ -13,9 +13,9 @@
     </div>
   </div>
   <div class='col-12 notes'>
-    <p>agr: Tie decided by <a href="">away goals rule</a></p>
-    <p>aet: Tie decided <a href="">after extra time</a></p>
-    <p>pk: Tie decided by <a href="">penalty kicks</a></p>
+    <p>agr: Tie decided by <a href="{% url 'agrlist' %}">away goals rule</a></p>
+    <p>aet: Tie decided <a href="{% url 'aetlist' %}">after extra time</a></p>
+    <p>pk: Tie decided by <a href="{% url 'pklist' %}">penalty kicks</a></p>
   </div>
 </div>
 {% endif %}

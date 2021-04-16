@@ -108,12 +108,31 @@ class AwayGoalsRuleListView(BuildableListView):
     '''
     A page with all of the ties decided by the away goals rule
     '''
-    build_path = 'teams/index.html'
-    template_name = 'country_list.html'
-    context_object_name = 'country_list'
-    queryset = Country.objects.all()\
-        .annotate(num_teams = Count('team'))\
-        .order_by('-num_teams')
+    build_path = 'teams/away-goals-rule/index.html'
+    template_name = 'agr_list.html'
+    context_object_name = 'ties'
+    queryset = Tie.objects.filter(away_goals_rule=True)\
+        .order_by('-season', '-stage')
+
+class AfterExtraTimeListView(BuildableListView):
+    '''
+    A page with all of the ties that went to extra time after 180 minutes
+    '''
+    build_path = 'teams/after-extra-time/index.html'
+    template_name = 'aet_list.html'
+    context_object_name = 'ties'
+    queryset = Tie.objects.filter(after_extra_time=True)\
+        .order_by('-season', '-stage')
+
+class PenaltyKickListView(BuildableListView):
+    '''
+    A page with all of the ties that required a penalty kick shootout
+    '''
+    build_path = 'teams/penalty-kicks/index.html'
+    template_name = 'pk_list.html'
+    context_object_name = 'ties'
+    queryset = Tie.objects.filter(penalty_kicks=True)\
+        .order_by('-season', '-stage')
 
 # class CountryTeamsDetailView(BuildableDetailView):
 #     '''
