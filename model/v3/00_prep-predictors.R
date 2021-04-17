@@ -1,110 +1,179 @@
 library(here)
 library(tidyverse)
 
-this.version = 'v3'
+summaries = read_rds(here('data', 'summary.rds'))
+odds = read_rds(here('data', 'odds.rds'))
+events = read_rds(here('data', 'events.rds'))
 
-source(here('model', 'utils.R'))
+all.data = summaries %>% 
+  filter(has_events) %>% 
+  filter(!has_invalid_match) %>% 
+  left_join(events, by = c("season", "stagecode", "tieid", "aet", "has_events", "in_progress")) %>% 
+  left_join(odds, by = c("season", "stagecode", "tieid")) %>% 
+  transmute(
+    season, stagecode, tieid,
+    t1win,
+    prob.h.g1 = probh1,
+    prob.d.g1 = probd1,
+    prob.a.g1 = proba1,
+    minuteclean, minuterown,
+    goals.t1 = goalst1,
+    goals.t2 = goalst2,
+    away.goals.t1 = awaygoalst1,
+    away.goals.t2 = awaygoalst2,
+    players.t1 = 11 - redcardst1,
+    players.t2 = 11 - redcardst2,
+    player, playerid, eventtype
+  ) %>% 
+  mutate(
+    prob.h.g1 = replace_na(prob.h.g1, 0.33),
+    prob.d.g1 = replace_na(prob.d.g1, 0.33),
+    prob.a.g1 = replace_na(prob.a.g1, 0.33)
+  ) %>% 
+  # add logical flag to indicate goal/away goal (for plotting)
+  group_by(season, stagecode, tieid, t1win) %>% 
+  mutate(
+    is.goal = goals.t1 != lag(goals.t1) | goals.t2 != lag(goals.t2),
+    is.goal = replace_na(is.goal, FALSE),
+    is.away.goal = away.goals.t1 != lag(away.goals.t1) | away.goals.t2 != lag(away.goals.t2),
+    is.away.goal = replace_na(is.away.goal, FALSE),
+  ) %>% 
+  ungroup()
 
 all.data
 
-summaries
+# calculate final scores of each leg
 
-goals.by.game = all.data %>% 
-  filter(season < test.season.cutoff) %>% 
+total.goals.by.game = all.data %>% 
   filter(minuteclean <= 90) %>% 
   group_by(season, stagecode, tieid) %>% 
   filter(minuterown == max(minuterown)) %>% 
   ungroup() %>% 
   select(
     season, stagecode, tieid,
-    g1t1goals = goalst1,
-    g1t2goals = goalst2
+    goals.t1.g1.final = goals.t1,
+    goals.t2.g1.final = goals.t2
   ) %>% 
-  left_join(summaries %>% select(season, stagecode, tieid, aggscore1, aggscore2)) %>% 
+  left_join(
+    summaries %>%
+      transmute(
+        season, stagecode, tieid,
+        goals.t1.agg = as.numeric(aggscore1),
+        goals.t2.agg = as.numeric(aggscore2),
+      )
+  ) %>% 
   mutate(
-    aggscore1 = as.numeric(aggscore1),
-    aggscore2 = as.numeric(aggscore2),
-    g2t1goals = aggscore1 - g1t1goals,
-    g2t2goals = aggscore2 - g1t2goals,
+    goals.t1.g2.final = goals.t1.agg - goals.t1.g1.final,
+    goals.t2.g2.final = goals.t2.agg - goals.t2.g1.final,
+  ) %>% 
+  select(
+    season, stagecode, tieid,
+    ends_with('final'),
+    ends_with('agg')
   )
 
-goals.by.game
+total.goals.by.game
 
-leg1prep = all.data %>% 
-  left_join(goals.by.game) %>% 
+# leg 1 predictors --------------------------------------------------------
+
+leg1.prep.data = all.data %>% 
+  left_join(total.goals.by.game) %>% 
   mutate(
-    goalst1 = case_when(minuteclean <= 90 ~ goalst1),
-    goalst2 = case_when(minuteclean <= 90 ~ goalst2),
+    goals.t1 = case_when(minuteclean <= 90 ~ goals.t1),
+    goals.t2 = case_when(minuteclean <= 90 ~ goals.t2),
+    away.goals.t1 = case_when(minuteclean <= 90 ~ away.goals.t1),
+    away.goals.t2 = case_when(minuteclean <= 90 ~ away.goals.t2),
+    players.t1 = case_when(minuteclean <= 90 ~ players.t1),
+    players.t2 = case_when(minuteclean <= 90 ~ players.t2),
   ) %>% 
-  fill(goalst1, goalst2, .direction = 'down')
-
-leg1t1 = leg1prep %>% 
-  transmute(
-    season, stagecode, tieid,
-    minuteclean, minuterown,
-    goals.left = g1t1goals - goalst1,
-    prob.diff = probh1 - proba1,
-    goals.edge = goalst1 - goalst2,
-    away.goals.edge = case_when(minuteclean <= 90 ~ awaygoalst1 - awaygoalst2),
-    men.edge = case_when(minuteclean <= 90 ~ redcardst1diff * -1),
-    home = 1
-  ) %>% 
-  fill(men.edge, away.goals.edge, .direction = 'down')
-
-leg1t2 = leg1prep %>% 
-  transmute(
-    season, stagecode, tieid,
-    minuteclean, minuterown,
-    goals.left = g1t2goals - goalst2,
-    prob.diff = proba1 - probh1,
-    goals.edge = goalst2 - goalst1,
-    away.goals.edge = case_when(minuteclean <= 90 ~ awaygoalst2 - awaygoalst1),
-    men.edge = case_when(minuteclean <= 90 ~ redcardst1diff * 1),
-    home = 0
-  ) %>% 
-  fill(away.goals.edge, men.edge, .direction = 'down')
-
-leg1 = bind_rows(leg1t1, leg1t2)
-
-leg1
-
-leg2prep = all.data %>% 
-  left_join(goals.by.game) %>% 
-  mutate(
-    goalst1g2 = case_when(minuteclean > 90 ~ goalst1 - g1t1goals),
-    goalst2g2 = case_when(minuteclean > 90 ~ goalst2 - g1t2goals),
-  ) %>% 
-  fill(goalst1g2, goalst2g2, .direction = 'up')
-
-leg2t1 = leg2prep %>% 
-  transmute(
-    season, stagecode, tieid,
-    minuteclean, minuterown,
-    goals.left = g2t1goals - goalst1g2,
-    prob.diff = probh1 - proba1,
-    goals.edge = goalst1 - goalst2,
-    away.goals.edge = awaygoalst1 - awaygoalst2,
-    men.edge = case_when(minuteclean > 90 ~ redcardst1diff * 1, TRUE ~ 0),
-    home = 0
+  fill(
+    goals.t1, goals.t2,
+    away.goals.t1, away.goals.t2,
+    players.t1, players.t2,
+    .direction = 'down'
   )
-  
-leg2t2 = leg2prep %>% 
+
+leg1.prep.data
+
+leg1.team1.data = leg1.prep.data %>% 
   transmute(
     season, stagecode, tieid,
     minuteclean, minuterown,
-    goals.left = g2t2goals - goalst2g2,
-    prob.diff = proba1 - probh1,
-    goals.edge = goalst2 - goalst1,
-    away.goals.edge = awaygoalst2 - awaygoalst1,
-    men.edge = case_when(minuteclean > 90 ~ redcardst1diff * -1, TRUE ~ 0),
+    goals = goals.t1,
+    goals.left = goals.t1.g1.final - goals.t1,
+    prob.diff = prob.h.g1 - prob.a.g1,
+    goals.edge = goals.t1 - goals.t2,
+    away.goals.edge = away.goals.t1 - away.goals.t2,
+    players.edge = players.t1 - players.t2,
     home = 1
   )
 
-leg2 = bind_rows(leg2t1, leg2t2)
+leg1.team2.data = leg1.prep.data %>% 
+  transmute(
+    season, stagecode, tieid,
+    minuteclean, minuterown,
+    goals = goals.t2,
+    goals.left = goals.t2.g1.final - goals.t2,
+    prob.diff = prob.a.g1 - prob.h.g1,
+    goals.edge = goals.t2 - goals.t1,
+    away.goals.edge = away.goals.t2 - away.goals.t1,
+    players.edge = players.t2 - players.t1,
+    home = 0
+  )
 
-# leg2 %>% 
-#   filter(tieid == '44b65410|50f2a074') %>%
-#   view()
+leg1.data = bind_rows(leg1.team1.data, leg1.team2.data)
 
-leg1 %>% write_rds(here('model', this.version, 'files', 'leg1.rds'), compress = 'gz')
-leg2 %>% write_rds(here('model', this.version, 'files', 'leg2.rds'), compress = 'gz')
+leg1.data
+
+# leg 2 predictors --------------------------------------------------------
+
+leg2.prep.data = all.data %>% 
+  left_join(total.goals.by.game) %>% 
+  mutate(
+    goals.t1.g2 = case_when(minuteclean > 90 ~ goals.t1 - goals.t1.g1.final, TRUE ~ 0),
+    goals.t2.g2 = case_when(minuteclean > 90 ~ goals.t2 - goals.t2.g1.final, TRUE ~ 0),
+    players.t1.g2 = case_when(minuteclean > 90 ~ players.t1, TRUE ~ 11),
+    players.t2.g2 = case_when(minuteclean > 90 ~ players.t2, TRUE ~ 11),
+  )
+
+leg2.team1.data = leg2.prep.data %>% 
+  transmute(
+    season, stagecode, tieid,
+    minuteclean, minuterown,
+    goals = goals.t1.g2,
+    goals.left = goals.t1.g2.final - goals.t1.g2,
+    prob.diff = prob.h.g1 - prob.a.g1,
+    goals.edge = goals.t1 - goals.t2,
+    away.goals.edge = away.goals.t1 - away.goals.t2,
+    players.edge = players.t1.g2 - players.t2.g2,
+    home = 0
+  )
+
+leg2.team2.data = leg2.prep.data %>% 
+  transmute(
+    season, stagecode, tieid,
+    minuteclean, minuterown,
+    goals = goals.t2.g2,
+    goals.left = goals.t2.g2.final - goals.t2.g2,
+    prob.diff = prob.a.g1 - prob.h.g1,
+    goals.edge = goals.t2 - goals.t1,
+    away.goals.edge = away.goals.t2 - away.goals.t1,
+    players.edge = players.t2.g2 - players.t1.g2,
+    home = 1
+  )
+
+leg2.data = bind_rows(leg2.team1.data, leg2.team2.data)
+
+leg2.data
+
+data = bind_rows(
+  leg1.data %>% mutate(leg = 1),
+  leg2.data %>% mutate(leg = 2)
+)
+
+train = data %>% filter(season %in% c(2015, 2016, 2017, 2018))
+test = data %>% filter(season == 2019)
+
+data %>% write_rds('model/v3/predictors/all.rds', compress = 'gz')
+train %>% write_rds('model/v3/predictors/train.rds', compress = 'gz')
+test %>% write_rds('model/v3/predictors/test.rds', compress = 'gz')
