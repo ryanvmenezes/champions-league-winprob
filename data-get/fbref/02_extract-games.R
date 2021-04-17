@@ -18,8 +18,8 @@ allsznshtml
 
 parsedgames = allsznshtml %>%
   # quicker eval with mutlticore, but won't work within rstudio
-  mutate(games = future_map(html, extractgames, .progress = TRUE))
-  # mutate(games = map(html, extractgames)) # line to run within rstudio, takes 40 seconds
+  # mutate(games = future_map(html, extractgames, .progress = TRUE))
+  mutate(games = map(html, extractgames)) # line to run within rstudio, takes 40 seconds
 
 parsedgames
 

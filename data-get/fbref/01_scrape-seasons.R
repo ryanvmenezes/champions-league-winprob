@@ -5,9 +5,9 @@ library(tidyverse)
 source(here('data-get', 'fbref', 'utils.R'))
 
 leagues = tribble(
-  ~competition, ~code_string, ~url,
-  'Champions League','cl','https://fbref.com/en/comps/8/history/UEFA-Champions-League-Seasons',
-  'Europa League','el','https://fbref.com/en/comps/19/history/UEFA-Europa-League-Seasons'
+  ~code_string, ~url,
+  'cl','https://fbref.com/en/comps/8/history/UEFA-Champions-League-Seasons',
+  'el','https://fbref.com/en/comps/19/history/UEFA-Europa-League-Seasons'
 )
 
 historyhtml = leagues %>% 
@@ -19,10 +19,11 @@ comps = historyhtml %>%
   mutate(
     sznshtml = map(html, ~.x %>% html_nodes('[data-stat="season"] a')),
     szn = map(sznshtml, ~.x %>% html_text()),
-    compurl = map(sznshtml, ~.x %>% html_attr('href') %>% str_c('https://fbref.com', .))
+    competition = map(html, ~.x %>% html_nodes('[data-stat="league_name"] a') %>% html_text()),
+    compurl = map(sznshtml, ~.x %>% html_attr('href') %>% str_c('https://fbref.com', .)),
   ) %>% 
   select(-url, -html, -sznshtml) %>% 
-  unnest(cols = c(szn, compurl))
+  unnest(cols = c(szn, compurl, competition))
 
 comps
 
