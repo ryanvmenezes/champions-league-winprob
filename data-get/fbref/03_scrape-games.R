@@ -1,9 +1,6 @@
 library(here)
 library(rvest)
-library(furrr)
 library(tidyverse)
-
-plan(multicore)
 
 source(here('data-get', 'fbref', 'utils.R'))
 
@@ -54,6 +51,7 @@ twoleggedties = summaries %>%
   ) %>% 
   select(
     szn, stagecode, tieid,
+    competition, round, dates,
     team1, team2, winner,
     teamid1, teamid2, winnerid,
     aggscore, result,
@@ -67,11 +65,14 @@ twoleggedties %>%
   select(-url1, -url2) %>% 
   write_csv(here('data-get', 'fbref', 'processed', 'two-legged-ties.csv'), na = '')
 
-legs = twoleggedties %>% 
-  select(-team1, -team2, -winner, -winnerid, -aggscore, -result) %>% 
+legs = twoleggedties %>%
+  select(szn, stagecode, tieid, teamid1, teamid2, score1, score2, url1, url2) %>% 
+  # select(-team1, -team2, -winner, -winnerid, -aggscore, -result) %>% 
   pivot_longer(-szn:-teamid2, names_to = 'col', values_to = 'val') %>% 
-  mutate(leg = str_sub(col, start = -1),
-         col = str_replace_all(col, '1|2', '')) %>% 
+  mutate(
+    leg = str_sub(col, start = -1),
+    col = str_replace_all(col, '1|2', '')
+  ) %>% 
   pivot_wider(names_from = col, values_from = val) %>% 
   arrange(szn, stagecode, teamid1, leg)
 
@@ -88,8 +89,12 @@ countbyseason
 countbyseason %>%
   write_csv(here('data-get', 'fbref', 'processed', 'count-leg-data-by-season.csv'))
 
+# downloading
+
 legshtml = legs %>%
-  filter(!is.na(url)) %>% 
+  filter(szn >= '2014-2015') %>% 
+  filter(!is.na(url)) %>%
+  arrange(desc(szn), desc(stagecode)) %>% 
   mutate(html = map(url, getorretrieve.games))
 
 legshtml

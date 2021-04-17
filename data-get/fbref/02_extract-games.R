@@ -1,9 +1,6 @@
 library(here)
 library(rvest)
-library(furrr)
 library(tidyverse)
-
-plan(multiprocess)
 
 source(here('data-get', 'fbref', 'utils.R'))
 
@@ -34,12 +31,16 @@ summaries = parsedgames %>%
   separate(round, sep = ' \\(', into = c('round', 'dates')) %>% 
   mutate(
     dates = str_replace_all(dates, '\\)', ''),
-    round = str_to_upper(round),
+    roundu = str_to_upper(round),
   ) %>% 
   left_join(
-    stagecodes %>% mutate(round = str_to_upper(round))
+    stagecodes %>%
+      mutate(
+        roundu = str_to_upper(round)
+      ) %>% 
+      select(-round)
   ) %>% 
-  select(stagecode, everything())
+  select(stagecode, everything(), -roundu)
 
 summaries
 
