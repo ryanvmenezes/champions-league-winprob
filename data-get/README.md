@@ -1,23 +1,5 @@
 # Getting the data
 
-- [Scraping match events](#scraping-match-events)
-  * [01_scrape-seasons.R](#01-scrape-seasonsr)
-  * [02_scrape-games.R](#02-scrape-gamesr)
-    + [03_scrape-teams.R](#03-scrape-teamsr)
-  * [Scraping odds](#scraping-odds)
-    + [01_scrape-odds.R](#01-scrape-oddsr)
-    + [02_parse-odds.R](#02-parse-oddsr)
-- [Assembling the data](#assembling-the-data)
-  * [Reconcile differences in the team names](#reconcile-differences-in-the-team-names)
-    + [teams/01_reconcile-team-names.R](#teams-01-reconcile-team-namesr)
-  * [Create the odds table for the two-legged tie](#create-the-odds-table-for-the-two-legged-tie)
-    + [odds/01_create-odds-table.R](#odds-01-create-odds-tabler)
-  * [Create a summary file of all the ties](#create-a-summary-file-of-all-the-ties)
-    + [summary/91_finding-missing-ties.R](#summary-91-finding-missing-tiesr)
-    + [summary/92_ties-with-invalid-games.R](#summary-92-ties-with-invalid-gamesr)
-    + [summary/01_compile-tie-summaries.R](#summary-01-compile-tie-summariesr)
-    + [events/01_inflate-events-table.R](#events-01-inflate-events-tabler)
-
 All data on the match events comes from [fbref.com](https://fbref.com/). Betting market information comes from [oddsportal.com](https://www.oddsportal.com/).
 
 Currently, this covers two competitions that both use two-legged ties and the away goals rule for certain stages of their competition: the UEFA Champions League and the UEFA Europa League (all matches except the group stages). It could likely be extended to other competitions, such as the CONMEBOL Copa Libertadores and more.
@@ -67,7 +49,7 @@ Then crawls over the urls for each game and extracts the match events.
 | 2018-2019 | cl-1k-3sf | 206d90db|822bd0ba | 206d90db | 822bd0ba | 2 | 4–0 | Georginio Wijnaldum | eb58eef0 | goal | 56 | 1 |
 | 2018-2019 | cl-1k-3sf | 206d90db|822bd0ba | 206d90db | 822bd0ba | 2 | 4–0 | Divock Origi | 43a166b4 | goal | 79 | 1 |
 
-#### 03_scrape-teams.R
+### 03_scrape-teams.R
 
 Creates an index of all teams listed by fbref.com and their countries, to join back to the data later. Can be run independently of the other scripts.
 
@@ -79,7 +61,7 @@ Creates an index of all teams listed by fbref.com and their countries, to join b
 | Albania | al | ALB | UEFA | FK Kukësi | M |  | 2013-2014 | 2019-2020 | 0 |  |  | f1e85b1e |
 | Albania | al | ALB | UEFA | FK Partizani Tirana | M |  | 2015-2016 | 2019-2020 | 0 |  | FK Partizani | 3ba2fddf |
 
-### Scraping odds
+## Scraping odds
 
 The scraping of oddsportal.com is done in R using RSelenium. That requires first firing up a docker instance with a headless Firefox browser:
 
@@ -87,11 +69,11 @@ The scraping of oddsportal.com is done in R using RSelenium. That requires first
 sudo docker run -d -p 4445:4444 selenium/standalone-firefox:3.141.59
 ```
 
-#### 01_scrape-odds.R
+### 01_scrape-odds.R
 
 A lot of logic to scrape oddsportal pages, where the odds are not in the page body (they come via an XHR). Sometimes they don't show up at all! Messy code but it should capture most quirks. Dumps out just the raw HTML
 
-#### 02_parse-odds.R
+### 02_parse-odds.R
 
 Goes through the HTML of each page to create one massive odds file. Listed American odds (-250, +500, etc.) are converted into implied probability, then a vig-free probability.
 
@@ -114,7 +96,7 @@ Also generates a list of team names in the data, which need to be manually recon
 | Aalesund (Nor) |  | 12 |
 | Aarhus (Den) |  | 2 |
 
-## Assembling the data
+# Assembling the data
 
 A few relational tables need to be created with all of the requisite data. These will combine to form the predictors that will be fed into the model.
 
@@ -123,11 +105,11 @@ A few relational tables need to be created with all of the requisite data. These
 * summary: The summary of the two-legged ties. Who hosted each game, who won, did it go to ET, did it go to PKs, did the away goals rule apply, etc.
 * events: The details of each match's events. Goals and red cards are labelled with a player's name and team.
 
-### Reconcile differences in the team names
+## Reconcile differences in the team names
 
 There are major variations between the oddsportal names and the fbref names. To ensure each team has a unique id, the fbref.com teams and ids are preferred.
 
-#### teams/01_reconcile-team-names.R
+### teams/01_reconcile-team-names.R
 
 Start with the list of all of the CL/EL ties with data. Create a list of distinct fbref teams and ids. These often use "short names" or nicknames. Get the master name from fbref for each.
 
@@ -145,28 +127,28 @@ Bring in the list of all fbref teams from around the world. Join it against the 
 
 Get the distinct names from the oddsportal data.
 
-### Create the odds table for the two-legged tie
+## Create the odds table for the two-legged tie
 
 The odds (of a home team win, an away team win or a draw) are listed by game. They need to be processed into a table that lists the odds by tie.
 
-#### odds/01_create-odds-table.R
+### odds/01_create-odds-table.R
 
-### Create a summary file of all the ties
+## Create a summary file of all the ties
 
-#### summary/91_finding-missing-ties.R
+### summary/91_finding-missing-ties.R
 
 Some of the data did not come with two complete game logs. Those ties need to be accounted for and scrapped from the data.
 
-#### summary/92_ties-with-invalid-games.R
+### summary/92_ties-with-invalid-games.R
 
 Some ties have "invalid" games: Usually when a game was played, ended in a particular result, but later was forfeited. Sometimes this happens for a dramatic reason, like the time a game was abandoned because a player suffered a head injury when struck by a projectile hurled from the crowd.
 
-#### summary/01_compile-tie-summaries.R
+### summary/01_compile-tie-summaries.R
 
 This is the master summary of all the ties that will be used for predictions.
 
 TK: Add countries to this table.
 
-#### events/01_inflate-events-table.R
+### events/01_inflate-events-table.R
 
 The events of the match need to be "inflated" into a matrix that will be fed into the model. For each tie, a matrix needs to be constructed that goes from minute 1 to 180 (or minute 210 if there was extra time).

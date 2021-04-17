@@ -47,7 +47,7 @@ expandminutes = function(data, aet = FALSE, in_progress = FALSE) {
   )
   
   df = data %>% 
-    right_join(tibble(minuteclean = 1:minutemax), by = 'minuteclean') %>% 
+    right_join(tibble(minuteclean = 0:minutemax), by = 'minuteclean') %>% 
     drop_na(minuteclean) %>% 
     arrange(minuteclean, minute) %>% 
     mutate(

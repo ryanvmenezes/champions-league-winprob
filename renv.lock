@@ -721,6 +721,13 @@
       "Repository": "CRAN",
       "Hash": "8248ee35d1e15d1e506f05f5a5d46a75"
     },
+    "tidypredict": {
+      "Package": "tidypredict",
+      "Version": "0.4.8",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "0884739193e7b1d5f40843bac73ed04d"
+    },
     "tidyr": {
       "Package": "tidyr",
       "Version": "1.0.0",
