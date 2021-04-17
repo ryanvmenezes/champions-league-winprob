@@ -83,27 +83,6 @@ class TeamDetailView(BuildableDetailView):
             .order_by('-season', '-stage')
         return context
 
-class TeamDetailView(BuildableDetailView):
-    '''
-    A page for each team
-    '''
-    model = Team
-    template_name = 'team_detail.html'
-    context_object_name = 'team'
-
-    def get_build_path(self, obj):
-        dir_path = "teams/"
-        dir_path = os.path.join(settings.BUILD_DIR, dir_path, obj.get_slug())
-        os.path.exists(dir_path) or os.makedirs(dir_path)
-        return os.path.join(dir_path, 'index.html')
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        team = context['team']
-        context['ties'] = Tie.objects.filter(Q(team1 = team) | Q(team2 = team))\
-            .order_by('-season', '-stage')
-        return context
-
 class AwayGoalsRuleListView(BuildableListView):
     '''
     A page with all of the ties decided by the away goals rule
@@ -133,6 +112,16 @@ class PenaltyKicksListView(BuildableListView):
     context_object_name = 'ties'
     queryset = Tie.objects.filter(penalty_kicks=True)\
         .order_by('-season', '-stage')
+
+class SeasonListView(BuildableListView):
+    build_path = 'seasons/index.html'
+    template_name = 'season_list.html'
+    context_object_name = 'seasons'
+
+    queryset = Tie.objects.all()\
+        .values('season')\
+        .annotate(total = Count('season'))\
+        .order_by('-season')
 
 # class CountryTeamsDetailView(BuildableDetailView):
 #     '''

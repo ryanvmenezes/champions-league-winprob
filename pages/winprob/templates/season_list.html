@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Seasons{% endblock %}
+{% block headline %}Seasons{% endblock %}
+{% block nosubhead %}{% endblock %}
+{% block nodesc %}{% endblock %}
+
+
+{% block content %}
+
+<ul>
+  {% for szn in seasons %}
+    <li>
+      <a href="">{{ szn.season }}</a> ({{ szn.total }}{% if forloop.first %} two-legged matches{% endif %})
+    </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

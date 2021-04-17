@@ -1,14 +1,12 @@
 {% extends 'base.html' %}
 
 {% block title %}{{ team.name }}{% endblock %}
+{% block headline %}{{ team.name }}{% endblock %}
+{% block subhead %}{{ team.country }}{% endblock %}
+{% block nodesc %}{% endblock %}
 
 {% block content %}
-<div class="container">
-  <div class="row teaminfo">
-    <h1 class='col'>{{ team.name }}</h1>
-    <div class='w-100'></div>
-    <h2 class='col'>{{ team.country }}</h2>
-  </div>
-  {% include "tie_loop.html" with source_template='team' %}
-</div>
+
+{% include "tie_loop.html" with source_template='team' %}
+
 {% endblock %}

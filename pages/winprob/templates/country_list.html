@@ -2,28 +2,28 @@
 {% load static %}
 
 {% block title %}Teams by country{% endblock %}
+{% block headline %}Teams by country{% endblock %}
+{% block nosubhead %}{% endblock %}
+{% block nodesc %}{% endblock %}
 
 {% block content %}
-    <div class='container'>
-      <h3>Teams by country</h3>
-        <div class='row'>
-        {% for country in country_list %}
-            <div class='countrylist col-lg-3'>
-              <p class='blockheader'>
-                <img class='flagicon' src="/static/img/{{ country.slug }}.png" /><br />
-                {{ country.name }}<br />
-                {{ country.num_teams }} teams
-              </p>
+<div class='row'>
+{% for country in country_list %}
+  <div class='countrylist col-lg-3'>
+    <p class='blockheader'>
+      <img class='flagicon' src="/static/img/{{ country.slug }}.png" /><br />
+      {{ country.name }}<br />
+      {{ country.num_teams }} teams
+    </p>
 
-              <ul>
-                {% for team in country.team_set.all %}
-                  <li>
-                    <a href="{{ team.get_absolute_url }}">{{ team.name }}</a> ({{ team.num_ties }}{% if forloop.parentloop.first %}{% if forloop.first %} tie{% if team.num_ties != 1 %}s{% endif %}{% endif %}{% endif %})
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-        {% endfor %}
-        </div>
-    </div>
+    <ul>
+      {% for team in country.team_set.all %}
+        <li>
+          <a href="{{ team.get_absolute_url }}">{{ team.name }}</a> ({{ team.num_ties }}{% if forloop.parentloop.first %}{% if forloop.first %} tie{% if team.num_ties != 1 %}s{% endif %}{% endif %}{% endif %})
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
+</div>
 {% endblock %}

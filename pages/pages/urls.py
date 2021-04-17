@@ -32,6 +32,7 @@ urlpatterns = [
             path('ties/after-extra-time/', views.AfterExtraTimeListView.as_view(), name='aetlist'),
             path('ties/penalty-kicks/', views.PenaltyKicksListView.as_view(), name='pklist'),
             path('ties/<slug:slug>/', views.TieDetailView.as_view(), name='tiedetail'),
+            path('seasons/', views.SeasonListView.as_view(), name='seasonlist'),
             # path('countries/', views.CountryListView.as_view(), name='countrylist'),
             # path('countries/<slug:slug>/', views.CountryTeamsDetailView.as_view(), name='countryteamslist'),
         ])

@@ -1,11 +1,10 @@
 {% extends "base.html" %}
 
-{% block title %}Ties{% endblock %}
+{% block title %}Biggest comebacks{% endblock %}
+{% block headline %}Biggest comebacks{% endblock %}
+{% block nosubhead %}{% endblock %}
+{% block desc %}The 100 two-legged ties with the greatest comebacks.{% endblock %}
 
 {% block content %}
-<div class='container'>
-  <h1>{% block headline %}Biggest comebacks{% endblock %}</h1>
-  <p>{% block description %}The 100 two-legged ties with the greatest comebacks.{% endblock %}</p>
   {% include "tie_loop.html" %}
-</div>
 {% endblock %}
