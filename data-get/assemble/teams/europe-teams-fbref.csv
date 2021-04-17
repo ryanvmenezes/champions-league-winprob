@@ -28,7 +28,7 @@ d298ef2c,AS Saint-Étienne,France,FRA,UEFA,Saint-Étienne
 c7d6f62e,ASA Târgu Mureș,Romania,ROU,UEFA,Târgu Mureș
 d884c383,Asteras Tripoli FC,Greece,GRE,UEFA,Asteras Tripoli
 922493f3,Atalanta BC,Italy,ITA,UEFA,Atalanta
-2b390eca,Athletic Club,Spain,ESP,UEFA,Athletic Bilbao
+2b390eca,Athletic Club,Spain,ESP,UEFA,Athletic Club
 db3b9613,Atlético Madrid,Spain,ESP,UEFA,Atlético Madrid
 c9607f44,Atromitos FC,Greece,GRE,UEFA,Atromitos
 3986b791,AZ Alkmaar,Netherlands,NED,UEFA,AZ Alkmaar
@@ -38,14 +38,14 @@ b0e70933,Ballymena United FC,Northern Ireland,NIR,UEFA,Ballymena Utd
 49e1cbfd,Balzan FC,Malta,MLT,UEFA,Balzan FC|Balzan
 dd3fa21f,Bangor City FC,Wales,WAL,UEFA,Bangor City FC
 d8760be1,Barry Town United FC,Wales,WAL,UEFA,Barry Town
-c7a9f859,Bayer 04 Leverkusen,Germany,GER,UEFA,Bayer|Leverkusen
+c7a9f859,Bayer 04 Leverkusen,Germany,GER,UEFA,Leverkusen
 79000faa,Beitar Jerusalem FC,Israel,ISR,UEFA,Beitar Jerusalem
 0f9294bd,Beşiktaş JK,Turkey,TUR,UEFA,Beşiktaş
 7bb567b2,Birkirkara FC,Malta,MLT,UEFA,Birkirkara FC
 8774e267,BK Häcken,Sweden,SWE,UEFA,Häcken
 1040e0f7,Bnei Yehuda Tel Aviv FC,Israel,ISR,UEFA,Bnei Yehuda|Bnei Yehuda TA
 add600ae,Borussia Dortmund,Germany,GER,UEFA,Dortmund
-32f3ee20,Borussia Mönchengladbach,Germany,GER,UEFA,M'gladbach
+32f3ee20,Borussia Mönchengladbach,Germany,GER,UEFA,M'Gladbach
 4a29fb1c,Breiðablik UBK,Iceland,ISL,UEFA,Breiðablik UBK|Breiðablik
 ab75e049,Brøndby IF,Denmark,DEN,UEFA,Brøndby
 4b682260,BSC Young Boys,Switzerland,SUI,UEFA,Young Boys
@@ -89,7 +89,7 @@ c8282e20,FC Aktobe,Kazakhstan,KAZ,UEFA,FC Aktobe
 c72c8787,FC Astana,Kazakhstan,KAZ,UEFA,FC Astana|Astana FK
 12d53956,FC Astra Giurgiu,Romania,ROU,UEFA,Astra Giurgiu
 0cdc4311,FC Augsburg,Germany,GER,UEFA,Augsburg
-f0e1ca42,FC Banants,Armenia,ARM,UEFA,FC Banants|Banants
+f0e1ca42,FC Banants,Armenia,ARM,UEFA,Banants|Urartu
 206d90db,FC Barcelona,Spain,ESP,UEFA,Barcelona
 d3d9424a,FC Basel,Switzerland,SUI,UEFA,Basel
 b983b638,FC BATE Borisov,Belarus,BLR,UEFA,BATE Borisov
@@ -253,6 +253,7 @@ b3b6ca5d,Glenavon FC,Northern Ireland,NIR,UEFA,Glenavon FC
 eaa4ec68,Glentoran FC,Northern Ireland,NIR,UEFA,Glentoran FC
 edd0d381,GNK Dinamo Zagreb,Croatia,CRO,UEFA,Dinamo Zagreb
 e33d6108,Go Ahead Eagles,Netherlands,NED,UEFA,Go Ahead Eag
+a0435291,Granada CF,Spain,ESP,UEFA,Granada
 7b66a29c,Grasshopper Club Zürich,Switzerland,SUI,UEFA,Grasshopper
 4149e9fd,Győri ETO FC,Hungary,HUN,UEFA,Győr
 8ab497d5,Gżira United FC,Malta,MLT,UEFA,Gżira United FC|Gzira United
@@ -266,7 +267,7 @@ c882b88e,Heracles Almelo,Netherlands,NED,UEFA,Heracles Almelo
 2818f8bc,Hertha BSC,Germany,GER,UEFA,Hertha BSC
 f3aacc58,Hibernian FC,Scotland,SCO,UEFA,Hibernian
 0faf8f33,Hibernians FC,Malta,MLT,UEFA,Hibernians FC|Hibernians
-d7319d80,HJK Helsinki,Finland,FIN,UEFA,HJK Helsinki|HJK
+d7319d80,HJK Helsinki,Finland,FIN,UEFA,HJK
 6777e16d,HNK Hajduk Split,Croatia,CRO,UEFA,Hajduk Split
 25dbe099,HNK Rijeka,Croatia,CRO,UEFA,Rijeka
 2a6cfcb2,HŠK Zrinjski Mostar,Bosnia and Herzegovina,BIH,UEFA,Zrinjski Mostar
@@ -280,7 +281,6 @@ c4e86b86,IFK Mariehamn,Finland,FIN,UEFA,IFK Mariehamn
 d609edc0,Internazionale,Italy,ITA,UEFA,Inter
 4463fecb,Inverness Caledonian Thistle FC,Scotland,SCO,UEFA,Inverness CT
 bff39cf5,İstanbul Başakşehir FK,Turkey,TUR,UEFA,Başakşehir
-6b2d5f93,İstanbulspor,Turkey,TUR,UEFA,İstanbulspor
 e0afb445,Íþróttabandalag Vestmannaeyja,Iceland,ISL,UEFA,ÍBV
 4f7b798d,Jagiellonia Białystok,Poland,POL,UEFA,Jagiellonia
 f1849f98,Jeunesse Esch,Luxembourg,LUX,UEFA,Jeunesse Esch
@@ -302,7 +302,7 @@ cc98b556,KF Trepça'89,Kosovo,KVX,UEFA,KF Trepça'89
 869753d6,KÍ Klaksvík,Faroe Islands,FRO,UEFA,KÍ Klaksvík|KÍ
 25f1fd26,Kilmarnock FC,Scotland,SCO,UEFA,Kilmarnock
 fdba14df,KKS Lech Poznań,Poland,POL,UEFA,Lech Poznań
-ae156985,Knattspyrnufélag Reykjavíkur,Iceland,ISL,UEFA,KR Reykjavík
+ae156985,Knattspyrnufélag Reykjavíkur,Iceland,ISL,UEFA,KR Reykjavík|Knattspyrnufélag Reykjavíkur
 5a8bd0bd,Knattspyrnufélagið Fram,Iceland,ISL,UEFA,Fram Reykjavík
 ead990c4,Knattspyrnufélagið Víkingur,Iceland,ISL,UEFA,Víkingur Reyk
 1e972a99,KRC Genk,Belgium,BEL,UEFA,Genk
@@ -312,10 +312,9 @@ d2f21b23,KS Górnik Zabrze,Poland,POL,UEFA,Górnik Zabrze
 c39b0fab,KS Ruch Chorzów,Poland,POL,UEFA,Ruch Chorzów
 e6f63673,Kuopion PS,Finland,FIN,UEFA,KuPS
 95b895fe,KV Oostende,Belgium,BEL,UEFA,Oostende
-d20821dd,LASK,Austria,AUT,UEFA,LASK Linz|LASK
+d20821dd,LASK,Austria,AUT,UEFA,LASK
 a73408a7,Legia Warsaw,Poland,POL,UEFA,Legia Warsaw
 a2d435b3,Leicester City FC,England,ENG,UEFA,Leicester City
-0c017aa1,Leiknir Reykjavík,Iceland,ISL,UEFA,Leiknir Reykjavík
 cb188c0c,Lille OSC,France,FRA,UEFA,Lille
 924759ab,Lillestrøm SK,Norway,NOR,UEFA,Lillestrøm
 2d3c1b6d,Lincoln Red Imps FC,Gibraltar,GIB,UEFA,Red Imps
@@ -329,7 +328,7 @@ cb188c0c,Lille OSC,France,FRA,UEFA,Lille
 f3d8c8b9,Malmö FF,Sweden,SWE,UEFA,Malmö
 b8fd03ef,Manchester City FC,England,ENG,UEFA,Manchester City
 19538871,Manchester United FC,England,ENG,UEFA,Manchester Utd
-f75c6442,MFK Košice,Slovakia,SVK,UEFA,MFK Košice
+f75c6442,MFK Košice,Slovakia,SVK,UEFA,Košice
 356c100c,MFK Ružomberok,Slovakia,SVK,UEFA,Ružomberok|MFK Ružomberok
 d51bc6dd,MKS Arka Gdynia,Poland,POL,UEFA,Arka Gdynia
 a338349f,MOL Fehérvár FC,Hungary,HUN,UEFA,Videoton|Vidi
@@ -358,7 +357,6 @@ b70ec3fa,Odds BK,Norway,NOR,UEFA,Odd
 2fdb4aef,Olympiacos FC,Greece,GRE,UEFA,Olympiacos
 5725cc7b,Olympique de Marseille,France,FRA,UEFA,Marseille
 d53c0b06,Olympique Lyonnais,France,FRA,UEFA,Lyon
-6e5246d8,Omonia Aradippou,Cyprus,CYP,UEFA,Omo Aradippou
 ed6b1d21,Osmanlıspor FK,Turkey,TUR,UEFA,Osmanlıspor
 577e2606,Östersunds FK,Sweden,SWE,UEFA,Östersund
 f3a5726c,Panathinaikos FC,Greece,GRE,UEFA,Panathinaikos
@@ -405,7 +403,7 @@ aaffe678,S.P. Tre Penne,San Marino,SMR,UEFA,S.P. Tre Penne|Tre Penne
 69d84c29,SC Braga,Portugal,POR,UEFA,Braga
 a486e511,SC Freiburg,Germany,GER,UEFA,Freiburg
 80beba99,SC Rheindorf Altach,Austria,AUT,UEFA,SCR Altach
-c889f292,Seinäjoen SJK,Finland,FIN,UEFA,SJK Seinäjoki
+c889f292,Seinäjoen SJK,Finland,FIN,UEFA,SJK
 ad2be733,Sevilla FC,Spain,ESP,UEFA,Sevilla
 f082c4f3,Shamrock Rovers FC,Ireland,IRL,UEFA,Shamrock Rov
 aeae4fe1,SK Brann,Norway,NOR,UEFA,Brann

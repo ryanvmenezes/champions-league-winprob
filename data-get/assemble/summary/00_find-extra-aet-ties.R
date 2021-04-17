@@ -17,8 +17,8 @@ invalidties = read_csv(here('data-get', 'assemble', 'summary', 'invalid-ties.csv
 
 invalidties
 
-eventscleaned = events %>% 
-  mutate(szn = as.numeric(str_sub(szn, end = 4)) + 1) %>% 
+eventscleaned = events %>%
+  mutate(szn = as.numeric(str_sub(szn, end = 4)) + 1) %>%
   rename(season = szn) %>%
   mutate(
     goalt1 = (str_detect(eventtype, 'goal') & ((leg == 1 & team == 1) | (leg == 2 & team == 2))) %>% as.numeric(),
@@ -35,8 +35,8 @@ eventscleaned = events %>%
 eventscleaned
 
 event.goal.totals.180 = eventscleaned %>%
-  group_by(season, stagecode, tieid) %>% 
-  filter(minuteclean <= 180) %>% 
+  group_by(season, stagecode, tieid) %>%
+  filter(minuteclean <= 180) %>%
   summarise(
     goalt1.tie = sum(goalt1, na.rm = TRUE),
     goalt2.tie = sum(goalt2, na.rm = TRUE)
@@ -44,21 +44,21 @@ event.goal.totals.180 = eventscleaned %>%
 
 event.goal.totals.180
 
-extra.aet.ties = ties %>% 
-  mutate(szn = as.numeric(str_sub(szn, end = 4)) + 1) %>% 
-  rename(season = szn) %>% 
-  separate(aggscore, into = c('goalt1.tie', 'goalt2.tie'), remove = FALSE) %>% 
+extra.aet.ties = ties %>%
+  mutate(szn = as.numeric(str_sub(szn, end = 4)) + 1) %>%
+  rename(season = szn) %>%
+  separate(aggscore, into = c('goalt1.tie', 'goalt2.tie'), remove = FALSE) %>%
   mutate(
     goalt1.tie = as.numeric(goalt1.tie),
     goalt2.tie = as.numeric(goalt2.tie)
-  ) %>% 
-  anti_join(event.goal.totals.180) %>% 
+  ) %>%
+  anti_join(event.goal.totals.180) %>%
   left_join(
-    event.goal.totals.180 %>% 
+    event.goal.totals.180 %>%
       rename(goalt1.tie.180 = goalt1.tie, goalt2.tie.180 = goalt2.tie)
-  ) %>% 
+  ) %>%
   filter(!str_detect(str_to_lower(result), 'extra time')) %>%
-  filter(!is.na(winner)) %>% 
+  filter(!is.na(winner)) %>%
   anti_join(invalidties)
 
 extra.aet.ties

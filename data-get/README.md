@@ -143,6 +143,10 @@ Some of the data did not come with two complete game logs. Those ties need to be
 
 Some ties have "invalid" games: Usually when a game was played, ended in a particular result, but later was forfeited. Sometimes this happens for a dramatic reason, like the time a game was abandoned because a player suffered a head injury when struck by a projectile hurled from the crowd.
 
+### summary/00_find-extra-aet-ties.R
+
+Sometimes fbref's result doesn't say "extra time" in it. This script finds the ties where the final aggregate score does not equal the score after 180 minutes. If the result doesn't say "extra time" we need to mark that before the summary is assembled.
+
 ### summary/01_compile-tie-summaries.R
 
 This is the master summary of all the ties that will be used for predictions.

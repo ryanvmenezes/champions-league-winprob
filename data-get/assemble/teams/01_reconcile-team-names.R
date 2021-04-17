@@ -16,21 +16,21 @@ missingties = read_csv(here('data-get', 'assemble', 'summary', 'missing-ties.csv
 missingties
 
 distinctteams = summaries %>% 
-  select(starts_with('team')) %>% 
+  select(starts_with('team')) %>%
   bind_rows(
-    missingties %>% 
+    missingties %>%
       select(starts_with('team'))
-  ) %>% 
-  pivot_longer(starts_with('team')) %>% 
-  mutate(name = str_sub(name, end = -2)) %>% 
+  ) %>%
+  pivot_longer(starts_with('team')) %>%
+  mutate(name = str_sub(name, end = -2)) %>%
   pivot_wider(names_from = name, values_from = value, values_fn = list(value = list)) %>%
-  unnest(c(team, teamid)) %>% 
-  filter(!is.na(teamid)) %>% 
+  unnest(c(team, teamid)) %>%
+  filter(!is.na(teamid)) %>%
   distinct() %>%
-  select(club = team, clubid = teamid) %>% 
-  group_by(clubid) %>% 
-  nest() %>% 
-  mutate(clubshortnames = map_chr(data, ~str_c(.x$club, collapse = '|'))) %>% 
+  select(club = team, clubid = teamid) %>%
+  group_by(clubid) %>%
+  nest() %>%
+  mutate(clubshortnames = map_chr(data, ~str_c(.x$club, collapse = '|'))) %>%
   select(-data)
 
 distinctteams
@@ -40,8 +40,8 @@ fbrefteams = read_csv(here('data-get', 'fbref', 'processed', 'fbref-all-teams.cs
 fbrefteams
 
 # join for master fbref list
-europeteamsfbref = fbrefteams %>% 
-  select(clubid, club = Squad, country, countrycode = countrycode3, governingbody) %>% 
+europeteamsfbref = fbrefteams %>%
+  select(clubid, club = Squad, country, countrycode = countrycode3, governingbody) %>%
   right_join(distinctteams, by = 'clubid') %>%
   arrange(club)
 
@@ -60,15 +60,27 @@ odds
 
 odds %>% tail(20)
 
-europeteamsodds = odds %>% 
+europeteamsodds = odds %>%
   filter(season >= 2015) %>%
   filter(round != 'Group Stage') %>%
-  select(teamh, teama) %>% 
-  pivot_longer(starts_with('team')) %>% 
-  mutate(name = str_sub(name, end = -2)) %>% 
-  pivot_wider(names_from = name, values_from = value, values_fn = list(value = list)) %>% 
-  unnest(team) %>% 
-  distinct() %>% 
+  # custom filters since 2021 had fewer two-legged ties
+  filter(
+    !(season == 2021 &
+        comp == 'europa-league' &
+        round != 'Play Offs')
+  ) %>%
+  filter(
+    !(season == 2021 &
+        comp == 'champions-league' &
+        round != 'Play Offs' &
+        !(date >= '2020-09-22' & date <= '2020-09-30'))
+  ) %>%
+  select(teamh, teama) %>%
+  pivot_longer(starts_with('team')) %>%
+  mutate(name = str_sub(name, end = -2)) %>%
+  pivot_wider(names_from = name, values_from = value, values_fn = list(value = list)) %>%
+  unnest(team) %>%
+  distinct() %>%
   arrange(team)
 
 europeteamsodds
@@ -84,7 +96,7 @@ joined = read_sheet(sheeturl, sheetname)
 
 joined
 
-joined = joined %>% 
+joined = joined %>%
   # manual fix for entirely numeric string that has leading 0
   mutate(
     fbrefid = map_chr(fbrefid, as.character),
@@ -102,9 +114,9 @@ didntmatch
 # take list of oddsportal teams names and link it to previously completed joining
 # columns: 1) oddsportal team name 2) fbrefid 3) fbref team name 4) fbref country
 joiningprogress = europeteamsodds %>%
-  left_join(joined) %>% 
+  left_join(joined) %>%
   bind_rows(
-    didntmatch %>% 
+    didntmatch %>%
       select(fbrefid = clubid, matchclub = club, matchcountry = country)
   )
 
@@ -120,11 +132,10 @@ joiningprogress %>% write_sheet(ss = sheeturl, sheet = sheetname)
 joiningprogress %>% write_csv(here('data-get', 'assemble', 'teams', 'names-joined.csv'))
 
 # create final teams table
-
 teams = joiningprogress %>%
-  drop_na(matchclub) %>% 
-  group_by(teamname = matchclub, fbrefid, teamcountry = matchcountry) %>% 
-  summarise(oddsnames = str_c(team, collapse = '||')) %>% 
+  drop_na(matchclub) %>%
+  group_by(teamname = matchclub, fbrefid, teamcountry = matchcountry) %>%
+  summarise(oddsnames = str_c(team, collapse = '||')) %>%
   ungroup()
 
 teams
@@ -132,4 +143,3 @@ teams
 # final table
 teams %>% write_csv(here('data-get', 'assemble', 'teams', 'teams.csv'))
 teams %>% write_rds(here('data', 'teams.rds'))
-

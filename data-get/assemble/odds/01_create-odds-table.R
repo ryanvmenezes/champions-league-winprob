@@ -14,8 +14,20 @@ summaries = read_csv(here('data-get', 'fbref', 'processed', 'two-legged-ties.csv
 summaries
 
 oddsjoined = odds %>% 
-  filter(season >= 2015) %>%
+  filter(season >= 2015) %>% # odds filter, update when adding new data
   filter(round != 'Group Stage') %>%
+  # custom filters since 2021 had fewer two-legged ties
+  filter(
+    !(season == 2021 &
+        comp == 'europa-league' & 
+        round != 'Play Offs')
+  ) %>% 
+  filter(
+    !(season == 2021 &
+        comp == 'champions-league' &
+        round != 'Play Offs' &
+        !(date >= '2020-09-22' & date <= '2020-09-30'))
+  ) %>% 
   left_join(namesjoined %>% select(teamh = team, teamidh = fbrefid)) %>% 
   left_join(namesjoined %>% select(teama = team, teamida = fbrefid)) %>% 
   mutate(tieid = map2_chr(teamidh, teamida, ~str_c(sort(c(.x, .y)), collapse = '|')))
@@ -55,7 +67,7 @@ oddsbytie = full_join(
 oddsbytie
 
 # final table
-odds = summaries %>% 
+odds = summaries %>%
   mutate(season = as.numeric(str_sub(szn, end = 4)) + 1) %>% 
   select(season, stagecode, tieid) %>% 
   left_join(oddsbytie %>% select(-comp))

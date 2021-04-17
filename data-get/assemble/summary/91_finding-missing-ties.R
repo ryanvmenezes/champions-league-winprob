@@ -27,6 +27,13 @@ missingformatted = missing %>%
     season, stagecode, tieid, team1, team2, winner,
     teamid1, teamid2, winnerid,
     aggscore, result, agr, aet, pk
+  ) %>% 
+  # exclude any that are sensibly missing 
+  filter(
+    !(
+      (stagecode %in% c('cl-1k-6final', 'el-1k-9f')) |
+        (season %in% c(2020, 2021))
+    )
   )
 
 missingformatted

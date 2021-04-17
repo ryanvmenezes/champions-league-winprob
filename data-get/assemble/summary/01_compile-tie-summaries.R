@@ -9,16 +9,16 @@ extra.aet.ties = read_csv(here('data-get', 'assemble', 'summary', 'extra-aet-tie
 
 extra.aet.ties
 
-results = ties %>% 
-  mutate(szn = as.numeric(str_sub(szn, end = 4)) + 1) %>% 
-  rename(season = szn) %>% 
-  separate(aggscore, into = c('aggscore1','aggscore2'), remove = FALSE) %>% 
+results = ties %>%
+  mutate(szn = as.numeric(str_sub(szn, end = 4)) + 1) %>%
+  rename(season = szn) %>%
+  separate(aggscore, into = c('aggscore1','aggscore2'), remove = FALSE) %>%
   left_join(
-    extra.aet.ties %>% 
-      select(season, stagecode, tieid) %>% 
+    extra.aet.ties %>%
+      select(season, stagecode, tieid) %>%
       mutate(extra.aet = TRUE)
-  ) %>% 
-  replace_na(list(extra.aet = FALSE)) %>% 
+  ) %>%
+  replace_na(list(extra.aet = FALSE)) %>%
   mutate(
     t1win = (winner == team1),
     agr = str_detect(str_to_lower(result), 'away goals'),
@@ -28,8 +28,8 @@ results = ties %>%
       TRUE ~ aet
     ),
     pk = str_detect(str_to_lower(result), 'penalty')
-  ) %>% 
-  select(-extra.aet) %>% 
+  ) %>%
+  select(-extra.aet) %>%
   mutate(
     # fix an error in the data
     agr = case_when(
@@ -60,13 +60,12 @@ results %>% filter(as.numeric(aggscore2) > as.numeric(aggscore1)) %>% filter(win
 
 
 # helper tables
-
 oddsbytie = read_csv(here('data-get', 'assemble', 'odds', 'odds.csv'))
 
 oddsbytie
 
 hasodds = oddsbytie %>%
-  select(season, stagecode, tieid) %>% 
+  select(season, stagecode, tieid) %>%
   mutate(has_odds = TRUE)
 
 hasodds
@@ -75,7 +74,7 @@ missing = read_csv(here('data-get', 'assemble', 'summary', 'missing-ties.csv'))
 
 missing
 
-noevents = missing %>% 
+noevents = missing %>%
   mutate(has_events = FALSE)
 
 noevents
@@ -84,23 +83,23 @@ invalid = read_csv(here('data-get', 'assemble', 'summary', 'invalid-ties.csv'))
 
 invalid
 
-hasinvalidmatch = invalid %>% 
-  select(season, stagecode, tieid) %>% 
+hasinvalidmatch = invalid %>%
+  select(season, stagecode, tieid) %>%
   mutate(has_invalid_match = TRUE)
 
 hasinvalidmatch
 
 # create final table
-assemblingsummary = results %>% 
-  bind_rows(noevents) %>% 
-  left_join(hasodds) %>% 
-  left_join(hasinvalidmatch) %>% 
+assemblingsummary = results %>%
+  bind_rows(noevents) %>%
+  left_join(hasodds) %>%
+  left_join(hasinvalidmatch) %>%
   mutate(
     has_events = replace_na(has_events, TRUE),
     has_odds = replace_na(has_odds, FALSE),
     has_invalid_match = replace_na(has_invalid_match, FALSE),
     in_progress = is.na(winner)
-  ) %>% 
+  ) %>%
   arrange(season, stagecode, tieid)
 
 assemblingsummary

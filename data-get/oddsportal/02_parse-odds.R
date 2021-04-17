@@ -85,7 +85,6 @@ allodds = allodds %>%
     proba = oddsaprob / oddsprobtotal
   )
 
-# allodds %>% write_rds(here('data', 'odds.rds'))
 allodds %>% write_csv(here('data-get', 'oddsportal', 'processed', 'odds.csv'), na = '')
 
 gamesbyseason = allodds %>% group_by(comp, season) %>% count()
