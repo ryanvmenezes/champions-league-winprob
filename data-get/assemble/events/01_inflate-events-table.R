@@ -87,4 +87,4 @@ eventsmatrix = eventsnested %>%
 eventsmatrix
 
 eventsmatrix %>% write_csv(here('data-get', 'assemble', 'events', 'events.csv'))
-eventsmatrix %>% write_rds(here('data', 'events.rds'))
+eventsmatrix %>% write_rds(here('data', 'events.rds'), compress = 'gz')
