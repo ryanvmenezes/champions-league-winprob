@@ -1,0 +1,87 @@
+general:
+  model: glm
+  version: 2.0
+  type: regression
+  residual: 6352
+  family: poisson
+  link: log
+  is_glm: 1.0
+terms:
+- label: (Intercept)
+  coef: -2.3890106
+  is_intercept: 1.0
+  fields:
+  - type: ordinary
+    col: (Intercept)
+  qr:
+    qr_1: -0.0336146
+    qr_2: -0.0078633
+    qr_3: -0.0020294
+    qr_4: -1.0451727e-05
+    qr_5: -0.0067
+    qr_6: -0.0489274
+- label: prob.diff
+  coef: 0.9291146
+  is_intercept: 0.0
+  fields:
+  - type: ordinary
+    col: prob.diff
+  qr:
+    qr_1: -0.0
+    qr_2: 0.0802351
+    qr_3: -0.0548459
+    qr_4: -0.0016083
+    qr_5: 0.0070125
+    qr_6: 0.0527564
+- label: goals.edge
+  coef: -0.0446592
+  is_intercept: 0.0
+  fields:
+  - type: ordinary
+    col: goals.edge
+  qr:
+    qr_1: -0.0
+    qr_2: -0.0
+    qr_3: 0.0147589
+    qr_4: 0.0146118
+    qr_5: -0.0026364
+    qr_6: -0.0066244
+- label: away.goals.edge
+  coef: 0.0269829
+  is_intercept: 0.0
+  fields:
+  - type: ordinary
+    col: away.goals.edge
+  qr:
+    qr_1: 0.0
+    qr_2: 0.0
+    qr_3: 0.0
+    qr_4: -0.0337175
+    qr_5: 0.0002521
+    qr_6: 0.0033358
+- label: players.edge
+  coef: 0.380964
+  is_intercept: 0.0
+  fields:
+  - type: ordinary
+    col: players.edge
+  qr:
+    qr_1: -0.0
+    qr_2: -0.0
+    qr_3: -0.0
+    qr_4: -0.0
+    qr_5: 0.0671298
+    qr_6: -0.0033445
+- label: home
+  coef: 0.655305
+  is_intercept: 0.0
+  fields:
+  - type: ordinary
+    col: home
+  qr:
+    qr_1: 0.0
+    qr_2: 0.0
+    qr_3: 0.0
+    qr_4: 0.0
+    qr_5: 0.0
+    qr_6: 0.0784823

@@ -5,7 +5,7 @@ summaries = read_rds(here('data', 'summary.rds'))
 odds = read_rds(here('data', 'odds.rds'))
 events = read_rds(here('data', 'events.rds'))
 
-all.data = summaries %>% 
+minute.data = summaries %>% 
   filter(has_events) %>% 
   filter(!has_invalid_match) %>% 
   left_join(events, by = c("season", "stagecode", "tieid", "aet", "has_events", "in_progress")) %>% 
@@ -40,11 +40,11 @@ all.data = summaries %>%
   ) %>% 
   ungroup()
 
-all.data
+minute.data
 
 # calculate final scores of each leg
 
-total.goals.by.game = all.data %>% 
+total.goals.by.game = minute.data %>% 
   filter(minuteclean <= 90) %>% 
   group_by(season, stagecode, tieid) %>% 
   filter(minuterown == max(minuterown)) %>% 
@@ -76,7 +76,7 @@ total.goals.by.game
 
 # leg 1 predictors --------------------------------------------------------
 
-leg1.prep.data = all.data %>% 
+leg1.prep.data = minute.data %>% 
   left_join(total.goals.by.game) %>% 
   mutate(
     goals.t1 = case_when(minuteclean <= 90 ~ goals.t1),
@@ -92,8 +92,6 @@ leg1.prep.data = all.data %>%
     players.t1, players.t2,
     .direction = 'down'
   )
-
-leg1.prep.data
 
 leg1.team1.data = leg1.prep.data %>% 
   transmute(
@@ -127,7 +125,7 @@ leg1.data
 
 # leg 2 predictors --------------------------------------------------------
 
-leg2.prep.data = all.data %>% 
+leg2.prep.data = minute.data %>% 
   left_join(total.goals.by.game) %>% 
   mutate(
     goals.t1.g2 = case_when(minuteclean > 90 ~ goals.t1 - goals.t1.g1.final, TRUE ~ 0),
@@ -166,14 +164,12 @@ leg2.data = bind_rows(leg2.team1.data, leg2.team2.data)
 
 leg2.data
 
-data = bind_rows(
+tie.data = bind_rows(
   leg1.data %>% mutate(leg = 1),
   leg2.data %>% mutate(leg = 2)
 )
 
-train = data %>% filter(season %in% c(2015, 2016, 2017, 2018))
-test = data %>% filter(season == 2019)
+train = tie.data %>% filter(season %in% c(2015, 2016, 2017, 2018))
 
-data %>% write_rds('model/v3/predictors/all.rds', compress = 'gz')
+tie.data %>% write_rds('model/v3/predictors/all.rds', compress = 'gz')
 train %>% write_rds('model/v3/predictors/train.rds', compress = 'gz')
-test %>% write_rds('model/v3/predictors/test.rds', compress = 'gz')

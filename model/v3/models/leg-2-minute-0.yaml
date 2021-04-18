@@ -1,0 +1,39 @@
+general:
+  model: glm
+  version: 2.0
+  type: regression
+  residual: 1785
+  family: poisson
+  link: log
+  is_glm: 1.0
+terms:
+- label: (Intercept)
+  coef: -0.1159233
+  is_intercept: 1.0
+  fields:
+  - type: ordinary
+    col: (Intercept)
+  qr:
+    qr_1: -0.0201048
+    qr_2: -0.0061284
+    qr_3: -0.0282575
+- label: prob.diff
+  coef: 0.9675249
+  is_intercept: 0.0
+  fields:
+  - type: ordinary
+    col: prob.diff
+  qr:
+    qr_1: -0.0
+    qr_2: 0.0470207
+    qr_3: 0.0172814
+- label: home
+  coef: 0.6884673
+  is_intercept: 0.0
+  fields:
+  - type: ordinary
+    col: home
+  qr:
+    qr_1: 0.0
+    qr_2: 0.0
+    qr_3: 0.0436478
