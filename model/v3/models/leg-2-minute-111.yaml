@@ -2,39 +2,39 @@ general:
   model: glm
   version: 2.0
   type: regression
-  residual: 19662
+  residual: 8934
   family: poisson
   link: log
   is_glm: 1.0
 terms:
 - label: (Intercept)
-  coef: -0.3148096
+  coef: -0.3136174
   is_intercept: 1.0
   fields:
   - type: ordinary
     col: (Intercept)
   qr:
-    qr_1: -0.0066837
-    qr_2: -0.0020487
-    qr_3: -0.0002439
-    qr_4: -0.0014439
-    qr_5: 0.0003774
-    qr_6: -0.0119836
+    qr_1: -0.0099194
+    qr_2: -0.0030614
+    qr_3: -0.000335
+    qr_4: -0.002162
+    qr_5: -0.0005998
+    qr_6: -0.0177524
 - label: prob.diff
-  coef: 0.9671147
+  coef: 0.9766647
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: prob.diff
   qr:
     qr_1: -0.0
-    qr_2: 0.0156393
-    qr_3: -0.0107001
-    qr_4: 0.0054599
-    qr_5: -0.0001521
-    qr_6: 0.0044715
+    qr_2: 0.0232183
+    qr_3: -0.0157844
+    qr_4: 0.0080802
+    qr_5: 0.000255
+    qr_6: 0.0066424
 - label: goals.edge
-  coef: 0.0036074
+  coef: 0.0002687
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -42,12 +42,12 @@ terms:
   qr:
     qr_1: -0.0
     qr_2: -0.0
-    qr_3: 0.0039271
-    qr_4: -0.002958
-    qr_5: 8.2263072e-05
-    qr_6: 0.0023833
+    qr_3: 0.0058122
+    qr_4: -0.0043842
+    qr_5: -0.0001371
+    qr_6: 0.0035281
 - label: away.goals.edge
-  coef: -0.0109678
+  coef: -0.0074538
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -56,24 +56,24 @@ terms:
     qr_1: -0.0
     qr_2: -0.0
     qr_3: -0.0
-    qr_4: 0.0055497
-    qr_5: 0.0003273
-    qr_6: -0.0056893
+    qr_4: 0.0082413
+    qr_5: -0.0004694
+    qr_6: -0.0084271
 - label: players.edge
-  coef: 0.413968
+  coef: 0.4162717
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: players.edge
   qr:
-    qr_1: 0.0
-    qr_2: 0.0
-    qr_3: 0.0
-    qr_4: 0.0
-    qr_5: -0.0481861
-    qr_6: -0.0017147
+    qr_1: -0.0
+    qr_2: -0.0
+    qr_3: -0.0
+    qr_4: -0.0
+    qr_5: 0.0697695
+    qr_6: -0.0032768
 - label: home
-  coef: 0.6938664
+  coef: 0.6875627
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -84,4 +84,4 @@ terms:
     qr_3: 0.0
     qr_4: 0.0
     qr_5: 0.0
-    qr_6: 0.0209339
+    qr_6: 0.0310398

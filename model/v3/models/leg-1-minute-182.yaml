@@ -2,7 +2,7 @@ general:
   model: glm
   version: 2.0
   type: regression
-  residual: 8022
+  residual: 2302
   family: poisson
   link: log
   is_glm: 1.0
@@ -14,27 +14,27 @@ terms:
   - type: ordinary
     col: (Intercept)
   qr:
-    qr_1: -5744.2072519
-    qr_2: 5.0397434e-10
-    qr_3: 1.0040547e-10
-    qr_4: 3.0313045e-10
-    qr_5: -2.8864963e-11
-    qr_6: 10606.5398444
+    qr_1: -10713.1178053
+    qr_2: 5.855531e-10
+    qr_3: 1.1873849e-10
+    qr_4: 3.6959439e-10
+    qr_5: -4.2606278e-11
+    qr_6: -19795.2329821
 - label: prob.diff
-  coef: -4.3373615e-13
+  coef: -2.2397225e-13
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: prob.diff
   qr:
     qr_1: -0.0
-    qr_2: 13298.7326524
-    qr_3: 8686.006754
-    qr_4: 4268.3031321
-    qr_5: 339.2414724
-    qr_6: 3173.8184994
+    qr_2: 25208.8217484
+    qr_3: 15620.5529594
+    qr_4: 8337.8227422
+    qr_5: 334.0232648
+    qr_6: -5640.1645103
 - label: goals.edge
-  coef: -1.6636882e-14
+  coef: -9.5892507e-15
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -42,12 +42,12 @@ terms:
   qr:
     qr_1: 0.0
     qr_2: 0.0
-    qr_3: -3849.4405514
-    qr_4: -1973.0211599
-    qr_5: -760.1287885
-    qr_6: 2652.6007992
+    qr_3: -7330.6069495
+    qr_4: -3717.9585946
+    qr_5: -1449.6440807
+    qr_6: -5199.8982727
 - label: away.goals.edge
-  coef: 7.6815532e-14
+  coef: 3.8341285e-14
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -56,11 +56,11 @@ terms:
     qr_1: -0.0
     qr_2: -0.0
     qr_3: -0.0
-    qr_4: 4335.671123
-    qr_5: 41.9708896
-    qr_6: -6053.5602836
+    qr_4: 8306.2534832
+    qr_5: -26.3878806
+    qr_6: 11552.6463176
 - label: players.edge
-  coef: 8.8386746e-17
+  coef: 4.0058577e-15
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -70,18 +70,18 @@ terms:
     qr_2: -0.0
     qr_3: -0.0
     qr_4: -0.0
-    qr_5: 13741.057997
-    qr_6: 728.7357867
+    qr_5: 25940.4233078
+    qr_6: -1205.3352935
 - label: home
-  coef: 4.5697252e-13
+  coef: 2.3014881e-13
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: home
   qr:
-    qr_1: -0.0
-    qr_2: -0.0
-    qr_3: -0.0
-    qr_4: -0.0
-    qr_5: -0.0
-    qr_6: -21213.0796888
+    qr_1: 0.0
+    qr_2: 0.0
+    qr_3: 0.0
+    qr_4: 0.0
+    qr_5: 0.0
+    qr_6: 39590.4659643

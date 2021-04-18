@@ -13,10 +13,13 @@ models = train %>%
     data = map2(
       minuteclean, leg,
       ~{
-        if (.x == 0 | .x == 180 | .x == 210) {
+        # filtered = train %>% filter(leg == .y, minuteclean == .x)
+        if (.x %in% c(0, 178, 179, 180, 208, 209, 210)) {
           filtered = train %>% filter(leg == .y, minuteclean == .x)
+        # } else if ((.x >= 170 & .x < 178) | (.x >= 200 & .x < 208)) {
+        #   filtered = train %>% filter(leg == .y, minuteclean >= .x - 2, minuteclean <= .x + 2)
         } else {
-          filtered = train %>% filter(leg == .y, minuteclean >= .x - 5, minuteclean <= .x + 5)
+          filtered = train %>% filter(leg == .y, minuteclean >= .x - 2, minuteclean <= .x + 2)
         }
         filtered
       }
@@ -25,7 +28,7 @@ models = train %>%
       list(leg, minuteclean, data),
       ~{
         formula = goals.left ~ prob.diff + goals.edge + away.goals.edge + players.edge + home
-        if (..1 == 2 & ..2 <= 90) {
+        if (..1 == 2 & ..2 <= 91) {
           formula = goals.left ~ prob.diff + goals.edge + away.goals.edge + home
         }
         if (..2 == 0) {

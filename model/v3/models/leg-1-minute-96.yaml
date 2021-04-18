@@ -2,7 +2,7 @@ general:
   model: glm
   version: 2.0
   type: regression
-  residual: 19666
+  residual: 8938
   family: poisson
   link: log
   is_glm: 1.0
@@ -14,27 +14,27 @@ terms:
   - type: ordinary
     col: (Intercept)
   qr:
-    qr_1: -3669.5222466
-    qr_2: 1.0738751e-09
-    qr_3: 2.743048e-10
-    qr_4: 6.1475034e-10
-    qr_5: 4.1391994e-11
-    qr_6: 6788.753648
+    qr_1: -5442.1171645
+    qr_2: 7.0094603e-10
+    qr_3: 1.7884034e-10
+    qr_4: 3.8364915e-10
+    qr_5: 3.6500538e-11
+    qr_6: 10066.0737404
 - label: prob.diff
-  coef: -1.335632e-12
+  coef: -4.8070887e-13
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: prob.diff
   qr:
     qr_1: -0.0
-    qr_2: 8360.8312178
-    qr_3: 5728.3286267
-    qr_4: 2634.3328219
-    qr_5: -331.3495224
-    qr_6: 2130.7736544
+    qr_2: 12399.1838773
+    qr_3: 8491.7897799
+    qr_4: 3906.3231333
+    qr_5: -498.4558829
+    qr_6: 3155.5938493
 - label: goals.edge
-  coef: -3.988022e-14
+  coef: -1.4381346e-14
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -42,12 +42,12 @@ terms:
   qr:
     qr_1: 0.0
     qr_2: 0.0
-    qr_3: -2411.222066
-    qr_4: -1247.429093
-    qr_5: 483.7519119
-    qr_6: 1618.2055784
+    qr_3: -3575.9029769
+    qr_4: -1850.1085822
+    qr_5: 718.3813091
+    qr_6: 2399.4920276
 - label: away.goals.edge
-  coef: 2.457155e-13
+  coef: 8.879702e-14
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -56,11 +56,11 @@ terms:
     qr_1: -0.0
     qr_2: -0.0
     qr_3: -0.0
-    qr_4: 2696.2533633
-    qr_5: -51.065081
-    qr_6: -3785.8539855
+    qr_4: 3999.1400511
+    qr_5: -76.2137624
+    qr_6: -5613.959678
 - label: players.edge
-  coef: -2.2561545e-14
+  coef: -4.1101427e-15
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -70,10 +70,10 @@ terms:
     qr_2: 0.0
     qr_3: 0.0
     qr_4: 0.0
-    qr_5: -8682.6638182
-    qr_6: 517.5593527
+    qr_5: -12874.2586233
+    qr_6: 775.1303886
 - label: home
-  coef: 1.4232204e-12
+  coef: 5.0740167e-13
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -84,4 +84,4 @@ terms:
     qr_3: -0.0
     qr_4: -0.0
     qr_5: -0.0
-    qr_6: -13577.507296
+    qr_6: -20132.1474808
