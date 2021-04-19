@@ -2,39 +2,39 @@ general:
   model: glm
   version: 2.0
   type: regression
-  residual: 584
+  residual: 5860
   family: poisson
   link: log
   is_glm: 1.0
 terms:
 - label: (Intercept)
-  coef: -1.4018951
+  coef: -2.1666952
   is_intercept: 1.0
   fields:
   - type: ordinary
     col: (Intercept)
   qr:
-    qr_1: -0.0714286
-    qr_2: 0.0142897
-    qr_3: -0.0087069
-    qr_4: -0.0150707
-    qr_5: -0.0060103
-    qr_6: -0.1044312
+    qr_1: -0.0320092
+    qr_2: -0.0063617
+    qr_3: -0.0001918
+    qr_4: -0.000134
+    qr_5: 0.0036717
+    qr_6: -0.0461224
 - label: prob.diff
-  coef: 0.8195887
+  coef: 0.900168
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: prob.diff
   qr:
-    qr_1: 0.0
-    qr_2: -0.199849
-    qr_3: -0.012183
-    qr_4: 0.0154289
-    qr_5: 0.0201119
-    qr_6: 0.0992674
+    qr_1: -0.0
+    qr_2: 0.0789663
+    qr_3: -0.0461745
+    qr_4: 0.0002895
+    qr_5: -0.0072432
+    qr_6: 0.0487752
 - label: goals.edge
-  coef: 0.3064532
+  coef: -0.0647133
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -42,12 +42,12 @@ terms:
   qr:
     qr_1: -0.0
     qr_2: -0.0
-    qr_3: 0.1251526
-    qr_4: 0.0935305
-    qr_5: -0.030107
-    qr_6: -0.065451
+    qr_3: 0.0154566
+    qr_4: 0.0158137
+    qr_5: 0.0029814
+    qr_6: -0.0070942
 - label: away.goals.edge
-  coef: -0.4497392
+  coef: 0.0409928
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -56,24 +56,24 @@ terms:
     qr_1: 0.0
     qr_2: 0.0
     qr_3: 0.0
-    qr_4: -0.2669352
-    qr_5: 0.0269941
-    qr_6: 0.1179623
+    qr_4: -0.0368735
+    qr_5: -0.0004428
+    qr_6: 0.0052912
 - label: players.edge
-  coef: 0.0914922
+  coef: 0.168285
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: players.edge
   qr:
-    qr_1: -0.0
-    qr_2: -0.0
-    qr_3: -0.0
-    qr_4: -0.0
-    qr_5: 0.1347946
-    qr_6: -0.0208787
+    qr_1: 0.0
+    qr_2: 0.0
+    qr_3: 0.0
+    qr_4: 0.0
+    qr_5: -0.0627948
+    qr_6: -0.0063217
 - label: home
-  coef: 0.4601755
+  coef: 0.6222409
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -84,4 +84,4 @@ terms:
     qr_3: 0.0
     qr_4: 0.0
     qr_5: 0.0
-    qr_6: 0.1815528
+    qr_6: 0.0748873

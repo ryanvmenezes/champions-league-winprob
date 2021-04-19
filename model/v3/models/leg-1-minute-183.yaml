@@ -2,7 +2,7 @@ general:
   model: glm
   version: 2.0
   type: regression
-  residual: 584
+  residual: 15884
   family: poisson
   link: log
   is_glm: 1.0
@@ -14,27 +14,27 @@ terms:
   - type: ordinary
     col: (Intercept)
   qr:
-    qr_1: -21188.8690517
-    qr_2: 1.8820403e-10
-    qr_3: 6.1390173e-10
-    qr_4: 2.6092517e-11
-    qr_5: 2.1019069e-10
-    qr_6: 42998.1261963
+    qr_1: -4082.9290601
+    qr_2: 6.1644369e-10
+    qr_3: 1.4813579e-10
+    qr_4: 3.6529449e-10
+    qr_5: 3.6006721e-11
+    qr_6: 7537.5716907
 - label: prob.diff
-  coef: 9.7597095e-16
+  coef: -5.268781e-13
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: prob.diff
   qr:
-    qr_1: 0.0
-    qr_2: -57715.9407703
-    qr_3: 15070.0444475
-    qr_4: 25033.480263
-    qr_5: -9989.9933008
-    qr_6: 4210.2909809
+    qr_1: -0.0
+    qr_2: 9442.6533389
+    qr_3: 6186.9539795
+    qr_4: 3017.4548607
+    qr_5: -243.4487643
+    qr_6: 2260.9680238
 - label: goals.edge
-  coef: -6.2875844e-16
+  coef: -1.7598215e-14
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -42,12 +42,12 @@ terms:
   qr:
     qr_1: 0.0
     qr_2: 0.0
-    qr_3: -20105.1057604
-    qr_4: -5796.7025385
-    qr_5: -4369.2815035
-    qr_6: 18428.4179796
+    qr_3: -2733.0251069
+    qr_4: -1400.715843
+    qr_5: 538.0638387
+    qr_6: 1879.5852252
 - label: away.goals.edge
-  coef: 6.859072e-14
+  coef: 9.4947599e-14
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -56,24 +56,24 @@ terms:
     qr_1: -0.0
     qr_2: -0.0
     qr_3: -0.0
-    qr_4: 23323.3279885
-    qr_5: -3297.4022799
-    qr_6: -34332.0015063
+    qr_4: 3076.8291994
+    qr_5: -33.9889295
+    qr_6: -4297.1640055
 - label: players.edge
-  coef: -3.5335824e-14
+  coef: -1.0167142e-16
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: players.edge
   qr:
-    qr_1: -0.0
-    qr_2: -0.0
-    qr_3: -0.0
-    qr_4: -0.0
-    qr_5: 57380.9556007
-    qr_6: 1218.0012899
+    qr_1: 0.0
+    qr_2: 0.0
+    qr_3: 0.0
+    qr_4: 0.0
+    qr_5: -9757.1876523
+    qr_6: 522.7669232
 - label: home
-  coef: 1.7121722e-13
+  coef: 5.5341592e-13
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -84,4 +84,4 @@ terms:
     qr_3: -0.0
     qr_4: -0.0
     qr_5: -0.0
-    qr_6: -85996.2523925
+    qr_6: -15075.1433814

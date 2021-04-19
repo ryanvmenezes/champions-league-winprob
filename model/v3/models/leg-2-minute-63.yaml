@@ -2,37 +2,37 @@ general:
   model: glm
   version: 2.0
   type: regression
-  residual: 8937
+  residual: 37549
   family: poisson
   link: log
   is_glm: 1.0
 terms:
 - label: (Intercept)
-  coef: -0.1044682
+  coef: -0.1052157
   is_intercept: 1.0
   fields:
   - type: ordinary
     col: (Intercept)
   qr:
-    qr_1: -0.0089908
-    qr_2: -0.0027399
-    qr_3: -0.0001136
-    qr_4: -0.0021702
-    qr_5: -0.0164518
+    qr_1: -0.004387
+    qr_2: -0.0013373
+    qr_3: -5.1060453e-05
+    qr_4: -0.0010535
+    qr_5: -0.008019
 - label: prob.diff
-  coef: 0.9811656
+  coef: 0.9791961
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: prob.diff
   qr:
     qr_1: -0.0
-    qr_2: 0.0210288
-    qr_3: 0.0111244
-    qr_4: 0.0054019
-    qr_5: 0.0054762
+    qr_2: 0.0102598
+    qr_3: 0.0054656
+    qr_4: 0.0025987
+    qr_5: 0.002702
 - label: goals.edge
-  coef: -0.0160137
+  coef: -0.0141454
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -40,11 +40,11 @@ terms:
   qr:
     qr_1: 0.0
     qr_2: 0.0
-    qr_3: -0.0072673
-    qr_4: -0.0041597
-    qr_5: 0.0046472
+    qr_3: -0.0035488
+    qr_4: -0.0019975
+    qr_5: 0.0022295
 - label: away.goals.edge
-  coef: 0.0151614
+  coef: 0.0138816
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -53,10 +53,10 @@ terms:
     qr_1: -0.0
     qr_2: -0.0
     qr_3: -0.0
-    qr_4: 0.0093715
-    qr_5: -0.0103839
+    qr_4: 0.0045616
+    qr_5: -0.0050365
 - label: home
-  coef: 0.6651261
+  coef: 0.6668354
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -66,4 +66,4 @@ terms:
     qr_2: 0.0
     qr_3: 0.0
     qr_4: 0.0
-    qr_5: 0.0291293
+    qr_5: 0.0141853

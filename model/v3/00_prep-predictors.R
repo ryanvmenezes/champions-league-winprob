@@ -42,6 +42,8 @@ minute.data = summaries %>%
 
 minute.data
 
+minute.data %>% write_rds('model/v3/predictors/minutes.rds', compress = 'gz')
+
 # calculate final scores of each leg
 
 total.goals.by.game = minute.data %>% 

@@ -2,7 +2,7 @@ general:
   model: glm
   version: 2.0
   type: regression
-  residual: 8934
+  residual: 12512
   family: poisson
   link: log
   is_glm: 1.0
@@ -14,27 +14,27 @@ terms:
   - type: ordinary
     col: (Intercept)
   qr:
-    qr_1: -5443.3345043
-    qr_2: 8.1979067e-10
-    qr_3: 2.0179212e-10
-    qr_4: 4.8153701e-10
-    qr_5: 3.79398e-11
-    qr_6: 10072.0840341
+    qr_1: -4600.0897941
+    qr_2: 8.8394157e-10
+    qr_3: 2.2994558e-10
+    qr_4: 4.9110856e-10
+    qr_5: 2.8770722e-11
+    qr_6: 8512.1115684
 - label: prob.diff
-  coef: -5.5246779e-13
+  coef: -6.3157242e-13
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: prob.diff
   qr:
     qr_1: -0.0
-    qr_2: 12402.7281969
-    qr_3: 8500.3999514
-    qr_4: 3908.2011115
-    qr_5: -485.6403443
-    qr_6: 3164.506454
+    qr_2: 10482.1294084
+    qr_3: 7184.2781549
+    qr_4: 3301.9167158
+    qr_5: -410.5248532
+    qr_6: 2675.1643018
 - label: goals.edge
-  coef: -1.7336416e-14
+  coef: -1.9177978e-14
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -42,12 +42,12 @@ terms:
   qr:
     qr_1: 0.0
     qr_2: 0.0
-    qr_3: -3576.8517652
-    qr_4: -1850.3429686
-    qr_5: 716.8009976
-    qr_6: 2400.7660299
+    qr_3: -3022.9460877
+    qr_4: -1563.7538793
+    qr_5: 605.8289386
+    qr_6: 2028.7356669
 - label: away.goals.edge
-  coef: 1.0113187e-13
+  coef: 1.1668926e-13
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -56,11 +56,11 @@ terms:
     qr_1: -0.0
     qr_2: -0.0
     qr_3: -0.0
-    qr_4: 3999.2316803
-    qr_5: -75.3480031
-    qr_6: -5616.4724594
+    qr_4: 3378.9233943
+    qr_5: -63.7628121
+    qr_6: -4745.8240497
 - label: players.edge
-  coef: -6.267718e-15
+  coef: -1.2558318e-14
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -70,10 +70,10 @@ terms:
     qr_2: 0.0
     qr_3: 0.0
     qr_4: 0.0
-    qr_5: -12881.9877645
-    qr_6: 761.4295124
+    qr_5: -10887.2615627
+    qr_6: 643.401724
 - label: home
-  coef: 5.9294475e-13
+  coef: 6.7243968e-13
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -84,4 +84,4 @@ terms:
     qr_3: -0.0
     qr_4: -0.0
     qr_5: -0.0
-    qr_6: -20144.1680683
+    qr_6: -17024.2231368

@@ -2,39 +2,39 @@ general:
   model: glm
   version: 2.0
   type: regression
-  residual: 8934
+  residual: 37542
   family: poisson
   link: log
   is_glm: 1.0
 terms:
 - label: (Intercept)
-  coef: -0.4745578
+  coef: -0.4844512
   is_intercept: 1.0
   fields:
   - type: ordinary
     col: (Intercept)
   qr:
-    qr_1: -0.0107682
-    qr_2: -0.0033009
-    qr_3: -0.0006095
-    qr_4: -0.0016448
-    qr_5: -0.0009505
-    qr_6: -0.0178079
+    qr_1: -0.0052535
+    qr_2: -0.0015929
+    qr_3: -0.0002561
+    qr_4: -0.0008502
+    qr_5: -0.0004515
+    qr_6: -0.0087078
 - label: prob.diff
-  coef: 0.9343674
+  coef: 0.9512256
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: prob.diff
   qr:
     qr_1: -0.0
-    qr_2: 0.0252062
-    qr_3: -0.017639
-    qr_4: 0.0090218
-    qr_5: -0.0012019
-    qr_6: 0.0092452
+    qr_2: 0.0122974
+    qr_3: -0.0086062
+    qr_4: 0.0043161
+    qr_5: -0.0003721
+    qr_6: 0.0044278
 - label: goals.edge
-  coef: 0.0187123
+  coef: 0.0126587
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -42,12 +42,12 @@ terms:
   qr:
     qr_1: -0.0
     qr_2: -0.0
-    qr_3: 0.0059494
-    qr_4: -0.0051796
-    qr_5: 0.0001747
-    qr_6: 0.0026615
+    qr_3: 0.0028917
+    qr_4: -0.0025126
+    qr_5: 5.0950453e-05
+    qr_6: 0.0013239
 - label: away.goals.edge
-  coef: -0.0402526
+  coef: -0.0371463
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -56,11 +56,11 @@ terms:
     qr_1: -0.0
     qr_2: -0.0
     qr_3: -0.0
-    qr_4: 0.0096378
-    qr_5: -0.0005652
-    qr_6: -0.0075993
+    qr_4: 0.0046973
+    qr_5: -0.0002981
+    qr_6: -0.003697
 - label: players.edge
-  coef: 0.470319
+  coef: 0.4580726
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -70,10 +70,10 @@ terms:
     qr_2: -0.0
     qr_3: -0.0
     qr_4: -0.0
-    qr_5: 0.0574169
-    qr_6: -0.0034094
+    qr_5: 0.0272998
+    qr_6: -0.0010969
 - label: home
-  coef: 0.6888816
+  coef: 0.7064319
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -84,4 +84,4 @@ terms:
     qr_3: 0.0
     qr_4: 0.0
     qr_5: 0.0
-    qr_6: 0.0302752
+    qr_6: 0.0147393

@@ -2,39 +2,39 @@ general:
   model: glm
   version: 2.0
   type: regression
-  residual: 8938
+  residual: 37568
   family: poisson
   link: log
   is_glm: 1.0
 terms:
 - label: (Intercept)
-  coef: -27.3025851
+  coef: -3.4312297
   is_intercept: 1.0
   fields:
   - type: ordinary
     col: (Intercept)
   qr:
-    qr_1: -5442.1171645
-    qr_2: 7.0094603e-10
-    qr_3: 1.7884034e-10
-    qr_4: 3.8364915e-10
-    qr_5: 3.6500538e-11
-    qr_6: 10066.0737404
+    qr_1: -0.0274824
+    qr_2: -0.0132539
+    qr_3: 5.2911095e-05
+    qr_4: -0.0003627
+    qr_5: -0.0041107
+    qr_6: 0.0502665
 - label: prob.diff
-  coef: -4.8070887e-13
+  coef: 1.1054646
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: prob.diff
   qr:
     qr_1: -0.0
-    qr_2: 12399.1838773
-    qr_3: 8491.7897799
-    qr_4: 3906.3231333
-    qr_5: -498.4558829
-    qr_6: 3155.5938493
+    qr_2: 0.0658088
+    qr_3: 0.0425523
+    qr_4: 0.0192009
+    qr_5: 0.0017959
+    qr_6: 0.0178211
 - label: goals.edge
-  coef: -1.4381346e-14
+  coef: -0.0129581
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -42,12 +42,12 @@ terms:
   qr:
     qr_1: 0.0
     qr_2: 0.0
-    qr_3: -3575.9029769
-    qr_4: -1850.1085822
-    qr_5: 718.3813091
-    qr_6: 2399.4920276
+    qr_3: -0.018151
+    qr_4: -0.0091868
+    qr_5: -0.0037258
+    qr_6: 0.0118357
 - label: away.goals.edge
-  coef: 8.879702e-14
+  coef: -0.0110325
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -56,24 +56,24 @@ terms:
     qr_1: -0.0
     qr_2: -0.0
     qr_3: -0.0
-    qr_4: 3999.1400511
-    qr_5: -76.2137624
-    qr_6: -5613.959678
+    qr_4: 0.020704
+    qr_5: 0.0006224
+    qr_6: -0.0286533
 - label: players.edge
-  coef: -4.1101427e-15
+  coef: 0.3938776
   is_intercept: 0.0
   fields:
   - type: ordinary
     col: players.edge
   qr:
-    qr_1: 0.0
-    qr_2: 0.0
-    qr_3: 0.0
-    qr_4: 0.0
-    qr_5: -12874.2586233
-    qr_6: 775.1303886
+    qr_1: -0.0
+    qr_2: -0.0
+    qr_3: -0.0
+    qr_4: -0.0
+    qr_5: 0.060608
+    qr_6: 0.0041042
 - label: home
-  coef: 5.0740167e-13
+  coef: -0.0768909
   is_intercept: 0.0
   fields:
   - type: ordinary
@@ -84,4 +84,4 @@ terms:
     qr_3: -0.0
     qr_4: -0.0
     qr_5: -0.0
-    qr_6: -20132.1474808
+    qr_6: -0.1017906

@@ -268,7 +268,7 @@ export.all.plots = function(plots, version) {
 
 calculate.ll.by.minute = function(predictions) {
   predictions %>% 
-    mutate(predset = case_when(season >= test.season.cutoff ~ 'predictions', TRUE ~ 'training')) %>% 
+    mutate(predset = case_when(season == test.season.cutoff ~ 'predictions', TRUE ~ 'training')) %>% 
     group_by(predset, minuteclean) %>%
     summarise(loglik = log(prod(likelihood, na.rm = TRUE))) %>% 
     ungroup()
@@ -276,7 +276,7 @@ calculate.ll.by.minute = function(predictions) {
 
 calculate.rms.errors.by.minute = function(predictions) {
   predictions %>% 
-    mutate(predset = case_when(season >= test.season.cutoff ~ 'predictions', TRUE ~ 'training')) %>% 
+    mutate(predset = case_when(season == test.season.cutoff ~ 'predictions', TRUE ~ 'training')) %>% 
     group_by(predset, minuteclean) %>%
     summarise(rmserror = sqrt(mean(sqerror, na.rm = TRUE)))
 }
