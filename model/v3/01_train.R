@@ -28,9 +28,9 @@ models = train %>%
       list(leg, minuteclean, data),
       ~{
         formula = goals.left ~ prob.diff + goals.edge + away.goals.edge + players.edge + home
-        # if (..1 == 2 & ..2 <= 91) {
-        #   formula = goals.left ~ prob.diff + goals.edge + away.goals.edge + home
-        # }
+        if (..1 == 2 & ..2 <= 90) {
+          formula = goals.left ~ prob.diff + goals.edge + away.goals.edge + home
+        }
         if (..2 == 0) {
           formula = goals.left ~ prob.diff + home
         }

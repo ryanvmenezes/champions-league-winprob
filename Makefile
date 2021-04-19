@@ -21,6 +21,13 @@ runmodelv1:
 	Rscript model/v1/01_model-predict.R
 	Rscript model/v1/02_plot.R
 
+runmodelv3:
+	Rscript model/v3/00_prep-predictors.R
+	Rscript model/v3/01_train.R
+	Rscript model/v3/02_generate-predictions.R
+	Rscript model/v3/03_evaluate.R
+	Rscript model/v3/04_calculate-tie-metrics.R
+
 createmodels:
 	Rscript model/v1/01_model-predict.R
 	Rscript model/v2.1/01_model-predict.R

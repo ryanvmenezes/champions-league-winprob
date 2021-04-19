@@ -31,16 +31,19 @@ goal.predictions = predictors %>%
   select(leg, minuteclean, predictions) %>% 
   unnest(c(predictions)) %>% 
   ungroup() %>% 
+  group_by(season, stagecode, tieid, minuteclean) %>%
   transmute(
-    season, stagecode, tieid,
-    minuteclean, minuterown,
+    # season, stagecode, tieid,
+    # minuteclean, 
+    minuterown,
     goals,
-    pred.goals.left = fit,
+    # pred.goals.left = fit,
     pred.goals.left = case_when(
       leg == 1 & minuteclean > 90 ~ 0,
-      leg == 2 & minuteclean == 180 & lead(minuteclean) != 181 ~ 0,
-      leg == 2 & minuteclean == 210 ~ 0,
-      TRUE ~ pred.goals.left,
+      # leg == 2 & minuteclean == 180 & lead(minuteclean) != 181 ~ 0,
+      leg == 2 & minuteclean == 180 & minuterown == max(minuterown) ~ 0,
+      leg == 2 & minuteclean == 210 & minuterown == max(minuterown) ~ 0,
+      TRUE ~ fit,
     ),
     leg = if_else(leg == 1, 'g1', 'g2'),
     team = case_when(
@@ -50,6 +53,7 @@ goal.predictions = predictors %>%
       leg == 'g2' & home == 0 ~ 't1',
     ),
   ) %>% 
+  ungroup() %>% 
   pivot_wider(
     names_from = team,
     values_from = c(goals, pred.goals.left),
@@ -68,6 +72,8 @@ goal.predictions = predictors %>%
   arrange(season, stagecode, tieid, minuteclean, minuterown)
 
 goal.predictions
+
+goal.predictions %>% filter(season == 2017, tieid == '206d90db|e2d8892c') %>% view()
 
 generate.distributions = function(pred.df) {
   max.goals = 12
@@ -169,76 +175,10 @@ win.probabilities = goal.predictions %>%
 
 end = lubridate::now()
 
-print(end - start)
-
 beepr::beep()
 
 win.probabilities %>%
   unnest(c(data)) %>%
-  write_rds('model/v3/predictions.rds', compress = 'gz')
+  write_rds('model/v3/probabilities.rds', compress = 'gz')
 
-# head(10) %>% 
-# ungroup() %>%
-# sample_n(10) %>%
-# filter(tieid == '206d90db|822bd0ba') %>% 
-
-# end = lubridate::now()
-# 
-# print(end - start)
-
-# beepr::beep()
-
-# win.probabilities %>% 
-#   unnest(c(data)) %>% 
-#   write_rds('model/v3/predictions.rds', compress = 'gz')
-# 
-# 
-# source('model/v3/utils/plots.R')
-# 
-# summaries = read_rds('data/summary.rds')
-# 
-# summaries %>%
-#   right_join(win.probabilities) %>%
-#   mutate(
-#     data = map(
-#       data,
-#       ~.x %>%
-#         mutate(
-#           t1 = replace_na(t1, 0),
-#           pk = replace_na(pk, 0),
-#           predictedprobt1 = t1 + 0.5 * pk
-#         )
-#     ),
-#     plot = pmap(list(team1, team2, result, data, season, stagecode, aet), winprobplot)
-#   ) %>%
-#   pull(plot)
-#   
-# 
-#   win.probabilities %>% 
-#   unnest(c(data))
-# 
-# distributions$data[[1]] %>% tail()
-# 
-# map(distributions$data, tail)
-
-# prediction.distributions
-# 
-# prediction.distributions %>% 
-#   select(season:minuterown, dist.table) %>% 
-#   unnest(c(dist.table)) %>% 
-#   mutate(
-#     t1 = t1.g1 + t1.g2,
-#     t2 = t2.g1 + t2.g2,
-#     t1.ag = t1.g2,
-#     t2.ag = t2.g1,
-#     winner = case_when(
-#       (t1 > t2) | (t1 == t2 & t1.ag > t2.ag) ~ 't1',
-#       (t2 > t1) | (t1 == t2 & t2.ag > t1.ag) ~ 't2',
-#       (t1 == t2) & (t1.ag == t2.ag) ~ 'pk'
-#     )
-#   ) %>% 
-#   group_by(season, stagecode, tieid, minuteclean, minuterown, winner) %>% 
-#   summarise(prob = sum(prob)) %>% 
-#   pivot_wider(names_from = winner, values_from = prob) %>% 
-#   select(-t1, -t2, -pk, t1, t2, pk)
-#   
+print(end - start)

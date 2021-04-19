@@ -37,6 +37,8 @@ minute.data = summaries %>%
     is.goal = replace_na(is.goal, FALSE),
     is.away.goal = away.goals.t1 != lag(away.goals.t1) | away.goals.t2 != lag(away.goals.t2),
     is.away.goal = replace_na(is.away.goal, FALSE),
+    is.red.card = players.t1 != lag(players.t1) | players.t2 != lag(players.t2),
+    is.red.card = replace_na(is.red.card, FALSE)
   ) %>% 
   ungroup()
 

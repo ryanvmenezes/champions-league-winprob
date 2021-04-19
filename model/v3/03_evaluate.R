@@ -4,7 +4,7 @@ summaries = read_rds('data/summary.rds')
 
 summaries
 
-win.probabilities = read_rds('model/v3/predictions.rds')
+win.probabilities = read_rds('model/v3/probabilities.rds')
 
 win.probabilities
 
@@ -13,7 +13,7 @@ minutes = read_rds('model/v3/predictors/minutes.rds')
 minutes
 
 preds = minutes %>% 
-  select(season, stagecode, minuteclean, minuterown, tieid, t1win, is.goal, is.away.goal) %>% 
+  select(season, stagecode, tieid, minuteclean, minuterown, tieid, t1win, is.goal, is.away.goal, is.red.card) %>% 
   left_join(
     win.probabilities %>% 
       mutate(
@@ -32,5 +32,8 @@ preds = minutes %>%
 
 preds
 
-preds %>% write_rds('model/predictions/v3.rds', compress = 'gz')
-preds %>% write_csv('model/predictions/v3.csv')
+preds %>% write_rds('model/v3/predictions.rds', compress = 'gz')
+preds %>% write_csv('model/v3/predictions.csv')
+
+# preds %>% write_rds('model/predictions/v3.rds', compress = 'gz')
+# preds %>% write_csv('model/predictions/v3.csv')
