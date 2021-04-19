@@ -53,37 +53,44 @@ class Team(BuildableModel):
 class Tie(BuildableModel):
     slug = models.SlugField(unique=True, max_length=200)
     season = models.IntegerField()
-    COMPETITION_CHOICES = [
-        ('cl', 'UEFA Champions League'),
-        ('el', 'UEFA Europa League'),
-    ]
-    competition = models.CharField(
-        max_length=5,
-        choices=COMPETITION_CHOICES
-    )
-    STAGE_CHOICES = [
-        ('cl-0q-1fqr', 'Champions League First Qualifying Round'),
-        ('cl-0q-2sqr', 'Champions League Second Qualifying Round'),
-        ('cl-0q-3tqr', 'Champions League Third Qualifying Round'),
-        ('cl-0q-4po', 'Champions League Qualifying Play-off Round'),
-        ('cl-1k-1r16', 'Champions League Round of 16'),
-        ('cl-1k-2qf', 'Champions League Quarterfinals'),
-        ('cl-1k-3sf', 'Champions League Semifinals'),
-        ('el-0q-0pre', 'Europa League Preliminary Qualifying Round'),
-        ('el-0q-1fqr', 'Europa League First Qualifying Round'),
-        ('el-0q-2sqr', 'Europa League First Qualifying Round'),
-        ('el-0q-3tqr', 'Europa League First Qualifying Round'),
-        ('el-0q-4po', 'Europa League Qualifying Play-off Round'),
-        ('el-1k-1r32', 'Europa League Round of 32'),
-        ('el-1k-2r16', 'Europa League Round of 16'),
-        ('el-1k-3qf', 'Europa League Quarterfinals'),
-        ('el-1k-4sf', 'Europa League Semifinals'),
-    ]
-    stage = models.CharField(
-        max_length=15,
-        choices=STAGE_CHOICES
-    )
+    stagecode = models.CharField(max_length=50)
     tieid = models.CharField(max_length=20)
+    competition_code = models.CharField(max_length=10)
+    competition = models.CharField(max_length=100)
+    stage = models.CharField(max_length=200)
+    dates = models.CharField(max_length=200)
+
+    # COMPETITION_CHOICES = [
+    #     ('cl', 'UEFA Champions League'),
+    #     ('el', 'UEFA Europa League'),
+    # ]
+    # competition = models.CharField(
+    #     max_length=5,
+    #     choices=COMPETITION_CHOICES
+    # )
+    # STAGE_CHOICES = [
+    #     ('cl-0q-1fqr', 'Champions League First Qualifying Round'),
+    #     ('cl-0q-2sqr', 'Champions League Second Qualifying Round'),
+    #     ('cl-0q-3tqr', 'Champions League Third Qualifying Round'),
+    #     ('cl-0q-4po', 'Champions League Qualifying Play-off Round'),
+    #     ('cl-1k-1r16', 'Champions League Round of 16'),
+    #     ('cl-1k-2qf', 'Champions League Quarterfinals'),
+    #     ('cl-1k-3sf', 'Champions League Semifinals'),
+    #     ('el-0q-0pre', 'Europa League Preliminary Qualifying Round'),
+    #     ('el-0q-1fqr', 'Europa League First Qualifying Round'),
+    #     ('el-0q-2sqr', 'Europa League First Qualifying Round'),
+    #     ('el-0q-3tqr', 'Europa League First Qualifying Round'),
+    #     ('el-0q-4po', 'Europa League Qualifying Play-off Round'),
+    #     ('el-1k-1r32', 'Europa League Round of 32'),
+    #     ('el-1k-2r16', 'Europa League Round of 16'),
+    #     ('el-1k-3qf', 'Europa League Quarterfinals'),
+    #     ('el-1k-4sf', 'Europa League Semifinals'),
+    # ]
+    # stage = models.CharField(
+    #     max_length=15,
+    #     choices=STAGE_CHOICES
+    # )
+    # tieid = models.CharField(max_length=20)
     team1 = models.ForeignKey(Team, on_delete=models.CASCADE, related_name='team1', null=True)
     team2 = models.ForeignKey(Team, on_delete=models.CASCADE, related_name='team2', null=True)
     winning_team = models.ForeignKey(Team, on_delete=models.CASCADE, related_name='winning_team', null=True)
@@ -101,7 +108,7 @@ class Tie(BuildableModel):
     has_invalid_match = models.BooleanField()
     in_progress = models.BooleanField()
     excitement = models.FloatField(null=True)
-    minprob_winner = models.FloatField(null=True)
+    comeback = models.FloatField(null=True)
     tension = models.FloatField(null=True)
 
     def __str__(self):
@@ -160,22 +167,27 @@ class Prediction(BuildableModel):
     stagecode = models.CharField(max_length=15)
     tieid = models.CharField(max_length=20)
     t1win = models.BooleanField(null=True)
-    probh1 = models.FloatField(null=True)
-    probd1 = models.FloatField(null=True)
-    proba1 = models.FloatField(null=True)
+    is_goal = models.BooleanField(null=True)
+    is_away_goal = models.BooleanField(null=True)
+    is_red_card = models.BooleanField(null=True)
+    # probh1 = models.FloatField(null=True)
+    # probd1 = models.FloatField(null=True)
+    # proba1 = models.FloatField(null=True)
     minuteclean = models.IntegerField()
     minuterown = models.IntegerField()
     goalst1 = models.IntegerField()
     goalst2 = models.IntegerField()
     awaygoalst1 = models.IntegerField()
     awaygoalst2 = models.IntegerField()
-    goalst1diff = models.IntegerField()
-    awaygoalst1diff = models.IntegerField()
-    redcardst1diff = models.IntegerField()
+    playerst1 = models.IntegerField()
+    playerst2 = models.IntegerField()
+    # goalst1diff = models.IntegerField()
+    # awaygoalst1diff = models.IntegerField()
+    # redcardst1diff = models.IntegerField()
     player = models.CharField(max_length=50, null=True)
     playerid = models.CharField(max_length=20, null=True)
     eventtype = models.CharField(max_length=20, null=True)
-    ag = models.BooleanField(null=True)
+    # ag = models.BooleanField(null=True)
     predictedprobt1 = models.FloatField(null=True)
     likelihood = models.FloatField(null=True)
     error = models.FloatField(null=True)
