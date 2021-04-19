@@ -24,27 +24,36 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item ">
+            <a class="nav-link" href="">About</a>
+          </li>
+          <li class="nav-item ">
             <a class="nav-link" href="/futbol-winprob-model/teams/">Teams</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="/futbol-winprob-model/ties/">Ties</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/futbol-winprob-model/seasons/">Seasons</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div class='content'>
+      <div class='container'>
+        <h1>
+<a href='/futbol-winprob-model/teams/fk-kukesi/'>FK Kukësi</a> 0-4 <a href='/futbol-winprob-model/teams/legia-warsaw/'>Legia Warsaw</a>
+</h1>
+
         
 
-<div class="container">
-  <h3 class='text-center'>
-    <a href='/futbol-winprob-model/teams/fk-kukesi/'>FK Kukësi</a>
-    0-4
-    <a href='/futbol-winprob-model/teams/legia-warsaw/'>Legia Warsaw</a>
-  </h3>
-  <div id='chartholder'></div>
-</div>
+        
+<p>2016 UEFA Europa League - Third qualifying round</p>
+
+
+        
+<div id='chartholder'></div>
 
       </div>
     </div>
@@ -59,6 +68,8 @@
   app.tieEvents = [];
   app.team1short = "Kukësi";
   app.team2short = "Legia Warsaw";
+  app.team1code = "KUK";
+  app.team2code = "LEG";
 </script>
 <script type="text/javascript">
 $(function () {

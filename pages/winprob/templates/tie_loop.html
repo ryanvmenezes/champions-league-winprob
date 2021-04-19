@@ -22,15 +22,15 @@
 
 <!-- one row per tie -->
 {% for tie in ties %}
-<div class='row tie {{ tie.competition }}{% if tie.is_knockout %} knockout{% endif %}'>
+<div class='row tie {{ tie.competition_code }}{% if tie.is_knockout %} knockout{% endif %}'>
   <!-- year and round -->
   <div class='col-lg-4 metadata'>
     <div class='row'>
       <div class='col-lg-5 season'>
-        <p class='text-center text-lg-left'>{{ tie.season }} {{ tie.get_clean_competition }}</p>
+        <p class='text-center text-lg-left'>{{ tie.season }} {{ tie.get_short_competition }}</p>
       </div>
       <div class='col-lg-7 stage'>
-        <p class='text-center text-lg-left'>{{ tie.get_stage_name }}</p>
+        <p class='text-center text-lg-left'>{{ tie.get_short_stage }}</p>
       </div>
     </div>
   </div>

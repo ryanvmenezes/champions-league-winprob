@@ -148,25 +148,25 @@ app.drawWinProbChart = function() {
      .attr("d", app.lineDraw);
 
  app.svg.selectAll('.awaygoal')
-   .data(app.tieEvents.filter(d => d.ag))
+   .data(app.tieEvents.filter(d => d.is_away_goal))
    .enter()
    .append('g')
      .attr('class', 'awaygoal')
    .append('circle')
      .attr('cx', d => app.xScale(d.minuteclean))
      .attr('cy', d => app.yScale(app.data.filter(e => e.minuterown == d.minuterown)[0].predictedprobt1))
-     .attr('r', 7)
+     .attr('r', 10)
      .attr('fill', '#fcc5c0')
 
   app.svg.selectAll('.goal')
-    .data(app.tieEvents.filter(d => d.eventtype.includes('goal')))
+    .data(app.tieEvents.filter(d => d.is_goal))
     .enter()
     .append('g')
       .attr('class', 'goal')
     .append('circle')
       .attr('cx', d => app.xScale(d.minuteclean))
       .attr('cy', d => app.yScale(app.data.filter(e => e.minuterown == d.minuterown)[0].predictedprobt1))
-      .attr('r', 4)
+      .attr('r', 6)
       .attr('fill', '#0570b0')
 }
 

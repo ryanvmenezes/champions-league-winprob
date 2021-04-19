@@ -2,7 +2,6 @@ library(tidyverse)
 library(yaml)
 library(tidypredict)
 library(glue)
-library(here)
 library(furrr)
 
 predictors = read_rds('model/v3/predictors/all.rds')
@@ -73,12 +72,13 @@ goal.predictions = predictors %>%
 
 goal.predictions
 
-goal.predictions %>% filter(season == 2017, tieid == '206d90db|e2d8892c') %>% view()
+# goal.predictions %>% filter(season == 2017, tieid == '206d90db|e2d8892c') %>% view() # barca-psg game with multiple extra time goals
 
 generate.distributions = function(pred.df) {
   max.goals = 12
   
   pred.df %>%
+    # four dist tables: one for each leg, one for each team in the leg
     mutate(
       dist.t1.g1 = map2(
         pred.goals.left.t1.g1,
@@ -128,6 +128,7 @@ generate.distributions = function(pred.df) {
         }
       )
     ) %>% 
+    ## unnest dist table and convert to win probability 
     select(minuteclean, minuterown, dist.table) %>%
     unnest(c(dist.table)) %>%
     mutate(
@@ -154,6 +155,7 @@ plan(multisession)
 start = lubridate::now()
 
 win.probabilities = goal.predictions %>%
+  filter(season == 2017, tieid == '206d90db|e2d8892c') %>% 
   group_by(season, stagecode, tieid) %>%
   nest() %>%
   ungroup() %>%

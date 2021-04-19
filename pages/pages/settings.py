@@ -141,4 +141,5 @@ BAKERY_VIEWS = (
     'winprob.views.AwayGoalsRuleListView',
     'winprob.views.AfterExtraTimeListView',
     'winprob.views.PenaltyKicksListView',
+    'winprob.views.SeasonListView',
 )

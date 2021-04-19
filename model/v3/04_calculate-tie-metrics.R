@@ -41,9 +41,9 @@ tie.wp.summary = predictions %>%
       t1win,
       ~{
         if (.y) {
-          min.prob = .x %>% pull(predictedprobt1) %>% min()
+          min.prob = .x %>% filter(minuterown != max(minuterown)) %>% pull(predictedprobt1) %>% min()
         } else {
-          min.prob = (1 - .x %>% pull(predictedprobt1)) %>% min()
+          min.prob = (1 - .x %>% filter(minuterown != max(minuterown)) %>% pull(predictedprobt1)) %>% min()
         }
         min.prob
       }

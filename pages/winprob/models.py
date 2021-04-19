@@ -4,6 +4,8 @@ from django.urls import reverse
 from postgres_copy import CopyManager
 from bakery.models import BuildableModel
 
+import unicodedata
+
 class Country(BuildableModel):
     detail_views = (
         'winprob.views.CountryListView',
@@ -49,6 +51,14 @@ class Team(BuildableModel):
     def short_name(self):
         shortnames = self.shortnames.split('|')
         return sorted(shortnames, key=lambda x: len(x))[0]
+
+    def remove_accents(self, input_str):
+        nfkd_form = unicodedata.normalize('NFKD', input_str)
+        only_ascii = nfkd_form.encode('ASCII', 'ignore')
+        return only_ascii
+
+    def code_name(self):
+        return self.remove_accents(self.short_name()).upper()[:3].decode('ascii')
 
 class Tie(BuildableModel):
     slug = models.SlugField(unique=True, max_length=200)
@@ -117,18 +127,26 @@ class Tie(BuildableModel):
     def get_predictions(self):
         return Prediction.objects.filter(
             season=self.season,
-            stagecode=self.stage,
+            stagecode=self.stagecode,
             tieid=self.tieid
         )
 
-    def get_stage_name(self):
-        return self.get_stage_display().replace('Champions League ', '').replace('Europa League ', '').replace('Round', 'Rd.').replace('Qualifying', 'Qual.')
+    def get_short_stage(self):
+        return self.stage\
+            .replace('Round', 'Rd.')\
+            .replace('Qualifying', 'Qual.')\
+            .replace('round', 'Rd.')\
+            .replace('qualifying', 'Qual.')
 
-    def get_clean_competition(self):
-        return self.get_competition_display().replace('UEFA ', '').replace('Champions League', 'C.L.').replace('Europa League', 'E.L.')
+    def get_short_competition(self):
+        xwalk = {
+            'UEFA Champions League': 'C.L.',
+            'UEFA Europa League': 'E.L.',
+        }
+        return xwalk.get(self.competition)
 
     def is_knockout(self):
-        return '1k' in self.stage
+        return '1k' in self.stagecode
 
     def get_absolute_url(self):
         return reverse('tiedetail', kwargs={'slug': self.slug})
@@ -144,24 +162,23 @@ class Tie(BuildableModel):
             return None
         return self.team1.fbrefid == self.winning_team.fbrefid
 
-    def get_next_knockout_match(self):
-        round_orders = {
-            'cl-0q': ['cl-0q-1fqr','cl-0q-2sqr','cl-0q-3tqr','cl-0q-4po'],
-            'cl-1k': ['cl-1k-1r16','cl-1k-2qf','cl-1k-3sf'],
-            'el-0q': ['el-0q-0pre','el-0q-1fqr','el-0q-2sqr','el-0q-3tqr','el-0q-4po'],
-            'el-1k': ['el-1k-1r32','el-1k-2r16','el-1k-3qf','el-1k-4sf'],
-        }
-        round_order = round_orders[self.stage[:5]]
-        match_index = round_order.index(self.stage)
-        if match_index == len(round_order) - 1:
-            return None
-        winning_team = self.team1 if self.t1win() else self.team2
-        return Tie.objects.get(
-            Q(season = self.season) &
-            Q(stage = round_order[match_index + 1]) &
-            (Q(team1 = winning_team) | Q(team2 = winning_team))
-        )
-
+    # def get_next_knockout_match(self):
+    #     round_orders = {
+    #         'cl-0q': ['cl-0q-1fqr','cl-0q-2sqr','cl-0q-3tqr','cl-0q-4po'],
+    #         'cl-1k': ['cl-1k-1r16','cl-1k-2qf','cl-1k-3sf'],
+    #         'el-0q': ['el-0q-0pre','el-0q-1fqr','el-0q-2sqr','el-0q-3tqr','el-0q-4po'],
+    #         'el-1k': ['el-1k-1r32','el-1k-2r16','el-1k-3qf','el-1k-4sf'],
+    #     }
+    #     round_order = round_orders[self.stage[:5]]
+    #     match_index = round_order.index(self.stage)
+    #     if match_index == len(round_order) - 1:
+    #         return None
+    #     winning_team = self.team1 if self.t1win() else self.team2
+    #     return Tie.objects.get(
+    #         Q(season = self.season) &
+    #         Q(stage = round_order[match_index + 1]) &
+    #         (Q(team1 = winning_team) | Q(team2 = winning_team))
+    #     )
 class Prediction(BuildableModel):
     season = models.IntegerField()
     stagecode = models.CharField(max_length=15)

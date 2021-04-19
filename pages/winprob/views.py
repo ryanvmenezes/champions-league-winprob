@@ -35,7 +35,7 @@ class TieListView(BuildableListView):
 
     def get_queryset(self):
         ties = Tie.objects.all()
-        return sorted(ties, key=lambda x: (x.minprob_winner is None, x.minprob_winner))[:100]
+        return sorted(ties, key=lambda x: (x.comeback is None, x.comeback))[:100]
 
 class TieDetailView(BuildableDetailView):
     '''
@@ -48,11 +48,13 @@ class TieDetailView(BuildableDetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         preds = context['tie'].get_predictions()\
-            .values('minuteclean','minuterown','predictedprobt1')
+            .values('minuteclean','minuterown','predictedprobt1')\
+            .order_by('minuteclean', 'minuterown')
         context['preds'] = json.dumps(list(preds), ensure_ascii=False)
         events = context['tie'].get_predictions()\
             .filter(~Q(eventtype = None))\
-            .values('minuteclean', 'minuterown', 'player', 'playerid', 'eventtype', 'ag')
+            .values('minuteclean', 'minuterown', 'player', 'playerid', 'eventtype', 'is_goal', 'is_away_goal', 'is_red_card', 'predictedprobt1', 'chgpredictedprobt1')\
+            .order_by('minuteclean', 'minuterown')
         context['events'] = json.dumps(list(events), ensure_ascii=False)
         return context
 
@@ -80,7 +82,7 @@ class TeamDetailView(BuildableDetailView):
         context = super().get_context_data(**kwargs)
         team = context['team']
         context['ties'] = Tie.objects.filter(Q(team1 = team) | Q(team2 = team))\
-            .order_by('-season', '-stage')
+            .order_by('-season', 'stage')
         return context
 
 class AwayGoalsRuleListView(BuildableListView):
@@ -91,7 +93,7 @@ class AwayGoalsRuleListView(BuildableListView):
     template_name = 'agr_list.html'
     context_object_name = 'ties'
     queryset = Tie.objects.filter(away_goals_rule=True)\
-        .order_by('-season', '-stage')
+        .order_by('-season', 'stage')
 
 class AfterExtraTimeListView(BuildableListView):
     '''
@@ -101,7 +103,7 @@ class AfterExtraTimeListView(BuildableListView):
     template_name = 'aet_list.html'
     context_object_name = 'ties'
     queryset = Tie.objects.filter(after_extra_time=True)\
-        .order_by('-season', '-stage')
+        .order_by('-season', 'stage')
 
 class PenaltyKicksListView(BuildableListView):
     '''
@@ -111,7 +113,7 @@ class PenaltyKicksListView(BuildableListView):
     template_name = 'pk_list.html'
     context_object_name = 'ties'
     queryset = Tie.objects.filter(penalty_kicks=True)\
-        .order_by('-season', '-stage')
+        .order_by('-season', 'stage')
 
 class SeasonListView(BuildableListView):
     build_path = 'seasons/index.html'

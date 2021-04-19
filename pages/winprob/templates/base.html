@@ -23,11 +23,17 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item {% block aboutactive %}{% endblock %}">
+            <a class="nav-link" href="">About</a>
+          </li>
+          <li class="nav-item {% block teamsactive %}{% endblock %}">
             <a class="nav-link" href="{% url 'teamlist' %}">Teams</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item {% block tiesactive %}{% endblock %}">
             <a class="nav-link" href="{% url 'tieslist' %}">Ties</a>
+          </li>
+          <li class="nav-item {% block seasonsactive %}{% endblock %}">
+            <a class="nav-link" href="{% url 'seasonlist' %}">Seasons</a>
           </li>
         </ul>
       </div>

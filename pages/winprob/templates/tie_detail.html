@@ -3,16 +3,20 @@
 
 {% block title %}{{ tie.get_tie_name }}{% endblock %}
 
-{% block content %}
+{% block headline %}
+<a href='{{ tie.team1.get_absolute_url}}'>{{ tie.team1.name }}</a> {{ tie.aggscore_t1 }}-{{ tie.aggscore_t2 }} <a href='{{ tie.team2.get_absolute_url}}'>{{ tie.team2.name }}</a>
+{% endblock %}
 
-<div class="container">
-  <h3 class='text-center'>
-    <a href='{{ tie.team1.get_absolute_url}}'>{{ tie.team1.name }}</a>
-    {{ tie.aggscore_t1 }}-{{ tie.aggscore_t2 }}
-    <a href='{{ tie.team2.get_absolute_url}}'>{{ tie.team2.name }}</a>
-  </h3>
-  <div id='chartholder'></div>
-</div>
+{% block nosubhead %}{% endblock %}
+
+{% block nodesc %}
+<p>{{ tie.season }} {{ tie.competition }} - {{ tie.stage }}</p>
+{% endblock %}
+
+{% block tiesactive %}active{% endblock %}
+
+{% block content %}
+<div id='chartholder'></div>
 {% endblock %}
 
 {% block extrajs %}
@@ -23,6 +27,8 @@
   app.tieEvents = {{ events|safe }};
   app.team1short = "{{ tie.team1.short_name|safe }}";
   app.team2short = "{{ tie.team2.short_name|safe }}";
+  app.team1code = "{{ tie.team1.code_name|safe }}";
+  app.team2code = "{{ tie.team2.code_name|safe }}";
 </script>
 <script type="text/javascript">
 $(function () {
