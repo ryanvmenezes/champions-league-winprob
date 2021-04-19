@@ -52,7 +52,7 @@ class TieDetailView(BuildableDetailView):
             .order_by('minuteclean', 'minuterown')
         context['preds'] = json.dumps(list(preds), ensure_ascii=False)
         events = context['tie'].get_predictions()\
-            .filter(~Q(eventtype = None))\
+            .filter(~Q(eventtype = None) | Q(minuteclean = 0) | Q(minuteclean = 90) | Q(minuteclean = 180) | Q(minuteclean = 210))\
             .values('minuteclean', 'minuterown', 'player', 'playerid', 'eventtype', 'is_goal', 'is_away_goal', 'is_red_card', 'predictedprobt1', 'chgpredictedprobt1')\
             .order_by('minuteclean', 'minuterown')
         context['events'] = json.dumps(list(events), ensure_ascii=False)

@@ -58,7 +58,7 @@ class Team(BuildableModel):
         return only_ascii
 
     def code_name(self):
-        return self.remove_accents(self.short_name()).upper()[:3].decode('ascii')
+        return self.remove_accents(self.short_name()).decode('ascii').replace(' ', '').upper()[:3]
 
 class Tie(BuildableModel):
     slug = models.SlugField(unique=True, max_length=200)

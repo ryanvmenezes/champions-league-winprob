@@ -103,7 +103,7 @@ app.drawWinProbChart = function() {
     if (i == 89) {
       return 'End Leg 1'
     } else if (i == 91) {
-      return 'Start Leg 2'
+      return app.isMobile ? '' : 'Start Leg 2'
     } else if (i == 179) {
       if (app.aet) {
         return 'End Leg 2'
@@ -141,86 +141,120 @@ app.drawWinProbChart = function() {
     .call(g => g.select('.tick:nth-of-type(5) text').style('text-anchor', 'end'))
     .call(g => g.select('.domain').remove())
 
-  app.svg.append('g').call(app.xAxisLabels);
+  if (!app.isMobile) { app.svg.append('g').call(app.xAxisLabels); }
 
- //
- //  app.svg.append('g')
- //    .attr('class', 'extraGridLine')
- //  .append('line')
- //    .attr('x1', app.xScale(90))
- //    .attr('x2', app.xScale(90))
- //    .attr('y1', 0)
- //    .attr('y2', app.height)
- //    .attr("fill", "none")
- //    .attr('stroke', '#666666')
- //    .attr('stroke-dasharray', '20')
- //    .attr('stroke-width', '2.5px');
- //
- //  app.svg.append('g')
- //    .attr('class', 'extraGridLine')
- //  .append('line')
- //    .attr('x1', app.xScale(app.aet ? 210 : 180))
- //    .attr('x2', app.xScale(app.aet ? 210 : 180))
- //    .attr('y1', 0)
- //    .attr('y2', app.height)
- //    .attr("fill", "none")
- //    .attr('stroke', '#666666')
- //    .attr('stroke-dasharray', '20')
- //    .attr('stroke-width', '2.5px');
- //
- //  app.svg.append('g')
- //    .attr('class', 'teamLabel')
- //  .append('text')
- //    .attr('dominant-baseline', 'central')
- //    .attr('text-anchor', 'middle')
- //    .attr('x', app.xScale(45))
- //    .attr('y', app.yScale(0.5))
- //    .text('at ' + app.team1short)
- //    .style('font-size', app.isMobile ? '20px' : '25px')
- //
- //  app.svg.append('g')
- //    .attr('class', 'teamLabel')
- //  .append('text')
- //    .attr('dominant-baseline', 'central')
- //    .attr('text-anchor', 'middle')
- //    .attr('x', app.xScale(app.aet ? 150 : 135))
- //    .attr('y', app.yScale(0.5))
- //    .text('at ' + app.team2short)
- //    .style('font-size', app.isMobile ? '20px' : '25px')
- //
- //
- //  app.lineDraw = d3.line()
- //    .x(function(d) { return app.xScale(d.minuteclean) })
- //    .y(function(d) { return app.yScale(d.predictedprobt1) })
- //
- //  app.svg.append("path")
- //     .datum(app.data)
- //     .attr("fill", "none")
- //     .attr('stroke', '#000')
- //     .attr('stroke-width', '1.5px')
- //     .attr("d", app.lineDraw);
- //
- // app.svg.selectAll('.awaygoal')
- //   .data(app.tieEvents.filter(d => d.is_away_goal))
- //   .enter()
- //   .append('g')
- //     .attr('class', 'awaygoal')
- //   .append('circle')
- //     .attr('cx', d => app.xScale(d.minuteclean))
- //     .attr('cy', d => app.yScale(app.data.filter(e => e.minuterown == d.minuterown)[0].predictedprobt1))
- //     .attr('r', 10)
- //     .attr('fill', '#fcc5c0')
- //
- //  app.svg.selectAll('.goal')
- //    .data(app.tieEvents.filter(d => d.is_goal))
- //    .enter()
- //    .append('g')
- //      .attr('class', 'goal')
- //    .append('circle')
- //      .attr('cx', d => app.xScale(d.minuteclean))
- //      .attr('cy', d => app.yScale(app.data.filter(e => e.minuterown == d.minuterown)[0].predictedprobt1))
- //      .attr('r', 6)
- //      .attr('fill', '#0570b0')
+  if (!app.isMobile) {
+      app.svg.append('g')
+        .attr('class', 'teamLabel')
+      .append('text')
+        .attr('dominant-baseline', 'central')
+        .attr('text-anchor', 'middle')
+        .attr('x', app.xScale(45))
+        .attr('y', app.yScale(0.5))
+        .text('at ' + app.team1short)
+        .style('font-size', '40px')
+
+      app.svg.append('g')
+        .attr('class', 'teamLabel')
+      .append('text')
+        .attr('dominant-baseline', 'central')
+        .attr('text-anchor', 'middle')
+        .attr('x', app.xScale(app.aet ? 150 : 135))
+        .attr('y', app.yScale(0.5))
+        .text('at ' + app.team2short)
+        .style('font-size', '40px')
+  } else {
+      app.svg.append('g')
+        .attr('class', 'teamLabel')
+      .append('text')
+        .attr('dominant-baseline', 'central')
+        .attr('text-anchor', 'middle')
+        .attr('x', app.xScale(45))
+        .attr('y', app.yScale(0.5))
+        .text('L1')
+        .style('font-size', '20px')
+
+      app.svg.append('g')
+        .attr('class', 'teamLabel')
+      .append('text')
+        .attr('dominant-baseline', 'central')
+        .attr('text-anchor', 'middle')
+        .attr('x', app.xScale(135))
+        .attr('y', app.yScale(0.5))
+        .text('L2')
+        .style('font-size', '20px')
+
+      if (app.aet) {
+        app.svg.append('g')
+          .attr('class', 'teamLabel')
+        .append('text')
+          .attr('dominant-baseline', 'central')
+          .attr('text-anchor', 'middle')
+          .attr('x', app.xScale(195))
+          .attr('y', app.yScale(0.5))
+          .text('ET')
+          .style('font-size', '20px')
+      }
+
+    // app.svg.append('g')
+    //   .attr('class', 'teamLabel')
+    // .append('text')
+    //   .attr('dominant-baseline', 'central')
+    //   .attr('text-anchor', 'middle')
+    //   .attr('x', app.xScale(app.aet ? 150 : 135))
+    //   .attr('y', app.yScale(0.5))
+    //   .text('at ' + app.team2short)
+    //   .style('font-size', '40px')
+  }
+
+  app.lineDraw = d3.line()
+    .x(function(d) { return app.xScale(d.minuteclean) })
+    .y(function(d) { return app.yScale(d.predictedprobt1) })
+
+  app.svg.append("path")
+    .datum(app.data)
+    .attr("fill", "none")
+    .attr('stroke', '#000')
+    .attr('stroke-width', '1.5px')
+    .attr("d", app.lineDraw);
+
+ app.svg.selectAll('.awaygoal')
+   .data(app.tieEvents.filter(d => d.is_away_goal))
+   .enter()
+   .append('g')
+     .attr('class', 'awaygoal')
+   .append('circle')
+     .attr('cx', d => app.xScale(d.minuteclean))
+     .attr('cy', d => app.yScale(app.data.filter(e => e.minuterown == d.minuterown)[0].predictedprobt1))
+     .attr('r', 8)
+     .attr('fill', '#fcc5c0')
+
+  app.svg.selectAll('.goal')
+    .data(app.tieEvents.filter(d => d.is_goal))
+    .enter()
+    .append('g')
+      .attr('class', 'goal')
+    .append('circle')
+      .attr('cx', d => app.xScale(d.minuteclean))
+      .attr('cy', d => app.yScale(app.data.filter(e => e.minuterown == d.minuterown)[0].predictedprobt1))
+      .attr('r', 5)
+      .attr('fill', '#2596be')
+
+  var scaleFactor = 3;
+  var cardWidth = 3 * scaleFactor;
+  var cardHeight = 4 * scaleFactor;
+
+  app.svg.selectAll('.redcard')
+    .data(app.tieEvents.filter(d => d.is_red_card))
+    .enter()
+    .append('g')
+      .attr('class', 'goal')
+    .append('rect')
+      .attr('x', d => app.xScale(d.minuteclean) - cardWidth / 2)
+      .attr('y', d => app.yScale(app.data.filter(e => e.minuterown == d.minuterown)[0].predictedprobt1) - cardHeight / 2)
+      .attr('width', cardWidth)
+      .attr('height', cardHeight)
+      .attr('fill', '#ff3322')
 }
 
 // make chart div responsive to window width
