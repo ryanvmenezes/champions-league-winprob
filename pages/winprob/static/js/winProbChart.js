@@ -25,155 +25,208 @@ app.drawWinProbChart = function() {
   app.xmax = app.aet ? 210 : 180;
 
   app.xScale = d3.scaleLinear()
-    .domain([-5, app.xmax + 5])
+    .domain([-2, app.xmax + 2])
     .range([app.margin.left, app.width - app.margin.right]);
 
   app.yScale = d3.scaleLinear()
     .domain([0, 1])
     .range([app.height - app.margin.bottom, app.margin.top]);
 
-  app.xTickFormat = function(i) {
-    if (i == 0) {
-      return 'G1 start';
-    } else if (i == 45) {
-      return 'G1 half'
-    } else if (i == 90) {
-      return 'G1 end / G2 start'
-    } else if (i == 135) {
-      return 'G2 half'
-    } else if (i == 180) {
-      if (app.aet) {
-        return 'G2 end / ET start'
-      }
-      return 'G2 end'
-    } else if (app.aet && i == 195) {
-      return 'ET half'
-    } else if (app.aet && i == 210) {
-      return 'ET end'
+  app.yTickFormatR = function(i) {
+    if (i == 0 | i == 1) {
+     return '100%';
+    } else if (i == 0.25 | i == 0.75) {
+     return '75%'
+    } else if (i == 0.5) {
+     return '50%'
     }
   }
 
-  app.xAxis = g => g
-    .attr("transform", `translate(0,${app.height})`)
+  app.yAxisR = g => g
+    .attr("transform", `translate(${app.width - app.margin.left - app.margin.right},0)`)
     .call(
-      d3.axisBottom(app.xScale)
-        .tickValues([0, 45, 90, 135, 180, 195, 210])
-        .tickFormat(app.xTickFormat)
+      d3.axisRight(app.yScale)
+        .tickValues([0, 0.5, 1])
+        .tickFormat(app.yTickFormatR)
+        .tickSizeInner(-(app.width - app.margin.left - app.margin.right))
+        // .tickSizeOuter(20)
+    )
+    .call(g => g.select(".domain").remove());
+
+  app.svg.append('g').call(app.yAxisR);
+
+  app.yTickFormatL = function(i) {
+    if (i == 1) {
+      return app.team1code;
+    }
+    if (i == 0) {
+      return app.team2code;
+    }
+  }
+
+  app.yAxisL = g => g
+    .attr("transform", `translate(${app.margin.left},0)`)
+    .call(
+      d3.axisLeft(app.yScale)
+        .tickValues([0, 1])
+        .tickFormat(app.yTickFormatL)
+        // .tickSizeInner(-(app.width - app.margin.left - app.margin.right))
+        // .tickSizeOuter(20)
+    )
+    .call(g => g.select(".domain").remove())
+    .call(g => g.selectAll('text').attr('x', app.isMobile ? 30 : 35))
+    .call(g => g.select('.tick:first-of-type text').attr('dy', '1.1em'))
+    .call(g => g.select('.tick:last-of-type text').attr('dy', '-0.5em'))
+    // .call(g => g.select('text :last-of-type').attr('dy', '-1.5em'));
+
+  app.svg.append('g').call(app.yAxisL);
+
+  app.xAxis = g => g
+    .attr("transform", `translate(0,0)`)
+    .call(
+      d3.axisTop(app.xScale)
+        .tickValues([0, 90, 180, 210])
+        .tickFormat('')
         .tickSizeOuter(0)
         .tickSizeInner(-app.height)
     )
     .call(g => g.select(".domain").remove())
     .call(
       g => g.selectAll("text")
-        .attr("transform", "rotate(45)")
+        // .attr("transform", "rotate(45)")
         .style("text-anchor", "start")
     )
 
-  app.yTickFormat = function(i) {
-    if (i == 0 | i == 1) {
-      return '100%';
-    } else if (i == 0.25 | i == 0.75) {
-      return '75%'
-    } else if (i == 0.5) {
-      return '50%'
+  app.svg.append('g').call(app.xAxis);
+
+  app.xTickFormatLabel = function(i) {
+    if (i == 89) {
+      return 'End Leg 1'
+    } else if (i == 91) {
+      return 'Start Leg 2'
+    } else if (i == 179) {
+      if (app.aet) {
+        return 'End Leg 2'
+      } else {
+        return 'End Tie'
+      }
+    } else if (i == 181) {
+      if (app.aet) {
+        return 'Start ET'
+      } else {
+        return ''
+      }
+    } else if (i == 209) {
+      if (app.aet) {
+        return 'End Tie'
+      } else {
+        return ''
+      }
     }
   }
 
-  app.yAxis = g => g
-    .attr("transform", `translate(${app.margin.left},0)`)
+  app.xAxisLabels = g => g
+    .attr("transform", `translate(0,${app.margin.top})`)
     .call(
-      d3.axisLeft(app.yScale)
-        .tickValues([0, 0.25, 0.5, 0.75, 1])
-        .tickFormat(app.yTickFormat)
-        .tickSizeInner(-(app.width - app.margin.left - app.margin.right)))
-    .call(g => g.select(".domain").remove())
+      d3.axisTop(app.xScale)
+        .tickValues([89, 91, 179, 181, 209])
+        .tickFormat(app.xTickFormatLabel)
+        .tickSizeOuter(0)
+        .tickSizeInner(0)
+    )
+    .call(g => g.select('.tick:nth-of-type(1) text').style('text-anchor', 'end'))
+    .call(g => g.select('.tick:nth-of-type(2) text').style('text-anchor', 'start'))
+    .call(g => g.select('.tick:nth-of-type(3) text').style('text-anchor', 'end'))
+    .call(g => g.select('.tick:nth-of-type(4) text').style('text-anchor', 'start'))
+    .call(g => g.select('.tick:nth-of-type(5) text').style('text-anchor', 'end'))
+    .call(g => g.select('.domain').remove())
 
-  app.svg.append('g').call(app.xAxis);
-  app.svg.append('g').call(app.yAxis);
+  app.svg.append('g').call(app.xAxisLabels);
 
-  app.svg.append('g')
-    .attr('class', 'extraGridLine')
-  .append('line')
-    .attr('x1', app.xScale(90))
-    .attr('x2', app.xScale(90))
-    .attr('y1', 0)
-    .attr('y2', app.height)
-    .attr("fill", "none")
-    .attr('stroke', '#666666')
-    .attr('stroke-dasharray', '20')
-    .attr('stroke-width', '2.5px');
-
-  app.svg.append('g')
-    .attr('class', 'extraGridLine')
-  .append('line')
-    .attr('x1', app.xScale(app.aet ? 210 : 180))
-    .attr('x2', app.xScale(app.aet ? 210 : 180))
-    .attr('y1', 0)
-    .attr('y2', app.height)
-    .attr("fill", "none")
-    .attr('stroke', '#666666')
-    .attr('stroke-dasharray', '20')
-    .attr('stroke-width', '2.5px');
-
-  app.svg.append('g')
-    .attr('class', 'teamLabel')
-  .append('text')
-    .attr('dominant-baseline', 'central')
-    .attr('text-anchor', 'middle')
-    .attr('x', app.xScale(45))
-    .attr('y', app.yScale(0.5))
-    .text('at ' + app.team1short)
-    .style('font-size', app.isMobile ? '20px' : '25px')
-
-  app.svg.append('g')
-    .attr('class', 'teamLabel')
-  .append('text')
-    .attr('dominant-baseline', 'central')
-    .attr('text-anchor', 'middle')
-    .attr('x', app.xScale(app.aet ? 150 : 135))
-    .attr('y', app.yScale(0.5))
-    .text('at ' + app.team2short)
-    .style('font-size', app.isMobile ? '20px' : '25px')
-
-
-  app.lineDraw = d3.line()
-    .x(function(d) { return app.xScale(d.minuteclean) })
-    .y(function(d) { return app.yScale(d.predictedprobt1) })
-
-  app.svg.append("path")
-     .datum(app.data)
-     .attr("fill", "none")
-     .attr('stroke', '#000')
-     .attr('stroke-width', '1.5px')
-     .attr("d", app.lineDraw);
-
- app.svg.selectAll('.awaygoal')
-   .data(app.tieEvents.filter(d => d.is_away_goal))
-   .enter()
-   .append('g')
-     .attr('class', 'awaygoal')
-   .append('circle')
-     .attr('cx', d => app.xScale(d.minuteclean))
-     .attr('cy', d => app.yScale(app.data.filter(e => e.minuterown == d.minuterown)[0].predictedprobt1))
-     .attr('r', 10)
-     .attr('fill', '#fcc5c0')
-
-  app.svg.selectAll('.goal')
-    .data(app.tieEvents.filter(d => d.is_goal))
-    .enter()
-    .append('g')
-      .attr('class', 'goal')
-    .append('circle')
-      .attr('cx', d => app.xScale(d.minuteclean))
-      .attr('cy', d => app.yScale(app.data.filter(e => e.minuterown == d.minuterown)[0].predictedprobt1))
-      .attr('r', 6)
-      .attr('fill', '#0570b0')
+ //
+ //  app.svg.append('g')
+ //    .attr('class', 'extraGridLine')
+ //  .append('line')
+ //    .attr('x1', app.xScale(90))
+ //    .attr('x2', app.xScale(90))
+ //    .attr('y1', 0)
+ //    .attr('y2', app.height)
+ //    .attr("fill", "none")
+ //    .attr('stroke', '#666666')
+ //    .attr('stroke-dasharray', '20')
+ //    .attr('stroke-width', '2.5px');
+ //
+ //  app.svg.append('g')
+ //    .attr('class', 'extraGridLine')
+ //  .append('line')
+ //    .attr('x1', app.xScale(app.aet ? 210 : 180))
+ //    .attr('x2', app.xScale(app.aet ? 210 : 180))
+ //    .attr('y1', 0)
+ //    .attr('y2', app.height)
+ //    .attr("fill", "none")
+ //    .attr('stroke', '#666666')
+ //    .attr('stroke-dasharray', '20')
+ //    .attr('stroke-width', '2.5px');
+ //
+ //  app.svg.append('g')
+ //    .attr('class', 'teamLabel')
+ //  .append('text')
+ //    .attr('dominant-baseline', 'central')
+ //    .attr('text-anchor', 'middle')
+ //    .attr('x', app.xScale(45))
+ //    .attr('y', app.yScale(0.5))
+ //    .text('at ' + app.team1short)
+ //    .style('font-size', app.isMobile ? '20px' : '25px')
+ //
+ //  app.svg.append('g')
+ //    .attr('class', 'teamLabel')
+ //  .append('text')
+ //    .attr('dominant-baseline', 'central')
+ //    .attr('text-anchor', 'middle')
+ //    .attr('x', app.xScale(app.aet ? 150 : 135))
+ //    .attr('y', app.yScale(0.5))
+ //    .text('at ' + app.team2short)
+ //    .style('font-size', app.isMobile ? '20px' : '25px')
+ //
+ //
+ //  app.lineDraw = d3.line()
+ //    .x(function(d) { return app.xScale(d.minuteclean) })
+ //    .y(function(d) { return app.yScale(d.predictedprobt1) })
+ //
+ //  app.svg.append("path")
+ //     .datum(app.data)
+ //     .attr("fill", "none")
+ //     .attr('stroke', '#000')
+ //     .attr('stroke-width', '1.5px')
+ //     .attr("d", app.lineDraw);
+ //
+ // app.svg.selectAll('.awaygoal')
+ //   .data(app.tieEvents.filter(d => d.is_away_goal))
+ //   .enter()
+ //   .append('g')
+ //     .attr('class', 'awaygoal')
+ //   .append('circle')
+ //     .attr('cx', d => app.xScale(d.minuteclean))
+ //     .attr('cy', d => app.yScale(app.data.filter(e => e.minuterown == d.minuterown)[0].predictedprobt1))
+ //     .attr('r', 10)
+ //     .attr('fill', '#fcc5c0')
+ //
+ //  app.svg.selectAll('.goal')
+ //    .data(app.tieEvents.filter(d => d.is_goal))
+ //    .enter()
+ //    .append('g')
+ //      .attr('class', 'goal')
+ //    .append('circle')
+ //      .attr('cx', d => app.xScale(d.minuteclean))
+ //      .attr('cy', d => app.yScale(app.data.filter(e => e.minuterown == d.minuterown)[0].predictedprobt1))
+ //      .attr('r', 6)
+ //      .attr('fill', '#0570b0')
 }
 
 // make chart div responsive to window width
 app.updateDimensionsChart = function() {
     // margins for d3 chart
-    app.margin = {top: 20, right: 20, bottom: 70, left: 20};
+    app.margin = {top: 10, right: 16, bottom: 10, left: 0};
 
     // width of graphic depends on width of chart div
     app.chartElW = document.getElementById("chartholder").clientWidth;
