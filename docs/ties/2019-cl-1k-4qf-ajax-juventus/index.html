@@ -53,7 +53,285 @@
 
 
         
-<div id='chartholder'></div>
+<h4>Win probability chart</h4>
+<div id='chartholder' style='margin-bottom:20px;'></div>
+
+<h4>Events</h4>
+<div class='table-responsive-lg'>
+  <table class='table table-sm table-bordered'>
+    <thead>
+      <tr>
+        <th colspan=4></th>
+        <th colspan=2 class='text-center'>Goals</th>
+        <th colspan=2 class='text-center'>Win Prob.</th>
+      </tr>
+      <tr>
+        <th class='icon' scope="col"></th>
+        <th class='event' scope="col">Event</th>
+        <th class='leg' scope="col">Leg</th>
+        <th class='minute' scope="col">Minute</th>
+        <th class='t1' scope="col">AJA</th>
+        <th class='t2' scope="col">JUV</th>
+        <th class='change' scope="col">Change</th>
+        <th class='leader' scope="col">Leader</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          Start of tie
+          
+        </td>
+        <td class='leg'>
+          
+          1
+          
+        </td>
+        <td class='minute'>
+          
+          0
+          </td>
+        <td class='t1'>
+          0
+        </td>
+        <td class='t2'>
+          0
+        </td>
+        <td class='change'></td>
+        <td class='leader'>
+          JUV 68.0%
+        </td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          Away goal (Cristiano Ronaldo)
+          
+        </td>
+        <td class='leg'>
+          
+          1
+          
+        </td>
+        <td class='minute'>
+          
+          45
+          </td>
+        <td class='t1'>
+          0
+        </td>
+        <td class='t2'>
+          1
+        </td>
+        <td class='change'>
+          JUV +18.1%
+        </td>
+        <td class='leader'>
+          JUV 84.7%
+        </td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          Goal (David Neres)
+          
+        </td>
+        <td class='leg'>
+          
+          1
+          
+        </td>
+        <td class='minute'>
+          
+          46
+          </td>
+        <td class='t1'>
+          1
+        </td>
+        <td class='t2'>
+          1*
+        </td>
+        <td class='change'>
+          AJA +11.1%
+        </td>
+        <td class='leader'>
+          JUV 73.6%
+        </td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          End of first leg
+          
+        </td>
+        <td class='leg'>
+          
+          1
+          
+        </td>
+        <td class='minute'>
+          
+          90
+          </td>
+        <td class='t1'>
+          1
+        </td>
+        <td class='t2'>
+          1*
+        </td>
+        <td class='change'></td>
+        <td class='leader'>
+          JUV 72.6%
+        </td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          Goal (Cristiano Ronaldo)
+          
+        </td>
+        <td class='leg'>
+          
+          2
+          
+        </td>
+        <td class='minute'>
+          
+          28
+          </td>
+        <td class='t1'>
+          1
+        </td>
+        <td class='t2'>
+          2
+        </td>
+        <td class='change'>
+          JUV +13.5%
+        </td>
+        <td class='leader'>
+          JUV 86.4%
+        </td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          Away goal (Donny van de Beek)
+          
+        </td>
+        <td class='leg'>
+          
+          2
+          
+        </td>
+        <td class='minute'>
+          
+          34
+          </td>
+        <td class='t1'>
+          2
+        </td>
+        <td class='t2'>
+          2
+        </td>
+        <td class='change'>
+          AJA +25.4%
+        </td>
+        <td class='leader'>
+          JUV 61.3%
+        </td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          Away goal (Matthijs de Ligt)
+          
+        </td>
+        <td class='leg'>
+          
+          2
+          
+        </td>
+        <td class='minute'>
+          
+          67
+          </td>
+        <td class='t1'>
+          3
+        </td>
+        <td class='t2'>
+          2
+        </td>
+        <td class='change'>
+          AJA +47.1%
+        </td>
+        <td class='leader'>
+          AJA 91.4%
+        </td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          End of tie
+          
+        </td>
+        <td class='leg'>
+          
+          2
+          
+        </td>
+        <td class='minute'>
+          
+          90
+          </td>
+        <td class='t1'>
+          3
+        </td>
+        <td class='t2'>
+          2
+        </td>
+        <td class='change'></td>
+        <td class='leader'>
+          AJA 100.0%
+        </td>
+      </tr>
+      
+      
+    </tbody>
+  </table>
+</div>
+
 
       </div>
     </div>
@@ -65,7 +343,8 @@
 <script src="/futbol-winprob-model/static/js/winProbChart.js"></script>
 <script>
   app.winProbData = [{"minuteclean": 0, "minuterown": 1, "predictedprobt1": 0.3198775421585062}, {"minuteclean": 1, "minuterown": 2, "predictedprobt1": 0.32396500082725377}, {"minuteclean": 2, "minuterown": 3, "predictedprobt1": 0.32414353896487397}, {"minuteclean": 3, "minuterown": 4, "predictedprobt1": 0.324084063472999}, {"minuteclean": 4, "minuterown": 5, "predictedprobt1": 0.3240414005831666}, {"minuteclean": 5, "minuterown": 6, "predictedprobt1": 0.3238847992590923}, {"minuteclean": 6, "minuterown": 7, "predictedprobt1": 0.32377580670885303}, {"minuteclean": 7, "minuterown": 8, "predictedprobt1": 0.32353030665271465}, {"minuteclean": 8, "minuterown": 9, "predictedprobt1": 0.3231982254780513}, {"minuteclean": 9, "minuterown": 10, "predictedprobt1": 0.3229099892602354}, {"minuteclean": 10, "minuterown": 11, "predictedprobt1": 0.32259762447466744}, {"minuteclean": 11, "minuterown": 12, "predictedprobt1": 0.32242265886545174}, {"minuteclean": 12, "minuterown": 13, "predictedprobt1": 0.3222703327889952}, {"minuteclean": 13, "minuterown": 14, "predictedprobt1": 0.3220175776385472}, {"minuteclean": 14, "minuterown": 15, "predictedprobt1": 0.3216802644683888}, {"minuteclean": 15, "minuterown": 16, "predictedprobt1": 0.3213690659453529}, {"minuteclean": 16, "minuterown": 17, "predictedprobt1": 0.32117106952255603}, {"minuteclean": 17, "minuterown": 18, "predictedprobt1": 0.32098190719457687}, {"minuteclean": 18, "minuterown": 19, "predictedprobt1": 0.32100171240776887}, {"minuteclean": 19, "minuterown": 20, "predictedprobt1": 0.3210035086164058}, {"minuteclean": 20, "minuterown": 21, "predictedprobt1": 0.3209089259468671}, {"minuteclean": 21, "minuterown": 22, "predictedprobt1": 0.3209305547211917}, {"minuteclean": 22, "minuterown": 23, "predictedprobt1": 0.32096282019423966}, {"minuteclean": 23, "minuterown": 24, "predictedprobt1": 0.3208595805305905}, {"minuteclean": 24, "minuterown": 25, "predictedprobt1": 0.32087210464744703}, {"minuteclean": 25, "minuterown": 26, "predictedprobt1": 0.32096651351329686}, {"minuteclean": 26, "minuterown": 27, "predictedprobt1": 0.3210640550872451}, {"minuteclean": 27, "minuterown": 28, "predictedprobt1": 0.32120831334349415}, {"minuteclean": 28, "minuterown": 29, "predictedprobt1": 0.3216211424907434}, {"minuteclean": 29, "minuterown": 30, "predictedprobt1": 0.32202377014141365}, {"minuteclean": 30, "minuterown": 31, "predictedprobt1": 0.3224973249390096}, {"minuteclean": 31, "minuterown": 32, "predictedprobt1": 0.3231731992515768}, {"minuteclean": 32, "minuterown": 33, "predictedprobt1": 0.32391123630505475}, {"minuteclean": 33, "minuterown": 34, "predictedprobt1": 0.3244726959225777}, {"minuteclean": 34, "minuterown": 35, "predictedprobt1": 0.325127958618466}, {"minuteclean": 35, "minuterown": 36, "predictedprobt1": 0.3260784254631512}, {"minuteclean": 36, "minuterown": 37, "predictedprobt1": 0.32703061339783734}, {"minuteclean": 37, "minuterown": 38, "predictedprobt1": 0.3278777477903613}, {"minuteclean": 38, "minuterown": 39, "predictedprobt1": 0.32873352402036066}, {"minuteclean": 39, "minuterown": 40, "predictedprobt1": 0.3295330593020477}, {"minuteclean": 40, "minuterown": 41, "predictedprobt1": 0.33033531352885154}, {"minuteclean": 41, "minuterown": 42, "predictedprobt1": 0.33125315540516165}, {"minuteclean": 42, "minuterown": 43, "predictedprobt1": 0.33212901450338805}, {"minuteclean": 43, "minuterown": 44, "predictedprobt1": 0.3328883886229163}, {"minuteclean": 44, "minuterown": 45, "predictedprobt1": 0.3336784236051891}, {"minuteclean": 45, "minuterown": 46, "predictedprobt1": 0.15309969793716308}, {"minuteclean": 46, "minuterown": 47, "predictedprobt1": 0.26444764235607554}, {"minuteclean": 47, "minuterown": 48, "predictedprobt1": 0.2639286858186446}, {"minuteclean": 48, "minuterown": 49, "predictedprobt1": 0.2635822085013939}, {"minuteclean": 49, "minuterown": 50, "predictedprobt1": 0.26334961412611474}, {"minuteclean": 50, "minuterown": 51, "predictedprobt1": 0.2631410076111865}, {"minuteclean": 51, "minuterown": 52, "predictedprobt1": 0.26296667134627943}, {"minuteclean": 52, "minuterown": 53, "predictedprobt1": 0.2627407590359647}, {"minuteclean": 53, "minuterown": 54, "predictedprobt1": 0.2625800584945597}, {"minuteclean": 54, "minuterown": 55, "predictedprobt1": 0.2624186061936527}, {"minuteclean": 55, "minuterown": 56, "predictedprobt1": 0.2621150339452677}, {"minuteclean": 56, "minuterown": 57, "predictedprobt1": 0.2620147906944451}, {"minuteclean": 57, "minuterown": 58, "predictedprobt1": 0.2619494585155895}, {"minuteclean": 58, "minuterown": 59, "predictedprobt1": 0.2618278143293268}, {"minuteclean": 59, "minuterown": 60, "predictedprobt1": 0.2617979540774748}, {"minuteclean": 60, "minuterown": 61, "predictedprobt1": 0.2617120296517044}, {"minuteclean": 61, "minuterown": 62, "predictedprobt1": 0.2617793244293345}, {"minuteclean": 62, "minuterown": 63, "predictedprobt1": 0.2617990530573773}, {"minuteclean": 63, "minuterown": 64, "predictedprobt1": 0.2619080442573131}, {"minuteclean": 64, "minuterown": 65, "predictedprobt1": 0.26202539547258685}, {"minuteclean": 65, "minuterown": 66, "predictedprobt1": 0.2623045793462168}, {"minuteclean": 66, "minuterown": 67, "predictedprobt1": 0.2626104870108951}, {"minuteclean": 67, "minuterown": 68, "predictedprobt1": 0.2629319685568971}, {"minuteclean": 68, "minuterown": 69, "predictedprobt1": 0.263352870390582}, {"minuteclean": 69, "minuterown": 70, "predictedprobt1": 0.2638433072150272}, {"minuteclean": 70, "minuterown": 71, "predictedprobt1": 0.2642739824610119}, {"minuteclean": 71, "minuterown": 72, "predictedprobt1": 0.26472819564740957}, {"minuteclean": 72, "minuterown": 73, "predictedprobt1": 0.26517195102669033}, {"minuteclean": 73, "minuterown": 74, "predictedprobt1": 0.26577785591916614}, {"minuteclean": 74, "minuterown": 75, "predictedprobt1": 0.2663855111002726}, {"minuteclean": 75, "minuterown": 76, "predictedprobt1": 0.26697441607172523}, {"minuteclean": 76, "minuterown": 77, "predictedprobt1": 0.26761291657374964}, {"minuteclean": 77, "minuterown": 78, "predictedprobt1": 0.26822448282926076}, {"minuteclean": 78, "minuterown": 79, "predictedprobt1": 0.2687781329404609}, {"minuteclean": 79, "minuterown": 80, "predictedprobt1": 0.26937689835747725}, {"minuteclean": 80, "minuterown": 81, "predictedprobt1": 0.27021344780156537}, {"minuteclean": 81, "minuterown": 82, "predictedprobt1": 0.27095718555003306}, {"minuteclean": 82, "minuterown": 83, "predictedprobt1": 0.27153126942001266}, {"minuteclean": 83, "minuterown": 84, "predictedprobt1": 0.2720540711681826}, {"minuteclean": 84, "minuterown": 85, "predictedprobt1": 0.27244187560624156}, {"minuteclean": 85, "minuterown": 86, "predictedprobt1": 0.2727636210172324}, {"minuteclean": 86, "minuterown": 87, "predictedprobt1": 0.27287127418013746}, {"minuteclean": 87, "minuterown": 88, "predictedprobt1": 0.27313186113080834}, {"minuteclean": 88, "minuterown": 89, "predictedprobt1": 0.27338664223589626}, {"minuteclean": 89, "minuterown": 90, "predictedprobt1": 0.27363076003505626}, {"minuteclean": 90, "minuterown": 91, "predictedprobt1": 0.2739050380503707}, {"minuteclean": 91, "minuterown": 92, "predictedprobt1": 0.2750554314585508}, {"minuteclean": 92, "minuterown": 93, "predictedprobt1": 0.2751086886554099}, {"minuteclean": 93, "minuterown": 94, "predictedprobt1": 0.2750132907976391}, {"minuteclean": 94, "minuterown": 95, "predictedprobt1": 0.27500781805817337}, {"minuteclean": 95, "minuterown": 96, "predictedprobt1": 0.2750253006084254}, {"minuteclean": 96, "minuterown": 97, "predictedprobt1": 0.274905398823426}, {"minuteclean": 97, "minuterown": 98, "predictedprobt1": 0.2747883161389188}, {"minuteclean": 98, "minuterown": 99, "predictedprobt1": 0.27473170865875457}, {"minuteclean": 99, "minuterown": 100, "predictedprobt1": 0.27464314918995314}, {"minuteclean": 100, "minuterown": 101, "predictedprobt1": 0.27445306124287355}, {"minuteclean": 101, "minuterown": 102, "predictedprobt1": 0.2741401669726439}, {"minuteclean": 102, "minuterown": 103, "predictedprobt1": 0.27385555813345164}, {"minuteclean": 103, "minuterown": 104, "predictedprobt1": 0.2735075527169177}, {"minuteclean": 104, "minuterown": 105, "predictedprobt1": 0.2732009645948092}, {"minuteclean": 105, "minuterown": 106, "predictedprobt1": 0.27291509304605377}, {"minuteclean": 106, "minuterown": 107, "predictedprobt1": 0.2726855640798253}, {"minuteclean": 107, "minuterown": 108, "predictedprobt1": 0.27257731910695127}, {"minuteclean": 108, "minuterown": 109, "predictedprobt1": 0.2724042819700304}, {"minuteclean": 109, "minuterown": 110, "predictedprobt1": 0.27217175652854075}, {"minuteclean": 110, "minuterown": 111, "predictedprobt1": 0.2719425774043392}, {"minuteclean": 111, "minuterown": 112, "predictedprobt1": 0.27169180952053823}, {"minuteclean": 112, "minuterown": 113, "predictedprobt1": 0.2715142756993844}, {"minuteclean": 113, "minuterown": 114, "predictedprobt1": 0.27128459543872085}, {"minuteclean": 114, "minuterown": 115, "predictedprobt1": 0.271304328049792}, {"minuteclean": 115, "minuterown": 116, "predictedprobt1": 0.27116011150784725}, {"minuteclean": 116, "minuterown": 117, "predictedprobt1": 0.2708311784181631}, {"minuteclean": 117, "minuterown": 118, "predictedprobt1": 0.27059023204968313}, {"minuteclean": 118, "minuterown": 119, "predictedprobt1": 0.13550802777358975}, {"minuteclean": 119, "minuterown": 120, "predictedprobt1": 0.13497490254421052}, {"minuteclean": 120, "minuterown": 121, "predictedprobt1": 0.13442749319349928}, {"minuteclean": 121, "minuterown": 122, "predictedprobt1": 0.13384897349327024}, {"minuteclean": 122, "minuterown": 123, "predictedprobt1": 0.13329903534613502}, {"minuteclean": 123, "minuterown": 124, "predictedprobt1": 0.13278359581694812}, {"minuteclean": 124, "minuterown": 125, "predictedprobt1": 0.3867677186324374}, {"minuteclean": 125, "minuterown": 126, "predictedprobt1": 0.3881728680553782}, {"minuteclean": 126, "minuterown": 127, "predictedprobt1": 0.3896423698833721}, {"minuteclean": 127, "minuterown": 128, "predictedprobt1": 0.3911193921513363}, {"minuteclean": 128, "minuterown": 129, "predictedprobt1": 0.39266975180841734}, {"minuteclean": 129, "minuterown": 130, "predictedprobt1": 0.39432814135571165}, {"minuteclean": 130, "minuterown": 131, "predictedprobt1": 0.39600919862662043}, {"minuteclean": 131, "minuterown": 132, "predictedprobt1": 0.39753082240757853}, {"minuteclean": 132, "minuterown": 133, "predictedprobt1": 0.39887151557969724}, {"minuteclean": 133, "minuterown": 134, "predictedprobt1": 0.40024885191349313}, {"minuteclean": 134, "minuterown": 135, "predictedprobt1": 0.401940616662134}, {"minuteclean": 135, "minuterown": 136, "predictedprobt1": 0.403492226801608}, {"minuteclean": 136, "minuterown": 137, "predictedprobt1": 0.40553222932331157}, {"minuteclean": 137, "minuterown": 138, "predictedprobt1": 0.40760324971511463}, {"minuteclean": 138, "minuterown": 139, "predictedprobt1": 0.4098000322477256}, {"minuteclean": 139, "minuterown": 140, "predictedprobt1": 0.41212077074944087}, {"minuteclean": 140, "minuterown": 141, "predictedprobt1": 0.41447893099693}, {"minuteclean": 141, "minuterown": 142, "predictedprobt1": 0.4170945948161647}, {"minuteclean": 142, "minuterown": 143, "predictedprobt1": 0.41966886424083394}, {"minuteclean": 143, "minuterown": 144, "predictedprobt1": 0.4222805372925889}, {"minuteclean": 144, "minuterown": 145, "predictedprobt1": 0.42456765593136286}, {"minuteclean": 145, "minuterown": 146, "predictedprobt1": 0.42688460037429543}, {"minuteclean": 146, "minuterown": 147, "predictedprobt1": 0.4285878368348853}, {"minuteclean": 147, "minuterown": 148, "predictedprobt1": 0.43027893626745345}, {"minuteclean": 148, "minuterown": 149, "predictedprobt1": 0.4317103792278143}, {"minuteclean": 149, "minuterown": 150, "predictedprobt1": 0.43285839085452177}, {"minuteclean": 150, "minuterown": 151, "predictedprobt1": 0.43394666175848967}, {"minuteclean": 151, "minuterown": 152, "predictedprobt1": 0.43500494584316535}, {"minuteclean": 152, "minuterown": 153, "predictedprobt1": 0.43643453165916835}, {"minuteclean": 153, "minuterown": 154, "predictedprobt1": 0.43811607999040525}, {"minuteclean": 154, "minuterown": 155, "predictedprobt1": 0.43993523833831866}, {"minuteclean": 155, "minuterown": 156, "predictedprobt1": 0.44154198592316285}, {"minuteclean": 156, "minuterown": 157, "predictedprobt1": 0.44304958989198107}, {"minuteclean": 157, "minuterown": 158, "predictedprobt1": 0.9141972903995691}, {"minuteclean": 158, "minuterown": 159, "predictedprobt1": 0.9187814872507614}, {"minuteclean": 159, "minuterown": 160, "predictedprobt1": 0.9231675763902991}, {"minuteclean": 160, "minuterown": 161, "predictedprobt1": 0.9273461781541554}, {"minuteclean": 161, "minuterown": 162, "predictedprobt1": 0.9315796556617197}, {"minuteclean": 162, "minuterown": 163, "predictedprobt1": 0.9355574963453885}, {"minuteclean": 163, "minuterown": 164, "predictedprobt1": 0.9394635349071142}, {"minuteclean": 164, "minuterown": 165, "predictedprobt1": 0.9432952708682073}, {"minuteclean": 165, "minuterown": 166, "predictedprobt1": 0.9471592153913186}, {"minuteclean": 166, "minuterown": 167, "predictedprobt1": 0.9508648363083939}, {"minuteclean": 167, "minuterown": 168, "predictedprobt1": 0.9545354327572083}, {"minuteclean": 168, "minuterown": 169, "predictedprobt1": 0.9582194043498441}, {"minuteclean": 169, "minuterown": 170, "predictedprobt1": 0.961758053772029}, {"minuteclean": 170, "minuterown": 171, "predictedprobt1": 0.964756103327786}, {"minuteclean": 171, "minuterown": 172, "predictedprobt1": 0.967497261697061}, {"minuteclean": 172, "minuterown": 173, "predictedprobt1": 0.9706760902268295}, {"minuteclean": 173, "minuterown": 174, "predictedprobt1": 0.973871957648519}, {"minuteclean": 174, "minuterown": 175, "predictedprobt1": 0.9770006095671615}, {"minuteclean": 175, "minuterown": 176, "predictedprobt1": 0.980024956602744}, {"minuteclean": 176, "minuterown": 177, "predictedprobt1": 0.9827057706231825}, {"minuteclean": 177, "minuterown": 178, "predictedprobt1": 0.987034309910467}, {"minuteclean": 178, "minuterown": 179, "predictedprobt1": 0.9887441303365256}, {"minuteclean": 179, "minuterown": 180, "predictedprobt1": 0.990023624088344}, {"minuteclean": 180, "minuterown": 181, "predictedprobt1": 1.0}];
-  app.tieEvents = [{"minuteclean": 45, "minuterown": 46, "player": "Cristiano Ronaldo", "playerid": "dea698d9", "eventtype": "goal", "is_goal": true, "is_away_goal": true, "is_red_card": false, "predictedprobt1": 0.15309969793716308, "chgpredictedprobt1": -0.18057872566802605}, {"minuteclean": 46, "minuterown": 47, "player": "David Neres", "playerid": "4f1e6a0b", "eventtype": "goal", "is_goal": true, "is_away_goal": false, "is_red_card": false, "predictedprobt1": 0.26444764235607554, "chgpredictedprobt1": 0.11134794441891246}, {"minuteclean": 118, "minuterown": 119, "player": "Cristiano Ronaldo", "playerid": "dea698d9", "eventtype": "goal", "is_goal": true, "is_away_goal": false, "is_red_card": false, "predictedprobt1": 0.13550802777358975, "chgpredictedprobt1": -0.13508220427609338}, {"minuteclean": 124, "minuterown": 125, "player": "Donny van de Beek", "playerid": "50dc94ce", "eventtype": "goal", "is_goal": true, "is_away_goal": true, "is_red_card": false, "predictedprobt1": 0.3867677186324374, "chgpredictedprobt1": 0.2539841228154893}, {"minuteclean": 157, "minuterown": 158, "player": "Matthijs de Ligt", "playerid": "d6e53a3a", "eventtype": "goal", "is_goal": true, "is_away_goal": true, "is_red_card": false, "predictedprobt1": 0.9141972903995691, "chgpredictedprobt1": 0.47114770050758803}];
+  app.tieEvents = [{"minuteclean": 0, "minuterown": 1, "player": null, "playerid": null, "eventtype": null, "is_goal": false, "is_away_goal": false, "is_red_card": false, "goalst1": 0, "goalst2": 0, "awaygoalst1": 0, "awaygoalst2": 0, "predictedprobt1": 0.3198775421585062, "chgpredictedprobt1": 0.0, "minute_type": "b_match_state"}, {"minuteclean": 45, "minuterown": 46, "player": "Cristiano Ronaldo", "playerid": "dea698d9", "eventtype": "goal", "is_goal": true, "is_away_goal": true, "is_red_card": false, "goalst1": 0, "goalst2": 1, "awaygoalst1": 0, "awaygoalst2": 1, "predictedprobt1": 0.15309969793716308, "chgpredictedprobt1": -0.18057872566802605, "minute_type": "a_event"}, {"minuteclean": 46, "minuterown": 47, "player": "David Neres", "playerid": "4f1e6a0b", "eventtype": "goal", "is_goal": true, "is_away_goal": false, "is_red_card": false, "goalst1": 1, "goalst2": 1, "awaygoalst1": 0, "awaygoalst2": 1, "predictedprobt1": 0.26444764235607554, "chgpredictedprobt1": 0.11134794441891246, "minute_type": "a_event"}, {"minuteclean": 90, "minuterown": 91, "player": null, "playerid": null, "eventtype": null, "is_goal": false, "is_away_goal": false, "is_red_card": false, "goalst1": 1, "goalst2": 1, "awaygoalst1": 0, "awaygoalst2": 1, "predictedprobt1": 0.2739050380503707, "chgpredictedprobt1": 0.0002742780153144331, "minute_type": "b_match_state"}, {"minuteclean": 118, "minuterown": 119, "player": "Cristiano Ronaldo", "playerid": "dea698d9", "eventtype": "goal", "is_goal": true, "is_away_goal": false, "is_red_card": false, "goalst1": 1, "goalst2": 2, "awaygoalst1": 0, "awaygoalst2": 1, "predictedprobt1": 0.13550802777358975, "chgpredictedprobt1": -0.13508220427609338, "minute_type": "a_event"}, {"minuteclean": 124, "minuterown": 125, "player": "Donny van de Beek", "playerid": "50dc94ce", "eventtype": "goal", "is_goal": true, "is_away_goal": true, "is_red_card": false, "goalst1": 2, "goalst2": 2, "awaygoalst1": 1, "awaygoalst2": 1, "predictedprobt1": 0.3867677186324374, "chgpredictedprobt1": 0.2539841228154893, "minute_type": "a_event"}, {"minuteclean": 157, "minuterown": 158, "player": "Matthijs de Ligt", "playerid": "d6e53a3a", "eventtype": "goal", "is_goal": true, "is_away_goal": true, "is_red_card": false, "goalst1": 3, "goalst2": 2, "awaygoalst1": 2, "awaygoalst2": 1, "predictedprobt1": 0.9141972903995691, "chgpredictedprobt1": 0.47114770050758803, "minute_type": "a_event"}, {"minuteclean": 180, "minuterown": 181, "player": null, "playerid": null, "eventtype": null, "is_goal": false, "is_away_goal": false, "is_red_card": false, "goalst1": 3, "goalst2": 2, "awaygoalst1": 2, "awaygoalst2": 1, "predictedprobt1": 1.0, "chgpredictedprobt1": 0.00997637591165601, "minute_type": "b_match_state"}];
+  app.tieid = "19c3f8c4|e0652b02";
   app.team1short = "Ajax";
   app.team2short = "Juventus";
   app.team1code = "AJA";

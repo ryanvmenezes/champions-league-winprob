@@ -6,3 +6,8 @@
   /* font-size: 35px; */
   fill-opacity: 0.25;
 }
+
+
+.table tr {
+  height: 20px;
+}

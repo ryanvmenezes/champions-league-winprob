@@ -53,7 +53,253 @@
 
 
         
-<div id='chartholder'></div>
+<h4>Win probability chart</h4>
+<div id='chartholder' style='margin-bottom:20px;'></div>
+
+<h4>Events</h4>
+<div class='table-responsive-lg'>
+  <table class='table table-sm table-bordered'>
+    <thead>
+      <tr>
+        <th colspan=4></th>
+        <th colspan=2 class='text-center'>Goals</th>
+        <th colspan=2 class='text-center'>Win Prob.</th>
+      </tr>
+      <tr>
+        <th class='icon' scope="col"></th>
+        <th class='event' scope="col">Event</th>
+        <th class='leg' scope="col">Leg</th>
+        <th class='minute' scope="col">Minute</th>
+        <th class='t1' scope="col">DIN</th>
+        <th class='t2' scope="col">ALA</th>
+        <th class='change' scope="col">Change</th>
+        <th class='leader' scope="col">Leader</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          Start of tie
+          
+        </td>
+        <td class='leg'>
+          
+          1
+          
+        </td>
+        <td class='minute'>
+          
+          0
+          </td>
+        <td class='t1'>
+          0
+        </td>
+        <td class='t2'>
+          0
+        </td>
+        <td class='change'></td>
+        <td class='leader'>
+          DIN 77.4%
+        </td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          Goal (Otar Kiteishvili)
+          
+        </td>
+        <td class='leg'>
+          
+          1
+          
+        </td>
+        <td class='minute'>
+          
+          55
+          </td>
+        <td class='t1'>
+          1
+        </td>
+        <td class='t2'>
+          0
+        </td>
+        <td class='change'>
+          DIN +11.7%
+        </td>
+        <td class='leader'>
+          DIN 85.7%
+        </td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          Goal (Giorgi Kvilitaia)
+          
+        </td>
+        <td class='leg'>
+          
+          1
+          
+        </td>
+        <td class='minute'>
+          
+          69
+          </td>
+        <td class='t1'>
+          2
+        </td>
+        <td class='t2'>
+          0
+        </td>
+        <td class='change'>
+          DIN +7.7%
+        </td>
+        <td class='leader'>
+          DIN 93.8%
+        </td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          End of first leg
+          
+        </td>
+        <td class='leg'>
+          
+          1
+          
+        </td>
+        <td class='minute'>
+          
+          90
+          </td>
+        <td class='t1'>
+          2
+        </td>
+        <td class='t2'>
+          0
+        </td>
+        <td class='change'></td>
+        <td class='leader'>
+          DIN 94.8%
+        </td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          Away goal (Jaba Jighauri)
+          
+        </td>
+        <td class='leg'>
+          
+          2
+          
+        </td>
+        <td class='minute'>
+          
+          21
+          </td>
+        <td class='t1'>
+          3
+        </td>
+        <td class='t2'>
+          0
+        </td>
+        <td class='change'>
+          DIN +4.0%
+        </td>
+        <td class='leader'>
+          DIN 99.6%
+        </td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          Goal (Norayr Gyozalyan)
+          
+        </td>
+        <td class='leg'>
+          
+          2
+          
+        </td>
+        <td class='minute'>
+          
+          51
+          </td>
+        <td class='t1'>
+          3
+        </td>
+        <td class='t2'>
+          1
+        </td>
+        <td class='change'>
+          ALA +0.8%
+        </td>
+        <td class='leader'>
+          DIN 99.0%
+        </td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          
+          End of tie
+          
+        </td>
+        <td class='leg'>
+          
+          2
+          
+        </td>
+        <td class='minute'>
+          
+          90
+          </td>
+        <td class='t1'>
+          3
+        </td>
+        <td class='t2'>
+          1
+        </td>
+        <td class='change'></td>
+        <td class='leader'>
+          DIN 100.0%
+        </td>
+      </tr>
+      
+      
+    </tbody>
+  </table>
+</div>
+
 
       </div>
     </div>
@@ -65,7 +311,8 @@
 <script src="/futbol-winprob-model/static/js/winProbChart.js"></script>
 <script>
   app.winProbData = [{"minuteclean": 0, "minuterown": 1, "predictedprobt1": 0.7736591907778543}, {"minuteclean": 1, "minuterown": 2, "predictedprobt1": 0.7758086129257671}, {"minuteclean": 2, "minuterown": 3, "predictedprobt1": 0.7757586014177174}, {"minuteclean": 3, "minuterown": 4, "predictedprobt1": 0.775370265926537}, {"minuteclean": 4, "minuterown": 5, "predictedprobt1": 0.7749237177642012}, {"minuteclean": 5, "minuterown": 6, "predictedprobt1": 0.774416855731741}, {"minuteclean": 6, "minuterown": 7, "predictedprobt1": 0.7739341826584546}, {"minuteclean": 7, "minuterown": 8, "predictedprobt1": 0.7733717764396576}, {"minuteclean": 8, "minuterown": 9, "predictedprobt1": 0.7727786888710658}, {"minuteclean": 9, "minuterown": 10, "predictedprobt1": 0.7722571964474225}, {"minuteclean": 10, "minuterown": 11, "predictedprobt1": 0.7717446281580473}, {"minuteclean": 11, "minuterown": 12, "predictedprobt1": 0.771102523732355}, {"minuteclean": 12, "minuterown": 13, "predictedprobt1": 0.7703272649251837}, {"minuteclean": 13, "minuterown": 14, "predictedprobt1": 0.7693622461076903}, {"minuteclean": 14, "minuterown": 15, "predictedprobt1": 0.7682883681640577}, {"minuteclean": 15, "minuterown": 16, "predictedprobt1": 0.7672734149108612}, {"minuteclean": 16, "minuterown": 17, "predictedprobt1": 0.7662999042449832}, {"minuteclean": 17, "minuterown": 18, "predictedprobt1": 0.765331107493236}, {"minuteclean": 18, "minuterown": 19, "predictedprobt1": 0.7644182180126163}, {"minuteclean": 19, "minuterown": 20, "predictedprobt1": 0.7633831345735382}, {"minuteclean": 20, "minuterown": 21, "predictedprobt1": 0.7622828190954426}, {"minuteclean": 21, "minuterown": 22, "predictedprobt1": 0.7612248341417628}, {"minuteclean": 22, "minuterown": 23, "predictedprobt1": 0.7601606771927805}, {"minuteclean": 23, "minuterown": 24, "predictedprobt1": 0.7589251803359753}, {"minuteclean": 24, "minuterown": 25, "predictedprobt1": 0.7579349034535541}, {"minuteclean": 25, "minuterown": 26, "predictedprobt1": 0.7571310707246988}, {"minuteclean": 26, "minuterown": 27, "predictedprobt1": 0.7563444141420669}, {"minuteclean": 27, "minuterown": 28, "predictedprobt1": 0.75554434703038}, {"minuteclean": 28, "minuterown": 29, "predictedprobt1": 0.754994311690402}, {"minuteclean": 29, "minuterown": 30, "predictedprobt1": 0.7544401411291668}, {"minuteclean": 30, "minuterown": 31, "predictedprobt1": 0.7538530090214758}, {"minuteclean": 31, "minuterown": 32, "predictedprobt1": 0.7533423515591262}, {"minuteclean": 32, "minuterown": 33, "predictedprobt1": 0.7528099783645328}, {"minuteclean": 33, "minuterown": 34, "predictedprobt1": 0.7521453318896761}, {"minuteclean": 34, "minuterown": 35, "predictedprobt1": 0.751448697815251}, {"minuteclean": 35, "minuterown": 36, "predictedprobt1": 0.7508452469215694}, {"minuteclean": 36, "minuterown": 37, "predictedprobt1": 0.7503226983959821}, {"minuteclean": 37, "minuterown": 38, "predictedprobt1": 0.7497726641042769}, {"minuteclean": 38, "minuterown": 39, "predictedprobt1": 0.7491771923596939}, {"minuteclean": 39, "minuterown": 40, "predictedprobt1": 0.7485802986579304}, {"minuteclean": 40, "minuterown": 41, "predictedprobt1": 0.7480106456701674}, {"minuteclean": 41, "minuterown": 42, "predictedprobt1": 0.7474728434530199}, {"minuteclean": 42, "minuterown": 43, "predictedprobt1": 0.7468675713730787}, {"minuteclean": 43, "minuterown": 44, "predictedprobt1": 0.7461139222895202}, {"minuteclean": 44, "minuterown": 45, "predictedprobt1": 0.7453895848078896}, {"minuteclean": 45, "minuterown": 46, "predictedprobt1": 0.7447748038282241}, {"minuteclean": 46, "minuterown": 47, "predictedprobt1": 0.7440656197125013}, {"minuteclean": 47, "minuterown": 48, "predictedprobt1": 0.7434711465379971}, {"minuteclean": 48, "minuterown": 49, "predictedprobt1": 0.7428029295776581}, {"minuteclean": 49, "minuterown": 50, "predictedprobt1": 0.7420970408417091}, {"minuteclean": 50, "minuterown": 51, "predictedprobt1": 0.7414557184081725}, {"minuteclean": 51, "minuterown": 52, "predictedprobt1": 0.7409237142789495}, {"minuteclean": 52, "minuterown": 53, "predictedprobt1": 0.74037886673128}, {"minuteclean": 53, "minuterown": 54, "predictedprobt1": 0.7398953860843661}, {"minuteclean": 54, "minuterown": 55, "predictedprobt1": 0.7396935103767058}, {"minuteclean": 55, "minuterown": 56, "predictedprobt1": 0.8568859172303646}, {"minuteclean": 56, "minuterown": 57, "predictedprobt1": 0.8571054711187898}, {"minuteclean": 57, "minuterown": 58, "predictedprobt1": 0.8573484970227089}, {"minuteclean": 58, "minuterown": 59, "predictedprobt1": 0.8574291256833397}, {"minuteclean": 59, "minuterown": 60, "predictedprobt1": 0.857455879386609}, {"minuteclean": 60, "minuterown": 61, "predictedprobt1": 0.8575220571821872}, {"minuteclean": 61, "minuterown": 62, "predictedprobt1": 0.8576767160822039}, {"minuteclean": 62, "minuterown": 63, "predictedprobt1": 0.8579311528190889}, {"minuteclean": 63, "minuterown": 64, "predictedprobt1": 0.8582133710220826}, {"minuteclean": 64, "minuterown": 65, "predictedprobt1": 0.858659398559511}, {"minuteclean": 65, "minuterown": 66, "predictedprobt1": 0.859188733606381}, {"minuteclean": 66, "minuterown": 67, "predictedprobt1": 0.8596925372330375}, {"minuteclean": 67, "minuterown": 68, "predictedprobt1": 0.8602168684650471}, {"minuteclean": 68, "minuterown": 69, "predictedprobt1": 0.8607781080710892}, {"minuteclean": 69, "minuterown": 70, "predictedprobt1": 0.9375586176385825}, {"minuteclean": 70, "minuterown": 71, "predictedprobt1": 0.9380938520559444}, {"minuteclean": 71, "minuterown": 72, "predictedprobt1": 0.938710015061895}, {"minuteclean": 72, "minuterown": 73, "predictedprobt1": 0.9393239471184939}, {"minuteclean": 73, "minuterown": 74, "predictedprobt1": 0.9399227835875064}, {"minuteclean": 74, "minuterown": 75, "predictedprobt1": 0.9404175115895589}, {"minuteclean": 75, "minuterown": 76, "predictedprobt1": 0.9408867806867974}, {"minuteclean": 76, "minuterown": 77, "predictedprobt1": 0.9414407600981898}, {"minuteclean": 77, "minuterown": 78, "predictedprobt1": 0.9419358653902161}, {"minuteclean": 78, "minuterown": 79, "predictedprobt1": 0.9423603607585425}, {"minuteclean": 79, "minuterown": 80, "predictedprobt1": 0.9428538241769172}, {"minuteclean": 80, "minuterown": 81, "predictedprobt1": 0.9434862964110725}, {"minuteclean": 81, "minuterown": 82, "predictedprobt1": 0.9441247162908976}, {"minuteclean": 82, "minuterown": 83, "predictedprobt1": 0.9446873303226797}, {"minuteclean": 83, "minuterown": 84, "predictedprobt1": 0.9452362121001775}, {"minuteclean": 84, "minuterown": 85, "predictedprobt1": 0.9457693696595825}, {"minuteclean": 85, "minuterown": 86, "predictedprobt1": 0.9462006821796853}, {"minuteclean": 86, "minuterown": 87, "predictedprobt1": 0.9466073753694285}, {"minuteclean": 87, "minuterown": 88, "predictedprobt1": 0.9470608019074757}, {"minuteclean": 88, "minuterown": 89, "predictedprobt1": 0.9474625537108082}, {"minuteclean": 89, "minuterown": 90, "predictedprobt1": 0.9478091389616954}, {"minuteclean": 90, "minuterown": 91, "predictedprobt1": 0.9481921645706543}, {"minuteclean": 91, "minuterown": 92, "predictedprobt1": 0.9500507324089414}, {"minuteclean": 92, "minuterown": 93, "predictedprobt1": 0.9502502729650415}, {"minuteclean": 93, "minuterown": 94, "predictedprobt1": 0.9504036280836816}, {"minuteclean": 94, "minuterown": 95, "predictedprobt1": 0.9505786071578584}, {"minuteclean": 95, "minuterown": 96, "predictedprobt1": 0.9507793662995514}, {"minuteclean": 96, "minuterown": 97, "predictedprobt1": 0.9509661205351595}, {"minuteclean": 97, "minuterown": 98, "predictedprobt1": 0.9512275577381191}, {"minuteclean": 98, "minuterown": 99, "predictedprobt1": 0.9515090575072319}, {"minuteclean": 99, "minuterown": 100, "predictedprobt1": 0.9517929083602538}, {"minuteclean": 100, "minuterown": 101, "predictedprobt1": 0.9521212376843927}, {"minuteclean": 101, "minuterown": 102, "predictedprobt1": 0.9524098702064869}, {"minuteclean": 102, "minuterown": 103, "predictedprobt1": 0.9526657977040779}, {"minuteclean": 103, "minuterown": 104, "predictedprobt1": 0.952903619632051}, {"minuteclean": 104, "minuterown": 105, "predictedprobt1": 0.9531484243265392}, {"minuteclean": 105, "minuterown": 106, "predictedprobt1": 0.9534103792319639}, {"minuteclean": 106, "minuterown": 107, "predictedprobt1": 0.9537539271641309}, {"minuteclean": 107, "minuterown": 108, "predictedprobt1": 0.9541371156427055}, {"minuteclean": 108, "minuterown": 109, "predictedprobt1": 0.9544991078730711}, {"minuteclean": 109, "minuterown": 110, "predictedprobt1": 0.9548930562220105}, {"minuteclean": 110, "minuterown": 111, "predictedprobt1": 0.9552980754999113}, {"minuteclean": 111, "minuterown": 112, "predictedprobt1": 0.9956749829721945}, {"minuteclean": 112, "minuterown": 113, "predictedprobt1": 0.9957771534632491}, {"minuteclean": 113, "minuterown": 114, "predictedprobt1": 0.995873307562308}, {"minuteclean": 114, "minuterown": 115, "predictedprobt1": 0.9959840718170685}, {"minuteclean": 115, "minuterown": 116, "predictedprobt1": 0.9961005533679638}, {"minuteclean": 116, "minuterown": 117, "predictedprobt1": 0.996212344386835}, {"minuteclean": 117, "minuterown": 118, "predictedprobt1": 0.996319442301449}, {"minuteclean": 118, "minuterown": 119, "predictedprobt1": 0.9964080695630883}, {"minuteclean": 119, "minuterown": 120, "predictedprobt1": 0.9964954405159929}, {"minuteclean": 120, "minuterown": 121, "predictedprobt1": 0.9965824747654825}, {"minuteclean": 121, "minuterown": 122, "predictedprobt1": 0.9966650478686446}, {"minuteclean": 122, "minuterown": 123, "predictedprobt1": 0.9967543060823656}, {"minuteclean": 123, "minuterown": 124, "predictedprobt1": 0.996851784883908}, {"minuteclean": 124, "minuterown": 125, "predictedprobt1": 0.9969592961033792}, {"minuteclean": 125, "minuterown": 126, "predictedprobt1": 0.997084828037504}, {"minuteclean": 126, "minuterown": 127, "predictedprobt1": 0.9972101726378415}, {"minuteclean": 127, "minuterown": 128, "predictedprobt1": 0.9973314803851906}, {"minuteclean": 128, "minuterown": 129, "predictedprobt1": 0.9974446086783555}, {"minuteclean": 129, "minuterown": 130, "predictedprobt1": 0.9975511113797895}, {"minuteclean": 130, "minuterown": 131, "predictedprobt1": 0.9976619273209051}, {"minuteclean": 131, "minuterown": 132, "predictedprobt1": 0.9977695501669228}, {"minuteclean": 132, "minuterown": 133, "predictedprobt1": 0.9978740924652991}, {"minuteclean": 133, "minuterown": 134, "predictedprobt1": 0.9979782030610396}, {"minuteclean": 134, "minuterown": 135, "predictedprobt1": 0.9980835852493664}, {"minuteclean": 135, "minuterown": 136, "predictedprobt1": 0.9981840654216027}, {"minuteclean": 136, "minuterown": 137, "predictedprobt1": 0.998282454194876}, {"minuteclean": 137, "minuterown": 138, "predictedprobt1": 0.9983802800399979}, {"minuteclean": 138, "minuterown": 139, "predictedprobt1": 0.998480368145076}, {"minuteclean": 139, "minuterown": 140, "predictedprobt1": 0.9985846095586165}, {"minuteclean": 140, "minuterown": 141, "predictedprobt1": 0.998689904340221}, {"minuteclean": 141, "minuterown": 142, "predictedprobt1": 0.9902215668859019}, {"minuteclean": 142, "minuterown": 143, "predictedprobt1": 0.9908074761704048}, {"minuteclean": 143, "minuterown": 144, "predictedprobt1": 0.9913919140279481}, {"minuteclean": 144, "minuterown": 145, "predictedprobt1": 0.9919301660863893}, {"minuteclean": 145, "minuterown": 146, "predictedprobt1": 0.992453246214661}, {"minuteclean": 146, "minuterown": 147, "predictedprobt1": 0.9929143175588336}, {"minuteclean": 147, "minuterown": 148, "predictedprobt1": 0.9933680654126669}, {"minuteclean": 148, "minuterown": 149, "predictedprobt1": 0.9937987561605656}, {"minuteclean": 149, "minuterown": 150, "predictedprobt1": 0.9942184830820283}, {"minuteclean": 150, "minuterown": 151, "predictedprobt1": 0.9946238192801935}, {"minuteclean": 151, "minuterown": 152, "predictedprobt1": 0.9950124627470023}, {"minuteclean": 152, "minuterown": 153, "predictedprobt1": 0.9953952303815515}, {"minuteclean": 153, "minuterown": 154, "predictedprobt1": 0.9957572026001312}, {"minuteclean": 154, "minuterown": 155, "predictedprobt1": 0.9961081466823482}, {"minuteclean": 155, "minuterown": 156, "predictedprobt1": 0.996446234530656}, {"minuteclean": 156, "minuterown": 157, "predictedprobt1": 0.9967683275220407}, {"minuteclean": 157, "minuterown": 158, "predictedprobt1": 0.9970650984881255}, {"minuteclean": 158, "minuterown": 159, "predictedprobt1": 0.9973374528203605}, {"minuteclean": 159, "minuterown": 160, "predictedprobt1": 0.9975812638663166}, {"minuteclean": 160, "minuterown": 161, "predictedprobt1": 0.9978030234805392}, {"minuteclean": 161, "minuterown": 162, "predictedprobt1": 0.998006587938672}, {"minuteclean": 162, "minuterown": 163, "predictedprobt1": 0.9981946146120613}, {"minuteclean": 163, "minuterown": 164, "predictedprobt1": 0.9983726623314269}, {"minuteclean": 164, "minuterown": 165, "predictedprobt1": 0.9985375941630334}, {"minuteclean": 165, "minuterown": 166, "predictedprobt1": 0.9986978878253411}, {"minuteclean": 166, "minuterown": 167, "predictedprobt1": 0.9988447961668735}, {"minuteclean": 167, "minuterown": 168, "predictedprobt1": 0.9989817503887699}, {"minuteclean": 168, "minuterown": 169, "predictedprobt1": 0.9991074624707235}, {"minuteclean": 169, "minuterown": 170, "predictedprobt1": 0.9992228124983269}, {"minuteclean": 170, "minuterown": 171, "predictedprobt1": 0.9993338352091861}, {"minuteclean": 171, "minuterown": 172, "predictedprobt1": 0.9994084779923894}, {"minuteclean": 172, "minuterown": 173, "predictedprobt1": 0.9994897172566042}, {"minuteclean": 173, "minuterown": 174, "predictedprobt1": 0.9995729724558216}, {"minuteclean": 174, "minuterown": 175, "predictedprobt1": 0.9996504937970062}, {"minuteclean": 175, "minuterown": 176, "predictedprobt1": 0.9997178963436131}, {"minuteclean": 176, "minuterown": 177, "predictedprobt1": 0.9997749992548889}, {"minuteclean": 177, "minuterown": 178, "predictedprobt1": 0.9998533371524725}, {"minuteclean": 178, "minuterown": 179, "predictedprobt1": 0.9998731773782217}, {"minuteclean": 179, "minuterown": 180, "predictedprobt1": 0.9999002249509181}, {"minuteclean": 180, "minuterown": 181, "predictedprobt1": 1.0}];
-  app.tieEvents = [{"minuteclean": 55, "minuterown": 56, "player": "Otar Kiteishvili", "playerid": "fc9b373e", "eventtype": "goal", "is_goal": true, "is_away_goal": false, "is_red_card": false, "predictedprobt1": 0.8568859172303646, "chgpredictedprobt1": 0.11719240685365873}, {"minuteclean": 69, "minuterown": 70, "player": "Giorgi Kvilitaia", "playerid": "c758cdaf", "eventtype": "penalty_goal", "is_goal": true, "is_away_goal": false, "is_red_card": false, "predictedprobt1": 0.9375586176385825, "chgpredictedprobt1": 0.07678050956749327}, {"minuteclean": 111, "minuterown": 112, "player": "Jaba Jighauri", "playerid": "28aeafaa", "eventtype": "goal", "is_goal": true, "is_away_goal": true, "is_red_card": false, "predictedprobt1": 0.9956749829721945, "chgpredictedprobt1": 0.040376907472283174}, {"minuteclean": 141, "minuterown": 142, "player": "Norayr Gyozalyan", "playerid": "446b04be", "eventtype": "goal", "is_goal": true, "is_away_goal": false, "is_red_card": false, "predictedprobt1": 0.9902215668859019, "chgpredictedprobt1": -0.008468337454319075}];
+  app.tieEvents = [{"minuteclean": 0, "minuterown": 1, "player": null, "playerid": null, "eventtype": null, "is_goal": false, "is_away_goal": false, "is_red_card": false, "goalst1": 0, "goalst2": 0, "awaygoalst1": 0, "awaygoalst2": 0, "predictedprobt1": 0.7736591907778543, "chgpredictedprobt1": 0.0, "minute_type": "b_match_state"}, {"minuteclean": 55, "minuterown": 56, "player": "Otar Kiteishvili", "playerid": "fc9b373e", "eventtype": "goal", "is_goal": true, "is_away_goal": false, "is_red_card": false, "goalst1": 1, "goalst2": 0, "awaygoalst1": 0, "awaygoalst2": 0, "predictedprobt1": 0.8568859172303646, "chgpredictedprobt1": 0.11719240685365873, "minute_type": "a_event"}, {"minuteclean": 69, "minuterown": 70, "player": "Giorgi Kvilitaia", "playerid": "c758cdaf", "eventtype": "penalty_goal", "is_goal": true, "is_away_goal": false, "is_red_card": false, "goalst1": 2, "goalst2": 0, "awaygoalst1": 0, "awaygoalst2": 0, "predictedprobt1": 0.9375586176385825, "chgpredictedprobt1": 0.07678050956749327, "minute_type": "a_event"}, {"minuteclean": 90, "minuterown": 91, "player": null, "playerid": null, "eventtype": null, "is_goal": false, "is_away_goal": false, "is_red_card": false, "goalst1": 2, "goalst2": 0, "awaygoalst1": 0, "awaygoalst2": 0, "predictedprobt1": 0.9481921645706543, "chgpredictedprobt1": 0.0003830256089588646, "minute_type": "b_match_state"}, {"minuteclean": 111, "minuterown": 112, "player": "Jaba Jighauri", "playerid": "28aeafaa", "eventtype": "goal", "is_goal": true, "is_away_goal": true, "is_red_card": false, "goalst1": 3, "goalst2": 0, "awaygoalst1": 1, "awaygoalst2": 0, "predictedprobt1": 0.9956749829721945, "chgpredictedprobt1": 0.040376907472283174, "minute_type": "a_event"}, {"minuteclean": 141, "minuterown": 142, "player": "Norayr Gyozalyan", "playerid": "446b04be", "eventtype": "goal", "is_goal": true, "is_away_goal": false, "is_red_card": false, "goalst1": 3, "goalst2": 1, "awaygoalst1": 1, "awaygoalst2": 0, "predictedprobt1": 0.9902215668859019, "chgpredictedprobt1": -0.008468337454319075, "minute_type": "a_event"}, {"minuteclean": 180, "minuterown": 181, "player": null, "playerid": null, "eventtype": null, "is_goal": false, "is_away_goal": false, "is_red_card": false, "goalst1": 3, "goalst2": 1, "awaygoalst1": 1, "awaygoalst2": 0, "predictedprobt1": 1.0, "chgpredictedprobt1": 9.977504908187385e-05, "minute_type": "b_match_state"}];
+  app.tieid = "e2fa043d|e6232d10";
   app.team1short = "Dinamo Tbilisi";
   app.team2short = "Alashkert";
   app.team1code = "DIN";
