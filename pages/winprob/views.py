@@ -52,10 +52,44 @@ class TieDetailView(BuildableDetailView):
             .order_by('minuteclean', 'minuterown')
         context['preds'] = json.dumps(list(preds), ensure_ascii=False)
         events = context['tie'].get_predictions()\
-            .filter(~Q(eventtype = None) | Q(minuteclean = 0) | Q(minuteclean = 90) | Q(minuteclean = 180) | Q(minuteclean = 210))\
-            .values('minuteclean', 'minuterown', 'player', 'playerid', 'eventtype', 'is_goal', 'is_away_goal', 'is_red_card', 'predictedprobt1', 'chgpredictedprobt1')\
+            .filter(~Q(eventtype=None))\
+            .values(
+                'minuteclean', 'minuterown',
+                'player', 'playerid', 'eventtype',
+                'is_goal', 'is_away_goal', 'is_red_card',
+                'goalst1', 'goalst2', 'awaygoalst1', 'awaygoalst2',
+                'predictedprobt1', 'chgpredictedprobt1'
+            )\
             .order_by('minuteclean', 'minuterown')
-        context['events'] = json.dumps(list(events), ensure_ascii=False)
+        events = [dict(e, minute_type='a_event') for e in events]
+
+        context['aet'] = context['tie'].after_extra_time
+        def filter_by_minute(minute):
+            return context['tie'].get_predictions()\
+                .filter(minuteclean=minute)\
+                .values(
+                    'minuteclean', 'minuterown',
+                    'player', 'playerid', 'eventtype',
+                    'is_goal', 'is_away_goal', 'is_red_card',
+                    'goalst1', 'goalst2', 'awaygoalst1', 'awaygoalst2',
+                    'predictedprobt1', 'chgpredictedprobt1',
+                )\
+                .order_by('minuteclean', 'minuterown')
+        minute_0 = [dict(e, minute_type='b_match_state') for e in filter_by_minute(0)]
+        minute_90 = [dict(e, minute_type='b_match_state') for e in filter_by_minute(90)]
+        minute_180 = [dict(e, minute_type='b_match_state') for e in filter_by_minute(180)]
+        events.extend(minute_0)
+        events.extend(minute_90)
+        events.extend(minute_180)
+        if context['aet']:
+            minute_210 = [dict(e, minute_type='b_match_state') for e in filter_by_minute(210)]
+            events.extend(minute_210)
+
+        events = sorted(events, key=lambda i: (i['minuteclean'], i['minuterown'], i['minute_type']))
+
+        context['events'] = events
+        context['events_json'] = json.dumps(list(events), ensure_ascii=False) #, indent=2)
+
         return context
 
     def get_build_path(self, obj):

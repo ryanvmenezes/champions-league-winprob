@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load pct_formatters %}
 
 {% block title %}{{ tie.get_tie_name }}{% endblock %}
 
@@ -16,9 +17,115 @@
 {% block tiesactive %}active{% endblock %}
 
 {% block content %}
-<div id='chartholder'></div>
+<h4>Win probability chart</h4>
+<div id='chartholder' style='margin-bottom:20px;'></div>
 
-<p>Events</p>
+<h4>Events</h4>
+<div class='table-responsive-lg'>
+  <table class='table table-sm table-bordered'>
+    <thead>
+      <tr>
+        <th colspan=4></th>
+        <th colspan=2 class='text-center'>Goals</th>
+        <th colspan=2 class='text-center'>Win Prob.</th>
+      </tr>
+      <tr>
+        <th class='icon' scope="col"></th>
+        <th class='event' scope="col">Event</th>
+        <th class='leg' scope="col">Leg</th>
+        <th class='minute' scope="col">Minute</th>
+        <th class='t1' scope="col">{{ tie.team1.code_name }}</th>
+        <th class='t2' scope="col">{{ tie.team2.code_name }}</th>
+        <th class='change' scope="col">Change</th>
+        <th class='leader' scope="col">Leader</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for event in events %}
+      {% if event.minute_type == 'b_match_state' %}
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          {% if event.minuteclean == 0 %}
+          Start of tie
+          {% elif event.minuteclean == 90 %}
+          End of first leg
+          {% elif event.minuteclean == 180 %}
+          {% if aet %}Start of extra time{% else %}End of tie{% endif %}
+          {% elif event.minuteclean == 210 %}
+          End of tie
+          {% endif %}
+        </td>
+        <td class='leg'>
+          {% if event.minuteclean <= 90 %}
+          1
+          {% else %}
+          2
+          {% endif %}
+        </td>
+        <td class='minute'>
+          {% if event.minuteclean <= 90 %}
+          {{ event.minuteclean }}
+          {% else %}
+          {{ event.minuteclean|add:'-90' }}
+          {% endif %}</td>
+        <td class='t1'>
+          {{ event.goalst1 }}{% if event.goalst1 == event.goalst2 and event.awaygoalst1 > event.awaygoalst2 %}*{% endif %}
+        </td>
+        <td class='t2'>
+          {{ event.goalst2 }}{% if event.goalst1 == event.goalst2 and event.awaygoalst1 < event.awaygoalst2 %}*{% endif %}
+        </td>
+        <td class='change'></td>
+        <td class='leader'>
+          {% if event.predictedprobt1 > 0.5 %}{{ tie.team1.code_name }} {% elif event.predictedprobt1 < 0.5 %}{{ tie.team2.code_name }} {% endif %}{{ event.predictedprobt1|format_predictedprob }}%
+        </td>
+      </tr>
+      {% elif event.minute_type == 'a_event' %}
+      <tr>
+        <td class='icon'></td>
+        <td class='event'>
+          {% if event.is_away_goal %}
+          Away goal ({{ event.player }})
+          {% elif event.is_goal %}
+          Goal ({{ event.player }})
+          {% elif event.is_red_card %}
+          Red Card ({{ event.player }})
+          {% else %}
+          {{ event.minuteclean }}
+          {% endif %}
+        </td>
+        <td class='leg'>
+          {% if event.minuteclean <= 90 %}
+          1
+          {% else %}
+          2
+          {% endif %}
+        </td>
+        <td class='minute'>
+          {% if event.minuteclean <= 90 %}
+          {{ event.minuteclean }}
+          {% else %}
+          {{ event.minuteclean|add:'-90' }}
+          {% endif %}</td>
+        <td class='t1'>
+          {{ event.goalst1 }}{% if event.goalst1 == event.goalst2 and event.awaygoalst1 > event.awaygoalst2 %}*{% endif %}
+        </td>
+        <td class='t2'>
+          {{ event.goalst2 }}{% if event.goalst1 == event.goalst2 and event.awaygoalst1 < event.awaygoalst2 %}*{% endif %}
+        </td>
+        <td class='change'>
+          {% if event.chgpredictedprobt1 > 0 %}{{ tie.team1.code_name }} {% elif event.chgpredictedprobt1 < 0 %}{{ tie.team2.code_name }} {% endif %}+{{ event.chgpredictedprobt1|format_chgprob }}%
+        </td>
+        <td class='leader'>
+          {% if event.predictedprobt1 > 0.5 %}{{ tie.team1.code_name }} {% elif event.predictedprobt1 < 0.5 %}{{ tie.team2.code_name }} {% endif %}{{ event.predictedprobt1|format_predictedprob }}%
+        </td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
 {% endblock %}
 
 {% block extrajs %}
@@ -26,7 +133,8 @@
 <script src="{% static 'js/winProbChart.js' %}"></script>
 <script>
   app.winProbData = {{ preds|safe }};
-  app.tieEvents = {{ events|safe }};
+  app.tieEvents = {{ events_json|safe }};
+  app.tieid = "{{ tie.tieid }}";
   app.team1short = "{{ tie.team1.short_name|safe }}";
   app.team2short = "{{ tie.team2.short_name|safe }}";
   app.team1code = "{{ tie.team1.code_name|safe }}";

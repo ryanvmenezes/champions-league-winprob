@@ -22,6 +22,14 @@ preds = minutes %>%
     away.goals.t1, away.goals.t2,
     players.t1, players.t2
   ) %>% 
+  group_by(season, stagecode, tieid) %>% 
+  mutate(
+    eventteam = case_when(
+      goals.t1 != lag(goals.t1) | players.t1 != lag(players.t1) ~ 1,
+      goals.t2 != lag(goals.t2) | players.t2 != lag(players.t2) ~ 2,
+    )
+  ) %>% 
+  ungroup() %>% 
   left_join(
     minutes %>% 
       select(season, stagecode, tieid, minuteclean, minuterown, player, playerid, eventtype) %>% 

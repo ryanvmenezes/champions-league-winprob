@@ -89,7 +89,7 @@
   }
 
   .tie .summary .team .flag .flagicon {
-    margin: 0 5px -4px;  
+    margin: 0 5px -4px;
   }
 
   @media (max-width: 991px) {
@@ -105,8 +105,3 @@
       order: 30;
     }
   }
-
-
-
-
-/* margin: 0 5px -4px; */
