@@ -25,12 +25,11 @@
   <table class='table table-sm table-bordered'>
     <thead>
       <tr>
-        <th colspan=4></th>
+        <th colspan=3></th>
         <th colspan=2 class='text-center'>Goals</th>
         <th colspan=2 class='text-center'>Win Prob.</th>
       </tr>
       <tr>
-        <th class='icon' scope="col"></th>
         <th class='event' scope="col">Event</th>
         <th class='leg' scope="col">Leg</th>
         <th class='minute' scope="col">Minute</th>
@@ -44,7 +43,6 @@
       {% for event in events %}
       {% if event.minute_type == 'b_match_state' %}
       <tr>
-        <td class='icon'></td>
         <td class='event'>
           {% if event.minuteclean == 0 %}
           Start of tie
@@ -71,14 +69,13 @@
       </tr>
       {% elif event.minute_type == 'a_event' %}
       <tr>
-        <td class='icon'></td>
         <td class='event'>
           {% if event.is_away_goal %}
-          <span class='away goal'></span> Away goal ({{ event.player }})
+          <span class='away goal'></span> {% if event.eventteam == 1 %}{{ tie.team1.code_name }}{% elif event.eventteam == 2 %}{{ tie.team2.code_name }}{% endif %} away goal: {{ event.player }}
           {% elif event.is_goal %}
-          <span class='goal'></span> Goal ({{ event.player }})
+          <span class='goal'></span> {% if event.eventteam == 1 %}{{ tie.team1.code_name }}{% elif event.eventteam == 2 %}{{ tie.team2.code_name }}{% endif %} goal: {{ event.player }}
           {% elif event.is_red_card %}
-          <span class='red_card'></span> Red Card ({{ event.player }})
+          <span class='red_card'></span> {% if event.eventteam == 1 %}{{ tie.team1.code_name }}{% elif event.eventteam == 2 %}{{ tie.team2.code_name }}{% endif %} red card: {{ event.player }}
           {% else %}
           {% endif %}
         </td>

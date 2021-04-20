@@ -22,7 +22,7 @@ class CountryListView(BuildableListView):
     context_object_name = 'country_list'
     queryset = Country.objects.all()\
         .annotate(num_teams = Count('team'))\
-        .order_by('-num_teams')
+        .order_by('-num_teams', 'name')
 
 class TieListView(BuildableListView):
     '''
@@ -55,7 +55,7 @@ class TieDetailView(BuildableDetailView):
             .filter(~Q(eventtype=None))\
             .values(
                 'minuteclean', 'minuterown',
-                'player', 'playerid', 'eventtype',
+                'eventteam', 'player', 'playerid', 'eventtype',
                 'is_goal', 'is_away_goal', 'is_red_card',
                 'goalst1', 'goalst2', 'awaygoalst1', 'awaygoalst2',
                 'predictedprobt1', 'chgpredictedprobt1'
@@ -69,7 +69,7 @@ class TieDetailView(BuildableDetailView):
                 .filter(minuteclean=minute)\
                 .values(
                     'minuteclean', 'minuterown',
-                    'player', 'playerid', 'eventtype',
+                    'eventteam', 'player', 'playerid', 'eventtype',
                     'is_goal', 'is_away_goal', 'is_red_card',
                     'goalst1', 'goalst2', 'awaygoalst1', 'awaygoalst2',
                     'predictedprobt1', 'chgpredictedprobt1',

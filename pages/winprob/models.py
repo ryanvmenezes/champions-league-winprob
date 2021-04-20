@@ -201,6 +201,7 @@ class Prediction(BuildableModel):
     # goalst1diff = models.IntegerField()
     # awaygoalst1diff = models.IntegerField()
     # redcardst1diff = models.IntegerField()
+    eventteam = models.IntegerField(null=True)
     player = models.CharField(max_length=50, null=True)
     playerid = models.CharField(max_length=20, null=True)
     eventtype = models.CharField(max_length=20, null=True)
