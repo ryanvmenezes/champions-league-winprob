@@ -7,7 +7,21 @@
   fill-opacity: 0.25;
 }
 
+.goal {
+  height: 10px;
+  width: 10px;
+  background-color: #2596be;
+  border-radius: 50%;
+  display: inline-block;
+}
 
-.table tr {
-  height: 20px;
+.away {
+  box-shadow: 0 0 0 3px #fcc5c0;
+}
+
+.red_card {
+  width: 9px;
+  height: 12px;
+  background-color: #ff3322;
+  display: inline-block;
 }

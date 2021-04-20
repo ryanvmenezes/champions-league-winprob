@@ -56,19 +56,8 @@
           End of tie
           {% endif %}
         </td>
-        <td class='leg'>
-          {% if event.minuteclean <= 90 %}
-          1
-          {% else %}
-          2
-          {% endif %}
-        </td>
-        <td class='minute'>
-          {% if event.minuteclean <= 90 %}
-          {{ event.minuteclean }}
-          {% else %}
-          {{ event.minuteclean|add:'-90' }}
-          {% endif %}</td>
+        <td class='leg'></td>
+        <td class='minute'></td>
         <td class='t1'>
           {{ event.goalst1 }}{% if event.goalst1 == event.goalst2 and event.awaygoalst1 > event.awaygoalst2 %}*{% endif %}
         </td>
@@ -85,13 +74,12 @@
         <td class='icon'></td>
         <td class='event'>
           {% if event.is_away_goal %}
-          Away goal ({{ event.player }})
+          <span class='away goal'></span> Away goal ({{ event.player }})
           {% elif event.is_goal %}
-          Goal ({{ event.player }})
+          <span class='goal'></span> Goal ({{ event.player }})
           {% elif event.is_red_card %}
-          Red Card ({{ event.player }})
+          <span class='red_card'></span> Red Card ({{ event.player }})
           {% else %}
-          {{ event.minuteclean }}
           {% endif %}
         </td>
         <td class='leg'>
