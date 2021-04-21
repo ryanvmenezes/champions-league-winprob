@@ -32,7 +32,7 @@ preds = minutes %>%
   ungroup() %>% 
   left_join(
     minutes %>% 
-      select(season, stagecode, tieid, minuteclean, minuterown, player, playerid, eventtype) %>% 
+      select(season, stagecode, tieid, minuteclean, minuterown, player, playerid, eventtype, actualminute) %>% 
       drop_na(player)
   ) %>% 
   left_join(

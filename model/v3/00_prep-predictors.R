@@ -23,7 +23,7 @@ minute.data = summaries %>%
     away.goals.t2 = awaygoalst2,
     players.t1 = 11 - redcardst1,
     players.t2 = 11 - redcardst2,
-    player, playerid, eventtype
+    player, playerid, eventtype, actualminute = minute
   ) %>% 
   mutate(
     prob.h.g1 = replace_na(prob.h.g1, 0.33),

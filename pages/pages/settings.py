@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bakery',
-    'winprob.templatetags.pct_formatters'
+    'winprob.templatetags.formatters'
 ]
 
 MIDDLEWARE = [
@@ -132,12 +132,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 BAKERY_VIEWS = (
-    # 'winprob.views.TeamListView',
     'winprob.views.TeamDetailView',
     'winprob.views.CountryListView',
-    # 'winprob.views.CountryTeamsDetailView',
     'winprob.views.ToTeamsRedirectView',
-    'winprob.views.TieListView',
+    'winprob.views.ToComebackRedirectView',
+    'winprob.views.ComebackListView',
+    'winprob.views.ExcitementListView',
+    'winprob.views.TensionListView',
     'winprob.views.TieDetailView',
     'winprob.views.AwayGoalsRuleListView',
     'winprob.views.AfterExtraTimeListView',

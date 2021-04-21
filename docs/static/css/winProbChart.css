@@ -1,9 +1,15 @@
-.tick line {
-  stroke: #cccccc;
+@media (max-width: 991px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
 }
 
+
+
 .teamLabel text {
-  /* font-size: 35px; */
   fill-opacity: 0.25;
 }
 
@@ -24,4 +30,39 @@
   height: 12px;
   background-color: #ff3322;
   display: inline-block;
+}
+
+div.overflow {
+  overflow-x: scroll;
+}
+
+table.custom {
+  min-width: 800px;
+  font-size: 0.9rem;
+}
+
+table.custom tr {
+  height: 20px;
+}
+
+table.custom .event {
+  width: 500px;
+}
+
+table.custom .leg {
+  width: 50px;
+}
+
+table.custom .minute {
+  width: 70px;
+}
+
+table.custom .t1,
+table.custom .t2  {
+  width: 50px;
+}
+
+table.custom .change,
+table.custom .leader {
+  width: 140px;
 }

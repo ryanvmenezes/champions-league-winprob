@@ -2,16 +2,16 @@ import os
 import json
 from .models import *
 from django.conf import settings
-from django.db.models import Q, Count
+from django.db.models import Q, Count, Func, F
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, RedirectView
-from bakery.views import BuildableListView, BuildableDetailView, BuildableRedirectView
+from bakery.views import BuildableTemplateView, BuildableListView, BuildableDetailView, BuildableRedirectView
 
 class ToTeamsRedirectView(BuildableRedirectView):
     pattern_name = 'teamlist'
     build_path = 'index.html'
-    # permanent = True
+    permanent = False
 
 class CountryListView(BuildableListView):
     '''
@@ -24,18 +24,49 @@ class CountryListView(BuildableListView):
         .annotate(num_teams = Count('team'))\
         .order_by('-num_teams', 'name')
 
-class TieListView(BuildableListView):
+class ToComebackRedirectView(BuildableRedirectView):
+    pattern_name = 'comebacklist'
+    build_path = 'ties/index.html'
+    permanent = False
+
+class ComebackListView(BuildableListView):
     '''
-    A page with a list of the 100 best ties (rated by comeback)
+    A page with a list of the top 100 ties sorted by biggest comeback
     '''
     # model = Tie
-    build_path = 'ties/index.html'
-    template_name = 'ties_list.html'
+    build_path = 'ties/comeback/index.html'
+    template_name = 'comeback_list.html'
     context_object_name = 'ties'
 
     def get_queryset(self):
-        ties = Tie.objects.all()
-        return sorted(ties, key=lambda x: (x.comeback is None, x.comeback))[:100]
+        ties = Tie.objects.filter(~Q(comeback=None))
+        return sorted(ties, key=lambda x: x.comeback)[:100]
+
+class ExcitementListView(BuildableListView):
+    '''
+    A page with a list of the top 100 ties sorted by excitement
+    '''
+    # model = Tie
+    build_path = 'ties/excitement/index.html'
+    template_name = 'excitement_list.html'
+    context_object_name = 'ties'
+
+    def get_queryset(self):
+        ties = Tie.objects.filter(~Q(excitement=None))
+        return sorted(ties, key=lambda x: x.excitement, reverse = True)[:100]
+
+class TensionListView(BuildableListView):
+    '''
+    A page with a list of the top 100 ties sorted by tension
+    '''
+    # model = Tie
+    build_path = 'ties/tension/index.html'
+    template_name = 'tension_list.html'
+    context_object_name = 'ties'
+
+    def get_queryset(self):
+        ties = Tie.objects.filter(~Q(tension=None))
+        return sorted(ties, key=lambda x: x.tension)[:100]
 
 class TieDetailView(BuildableDetailView):
     '''
@@ -55,7 +86,7 @@ class TieDetailView(BuildableDetailView):
             .filter(~Q(eventtype=None))\
             .values(
                 'minuteclean', 'minuterown',
-                'eventteam', 'player', 'playerid', 'eventtype',
+                'eventteam', 'player', 'playerid', 'eventtype', 'actualminute',
                 'is_goal', 'is_away_goal', 'is_red_card',
                 'goalst1', 'goalst2', 'awaygoalst1', 'awaygoalst2',
                 'predictedprobt1', 'chgpredictedprobt1'
@@ -66,18 +97,18 @@ class TieDetailView(BuildableDetailView):
         context['aet'] = context['tie'].after_extra_time
         def filter_by_minute(minute):
             return context['tie'].get_predictions()\
-                .filter(minuteclean=minute)\
+                .filter(Q(minuteclean=minute))\
                 .values(
                     'minuteclean', 'minuterown',
-                    'eventteam', 'player', 'playerid', 'eventtype',
+                    'eventteam', 'player', 'playerid', 'eventtype', 'actualminute',
                     'is_goal', 'is_away_goal', 'is_red_card',
                     'goalst1', 'goalst2', 'awaygoalst1', 'awaygoalst2',
                     'predictedprobt1', 'chgpredictedprobt1',
                 )\
-                .order_by('minuteclean', 'minuterown')
-        minute_0 = [dict(e, minute_type='b_match_state') for e in filter_by_minute(0)]
-        minute_90 = [dict(e, minute_type='b_match_state') for e in filter_by_minute(90)]
-        minute_180 = [dict(e, minute_type='b_match_state') for e in filter_by_minute(180)]
+                .order_by('minuteclean', '-minuterown')
+        minute_0 = [dict(e, minute_type='b_match_state') for e in filter_by_minute(0)[:1]]
+        minute_90 = [dict(e, minute_type='b_match_state') for e in filter_by_minute(90)[:1]]
+        minute_180 = [dict(e, minute_type='b_match_state') for e in filter_by_minute(180)[:1]]
         events.extend(minute_0)
         events.extend(minute_90)
         events.extend(minute_180)
@@ -116,7 +147,7 @@ class TeamDetailView(BuildableDetailView):
         context = super().get_context_data(**kwargs)
         team = context['team']
         context['ties'] = Tie.objects.filter(Q(team1 = team) | Q(team2 = team))\
-            .order_by('-season', 'stage')
+            .order_by('-season', '-competition_code', '-stagecode')
         return context
 
 class AwayGoalsRuleListView(BuildableListView):
@@ -127,7 +158,7 @@ class AwayGoalsRuleListView(BuildableListView):
     template_name = 'agr_list.html'
     context_object_name = 'ties'
     queryset = Tie.objects.filter(away_goals_rule=True)\
-        .order_by('-season', 'stage')
+        .order_by('-season', '-competition_code', '-stagecode')
 
 class AfterExtraTimeListView(BuildableListView):
     '''
@@ -137,7 +168,7 @@ class AfterExtraTimeListView(BuildableListView):
     template_name = 'aet_list.html'
     context_object_name = 'ties'
     queryset = Tie.objects.filter(after_extra_time=True)\
-        .order_by('-season', 'stage')
+        .order_by('-season', '-competition_code', '-stagecode')
 
 class PenaltyKicksListView(BuildableListView):
     '''
@@ -147,7 +178,7 @@ class PenaltyKicksListView(BuildableListView):
     template_name = 'pk_list.html'
     context_object_name = 'ties'
     queryset = Tie.objects.filter(penalty_kicks=True)\
-        .order_by('-season', 'stage')
+        .order_by('-season', '-competition_code', '-stagecode')
 
 class SeasonListView(BuildableListView):
     build_path = 'seasons/index.html'
@@ -158,6 +189,16 @@ class SeasonListView(BuildableListView):
         .values('season')\
         .annotate(total = Count('season'))\
         .order_by('-season')
+
+class GoalsListView(BuildableTemplateView):
+    build_path = 'goals/index.html'
+    template_name = 'goals_list.html'
+    context_object_name = 'goals'
+
+    queryset = Prediction.objects.filter(~Q(eventtype=None))\
+        .annotate(absChg = Func(F('chgpredictedprobt1'), function='ABS'))\
+        .order_by('-absChg')\
+        .values()
 
 # class CountryTeamsDetailView(BuildableDetailView):
 #     '''

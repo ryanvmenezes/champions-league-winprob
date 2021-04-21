@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-{% load pct_formatters %}
+{% load formatters %}
 
 {% block title %}{{ tie.get_tie_name }}{% endblock %}
 
@@ -17,12 +17,14 @@
 {% block tiesactive %}active{% endblock %}
 
 {% block content %}
+
 <h4>Win probability chart</h4>
 <div id='chartholder' style='margin-bottom:20px;'></div>
 
 <h4>Events</h4>
-<div class='table-responsive-lg'>
-  <table class='table table-sm table-bordered'>
+<p class='d-lg-none' style='font-size:0.9rem;'>Scroll right for more event details</p>
+<div class='table-responsive overflow'>
+  <table class='table table-sm table-bordered custom'>
     <thead>
       <tr>
         <th colspan=3></th>
@@ -86,12 +88,7 @@
           2
           {% endif %}
         </td>
-        <td class='minute'>
-          {% if event.minuteclean <= 90 %}
-          {{ event.minuteclean }}
-          {% else %}
-          {{ event.minuteclean|add:'-90' }}
-          {% endif %}</td>
+        <td class='minute'>{{ event.actualminute|format_minutes }}</td>
         <td class='t1'>
           {{ event.goalst1 }}{% if event.goalst1 == event.goalst2 and event.awaygoalst1 > event.awaygoalst2 %}*{% endif %}
         </td>
@@ -110,6 +107,13 @@
     </tbody>
   </table>
 </div>
+
+<h4>Metrics</h4>
+
+<p><a href="{% url 'comebacklist' %}">Comeback</a>: {% widthratio tie.comeback 1 100|floatformat %}%</p>
+<p><a href="{% url 'excitementlist' %}">Excitement</a>: {{ tie.excitement|floatformat }}</p>
+<p><a href="{% url 'tensionlist' %}">Tension</a>: {{ tie.tension|floatformat }}</p>
+
 
 {% endblock %}
 

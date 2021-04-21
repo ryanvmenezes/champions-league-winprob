@@ -23,7 +23,6 @@ class Country(BuildableModel):
     def get_slug(self):
         return self.slug
 
-
 class Team(BuildableModel):
     detail_views = (
         'winprob.views.TeamListView',
@@ -179,6 +178,7 @@ class Tie(BuildableModel):
     #         Q(stage = round_order[match_index + 1]) &
     #         (Q(team1 = winning_team) | Q(team2 = winning_team))
     #     )
+
 class Prediction(BuildableModel):
     season = models.IntegerField()
     stagecode = models.CharField(max_length=15)
@@ -205,7 +205,7 @@ class Prediction(BuildableModel):
     player = models.CharField(max_length=50, null=True)
     playerid = models.CharField(max_length=20, null=True)
     eventtype = models.CharField(max_length=20, null=True)
-    # ag = models.BooleanField(null=True)
+    actualminute = models.CharField(max_length=10, null=True)
     predictedprobt1 = models.FloatField(null=True)
     likelihood = models.FloatField(null=True)
     error = models.FloatField(null=True)
@@ -216,3 +216,10 @@ class Prediction(BuildableModel):
 
     def get_predictedprobt2(self):
         return 1 - self.predictedprobt1
+
+    def get_tie(self):
+        return Tie.objects.filter(
+            season=self.season,
+            stagecode=self.stagecode,
+            tieid=self.tieid
+        )

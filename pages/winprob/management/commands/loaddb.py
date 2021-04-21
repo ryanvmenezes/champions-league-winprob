@@ -88,6 +88,7 @@ class Command(BaseCommand):
                 playerid='playerid',
                 eventtype='eventtype',
                 eventteam='eventteam',
+                actualminute='actualminute',
                 predictedprobt1='predictedprobt1',
                 likelihood='likelihood',
                 error='error',

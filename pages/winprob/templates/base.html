@@ -30,16 +30,22 @@
             <a class="nav-link" href="{% url 'teamlist' %}">Teams</a>
           </li>
           <li class="nav-item {% block tiesactive %}{% endblock %}">
-            <a class="nav-link" href="{% url 'tieslist' %}">Ties</a>
+            <a class="nav-link" href="{% url 'tieshome' %}">Ties</a>
           </li>
+          <li class="nav-item {% block goalsactive %}{% endblock %}">
+            <a class="nav-link" href="">Goals</a>
+          </li>
+          {% comment %}
           <li class="nav-item {% block seasonsactive %}{% endblock %}">
             <a class="nav-link" href="{% url 'seasonlist' %}">Seasons</a>
           </li>
+          {% endcomment %}
         </ul>
       </div>
     </nav>
 
     <div class='content'>
+      {% block overridecontainer %}
       <div class='container'>
         <h1>{% block headline %}{% endblock %}</h1>
 
@@ -54,6 +60,7 @@
         {% block content %}
         {% endblock %}
       </div>
+      {% endblock %}
     </div>
 
     <script src="{% static 'js/jquery-3.5.1.slim.min.js' %}"></script>

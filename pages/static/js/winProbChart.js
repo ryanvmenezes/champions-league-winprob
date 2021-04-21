@@ -47,38 +47,38 @@ app.drawWinProbChart = function() {
     .call(
       d3.axisRight(app.yScale)
         .tickValues([0, 0.5, 1])
-        .tickFormat(app.yTickFormatR)
+        .tickFormat('')
         .tickSizeInner(-(app.width - app.margin.left - app.margin.right))
     )
     .call(g => g.select(".domain").remove());
 
   app.svg.append('g').call(app.yAxisR);
 
-  app.yTickFormatL = function(i) {
-    if (i == 1) {
-      return app.team1code;
-    }
-    if (i == 0) {
-      return app.team2code;
-    }
-  }
-
-  app.yAxisL = g => g
-    .attr("transform", `translate(${app.margin.left},0)`)
-    .call(
-      d3.axisLeft(app.yScale)
-        .tickValues([0, 1])
-        .tickFormat(app.yTickFormatL)
-        // .tickSizeInner(-(app.width - app.margin.left - app.margin.right))
-        // .tickSizeOuter(20)
-    )
-    .call(g => g.select(".domain").remove())
-    .call(g => g.selectAll('text').attr('x', app.isMobile ? 30 : 35))
-    .call(g => g.select('.tick:first-of-type text').attr('dy', '1.1em'))
-    .call(g => g.select('.tick:last-of-type text').attr('dy', '-0.5em'))
-    // .call(g => g.select('text :last-of-type').attr('dy', '-1.5em'));
-
-  app.svg.append('g').call(app.yAxisL);
+  // app.yTickFormatL = function(i) {
+  //   if (i == 1) {
+  //     return app.team1code;
+  //   }
+  //   if (i == 0) {
+  //     return app.team2code;
+  //   }
+  // }
+  //
+  // app.yAxisL = g => g
+  //   .attr("transform", `translate(${app.margin.left},0)`)
+  //   .call(
+  //     d3.axisLeft(app.yScale)
+  //       .tickValues([0, 1])
+  //       .tickFormat(app.yTickFormatL)
+  //       // .tickSizeInner(-(app.width - app.margin.left - app.margin.right))
+  //       // .tickSizeOuter(20)
+  //   )
+  //   .call(g => g.select(".domain").remove())
+  //   .call(g => g.selectAll('text').attr('x', app.isMobile ? 30 : 35))
+  //   .call(g => g.select('.tick:first-of-type text').attr('dy', '1.1em'))
+  //   .call(g => g.select('.tick:last-of-type text').attr('dy', '-0.5em'))
+  //   // .call(g => g.select('text :last-of-type').attr('dy', '-1.5em'));
+  //
+  // app.svg.append('g').call(app.yAxisL);
 
   app.xAxis = g => g
     .attr("transform", `translate(0,0)`)
@@ -162,6 +162,26 @@ app.drawWinProbChart = function() {
     .text('at ' + (app.isMobile ? app.team2code : app.team2short))
     .style('font-size', (app.isMobile ? '20px' : '40px'))
 
+  app.svg.append('g')
+    .attr('class', 'teamLabel')
+  .append('text')
+    .attr('dominant-baseline', 'hanging')
+    .attr('text-anchor', 'left')
+    .attr('x', app.xScale(1))
+    .attr('y', app.yScale(0.99))
+    .text(app.team1code + ' 100%')
+    .style('font-size', (app.isMobile ? '12px' : '15px'))
+
+  app.svg.append('g')
+    .attr('class', 'teamLabel')
+  .append('text')
+    .attr('dominant-baseline', 'auto')
+    .attr('text-anchor', 'left')
+    .attr('x', app.xScale(1))
+    .attr('y', app.yScale(0.01))
+    .text(app.team2code + ' 100%')
+    .style('font-size', (app.isMobile ? '12px' : '15px'))
+
   app.lineDraw = d3.line()
     .x(function(d) { return app.xScale(d.minuteclean) })
     .y(function(d) { return app.yScale(d.predictedprobt1) })
@@ -215,7 +235,7 @@ app.drawWinProbChart = function() {
 // make chart div responsive to window width
 app.updateDimensionsChart = function() {
     // margins for d3 chart
-    app.margin = {top: 10, right: 16, bottom: 10, left: 0};
+    app.margin = {top: 10, right: 0, bottom: 10, left: 0};
 
     // width of graphic depends on width of chart div
     app.chartElW = document.getElementById("chartholder").clientWidth;
