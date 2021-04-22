@@ -235,7 +235,7 @@ app.drawWinProbChart = function() {
 // make chart div responsive to window width
 app.updateDimensionsChart = function() {
     // margins for d3 chart
-    app.margin = {top: 10, right: 0, bottom: 10, left: 0};
+    app.margin = {top: 10, right: 5, bottom: 10, left: 0};
 
     // width of graphic depends on width of chart div
     app.chartElW = document.getElementById("chartholder").clientWidth;
