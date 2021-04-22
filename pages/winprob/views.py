@@ -95,6 +95,7 @@ class TieDetailView(BuildableDetailView):
         events = [dict(e, minute_type='a_event') for e in events]
 
         context['aet'] = context['tie'].after_extra_time
+
         def filter_by_minute(minute):
             return context['tie'].get_predictions()\
                 .filter(Q(minuteclean=minute))\
@@ -193,12 +194,38 @@ class SeasonListView(BuildableListView):
 class GoalsListView(BuildableTemplateView):
     build_path = 'goals/index.html'
     template_name = 'goals_list.html'
-    context_object_name = 'goals'
 
-    queryset = Prediction.objects.filter(~Q(eventtype=None))\
-        .annotate(absChg = Func(F('chgpredictedprobt1'), function='ABS'))\
-        .order_by('-absChg')\
-        .values()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        goals = Prediction.objects.filter(is_goal=True)\
+            .annotate(abschg = Func(F('chgpredictedprobt1'), function='ABS'))\
+            .order_by('-abschg')[:100]
+        clean_goals = []
+        for g in goals:
+            tie = Tie.objects.get(
+                season=g.season,
+                stagecode=g.stagecode,
+                tieid=g.tieid
+            )
+            clean_goals.append(
+                dict(
+                    tie=tie,
+                    is_away_goal=g.is_away_goal,
+                    player=g.player,
+                    goalst1=g.goalst1,
+                    goalst2=g.goalst2,
+                    awaygoalst1=g.awaygoalst1,
+                    awaygoalst2=g.awaygoalst2,
+                    eventteam=g.eventteam,
+                    minuteclean=g.minuteclean,
+                    actualminute=g.actualminute,
+                    abschg=g.abschg,
+                    season=g.season,
+                    competition=tie.get_short_competition()
+                )
+            )
+        context['goals'] = clean_goals
+        return context
 
 # class CountryTeamsDetailView(BuildableDetailView):
 #     '''

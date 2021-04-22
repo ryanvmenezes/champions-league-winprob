@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load formatters %}
+
+{% block title %}Most impactful goals{% endblock %}
+{% block headline %}Most impactful goals{% endblock %}
+{% block nosubhead %}{% endblock %}
+{% block desc %}The 100 goals that had the biggest impact on the tie.{% endblock %}
+{% block goalsactive %}active{% endblock %}
+
+{% block content %}
+<div class='row legend'>
+  <div class='col-12 header'>
+    <p>Legend</p>
+  </div>
+  <div class='col-12 key'>
+    <div class='row'>
+      <div class='col-auto g'><p class='text-left'>Goal</p></div>
+      <div class='col-auto g ag'><p class='text-left'>Away goal</p></div>
+    </div>
+  </div>
+</div>
+
+{% for goal in goals %}
+<div class='row goal g {% if goal.is_away_goal %}ag{% endif %}'>
+  <div class='col-lg-3 goalscorer'>
+    <div class='row'>
+      <div class='col-12'>
+        <p class='text-center text-lg-left'>{{ goal.player }}</p>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-12'>
+        {% if goal.eventteam == 1 %}
+        <p class='text-center text-lg-left'><img class='flagicon' src="/static/img/{{ goal.tie.team1.country.slug }}.png" /><span class='d-lg-none'>{{ goal.tie.team1.code_name }}</span><span class='d-none d-lg-inline'>{{ goal.tie.team1.short_name }}</span></p>
+        {% else %}
+        <p class='text-center text-lg-left'><img class='flagicon' src="/static/img/{{ goal.tie.team2.country.slug }}.png" /><span class='d-lg-none'>{{ goal.tie.team2.code_name }}</span><span class='d-none d-lg-inline'>{{ goal.tie.team2.short_name }}</span></p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class='col-lg-1 d-flex align-items-center justify-content-center chgprob'>
+    <p class='text-center text-lg-left'>{{ goal.abschg|format_abschgprob }}</p>
+  </div>
+
+  <div class='col-lg-2 d-flex align-items-center justify-content-center'>
+    <div class='row'>
+      <div class='col-12'>
+        <p class='text-center text-lg-left'>{{ goal.tie.team1.code_name }} <a href='{{ goal.tie.get_absolute_url }}'>{{ goal.goalst1 }}-{{ goal.goalst2 }}</a> {{ goal.tie.team2.code_name}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class='col-lg-2 d-flex align-items-center justify-content-center'>
+    <div class='row'>
+      <div class='col-12'>
+        <p class='text-center text-lg-left'>{% if goal.minuteclean <= 90 %}Leg 1, {% else %}Leg 2, {% endif %}{{ goal.actualminute|format_minutes }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class='col-lg-2 d-flex align-items-center justify-content-center'>
+    <div class='row'>
+      <div class='col-12'>
+        <p class='text-center text-lg-left'>{{ goal.tie.season }} {{ goal.tie.get_short_competition }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class='col-lg-2 d-flex align-items-center justify-content-center'>
+    <div class='row'>
+      <div class='col-12'>
+        <p class='text-center text-lg-left'>{{ goal.tie.get_short_stage }}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endfor %}
+{% endblock %}

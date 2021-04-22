@@ -21,6 +21,10 @@ def format_chgprob(value):
         return 0.0
 
 @register.filter
+def format_abschgprob(value):
+    return f'+{round(value * 100, 1)}%'
+
+@register.filter
 def format_minutes(value):
     # if '90' in value:
     #     return value.replace('90', "90’")

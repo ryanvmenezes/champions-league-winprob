@@ -105,3 +105,29 @@
       order: 30;
     }
   }
+
+/* goals list */
+
+.goal {
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 2px white solid;
+  padding: 5px 0;
+}
+
+.g {
+  background-color: #2596be20;
+}
+
+.ag {
+  border-color: #fcc5c0 !important;
+}
+
+.goal p {
+  margin-bottom: 0
+}
+
+  .goal .chgprob p {
+    font-size: 18px;
+    font-weight: bold;
+  }
