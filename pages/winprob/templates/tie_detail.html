@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load formatters %}
+{% load humanize %}
 
 {% block title %}{{ tie.get_tie_name }}{% endblock %}
 
@@ -18,6 +19,10 @@
 
 {% block content %}
 
+{% if tie.has_invalid_match or not tie.has_events or not tie.has_odds %}
+<p>There is no win probability chart for this match. This is likely because the data for this tie are incomplete or one or more of the legs resulted in a forfeit.</p>
+
+{% else %}
 <h4>Win probability chart</h4>
 <div id='chartholder' style='margin-bottom:20px;'></div>
 
@@ -110,10 +115,11 @@
 
 <h4>Metrics</h4>
 
-<p><a href="{% url 'comebacklist' %}">Comeback</a>: {% widthratio tie.comeback 1 100|floatformat %}%</p>
-<p><a href="{% url 'excitementlist' %}">Excitement</a>: {{ tie.excitement|floatformat }}</p>
-<p><a href="{% url 'tensionlist' %}">Tension</a>: {{ tie.tension|floatformat }}</p>
+<p><a href="{% url 'comebacklist' %}">Comeback</a>: {{ tie.comeback|format_percent_one_decimal }}% ({{ tie.get_comeback_rank|intcomma }} out of {{ num_ties|intcomma }} ties)</p>
+<p><a href="{% url 'excitementlist' %}">Excitement</a>: {{ tie.excitement|floatformat }} ({{ tie.get_excitement_rank|intcomma }} out of {{ num_ties|intcomma }} ties)</p>
+<p><a href="{% url 'tensionlist' %}">Tension</a>: {{ tie.tension|floatformat }} ({{ tie.get_tension_rank|intcomma }} out of {{ num_ties|intcomma }} ties)</p>
 
+{% endif %}
 
 {% endblock %}
 

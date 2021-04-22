@@ -122,25 +122,30 @@ app.drawWinProbChart = function() {
         return ''
       }
     }
+
+    if (i == 45) {
+      return app.isMobile ? 'Leg 1' : 'Leg 1'
+    }
+    if (i == 135) {
+      return app.isMobile ? 'Leg 2' : 'Leg 2'
+    }
+    if (i == 195) {
+      return app.isMobile ? 'ET' : 'ET'
+    }
   }
 
   app.xAxisLabels = g => g
     .attr("transform", `translate(0,${app.margin.top})`)
     .call(
       d3.axisTop(app.xScale)
-        .tickValues([89, 91, 179, 181, 209])
+        .tickValues([45, 135, 195])
         .tickFormat(app.xTickFormatLabel)
         .tickSizeOuter(0)
         .tickSizeInner(0)
     )
-    .call(g => g.select('.tick:nth-of-type(1) text').style('text-anchor', 'end'))
-    .call(g => g.select('.tick:nth-of-type(2) text').style('text-anchor', 'start'))
-    .call(g => g.select('.tick:nth-of-type(3) text').style('text-anchor', 'end'))
-    .call(g => g.select('.tick:nth-of-type(4) text').style('text-anchor', 'start'))
-    .call(g => g.select('.tick:nth-of-type(5) text').style('text-anchor', 'end'))
     .call(g => g.select('.domain').remove())
 
-  if (!app.isMobile) { app.svg.append('g').call(app.xAxisLabels); }
+  app.svg.append('g').call(app.xAxisLabels);
 
   app.svg.append('g')
     .attr('class', 'teamLabel')

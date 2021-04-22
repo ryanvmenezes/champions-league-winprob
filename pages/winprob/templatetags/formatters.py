@@ -25,6 +25,10 @@ def format_abschgprob(value):
     return f'+{round(value * 100, 1)}%'
 
 @register.filter
+def format_percent_one_decimal(value):
+    return round(value * 100, 1)
+
+@register.filter
 def format_minutes(value):
     # if '90' in value:
     #     return value.replace('90', "90’")

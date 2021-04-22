@@ -108,7 +108,7 @@
 
 /* goals list */
 
-.goal {
+.goalrow {
   margin: 10px 0px;
   border-radius: 5px;
   border: 2px white solid;
@@ -123,11 +123,11 @@
   border-color: #fcc5c0 !important;
 }
 
-.goal p {
+.goalrow p {
   margin-bottom: 0
 }
 
-  .goal .chgprob p {
+  .goalrow .chgprob p {
     font-size: 18px;
     font-weight: bold;
   }

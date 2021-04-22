@@ -161,6 +161,30 @@ class Tie(BuildableModel):
             return None
         return self.team1.fbrefid == self.winning_team.fbrefid
 
+    def get_comeback_rank(self):
+        return [
+            t['tieid'] for t in
+            Tie.objects.filter(~Q(comeback=None) & ~Q(excitement=None) & ~Q(tension=None))\
+                .order_by('comeback')\
+                .values('tieid')
+        ].index(self.tieid) + 1
+
+    def get_excitement_rank(self):
+        return [
+            t['tieid'] for t in
+            Tie.objects.filter(~Q(comeback=None) & ~Q(excitement=None) & ~Q(tension=None))\
+                .order_by('-excitement')\
+                .values('tieid')
+        ].index(self.tieid) + 1
+
+    def get_tension_rank(self):
+        return [
+            t['tieid'] for t in
+            Tie.objects.filter(~Q(comeback=None) & ~Q(excitement=None) & ~Q(tension=None))\
+                .order_by('tension')\
+                .values('tieid')
+        ].index(self.tieid) + 1
+
     # def get_next_knockout_match(self):
     #     round_orders = {
     #         'cl-0q': ['cl-0q-1fqr','cl-0q-2sqr','cl-0q-3tqr','cl-0q-4po'],

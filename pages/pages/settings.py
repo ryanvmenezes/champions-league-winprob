@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bakery',
-    'winprob.templatetags.formatters'
+    'winprob.templatetags.formatters',
+    'django.contrib.humanize'
 ]
 
 MIDDLEWARE = [
@@ -144,4 +145,5 @@ BAKERY_VIEWS = (
     'winprob.views.AfterExtraTimeListView',
     'winprob.views.PenaltyKicksListView',
     'winprob.views.SeasonListView',
+    'winprob.views.GoalsListView',
 )

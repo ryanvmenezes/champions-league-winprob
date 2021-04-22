@@ -120,8 +120,9 @@ class TieDetailView(BuildableDetailView):
         events = sorted(events, key=lambda i: (i['minuteclean'], i['minuterown'], i['minute_type']))
 
         context['events'] = events
-        context['events_json'] = json.dumps(list(events), ensure_ascii=False) #, indent=2)
+        context['events_json'] = json.dumps(list(events), ensure_ascii=False)
 
+        context['num_ties'] = len(Tie.objects.filter(~Q(comeback=None) & ~Q(excitement=None) & ~Q(tension=None)))
         return context
 
     def get_build_path(self, obj):
