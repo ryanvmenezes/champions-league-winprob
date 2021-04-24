@@ -8,9 +8,14 @@ predictors = read_rds('model/v3/predictors/all.rds')
 
 predictors
 
+summaries = read_rds('data/summary.rds')
+
+summaries %>% 
+  select(season, stagecode, tieid, aet)
+
 # use model to generate poisson mean for goals remaining in game
 
-goal.predictions = predictors %>% 
+goal.predictions = predictors %>%
   group_by(leg, minuteclean) %>% 
   nest() %>% 
   mutate(
@@ -30,20 +35,20 @@ goal.predictions = predictors %>%
   select(leg, minuteclean, predictions) %>% 
   unnest(c(predictions)) %>% 
   ungroup() %>% 
-  group_by(season, stagecode, tieid, minuteclean) %>%
+  # group_by(season, stagecode, tieid, minuteclean) %>%
   transmute(
-    # season, stagecode, tieid,
-    # minuteclean, 
+    season, stagecode, tieid,
+    minuteclean,
     minuterown,
     goals,
-    # pred.goals.left = fit,
-    pred.goals.left = case_when(
-      leg == 1 & minuteclean > 90 ~ 0,
-      # leg == 2 & minuteclean == 180 & lead(minuteclean) != 181 ~ 0,
-      leg == 2 & minuteclean == 180 & minuterown == max(minuterown) ~ 0,
-      leg == 2 & minuteclean == 210 & minuterown == max(minuterown) ~ 0,
-      TRUE ~ fit,
-    ),
+    pred.goals.left = fit,
+    # pred.goals.left = case_when(
+    #   leg == 1 & minuteclean > 90 ~ 0,
+    #   # leg == 2 & minuteclean == 180 & lead(minuteclean) != 181 ~ 0,
+    #   leg == 2 & minuteclean == 180 & minuterown == max(minuterown) ~ 0,
+    #   leg == 2 & minuteclean == 210 & minuterown == max(minuterown) ~ 0,
+    #   TRUE ~ fit,
+    # ),
     leg = if_else(leg == 1, 'g1', 'g2'),
     team = case_when(
       leg == 'g1' & home == 1 ~ 't1',
@@ -52,7 +57,35 @@ goal.predictions = predictors %>%
       leg == 'g2' & home == 0 ~ 't1',
     ),
   ) %>% 
+  left_join(
+    summaries %>% 
+      select(season, stagecode, tieid, aet)
+  ) %>% 
+  group_by(season, stagecode, tieid, aet) %>% 
+  nest() %>% 
+  mutate(
+    data = map2(
+      data,
+      aet,
+      ~.x %>% 
+        mutate(
+          pred.goals.left = case_when(
+            minuteclean == if_else(.y, 210, 180) & minuterown == max(minuterown) ~ 0,
+            TRUE ~ pred.goals.left
+          )
+        )
+    )
+  ) %>% 
   ungroup() %>% 
+  select(-aet) %>% 
+  unnest(c(data)) %>% 
+  # filter(season == 2017, tieid == '206d90db|e2d8892c') %>% 
+  # filter(aet) %>% 
+  # sample_n(1) %>% 
+  # pull(data) %>% 
+  # `[[`(1) %>% 
+  # filter(minuteclean >= 208)
+  # ungroup() %>% 
   pivot_wider(
     names_from = team,
     values_from = c(goals, pred.goals.left),
@@ -73,6 +106,7 @@ goal.predictions = predictors %>%
 goal.predictions
 
 # goal.predictions %>% filter(season == 2017, tieid == '206d90db|e2d8892c') %>% view() # barca-psg game with multiple extra time goals
+# goal.predictions %>% filter(tieid == '90e37d3a|b838366a') %>% view() # valur-rosenberg 
 
 generate.distributions = function(pred.df) {
   max.goals = 12
@@ -154,8 +188,7 @@ plan(multisession)
 
 start = lubridate::now()
 
-win.probabilities = goal.predictions %>%
-  filter(season == 2017, tieid == '206d90db|e2d8892c') %>% 
+win.probabilities = goal.predictions %>% # filter(season == 2017, tieid == '206d90db|e2d8892c') %>% 
   group_by(season, stagecode, tieid) %>%
   nest() %>%
   ungroup() %>%

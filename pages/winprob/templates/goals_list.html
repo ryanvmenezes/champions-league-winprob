@@ -32,9 +32,9 @@
     <div class='row'>
       <div class='col-12'>
         {% if goal.eventteam == 1 %}
-        <p class='text-center text-lg-left'><img class='flagicon' src="/static/img/{{ goal.tie.team1.country.slug }}.png" /><span class='d-lg-none'>{{ goal.tie.team1.code_name }}</span><span class='d-none d-lg-inline'>{{ goal.tie.team1.short_name }}</span></p>
+        <p class='text-center text-lg-left'><img class='flagicon' src="/static/img/{{ goal.tie.team1.country.slug }}.png" /><span class='d-lg-none'>{{ goal.tie.team1.short_name }}</span><span class='d-none d-lg-inline'>{{ goal.tie.team1.short_name }}</span></p>
         {% else %}
-        <p class='text-center text-lg-left'><img class='flagicon' src="/static/img/{{ goal.tie.team2.country.slug }}.png" /><span class='d-lg-none'>{{ goal.tie.team2.code_name }}</span><span class='d-none d-lg-inline'>{{ goal.tie.team2.short_name }}</span></p>
+        <p class='text-center text-lg-left'><img class='flagicon' src="/static/img/{{ goal.tie.team2.country.slug }}.png" /><span class='d-lg-none'>{{ goal.tie.team2.short_name }}</span><span class='d-none d-lg-inline'>{{ goal.tie.team2.short_name }}</span></p>
         {% endif %}
       </div>
     </div>

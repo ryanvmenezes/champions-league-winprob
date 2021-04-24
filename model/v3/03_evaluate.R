@@ -60,5 +60,5 @@ preds
 preds %>% write_rds('model/v3/predictions.rds', compress = 'gz')
 preds %>% write_csv('model/v3/predictions.csv', na = '')
 
-# preds %>% write_rds('model/predictions/v3.rds', compress = 'gz')
-# preds %>% write_csv('model/predictions/v3.csv')
+preds %>% write_rds('model/predictions/v3.rds', compress = 'gz')
+preds %>% write_csv('model/predictions/v3.csv')

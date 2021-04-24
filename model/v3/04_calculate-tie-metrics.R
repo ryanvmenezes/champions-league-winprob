@@ -1,13 +1,13 @@
 library(tidyverse)
 
-predictions = read_rds('model/predictions/v3.rds')
+predictions = read_rds('model/v3/predictions.rds')
 
 predictions
 
 summaries = read_rds('data/summary.rds')
 
 summaries
-# 
+
 # minutes = read_rds('model/v3/predictors/minutes.rds')
 # 
 # minutes

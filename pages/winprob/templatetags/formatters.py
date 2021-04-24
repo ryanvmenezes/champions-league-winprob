@@ -30,6 +30,6 @@ def format_percent_one_decimal(value):
 
 @register.filter
 def format_minutes(value):
-    # if '90' in value:
-    #     return value.replace('90', "90’")
+    if '90' in value:
+        return value.replace('90', "90’")
     return value + "’"
