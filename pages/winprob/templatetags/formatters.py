@@ -1,4 +1,7 @@
 from django import template
+from django.template.defaultfilters import stringfilter
+
+import markdown2 as md
 
 register = template.Library()
 
@@ -30,6 +33,14 @@ def format_percent_one_decimal(value):
 
 @register.filter
 def format_minutes(value):
-    if '90' in value:
-        return value.replace('90', "90’")
+    for m in ['45', '90', '105', '120']:
+        if m in value:
+            return value.replace(m, m + "’")
+    # if '90' in value or '45' in value or '120' in value or '105' in value:
+    #     return value.replace('90', "90’")
     return value + "’"
+
+@register.filter
+@stringfilter
+def markdown(value):
+    return md.markdown(value)

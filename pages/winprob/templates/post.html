@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load formatters %}
+
+{% block title %}{{ post.title }}{% endblock %}
+{% block headline %}{{ post.title }}{% endblock %}
+{% block nosubhead %}{% endblock %}
+{% block nodesc %}{% endblock %}
+
+{% if post.slug == 'about' %}
+  {% block aboutactive %}active{% endblock %}
+{% endif %}
+
+{% block content %}
+{{ post.body | markdown | safe }}
+{% endblock %}

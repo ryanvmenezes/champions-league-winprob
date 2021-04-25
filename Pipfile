@@ -11,6 +11,7 @@ django-bakery = "*"
 tqdm = "*"
 psycopg2 = "*"
 django-postgres-copy = "*"
+markdown2 = "*"
 
 [requires]
 python_version = "3.8"

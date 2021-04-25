@@ -25,6 +25,7 @@ urlpatterns = [
         include([
             path('admin/', admin.site.urls),
             path('', views.ToTeamsRedirectView.as_view(), name='homepage'),
+            path('posts/<slug:slug>/', views.PostView.as_view(), name='postdetail'),
             path('teams/', views.CountryListView.as_view(), name='teamlist'),
             path('teams/<slug:slug>/', views.TeamDetailView.as_view(), name='teamdetail'),
             path('ties/', views.ToComebackRedirectView.as_view(), name='tieshome'),

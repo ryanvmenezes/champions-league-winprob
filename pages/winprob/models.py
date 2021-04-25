@@ -6,6 +6,14 @@ from bakery.models import BuildableModel
 
 import unicodedata
 
+class Post(BuildableModel):
+    title = models.CharField(max_length=200)
+    slug = models.SlugField(unique=True)
+    body = models.TextField()
+
+    def __str__(self):
+        return self.title
+
 class Country(BuildableModel):
     detail_views = (
         'winprob.views.CountryListView',

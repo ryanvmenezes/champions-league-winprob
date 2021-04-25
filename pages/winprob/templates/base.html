@@ -24,7 +24,7 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item {% block aboutactive %}{% endblock %}">
-            <a class="nav-link" href="">About</a>
+            <a class="nav-link" href="{% url 'postdetail' 'about' %}">About</a>
           </li>
           <li class="nav-item {% block teamsactive %}{% endblock %}">
             <a class="nav-link" href="{% url 'teamlist' %}">Teams</a>

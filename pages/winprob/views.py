@@ -228,6 +228,18 @@ class GoalsListView(BuildableTemplateView):
         context['goals'] = clean_goals
         return context
 
+class PostView(BuildableDetailView):
+    model = Post
+    template_name = 'post.html'
+    context_object_name = 'post'
+
+    def get_build_path(self, obj):
+        dir_path = "posts/"
+        dir_path = os.path.join(settings.BUILD_DIR, dir_path, obj.get_slug())
+        os.path.exists(dir_path) or os.makedirs(dir_path)
+        return os.patn(dir_path, 'index.html')
+
+
 # class CountryTeamsDetailView(BuildableDetailView):
 #     '''
 #     A page for each country, with all of its teams

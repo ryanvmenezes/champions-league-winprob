@@ -71,7 +71,13 @@
   <div class='col-lg-2 d-flex align-items-center justify-content-center'>
     <div class='row'>
       <div class='col-12'>
-        <p class='text-center text-lg-left'>{{ goal.tie.get_short_stage }}</p>
+        <p class='text-center text-lg-left'>
+          {% if goal.tie.is_knockout %}
+          <u>{{ goal.tie.get_short_stage }}</u>
+          {% else %}
+          {{ goal.tie.get_short_stage }}
+          {% endif %}
+        </p>
       </div>
     </div>
   </div>
