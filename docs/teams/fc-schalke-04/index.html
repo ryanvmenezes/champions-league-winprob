@@ -1,46 +1,52 @@
 
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class='h-100'>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Ryan Menezes">
+    <meta name="description" content="">
 
     <link rel="stylesheet" href="/futbol-winprob-model/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/futbol-winprob-model/static/css/custom.css">
     
     
 
-    <title>FC Schalke 04 - Win probability</title>
+    <title>FC Schalke 04 - tiepredict</title>
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="/futbol-winprob-model/">Win probability</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <body class='d-flex flex-column h-100'>
+    <header>
+      
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/futbol-winprob-model/">tiepredict</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item ">
-            <a class="nav-link" href="/futbol-winprob-model/posts/about/">About</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/futbol-winprob-model/teams/">Teams</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/futbol-winprob-model/ties/">Ties</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/futbol-winprob-model/goals/">Goals</a>
-          </li>
-          
-        </ul>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="/futbol-winprob-model/posts/about/">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/futbol-winprob-model/teams/">Teams</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/futbol-winprob-model/ties/">Ties</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/futbol-winprob-model/goals/">Goals</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+      
+    </header>
 
-    <div class='content'>
+    <main role="main" class="flex-shrink-0">
       
       <div class='container'>
         <h1>FC Schalke 04</h1>
@@ -516,7 +522,18 @@
 
       </div>
       
-    </div>
+    </main>
+
+    
+    <footer class="footer mt-auto py-3" style="background-color:#f5f5f5;">
+      <div class="container text-muted">
+        <p><a href="#">Back to top</a></p>
+        <p><a href='/futbol-winprob-model/posts/about/'>About this project</a></p>
+        <p>Match data from <a href='https://fbref.com/en/'>FBref</a>. Odds data from <a href='https://www.oddsportal.com/'>Odds Portal</a>. Flag icons from <a href='https://www.flaticon.com/packs/rectangular-country-simple-flags'>Flaticon</a>.</p>
+        <p>Data analysis, web development and digital design by Ryan Menezes. Source code and data files on <a href='https://github.com/ryanvmenezes/futbol-winprob-model'>GitHub</a>, released under the MIT License.</p>
+      </div>
+    </footer>
+    
 
     <script src="/futbol-winprob-model/static/js/jquery-3.5.1.slim.min.js"></script>
     <script src="/futbol-winprob-model/static/js/bootstrap.min.js"></script>

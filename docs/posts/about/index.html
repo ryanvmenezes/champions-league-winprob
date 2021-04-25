@@ -1,46 +1,52 @@
 
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class='h-100'>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Ryan Menezes">
+    <meta name="description" content="">
 
     <link rel="stylesheet" href="/futbol-winprob-model/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/futbol-winprob-model/static/css/custom.css">
     
     
 
-    <title>About this site - Win probability</title>
+    <title>About this site - tiepredict</title>
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="/futbol-winprob-model/">Win probability</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <body class='d-flex flex-column h-100'>
+    <header>
+      
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/futbol-winprob-model/">tiepredict</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/futbol-winprob-model/posts/about/">About</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/futbol-winprob-model/teams/">Teams</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/futbol-winprob-model/ties/">Ties</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/futbol-winprob-model/goals/">Goals</a>
-          </li>
-          
-        </ul>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/futbol-winprob-model/posts/about/">About</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/futbol-winprob-model/teams/">Teams</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/futbol-winprob-model/ties/">Ties</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/futbol-winprob-model/goals/">Goals</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+      
+    </header>
 
-    <div class='content'>
+    <main role="main" class="flex-shrink-0">
       
       <div class='container'>
         <h1>About this site</h1>
@@ -50,18 +56,41 @@
         
 
         
-<h2>Subhead</h2>
+<p>Win probability models are somewhat ubiquitous in sports these days, with data used to describe the back-and-forth rhythms of a particular game. Less common are models that forecast an outcome over multiple games. This is one attempt at that.</p>
 
-<p>This is <em>bold</em></p>
+<p>Welcome to <strong>tiepredict</strong>. This website serves as the home of the results of a model created by me, <a href="https://ryanvmenezes.github.io/about/">Ryan Menezes</a>, an American data analyst and coder growing increasingly obsessed with the world of association football.</p>
 
-<p>This is <strong>something else</strong></p>
+<p>The model aims to forecast the outcome in a specific kind of contest: One where each team plays a home match, and the winner is determined by the total number of goals scored across the two matches. This is referred to as a <a href="https://en.wikipedia.org/wiki/Two-legged_tie">two-legged tie</a>, hence <strong>tie</strong>predict. (We might call such matchups a home-and-away series in America, where the term "tie" is mainly used to refer to a game where the score ends level, an outcome more typically referred to as a "draw" in the rest of the world. Luckily there's absolute harmony across the world when it comes to what to call the sport that is the focus of this project.)</p>
 
-<p>This is <a href="/futbol-winprob-model/goals/">an url to the goals list</a></p>
+<p>Here's a brief summary of how this project came together (more details will follow later in this post): Using the R programming language (my go-to tool), I started scraping match information from <a href="https://fbref.com/en/">FBref</a>, a website that is a burgeoning resource for soccer statistics (its more established companion sites on baseball, basketball and American football are widely cited in the U.S. and worldwide). I also scraped data on the betting odds of each match from <a href="https://www.oddsportal.com/soccer/europe/champions-league/">OddsPortal</a>. Then, I used R to organize and combine the data, before attempting some predictive modeling to forecast the winner of the tie. Once I felt comfortable with the predictions I was getting, I created this website to publish hundreds of <a href="futbol-winprob-model/ties/2017-cl-1k-3r16-sevilla-leicester-city/">win</a> <a href="futbol-winprob-model/ties/2016-cl-0q-1fqr-red-imps-santa-coloma/">probability</a> <a href="futbol-winprob-model/ties/2019-el-0q-1fqr-cs-fola-esch-fc-prishtina/">charts</a></p>
+
+<p>I focused specifically focuses on matches where the <a href="https://en.wikipedia.org/wiki/Away_goals_rule">"away goals rule"</a> applies. I am endlessly fascinated by this rule. There is no equivalent that I know of in American sports. </p>
+
+<p>Right now, this project covers matches in UEFA's Champions League and Europa League, in both the preliminary and knockout rounds. It will hopefully be expanded to include other competitions, such as the UEFA Women's Champions League and CONMEBOL's Copa Libertadores, as I gather more data.</p>
+
+<h2>Why did I do this?</h2>
+
+<p>As I mentioned earlier, I'm a relative newcomer to soccer, having picked up watching the sport around 2015 after an upbringing spent immersed in the most popular American sports. Now I set alarms for weekend mornings so I can wake up to watch England's Premier League, and whatever other matches for which I have time.</p>
+
+<p>Having started watching just a few years ago, I feel like I have a lot of catching up to do. </p>
+
+<h2>How was all of this done?</h2>
 
 
       </div>
       
-    </div>
+    </main>
+
+    
+    <footer class="footer mt-auto py-3" style="background-color:#f5f5f5;">
+      <div class="container text-muted">
+        <p><a href="#">Back to top</a></p>
+        <p><a href='/futbol-winprob-model/posts/about/'>About this project</a></p>
+        <p>Match data from <a href='https://fbref.com/en/'>FBref</a>. Odds data from <a href='https://www.oddsportal.com/'>Odds Portal</a>. Flag icons from <a href='https://www.flaticon.com/packs/rectangular-country-simple-flags'>Flaticon</a>.</p>
+        <p>Data analysis, web development and digital design by Ryan Menezes. Source code and data files on <a href='https://github.com/ryanvmenezes/futbol-winprob-model'>GitHub</a>, released under the MIT License.</p>
+      </div>
+    </footer>
+    
 
     <script src="/futbol-winprob-model/static/js/jquery-3.5.1.slim.min.js"></script>
     <script src="/futbol-winprob-model/static/js/bootstrap.min.js"></script>
