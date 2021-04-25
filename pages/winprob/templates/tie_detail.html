@@ -6,7 +6,7 @@
 {% block title %}{{ tie.get_tie_name }}{% endblock %}
 
 {% block headline %}
-<a href='{{ tie.team1.get_absolute_url}}'>{{ tie.team1.name }}</a> {{ tie.aggscore_t1 }}-{{ tie.aggscore_t2 }} <a href='{{ tie.team2.get_absolute_url}}'>{{ tie.team2.name }}</a>
+<img class='flagicon' src="/static/img/{{ tie.team1.country.slug }}.png" /><a href='{{ tie.team1.get_absolute_url}}'>{{ tie.team1.name }}</a> {{ tie.aggscore_t1 }}-{{ tie.aggscore_t2 }} <a href='{{ tie.team2.get_absolute_url}}'>{{ tie.team2.name }}</a><img class='flagicon' src="/static/img/{{ tie.team2.country.slug }}.png" />
 {% endblock %}
 
 {% block nosubhead %}{% endblock %}

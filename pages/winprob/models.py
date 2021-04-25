@@ -49,6 +49,9 @@ class Team(BuildableModel):
     fbrefid = models.CharField(max_length=10)
     shortnames = models.TextField(null=True)
 
+    class Meta:
+        ordering = ['name']
+
     def __str__(self):
         return self.name
 
