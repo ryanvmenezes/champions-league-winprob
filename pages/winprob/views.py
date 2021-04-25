@@ -228,7 +228,7 @@ class GoalsListView(BuildableTemplateView):
         context['goals'] = clean_goals
         return context
 
-class PostView(BuildableDetailView):
+class PostDetailView(BuildableDetailView):
     model = Post
     template_name = 'post.html'
     context_object_name = 'post'
@@ -237,7 +237,7 @@ class PostView(BuildableDetailView):
         dir_path = "posts/"
         dir_path = os.path.join(settings.BUILD_DIR, dir_path, obj.get_slug())
         os.path.exists(dir_path) or os.makedirs(dir_path)
-        return os.patn(dir_path, 'index.html')
+        return os.path.join(dir_path, 'index.html')
 
 
 # class CountryTeamsDetailView(BuildableDetailView):

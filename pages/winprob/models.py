@@ -14,6 +14,12 @@ class Post(BuildableModel):
     def __str__(self):
         return self.title
 
+    def get_slug(self):
+        return self.slug
+
+    def get_absolute_url(self):
+        return reverse('postdetail', kwargs={'slug': self.slug})
+
 class Country(BuildableModel):
     detail_views = (
         'winprob.views.CountryListView',

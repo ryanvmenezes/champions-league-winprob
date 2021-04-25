@@ -133,6 +133,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 BAKERY_VIEWS = (
+    'winprob.views.PostDetailView',
     'winprob.views.TeamDetailView',
     'winprob.views.CountryListView',
     'winprob.views.ToTeamsRedirectView',
