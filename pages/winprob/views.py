@@ -8,8 +8,8 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, RedirectView
 from bakery.views import BuildableTemplateView, BuildableListView, BuildableDetailView, BuildableRedirectView
 
-class ToTeamsRedirectView(BuildableRedirectView):
-    pattern_name = 'teamlist'
+class HomepageRedirectView(BuildableRedirectView):
+    pattern_name = 'comebacklist'
     build_path = 'index.html'
     permanent = False
 

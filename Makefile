@@ -66,4 +66,4 @@ recreatedb:
 
 build:
 	python pages/manage.py build
-	find docs -type f -not -path '*static*' -exec sed -i '' 's|/static/|/futbol-winprob-model/static/|' {} +
+	find docs -type f -not -path '*static*' -exec sed -i '' 's|/static/|/tiepredict/static/g|' {} +

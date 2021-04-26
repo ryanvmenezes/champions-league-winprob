@@ -136,7 +136,7 @@ BAKERY_VIEWS = (
     'winprob.views.PostDetailView',
     'winprob.views.TeamDetailView',
     'winprob.views.CountryListView',
-    'winprob.views.ToTeamsRedirectView',
+    'winprob.views.HomepageRedirectView',
     'winprob.views.ToComebackRedirectView',
     'winprob.views.ComebackListView',
     'winprob.views.ExcitementListView',
