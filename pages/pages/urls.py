@@ -20,11 +20,11 @@ from django.urls import include, path
 site_path = 'tiepredict/'
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('', views.HomepageRedirectView.as_view(), name='basehomepage'),
     path(
         site_path,
         include([
-            path('admin/', admin.site.urls),
             path('', views.HomepageRedirectView.as_view(), name='homepage'),
             path('posts/<slug:slug>/', views.PostDetailView.as_view(), name='postdetail'),
             path('teams/', views.CountryListView.as_view(), name='teamlist'),
