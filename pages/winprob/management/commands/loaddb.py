@@ -57,6 +57,7 @@ class Command(BaseCommand):
                     has_odds=(row['has_odds'] == 'TRUE'),
                     has_invalid_match=(row['has_invalid_match'] == 'TRUE'),
                     in_progress=(row['in_progress'] == 'TRUE'),
+                    in_progress_halfway=(row['in_progress_halfway'] == 'TRUE'),
                     excitement=float(row['excitement']) if row['excitement'] != '' else None,
                     comeback=float(row['comeback']) if row['comeback'] != '' else None,
                     tension=float(row['tension']) if row['tension'] != '' else None,

@@ -6,25 +6,36 @@
 {% block title %}{{ tie.get_tie_name }}{% endblock %}
 
 {% block headline %}
+{% if tie.in_progress %}
+<img class='flagicon' src="/static/img/{{ tie.team1.country.slug }}.png" /><a href='{{ tie.team1.get_absolute_url}}'>{{ tie.team1.name }}</a> v. <a href='{{ tie.team2.get_absolute_url}}'>{{ tie.team2.name }}</a><img class='flagicon' src="/static/img/{{ tie.team2.country.slug }}.png" />
+{% else %}
 <img class='flagicon' src="/static/img/{{ tie.team1.country.slug }}.png" /><a href='{{ tie.team1.get_absolute_url}}'>{{ tie.team1.name }}</a> {{ tie.aggscore_t1 }}-{{ tie.aggscore_t2 }} <a href='{{ tie.team2.get_absolute_url}}'>{{ tie.team2.name }}</a><img class='flagicon' src="/static/img/{{ tie.team2.country.slug }}.png" />
+{% endif %}
 {% endblock %}
 
 {% block nosubhead %}{% endblock %}
 
 {% block nodesc %}
 <p>{{ tie.season }} {{ tie.competition }} - {{ tie.stage }}</p>
+{% if tie.in_progress %}
+<p><strong>Tie in progress!</strong> Current prediction: {% with events|last as last %}{% if last.predictedprobt1 > 0.5 %}{{ tie.team1.short_name }} {% elif last.predictedprobt1 < 0.5 %}{{ tie.team2.short_name }} {% endif %}{{ last.predictedprobt1|format_predictedprob }}%{% endwith %}</p>
+{% endif %}
 {% endblock %}
 
 {% block tiesactive %}active{% endblock %}
 
 {% block content %}
 
-{% if tie.has_invalid_match or not tie.has_events or not tie.has_odds %}
+{% if tie.has_invalid_match or not tie.has_events %}
 <p>There is no win probability chart for this match. This is likely because the data for this tie are incomplete or one or more of the legs resulted in a forfeit.</p>
 
 {% else %}
 <h4>Win probability chart</h4>
 <div id='chartholder' style='margin-bottom:20px;'></div>
+
+{% if not tie.has_odds %}
+<p>Note: This tie did not have odds data associated with it. It is assumed the two teams were of equal strength.</p>
+{% endif %}
 
 <h4>Events</h4>
 <p class='d-lg-none' style='font-size:0.9rem;'>Scroll right for more event details</p>
@@ -113,11 +124,12 @@
   </table>
 </div>
 
+{% if not tie.in_progress %}
 <h4>Metrics</h4>
-
 <p><a href="{% url 'comebacklist' %}">Comeback</a>: {{ tie.comeback|format_percent_one_decimal }}% ({{ tie.get_comeback_rank|intcomma }} out of {{ num_ties|intcomma }} ties)</p>
 <p><a href="{% url 'excitementlist' %}">Excitement</a>: {{ tie.excitement|floatformat }} ({{ tie.get_excitement_rank|intcomma }} out of {{ num_ties|intcomma }} ties)</p>
 <p><a href="{% url 'tensionlist' %}">Tension</a>: {{ tie.tension|floatformat }} ({{ tie.get_tension_rank|intcomma }} out of {{ num_ties|intcomma }} ties)</p>
+{% endif %}
 
 {% endif %}
 

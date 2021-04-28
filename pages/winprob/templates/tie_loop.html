@@ -61,6 +61,8 @@
           <a href='{{ tie.get_absolute_url }}'>
           {% if tie.in_progress %}
             TBD
+          {% elif tie.has_invalid_match or not tie.has_events %}
+            N/A
           {% else %}
             {{ tie.aggscore_t1 }}{% if tie.away_goals_rule or tie.penalty_kicks %}{% if tie.t1win %}*{% endif %}{% endif %}-{{ tie.aggscore_t2 }}{% if tie.away_goals_rule or tie.penalty_kicks %}{% if not tie.t1win %}*{% endif %}{% endif %}
           {% endif %}
