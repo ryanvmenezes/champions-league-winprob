@@ -13,7 +13,7 @@ twoleggedties = summaries %>%
   drop_na(stagecode) %>%
   arrange(szn, stagecode) %>%
   # filter out anything without complete data over two legs, except this current season
-  filter((!is.na(url1) & !is.na(url2)) | (!is.na(url1) & szn == CURRENT_SZN)) %>%
+  filter((!is.na(url1) & !is.na(url2)) | (stage == 'knockout' & szn == CURRENT_SZN)) %>%
   # team 1 in the aggregate should always be the team that hosted leg 1
   mutate(
     hometeamid1 = case_when(
@@ -41,6 +41,9 @@ twoleggedties = summaries %>%
       score1,
       score2,
       function(.x, .y) {
+        if (is.na(.x) | is.na(.y)) {
+          return ('')
+        }
         str_c(
           as.numeric(str_split(.x, '–')[[1]][1]) + as.numeric(str_split(.y, '–')[[1]][2]),
           as.numeric(str_split(.x, '–')[[1]][2]) + as.numeric(str_split(.y, '–')[[1]][1]),

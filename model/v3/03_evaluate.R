@@ -53,9 +53,10 @@ preds = minutes %>%
   group_by(season, stagecode, tieid, t1win) %>% 
   mutate(chgpredictedprobt1 = replace_na(predictedprobt1 - lag(predictedprobt1), 0))
 
-# preds %>% filter(season == 2017, tieid == '206d90db|e2d8892c') %>% view()
-
 preds
+
+# preds %>% filter(season == 2017, tieid == '206d90db|e2d8892c') %>% view()
+# preds %>% filter(season == 2021, str_detect(stagecode, 'sf')) %>% view()
 
 preds %>% write_rds('model/v3/predictions.rds', compress = 'gz')
 preds %>% write_csv('model/v3/predictions.csv', na = '')

@@ -1,28 +1,33 @@
-stagecode,code_string,round
-cl-0q-0pre,cl,Preliminary Round
-cl-0q-1fqr,cl,First Qualifying Round
-cl-0q-2sqr,cl,Second Qualifying Round
-cl-0q-3tqr,cl,Third Qualifying Round
-cl-0q-4po,cl,Play-off Round
-cl-1k-0qual,cl,Qualifying Round
-cl-1k-1first,cl,First Round
-cl-1k-2second,cl,Second Round
-cl-1k-3r16,cl,Round of 16
-cl-1k-4qf,cl,Quarter-finals
-cl-1k-5sf,cl,Semi-finals
-cl-1k-6final,cl,Final
-el-0q-0pre,el,Preliminary Round
-el-0q-1fqr,el,First Qualifying Round
-el-0q-2sqr,el,Second Qualifying Round
-el-0q-3tqr,el,Third Qualifying Round
-el-0q-4po,el,Play-off Round
-el-1k-0qual,el,Qualifying Round
-el-1k-1first,el,First Round
-el-1k-2second,el,Second Round
-el-1k-3third,el,Third Round
-el-1k-4fourth,el,Fourth Round
-el-1k-5r32,el,Round of 32
-el-1k-6r16,el,Round of 16
-el-1k-7qf,el,Quarter-finals
-el-1k-8sf,el,Semi-finals
-el-1k-9final,el,Final
+stagecode,code_string,stage,round
+cl-0q-0pre,cl,qualifying,Preliminary Round
+cl-0q-1fqr,cl,qualifying,First Qualifying Round
+cl-0q-2sqr,cl,qualifying,Second Qualifying Round
+cl-0q-3tqr,cl,qualifying,Third Qualifying Round
+cl-0q-4po,cl,qualifying,Play-off Round
+cl-0q-0pre,cl,knockout,Preliminary Round
+cl-0q-1fqr,cl,knockout,First Qualifying Round
+cl-0q-2sqr,cl,knockout,Second Qualifying Round
+cl-1k-0qual,cl,knockout,Qualifying Round
+cl-1k-1first,cl,knockout,First Round
+cl-1k-2second,cl,knockout,Second Round
+cl-1k-3r16,cl,knockout,Round of 16
+cl-1k-4qf,cl,knockout,Quarter-finals
+cl-1k-5sf,cl,knockout,Semi-finals
+cl-1k-6final,cl,knockout,Final
+el-0q-0pre,el,qualifying,Preliminary Round
+el-0q-1fqr,el,qualifying,First Qualifying Round
+el-0q-2sqr,el,qualifying,Second Qualifying Round
+el-0q-3tqr,el,qualifying,Third Qualifying Round
+el-0q-4po,el,qualifying,Play-off Round
+el-0q-1fqr,el,knockout,First Qualifying Round
+el-0q-2sqr,el,knockout,Second Qualifying Round
+el-1k-0qual,el,knockout,Qualifying Round
+el-1k-1first,el,knockout,First Round
+el-1k-2second,el,knockout,Second Round
+el-1k-3third,el,knockout,Third Round
+el-1k-4fourth,el,knockout,Fourth Round
+el-1k-5r32,el,knockout,Round of 32
+el-1k-6r16,el,knockout,Round of 16
+el-1k-7qf,el,knockout,Quarter-finals
+el-1k-8sf,el,knockout,Semi-finals
+el-1k-9final,el,knockout,Final

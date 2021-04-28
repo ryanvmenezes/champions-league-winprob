@@ -8,13 +8,8 @@ summaries = read_rds('data/summary.rds')
 
 summaries
 
-# minutes = read_rds('model/v3/predictors/minutes.rds')
-# 
-# minutes
-# 
-# minutes
-
 tie.wp.summary = predictions %>% 
+  anti_join(summaries %>% filter(in_progress)) %>% 
   group_by(season, stagecode, tieid, t1win) %>% 
   nest() %>% 
   mutate(

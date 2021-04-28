@@ -16,7 +16,7 @@ eventscleaned = events %>%
   rename(season = szn) %>%
   right_join(
     summaries %>% 
-      select(season, stagecode, tieid, aet, has_events, in_progress) %>% 
+      select(season, stagecode, tieid, aet, has_events, in_progress, in_progress_halfway) %>% 
       filter(has_events)
   ) %>% 
   mutate(
@@ -34,15 +34,16 @@ eventscleaned = events %>%
 eventscleaned
 
 eventsnested = eventscleaned %>% 
-  group_by(season, stagecode, tieid, aet, in_progress, has_events) %>% 
+  group_by(season, stagecode, tieid, aet, in_progress, in_progress_halfway, has_events) %>% 
   nest()
 
 eventsnested
 
-expandminutes = function(data, aet = FALSE, in_progress = FALSE) {
+expandminutes = function(data, aet = FALSE, in_progress = FALSE, in_progress_halfway = FALSE) {
   minutemax = case_when(
     aet ~ 210,
-    in_progress ~ 90,
+    in_progress_halfway ~ 90,
+    in_progress ~ 0,
     TRUE ~ 180
   )
   
@@ -75,7 +76,7 @@ expandminutes = function(data, aet = FALSE, in_progress = FALSE) {
 }
 
 eventsnested = eventsnested %>% 
-  mutate(minutematrix = pmap(list(data, aet, in_progress), expandminutes))
+  mutate(minutematrix = pmap(list(data, aet, in_progress, in_progress_halfway), expandminutes))
 
 eventsnested
 

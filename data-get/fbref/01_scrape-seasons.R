@@ -6,8 +6,8 @@ source(here('data-get', 'fbref', 'utils.R'))
 
 leagues = tribble(
   ~code_string, ~url,
-  'cl','https://fbref.com/en/comps/8/history/UEFA-Champions-League-Seasons',
-  'el','https://fbref.com/en/comps/19/history/UEFA-Europa-League-Seasons'
+  'cl', 'https://fbref.com/en/comps/8/history/UEFA-Champions-League-Seasons',
+  'el', 'https://fbref.com/en/comps/19/history/UEFA-Europa-League-Seasons'
 )
 
 historyhtml = leagues %>% 

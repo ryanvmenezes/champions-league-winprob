@@ -10,7 +10,7 @@ current_szn = 2021
 
 runscrape = function(dr, lg, yr) {
   page = 1
-  suffix = str_c('-', yr - 1, '-', yr, '/')
+  suffix = glue('-{yr - 1}-{yr}/') # str_c('-', yr - 1, '-', yr, '/')
   if (yr == current_szn) { suffix = '/' }
   if (lg == 'europa-league' & yr < 2010) { lgurl = 'uefa-cup'} else { lgurl = lg }
   
@@ -22,13 +22,23 @@ runscrape = function(dr, lg, yr) {
     `[`(str_detect(., glue('{lg}-{yr-1}-{yr}'))) %>% 
     file.remove()
   
+  # get current matches page 
+  current.matches.scraped = FALSE
+  current.matches.in.progress = FALSE
+  
   while (TRUE) {
-    url = str_c('https://www.oddsportal.com/soccer/europe/', lgurl, suffix, 'results/#/page/', page, '/')
+    url = glue('https://www.oddsportal.com/soccer/europe/{lgurl}{suffix}results/#/page/{page}/')
+    # str_c('https://www.oddsportal.com/soccer/europe/', lgurl, suffix, 'results/#/page/', page, '/')
+    if (yr == current_szn & !current.matches.scraped) {
+      url = glue('https://www.oddsportal.com/soccer/europe/{lgurl}/')
+      current.matches.in.progress = TRUE
+      page = 0
+    }
     print(str_c('going to ', url))
     dr$navigate(url)
     print(str_c('arrived at ', dr$getCurrentUrl()[[1]]))
     h = dr$getPageSource()[[1]] %>% read_html()
-    tbldiv = h %>% html_node('div#tournamentTable')
+    tbldiv = h %>% html_node('#tournamentTable')
     tbldivstyle = tbldiv %>% html_attr('style')
     while(tbldivstyle == 'display: none;') {
       print('table not visible, refreshing page')
@@ -39,13 +49,23 @@ runscrape = function(dr, lg, yr) {
       tbldivstyle = tbldiv %>% html_attr('style')
     }
     print('table is visible')
-    tbl = tbldiv %>% html_node('table#tournamentTable')
+    if (current.matches.in.progress) {
+      tbl = tbldiv
+    } else {
+      tbl = tbldiv %>% html_node('table#tournamentTable') 
+    }
     empty = tbl %>% html_node('#emptyMsg')
     if(length(empty) != 0) {
       print('table has emptyMsg, breaking')
       break
     }
-    fpath = str_c(lg, yr-1, yr, 'page', page, sep = '-') %>% str_c('.html')
+    fpath = glue('{lg}-{yr-1}-{yr}-page-{page}.html')
+    # str_c(lg, yr-1, yr, 'page', page, sep = '-') %>% str_c('.html')
+    if (current.matches.in.progress) {
+      fpath = glue('{lg}-{current_szn-1}-{current_szn}-page-0.html')
+      current.matches.scraped = TRUE
+      current.matches.in.progress = FALSE
+    }
     outpath = here('data-get', 'oddsportal', 'raw', fpath)
     write_html(h, outpath)
     print(str_c('wrote out ', fpath))
@@ -57,7 +77,7 @@ runscrape = function(dr, lg, yr) {
 
 lgs = c('champions-league', 'europa-league')
 # yrs = 2020:2004
-yrs = 2020:2021
+yrs = 2021
 lgyr = expand.grid(lg = lgs, yr = yrs, stringsAsFactors = FALSE)
 
 dr = remoteDriver(port = 4445L)

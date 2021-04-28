@@ -65,6 +65,7 @@ oddsbytie = read_csv(here('data-get', 'assemble', 'odds', 'odds.csv'))
 oddsbytie
 
 hasodds = oddsbytie %>%
+  drop_na(probh1, probd1, proba1) %>% 
   select(season, stagecode, tieid) %>%
   mutate(has_odds = TRUE)
 
@@ -75,7 +76,11 @@ missing = read_csv(here('data-get', 'assemble', 'summary', 'missing-ties.csv'))
 missing
 
 noevents = missing %>%
-  mutate(has_events = FALSE)
+  mutate(
+    aggscore1 = as.character(aggscore1),
+    aggscore2 = as.character(aggscore2),
+    has_events = FALSE
+  )
 
 noevents
 
@@ -89,6 +94,11 @@ hasinvalidmatch = invalid %>%
 
 hasinvalidmatch
 
+# inprogress = ties %>% 
+#   filter(is.na(winner)) %>% 
+#   select(szn, stagecode, tieid) %>% 
+#   mutate(in_progress = TRUE)
+
 # create final table
 assemblingsummary = results %>%
   bind_rows(noevents) %>%
@@ -98,7 +108,8 @@ assemblingsummary = results %>%
     has_events = replace_na(has_events, TRUE),
     has_odds = replace_na(has_odds, FALSE),
     has_invalid_match = replace_na(has_invalid_match, FALSE),
-    in_progress = is.na(winner)
+    in_progress = is.na(winner),
+    in_progress_halfway = is.na(winner) & !is.na(score1) & is.na(score2)
   ) %>%
   arrange(season, stagecode, tieid)
 

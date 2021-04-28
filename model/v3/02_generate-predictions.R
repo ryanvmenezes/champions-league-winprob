@@ -35,20 +35,12 @@ goal.predictions = predictors %>%
   select(leg, minuteclean, predictions) %>% 
   unnest(c(predictions)) %>% 
   ungroup() %>% 
-  # group_by(season, stagecode, tieid, minuteclean) %>%
   transmute(
     season, stagecode, tieid,
     minuteclean,
     minuterown,
     goals,
     pred.goals.left = fit,
-    # pred.goals.left = case_when(
-    #   leg == 1 & minuteclean > 90 ~ 0,
-    #   # leg == 2 & minuteclean == 180 & lead(minuteclean) != 181 ~ 0,
-    #   leg == 2 & minuteclean == 180 & minuterown == max(minuterown) ~ 0,
-    #   leg == 2 & minuteclean == 210 & minuterown == max(minuterown) ~ 0,
-    #   TRUE ~ fit,
-    # ),
     leg = if_else(leg == 1, 'g1', 'g2'),
     team = case_when(
       leg == 'g1' & home == 1 ~ 't1',
@@ -79,13 +71,6 @@ goal.predictions = predictors %>%
   ungroup() %>% 
   select(-aet) %>% 
   unnest(c(data)) %>% 
-  # filter(season == 2017, tieid == '206d90db|e2d8892c') %>% 
-  # filter(aet) %>% 
-  # sample_n(1) %>% 
-  # pull(data) %>% 
-  # `[[`(1) %>% 
-  # filter(minuteclean >= 208)
-  # ungroup() %>% 
   pivot_wider(
     names_from = team,
     values_from = c(goals, pred.goals.left),
@@ -184,11 +169,12 @@ generate.distributions = function(pred.df) {
     identity()
 }
 
-plan(multisession)
+plan(multicore)
+options('future.fork.enable' = TRUE)
 
 start = lubridate::now()
 
-win.probabilities = goal.predictions %>% # filter(season == 2017, tieid == '206d90db|e2d8892c') %>% 
+win.probabilities = goal.predictions %>%
   group_by(season, stagecode, tieid) %>%
   nest() %>%
   ungroup() %>%
@@ -197,9 +183,9 @@ win.probabilities = goal.predictions %>% # filter(season == 2017, tieid == '206d
       list(season, stagecode, tieid, data),
       function(season, stagecode, tieid, data) {
         fname = glue('model/v3/distributions/{season}_{stagecode}_{tieid}.rds')
-        # if (file.exists(fname)) {
-        #   return (read_rds(fname))
-        # }
+        if (file.exists(fname)) {
+          return (read_rds(fname))
+        }
         dist = generate.distributions(data)
         dist %>% write_rds(fname, compress = 'gz')
         return (dist)

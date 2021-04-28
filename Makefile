@@ -17,6 +17,12 @@ updateodds:
 	Rscript data-get/oddsportal/01_scrape-odds.R
 	Rscript data-get/oddsportal/02_parse-odds.R
 
+assemble:
+	Rscript data-get/assemble/odds/01_create-odds-table.R
+	Rscript data-get/assemble/summary/91_finding-missing-ties.R
+	Rscript data-get/assemble/summary/00_find-extra-aet-ties.R
+	Rscript data-get/assemble/summary/01_compile-tie-summaries.R
+
 runmodelv1:
 	Rscript model/v1/01_model-predict.R
 	Rscript model/v1/02_plot.R
