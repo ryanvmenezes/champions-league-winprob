@@ -53,7 +53,7 @@
     <main role="main" class="flex-shrink-0" style='margin-bottom: 15px;'>
       {% block overridecontainer %}
       <div class='container'>
-        {% comment %}{% include 'live_ties.html' %}{% endcomment %}
+        {% if live_ties %}{% include 'live_ties.html' %}{% endif %}
         <h1>{% block headline %}{% endblock %}</h1>
 
         {% block nosubhead %}

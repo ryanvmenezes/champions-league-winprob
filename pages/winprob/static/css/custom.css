@@ -2,6 +2,18 @@ main > .container {
  padding-top: 80px;
 }
 
+/* live results */
+
+.liveties {
+  background-color: #02693730;
+  border-radius: 5px;
+  margin: -5px 0 10px 0;
+}
+
+.liveties p {
+  margin: 0.5rem 0;
+}
+
 /* teams by country list */
 
 .flagicon {

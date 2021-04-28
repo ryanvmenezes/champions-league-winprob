@@ -18,7 +18,7 @@
 {% block nodesc %}
 <p>{{ tie.season }} {{ tie.competition }} - {{ tie.stage }}</p>
 {% if tie.in_progress %}
-<p><strong>Tie in progress!</strong> Current prediction: {% with events|last as last %}{% if last.predictedprobt1 > 0.5 %}{{ tie.team1.short_name }} {% elif last.predictedprobt1 < 0.5 %}{{ tie.team2.short_name }} {% endif %}{{ last.predictedprobt1|format_predictedprob }}%{% endwith %}</p>
+<p><strong>Tie {% if tie.in_progress_halfway %}in progress{% elif tie.in_progress %}starting soon{% endif %}!</strong> Current prediction: {% with events|last as last %}{% if last.predictedprobt1 > 0.5 %}{{ tie.team1.short_name }} {% elif last.predictedprobt1 < 0.5 %}{{ tie.team2.short_name }} {% endif %}{{ last.predictedprobt1|format_predictedprob }}%{% endwith %}</p>
 {% endif %}
 {% endblock %}
 
@@ -28,7 +28,6 @@
 
 {% if tie.has_invalid_match or not tie.has_events %}
 <p>There is no win probability chart for this match. This is likely because the data for this tie are incomplete or one or more of the legs resulted in a forfeit.</p>
-
 {% else %}
 <h4>Win probability chart</h4>
 <div id='chartholder' style='margin-bottom:20px;'></div>

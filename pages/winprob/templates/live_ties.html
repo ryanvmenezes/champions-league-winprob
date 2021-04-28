@@ -1,1 +1,5 @@
-{{ live_ties }}
+<div class='row liveties'>
+  <div class='col-12'>
+    <p><strong>Upcoming or in-progress ties:</strong> {% for tie in live_ties %}<a href='{{ tie.get_absolute_url }}'>{{ tie.team1.short_name }} v. {{ tie.team2.short_name }}</a>{% if not forloop.last %} | {% endif %}{% endfor %}</p>
+  </div>
+</div>
