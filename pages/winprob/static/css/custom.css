@@ -12,6 +12,7 @@ main > .container {
 
 .liveties p {
   margin: 0.5rem 0;
+  font-size: 14px;
 }
 
 /* teams by country list */
