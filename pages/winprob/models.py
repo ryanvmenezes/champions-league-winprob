@@ -102,6 +102,10 @@ class Season(BuildableModel):
     def get_absolute_url(self):
         return reverse('seasondetail', kwargs={'slug': self.slug})
 
+    def get_slug(self):
+        return self.slug
+
+
 class Tie(BuildableModel):
     slug = models.SlugField(unique=True, max_length=200)
     season = models.IntegerField()

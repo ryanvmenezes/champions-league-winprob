@@ -199,7 +199,7 @@ class SeasonDetailView(BuildableDetailView):
 
     def get_build_path(self, obj):
         dir_path = "seasons/"
-        dir_path = os.path.join(settings.BUILD_DIR, dir_path, obj.year, obj.competition)
+        dir_path = os.path.join(settings.BUILD_DIR, dir_path, obj.get_slug())
         os.path.exists(dir_path) or os.makedirs(dir_path)
         return os.path.join(dir_path, 'index.html')
 

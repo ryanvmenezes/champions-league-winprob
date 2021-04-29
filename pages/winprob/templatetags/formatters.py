@@ -36,8 +36,6 @@ def format_minutes(value):
     for m in ['45+', '90+', '105+', '120+']:
         if m in value:
             return value.replace('+', "’+") + "’"
-    # if '90' in value or '45' in value or '120' in value or '105' in value:
-    #     return value.replace('90', "90’")
     return value + "’"
 
 @register.filter
