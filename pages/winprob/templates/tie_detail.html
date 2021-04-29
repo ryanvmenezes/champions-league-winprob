@@ -18,7 +18,7 @@
 {% block nodesc %}
 <p>{{ tie.season }} {{ tie.competition }} - {{ tie.stage }}</p>
 {% if tie.in_progress %}
-<p><strong>Tie {% if tie.in_progress_halfway %}in progress{% elif tie.in_progress %}starting soon{% endif %}!</strong> Current prediction: {% with events|last as last %}{% if last.predictedprobt1 > 0.5 %}{{ tie.team1.short_name }} {% elif last.predictedprobt1 < 0.5 %}{{ tie.team2.short_name }} {% endif %}{{ last.predictedprobt1|format_predictedprob }}%{% endwith %}</p>
+<p><strong>Tie {% if tie.in_progress_halfway %}in progress{% elif tie.in_progress %}starting soon{% endif %}!</strong> Current prediction: {% with events|last as last %}{% if last.predictedprobt1 > 0.5 %}{{ tie.team1.short_name }} {% elif last.predictedprobt1 < 0.5 %}{{ tie.team2.short_name }} {% endif %}{{ last.predictedprobt1|format_predictedprob }}% to win{% endwith %}</p>
 {% endif %}
 {% endblock %}
 

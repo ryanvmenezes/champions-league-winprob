@@ -178,12 +178,14 @@ win.probabilities = goal.predictions %>%
   group_by(season, stagecode, tieid) %>%
   nest() %>%
   ungroup() %>%
+  left_join(summaries %>% select(season, stagecode, tieid, in_progress)) %>% 
   mutate(
     data = future_pmap(
-      list(season, stagecode, tieid, data),
-      function(season, stagecode, tieid, data) {
-        fname = glue('model/v3/distributions/{season}_{stagecode}_{tieid}.rds')
-        if (file.exists(fname)) {
+      list(season, stagecode, tieid, data, in_progress),
+      function(season, stagecode, tieid, data, in_progress) {
+        ip = if_else(in_progress, '_ip', '')
+        fname = glue('model/v3/distributions/{season}_{stagecode}_{tieid}{ip}.rds')
+        if (!in_progress & file.exists(fname)) {
           return (read_rds(fname))
         }
         dist = generate.distributions(data)
@@ -199,6 +201,7 @@ end = lubridate::now()
 beepr::beep()
 
 win.probabilities %>%
+  select(-in_progress) %>% 
   unnest(c(data)) %>%
   write_rds('model/v3/probabilities.rds', compress = 'gz')
 

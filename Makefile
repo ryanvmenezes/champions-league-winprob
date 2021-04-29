@@ -22,10 +22,17 @@ assemble:
 	Rscript data-get/assemble/summary/91_finding-missing-ties.R
 	Rscript data-get/assemble/summary/00_find-extra-aet-ties.R
 	Rscript data-get/assemble/summary/01_compile-tie-summaries.R
+	Rscript data-get/assemble/events/01_inflate-events-table.R
 
 runmodelv1:
 	Rscript model/v1/01_model-predict.R
 	Rscript model/v1/02_plot.R
+
+runmodelv3predict:
+	Rscript model/v3/00_prep-predictors.R
+	Rscript model/v3/02_generate-predictions.R
+	Rscript model/v3/03_evaluate.R
+	Rscript model/v3/04_calculate-tie-metrics.R
 
 runmodelv3:
 	Rscript model/v3/00_prep-predictors.R

@@ -12,6 +12,7 @@ getorretrieve = function(subfolder, url, override = FALSE) {
   if (!override & file.exists(fpath)) {
     h = read_html(fpath)
   } else {
+    Sys.sleep(1)
     h = read_html(url)
     write_html(h, fpath)
   }

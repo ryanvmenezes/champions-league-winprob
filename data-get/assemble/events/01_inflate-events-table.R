@@ -1,5 +1,6 @@
 library(here)
 library(tidyverse)
+library(furrr)
 
 summaries = read_csv(here('data-get', 'assemble', 'summary', 'summary.csv'))
 
@@ -75,8 +76,11 @@ expandminutes = function(data, aet = FALSE, in_progress = FALSE, in_progress_hal
   return(df)
 }
 
+plan(multicore)
+options('future.fork.enable' = TRUE)
+
 eventsnested = eventsnested %>% 
-  mutate(minutematrix = pmap(list(data, aet, in_progress, in_progress_halfway), expandminutes))
+  mutate(minutematrix = future_pmap(list(data, aet, in_progress, in_progress_halfway), expandminutes, .progress = TRUE))
 
 eventsnested
 
@@ -87,5 +91,5 @@ eventsmatrix = eventsnested %>%
 
 eventsmatrix
 
-eventsmatrix %>% write_csv(here('data-get', 'assemble', 'events', 'events.csv'))
+eventsmatrix %>% write_csv(here('data-get', 'assemble', 'events', 'events.csv'), na = '')
 eventsmatrix %>% write_rds(here('data', 'events.rds'), compress = 'gz')
