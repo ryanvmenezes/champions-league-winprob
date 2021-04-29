@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "ties_list.html" %}
 
 {% block title %}Biggest comebacks{% endblock %}
 {% block headline %}Biggest comebacks{% endblock %}
@@ -6,9 +6,4 @@
 {% block nodesc %}
 <p>The 100 two-legged ties with the biggest comebacks, sorted by the lowest win probability at any point in the tie for the eventual winner.</p>
 <p>Other metrics: Comeback | <a href="{% url 'excitementlist' %}">Excitement</a> | <a href="{% url 'tensionlist' %}">Tension</a></p>
-{% endblock %}
-{% block tiesactive %}active{% endblock %}
-
-{% block content %}
-  {% include "tie_loop.html" %}
 {% endblock %}

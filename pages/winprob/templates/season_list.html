@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-{% load static %}
 
 {% block title %}Seasons{% endblock %}
 {% block headline %}Seasons{% endblock %}
@@ -9,13 +8,11 @@
 
 
 {% block content %}
-
 <ul>
   {% for szn in seasons %}
     <li>
-      <a href="">{{ szn.season }}</a> ({{ szn.total }}{% if forloop.first %} two-legged matches{% endif %})
+      <a href="{{ szn.get_absolute_url }}">{{ szn.get_full_season }} {{ szn.get_full_competition }}</a> ({{ szn.get_num_ties }}{% if forloop.first %} two-legged ties{% endif %})
     </li>
   {% endfor %}
 </ul>
-
 {% endblock %}

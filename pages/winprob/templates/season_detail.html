@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ season.get_full_season}} {{ season.get_full_competition}} ties{% endblock %}
+{% block headline %}{{ season.get_full_season}} {{ season.get_full_competition}} ties{% endblock %}
+{% block nosubhead %}{% endblock %}
+{% block nodesc %}{% endblock %}
+{% block seasonsactive %}active{% endblock %}
+
+{% block content %}
+{% include "tie_legend.html" %}
+{% include "tie_loop.html" %}
+{% endblock %}

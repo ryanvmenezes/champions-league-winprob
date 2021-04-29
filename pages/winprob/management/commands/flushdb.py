@@ -12,5 +12,7 @@ class Command(BaseCommand):
         Country.objects.all().delete()
         print('deleting Tie model')
         Tie.objects.all().delete()
+        print('deleting Season model')
+        Season.objects.all().delete()
         print('deleting Prediction model')
         Prediction.objects.all().delete()

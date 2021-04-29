@@ -67,15 +67,22 @@ migrate:
 flushdb:
 	python pages/manage.py flushdb
 
-loaddb:
-	python pages/manage.py loaddb
+loadteams:
+	python pages/manage.py loadteams
+
+loadsummary:
+	python pages/manage.py loadsummary
+
+loadpredictions:
+	python pages/manage.py loadpredictions
+
+loadall:
+	make loadteams
+	make loadsummary
+	make loadpredictions
 
 shell:
 	python pages/manage.py shell
-
-recreatedb:
-	make flushdb
-	make loaddb
 
 build:
 	python pages/manage.py build

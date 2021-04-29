@@ -38,6 +38,7 @@ urlpatterns = [
             path('ties/penalty-kicks/', views.PenaltyKicksListView.as_view(), name='pklist'),
             path('ties/<slug:slug>/', views.TieDetailView.as_view(), name='tiedetail'),
             path('seasons/', views.SeasonListView.as_view(), name='seasonlist'),
+            path('seasons/<slug:slug>', views.SeasonDetailView.as_view(), name='seasondetail'),
             path('goals/', views.GoalsListView.as_view(), name='goalslist'),
             # path('countries/', views.CountryListView.as_view(), name='countrylist'),
             # path('countries/<slug:slug>/', views.CountryTeamsDetailView.as_view(), name='countryteamslist'),

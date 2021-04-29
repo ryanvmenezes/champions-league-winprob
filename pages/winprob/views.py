@@ -187,10 +187,28 @@ class SeasonListView(BuildableListView):
     template_name = 'season_list.html'
     context_object_name = 'seasons'
 
-    queryset = Tie.objects.all()\
-        .values('season')\
-        .annotate(total = Count('season'))\
-        .order_by('-season')
+    queryset = Season.objects.all().order_by('-year', 'competition')
+
+class SeasonDetailView(BuildableDetailView):
+    '''
+    A page for each season
+    '''
+    model = Season
+    template_name = 'season_detail.html'
+    context_object_name = 'season'
+
+    def get_build_path(self, obj):
+        dir_path = "seasons/"
+        dir_path = os.path.join(settings.BUILD_DIR, dir_path, obj.year, obj.competition)
+        os.path.exists(dir_path) or os.makedirs(dir_path)
+        return os.path.join(dir_path, 'index.html')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        season = context['season']
+        context['ties'] = Tie.objects.filter(season_obj=season)\
+            .order_by('-season', '-competition_code', '-stagecode')
+        return context
 
 class GoalsListView(BuildableTemplateView):
     build_path = 'goals/index.html'

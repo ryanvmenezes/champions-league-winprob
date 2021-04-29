@@ -76,9 +76,36 @@ class Team(BuildableModel):
     def code_name(self):
         return self.remove_accents(self.short_name()).decode('ascii').replace(' ', '').upper()[:3]
 
+class Season(BuildableModel):
+    year = models.IntegerField()
+    competition = models.CharField(max_length=10)
+    slug = models.SlugField(unique=True, max_length=200)
+
+    def __str__(self):
+        return f'{self.year} {self.competition}'
+
+    def get_full_competition(self):
+        if self.competition == 'el':
+            return 'Europa League'
+        if self.competition == 'cl':
+            return 'Champions League'
+
+    def get_full_season(self):
+        return f'{self.year-1}-{self.year}'
+
+    def get_ties(self):
+        return Tie.objects.filter(season_obj=self)
+
+    def get_num_ties(self):
+        return len(self.get_ties())
+
+    def get_absolute_url(self):
+        return reverse('seasondetail', kwargs={'slug': self.slug})
+
 class Tie(BuildableModel):
     slug = models.SlugField(unique=True, max_length=200)
     season = models.IntegerField()
+    season_obj = models.ForeignKey(Season, on_delete=models.CASCADE, related_name='season', null=True)
     stagecode = models.CharField(max_length=50)
     tieid = models.CharField(max_length=20)
     competition_code = models.CharField(max_length=10)
