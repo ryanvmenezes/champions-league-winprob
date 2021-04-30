@@ -1419,5 +1419,5 @@ szn,stagecode,tieid,competition,round,dates,team1,team2,winner,teamid1,teamid2,w
 2020-2021,el-1k-7qf,19538871|a0435291,UEFA Europa League,Quarter-finals,"April 8, 2021 to April 15, 2021",Granada,Manchester Utd,Manchester Utd,a0435291,19538871,19538871,0–4,Manchester Utd won on aggregate score over two legs.,0–2,2–0
 2020-2021,el-1k-7qf,19c3f8c4|cf74a709,UEFA Europa League,Quarter-finals,"April 8, 2021 to April 15, 2021",Ajax,Roma,Roma,19c3f8c4,cf74a709,cf74a709,2–3,Roma won on aggregate score over two legs.,1–2,1–1
 2020-2021,el-1k-7qf,2a8183b3|edd0d381,UEFA Europa League,Quarter-finals,"April 8, 2021 to April 15, 2021",Dinamo Zagreb,Villarreal,Villarreal,edd0d381,2a8183b3,2a8183b3,1–3,Villarreal won on aggregate score over two legs.,0–1,2–1
-2020-2021,el-1k-8sf,18bb7c10|2a8183b3,UEFA Europa League,Semi-finals,"April 29, 2021 to May 6, 2021",Villarreal,Arsenal,,2a8183b3,18bb7c10,,"",Results are the aggregate results over two legs.,,
-2020-2021,el-1k-8sf,19538871|cf74a709,UEFA Europa League,Semi-finals,"April 29, 2021 to May 6, 2021",Manchester Utd,Roma,,19538871,cf74a709,,"",Results are the aggregate results over two legs.,,
+2020-2021,el-1k-8sf,18bb7c10|2a8183b3,UEFA Europa League,Semi-finals,"April 29, 2021 to May 6, 2021",Villarreal,Arsenal,,2a8183b3,18bb7c10,,"",Results are the aggregate results over two legs.,2–1,
+2020-2021,el-1k-8sf,19538871|cf74a709,UEFA Europa League,Semi-finals,"April 29, 2021 to May 6, 2021",Manchester Utd,Roma,,19538871,cf74a709,,"",Results are the aggregate results over two legs.,6–2,
