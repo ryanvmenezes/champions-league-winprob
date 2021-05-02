@@ -36,6 +36,7 @@ urlpatterns = [
             path('ties/away-goals-rule/', views.AwayGoalsRuleListView.as_view(), name='agrlist'),
             path('ties/after-extra-time/', views.AfterExtraTimeListView.as_view(), name='aetlist'),
             path('ties/penalty-kicks/', views.PenaltyKicksListView.as_view(), name='pklist'),
+            path('ties/no-odds/', views.NoOddsListView.as_view(), name='nooddslist'),
             path('ties/<slug:slug>/', views.TieDetailView.as_view(), name='tiedetail'),
             path('seasons/', views.SeasonListView.as_view(), name='seasonlist'),
             path('seasons/<slug:slug>', views.SeasonDetailView.as_view(), name='seasondetail'),

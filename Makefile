@@ -37,7 +37,7 @@ runmodelv3:
 	Rscript model/v3/03_evaluate.R
 	Rscript model/v3/04_calculate-tie-metrics.R
 
-runserver:
+rs:
 	python pages/manage.py runserver
 
 buildserver:
@@ -60,6 +60,9 @@ loadsummary:
 
 loadpredictions:
 	python pages/manage.py loadpredictions
+
+loadposts:
+	python pages/manage.py loadposts
 
 loadall:
 	make loadteams

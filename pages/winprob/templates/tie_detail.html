@@ -33,11 +33,11 @@
 <div id='chartholder' style='margin-bottom:20px;'></div>
 
 {% if not tie.has_odds %}
-<p>Note: This tie did not have odds data associated with it. It is assumed the two teams were of equal strength.</p>
+<p>Note: This tie <a href='{% url "nooddslist" %}'>did not have odds data associated with it</a>. It is assumed the two teams were of equal strength.</p>
 {% endif %}
 
 {% if tie.penalty_kicks %}
-<p>Note: This tie ended with {% if tie.t1win %}{{ tie.team1.short_name }}{% else %}{{ tie.team2.short_name }}{% endif %} winning in a penalty kick shootout. The tiepredict model does not yet account for penalty kick shootouts and assumes that each team has the same chance of winning one.</p>
+<p>Note: This tie ended with {% if tie.t1win %}{{ tie.team1.short_name }}{% else %}{{ tie.team2.short_name }}{% endif %} winning in a penalty kick shootout. The tiepredict model does not yet account for <a href='{% url "pklist" %}'>penalty kick shootouts</a> and assumes that each team has the same chance of winning one.</p>
 {% endif %}
 
 <h4>Events</h4>

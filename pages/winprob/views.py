@@ -182,6 +182,16 @@ class PenaltyKicksListView(BuildableListView):
     queryset = Tie.objects.filter(penalty_kicks=True)\
         .order_by('-season', '-competition_code', '-stagecode')
 
+class NoOddsListView(BuildableListView):
+    '''
+    A page with all of the ties that don't have odds data associated with them
+    '''
+    build_path = 'ties/no-odds/index.html'
+    template_name = 'noodds_list.html'
+    context_object_name = 'ties'
+    queryset = Tie.objects.filter(has_odds=False)\
+        .order_by('-season', '-competition_code', '-stagecode')
+
 class SeasonListView(BuildableListView):
     build_path = 'seasons/index.html'
     template_name = 'season_list.html'
