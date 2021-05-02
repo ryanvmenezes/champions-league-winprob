@@ -9,7 +9,7 @@
 {% if tie.in_progress %}
 <img class='flagicon' src="/static/img/{{ tie.team1.country.slug }}.png" /><a href='{{ tie.team1.get_absolute_url}}'>{{ tie.team1.name }}</a> v. <a href='{{ tie.team2.get_absolute_url}}'>{{ tie.team2.name }}</a><img class='flagicon' src="/static/img/{{ tie.team2.country.slug }}.png" />
 {% else %}
-<img class='flagicon' src="/static/img/{{ tie.team1.country.slug }}.png" /><a href='{{ tie.team1.get_absolute_url}}'>{{ tie.team1.name }}</a> {{ tie.aggscore_t1 }}-{{ tie.aggscore_t2 }} <a href='{{ tie.team2.get_absolute_url}}'>{{ tie.team2.name }}</a><img class='flagicon' src="/static/img/{{ tie.team2.country.slug }}.png" />
+<img class='flagicon' src="/static/img/{{ tie.team1.country.slug }}.png" /><a href='{{ tie.team1.get_absolute_url}}'>{{ tie.team1.name }}</a> {{ tie.aggscore_t1 }}{% if tie.away_goals_rule or tie.penalty_kicks %}{% if tie.t1win %}*{% endif %}{% endif %}-{{ tie.aggscore_t2 }}{% if tie.away_goals_rule or tie.penalty_kicks %}{% if not tie.t1win %}*{% endif %}{% endif %} <a href='{{ tie.team2.get_absolute_url}}'>{{ tie.team2.name }}</a><img class='flagicon' src="/static/img/{{ tie.team2.country.slug }}.png" />
 {% endif %}
 {% endblock %}
 
@@ -34,6 +34,10 @@
 
 {% if not tie.has_odds %}
 <p>Note: This tie did not have odds data associated with it. It is assumed the two teams were of equal strength.</p>
+{% endif %}
+
+{% if tie.penalty_kicks %}
+<p>Note: This tie ended with {% if tie.t1win %}{{ tie.team1.short_name }}{% else %}{{ tie.team2.short_name }}{% endif %} winning in a penalty kick shootout. The tiepredict model does not yet account for penalty kick shootouts and assumes that each team has the same chance of winning one.</p>
 {% endif %}
 
 <h4>Events</h4>
