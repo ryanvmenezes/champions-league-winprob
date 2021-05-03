@@ -1,5 +1,5 @@
 # tiepredict
 
-A win probability model for European club soccer
+Forecasting win probability in European club football
 
 [ryanvmenenzes.github.io/tiepredict/](https://ryanvmenezes.github.io/tiepredict/)
