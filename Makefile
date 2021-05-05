@@ -75,3 +75,9 @@ shell:
 build:
 	python pages/manage.py build
 	LC_ALL=C find docs -type f -not -path '*static*' -exec sed -i '' 's|/static/|/tiepredict/static/|g' {} +
+
+everything:
+	make updatefbrefgames
+	make assemble
+	make runmodelv3predict
+	make loadall
