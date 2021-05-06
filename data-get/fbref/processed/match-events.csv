@@ -180,6 +180,8 @@ szn,stagecode,tieid,teamid1,teamid2,leg,score,player,playerid,eventtype,minute,t
 2020-2021,el-1k-5r32,edd0d381|fa11a9cc,fa11a9cc,edd0d381,2,1–0,Mislav Oršić,ee950928,goal,31,1
 2020-2021,cl-1k-5sf,53a2f082|cff3d9bb,53a2f082,cff3d9bb,1,1–1,Karim Benzema,70d74ece,goal,29,1
 2020-2021,cl-1k-5sf,53a2f082|cff3d9bb,53a2f082,cff3d9bb,1,1–1,Christian Pulisic,1bf33a9a,goal,14,2
+2020-2021,cl-1k-5sf,53a2f082|cff3d9bb,53a2f082,cff3d9bb,2,2–0,Timo Werner,49fe9070,goal,28,1
+2020-2021,cl-1k-5sf,53a2f082|cff3d9bb,53a2f082,cff3d9bb,2,2–0,Mason Mount,9674002f,goal,85,1
 2020-2021,cl-1k-5sf,b8fd03ef|e2d8892c,e2d8892c,b8fd03ef,1,1–2,Marquinhos,d5f2f82b,goal,15,1
 2020-2021,cl-1k-5sf,b8fd03ef|e2d8892c,e2d8892c,b8fd03ef,1,1–2,Idrissa Gana Gueye,72c812f3,red_card,77,1
 2020-2021,cl-1k-5sf,b8fd03ef|e2d8892c,e2d8892c,b8fd03ef,1,1–2,Kevin De Bruyne,e46012d4,goal,64,2
